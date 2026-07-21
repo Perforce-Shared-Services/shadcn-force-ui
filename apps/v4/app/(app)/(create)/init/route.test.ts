@@ -53,11 +53,11 @@ describe("GET /init", () => {
       menuColor: "default",
       menuAccent: "subtle",
       tailwind: {
-        baseColor: "neutral",
+        baseColor: "force-ui",
       },
     })
     expect(json.cssVars.light).toBeDefined()
-    expect(json.cssVars.light.radius).toBe("0.625rem")
+    expect(json.cssVars.light.radius).toBe("0.5rem") // [FORCE-UI] brand radius
     expect(json.dependencies).toBeUndefined()
     expect(json.registryDependencies).toBeUndefined()
   })

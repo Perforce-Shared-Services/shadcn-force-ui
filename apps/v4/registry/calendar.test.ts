@@ -19,11 +19,16 @@ function findFiles(dir: string, fileName: string): string[] {
 }
 
 describe("calendar registry items", () => {
+  // [FORCE-UI] The React Aria base ships its own calendar built on
+  // react-aria-components (CalendarGrid/CalendarCell), not react-day-picker,
+  // so the month_grid class-key assertion below does not apply to it.
+  const isReactAriaCalendar = (file: string) =>
+    file.includes("/bases/aria/") || file.includes("/aria-force-ui/")
   const sourceFiles = [
     ...findFiles(resolve(appDir, "registry/bases"), "calendar.tsx"),
     ...findFiles(resolve(appDir, "registry/new-york-v4"), "calendar.tsx"),
     ...findFiles(resolve(appDir, "styles"), "calendar.tsx"),
-  ]
+  ].filter((file) => !isReactAriaCalendar(file))
   // Only the frozen legacy styles are checked here: they have no .tsx source
   // and are maintained by editing the published JSON directly in git. All
   // other styles are generated from the sources checked above.

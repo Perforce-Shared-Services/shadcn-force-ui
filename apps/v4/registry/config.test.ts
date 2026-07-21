@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest"
 
 import publicSchema from "../public/schema.json"
 import {
-  BASES,
   buildPartialRegistryBase,
   buildRegistryBase,
   buildThemeForPreset,
@@ -13,12 +12,14 @@ import {
   PRESETS,
   STYLES,
 } from "./config"
+// [FORCE-UI] presets cover the React bases only (framework ports are separate).
+import { REACT_BASES } from "./bases"
 
 const legacyPublicSchemaStyles = ["default", "new-york"] as const
 
 describe("buildRegistryBase", () => {
   it("seeds a font-heading fallback when heading inherits the body font", () => {
-    const result = buildRegistryBase(DEFAULT_CONFIG)
+    const result = buildRegistryBase({ ...DEFAULT_CONFIG, font: "inter" })
 
     expect(result.registryDependencies).toContain("font-inter")
     expect(result.registryDependencies).not.toContain("font-heading-inter")
@@ -28,6 +29,7 @@ describe("buildRegistryBase", () => {
   it("adds a heading font dependency when a distinct heading font is selected", () => {
     const result = buildRegistryBase({
       ...DEFAULT_CONFIG,
+      font: "inter",
       fontHeading: "playfair-display",
     })
 
@@ -41,6 +43,7 @@ describe("buildRegistryBase", () => {
   it("normalizes a matching heading font back to inherit", () => {
     const result = buildRegistryBase({
       ...DEFAULT_CONFIG,
+      font: "inter",
       fontHeading: "inter",
     })
 
@@ -62,7 +65,7 @@ describe("buildRegistryBase", () => {
   it("defaults chartColor to neutral when omitted", () => {
     const result = designSystemConfigSchema.parse({
       base: "radix",
-      style: "nova",
+      style: "force-ui",
       iconLibrary: "lucide",
       theme: "neutral",
       font: "inter",
@@ -78,7 +81,7 @@ describe("buildRegistryBase", () => {
   it("defaults pointer to false when omitted", () => {
     const result = designSystemConfigSchema.parse({
       base: "radix",
-      style: "nova",
+      style: "force-ui",
       iconLibrary: "lucide",
       theme: "neutral",
       font: "inter",
@@ -113,7 +116,7 @@ describe("buildRegistryBase", () => {
   it("defaults chartColor to the selected theme when omitted", () => {
     const result = designSystemConfigSchema.parse({
       base: "base",
-      style: "sera",
+      style: "force-ui",
       iconLibrary: "lucide",
       baseColor: "taupe",
       theme: "taupe",
@@ -138,7 +141,8 @@ describe("buildRegistryBase", () => {
 
   it("defines every base and style preset exactly once", () => {
     const presetNames = PRESETS.map((preset) => preset.name)
-    const expectedPresetNames = BASES.flatMap((base) =>
+    // [FORCE-UI] presets exist for the React bases only.
+    const expectedPresetNames = REACT_BASES.flatMap((base) =>
       STYLES.map((style) => `${base.name}-${style.name}`)
     )
 
@@ -149,7 +153,7 @@ describe("buildRegistryBase", () => {
   it("rejects chartColor values that are unavailable for the selected base color", () => {
     const result = designSystemConfigSchema.safeParse({
       base: "radix",
-      style: "nova",
+      style: "force-ui",
       iconLibrary: "lucide",
       baseColor: "neutral",
       theme: "neutral",
@@ -284,9 +288,9 @@ describe("buildPartialRegistryBase", () => {
       ["theme", "font"]
     )
 
-    expect(result.config?.tailwind?.baseColor).toBe("neutral")
+    expect(result.config?.tailwind?.baseColor).toBe("force-ui")
     expect(result.registryDependencies).toEqual(["font-figtree"])
-    expect(result.cssVars?.light?.radius).toBe("0.625rem")
+    expect(result.cssVars?.light?.radius).toBe("0.5rem") // [FORCE-UI] brand radius
     expect(result.cssVars?.light).toBeDefined()
     expect(result.cssVars?.theme?.["--font-heading"]).toBe("var(--font-sans)")
   })

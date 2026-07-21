@@ -6,7 +6,7 @@ describe("parseDesignSystemConfig", () => {
   it("defaults pointer to false when omitted", () => {
     const result = parseDesignSystemConfig(
       new URLSearchParams(
-        "base=base&style=sera&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
+        "base=base&style=force-ui&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
       )
     )
 
@@ -21,7 +21,7 @@ describe("parseDesignSystemConfig", () => {
   it("parses pointer=true", () => {
     const result = parseDesignSystemConfig(
       new URLSearchParams(
-        "base=base&style=sera&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&pointer=true&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
+        "base=base&style=force-ui&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&pointer=true&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
       )
     )
 
@@ -36,7 +36,7 @@ describe("parseDesignSystemConfig", () => {
   it("defaults missing chartColor from the selected theme", () => {
     const result = parseDesignSystemConfig(
       new URLSearchParams(
-        "base=base&style=sera&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
+        "base=base&style=force-ui&baseColor=taupe&theme=taupe&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default&fontHeading=playfair-display&template=vite&track=1"
       )
     )
 
@@ -51,7 +51,7 @@ describe("parseDesignSystemConfig", () => {
   it("honors explicit fontHeading and chartColor overrides when a preset is present", () => {
     const result = parseDesignSystemConfig(
       new URLSearchParams(
-        "preset=a0&fontHeading=playfair-display&chartColor=emerald"
+        "preset=b7qOdIHxI&fontHeading=playfair-display&chartColor=emerald"
       )
     )
 
@@ -66,7 +66,7 @@ describe("parseDesignSystemConfig", () => {
 
   it("keeps pointer outside preset decoding", () => {
     const result = parseDesignSystemConfig(
-      new URLSearchParams("preset=a0&pointer=true")
+      new URLSearchParams("preset=b7qOdIHxI&pointer=true")
     )
 
     expect(result.success).toBe(true)
