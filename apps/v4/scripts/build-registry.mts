@@ -161,10 +161,11 @@ const FRAMEWORK_ROOTS: FrameworkRoot[] = [
   {
     id: "react",
     dirName: "r-react",
-    baseNames: ["radix", "base"],
+    baseNames: ["radix", "base", "aria"], // [FORCE-UI] react-aria base
     styleEntries: [
       { name: "radix-force-ui", label: "Force UI (Radix)" },
       { name: "base-force-ui", label: "Force UI (Base)" },
+      { name: "aria-force-ui", label: "Force UI (Aria)" }, // [FORCE-UI]
     ],
   },
   {
