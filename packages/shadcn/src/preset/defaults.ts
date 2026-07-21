@@ -121,6 +121,22 @@ export const DEFAULT_PRESETS = {
     radius: "default",
     rtl: false,
   },
+  // [FORCE-UI] brand preset — mirrors packages/theme-force-ui tokens
+  "force-ui": {
+    title: "Force UI",
+    description: "Material Symbols / Noto Sans",
+    style: "force-ui",
+    baseColor: "force-ui",
+    theme: "force-ui",
+    chartColor: "force-ui",
+    iconLibrary: "materialSymbols",
+    font: "noto-sans",
+    fontHeading: "inherit",
+    menuAccent: "subtle",
+    menuColor: "default",
+    radius: "default",
+    rtl: false,
+  },
 } satisfies Record<
   PresetConfig["style"],
   PresetConfig & {

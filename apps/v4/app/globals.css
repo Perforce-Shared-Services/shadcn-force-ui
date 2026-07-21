@@ -5,6 +5,15 @@
 
 @source "../node_modules/streamdown/dist/*.js";
 
+/* [FORCE-UI-START] Exclude generated registry/preview output from Tailwind's
+   content scan. These artifacts embed Vue/Ember component source whose class
+   strings use JS-escaped quotes (e.g. [class*=\'size-\']); Tailwind mis-escapes
+   them into invalid selectors ([class*=\\'size-\\']) that Turbopack's CSS parser
+   rejects. public/ is static output only — the app's own classes come from
+   app/, components/ and registry/, so nothing needed is lost. */
+@source not "../public";
+/* [FORCE-UI-END] */
+
 /* [FORCE-UI] */ @import "../registry/styles/style-force-ui.css" layer(base);
 
 /* [FORCE-UI] */ @custom-variant style-force-ui (&:where(.style-force-ui *));
