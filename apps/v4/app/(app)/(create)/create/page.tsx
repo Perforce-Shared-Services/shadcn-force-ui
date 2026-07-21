@@ -4,7 +4,7 @@ import dynamic from "next/dynamic"
 
 import { siteConfig } from "@/lib/config"
 import { absoluteUrl } from "@/lib/utils"
-import { Skeleton } from "@/styles/base-nova/ui/skeleton"
+import { Skeleton } from "@/styles/base-force-ui/ui/skeleton"
 import { Customizer } from "@/app/(app)/(create)/components/customizer"
 import { PresetHandler } from "@/app/(app)/(create)/components/preset-handler"
 import { Preview } from "@/app/(app)/(create)/components/preview"

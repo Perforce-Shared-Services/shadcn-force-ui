@@ -8,8 +8,8 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
-import { Badge } from "@/styles/base-nova/ui-rtl/badge"
-import { Button } from "@/styles/base-nova/ui-rtl/button"
+import { Badge } from "@/styles/base-force-ui/ui-rtl/badge"
+import { Button } from "@/styles/base-force-ui/ui-rtl/button"
 import {
   Drawer,
   DrawerClose,
@@ -19,18 +19,18 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/base-nova/ui-rtl/drawer"
+} from "@/styles/base-force-ui/ui-rtl/drawer"
 import {
   Field,
   FieldContent,
   FieldDescription,
   FieldLabel,
   FieldTitle,
-} from "@/styles/base-nova/ui-rtl/field"
+} from "@/styles/base-force-ui/ui-rtl/field"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/base-nova/ui-rtl/radio-group"
+} from "@/styles/base-force-ui/ui-rtl/radio-group"
 
 const translations = {
   en: {

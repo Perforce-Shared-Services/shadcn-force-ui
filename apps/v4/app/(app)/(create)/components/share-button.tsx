@@ -5,7 +5,7 @@ import { Share03Icon, Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
 import { copyToClipboardWithMeta } from "@/components/copy-button"
-import { Button } from "@/styles/base-nova/ui/button"
+import { Button } from "@/styles/base-force-ui/ui/button"
 import { usePresetCode } from "@/app/(app)/(create)/hooks/use-design-system"
 import { useDesignSystemSearchParams } from "@/app/(app)/(create)/lib/search-params"
 

@@ -65,3 +65,13 @@ next-env.d.ts
 # `pnpm registry:build --style all`). See styles/README.md.
 /styles/*
 !/styles/README.md
+
+# [FORCE-UI-START] framework-port registry output (rebuilt by registry:build,
+# dirName r-react/r-vue/r-svelte/r-ember in build-registry.mts). The generated
+# per-style trees mirror /public/r/styles/* and are stripped for the same
+# reason; colors/icons/index.json/config.json stay tracked like /public/r.
+/public/r-react/styles/*
+/public/r-vue/styles/*
+/public/r-svelte/styles/*
+/public/r-ember/styles/*
+# [FORCE-UI-END]

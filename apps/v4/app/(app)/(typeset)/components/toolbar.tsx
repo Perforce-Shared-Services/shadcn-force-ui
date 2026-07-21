@@ -8,7 +8,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-nova/ui/tooltip"
+} from "@/styles/base-force-ui/ui/tooltip"
 import {
   CONTENT_OPTIONS,
   DEV_CONTENT_OPTIONS,

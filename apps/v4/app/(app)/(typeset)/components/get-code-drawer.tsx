@@ -1,7 +1,7 @@
 "use client"
 
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Button } from "@/styles/base-nova/ui/button"
+import { Button } from "@/styles/base-force-ui/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -11,7 +11,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/base-nova/ui/drawer"
+} from "@/styles/base-force-ui/ui/drawer"
 import { TypesetDocsContent } from "@/app/(app)/(typeset)/components/docs-panel"
 
 export function TypesetGetCodeDrawer({ className }: { className?: string }) {

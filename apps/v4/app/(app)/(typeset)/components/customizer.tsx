@@ -14,8 +14,8 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/styles/base-nova/ui/card"
-import { FieldGroup, FieldSeparator } from "@/styles/base-nova/ui/field"
+} from "@/styles/base-force-ui/ui/card"
+import { FieldGroup, FieldSeparator } from "@/styles/base-force-ui/ui/field"
 import { FontPicker } from "@/app/(app)/(typeset)/components/font-picker"
 import { TypesetGetCodeDrawer } from "@/app/(app)/(typeset)/components/get-code-drawer"
 import { TypesetMainMenu } from "@/app/(app)/(typeset)/components/main-menu"
