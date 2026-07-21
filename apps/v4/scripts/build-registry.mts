@@ -21,6 +21,7 @@ import { legacyStyles } from "@/registry/_legacy-styles"
 import { BASE_COLORS } from "@/registry/base-colors"
 import { BASES, type Base } from "@/registry/bases"
 import { PRESETS } from "@/registry/config"
+import { fonts } from "@/registry/fonts"
 import { STYLES } from "@/registry/styles"
 
 // [FORCE-UI] Framework ports live in packages/registry-{name}, not registry/bases/{name}
@@ -325,7 +326,11 @@ function normalizeRegistryFiles(item: RegistryItem): Array<{
 }
 
 function shouldGenerateRtlStyles(styleName: string) {
-  return styleName === "base-force-ui" || styleName === "radix-force-ui" // [FORCE-UI]
+  return (
+    styleName === "base-force-ui" ||
+    styleName === "radix-force-ui" ||
+    styleName === "aria-force-ui"
+  ) // [FORCE-UI]
 }
 
 function isStyledOutputFile(filePath: string) {
@@ -1371,9 +1376,23 @@ async function buildRegistryJsonFile(styleName: string) {
 
   const registry = parseResult.data
 
+  // Legacy source styles (e.g. new-york-v4) don't author font items. Inject
+  // the shared registry fonts so the shadcn CLI emits font-*.json for them,
+  // matching the generated base/style combinations (which spread the same
+  // fonts in their base registries). Font items have no files, so they pass
+  // through every transform stage untouched.
+  const registryItems = getStyleCombination(styleName)
+    ? registry.items
+    : [
+        ...registry.items,
+        ...fonts.filter(
+          (font) => !registry.items.some((item) => item.name === font.name)
+        ),
+      ]
+
   const fixedRegistry = {
     ...registry,
-    items: registry.items.map((item) => {
+    items: registryItems.map((item) => {
       const files = normalizeRegistryFiles(item).map((file) => ({
         ...file,
         path: `registry/${styleName}/${file.path}`,
@@ -1383,6 +1402,7 @@ async function buildRegistryJsonFile(styleName: string) {
   }
 
   const outputDir = path.join(process.cwd(), `public/r/styles/${styleName}`)
+  await rimraf(outputDir)
   await fs.mkdir(outputDir, { recursive: true })
 
   const registryJsonPath = path.join(outputDir, "registry.json")

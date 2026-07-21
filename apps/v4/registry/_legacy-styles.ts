@@ -3,6 +3,10 @@ export const legacyStyles = [
     name: "radix-force-ui", // [FORCE-UI]
     title: "Force UI",
   },
+  {
+    name: "aria-nova",
+    title: "React Aria Nova",
+  },
 ] as const
 
 export type Style = (typeof legacyStyles)[number]

@@ -31,6 +31,7 @@ export function getPagesFromFolder(
         // Match by $id or by name.
         const isRadix = child.$id === "radix" || child.name === "Radix UI"
         const isBase = child.$id === "base" || child.name === "Base UI"
+        const isReactAria = child.$id === "aria" || child.name === "React Aria"
         const isVue = child.$id === "vue" || child.name === "Vue"
         const isSvelte = child.$id === "svelte" || child.name === "Svelte"
         const isEmber = child.$id === "ember" || child.name === "Ember"
@@ -38,6 +39,7 @@ export function getPagesFromFolder(
         if (
           (currentBase === "radix" && isRadix) ||
           (currentBase === "base" && isBase) ||
+          (currentBase === "aria" && isReactAria) ||
           (currentBase === "vue" && isVue) ||
           (currentBase === "svelte" && isSvelte) ||
           (currentBase === "ember" && isEmber)
@@ -61,10 +63,10 @@ export function getPagesFromFolder(
   )
 }
 
-// Get current base (radix, base, vue, or svelte) from pathname.
+// Get current base (radix, base, aria, vue, svelte, or ember) from pathname.
 export function getCurrentBase(pathname: string): string {
   const baseMatch = pathname.match(
-    /\/docs\/components\/(radix|base|vue|svelte|ember)\//
+    /\/docs\/components\/(radix|base|aria|vue|svelte|ember)\//
   )
-  return baseMatch ? baseMatch[1] : "radix" // Default to radix.
+  return baseMatch ? baseMatch[1] : "base" // [FORCE-UI] default to base (was radix)
 }
