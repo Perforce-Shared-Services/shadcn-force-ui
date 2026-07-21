@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/aria-nova/ui/badge"
-import { Spinner } from "@/styles/aria-nova/ui/spinner"
+import { Badge } from "@/styles/aria-force-ui/ui/badge"
+import { Spinner } from "@/styles/aria-force-ui/ui/spinner"
 
 export function BadgeWithSpinner() {
   return (

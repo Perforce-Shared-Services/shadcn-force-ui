@@ -1,6 +1,6 @@
 import { RefreshCwIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Card,
   CardContent,
@@ -8,18 +8,18 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-nova/ui/card"
+} from "@/styles/aria-force-ui/ui/card"
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
+} from "@/styles/aria-force-ui/ui/field"
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/styles/aria-nova/ui/input-otp"
+} from "@/styles/aria-force-ui/ui/input-otp"
 
 export function InputOTPForm() {
   return (

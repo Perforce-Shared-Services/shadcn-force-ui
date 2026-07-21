@@ -1,4 +1,4 @@
-import { Separator } from "@/styles/aria-nova/ui/separator"
+import { Separator } from "@/styles/aria-force-ui/ui/separator"
 
 export function SeparatorMenu() {
   return (

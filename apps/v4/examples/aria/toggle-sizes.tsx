@@ -1,4 +1,4 @@
-import { Toggle } from "@/styles/aria-nova/ui/toggle"
+import { Toggle } from "@/styles/aria-force-ui/ui/toggle"
 
 export function ToggleSizes() {
   return (

@@ -3,7 +3,7 @@ import { Bold, Italic, Underline } from "lucide-react"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/aria-nova/ui/toggle-group"
+} from "@/styles/aria-force-ui/ui/toggle-group"
 
 export function ToggleGroupDisabled() {
   return (

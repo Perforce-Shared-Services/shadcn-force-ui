@@ -1,5 +1,5 @@
-import { Button } from "@/styles/aria-nova/ui/button"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-nova/ui/tooltip"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
 
 export function TooltipDisabled() {
   return (

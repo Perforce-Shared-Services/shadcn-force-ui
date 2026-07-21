@@ -13,8 +13,8 @@ import {
   Trash2Icon,
 } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { ButtonGroup } from "@/styles/aria-nova/ui/button-group"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -24,7 +24,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 
 export default function ButtonGroupDemo() {
   const [label, setLabel] = React.useState("personal")

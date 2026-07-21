@@ -2,7 +2,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/styles/aria-nova/ui/resizable"
+} from "@/styles/aria-force-ui/ui/resizable"
 
 export function ResizableVertical() {
   return (

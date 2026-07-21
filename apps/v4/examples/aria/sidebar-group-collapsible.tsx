@@ -6,7 +6,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/aria-nova/ui/collapsible"
+} from "@/styles/aria-force-ui/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -17,7 +17,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/aria-nova/ui/sidebar"
+} from "@/styles/aria-force-ui/ui/sidebar"
 
 export default function AppSidebar() {
   return (

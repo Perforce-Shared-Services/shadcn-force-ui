@@ -7,7 +7,7 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
-import { Badge } from "@/styles/aria-nova/ui-rtl/badge"
+import { Badge } from "@/styles/aria-force-ui/ui-rtl/badge"
 
 const translations: Translations = {
   en: {

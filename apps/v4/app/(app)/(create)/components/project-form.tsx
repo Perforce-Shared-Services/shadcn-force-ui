@@ -207,7 +207,8 @@ export function ProjectForm({
 
   const applyCommand = applyCommands[packageManager]
   const themeConfig = React.useMemo<DesignSystemConfig>(() => {
-    const isRadiusLocked = params.style === "lyra" || params.style === "sera"
+    // Force UI has a single style; no style locks the radius. [FORCE-UI]
+    const isRadiusLocked = false
 
     return {
       ...DEFAULT_CONFIG,

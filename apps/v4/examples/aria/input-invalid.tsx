@@ -2,8 +2,8 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
-import { Input } from "@/styles/aria-nova/ui/input"
+} from "@/styles/aria-force-ui/ui/field"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 
 export function InputInvalid() {
   return (

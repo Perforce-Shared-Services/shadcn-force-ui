@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -7,10 +7,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/aria-nova/ui/dialog"
-import { Field, FieldGroup } from "@/styles/aria-nova/ui/field"
-import { Input } from "@/styles/aria-nova/ui/input"
-import { Label } from "@/styles/aria-nova/ui/label"
+} from "@/styles/aria-force-ui/ui/dialog"
+import { Field, FieldGroup } from "@/styles/aria-force-ui/ui/field"
+import { Input } from "@/styles/aria-force-ui/ui/input"
+import { Label } from "@/styles/aria-force-ui/ui/label"
 
 export function DialogDemo() {
   return (

@@ -2,14 +2,14 @@
 
 import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   DropdownMenu,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 
 export function DropdownMenuDestructive() {
   return (

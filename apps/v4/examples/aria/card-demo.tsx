@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Card,
   CardAction,
@@ -7,9 +7,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-nova/ui/card"
-import { Input } from "@/styles/aria-nova/ui/input"
-import { Label } from "@/styles/aria-nova/ui/label"
+} from "@/styles/aria-force-ui/ui/card"
+import { Input } from "@/styles/aria-force-ui/ui/input"
+import { Label } from "@/styles/aria-force-ui/ui/label"
 
 export default function CardDemo() {
   return (

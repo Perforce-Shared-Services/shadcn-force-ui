@@ -7,13 +7,13 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
+} from "@/styles/aria-force-ui/ui/input-group"
 
 export function InputGroupDropdown() {
   return (

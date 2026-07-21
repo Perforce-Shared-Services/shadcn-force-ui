@@ -11,16 +11,16 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
-import { Input } from "@/styles/aria-nova/ui/input"
+} from "@/styles/aria-force-ui/ui/field"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupText,
   InputGroupTextarea,
-} from "@/styles/aria-nova/ui/input-group"
-import { Textarea } from "@/styles/aria-nova/ui/textarea"
+} from "@/styles/aria-force-ui/ui/input-group"
+import { Textarea } from "@/styles/aria-force-ui/ui/textarea"
 
 export function InputGroupTextareaExamples() {
   return (

@@ -4,12 +4,12 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
+} from "@/styles/aria-force-ui/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
+} from "@/styles/aria-force-ui/ui/input-group"
 
 export function InputGroupInlineEnd() {
   return (

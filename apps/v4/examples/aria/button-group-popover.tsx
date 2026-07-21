@@ -1,20 +1,20 @@
 import { BotIcon, ChevronDownIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { ButtonGroup } from "@/styles/aria-nova/ui/button-group"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
+} from "@/styles/aria-force-ui/ui/field"
 import {
   Popover,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/aria-nova/ui/popover"
-import { Textarea } from "@/styles/aria-nova/ui/textarea"
+} from "@/styles/aria-force-ui/ui/popover"
+import { Textarea } from "@/styles/aria-force-ui/ui/textarea"
 
 export default function ButtonGroupPopover() {
   return (

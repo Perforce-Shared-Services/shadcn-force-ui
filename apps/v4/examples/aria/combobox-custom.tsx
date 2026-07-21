@@ -7,13 +7,13 @@ import {
   ComboboxInput,
   ComboboxItem,
   ComboboxList,
-} from "@/styles/aria-nova/ui/combobox"
+} from "@/styles/aria-force-ui/ui/combobox"
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemTitle,
-} from "@/styles/aria-nova/ui/item"
+} from "@/styles/aria-force-ui/ui/item"
 
 const countries = [
   {

@@ -8,7 +8,7 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
-import { Button, LinkButton } from "@/styles/aria-nova/ui-rtl/button"
+import { Button, LinkButton } from "@/styles/aria-force-ui/ui-rtl/button"
 import {
   Empty,
   EmptyContent,
@@ -16,7 +16,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/aria-nova/ui-rtl/empty"
+} from "@/styles/aria-force-ui/ui-rtl/empty"
 
 const translations: Translations = {
   en: {

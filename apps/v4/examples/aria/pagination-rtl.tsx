@@ -14,7 +14,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/styles/aria-nova/ui-rtl/pagination"
+} from "@/styles/aria-force-ui/ui-rtl/pagination"
 
 const translations: Translations = {
   en: {

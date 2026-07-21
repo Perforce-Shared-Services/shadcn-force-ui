@@ -1,6 +1,6 @@
-import { Button } from "@/styles/aria-nova/ui/button"
-import { Input } from "@/styles/aria-nova/ui/input"
-import { Label } from "@/styles/aria-nova/ui/label"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Input } from "@/styles/aria-force-ui/ui/input"
+import { Label } from "@/styles/aria-force-ui/ui/label"
 import {
   Sheet,
   SheetClose,
@@ -9,7 +9,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/styles/aria-nova/ui/sheet"
+} from "@/styles/aria-force-ui/ui/sheet"
 
 export default function SheetDemo() {
   return (

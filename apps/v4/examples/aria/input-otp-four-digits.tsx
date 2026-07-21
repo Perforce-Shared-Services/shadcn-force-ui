@@ -6,7 +6,7 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from "@/styles/aria-nova/ui/input-otp"
+} from "@/styles/aria-force-ui/ui/input-otp"
 
 export function InputOTPFourDigits() {
   return (

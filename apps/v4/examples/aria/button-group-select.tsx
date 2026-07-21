@@ -3,16 +3,16 @@
 import * as React from "react"
 import { ArrowRightIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { ButtonGroup } from "@/styles/aria-nova/ui/button-group"
-import { Input } from "@/styles/aria-nova/ui/input"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
-} from "@/styles/aria-nova/ui/select"
+} from "@/styles/aria-force-ui/ui/select"
 
 const CURRENCIES = [
   { label: "US Dollar", value: "$" },

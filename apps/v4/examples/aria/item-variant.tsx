@@ -6,7 +6,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/styles/aria-nova/ui/item"
+} from "@/styles/aria-force-ui/ui/item"
 
 export function ItemVariant() {
   return (

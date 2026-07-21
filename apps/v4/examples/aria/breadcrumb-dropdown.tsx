@@ -10,13 +10,13 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/styles/aria-nova/ui/breadcrumb"
+} from "@/styles/aria-force-ui/ui/breadcrumb"
 import {
   DropdownMenu,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 
 export function BreadcrumbDropdown() {
   return (

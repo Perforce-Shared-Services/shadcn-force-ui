@@ -3,8 +3,8 @@ import {
   FieldContent,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
-import { Switch } from "@/styles/aria-nova/ui/switch"
+} from "@/styles/aria-force-ui/ui/field"
+import { Switch } from "@/styles/aria-force-ui/ui/switch"
 
 export function SwitchDescription() {
   return (

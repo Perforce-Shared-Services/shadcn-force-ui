@@ -7,7 +7,7 @@ import {
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/styles/aria-nova/ui/input-otp"
+} from "@/styles/aria-force-ui/ui/input-otp"
 
 export function InputOTPInvalid() {
   const [value, setValue] = React.useState("000000")

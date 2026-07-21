@@ -30,7 +30,7 @@ import {
 } from "lucide-react"
 import type { Selection } from "react-aria-components"
 
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -42,7 +42,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 
 export function DropdownMenuComplex() {
   const [notifications, setNotifications] = React.useState<Selection>(

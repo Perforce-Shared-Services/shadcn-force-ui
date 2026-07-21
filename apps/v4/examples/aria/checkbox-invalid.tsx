@@ -1,5 +1,5 @@
-import { Checkbox } from "@/styles/aria-nova/ui/checkbox"
-import { Field, FieldGroup, FieldLabel } from "@/styles/aria-nova/ui/field"
+import { Checkbox } from "@/styles/aria-force-ui/ui/checkbox"
+import { Field, FieldGroup, FieldLabel } from "@/styles/aria-force-ui/ui/field"
 
 export function CheckboxInvalid() {
   return (

@@ -11,8 +11,8 @@ import {
   ItemContent,
   ItemMedia,
   ItemTitle,
-} from "@/styles/aria-nova/ui-rtl/item"
-import { Spinner } from "@/styles/aria-nova/ui-rtl/spinner"
+} from "@/styles/aria-force-ui/ui-rtl/item"
+import { Spinner } from "@/styles/aria-force-ui/ui-rtl/spinner"
 
 const translations: Translations = {
   en: {

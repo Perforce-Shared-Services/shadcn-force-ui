@@ -1,8 +1,8 @@
 import { SearchIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { ButtonGroup } from "@/styles/aria-nova/ui/button-group"
-import { Input } from "@/styles/aria-nova/ui/input"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 
 export default function ButtonGroupInput() {
   return (

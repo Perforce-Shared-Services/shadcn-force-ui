@@ -1,6 +1,6 @@
-import { Button } from "@/styles/aria-nova/ui/button"
-import { Field } from "@/styles/aria-nova/ui/field"
-import { Input } from "@/styles/aria-nova/ui/input"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Field } from "@/styles/aria-force-ui/ui/field"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 
 export function InputInline() {
   return (

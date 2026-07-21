@@ -1,11 +1,11 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Sheet,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/styles/aria-nova/ui/sheet"
+} from "@/styles/aria-force-ui/ui/sheet"
 
 export default function SheetNoCloseButton() {
   return (

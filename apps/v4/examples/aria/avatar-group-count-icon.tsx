@@ -6,7 +6,7 @@ import {
   AvatarGroup,
   AvatarGroupCount,
   AvatarImage,
-} from "@/styles/aria-nova/ui/avatar"
+} from "@/styles/aria-force-ui/ui/avatar"
 
 export function AvatarGroupCountIconExample() {
   return (

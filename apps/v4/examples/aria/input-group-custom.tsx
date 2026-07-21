@@ -6,7 +6,7 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-} from "@/styles/aria-nova/ui/input-group"
+} from "@/styles/aria-force-ui/ui/input-group"
 
 export default function InputGroupCustom() {
   return (

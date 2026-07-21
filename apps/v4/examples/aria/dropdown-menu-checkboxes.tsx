@@ -3,14 +3,14 @@
 import * as React from "react"
 import type { Selection } from "react-aria-components"
 
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   DropdownMenu,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui/dropdown-menu"
+} from "@/styles/aria-force-ui/ui/dropdown-menu"
 
 export function DropdownMenuCheckboxes() {
   const [selectedKeys, setSelectedKeys] = React.useState<Selection>(

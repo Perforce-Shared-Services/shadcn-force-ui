@@ -5,9 +5,9 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
-import { Label } from "@/styles/aria-nova/ui/label"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-nova/ui/tooltip"
+} from "@/styles/aria-force-ui/ui/input-group"
+import { Label } from "@/styles/aria-force-ui/ui/label"
+import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
 
 export default function InputGroupLabel() {
   return (

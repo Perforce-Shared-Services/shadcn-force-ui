@@ -1,5 +1,5 @@
-import { Checkbox } from "@/styles/aria-nova/ui/checkbox"
-import { Label } from "@/styles/aria-nova/ui/label"
+import { Checkbox } from "@/styles/aria-force-ui/ui/checkbox"
+import { Label } from "@/styles/aria-force-ui/ui/label"
 
 export default function LabelDemo() {
   return (

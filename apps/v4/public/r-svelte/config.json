@@ -35,6 +35,24 @@
       "menuAccent": "subtle",
       "menuColor": "default",
       "radius": "default"
+    },
+    {
+      "name": "aria-force-ui",
+      "title": "Force UI (Aria)",
+      "description": "Force UI / Material Symbols / Noto Sans",
+      "base": "aria",
+      "style": "force-ui",
+      "baseColor": "force-ui",
+      "theme": "force-ui",
+      "chartColor": "force-ui",
+      "iconLibrary": "materialSymbols",
+      "font": "noto-sans",
+      "fontHeading": "inherit",
+      "item": "Item",
+      "rtl": false,
+      "menuAccent": "subtle",
+      "menuColor": "default",
+      "radius": "default"
     }
   ]
 }

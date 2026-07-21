@@ -9,7 +9,7 @@ import {
   ContextMenuItem,
   ContextMenuSeparator,
   ContextMenuTrigger,
-} from "@/styles/aria-nova/ui/context-menu"
+} from "@/styles/aria-force-ui/ui/context-menu"
 
 export function ContextMenuDestructive() {
   return (

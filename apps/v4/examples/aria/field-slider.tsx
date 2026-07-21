@@ -6,8 +6,8 @@ import {
   Field,
   FieldDescription,
   FieldTitle,
-} from "@/styles/aria-nova/ui/field"
-import { Slider } from "@/styles/aria-nova/ui/slider"
+} from "@/styles/aria-force-ui/ui/field"
+import { Slider } from "@/styles/aria-force-ui/ui/slider"
 
 export default function FieldSlider() {
   const [value, setValue] = React.useState([200, 800])

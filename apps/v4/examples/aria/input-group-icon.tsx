@@ -11,7 +11,7 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
+} from "@/styles/aria-force-ui/ui/input-group"
 
 export default function InputGroupIcon() {
   return (

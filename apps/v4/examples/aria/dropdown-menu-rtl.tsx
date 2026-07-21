@@ -8,7 +8,7 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
-import { Button } from "@/styles/aria-nova/ui-rtl/button"
+import { Button } from "@/styles/aria-force-ui/ui-rtl/button"
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -20,7 +20,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui-rtl/dropdown-menu"
+} from "@/styles/aria-force-ui/ui-rtl/dropdown-menu"
 
 const translations: Translations = {
   en: {

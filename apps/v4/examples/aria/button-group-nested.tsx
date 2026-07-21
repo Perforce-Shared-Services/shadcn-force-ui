@@ -1,14 +1,14 @@
 import { AudioLinesIcon, PlusIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { ButtonGroup } from "@/styles/aria-nova/ui/button-group"
-import { Input } from "@/styles/aria-nova/ui/input"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-nova/ui/tooltip"
+} from "@/styles/aria-force-ui/ui/input-group"
+import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
 
 export function ButtonGroupNested() {
   return (

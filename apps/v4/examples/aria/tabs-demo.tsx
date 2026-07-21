@@ -4,13 +4,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-nova/ui/card"
+} from "@/styles/aria-force-ui/ui/card"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/aria-nova/ui/tabs"
+} from "@/styles/aria-force-ui/ui/tabs"
 
 export function TabsDemo() {
   return (

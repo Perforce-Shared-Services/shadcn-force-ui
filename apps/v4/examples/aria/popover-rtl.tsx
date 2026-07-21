@@ -4,14 +4,14 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
-import { Button } from "@/styles/aria-nova/ui-rtl/button"
+import { Button } from "@/styles/aria-force-ui/ui-rtl/button"
 import {
   Popover,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/aria-nova/ui-rtl/popover"
+} from "@/styles/aria-force-ui/ui-rtl/popover"
 
 const translations: Translations = {
   en: {

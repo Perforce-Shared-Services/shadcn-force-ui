@@ -6,13 +6,13 @@ import {
   EmptyDescription,
   EmptyHeader,
   EmptyTitle,
-} from "@/styles/aria-nova/ui/empty"
+} from "@/styles/aria-force-ui/ui/empty"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
-import { Kbd } from "@/styles/aria-nova/ui/kbd"
+} from "@/styles/aria-force-ui/ui/input-group"
+import { Kbd } from "@/styles/aria-force-ui/ui/kbd"
 
 export default function EmptyInputGroup() {
   return (

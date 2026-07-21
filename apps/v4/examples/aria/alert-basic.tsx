@@ -4,7 +4,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "@/styles/aria-nova/ui/alert"
+} from "@/styles/aria-force-ui/ui/alert"
 
 export default function AlertBasic() {
   return (

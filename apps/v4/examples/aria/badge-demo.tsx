@@ -1,4 +1,4 @@
-import { Badge } from "@/styles/aria-nova/ui/badge"
+import { Badge } from "@/styles/aria-force-ui/ui/badge"
 
 export default function BadgeDemo() {
   return (

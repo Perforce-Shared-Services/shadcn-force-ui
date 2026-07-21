@@ -4,8 +4,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-nova/ui/avatar"
-import { Button } from "@/styles/aria-nova/ui/button"
+} from "@/styles/aria-force-ui/ui/avatar"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Item,
   ItemActions,
@@ -13,7 +13,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/styles/aria-nova/ui/item"
+} from "@/styles/aria-force-ui/ui/item"
 
 export function ItemAvatar() {
   return (

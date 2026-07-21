@@ -1,4 +1,4 @@
-import { Field, FieldError, FieldLabel } from "@/styles/aria-nova/ui/field"
+import { Field, FieldError, FieldLabel } from "@/styles/aria-force-ui/ui/field"
 import {
   Select,
   SelectContent,
@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/aria-nova/ui/select"
+} from "@/styles/aria-force-ui/ui/select"
 
 const items = [
   { label: "Apple", value: "apple" },

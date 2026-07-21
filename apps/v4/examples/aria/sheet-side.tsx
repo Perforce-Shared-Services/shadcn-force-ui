@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Sheet,
   SheetClose,
@@ -7,7 +7,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/styles/aria-nova/ui/sheet"
+} from "@/styles/aria-force-ui/ui/sheet"
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
 

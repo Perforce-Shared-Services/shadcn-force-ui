@@ -3,13 +3,13 @@ import { Link2Icon } from "lucide-react"
 import {
   ButtonGroup,
   ButtonGroupText,
-} from "@/styles/aria-nova/ui/button-group"
+} from "@/styles/aria-force-ui/ui/button-group"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-nova/ui/input-group"
-import { Label } from "@/styles/aria-nova/ui/label"
+} from "@/styles/aria-force-ui/ui/input-group"
+import { Label } from "@/styles/aria-force-ui/ui/label"
 
 export default function InputGroupButtonGroup() {
   return (

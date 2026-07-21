@@ -5,7 +5,7 @@ import {
   AvatarBadge,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-nova/ui/avatar"
+} from "@/styles/aria-force-ui/ui/avatar"
 
 export function AvatarBadgeIconExample() {
   return (

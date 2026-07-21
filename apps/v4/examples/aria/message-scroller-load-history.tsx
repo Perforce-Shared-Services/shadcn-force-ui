@@ -5,8 +5,8 @@ import { RotateCwIcon } from "lucide-react"
 import { toast } from "sonner"
 
 import { createChat, getMessageText } from "@/lib/ai"
-import { Bubble, BubbleContent } from "@/styles/aria-rhea/ui/bubble"
-import { Button } from "@/styles/aria-rhea/ui/button"
+import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Card,
   CardAction,
@@ -15,9 +15,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-rhea/ui/card"
-import { Marker, MarkerContent } from "@/styles/aria-rhea/ui/marker"
-import { Message, MessageContent } from "@/styles/aria-rhea/ui/message"
+} from "@/styles/aria-force-ui/ui/card"
+import { Marker, MarkerContent } from "@/styles/aria-force-ui/ui/marker"
+import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -25,8 +25,8 @@ import {
   MessageScrollerItem,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/aria-rhea/ui/message-scroller"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-rhea/ui/tooltip"
+} from "@/styles/aria-force-ui/ui/message-scroller"
+import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
 
 const chat = createChat()
   .user("Can you summarize the incident channel?")

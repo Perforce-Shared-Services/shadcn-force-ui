@@ -17,7 +17,7 @@ import {
   SelectSeparator,
   SelectTrigger,
   SelectValue,
-} from "@/styles/aria-nova/ui-rtl/select"
+} from "@/styles/aria-force-ui/ui-rtl/select"
 
 const translations: Translations = {
   en: {

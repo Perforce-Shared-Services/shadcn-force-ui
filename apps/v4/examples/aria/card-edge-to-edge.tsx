@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Card,
   CardContent,
@@ -6,7 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-nova/ui/card"
+} from "@/styles/aria-force-ui/ui/card"
 
 export function CardEdgeToEdge() {
   return (

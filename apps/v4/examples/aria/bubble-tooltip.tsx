@@ -4,9 +4,9 @@ import {
   Bubble,
   BubbleContent,
   BubbleReactions,
-} from "@/styles/aria-rhea/ui/bubble"
-import { Button } from "@/styles/aria-rhea/ui/button"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-rhea/ui/tooltip"
+} from "@/styles/aria-force-ui/ui/bubble"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
 
 export function BubbleTooltipDemo() {
   return (

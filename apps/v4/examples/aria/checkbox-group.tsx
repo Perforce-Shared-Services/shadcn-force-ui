@@ -1,4 +1,4 @@
-import { Checkbox } from "@/styles/aria-nova/ui/checkbox"
+import { Checkbox } from "@/styles/aria-force-ui/ui/checkbox"
 import {
   Field,
   FieldDescription,
@@ -6,7 +6,7 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-} from "@/styles/aria-nova/ui/field"
+} from "@/styles/aria-force-ui/ui/field"
 
 export function CheckboxGroup() {
   return (

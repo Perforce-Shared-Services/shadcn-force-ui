@@ -33,12 +33,12 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-nova/ui-rtl/avatar"
+} from "@/styles/aria-force-ui/ui-rtl/avatar"
 import {
   Collapsible,
   CollapsibleContent,
-} from "@/styles/aria-nova/ui-rtl/collapsible"
-import { DirectionProvider } from "@/styles/aria-nova/ui-rtl/direction"
+} from "@/styles/aria-force-ui/ui-rtl/collapsible"
+import { DirectionProvider } from "@/styles/aria-force-ui/ui-rtl/direction"
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -46,7 +46,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/aria-nova/ui-rtl/dropdown-menu"
+} from "@/styles/aria-force-ui/ui-rtl/dropdown-menu"
 import {
   Sidebar,
   SidebarContent,
@@ -66,7 +66,7 @@ import {
   SidebarRail,
   SidebarTrigger,
   useSidebar,
-} from "@/styles/aria-nova/ui-rtl/sidebar"
+} from "@/styles/aria-force-ui/ui-rtl/sidebar"
 
 const translations: Translations = {
   en: {

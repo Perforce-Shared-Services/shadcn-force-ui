@@ -4,10 +4,10 @@ import * as React from "react"
 import { getLocalTimeZone, type CalendarDate } from "@internationalized/date"
 import { ChevronDownIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-nova/ui/button"
-import { Calendar } from "@/styles/aria-nova/ui/calendar"
-import { Field, FieldLabel } from "@/styles/aria-nova/ui/field"
-import { Popover, PopoverTrigger } from "@/styles/aria-nova/ui/popover"
+import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
+import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
+import { Popover, PopoverTrigger } from "@/styles/aria-force-ui/ui/popover"
 
 export function DataPickerWithDropdowns() {
   const [date, setDate] = React.useState<CalendarDate>()

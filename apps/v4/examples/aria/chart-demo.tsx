@@ -9,13 +9,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-nova/ui/card"
+} from "@/styles/aria-force-ui/ui/card"
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig,
-} from "@/styles/aria-nova/ui/chart"
+} from "@/styles/aria-force-ui/ui/chart"
 
 export const description = "An interactive bar chart"
 

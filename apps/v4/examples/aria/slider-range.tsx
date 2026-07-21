@@ -1,4 +1,4 @@
-import { Slider } from "@/styles/aria-nova/ui/slider"
+import { Slider } from "@/styles/aria-force-ui/ui/slider"
 
 export function SliderRange() {
   return (

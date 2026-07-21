@@ -19,7 +19,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "@/styles/aria-nova/ui-rtl/context-menu"
+} from "@/styles/aria-force-ui/ui-rtl/context-menu"
 
 const translations: Translations = {
   en: {

@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/aria-nova/ui/dialog"
+} from "@/styles/aria-force-ui/ui/dialog"
 
 export function DialogNoCloseButton() {
   return (

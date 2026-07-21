@@ -7,7 +7,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig,
-} from "@/styles/aria-nova/ui/chart"
+} from "@/styles/aria-force-ui/ui/chart"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },

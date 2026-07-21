@@ -1,5 +1,5 @@
-import { Calendar } from "@/styles/aria-nova/ui/calendar"
-import { Card, CardContent } from "@/styles/aria-nova/ui/card"
+import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
+import { Card, CardContent } from "@/styles/aria-force-ui/ui/card"
 
 export function CalendarMultiple() {
   return (

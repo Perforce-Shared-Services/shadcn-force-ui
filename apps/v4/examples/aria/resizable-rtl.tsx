@@ -10,7 +10,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/styles/aria-nova/ui-rtl/resizable"
+} from "@/styles/aria-force-ui/ui-rtl/resizable"
 
 const translations: Translations = {
   en: {

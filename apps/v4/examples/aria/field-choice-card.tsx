@@ -7,8 +7,8 @@ import {
   FieldLegend,
   FieldSet,
   FieldTitle,
-} from "@/styles/aria-nova/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/styles/aria-nova/ui/radio-group"
+} from "@/styles/aria-force-ui/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/styles/aria-force-ui/ui/radio-group"
 
 export default function FieldChoiceCard() {
   return (

@@ -1,5 +1,5 @@
 import { Markdown } from "@/components/markdown"
-import { Bubble, BubbleContent } from "@/styles/aria-rhea/ui/bubble"
+import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
 
 export function BubbleMarkdownDemo() {
   return (

@@ -4,8 +4,8 @@ import * as React from "react"
 import { toast } from "sonner"
 
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Badge } from "@/styles/aria-nova/ui/badge"
-import { Button } from "@/styles/aria-nova/ui/button"
+import { Badge } from "@/styles/aria-force-ui/ui/badge"
+import { Button } from "@/styles/aria-force-ui/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -15,15 +15,15 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/aria-nova/ui/drawer"
+} from "@/styles/aria-force-ui/ui/drawer"
 import {
   Field,
   FieldContent,
   FieldDescription,
   FieldLabel,
   FieldTitle,
-} from "@/styles/aria-nova/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/styles/aria-nova/ui/radio-group"
+} from "@/styles/aria-force-ui/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/styles/aria-force-ui/ui/radio-group"
 
 const deliveryTimes = [
   {

@@ -8,7 +8,7 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/styles/aria-nova/ui/breadcrumb"
+} from "@/styles/aria-force-ui/ui/breadcrumb"
 
 export function BreadcrumbSeparatorDemo() {
   return (

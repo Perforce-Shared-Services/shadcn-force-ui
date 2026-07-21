@@ -1,4 +1,4 @@
-import { Marker, MarkerContent } from "@/styles/aria-rhea/ui/marker"
+import { Marker, MarkerContent } from "@/styles/aria-force-ui/ui/marker"
 
 export function MarkerVariantsDemo() {
   return (

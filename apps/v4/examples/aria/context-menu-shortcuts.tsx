@@ -9,7 +9,7 @@ import {
   ContextMenuSeparator,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from "@/styles/aria-nova/ui/context-menu"
+} from "@/styles/aria-force-ui/ui/context-menu"
 
 export function ContextMenuShortcuts() {
   return (

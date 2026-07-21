@@ -2,8 +2,8 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-nova/ui/field"
-import { Textarea } from "@/styles/aria-nova/ui/textarea"
+} from "@/styles/aria-force-ui/ui/field"
+import { Textarea } from "@/styles/aria-force-ui/ui/textarea"
 
 export function TextareaInvalid() {
   return (

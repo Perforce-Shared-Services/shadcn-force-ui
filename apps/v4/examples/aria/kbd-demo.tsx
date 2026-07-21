@@ -1,4 +1,4 @@
-import { Kbd, KbdGroup } from "@/styles/aria-nova/ui/kbd"
+import { Kbd, KbdGroup } from "@/styles/aria-force-ui/ui/kbd"
 
 export default function KbdDemo() {
   return (

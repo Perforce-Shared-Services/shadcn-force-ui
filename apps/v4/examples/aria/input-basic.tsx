@@ -1,4 +1,4 @@
-import { Input } from "@/styles/aria-nova/ui/input"
+import { Input } from "@/styles/aria-force-ui/ui/input"
 
 export function InputBasic() {
   return <Input placeholder="Enter text" />
