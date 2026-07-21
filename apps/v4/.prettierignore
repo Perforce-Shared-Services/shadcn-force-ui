@@ -4,5 +4,6 @@ node_modules
 build
 .contentlayer
 registry/__index__.tsx
+registry/icons/__materialSymbols__.tsx
 content/docs/components/calendar.mdx
 registry/styles/**/*.css
