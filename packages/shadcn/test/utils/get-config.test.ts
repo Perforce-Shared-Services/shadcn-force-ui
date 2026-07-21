@@ -75,6 +75,13 @@ test("get project config from package imports", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 })
@@ -114,6 +121,13 @@ test("get project config from generic package import prefix", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 })
@@ -153,6 +167,13 @@ test("get project config from root package imports", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 })
@@ -194,6 +215,13 @@ test("get project config from partial package imports", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 })
@@ -256,6 +284,13 @@ test("get config", async () => {
     iconLibrary: "lucide",
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 
@@ -312,6 +347,13 @@ test("get config", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 
@@ -356,6 +398,13 @@ test("get config", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 
@@ -411,6 +460,13 @@ test("get config", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 
@@ -470,6 +526,13 @@ test("get config", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 
@@ -531,6 +594,13 @@ test("get config", async () => {
     },
     registries: {
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      // [FORCE-UI] built-in framework-port registries (see BUILTIN_REGISTRIES)
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-vue": "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
     },
   })
 })
