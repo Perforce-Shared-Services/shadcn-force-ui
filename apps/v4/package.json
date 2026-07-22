@@ -10,7 +10,7 @@
     "preview:dev:svelte": "pnpm exec turbo run dev --filter=preview-svelte",
     "preview:dev:ember": "pnpm exec turbo run dev --filter=preview-ember",
     "preview-server:build": "pnpm exec turbo run preview:build --filter=preview-vue --filter=preview-svelte --filter=preview-ember --concurrency=1 && rm -rf public/preview && mkdir -p public/preview/vue public/preview/svelte public/preview/ember && cp -r ../preview-vue/dist/. public/preview/vue/ && cp -r ../preview-svelte/dist/. public/preview/svelte/ && cp -r ../preview-ember/dist/. public/preview/ember/ && cp ../preview-router/index.html public/preview/index.html",
-    "build": "pnpm registry:build && pnpm preview-server:build && next build",
+    "build": "pnpm registry:build && pnpm preview-server:build && next build --webpack",
     "start": "next start --port 4000",
     "preview": "pnpm registry:build && pnpm preview-server:build && next build && next start --port 4000",
     "lint": "eslint . --cache --cache-location .eslintcache",
