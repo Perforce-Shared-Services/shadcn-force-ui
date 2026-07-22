@@ -13,12 +13,18 @@ if (
   )
 }
 
+const additionalSettings = {}
+
+if(process.env.BUILD_STANDALONE){
+    additionalSettings.output = "standalone";
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // [FORCE-UI] standalone output only for self-hosted/Docker builds (set
   // BUILD_STANDALONE=1 in the Dockerfile). Vercel doesn't set it, so it uses
   // the default `.next` output that Vercel's build system expects.
-  output: process.env.BUILD_STANDALONE ? "standalone" : undefined,
+  ...additionalSettings,
   devIndicators: false,
   typescript: {
     ignoreBuildErrors: true,
