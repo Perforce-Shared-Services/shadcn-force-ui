@@ -25,6 +25,15 @@ RUN apk add --no-cache curl bash \
 ENV PATH="/root/.bun/bin:${PATH}"
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Cap Node's heap so a runaway build (this monorepo builds the registry + three
+# framework preview apps + `next build`) fails gracefully instead of exhausting
+# host RAM and triggering the OOM killer — which can take down the whole build
+# host, not just the container. Tune to ~50-75% of the build host's RAM; the
+# 4096 default assumes a >=6-8GB build host. Override at build time with
+# --build-arg NODE_HEAP_MB=<mb> for smaller/larger hosts.
+ARG NODE_HEAP_MB=4096
+ENV NODE_OPTIONS=--max-old-space-size=${NODE_HEAP_MB}
+
 ARG NEXT_PUBLIC_APP_URL
 ARG NEXT_PUBLIC_V0_URL
 ENV NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL}
