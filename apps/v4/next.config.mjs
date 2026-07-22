@@ -15,7 +15,10 @@ if (
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone", // [FORCE-UI] for Docker deploys, see Dockerfile
+  // [FORCE-UI] standalone output only for self-hosted/Docker builds (set
+  // BUILD_STANDALONE=1 in the Dockerfile). Vercel doesn't set it, so it uses
+  // the default `.next` output that Vercel's build system expects.
+  output: process.env.BUILD_STANDALONE ? "standalone" : undefined,
   devIndicators: false,
   typescript: {
     ignoreBuildErrors: true,
