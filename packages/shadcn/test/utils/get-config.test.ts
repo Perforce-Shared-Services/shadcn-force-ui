@@ -74,6 +74,13 @@ test("get project config from package imports", async () => {
       utils: path.resolve(cwd, "src/lib/utils.ts"),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -113,6 +120,13 @@ test("get project config from generic package import prefix", async () => {
       utils: path.resolve(cwd, "src/lib/utils"),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -152,6 +166,13 @@ test("get project config from root package imports", async () => {
       utils: path.resolve(cwd, "src/lib/utils"),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -193,6 +214,13 @@ test("get project config from partial package imports", async () => {
       utils: path.resolve(cwd, "src/lib/utils"),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -255,6 +283,13 @@ test("get config", async () => {
     },
     iconLibrary: "lucide",
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -311,6 +346,13 @@ test("get config", async () => {
       ),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -355,6 +397,13 @@ test("get config", async () => {
       lib: path.resolve(__dirname, "../fixtures/config-jsx", "./lib"),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -410,6 +459,13 @@ test("get config", async () => {
       ),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -469,6 +525,13 @@ test("get config", async () => {
       ),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -530,6 +593,13 @@ test("get config", async () => {
       ),
     },
     registries: {
+      "@force-ui": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
+      "@force-ui-ember":
+        "https://ui.shadcn.com/r/styles/ember-{style}/{name}.json",
+      "@force-ui-svelte":
+        "https://ui.shadcn.com/r/styles/svelte-{style}/{name}.json",
+      "@force-ui-vue":
+        "https://ui.shadcn.com/r/styles/vue-{style}/{name}.json",
       "@shadcn": "https://ui.shadcn.com/r/styles/{style}/{name}.json",
     },
   })
@@ -647,8 +717,23 @@ describe("getBase", () => {
     expect(getBase("base-vega")).toBe("base")
   })
 
-  test("returns radix for undefined", () => {
-    expect(getBase(undefined)).toBe("radix")
+  test("returns aria for aria styles", () => {
+    expect(getBase("aria-nova")).toBe("aria")
+    expect(getBase("aria-vega")).toBe("aria")
+  })
+
+  test("returns base for undefined", () => {
+    expect(getBase(undefined)).toBe("base")
+  })
+
+  test("returns radix for legacy unprefixed styles", () => {
+    expect(getBase("new-york")).toBe("radix")
+    expect(getBase("new-york-v4")).toBe("radix")
+    expect(getBase("default")).toBe("radix")
+  })
+
+  test("returns radix for an empty string style", () => {
+    expect(getBase("")).toBe("radix")
   })
 })
 

@@ -24,6 +24,9 @@ RUN apk add --no-cache curl bash \
     && curl -fsSL https://bun.sh/install | bash
 ENV PATH="/root/.bun/bin:${PATH}"
 ENV NEXT_TELEMETRY_DISABLED=1
+# Opt into Next.js standalone output for this self-hosted image. next.config.mjs
+# only emits .next/standalone when this is set — Vercel builds leave it unset.
+ENV BUILD_STANDALONE=1
 
 # Cap Node's heap so a runaway build (this monorepo builds the registry + three
 # framework preview apps + `next build`) fails gracefully instead of exhausting

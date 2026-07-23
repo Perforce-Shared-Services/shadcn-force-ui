@@ -40,7 +40,7 @@ const UPSTREAM_STYLES = [
   "rhea",
 ]
 const STRIP = UPSTREAM_STYLES.filter((s) => !ALLOWLIST.has(s))
-const FRAMEWORK_BASES = ["radix", "base", "vue", "svelte", "ember"]
+const FRAMEWORK_BASES = ["radix", "base", "aria", "vue", "svelte", "ember"]
 
 const CHECK = process.argv.includes("--check")
 let dirty = false
@@ -203,7 +203,7 @@ function rewriteStyleImports(dir) {
       let after = before
       for (const style of STRIP) {
         after = after.replace(
-          new RegExp(`@/styles/(radix|base)-${style}/`, "g"),
+          new RegExp(`@/styles/(radix|base|aria)-${style}/`, "g"),
           `@/styles/$1-${REWRITE_TARGET}/`
         )
       }

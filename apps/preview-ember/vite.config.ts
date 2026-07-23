@@ -32,6 +32,13 @@ export default defineConfig({
   base: "/preview/ember/",
   build: {
     assetsDir: "_assets",
+    // Keep peak memory down so this build fits the Vercel build container
+    // alongside the other preview builds and `next build`.
+    sourcemap: false,
+    reportCompressedSize: false,
+    rollupOptions: {
+      maxParallelFileOps: 4,
+    },
   },
   plugins: [...emberPlugins(stubsDir), tailwindcss()],
   optimizeDeps: {

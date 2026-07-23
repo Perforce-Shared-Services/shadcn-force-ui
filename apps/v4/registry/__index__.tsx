@@ -1354,9 +1354,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/accordion",
+          docs: "https://ui.shadcn.com/docs/components/base/accordion",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/accordion-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
           api: "https://base-ui.com/react/components/accordion.md",
         },
       },
@@ -1377,9 +1377,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/alert",
+          docs: "https://ui.shadcn.com/docs/components/base/alert",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/alert-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
         },
       },
     },
@@ -1399,9 +1399,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/alert-dialog",
+          docs: "https://ui.shadcn.com/docs/components/base/alert-dialog",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
           api: "https://base-ui.com/react/components/alert-dialog.md",
         },
       },
@@ -1422,9 +1422,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/aspect-ratio",
+          docs: "https://ui.shadcn.com/docs/components/base/aspect-ratio",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
         },
       },
     },
@@ -1444,9 +1444,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/avatar",
+          docs: "https://ui.shadcn.com/docs/components/base/avatar",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/avatar-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
           api: "https://base-ui.com/react/components/avatar.md",
         },
       },
@@ -1467,9 +1467,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/badge",
+          docs: "https://ui.shadcn.com/docs/components/base/badge",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/badge-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
         },
       },
     },
@@ -1489,9 +1489,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/breadcrumb",
+          docs: "https://ui.shadcn.com/docs/components/base/breadcrumb",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
         },
       },
     },
@@ -1511,9 +1511,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/button",
+          docs: "https://ui.shadcn.com/docs/components/base/button",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/button-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-example.tsx",
         },
       },
     },
@@ -1533,9 +1533,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/button-group",
+          docs: "https://ui.shadcn.com/docs/components/base/button-group",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/button-group-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
         },
       },
     },
@@ -1555,9 +1555,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/calendar",
+          docs: "https://ui.shadcn.com/docs/components/base/calendar",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/calendar-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
           api: "https://react-day-picker.js.org",
         },
       },
@@ -1578,9 +1578,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/card",
+          docs: "https://ui.shadcn.com/docs/components/base/card",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/card-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/card-example.tsx",
         },
       },
     },
@@ -1600,9 +1600,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/carousel",
+          docs: "https://ui.shadcn.com/docs/components/base/carousel",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/carousel-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
           api: "https://www.embla-carousel.com/get-started/react",
         },
       },
@@ -1623,9 +1623,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/chart",
+          docs: "https://ui.shadcn.com/docs/components/base/chart",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/chart-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
         },
       },
     },
@@ -1645,9 +1645,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/checkbox",
+          docs: "https://ui.shadcn.com/docs/components/base/checkbox",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
           api: "https://base-ui.com/react/components/checkbox.md",
         },
       },
@@ -1668,9 +1668,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/collapsible",
+          docs: "https://ui.shadcn.com/docs/components/base/collapsible",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
           api: "https://base-ui.com/react/components/collapsible.md",
         },
       },
@@ -1691,9 +1691,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/combobox",
+          docs: "https://ui.shadcn.com/docs/components/base/combobox",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/combobox-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
           api: "https://base-ui.com/react/components/combobox.md",
         },
       },
@@ -1714,9 +1714,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/command",
+          docs: "https://ui.shadcn.com/docs/components/base/command",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/command-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/command-example.tsx",
           api: "https://github.com/dip/cmdk",
         },
       },
@@ -1737,9 +1737,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/context-menu",
+          docs: "https://ui.shadcn.com/docs/components/base/context-menu",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
           api: "https://base-ui.com/react/components/context-menu.md",
         },
       },
@@ -1760,9 +1760,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/dialog",
+          docs: "https://ui.shadcn.com/docs/components/base/dialog",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/dialog-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
           api: "https://base-ui.com/react/components/dialog.md",
         },
       },
@@ -1783,10 +1783,10 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/drawer",
+          docs: "https://ui.shadcn.com/docs/components/base/drawer",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://vaul.emilkowal.ski/getting-started",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
+          api: "https://base-ui.com/react/components/drawer.md",
         },
       },
     },
@@ -1806,9 +1806,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/dropdown-menu",
+          docs: "https://ui.shadcn.com/docs/components/base/dropdown-menu",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
           api: "https://base-ui.com/react/components/menu.md",
         },
       },
@@ -1829,9 +1829,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/empty",
+          docs: "https://ui.shadcn.com/docs/components/base/empty",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/empty-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
         },
       },
     },
@@ -1851,9 +1851,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/field",
+          docs: "https://ui.shadcn.com/docs/components/base/field",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/field-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/field-example.tsx",
         },
       },
     },
@@ -1873,9 +1873,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/hover-card",
+          docs: "https://ui.shadcn.com/docs/components/base/hover-card",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
           api: "https://base-ui.com/react/components/hover-card.md",
         },
       },
@@ -1896,9 +1896,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/input",
+          docs: "https://ui.shadcn.com/docs/components/base/input",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/input-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-example.tsx",
         },
       },
     },
@@ -1918,9 +1918,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/input-group",
+          docs: "https://ui.shadcn.com/docs/components/base/input-group",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/input-group-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
         },
       },
     },
@@ -1940,9 +1940,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/input-otp",
+          docs: "https://ui.shadcn.com/docs/components/base/input-otp",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
           api: "https://input-otp.rodz.dev",
         },
       },
@@ -1963,9 +1963,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/item",
+          docs: "https://ui.shadcn.com/docs/components/base/item",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/item-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/item-example.tsx",
         },
       },
     },
@@ -1985,9 +1985,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/label",
+          docs: "https://ui.shadcn.com/docs/components/base/label",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/label-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/label-example.tsx",
           api: "https://base-ui.com/react/components/label.md",
         },
       },
@@ -2008,9 +2008,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/menubar",
+          docs: "https://ui.shadcn.com/docs/components/base/menubar",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/menubar-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
           api: "https://base-ui.com/react/components/menubar.md",
         },
       },
@@ -2031,9 +2031,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/navigation-menu",
+          docs: "https://ui.shadcn.com/docs/components/base/navigation-menu",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
           api: "https://base-ui.com/react/components/navigation-menu.md",
         },
       },
@@ -2054,9 +2054,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/pagination",
+          docs: "https://ui.shadcn.com/docs/components/base/pagination",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/pagination-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
         },
       },
     },
@@ -2076,9 +2076,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/popover",
+          docs: "https://ui.shadcn.com/docs/components/base/popover",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/popover-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
           api: "https://base-ui.com/react/components/popover.md",
         },
       },
@@ -2099,9 +2099,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/progress",
+          docs: "https://ui.shadcn.com/docs/components/base/progress",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/progress-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
           api: "https://base-ui.com/react/components/progress.md",
         },
       },
@@ -2122,9 +2122,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/radio-group",
+          docs: "https://ui.shadcn.com/docs/components/base/radio-group",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
           api: "https://base-ui.com/react/components/radio-group.md",
         },
       },
@@ -2145,9 +2145,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/resizable",
+          docs: "https://ui.shadcn.com/docs/components/base/resizable",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/resizable-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
           api: "https://github.com/bvaughn/react-resizable-panels",
         },
       },
@@ -2168,9 +2168,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/scroll-area",
+          docs: "https://ui.shadcn.com/docs/components/base/scroll-area",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
           api: "https://base-ui.com/react/components/scroll-area.md",
         },
       },
@@ -2191,9 +2191,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/select",
+          docs: "https://ui.shadcn.com/docs/components/base/select",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/select-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/select-example.tsx",
           api: "https://base-ui.com/react/components/select.md",
         },
       },
@@ -2214,9 +2214,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/separator",
+          docs: "https://ui.shadcn.com/docs/components/base/separator",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/separator-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
           api: "https://base-ui.com/react/components/separator.md",
         },
       },
@@ -2237,9 +2237,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/sheet",
+          docs: "https://ui.shadcn.com/docs/components/base/sheet",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/sheet-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
           api: "https://base-ui.com/react/components/dialog.md",
         },
       },
@@ -2268,9 +2268,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/sidebar",
+          docs: "https://ui.shadcn.com/docs/components/base/sidebar",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
         },
       },
     },
@@ -2290,9 +2290,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/skeleton",
+          docs: "https://ui.shadcn.com/docs/components/base/skeleton",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
         },
       },
     },
@@ -2312,9 +2312,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/slider",
+          docs: "https://ui.shadcn.com/docs/components/base/slider",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/slider-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
           api: "https://base-ui.com/react/components/slider.md",
         },
       },
@@ -2335,9 +2335,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/sonner",
+          docs: "https://ui.shadcn.com/docs/components/base/sonner",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/sonner-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
           api: "https://sonner.emilkowal.ski",
         },
       },
@@ -2358,9 +2358,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/spinner",
+          docs: "https://ui.shadcn.com/docs/components/base/spinner",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/spinner-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
         },
       },
     },
@@ -2380,9 +2380,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/switch",
+          docs: "https://ui.shadcn.com/docs/components/base/switch",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/switch-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
           api: "https://base-ui.com/react/components/switch.md",
         },
       },
@@ -2403,9 +2403,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/table",
+          docs: "https://ui.shadcn.com/docs/components/base/table",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/table-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/table-example.tsx",
         },
       },
     },
@@ -2425,9 +2425,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/tabs",
+          docs: "https://ui.shadcn.com/docs/components/base/tabs",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/tabs-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
           api: "https://base-ui.com/react/components/tabs.md",
         },
       },
@@ -2448,9 +2448,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/textarea",
+          docs: "https://ui.shadcn.com/docs/components/base/textarea",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/textarea-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
         },
       },
     },
@@ -2470,9 +2470,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/toggle",
+          docs: "https://ui.shadcn.com/docs/components/base/toggle",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/toggle-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
           api: "https://base-ui.com/react/components/toggle.md",
         },
       },
@@ -2493,9 +2493,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/toggle-group",
+          docs: "https://ui.shadcn.com/docs/components/base/toggle-group",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
           api: "https://base-ui.com/react/components/toggle-group.md",
         },
       },
@@ -2516,9 +2516,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/tooltip",
+          docs: "https://ui.shadcn.com/docs/components/base/tooltip",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
           api: "https://base-ui.com/react/components/tooltip.md",
         },
       },
@@ -2539,9 +2539,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/kbd",
+          docs: "https://ui.shadcn.com/docs/components/base/kbd",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/kbd-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
         },
       },
     },
@@ -2561,9 +2561,9 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/native-select",
+          docs: "https://ui.shadcn.com/docs/components/base/native-select",
           examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/native-select-example.tsx",
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
         },
       },
     },
@@ -2583,7 +2583,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/base/direction",
+          docs: "https://ui.shadcn.com/docs/components/base/direction",
           api: "https://base-ui.com/react/utils/direction-provider.md",
         },
       },
@@ -2667,6 +2667,1304 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: undefined,
+    },
+  },
+  "aria-force-ui": {
+    accordion: {
+      name: "accordion",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/accordion.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/accordion",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/accordion-example.tsx",
+          api: "https://react-aria.adobe.com/DisclosureGroup#api",
+        },
+      },
+    },
+    alert: {
+      name: "alert",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/alert.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/alert",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-example.tsx",
+        },
+      },
+    },
+    "alert-dialog": {
+      name: "alert-dialog",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/alert-dialog.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/alert-dialog",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-dialog-example.tsx",
+          api: "https://react-aria.adobe.com/Modal#api",
+        },
+      },
+    },
+    "aspect-ratio": {
+      name: "aspect-ratio",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/aspect-ratio.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/aspect-ratio",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/aspect-ratio-example.tsx",
+        },
+      },
+    },
+    avatar: {
+      name: "avatar",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/avatar.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/avatar",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/avatar-example.tsx",
+        },
+      },
+    },
+    badge: {
+      name: "badge",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/badge.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/badge",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/badge-example.tsx",
+        },
+      },
+    },
+    breadcrumb: {
+      name: "breadcrumb",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/breadcrumb.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/breadcrumb",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/breadcrumb-example.tsx",
+          api: "https://react-aria.adobe.com/Breadcrumbs#api",
+        },
+      },
+    },
+    button: {
+      name: "button",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/button.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/button",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-example.tsx",
+          api: "https://react-aria.adobe.com/Button#api",
+        },
+      },
+    },
+    "button-group": {
+      name: "button-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["separator"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/button-group.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/button-group",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-group-example.tsx",
+        },
+      },
+    },
+    calendar: {
+      name: "calendar",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "select"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/calendar.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/calendar",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/calendar-example.tsx",
+          api: "https://react-aria.adobe.com/Calendar#api",
+        },
+      },
+    },
+    card: {
+      name: "card",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/card.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/card",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/card-example.tsx",
+        },
+      },
+    },
+    carousel: {
+      name: "carousel",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/carousel.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/carousel",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/carousel-example.tsx",
+          api: "https://www.embla-carousel.com/docs/api",
+        },
+      },
+    },
+    chart: {
+      name: "chart",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["card"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/chart.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/chart",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/chart-example.tsx",
+        },
+      },
+    },
+    checkbox: {
+      name: "checkbox",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/checkbox.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/checkbox",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/checkbox-example.tsx",
+          api: "https://react-aria.adobe.com/Checkbox#api",
+        },
+      },
+    },
+    collapsible: {
+      name: "collapsible",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/collapsible.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/collapsible",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/collapsible-example.tsx",
+          api: "https://react-aria.adobe.com/Disclosure#api",
+        },
+      },
+    },
+    combobox: {
+      name: "combobox",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/combobox.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/combobox",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/combobox-example.tsx",
+          api: "https://react-aria.adobe.com/ComboBox#api",
+        },
+      },
+    },
+    command: {
+      name: "command",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["dialog", "input-group"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/command.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/command",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/command-example.tsx",
+          api: "https://react-aria.adobe.com/Autocomplete#api",
+        },
+      },
+    },
+    "context-menu": {
+      name: "context-menu",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/context-menu.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/context-menu",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/context-menu-example.tsx",
+          api: "https://react-aria.adobe.com/Menu#api",
+        },
+      },
+    },
+    dialog: {
+      name: "dialog",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/dialog.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/dialog",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dialog-example.tsx",
+          api: "https://react-aria.adobe.com/Modal#api",
+        },
+      },
+    },
+    drawer: {
+      name: "drawer",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/drawer.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/drawer",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/drawer-example.tsx",
+          api: "https://base-ui.com/react/components/drawer.md",
+        },
+      },
+    },
+    "dropdown-menu": {
+      name: "dropdown-menu",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/dropdown-menu.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/dropdown-menu",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dropdown-menu-example.tsx",
+          api: "https://react-aria.adobe.com/Menu#api",
+        },
+      },
+    },
+    empty: {
+      name: "empty",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/empty.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/empty",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/empty-example.tsx",
+        },
+      },
+    },
+    field: {
+      name: "field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["label", "separator"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/field-example.tsx",
+        },
+      },
+    },
+    input: {
+      name: "input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/input.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/input",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-example.tsx",
+          api: "https://react-aria.adobe.com/TextField#api",
+        },
+      },
+    },
+    "input-group": {
+      name: "input-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input", "textarea"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/input-group.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/input-group",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-group-example.tsx",
+          api: "https://react-aria.adobe.com/Group#api",
+        },
+      },
+    },
+    "input-otp": {
+      name: "input-otp",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/input-otp.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/input-otp",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-otp-example.tsx",
+          api: "https://input-otp.rodz.dev",
+        },
+      },
+    },
+    item: {
+      name: "item",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["separator"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/item.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/item",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/item-example.tsx",
+          api: "https://react-aria.adobe.com/Link#api",
+        },
+      },
+    },
+    label: {
+      name: "label",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/label.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/label",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/label-example.tsx",
+          api: "https://react-aria.adobe.com/TextField#api",
+        },
+      },
+    },
+    pagination: {
+      name: "pagination",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/pagination.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/pagination",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    popover: {
+      name: "popover",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/popover.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/popover",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/popover-example.tsx",
+          api: "https://react-aria.adobe.com/Popover#api",
+        },
+      },
+    },
+    progress: {
+      name: "progress",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/progress.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/progress",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/progress-example.tsx",
+          api: "https://react-aria.adobe.com/ProgressBar#api",
+        },
+      },
+    },
+    "radio-group": {
+      name: "radio-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/radio-group.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/radio-group",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/radio-group-example.tsx",
+          api: "https://react-aria.adobe.com/RadioGroup#api",
+        },
+      },
+    },
+    resizable: {
+      name: "resizable",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/resizable.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/resizable",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/resizable-example.tsx",
+          api: "https://github.com/bvaughn/react-resizable-panels",
+        },
+      },
+    },
+    "scroll-area": {
+      name: "scroll-area",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/scroll-area.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/scroll-area",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/scroll-area-example.tsx",
+        },
+      },
+    },
+    select: {
+      name: "select",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/select.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/select",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/select-example.tsx",
+          api: "https://react-aria.adobe.com/Select#api",
+        },
+      },
+    },
+    separator: {
+      name: "separator",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/separator.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/separator",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/separator-example.tsx",
+          api: "https://react-aria.adobe.com/Separator#api",
+        },
+      },
+    },
+    sheet: {
+      name: "sheet",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/sheet.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/sheet",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sheet-example.tsx",
+          api: "https://react-aria.adobe.com/Modal#api",
+        },
+      },
+    },
+    sidebar: {
+      name: "sidebar",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: [
+        "button",
+        "input",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tooltip",
+        "use-mobile",
+      ],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/sidebar.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/sidebar",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sidebar-example.tsx",
+        },
+      },
+    },
+    skeleton: {
+      name: "skeleton",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/skeleton.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/skeleton",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/skeleton-example.tsx",
+        },
+      },
+    },
+    slider: {
+      name: "slider",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/slider.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/slider",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/slider-example.tsx",
+          api: "https://react-aria.adobe.com/Slider#api",
+        },
+      },
+    },
+    sonner: {
+      name: "sonner",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/sonner.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/sonner",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sonner-example.tsx",
+          api: "https://sonner.emilkowal.ski",
+        },
+      },
+    },
+    spinner: {
+      name: "spinner",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/spinner.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/spinner",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/spinner-example.tsx",
+        },
+      },
+    },
+    switch: {
+      name: "switch",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/switch.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/switch",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/switch-example.tsx",
+          api: "https://react-aria.adobe.com/Switch#api",
+        },
+      },
+    },
+    table: {
+      name: "table",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/table.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/table",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/table-example.tsx",
+          api: "https://react-aria.adobe.com/Table#api",
+        },
+      },
+    },
+    tabs: {
+      name: "tabs",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/tabs.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/tabs",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tabs-example.tsx",
+          api: "https://react-aria.adobe.com/Tabs#api",
+        },
+      },
+    },
+    textarea: {
+      name: "textarea",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/textarea.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/textarea",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/textarea-example.tsx",
+          api: "https://react-aria.adobe.com/TextField#api",
+        },
+      },
+    },
+    toggle: {
+      name: "toggle",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/toggle.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/toggle",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-example.tsx",
+          api: "https://react-aria.adobe.com/ToggleButton#api",
+        },
+      },
+    },
+    "toggle-group": {
+      name: "toggle-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["toggle"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/toggle-group.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/toggle-group",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-group-example.tsx",
+          api: "https://react-aria.adobe.com/ToggleButtonGroup#api",
+        },
+      },
+    },
+    tooltip: {
+      name: "tooltip",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/tooltip.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/tooltip",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tooltip-example.tsx",
+          api: "https://react-aria.adobe.com/Tooltip#api",
+        },
+      },
+    },
+    kbd: {
+      name: "kbd",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/kbd.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/kbd",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/kbd-example.tsx",
+        },
+      },
+    },
+    "native-select": {
+      name: "native-select",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/native-select.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/native-select",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/native-select-example.tsx",
+        },
+      },
+    },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/direction.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/direction",
+          api: "https://react-aria.adobe.com/I18nProvider#api",
+        },
+      },
+    },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/attachment.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/attachment",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/attachment-example.tsx",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/bubble.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/bubble",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/bubble-example.tsx",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/message-scroller.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/message-scroller",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-scroller-example.tsx",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/marker.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/marker",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/marker-example.tsx",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/aria-force-ui/ui/message.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/message",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-example.tsx",
+        },
+      },
     },
   },
   "vue-force-ui": {

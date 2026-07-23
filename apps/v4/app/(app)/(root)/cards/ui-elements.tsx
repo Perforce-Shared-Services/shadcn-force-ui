@@ -120,7 +120,7 @@ export function UIElements() {
               </span>
               <span className="style-sera:md:flex flex md:hidden">Dialog</span>
             </AlertDialogTrigger>
-            <AlertDialogContent size="sm" className="theme-blue">
+            <AlertDialogContent size="sm" className="theme-neutral">
               <AlertDialogHeader>
                 <AlertDialogTitle>Allow accessory to connect?</AlertDialogTitle>
                 <AlertDialogDescription>
