@@ -6,7 +6,7 @@ import { createMDX } from "fumadocs-mdx/next"
 // Fail fast with instructions instead of a wall of module-not-found errors.
 if (
   process.env.NODE_ENV === "development" &&
-  !existsSync(path.join(process.cwd(), "styles/base-nova/ui"))
+  !existsSync(path.join(process.cwd(), "styles/base-force-ui/ui")) // [FORCE-UI]
 ) {
   throw new Error(
     "Generated styles are missing. Run `pnpm --filter=v4 registry:build --style all` once, then restart the dev server."
