@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm registry:build && pnpm icons:dev & pnpm preview:dev & next dev --turbopack --port 4000",
+    "dev": "pnpm registry:build:dev && (pnpm icons:dev & pnpm preview:dev & next dev --turbopack --port 4000)",
     "preview:dev": "pnpm exec turbo run dev --filter=preview-vue --filter=preview-svelte --filter=preview-ember --parallel",
     "preview:dev:vue": "pnpm exec turbo run dev --filter=preview-vue",
     "preview:dev:svelte": "pnpm exec turbo run dev --filter=preview-svelte",
@@ -23,6 +23,7 @@
     "icons:material-map": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-material-symbols-map.ts",
     "icons:material-map:check": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-material-symbols-map.ts --check",
     "registry:build": "pnpm --filter=@shadcn/react build && pnpm --filter=@shadcn/helpers build && pnpm --filter=shadcn build && pnpm exec tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-icons.ts && bun run ./scripts/build-registry.mts",
+    "registry:build:dev": "pnpm --filter=@shadcn/react build && pnpm --filter=@shadcn/helpers build && pnpm --filter=shadcn build && pnpm exec tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-icons.ts && bun run ./scripts/build-registry.mts --indexes --examples --style all",
     "registry:capture": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/capture-registry.mts",
     "explore:capture": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/capture-explore.mts",
     "validate:registries": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/validate-registries.mts",
