@@ -19,14 +19,14 @@ import {
   type BaseName,
   type DesignSystemConfig,
 } from "@/registry/config"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogFooter,
   DialogHeader,
   DialogTrigger,
-} from "@/styles/base-force-ui/ui/dialog"
+} from "@/registry/bases/base/ui/dialog"
 import {
   Field,
   FieldContent,
@@ -37,19 +37,19 @@ import {
   FieldSeparator,
   FieldSet,
   FieldTitle,
-} from "@/styles/base-force-ui/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/styles/base-force-ui/ui/radio-group"
-import { Switch } from "@/styles/base-force-ui/ui/switch"
+} from "@/registry/bases/base/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/registry/bases/base/ui/radio-group"
+import { Switch } from "@/registry/bases/base/ui/switch"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/tabs"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/base-force-ui/ui/toggle-group"
+} from "@/registry/bases/base/ui/toggle-group"
 import { usePresetCode } from "@/app/(app)/(create)/hooks/use-design-system"
 import {
   useDesignSystemSearchParams,

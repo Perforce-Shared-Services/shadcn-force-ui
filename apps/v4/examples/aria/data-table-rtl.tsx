@@ -38,7 +38,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/styles/aria-force-ui/ui-rtl/table"
-import { buttonVariants } from "@/styles/aria-force-ui/ui/button"
+import { buttonVariants } from "@/registry/bases/aria/ui/button"
 
 const translations: Translations = {
   en: {

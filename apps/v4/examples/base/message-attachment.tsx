@@ -10,9 +10,9 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/base-force-ui/ui/attachment"
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
-import { Message, MessageContent } from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/attachment"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
+import { Message, MessageContent } from "@/registry/bases/base/ui/message"
 
 export function MessageAttachmentDemo() {
   return (

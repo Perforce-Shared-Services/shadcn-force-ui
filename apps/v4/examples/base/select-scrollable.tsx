@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
+} from "@/registry/bases/base/ui/select"
 
 const northAmerica = [
   { label: "Eastern Standard Time", value: "est" },

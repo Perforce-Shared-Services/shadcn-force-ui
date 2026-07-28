@@ -1,10 +1,10 @@
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
 import {
   Message,
   MessageContent,
   MessageFooter,
   MessageHeader,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 
 export function MessageHeaderFooterDemo() {
   return (

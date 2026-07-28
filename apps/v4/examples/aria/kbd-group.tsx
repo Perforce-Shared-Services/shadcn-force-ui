@@ -1,4 +1,4 @@
-import { Kbd, KbdGroup } from "@/styles/aria-force-ui/ui/kbd"
+import { Kbd, KbdGroup } from "@/registry/bases/aria/ui/kbd"
 
 export default function KbdGroupExample() {
   return (

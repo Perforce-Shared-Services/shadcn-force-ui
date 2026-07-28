@@ -3,7 +3,7 @@ import {
   Bubble,
   BubbleContent,
   BubbleReactions,
-} from "@/styles/radix-force-ui/ui/bubble"
+} from "@/registry/bases/radix/ui/bubble"
 
 export function BubbleVariantsDemo() {
   return (

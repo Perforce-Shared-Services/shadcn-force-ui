@@ -18,7 +18,7 @@ import {
   SidebarMenuItem,
   SidebarMenuSkeleton,
   SidebarProvider,
-} from "@/styles/aria-force-ui/ui/sidebar"
+} from "@/registry/bases/aria/ui/sidebar"
 
 const projects = [
   {

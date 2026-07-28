@@ -7,11 +7,11 @@ import {
   FieldLegend,
   FieldSet,
   FieldTitle,
-} from "@/styles/radix-force-ui/ui/field"
+} from "@/registry/bases/radix/ui/field"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/radix-force-ui/ui/radio-group"
+} from "@/registry/bases/radix/ui/radio-group"
 
 export default function FieldChoiceCard() {
   return (

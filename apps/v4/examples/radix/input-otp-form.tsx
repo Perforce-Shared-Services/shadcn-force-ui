@@ -1,6 +1,6 @@
 import { RefreshCwIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardContent,
@@ -8,18 +8,18 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
+} from "@/registry/bases/radix/ui/card"
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/radix-force-ui/ui/field"
+} from "@/registry/bases/radix/ui/field"
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/styles/radix-force-ui/ui/input-otp"
+} from "@/registry/bases/radix/ui/input-otp"
 
 export function InputOTPForm() {
   return (

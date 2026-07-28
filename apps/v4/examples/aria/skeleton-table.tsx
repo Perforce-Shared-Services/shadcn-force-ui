@@ -1,4 +1,4 @@
-import { Skeleton } from "@/styles/aria-force-ui/ui/skeleton"
+import { Skeleton } from "@/registry/bases/aria/ui/skeleton"
 
 export function SkeletonTable() {
   return (

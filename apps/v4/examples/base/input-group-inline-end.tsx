@@ -4,12 +4,12 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 
 export function InputGroupInlineEnd() {
   return (

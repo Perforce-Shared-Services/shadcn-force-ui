@@ -5,7 +5,7 @@ import { Menu09Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
 import { cn } from "@/lib/utils"
-import { type Button } from "@/styles/base-force-ui/ui/button"
+import { type Button } from "@/registry/bases/base/ui/button"
 import {
   Picker,
   PickerContent,

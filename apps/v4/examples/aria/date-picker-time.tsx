@@ -4,11 +4,11 @@ import * as React from "react"
 import { getLocalTimeZone, type CalendarDate } from "@internationalized/date"
 import { ChevronDownIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
-import { Field, FieldGroup, FieldLabel } from "@/styles/aria-force-ui/ui/field"
-import { Input } from "@/styles/aria-force-ui/ui/input"
-import { Popover, PopoverTrigger } from "@/styles/aria-force-ui/ui/popover"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Calendar } from "@/registry/bases/aria/ui/calendar"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/aria/ui/field"
+import { Input } from "@/registry/bases/aria/ui/input"
+import { Popover, PopoverTrigger } from "@/registry/bases/aria/ui/popover"
 
 export function DatePickerTime() {
   const [open, setOpen] = React.useState(false)

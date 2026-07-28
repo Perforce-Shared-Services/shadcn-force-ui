@@ -4,7 +4,7 @@ import {
   AvatarGroup,
   AvatarGroupCount,
   AvatarImage,
-} from "@/styles/base-force-ui/ui/avatar"
+} from "@/registry/bases/base/ui/avatar"
 
 export function AvatarGroupCountExample() {
   return (

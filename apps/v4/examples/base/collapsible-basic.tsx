@@ -1,11 +1,11 @@
 import { ChevronDownIcon } from "@/registry/icons/__lucide__"
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Card, CardContent } from "@/styles/base-force-ui/ui/card"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Card, CardContent } from "@/registry/bases/base/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/base-force-ui/ui/collapsible"
+} from "@/registry/bases/base/ui/collapsible"
 
 export function CollapsibleBasic() {
   return (

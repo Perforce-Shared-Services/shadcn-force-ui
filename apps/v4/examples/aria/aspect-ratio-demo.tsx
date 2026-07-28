@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { AspectRatio } from "@/styles/aria-force-ui/ui/aspect-ratio"
+import { AspectRatio } from "@/registry/bases/aria/ui/aspect-ratio"
 
 export default function AspectRatioDemo() {
   return (

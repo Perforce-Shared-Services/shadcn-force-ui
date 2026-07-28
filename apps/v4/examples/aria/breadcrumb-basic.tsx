@@ -4,7 +4,7 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/styles/aria-force-ui/ui/breadcrumb"
+} from "@/registry/bases/aria/ui/breadcrumb"
 
 export function BreadcrumbBasic() {
   return (

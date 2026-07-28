@@ -3,7 +3,7 @@ import {
   AvatarFallback,
   AvatarGroup,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
+} from "@/registry/bases/aria/ui/avatar"
 
 export function AvatarGroupExample() {
   return (

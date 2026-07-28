@@ -1,11 +1,11 @@
-import { Checkbox } from "@/styles/aria-force-ui/ui/checkbox"
+import { Checkbox } from "@/registry/bases/aria/ui/checkbox"
 import {
   Field,
   FieldContent,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/aria-force-ui/ui/field"
+} from "@/registry/bases/aria/ui/field"
 
 export function CheckboxDescription() {
   return (

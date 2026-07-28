@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -10,7 +10,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/aria-force-ui/ui/drawer"
+} from "@/registry/bases/aria/ui/drawer"
 
 export function DrawerSwipeHandle() {
   return (

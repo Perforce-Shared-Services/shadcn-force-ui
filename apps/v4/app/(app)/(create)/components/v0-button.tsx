@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { useMounted } from "@/hooks/use-mounted"
 import { Icons } from "@/components/icons"
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Skeleton } from "@/styles/base-force-ui/ui/skeleton"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Skeleton } from "@/registry/bases/base/ui/skeleton"
 import { useDesignSystemSearchParams } from "@/app/(app)/(create)/lib/search-params"
 
 export function V0Button({ className }: { className?: string }) {

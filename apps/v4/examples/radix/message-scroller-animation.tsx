@@ -14,7 +14,7 @@ import {
   type MessageAnimationId,
 } from "@/lib/message-animations"
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardAction,
@@ -23,21 +23,21 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
+} from "@/registry/bases/radix/ui/card"
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/radix-force-ui/ui/empty"
+} from "@/registry/bases/radix/ui/empty"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/radix-force-ui/ui/message-scroller"
+} from "@/registry/bases/radix/ui/message-scroller"
 import {
   Select,
   SelectContent,
@@ -45,7 +45,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/radix-force-ui/ui/select"
+} from "@/registry/bases/radix/ui/select"
 
 const chat = createChat()
   .user("Can user messages pop in like iMessage without breaking anchoring?")

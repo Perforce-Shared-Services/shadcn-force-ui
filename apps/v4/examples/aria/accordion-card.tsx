@@ -3,14 +3,14 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/styles/aria-force-ui/ui/accordion"
+} from "@/registry/bases/aria/ui/accordion"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
+} from "@/registry/bases/aria/ui/card"
 
 const items = [
   {

@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
+} from "@/registry/bases/aria/ui/avatar"
 
 export function AvatarSizeExample() {
   return (

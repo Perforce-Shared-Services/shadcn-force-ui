@@ -1,6 +1,6 @@
 import { IconCloud } from "@tabler/icons-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -8,7 +8,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/aria-force-ui/ui/empty"
+} from "@/registry/bases/aria/ui/empty"
 
 export default function EmptyOutline() {
   return (

@@ -2,7 +2,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/styles/base-force-ui/ui/resizable"
+} from "@/registry/bases/base/ui/resizable"
 
 export default function ResizableDemo() {
   return (

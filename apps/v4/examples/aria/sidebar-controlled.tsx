@@ -11,7 +11,7 @@ import {
   SendIcon,
 } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Sidebar,
   SidebarContent,
@@ -23,7 +23,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/aria-force-ui/ui/sidebar"
+} from "@/registry/bases/aria/ui/sidebar"
 
 const projects = [
   {

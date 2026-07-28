@@ -1,4 +1,4 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Field,
   FieldContent,
@@ -7,8 +7,8 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-} from "@/styles/radix-force-ui/ui/field"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+} from "@/registry/bases/radix/ui/field"
+import { Input } from "@/registry/bases/radix/ui/input"
 
 export function FieldResponsive() {
   return (

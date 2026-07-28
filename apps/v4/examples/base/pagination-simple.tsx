@@ -3,7 +3,7 @@ import {
   PaginationContent,
   PaginationItem,
   PaginationLink,
-} from "@/styles/base-force-ui/ui/pagination"
+} from "@/registry/bases/base/ui/pagination"
 
 export function PaginationSimple() {
   return (

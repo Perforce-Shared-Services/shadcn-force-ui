@@ -3,12 +3,12 @@
 import * as React from "react"
 import { ChevronsUpDown } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/base-force-ui/ui/collapsible"
+} from "@/registry/bases/base/ui/collapsible"
 
 export default function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false)

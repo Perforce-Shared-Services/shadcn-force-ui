@@ -4,8 +4,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/base-force-ui/ui/avatar"
-import { Button } from "@/styles/base-force-ui/ui/button"
+} from "@/registry/bases/base/ui/avatar"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 
 export function AvatarDropdown() {
   return (

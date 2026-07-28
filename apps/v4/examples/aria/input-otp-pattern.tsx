@@ -2,12 +2,12 @@
 
 import { REGEXP_ONLY_DIGITS } from "input-otp"
 
-import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
+import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from "@/styles/aria-force-ui/ui/input-otp"
+} from "@/registry/bases/aria/ui/input-otp"
 
 export function InputOTPPattern() {
   return (

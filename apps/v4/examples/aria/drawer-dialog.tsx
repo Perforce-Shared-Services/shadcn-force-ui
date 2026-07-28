@@ -4,14 +4,14 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Dialog,
   DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/aria-force-ui/ui/dialog"
+} from "@/registry/bases/aria/ui/dialog"
 import {
   Drawer,
   DrawerClose,
@@ -21,9 +21,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/aria-force-ui/ui/drawer"
-import { Input } from "@/styles/aria-force-ui/ui/input"
-import { Label } from "@/styles/aria-force-ui/ui/label"
+} from "@/registry/bases/aria/ui/drawer"
+import { Input } from "@/registry/bases/aria/ui/input"
+import { Label } from "@/registry/bases/aria/ui/label"
 
 export function DrawerDialogDemo() {
   const [open, setOpen] = React.useState(false)

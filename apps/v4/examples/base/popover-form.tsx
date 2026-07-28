@@ -1,6 +1,6 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Field, FieldGroup, FieldLabel } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   Popover,
   PopoverContent,
@@ -8,7 +8,7 @@ import {
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
+} from "@/registry/bases/base/ui/popover"
 
 export function PopoverForm() {
   return (

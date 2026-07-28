@@ -8,8 +8,8 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Label } from "@/styles/base-force-ui/ui/label"
+} from "@/registry/bases/base/ui/field"
+import { Label } from "@/registry/bases/base/ui/label"
 import {
   Select,
   SelectContent,
@@ -17,8 +17,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
-import { Switch } from "@/styles/base-force-ui/ui/switch"
+} from "@/registry/bases/base/ui/select"
+import { Switch } from "@/registry/bases/base/ui/switch"
 
 const items = [
   { label: "Select a fruit", value: null },

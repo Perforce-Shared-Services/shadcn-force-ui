@@ -1,4 +1,4 @@
-import { Marker, MarkerContent } from "@/styles/aria-force-ui/ui/marker"
+import { Marker, MarkerContent } from "@/registry/bases/aria/ui/marker"
 
 export function MarkerSeparatorDemo() {
   return (

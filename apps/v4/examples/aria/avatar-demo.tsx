@@ -5,7 +5,7 @@ import {
   AvatarGroup,
   AvatarGroupCount,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
+} from "@/registry/bases/aria/ui/avatar"
 
 export default function AvatarDemo() {
   return (

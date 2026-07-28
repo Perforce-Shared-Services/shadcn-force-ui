@@ -1,4 +1,4 @@
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 export function SpinnerColors() {
   return (

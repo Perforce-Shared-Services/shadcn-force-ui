@@ -8,7 +8,7 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/radix-force-ui/ui/field"
+} from "@/registry/bases/radix/ui/field"
 import {
   Select,
   SelectContent,
@@ -16,8 +16,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/radix-force-ui/ui/select"
-import { Switch } from "@/styles/radix-force-ui/ui/switch"
+} from "@/registry/bases/radix/ui/select"
+import { Switch } from "@/registry/bases/radix/ui/switch"
 
 export function SelectAlignItem() {
   const [alignItemWithTrigger, setAlignItemWithTrigger] = React.useState(true)

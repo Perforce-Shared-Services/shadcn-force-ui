@@ -4,8 +4,8 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
-import { Kbd } from "@/styles/base-force-ui/ui/kbd"
+} from "@/registry/bases/base/ui/input-group"
+import { Kbd } from "@/registry/bases/base/ui/kbd"
 
 export function InputGroupKbd() {
   return (

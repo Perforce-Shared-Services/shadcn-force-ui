@@ -18,7 +18,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/styles/aria-force-ui/ui/command"
+} from "@/registry/bases/aria/ui/command"
 
 export function CommandDemo() {
   return (

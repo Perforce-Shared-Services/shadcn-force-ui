@@ -3,8 +3,8 @@
 import * as React from "react"
 
 import { createChat, getMessageText } from "@/lib/ai"
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Card,
   CardAction,
@@ -12,14 +12,14 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
+} from "@/registry/bases/aria/ui/card"
 import {
   DropdownMenu,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/styles/aria-force-ui/ui/dropdown-menu"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/dropdown-menu"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -28,7 +28,7 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
   useMessageScroller,
-} from "@/styles/aria-force-ui/ui/message-scroller"
+} from "@/registry/bases/aria/ui/message-scroller"
 
 const chat = createChat()
   .user(

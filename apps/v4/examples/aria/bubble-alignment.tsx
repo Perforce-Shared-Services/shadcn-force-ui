@@ -1,4 +1,4 @@
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
 
 export function BubbleAlignmentDemo() {
   return (

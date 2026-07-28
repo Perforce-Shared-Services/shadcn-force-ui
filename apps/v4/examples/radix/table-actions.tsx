@@ -1,13 +1,13 @@
 import { MoreHorizontalIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 import {
   Table,
   TableBody,
@@ -15,7 +15,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/radix-force-ui/ui/table"
+} from "@/registry/bases/radix/ui/table"
 
 export function TableActions() {
   return (

@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Card,
   CardContent,
@@ -11,8 +11,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/card"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -21,8 +21,8 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
   useMessageScroller,
-} from "@/styles/aria-force-ui/ui/message-scroller"
-import { Tabs, TabsList, TabsTrigger } from "@/styles/aria-force-ui/ui/tabs"
+} from "@/registry/bases/aria/ui/message-scroller"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/bases/aria/ui/tabs"
 
 const messages = [
   {

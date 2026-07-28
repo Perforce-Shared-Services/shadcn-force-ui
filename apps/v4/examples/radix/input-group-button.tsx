@@ -14,12 +14,12 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
+} from "@/registry/bases/radix/ui/popover"
 
 export default function InputGroupButtonExample() {
   const { copyToClipboard, isCopied } = useCopyToClipboard()

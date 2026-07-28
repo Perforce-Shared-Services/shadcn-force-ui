@@ -13,7 +13,7 @@ import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
 import { Separator } from "@/registry/new-york-v4/ui/separator"
-import { Button } from "@/styles/radix-force-ui/ui/button" // [FORCE-UI]
+import { Button } from "@/registry/bases/radix/ui/button" // [FORCE-UI]
 
 export function SiteHeader() {
   const colors = getColors()

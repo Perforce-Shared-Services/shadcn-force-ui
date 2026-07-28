@@ -6,7 +6,7 @@ import {
   ItemContent,
   ItemDescription,
   ItemTitle,
-} from "@/styles/aria-force-ui/ui/item"
+} from "@/registry/bases/aria/ui/item"
 
 export function ItemLink() {
   return (

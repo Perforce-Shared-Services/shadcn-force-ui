@@ -3,8 +3,8 @@
 import * as React from "react"
 import { RotateCwIcon } from "lucide-react"
 
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Card,
   CardAction,
@@ -13,13 +13,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
-import { Marker, MarkerContent } from "@/styles/aria-force-ui/ui/marker"
+} from "@/registry/bases/aria/ui/card"
+import { Marker, MarkerContent } from "@/registry/bases/aria/ui/marker"
 import {
   Message,
   MessageContent,
   MessageHeader,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -27,8 +27,8 @@ import {
   MessageScrollerItem,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/aria-force-ui/ui/message-scroller"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
+} from "@/registry/bases/aria/ui/message-scroller"
+import { Tooltip, TooltipTrigger } from "@/registry/bases/aria/ui/tooltip"
 
 const currentUser = "Grace"
 

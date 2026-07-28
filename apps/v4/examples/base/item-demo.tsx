@@ -1,6 +1,6 @@
 import { BadgeCheckIcon, ChevronRightIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Item,
   ItemActions,
@@ -8,7 +8,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 
 export function ItemDemo() {
   return (

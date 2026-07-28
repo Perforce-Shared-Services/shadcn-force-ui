@@ -4,7 +4,7 @@ import * as React from "react"
 import { Minus, Plus } from "@/examples/material-symbols"
 import { Bar, BarChart, ResponsiveContainer } from "recharts"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -14,7 +14,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/radix-force-ui/ui/drawer"
+} from "@/registry/bases/radix/ui/drawer"
 
 const data = [
   {

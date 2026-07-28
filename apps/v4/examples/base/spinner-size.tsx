@@ -1,4 +1,4 @@
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 export function SpinnerSize() {
   return (

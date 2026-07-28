@@ -1,8 +1,8 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   ButtonGroup,
   ButtonGroupSeparator,
-} from "@/styles/base-force-ui/ui/button-group"
+} from "@/registry/bases/base/ui/button-group"
 
 export default function ButtonGroupSeparatorDemo() {
   return (

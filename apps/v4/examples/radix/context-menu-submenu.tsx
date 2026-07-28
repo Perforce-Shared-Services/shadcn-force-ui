@@ -9,7 +9,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "@/styles/radix-force-ui/ui/context-menu"
+} from "@/registry/bases/radix/ui/context-menu"
 
 export function ContextMenuSubmenu() {
   return (

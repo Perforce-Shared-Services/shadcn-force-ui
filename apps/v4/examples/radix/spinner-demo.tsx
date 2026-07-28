@@ -3,8 +3,8 @@ import {
   ItemContent,
   ItemMedia,
   ItemTitle,
-} from "@/styles/radix-force-ui/ui/item"
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+} from "@/registry/bases/radix/ui/item"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 export function SpinnerDemo() {
   return (

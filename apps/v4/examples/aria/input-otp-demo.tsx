@@ -2,7 +2,7 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from "@/styles/aria-force-ui/ui/input-otp"
+} from "@/registry/bases/aria/ui/input-otp"
 
 export function InputOTPDemo() {
   return (

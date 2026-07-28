@@ -9,7 +9,7 @@ import {
   AttachmentMedia,
   AttachmentTitle,
   AttachmentTrigger,
-} from "@/styles/radix-force-ui/ui/attachment"
+} from "@/registry/bases/radix/ui/attachment"
 import {
   Dialog,
   DialogContent,
@@ -17,7 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/radix-force-ui/ui/dialog"
+} from "@/registry/bases/radix/ui/dialog"
 
 export function AttachmentTriggerDemo() {
   return (

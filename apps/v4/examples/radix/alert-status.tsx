@@ -8,7 +8,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "@/styles/radix-force-ui/ui/alert"
+} from "@/registry/bases/radix/ui/alert"
 
 export default function AlertStatus() {
   return (

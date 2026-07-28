@@ -2,7 +2,7 @@
 
 import { toast } from "sonner"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 
 export function SonnerDescription() {
   return (

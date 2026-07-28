@@ -1,7 +1,7 @@
 import { MinusIcon, PlusIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/base-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/base/ui/button"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
 
 export default function ButtonGroupOrientation() {
   return (

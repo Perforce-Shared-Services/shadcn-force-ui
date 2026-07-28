@@ -8,7 +8,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/styles/base-force-ui/ui/breadcrumb"
+} from "@/registry/bases/base/ui/breadcrumb"
 
 export function BreadcrumbSeparatorDemo() {
   return (

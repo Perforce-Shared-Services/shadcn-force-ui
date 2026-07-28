@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/aria-force-ui/ui/badge"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Badge } from "@/registry/bases/aria/ui/badge"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Card,
   CardAction,
@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
+} from "@/registry/bases/aria/ui/card"
 
 export function CardImage() {
   return (

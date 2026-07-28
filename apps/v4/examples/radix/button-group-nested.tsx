@@ -1,18 +1,18 @@
 import { AudioLinesIcon, PlusIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/radix-force-ui/ui/button-group"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { ButtonGroup } from "@/registry/bases/radix/ui/button-group"
+import { Input } from "@/registry/bases/radix/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 export function ButtonGroupNested() {
   return (

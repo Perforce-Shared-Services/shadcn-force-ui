@@ -2,20 +2,20 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
+} from "@/registry/bases/aria/ui/avatar"
 import {
   Bubble,
   BubbleContent,
   BubbleGroup,
   BubbleReactions,
-} from "@/styles/aria-force-ui/ui/bubble"
-import { Marker, MarkerContent } from "@/styles/aria-force-ui/ui/marker"
+} from "@/registry/bases/aria/ui/bubble"
+import { Marker, MarkerContent } from "@/registry/bases/aria/ui/marker"
 import {
   Message,
   MessageAvatar,
   MessageContent,
   MessageFooter,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 
 export function MessageDemo() {
   return (

@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/styles/base-force-ui/ui/card"
+import { Card, CardContent } from "@/registry/bases/base/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/styles/base-force-ui/ui/carousel"
+} from "@/registry/bases/base/ui/carousel"
 
 export function CarouselMultiple() {
   return (

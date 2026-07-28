@@ -8,14 +8,14 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/styles/base-force-ui/ui/breadcrumb"
+} from "@/registry/bases/base/ui/breadcrumb"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 
 export function BreadcrumbDropdown() {
   return (

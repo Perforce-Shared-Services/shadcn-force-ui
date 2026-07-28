@@ -1,7 +1,7 @@
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/aria-force-ui/ui/toggle-group"
+} from "@/registry/bases/aria/ui/toggle-group"
 
 export function ToggleGroupSpacing() {
   return (

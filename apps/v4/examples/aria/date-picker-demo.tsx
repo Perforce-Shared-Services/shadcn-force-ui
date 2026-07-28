@@ -4,9 +4,9 @@ import * as React from "react"
 import { getLocalTimeZone, type CalendarDate } from "@internationalized/date"
 import { ChevronDownIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
-import { Popover, PopoverTrigger } from "@/styles/aria-force-ui/ui/popover"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Calendar } from "@/registry/bases/aria/ui/calendar"
+import { Popover, PopoverTrigger } from "@/registry/bases/aria/ui/popover"
 
 export function DatePickerDemo() {
   const [date, setDate] = React.useState<CalendarDate | null>(null)

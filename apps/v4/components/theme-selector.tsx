@@ -3,7 +3,7 @@
 import { THEMES } from "@/lib/themes"
 import { cn } from "@/lib/utils"
 import { useThemeConfig } from "@/components/active-theme"
-import { Label } from "@/styles/base-force-ui/ui/label"
+import { Label } from "@/registry/bases/base/ui/label"
 import {
   Select,
   SelectContent,
@@ -12,7 +12,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
+} from "@/registry/bases/base/ui/select"
 
 import { CopyCodeButton } from "./theme-customizer"
 

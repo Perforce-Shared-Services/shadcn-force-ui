@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import { ScrollArea } from "@/styles/aria-force-ui/ui/scroll-area"
-import { Separator } from "@/styles/aria-force-ui/ui/separator"
+import { ScrollArea } from "@/registry/bases/aria/ui/scroll-area"
+import { Separator } from "@/registry/bases/aria/ui/separator"
 
 const tags = Array.from({ length: 50 }).map(
   (_, i, a) => `v1.2.0-beta.${a.length - i}`

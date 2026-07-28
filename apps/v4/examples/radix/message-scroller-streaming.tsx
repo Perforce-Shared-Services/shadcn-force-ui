@@ -14,7 +14,7 @@ import {
 
 import { createChat, getMessageText } from "@/lib/ai"
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardAction,
@@ -23,38 +23,38 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
+} from "@/registry/bases/radix/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/radix-force-ui/ui/empty"
+} from "@/registry/bases/radix/ui/empty"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/radix-force-ui/ui/message-scroller"
+} from "@/registry/bases/radix/ui/message-scroller"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 const chat = createChat()
   .user(

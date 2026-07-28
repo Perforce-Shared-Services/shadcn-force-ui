@@ -1,5 +1,5 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Spinner } from "@/styles/aria-force-ui/ui/spinner"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Spinner } from "@/registry/bases/aria/ui/spinner"
 
 export default function ButtonLoading() {
   return (

@@ -1,7 +1,7 @@
 import { PlusIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { ButtonGroup } from "@/registry/bases/aria/ui/button-group"
 
 export default function ButtonGroupSize() {
   return (

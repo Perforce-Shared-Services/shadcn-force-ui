@@ -1,4 +1,4 @@
-import { Separator } from "@/styles/radix-force-ui/ui/separator"
+import { Separator } from "@/registry/bases/radix/ui/separator"
 
 export function SeparatorList() {
   return (

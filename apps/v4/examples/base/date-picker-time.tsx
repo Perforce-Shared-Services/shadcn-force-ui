@@ -4,15 +4,15 @@ import * as React from "react"
 import { ChevronDownIcon } from "@/examples/material-symbols"
 import { format } from "date-fns"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Calendar } from "@/styles/base-force-ui/ui/calendar"
-import { Field, FieldGroup, FieldLabel } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Calendar } from "@/registry/bases/base/ui/calendar"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
+} from "@/registry/bases/base/ui/popover"
 
 export function DatePickerTime() {
   const [open, setOpen] = React.useState(false)

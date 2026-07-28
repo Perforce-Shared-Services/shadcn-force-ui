@@ -2,7 +2,7 @@
 
 import { toast } from "sonner"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 
 export function SonnerPosition() {
   return (

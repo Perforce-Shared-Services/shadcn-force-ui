@@ -4,13 +4,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/tabs"
 
 export function TabsDemo() {
   return (

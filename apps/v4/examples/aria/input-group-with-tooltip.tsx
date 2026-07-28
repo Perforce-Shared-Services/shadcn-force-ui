@@ -6,32 +6,32 @@ import { toast } from "sonner"
 import {
   ButtonGroup,
   ButtonGroupText,
-} from "@/styles/aria-force-ui/ui/button-group"
+} from "@/registry/bases/aria/ui/button-group"
 import {
   DropdownMenu,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/aria-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/aria/ui/dropdown-menu"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/aria-force-ui/ui/field"
+} from "@/registry/bases/aria/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/aria-force-ui/ui/input-group"
+} from "@/registry/bases/aria/ui/input-group"
 import {
   Popover,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/aria-force-ui/ui/popover"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
+} from "@/registry/bases/aria/ui/popover"
+import { Tooltip, TooltipTrigger } from "@/registry/bases/aria/ui/tooltip"
 
 export function InputGroupWithTooltip({
   country,

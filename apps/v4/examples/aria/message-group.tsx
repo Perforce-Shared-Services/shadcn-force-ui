@@ -2,14 +2,14 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+} from "@/registry/bases/aria/ui/avatar"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
 import {
   Message,
   MessageAvatar,
   MessageContent,
   MessageGroup,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 
 export function MessageGroupDemo() {
   return (

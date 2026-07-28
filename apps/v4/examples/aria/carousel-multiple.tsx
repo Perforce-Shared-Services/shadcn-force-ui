@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/styles/aria-force-ui/ui/card"
+import { Card, CardContent } from "@/registry/bases/aria/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/styles/aria-force-ui/ui/carousel"
+} from "@/registry/bases/aria/ui/carousel"
 
 export function CarouselMultiple() {
   return (

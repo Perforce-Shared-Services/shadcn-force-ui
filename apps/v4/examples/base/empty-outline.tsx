@@ -1,6 +1,6 @@
 import { IconCloud } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -8,7 +8,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/base-force-ui/ui/empty"
+} from "@/registry/bases/base/ui/empty"
 
 export default function EmptyOutline() {
   return (

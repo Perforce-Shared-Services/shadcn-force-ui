@@ -1,9 +1,9 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 export function TooltipDemo() {
   return (

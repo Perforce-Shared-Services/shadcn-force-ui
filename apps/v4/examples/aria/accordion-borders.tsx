@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/styles/aria-force-ui/ui/accordion"
+} from "@/registry/bases/aria/ui/accordion"
 
 const items = [
   {

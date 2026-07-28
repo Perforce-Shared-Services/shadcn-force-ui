@@ -5,8 +5,8 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/aria-force-ui/ui/input-group"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
+} from "@/registry/bases/aria/ui/input-group"
+import { Tooltip, TooltipTrigger } from "@/registry/bases/aria/ui/tooltip"
 
 export default function InputGroupTooltip() {
   return (

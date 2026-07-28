@@ -6,13 +6,13 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 
 export default function InputGroupDropdown() {
   return (

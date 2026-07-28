@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import { useShuffle } from "@/app/(app)/(typeset)/hooks/use-shuffle"
 
 export function TypesetRandomButton({

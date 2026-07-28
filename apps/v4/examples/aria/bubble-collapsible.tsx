@@ -3,9 +3,9 @@
 import * as React from "react"
 import { ChevronDownIcon } from "lucide-react"
 
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Collapsible } from "@/styles/aria-force-ui/ui/collapsible"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Collapsible } from "@/registry/bases/aria/ui/collapsible"
 
 const text = `The accessibility review found two focus states that were visually too subtle in dark mode.
 

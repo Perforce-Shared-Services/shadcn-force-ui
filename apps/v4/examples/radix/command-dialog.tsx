@@ -19,7 +19,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/styles/radix-force-ui/ui/command"
+} from "@/registry/bases/radix/ui/command"
 
 export function CommandDialogDemo() {
   const [open, setOpen] = React.useState(false)

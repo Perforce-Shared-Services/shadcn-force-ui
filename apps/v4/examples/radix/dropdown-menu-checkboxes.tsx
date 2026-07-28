@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -10,7 +10,7 @@ import {
   DropdownMenuGroup,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 
 export function DropdownMenuCheckboxes() {
   const [showStatusBar, setShowStatusBar] = React.useState(true)

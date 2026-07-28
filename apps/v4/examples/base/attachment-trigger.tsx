@@ -9,7 +9,7 @@ import {
   AttachmentMedia,
   AttachmentTitle,
   AttachmentTrigger,
-} from "@/styles/base-force-ui/ui/attachment"
+} from "@/registry/bases/base/ui/attachment"
 import {
   Dialog,
   DialogContent,
@@ -17,7 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/base-force-ui/ui/dialog"
+} from "@/registry/bases/base/ui/dialog"
 
 export function AttachmentTriggerDemo() {
   return (

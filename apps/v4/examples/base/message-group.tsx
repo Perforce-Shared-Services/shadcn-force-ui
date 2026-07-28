@@ -2,14 +2,14 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/base-force-ui/ui/avatar"
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
+} from "@/registry/bases/base/ui/avatar"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
 import {
   Message,
   MessageAvatar,
   MessageContent,
   MessageGroup,
-} from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/message"
 
 export function MessageGroupDemo() {
   return (

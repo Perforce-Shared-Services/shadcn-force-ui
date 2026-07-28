@@ -3,7 +3,7 @@
 import { GitBranchIcon, RotateCcwIcon } from "lucide-react"
 import { toast } from "sonner"
 
-import { Marker, MarkerContent, MarkerIcon } from "@/styles/aria-force-ui/ui/marker"
+import { Marker, MarkerContent, MarkerIcon } from "@/registry/bases/aria/ui/marker"
 
 export function MarkerLinkButtonDemo() {
   return (

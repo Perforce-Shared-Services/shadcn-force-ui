@@ -3,8 +3,8 @@ import {
   AlertAction,
   AlertDescription,
   AlertTitle,
-} from "@/styles/base-force-ui/ui/alert"
-import { Button } from "@/styles/base-force-ui/ui/button"
+} from "@/registry/bases/base/ui/alert"
+import { Button } from "@/registry/bases/base/ui/button"
 
 export default function AlertActionExample() {
   return (

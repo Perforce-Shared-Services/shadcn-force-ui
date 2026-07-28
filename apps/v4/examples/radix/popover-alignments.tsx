@@ -1,9 +1,9 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
+} from "@/registry/bases/radix/ui/popover"
 
 export function PopoverAlignments() {
   return (

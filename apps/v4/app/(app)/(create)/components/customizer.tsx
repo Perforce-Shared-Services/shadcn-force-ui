@@ -6,14 +6,14 @@ import { type RegistryItem } from "shadcn/schema"
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { getThemesForBaseColor, STYLES } from "@/registry/config"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/styles/base-force-ui/ui/card"
-import { FieldGroup, FieldSeparator } from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/card"
+import { FieldGroup, FieldSeparator } from "@/registry/bases/base/ui/field"
 import { MenuAccentPicker } from "@/app/(app)/(create)/components/accent-picker"
 import { ActionMenu } from "@/app/(app)/(create)/components/action-menu"
 import { BaseColorPicker } from "@/app/(app)/(create)/components/base-color-picker"

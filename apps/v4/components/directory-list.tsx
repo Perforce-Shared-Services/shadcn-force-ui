@@ -14,7 +14,7 @@ import {
   DirectoryAddButton,
   DirectoryAddProvider,
 } from "@/components/directory-add-button"
-import { Button, buttonVariants } from "@/styles/base-force-ui/ui/button"
+import { Button, buttonVariants } from "@/registry/bases/base/ui/button"
 import {
   Item,
   ItemActions,
@@ -25,14 +25,14 @@ import {
   ItemMedia,
   ItemSeparator,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 import {
   Pagination,
   PaginationContent,
   PaginationEllipsis,
   PaginationItem,
-} from "@/styles/base-force-ui/ui/pagination"
-import { Skeleton } from "@/styles/base-force-ui/ui/skeleton"
+} from "@/registry/bases/base/ui/pagination"
+import { Skeleton } from "@/registry/bases/base/ui/skeleton"
 
 import { SearchDirectory } from "./directory-search"
 

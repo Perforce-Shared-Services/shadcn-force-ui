@@ -15,8 +15,8 @@ import {
 } from "@tanstack/react-table"
 import { ArrowUpDown, ChevronDown, MoreHorizontal } from "lucide-react"
 
-import { Button, buttonVariants } from "@/styles/aria-force-ui/ui/button"
-import { Checkbox } from "@/styles/aria-force-ui/ui/checkbox"
+import { Button, buttonVariants } from "@/registry/bases/aria/ui/button"
+import { Checkbox } from "@/registry/bases/aria/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -24,8 +24,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/aria-force-ui/ui/dropdown-menu"
-import { Input } from "@/styles/aria-force-ui/ui/input"
+} from "@/registry/bases/aria/ui/dropdown-menu"
+import { Input } from "@/registry/bases/aria/ui/input"
 import {
   Table,
   TableBody,
@@ -33,7 +33,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/aria-force-ui/ui/table"
+} from "@/registry/bases/aria/ui/table"
 
 const data: Payment[] = [
   {

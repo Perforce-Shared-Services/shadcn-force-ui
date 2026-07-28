@@ -7,7 +7,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 import {
   Sidebar,
   SidebarHeader,
@@ -17,7 +17,7 @@ import {
   SidebarMenuItem,
   SidebarProvider,
   SidebarTrigger,
-} from "@/styles/radix-force-ui/ui/sidebar"
+} from "@/registry/bases/radix/ui/sidebar"
 
 export default function AppSidebar() {
   return (

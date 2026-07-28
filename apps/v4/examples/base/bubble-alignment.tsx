@@ -1,4 +1,4 @@
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
 
 export function BubbleAlignmentDemo() {
   return (

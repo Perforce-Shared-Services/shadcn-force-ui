@@ -15,7 +15,7 @@ import {
 
 import { getMessageText } from "@/lib/ai"
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -24,39 +24,39 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/base-force-ui/ui/empty"
+} from "@/registry/bases/base/ui/empty"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupTextarea,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/base-force-ui/ui/message-scroller"
+} from "@/registry/bases/base/ui/message-scroller"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 const chat = createChat()
   .user(

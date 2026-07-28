@@ -9,8 +9,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/radix-force-ui/ui/avatar"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+} from "@/registry/bases/radix/ui/avatar"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +18,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/radix/ui/dropdown-menu"
 
 export function DropdownMenuAvatar() {
   return (

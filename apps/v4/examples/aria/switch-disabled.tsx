@@ -1,5 +1,5 @@
-import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
-import { Switch } from "@/styles/aria-force-ui/ui/switch"
+import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
+import { Switch } from "@/registry/bases/aria/ui/switch"
 
 export function SwitchDisabled() {
   return (

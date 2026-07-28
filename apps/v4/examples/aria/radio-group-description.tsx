@@ -3,8 +3,8 @@ import {
   FieldContent,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-force-ui/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/styles/aria-force-ui/ui/radio-group"
+} from "@/registry/bases/aria/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/registry/bases/aria/ui/radio-group"
 
 export function RadioGroupDescription() {
   return (

@@ -6,7 +6,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/aria-force-ui/ui/collapsible"
+} from "@/registry/bases/aria/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -19,7 +19,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarProvider,
-} from "@/styles/aria-force-ui/ui/sidebar"
+} from "@/registry/bases/aria/ui/sidebar"
 
 const items = [
   {

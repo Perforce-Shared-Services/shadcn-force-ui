@@ -10,9 +10,9 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/aria-force-ui/ui/attachment"
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/attachment"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 
 export function MessageAttachmentDemo() {
   return (

@@ -6,7 +6,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/styles/aria-force-ui/ui/pagination"
+} from "@/registry/bases/aria/ui/pagination"
 
 export default function PaginationDemo() {
   return (

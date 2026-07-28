@@ -3,10 +3,10 @@
 import * as React from "react"
 import { getLocalTimeZone, type CalendarDate } from "@internationalized/date"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
-import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
-import { Popover, PopoverTrigger } from "@/styles/aria-force-ui/ui/popover"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Calendar } from "@/registry/bases/aria/ui/calendar"
+import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
+import { Popover, PopoverTrigger } from "@/registry/bases/aria/ui/popover"
 
 export function DatePickerSimple() {
   const [date, setDate] = React.useState<CalendarDate | null>(null)

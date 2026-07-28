@@ -1,4 +1,4 @@
-import { Separator } from "@/styles/aria-force-ui/ui/separator"
+import { Separator } from "@/registry/bases/aria/ui/separator"
 
 export function SeparatorList() {
   return (

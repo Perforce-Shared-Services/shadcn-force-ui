@@ -6,7 +6,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/styles/radix-force-ui/ui/pagination"
+} from "@/registry/bases/radix/ui/pagination"
 
 export default function PaginationDemo() {
   return (

@@ -5,7 +5,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/aria-force-ui/ui/select"
+} from "@/registry/bases/aria/ui/select"
 
 export function SelectDisabled() {
   const items = [

@@ -11,7 +11,7 @@ import {
   ComboboxLabel,
   ComboboxList,
   ComboboxSeparator,
-} from "@/styles/base-force-ui/ui/combobox"
+} from "@/registry/bases/base/ui/combobox"
 
 const timezones = [
   {

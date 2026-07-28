@@ -1,7 +1,7 @@
 import {
   InputGroup,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 
 export function InputGroupVariants() {
   return (

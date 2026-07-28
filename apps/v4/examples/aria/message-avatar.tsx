@@ -2,17 +2,17 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/aria-force-ui/ui/avatar"
+} from "@/registry/bases/aria/ui/avatar"
 import {
   Bubble,
   BubbleContent,
   BubbleGroup,
-} from "@/styles/aria-force-ui/ui/bubble"
+} from "@/registry/bases/aria/ui/bubble"
 import {
   Message,
   MessageAvatar,
   MessageContent,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 
 export function MessageAvatarDemo() {
   return (

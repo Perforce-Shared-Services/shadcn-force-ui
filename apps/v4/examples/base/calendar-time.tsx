@@ -3,14 +3,14 @@
 import * as React from "react"
 import { Clock2Icon } from "@/examples/material-symbols"
 
-import { Calendar } from "@/styles/base-force-ui/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/styles/base-force-ui/ui/card"
-import { Field, FieldGroup, FieldLabel } from "@/styles/base-force-ui/ui/field"
+import { Calendar } from "@/registry/bases/base/ui/calendar"
+import { Card, CardContent, CardFooter } from "@/registry/bases/base/ui/card"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 
 export function CalendarWithTime() {
   const [date, setDate] = React.useState<Date | undefined>(

@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon, FolderIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -8,7 +8,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/radix-force-ui/ui/empty"
+} from "@/registry/bases/radix/ui/empty"
 
 export function EmptyInCard() {
   return (

@@ -14,7 +14,7 @@ import {
 
 import { createChat, getMessageText } from "@/lib/ai"
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -23,32 +23,32 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/base-force-ui/ui/message-scroller"
-import { Slider } from "@/styles/base-force-ui/ui/slider"
+} from "@/registry/bases/base/ui/message-scroller"
+import { Slider } from "@/registry/bases/base/ui/slider"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 const DEFAULT_PEEK = 64
 

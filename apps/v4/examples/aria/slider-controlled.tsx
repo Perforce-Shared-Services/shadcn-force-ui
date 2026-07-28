@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Label } from "@/styles/aria-force-ui/ui/label"
-import { Slider } from "@/styles/aria-force-ui/ui/slider"
+import { Label } from "@/registry/bases/aria/ui/label"
+import { Slider } from "@/registry/bases/aria/ui/slider"
 
 export function SliderControlled() {
   const [value, setValue] = React.useState([0.3, 0.7])

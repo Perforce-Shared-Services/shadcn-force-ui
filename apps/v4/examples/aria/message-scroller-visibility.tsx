@@ -3,15 +3,15 @@
 import { Button } from "react-aria-components"
 
 import { createChat, getMessageText } from "@/lib/ai"
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/card"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -21,8 +21,8 @@ import {
   MessageScrollerViewport,
   useMessageScroller,
   useMessageScrollerVisibility,
-} from "@/styles/aria-force-ui/ui/message-scroller"
-import { Popover, PopoverTrigger } from "@/styles/aria-force-ui/ui/popover"
+} from "@/registry/bases/aria/ui/message-scroller"
+import { Popover, PopoverTrigger } from "@/registry/bases/aria/ui/popover"
 
 const chat = createChat()
   .user("Review the incident handoff and tell me what to read first.", {

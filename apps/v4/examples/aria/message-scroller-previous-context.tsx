@@ -14,7 +14,7 @@ import {
 
 import { createChat, getMessageText } from "@/lib/ai"
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Card,
   CardAction,
@@ -23,27 +23,27 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
+} from "@/registry/bases/aria/ui/card"
 import {
   DropdownMenu,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/aria-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/aria/ui/dropdown-menu"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-} from "@/styles/aria-force-ui/ui/input-group"
+} from "@/registry/bases/aria/ui/input-group"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/aria-force-ui/ui/message-scroller"
-import { Slider } from "@/styles/aria-force-ui/ui/slider"
-import { Tooltip, TooltipTrigger } from "@/styles/aria-force-ui/ui/tooltip"
+} from "@/registry/bases/aria/ui/message-scroller"
+import { Slider } from "@/registry/bases/aria/ui/slider"
+import { Tooltip, TooltipTrigger } from "@/registry/bases/aria/ui/tooltip"
 
 const DEFAULT_PEEK = 64
 

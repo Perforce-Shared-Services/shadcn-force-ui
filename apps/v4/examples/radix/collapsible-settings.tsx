@@ -3,21 +3,21 @@
 import * as React from "react"
 import { MaximizeIcon, MinimizeIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
+} from "@/registry/bases/radix/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/radix-force-ui/ui/collapsible"
-import { Field, FieldGroup, FieldLabel } from "@/styles/radix-force-ui/ui/field"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+} from "@/registry/bases/radix/ui/collapsible"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/radix/ui/field"
+import { Input } from "@/registry/bases/radix/ui/input"
 
 export function CollapsibleSettings() {
   const [isOpen, setIsOpen] = React.useState(false)

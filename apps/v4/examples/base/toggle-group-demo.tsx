@@ -3,7 +3,7 @@ import { Bold, Italic, Underline } from "@/examples/material-symbols"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/base-force-ui/ui/toggle-group"
+} from "@/registry/bases/base/ui/toggle-group"
 
 export function ToggleGroupDemo() {
   return (

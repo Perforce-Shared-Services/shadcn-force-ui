@@ -11,7 +11,7 @@ import {
   InputGroupButton,
   InputGroupText,
   InputGroupTextarea,
-} from "@/styles/aria-force-ui/ui/input-group"
+} from "@/registry/bases/aria/ui/input-group"
 
 export default function InputGroupTextareaExample() {
   return (

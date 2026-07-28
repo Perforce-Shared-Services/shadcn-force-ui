@@ -21,7 +21,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
+} from "@/registry/bases/base/ui/popover"
 
 export function ComponentPreviewTabs({
   className,

@@ -1,7 +1,7 @@
 import { IconFolderCode } from "@tabler/icons-react"
 import { ArrowUpRightIcon } from "lucide-react"
 
-import { Button, LinkButton } from "@/styles/aria-force-ui/ui/button"
+import { Button, LinkButton } from "@/registry/bases/aria/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -9,7 +9,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/aria-force-ui/ui/empty"
+} from "@/registry/bases/aria/ui/empty"
 
 export default function EmptyDemo() {
   return (

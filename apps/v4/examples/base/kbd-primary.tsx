@@ -1,4 +1,4 @@
-import { Kbd } from "@/styles/base-force-ui/ui/kbd"
+import { Kbd } from "@/registry/bases/base/ui/kbd"
 
 export default function KbdPrimary() {
   return (

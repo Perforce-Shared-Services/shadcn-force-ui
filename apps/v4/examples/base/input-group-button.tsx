@@ -14,12 +14,12 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
+} from "@/registry/bases/base/ui/popover"
 
 export default function InputGroupButtonExample() {
   const { copyToClipboard, isCopied } = useCopyToClipboard()

@@ -5,13 +5,13 @@ import {
   ThumbsUpIcon,
 } from "lucide-react"
 
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Message,
   MessageContent,
   MessageFooter,
-} from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/message"
 
 export function MessageActionsDemo() {
   return (

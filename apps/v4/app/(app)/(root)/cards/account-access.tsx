@@ -5,7 +5,7 @@ import {
 } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardContent,
@@ -13,16 +13,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
-import { Field, FieldGroup, FieldLabel } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/card"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 
 export function AccountAccess() {
   return (

@@ -1,14 +1,14 @@
 "use client"
 
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/aria-force-ui/ui/card"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+} from "@/registry/bases/aria/ui/card"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -17,7 +17,7 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
   useMessageScrollerScrollable,
-} from "@/styles/aria-force-ui/ui/message-scroller"
+} from "@/registry/bases/aria/ui/message-scroller"
 
 const messages = Array.from({ length: 12 }, (_, index) => ({
   id: `state-${index + 1}`,

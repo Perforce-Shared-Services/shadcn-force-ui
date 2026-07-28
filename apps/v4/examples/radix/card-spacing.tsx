@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardAction,
@@ -11,13 +11,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
-import { Input } from "@/styles/radix-force-ui/ui/input"
-import { Label } from "@/styles/radix-force-ui/ui/label"
+} from "@/registry/bases/radix/ui/card"
+import { Input } from "@/registry/bases/radix/ui/input"
+import { Label } from "@/registry/bases/radix/ui/label"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/radix-force-ui/ui/toggle-group"
+} from "@/registry/bases/radix/ui/toggle-group"
 
 const spacingOptions = [
   {

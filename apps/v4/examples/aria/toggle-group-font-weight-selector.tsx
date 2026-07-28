@@ -6,11 +6,11 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/aria-force-ui/ui/field"
+} from "@/registry/bases/aria/ui/field"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/aria-force-ui/ui/toggle-group"
+} from "@/registry/bases/aria/ui/toggle-group"
 
 export function ToggleGroupFontWeightSelector() {
   const [fontWeight, setFontWeight] = React.useState("normal")

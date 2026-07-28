@@ -12,7 +12,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "@/styles/aria-force-ui/ui/context-menu"
+} from "@/registry/bases/aria/ui/context-menu"
 
 export function ContextMenuSubmenu() {
   return (

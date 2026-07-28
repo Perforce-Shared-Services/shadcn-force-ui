@@ -1,4 +1,4 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -6,8 +6,8 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/radix-force-ui/ui/empty"
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+} from "@/registry/bases/radix/ui/empty"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 export function SpinnerEmpty() {
   return (

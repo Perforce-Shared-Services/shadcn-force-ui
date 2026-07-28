@@ -12,7 +12,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/aria-force-ui/ui/sidebar"
+} from "@/registry/bases/aria/ui/sidebar"
 
 export default function AppSidebar() {
   return (

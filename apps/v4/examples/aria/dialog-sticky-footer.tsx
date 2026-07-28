@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/aria-force-ui/ui/dialog"
+} from "@/registry/bases/aria/ui/dialog"
 
 export function DialogStickyFooter() {
   return (

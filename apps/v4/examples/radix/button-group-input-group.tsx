@@ -3,19 +3,19 @@
 import * as React from "react"
 import { AudioLinesIcon, PlusIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/radix-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { ButtonGroup } from "@/registry/bases/radix/ui/button-group"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 export default function ButtonGroupInputGroup() {
   const [voiceEnabled, setVoiceEnabled] = React.useState(false)

@@ -2,13 +2,13 @@
 
 import { Search, X } from "lucide-react"
 
-import { Field } from "@/styles/base-force-ui/ui/field"
+import { Field } from "@/registry/bases/base/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 
 export function SearchDirectory({
   query,

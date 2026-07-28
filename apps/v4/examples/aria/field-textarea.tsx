@@ -4,8 +4,8 @@ import {
   FieldGroup,
   FieldLabel,
   FieldSet,
-} from "@/styles/aria-force-ui/ui/field"
-import { Textarea } from "@/styles/aria-force-ui/ui/textarea"
+} from "@/registry/bases/aria/ui/field"
+import { Textarea } from "@/registry/bases/aria/ui/textarea"
 
 export default function FieldTextarea() {
   return (

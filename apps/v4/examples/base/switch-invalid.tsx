@@ -3,8 +3,8 @@ import {
   FieldContent,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Switch } from "@/styles/base-force-ui/ui/switch"
+} from "@/registry/bases/base/ui/field"
+import { Switch } from "@/registry/bases/base/ui/switch"
 
 export function SwitchInvalid() {
   return (

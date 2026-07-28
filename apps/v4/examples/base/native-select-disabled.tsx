@@ -1,7 +1,7 @@
 import {
   NativeSelect,
   NativeSelectOption,
-} from "@/styles/base-force-ui/ui/native-select"
+} from "@/registry/bases/base/ui/native-select"
 
 export function NativeSelectDisabled() {
   return (

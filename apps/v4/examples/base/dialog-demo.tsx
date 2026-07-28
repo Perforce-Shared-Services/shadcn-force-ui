@@ -1,4 +1,4 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -8,10 +8,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/base-force-ui/ui/dialog"
-import { Field, FieldGroup } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
-import { Label } from "@/styles/base-force-ui/ui/label"
+} from "@/registry/bases/base/ui/dialog"
+import { Field, FieldGroup } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
+import { Label } from "@/registry/bases/base/ui/label"
 
 export function DialogDemo() {
   return (

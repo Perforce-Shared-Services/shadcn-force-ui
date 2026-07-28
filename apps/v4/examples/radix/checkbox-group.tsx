@@ -1,4 +1,4 @@
-import { Checkbox } from "@/styles/radix-force-ui/ui/checkbox"
+import { Checkbox } from "@/registry/bases/radix/ui/checkbox"
 import {
   Field,
   FieldDescription,
@@ -6,7 +6,7 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-} from "@/styles/radix-force-ui/ui/field"
+} from "@/registry/bases/radix/ui/field"
 
 export function CheckboxGroup() {
   return (

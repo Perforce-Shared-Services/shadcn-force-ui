@@ -7,7 +7,7 @@ import {
   Marker,
   MarkerContent,
   MarkerIcon,
-} from "@/styles/base-force-ui/ui/marker"
+} from "@/registry/bases/base/ui/marker"
 
 export function MarkerLinkButtonDemo() {
   return (

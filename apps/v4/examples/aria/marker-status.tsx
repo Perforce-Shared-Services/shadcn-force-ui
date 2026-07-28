@@ -1,5 +1,5 @@
-import { Marker, MarkerContent, MarkerIcon } from "@/styles/aria-force-ui/ui/marker"
-import { Spinner } from "@/styles/aria-force-ui/ui/spinner"
+import { Marker, MarkerContent, MarkerIcon } from "@/registry/bases/aria/ui/marker"
+import { Spinner } from "@/registry/bases/aria/ui/spinner"
 
 export function MarkerStatusDemo() {
   return (

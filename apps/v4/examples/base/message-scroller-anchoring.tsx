@@ -8,7 +8,7 @@ import {
 } from "lucide-react"
 
 import { MessageAnimated } from "@/components/message-animated"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -17,25 +17,25 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/base-force-ui/ui/empty"
+} from "@/registry/bases/base/ui/empty"
 import {
   MessageScroller,
   MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/styles/base-force-ui/ui/message-scroller"
+} from "@/registry/bases/base/ui/message-scroller"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/base-force-ui/ui/toggle-group"
+} from "@/registry/bases/base/ui/toggle-group"
 
 type AnchorRole = "user" | "assistant"
 

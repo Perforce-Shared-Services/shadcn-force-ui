@@ -10,7 +10,7 @@ import {
   AttachmentMedia,
   AttachmentTitle,
   AttachmentTrigger,
-} from "@/styles/aria-force-ui/ui/attachment"
+} from "@/registry/bases/aria/ui/attachment"
 
 const images = [
   {

@@ -4,7 +4,7 @@ import {
   ContextMenuGroup,
   ContextMenuItem,
   ContextMenuTrigger,
-} from "@/styles/base-force-ui/ui/context-menu"
+} from "@/registry/bases/base/ui/context-menu"
 
 export function ContextMenuSides() {
   return (

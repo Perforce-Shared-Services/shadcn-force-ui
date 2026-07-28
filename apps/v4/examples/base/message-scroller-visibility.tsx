@@ -1,20 +1,20 @@
 "use client"
 
 import { createChat, getMessageText } from "@/lib/ai"
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/styles/base-force-ui/ui/hover-card"
-import { Message, MessageContent } from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/hover-card"
+import { Message, MessageContent } from "@/registry/bases/base/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -24,7 +24,7 @@ import {
   MessageScrollerViewport,
   useMessageScroller,
   useMessageScrollerVisibility,
-} from "@/styles/base-force-ui/ui/message-scroller"
+} from "@/registry/bases/base/ui/message-scroller"
 
 const chat = createChat()
   .user("Review the incident handoff and tell me what to read first.", {

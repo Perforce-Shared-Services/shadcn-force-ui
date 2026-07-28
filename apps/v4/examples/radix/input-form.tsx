@@ -1,18 +1,18 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/radix-force-ui/ui/field"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+} from "@/registry/bases/radix/ui/field"
+import { Input } from "@/registry/bases/radix/ui/input"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/radix-force-ui/ui/select"
+} from "@/registry/bases/radix/ui/select"
 
 export function InputForm() {
   return (

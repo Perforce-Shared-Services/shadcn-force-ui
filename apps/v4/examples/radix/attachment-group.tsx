@@ -15,7 +15,7 @@ import {
   AttachmentGroup,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/radix-force-ui/ui/attachment"
+} from "@/registry/bases/radix/ui/attachment"
 
 type Item = {
   name: string

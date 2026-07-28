@@ -14,8 +14,8 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/styles/base-force-ui/ui/card"
-import { FieldGroup, FieldSeparator } from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/card"
+import { FieldGroup, FieldSeparator } from "@/registry/bases/base/ui/field"
 import { FontPicker } from "@/app/(app)/(typeset)/components/font-picker"
 import { TypesetGetCodeDrawer } from "@/app/(app)/(typeset)/components/get-code-drawer"
 import { TypesetMainMenu } from "@/app/(app)/(typeset)/components/main-menu"

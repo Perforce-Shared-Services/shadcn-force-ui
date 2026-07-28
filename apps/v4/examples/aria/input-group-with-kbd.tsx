@@ -5,15 +5,15 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/aria-force-ui/ui/field"
-import { Input } from "@/styles/aria-force-ui/ui/input"
+} from "@/registry/bases/aria/ui/field"
+import { Input } from "@/registry/bases/aria/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/aria-force-ui/ui/input-group"
-import { Kbd, KbdGroup } from "@/styles/aria-force-ui/ui/kbd"
-import { Spinner } from "@/styles/aria-force-ui/ui/spinner"
+} from "@/registry/bases/aria/ui/input-group"
+import { Kbd, KbdGroup } from "@/registry/bases/aria/ui/kbd"
+import { Spinner } from "@/registry/bases/aria/ui/spinner"
 
 export function InputGroupWithKbd() {
   return (

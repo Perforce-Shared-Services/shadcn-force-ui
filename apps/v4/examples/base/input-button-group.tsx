@@ -1,7 +1,7 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/base-force-ui/ui/button-group"
-import { Field, FieldLabel } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+import { Button } from "@/registry/bases/base/ui/button"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
+import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 
 export function InputButtonGroup() {
   return (

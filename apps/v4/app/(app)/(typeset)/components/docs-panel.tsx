@@ -7,7 +7,7 @@ import { CheckIcon, CopyIcon } from "lucide-react"
 import { trackEvent } from "@/lib/events"
 import { absoluteUrl, cn } from "@/lib/utils"
 import { useConfig } from "@/hooks/use-config"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Select,
   SelectContent,
@@ -15,13 +15,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
+} from "@/registry/bases/base/ui/select"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/tabs"
 import {
   TEMPLATES,
   type TemplateValue,

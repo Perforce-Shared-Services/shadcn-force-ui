@@ -1,7 +1,7 @@
 import { IconBell } from "@tabler/icons-react"
 import { RefreshCcwIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -9,7 +9,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/styles/aria-force-ui/ui/empty"
+} from "@/registry/bases/aria/ui/empty"
 
 export function EmptyMuted() {
   return (

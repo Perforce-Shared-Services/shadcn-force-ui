@@ -12,7 +12,7 @@ import {
   ContextMenuItem,
   ContextMenuSeparator,
   ContextMenuTrigger,
-} from "@/styles/base-force-ui/ui/context-menu"
+} from "@/registry/bases/base/ui/context-menu"
 
 export function ContextMenuIcons() {
   return (

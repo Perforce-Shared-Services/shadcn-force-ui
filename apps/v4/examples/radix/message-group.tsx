@@ -2,14 +2,14 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/radix-force-ui/ui/avatar"
-import { Bubble, BubbleContent } from "@/styles/radix-force-ui/ui/bubble"
+} from "@/registry/bases/radix/ui/avatar"
+import { Bubble, BubbleContent } from "@/registry/bases/radix/ui/bubble"
 import {
   Message,
   MessageAvatar,
   MessageContent,
   MessageGroup,
-} from "@/styles/radix-force-ui/ui/message"
+} from "@/registry/bases/radix/ui/message"
 
 export function MessageGroupDemo() {
   return (

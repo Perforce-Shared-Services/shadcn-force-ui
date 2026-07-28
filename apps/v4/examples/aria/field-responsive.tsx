@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Field,
   FieldContent,
@@ -7,8 +7,8 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-} from "@/styles/aria-force-ui/ui/field"
-import { Input } from "@/styles/aria-force-ui/ui/input"
+} from "@/registry/bases/aria/ui/field"
+import { Input } from "@/registry/bases/aria/ui/input"
 
 export function FieldResponsive() {
   return (

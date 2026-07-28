@@ -3,7 +3,7 @@ import {
   PaginationContent,
   PaginationItem,
   PaginationLink,
-} from "@/styles/aria-force-ui/ui/pagination"
+} from "@/registry/bases/aria/ui/pagination"
 
 export function PaginationSimple() {
   return (

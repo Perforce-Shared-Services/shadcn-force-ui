@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/styles/radix-force-ui/ui/select"
+} from "@/registry/bases/radix/ui/select"
 
 export function SelectDemo() {
   return (

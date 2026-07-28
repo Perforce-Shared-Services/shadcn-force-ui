@@ -4,7 +4,7 @@ import {
   ContextMenuGroup,
   ContextMenuItem,
   ContextMenuTrigger,
-} from "@/styles/radix-force-ui/ui/context-menu"
+} from "@/registry/bases/radix/ui/context-menu"
 
 export function ContextMenuSides() {
   return (

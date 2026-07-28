@@ -7,14 +7,14 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/styles/aria-force-ui/ui/breadcrumb"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+} from "@/registry/bases/aria/ui/breadcrumb"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   DropdownMenu,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/aria-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/aria/ui/dropdown-menu"
 
 export function BreadcrumbDemo() {
   return (

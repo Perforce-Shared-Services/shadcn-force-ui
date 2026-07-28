@@ -1,4 +1,4 @@
-import { Marker, MarkerContent } from "@/styles/radix-force-ui/ui/marker"
+import { Marker, MarkerContent } from "@/registry/bases/radix/ui/marker"
 
 export function MarkerVariantsDemo() {
   return (

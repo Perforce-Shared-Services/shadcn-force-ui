@@ -1,4 +1,4 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Field,
   FieldContent,
@@ -7,8 +7,8 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-} from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 
 export function FieldResponsive() {
   return (

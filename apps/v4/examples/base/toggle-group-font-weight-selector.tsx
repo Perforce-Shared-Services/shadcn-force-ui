@@ -6,11 +6,11 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/field"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/base-force-ui/ui/toggle-group"
+} from "@/registry/bases/base/ui/toggle-group"
 
 export function ToggleGroupFontWeightSelector() {
   const [fontWeight, setFontWeight] = React.useState("normal")

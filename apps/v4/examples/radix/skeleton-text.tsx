@@ -1,4 +1,4 @@
-import { Skeleton } from "@/styles/radix-force-ui/ui/skeleton"
+import { Skeleton } from "@/registry/bases/radix/ui/skeleton"
 
 export function SkeletonText() {
   return (

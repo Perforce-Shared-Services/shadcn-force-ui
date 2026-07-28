@@ -2,7 +2,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/styles/radix-force-ui/ui/resizable"
+} from "@/registry/bases/radix/ui/resizable"
 
 export function ResizableVertical() {
   return (

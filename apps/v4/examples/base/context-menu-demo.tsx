@@ -13,7 +13,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "@/styles/base-force-ui/ui/context-menu"
+} from "@/registry/bases/base/ui/context-menu"
 
 export function ContextMenuDemo() {
   return (

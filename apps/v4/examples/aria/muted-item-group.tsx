@@ -1,4 +1,4 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Item,
   ItemActions,
@@ -6,7 +6,7 @@ import {
   ItemDescription,
   ItemGroup,
   ItemTitle,
-} from "@/styles/aria-force-ui/ui/item"
+} from "@/registry/bases/aria/ui/item"
 
 export function MutedItemGroup() {
   return (

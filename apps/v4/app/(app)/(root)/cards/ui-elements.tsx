@@ -17,12 +17,12 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/styles/base-force-ui/ui/alert-dialog"
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/base-force-ui/ui/button-group"
-import { Card, CardContent } from "@/styles/base-force-ui/ui/card"
-import { Checkbox } from "@/styles/base-force-ui/ui/checkbox"
+} from "@/registry/bases/base/ui/alert-dialog"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Button } from "@/registry/bases/base/ui/button"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
+import { Card, CardContent } from "@/registry/bases/base/ui/card"
+import { Checkbox } from "@/registry/bases/base/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,26 +31,26 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
-import { Field, FieldGroup } from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/dropdown-menu"
+import { Field, FieldGroup } from "@/registry/bases/base/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/base-force-ui/ui/radio-group"
-import { Switch } from "@/styles/base-force-ui/ui/switch"
+} from "@/registry/bases/base/ui/radio-group"
+import { Switch } from "@/registry/bases/base/ui/switch"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/base-force-ui/ui/tabs"
-import { Textarea } from "@/styles/base-force-ui/ui/textarea"
+} from "@/registry/bases/base/ui/tabs"
+import { Textarea } from "@/registry/bases/base/ui/textarea"
 
 export function UIElements() {
   return (

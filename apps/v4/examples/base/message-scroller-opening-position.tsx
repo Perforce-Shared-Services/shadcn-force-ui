@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardContent,
@@ -11,8 +11,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
-import { Message, MessageContent } from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/card"
+import { Message, MessageContent } from "@/registry/bases/base/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -21,8 +21,8 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
   useMessageScroller,
-} from "@/styles/base-force-ui/ui/message-scroller"
-import { Tabs, TabsList, TabsTrigger } from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/message-scroller"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/bases/base/ui/tabs"
 
 const messages = [
   {

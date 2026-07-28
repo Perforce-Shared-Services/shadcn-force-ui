@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Card, CardContent } from "@/styles/radix-force-ui/ui/card"
+import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "@/styles/radix-force-ui/ui/carousel"
+} from "@/registry/bases/radix/ui/carousel"
 
 export default function CarouselDApiDemo() {
   const [api, setApi] = React.useState<CarouselApi>()

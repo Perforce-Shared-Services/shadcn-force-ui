@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Progress } from "@/styles/base-force-ui/ui/progress"
-import { Slider } from "@/styles/base-force-ui/ui/slider"
+import { Progress } from "@/registry/bases/base/ui/progress"
+import { Slider } from "@/registry/bases/base/ui/slider"
 
 export function ProgressControlled() {
   const [value, setValue] = React.useState(50)

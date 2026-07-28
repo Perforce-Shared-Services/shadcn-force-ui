@@ -4,13 +4,13 @@ import {
   Bubble,
   BubbleContent,
   BubbleReactions,
-} from "@/styles/radix-force-ui/ui/bubble"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+} from "@/registry/bases/radix/ui/bubble"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 export function BubbleTooltipDemo() {
   return (

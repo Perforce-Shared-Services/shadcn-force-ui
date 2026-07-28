@@ -2,8 +2,8 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 
 export function InputDisabled() {
   return (

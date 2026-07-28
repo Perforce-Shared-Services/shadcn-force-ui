@@ -18,7 +18,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/base-force-ui/ui/sidebar"
+} from "@/registry/bases/base/ui/sidebar"
 
 const projects = [
   {

@@ -11,7 +11,7 @@ import {
   SendIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Sidebar,
   SidebarContent,
@@ -23,7 +23,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/radix-force-ui/ui/sidebar"
+} from "@/registry/bases/radix/ui/sidebar"
 
 const projects = [
   {

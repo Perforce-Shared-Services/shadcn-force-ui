@@ -1,6 +1,6 @@
 "use client"
 
-import { buttonVariants } from "@/styles/aria-force-ui/ui/button"
+import { buttonVariants } from "@/registry/bases/aria/ui/button"
 
 export default function ButtonRender() {
   return (

@@ -1,5 +1,5 @@
-import { Checkbox } from "@/styles/radix-force-ui/ui/checkbox"
-import { Field, FieldGroup, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Checkbox } from "@/registry/bases/radix/ui/checkbox"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/radix/ui/field"
 
 export function CheckboxBasic() {
   return (

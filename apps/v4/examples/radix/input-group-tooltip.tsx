@@ -5,12 +5,12 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 export default function InputGroupTooltip() {
   return (

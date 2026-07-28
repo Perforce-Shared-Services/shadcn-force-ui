@@ -1,6 +1,6 @@
 import { BookmarkIcon } from "lucide-react"
 
-import { Toggle } from "@/styles/aria-force-ui/ui/toggle"
+import { Toggle } from "@/registry/bases/aria/ui/toggle"
 
 export function ToggleDemo() {
   return (

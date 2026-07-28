@@ -3,9 +3,9 @@
 import * as React from "react"
 import { addDays } from "date-fns"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Calendar } from "@/styles/base-force-ui/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/styles/base-force-ui/ui/card"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Calendar } from "@/registry/bases/base/ui/calendar"
+import { Card, CardContent, CardFooter } from "@/registry/bases/base/ui/card"
 
 export function CalendarWithPresets() {
   const [date, setDate] = React.useState<Date | undefined>(

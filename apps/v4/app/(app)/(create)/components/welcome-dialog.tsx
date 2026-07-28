@@ -3,7 +3,7 @@
 import * as React from "react"
 
 import { Icons } from "@/components/icons"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -12,7 +12,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/styles/base-force-ui/ui/dialog"
+} from "@/registry/bases/base/ui/dialog"
 
 const STORAGE_KEY = "shadcn-create-welcome-dialog"
 

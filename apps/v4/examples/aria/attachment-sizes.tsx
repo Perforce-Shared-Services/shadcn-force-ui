@@ -6,7 +6,7 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/aria-force-ui/ui/attachment"
+} from "@/registry/bases/aria/ui/attachment"
 
 export function AttachmentSizes() {
   return (

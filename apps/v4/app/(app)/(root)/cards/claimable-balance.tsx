@@ -1,4 +1,4 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
+import { Badge } from "@/registry/bases/base/ui/badge"
 import {
   Card,
   CardContent,
@@ -6,9 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
-import { Item, ItemContent } from "@/styles/base-force-ui/ui/item"
-import { Separator } from "@/styles/base-force-ui/ui/separator"
+} from "@/registry/bases/base/ui/card"
+import { Item, ItemContent } from "@/registry/bases/base/ui/item"
+import { Separator } from "@/registry/bases/base/ui/separator"
 
 const netRoyalties = 1248.75
 const processingFee = 37.46

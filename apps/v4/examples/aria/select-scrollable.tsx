@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/styles/aria-force-ui/ui/select"
+} from "@/registry/bases/aria/ui/select"
 
 const northAmerica = [
   { label: "Eastern Standard Time", value: "est" },

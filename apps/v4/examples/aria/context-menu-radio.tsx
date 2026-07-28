@@ -10,7 +10,7 @@ import {
   ContextMenuLabel,
   ContextMenuSeparator,
   ContextMenuTrigger,
-} from "@/styles/aria-force-ui/ui/context-menu"
+} from "@/registry/bases/aria/ui/context-menu"
 
 export function ContextMenuRadio() {
   const [user, setUser] = React.useState("pedro")

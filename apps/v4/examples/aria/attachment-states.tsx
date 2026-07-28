@@ -15,8 +15,8 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/aria-force-ui/ui/attachment"
-import { Spinner } from "@/styles/aria-force-ui/ui/spinner"
+} from "@/registry/bases/aria/ui/attachment"
+import { Spinner } from "@/registry/bases/aria/ui/spinner"
 
 export function AttachmentStates() {
   return (

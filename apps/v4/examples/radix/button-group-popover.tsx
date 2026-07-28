@@ -1,12 +1,12 @@
 import { BotIcon, ChevronDownIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/radix-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { ButtonGroup } from "@/registry/bases/radix/ui/button-group"
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/radix-force-ui/ui/field"
+} from "@/registry/bases/radix/ui/field"
 import {
   Popover,
   PopoverContent,
@@ -14,8 +14,8 @@ import {
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
-import { Textarea } from "@/styles/radix-force-ui/ui/textarea"
+} from "@/registry/bases/radix/ui/popover"
+import { Textarea } from "@/registry/bases/radix/ui/textarea"
 
 export default function ButtonGroupPopover() {
   return (

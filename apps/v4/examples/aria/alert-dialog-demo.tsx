@@ -7,8 +7,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/styles/aria-force-ui/ui/alert-dialog"
-import { Button } from "@/styles/aria-force-ui/ui/button"
+} from "@/registry/bases/aria/ui/alert-dialog"
+import { Button } from "@/registry/bases/aria/ui/button"
 
 export default function AlertDialogDemo() {
   return (

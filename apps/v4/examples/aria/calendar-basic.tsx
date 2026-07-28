@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar } from "@/styles/aria-force-ui/ui/calendar"
+import { Calendar } from "@/registry/bases/aria/ui/calendar"
 
 export default function CalendarBasic() {
   return <Calendar className="rounded-lg border" />

@@ -1,11 +1,11 @@
-import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
+import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationNext,
   PaginationPrevious,
-} from "@/styles/aria-force-ui/ui/pagination"
+} from "@/registry/bases/aria/ui/pagination"
 import {
   Select,
   SelectContent,
@@ -13,7 +13,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/aria-force-ui/ui/select"
+} from "@/registry/bases/aria/ui/select"
 
 export function PaginationIconsOnly() {
   return (

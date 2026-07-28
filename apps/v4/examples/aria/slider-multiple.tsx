@@ -1,4 +1,4 @@
-import { Slider } from "@/styles/aria-force-ui/ui/slider"
+import { Slider } from "@/registry/bases/aria/ui/slider"
 
 export function SliderMultiple() {
   return (

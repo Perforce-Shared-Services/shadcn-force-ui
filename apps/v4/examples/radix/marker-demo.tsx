@@ -4,8 +4,8 @@ import {
   Marker,
   MarkerContent,
   MarkerIcon,
-} from "@/styles/radix-force-ui/ui/marker"
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+} from "@/registry/bases/radix/ui/marker"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 export function MarkerDemo() {
   return (

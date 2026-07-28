@@ -1,7 +1,7 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/aria-force-ui/ui/button-group"
-import { Field, FieldLabel } from "@/styles/aria-force-ui/ui/field"
-import { Input } from "@/styles/aria-force-ui/ui/input"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { ButtonGroup } from "@/registry/bases/aria/ui/button-group"
+import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
+import { Input } from "@/registry/bases/aria/ui/input"
 
 export function InputButtonGroup() {
   return (

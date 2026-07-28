@@ -5,7 +5,7 @@ import Script from "next/script"
 
 import { cn } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -15,7 +15,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/base-force-ui/ui/dialog"
+} from "@/registry/bases/base/ui/dialog"
 import {
   Drawer,
   DrawerClose,
@@ -25,13 +25,13 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/base-force-ui/ui/drawer"
+} from "@/registry/bases/base/ui/drawer"
 import {
   Field,
   FieldContent,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   OPEN_PRESET_FORWARD_TYPE,
   useOpenPreset,

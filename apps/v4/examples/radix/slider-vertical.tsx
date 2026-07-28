@@ -1,4 +1,4 @@
-import { Slider } from "@/styles/radix-force-ui/ui/slider"
+import { Slider } from "@/registry/bases/radix/ui/slider"
 
 export function SliderVertical() {
   return (

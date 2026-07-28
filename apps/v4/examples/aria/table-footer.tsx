@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/aria-force-ui/ui/table"
+} from "@/registry/bases/aria/ui/table"
 
 const invoices = [
   {

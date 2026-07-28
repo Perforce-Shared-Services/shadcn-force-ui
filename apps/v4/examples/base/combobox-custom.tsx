@@ -7,13 +7,13 @@ import {
   ComboboxInput,
   ComboboxItem,
   ComboboxList,
-} from "@/styles/base-force-ui/ui/combobox"
+} from "@/registry/bases/base/ui/combobox"
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 
 const countries = [
   { code: "", value: "", continent: "", label: "Select country" },

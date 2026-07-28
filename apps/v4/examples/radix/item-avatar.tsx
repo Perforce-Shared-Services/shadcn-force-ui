@@ -4,8 +4,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/radix-force-ui/ui/avatar"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+} from "@/registry/bases/radix/ui/avatar"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Item,
   ItemActions,
@@ -13,7 +13,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/styles/radix-force-ui/ui/item"
+} from "@/registry/bases/radix/ui/item"
 
 export function ItemAvatar() {
   return (

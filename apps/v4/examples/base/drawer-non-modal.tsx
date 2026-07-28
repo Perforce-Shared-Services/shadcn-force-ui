@@ -1,4 +1,4 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -7,7 +7,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/styles/base-force-ui/ui/drawer"
+} from "@/registry/bases/base/ui/drawer"
 
 export function DrawerNonModal() {
   return (

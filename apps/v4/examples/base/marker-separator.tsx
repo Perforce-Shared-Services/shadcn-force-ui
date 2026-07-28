@@ -1,4 +1,4 @@
-import { Marker, MarkerContent } from "@/styles/base-force-ui/ui/marker"
+import { Marker, MarkerContent } from "@/registry/bases/base/ui/marker"
 
 export function MarkerSeparatorDemo() {
   return (

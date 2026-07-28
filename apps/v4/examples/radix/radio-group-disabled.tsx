@@ -1,8 +1,8 @@
-import { Field, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/radix-force-ui/ui/radio-group"
+} from "@/registry/bases/radix/ui/radio-group"
 
 export function RadioGroupDisabled() {
   return (

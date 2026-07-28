@@ -1,6 +1,6 @@
 import { Markdown } from "@/components/markdown"
-import { Bubble, BubbleContent } from "@/styles/aria-force-ui/ui/bubble"
-import { Message, MessageContent } from "@/styles/aria-force-ui/ui/message"
+import { Bubble, BubbleContent } from "@/registry/bases/aria/ui/bubble"
+import { Message, MessageContent } from "@/registry/bases/aria/ui/message"
 
 const response = `Here's how to render markdown in a message:
 

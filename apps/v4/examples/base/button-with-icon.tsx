@@ -1,6 +1,6 @@
 import { IconGitBranch, IconGitFork } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 
 export default function ButtonWithIcon() {
   return (

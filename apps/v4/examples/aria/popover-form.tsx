@@ -1,13 +1,13 @@
-import { Button } from "@/styles/aria-force-ui/ui/button"
-import { Field, FieldGroup, FieldLabel } from "@/styles/aria-force-ui/ui/field"
-import { Input } from "@/styles/aria-force-ui/ui/input"
+import { Button } from "@/registry/bases/aria/ui/button"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/aria/ui/field"
+import { Input } from "@/registry/bases/aria/ui/input"
 import {
   Popover,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/aria-force-ui/ui/popover"
+} from "@/registry/bases/aria/ui/popover"
 
 export function PopoverForm() {
   return (

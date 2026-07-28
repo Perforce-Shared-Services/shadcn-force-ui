@@ -3,19 +3,19 @@
 import * as React from "react"
 import { AudioLinesIcon, PlusIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/base-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/base/ui/button"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
+} from "@/registry/bases/base/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 export default function ButtonGroupInputGroup() {
   const [voiceEnabled, setVoiceEnabled] = React.useState(false)

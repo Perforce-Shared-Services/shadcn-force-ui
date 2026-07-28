@@ -3,7 +3,7 @@
 import * as React from "react"
 import { CreditCardIcon, SettingsIcon, UserIcon } from "lucide-react"
 
-import { Button } from "@/styles/aria-force-ui/ui/button"
+import { Button } from "@/registry/bases/aria/ui/button"
 import {
   Command,
   CommandDialog,
@@ -13,7 +13,7 @@ import {
   CommandItem,
   CommandList,
   CommandShortcut,
-} from "@/styles/aria-force-ui/ui/command"
+} from "@/registry/bases/aria/ui/command"
 
 export function CommandWithShortcuts() {
   const [open, setOpen] = React.useState(false)
