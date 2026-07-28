@@ -35,6 +35,8 @@ const nextConfig = {
     cpus: 2,
     staticGenerationMaxConcurrency: 2,
     staticGenerationMinPagesPerWorker: 100,
+    turbopackMemoryLimit: 4 * 1024 * 1024 * 1024,
+    turbopackSourceMaps: false,
     // Rewrite barrel imports to deep imports so a single icon doesn't pull the
     // whole package into the module graph. Next already optimizes lucide-react,
     // @tabler/icons-react, date-fns and lodash-es by default; these are the
