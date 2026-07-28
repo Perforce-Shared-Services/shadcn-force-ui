@@ -54,33 +54,47 @@ void import("@/registry/icons/icon-remixicon")
 void import("@/registry/icons/icon-material-symbols") // [FORCE-UI]
 
 export function IconPlaceholder({
-  ...props
+  lucide,
+  tabler,
+  hugeicons,
+  phosphor,
+  remixicon,
+  materialSymbols, // [FORCE-UI]
+  ...svgProps
 }: {
   [K in IconLibraryName]?: string // [FORCE-UI] partial: upstream examples only pass known icon libraries
 } & React.ComponentProps<"svg">) {
   const [{ iconLibrary }] = useDesignSystemSearchParams()
-  const iconName = props[iconLibrary]
+  const namesByLibrary: Record<IconLibraryName, string | undefined> = {
+    lucide,
+    tabler,
+    hugeicons,
+    phosphor,
+    remixicon,
+    materialSymbols, // [FORCE-UI]
+  }
+  const iconName = namesByLibrary[iconLibrary]
 
   if (!iconName) {
     return null
   }
 
   return (
-    <Suspense fallback={<SquareIcon {...props} />}>
-      {iconLibrary === "lucide" && <IconLucide name={iconName} {...props} />}
-      {iconLibrary === "tabler" && <IconTabler name={iconName} {...props} />}
+    <Suspense fallback={<SquareIcon {...svgProps} />}>
+      {iconLibrary === "lucide" && <IconLucide name={iconName} {...svgProps} />}
+      {iconLibrary === "tabler" && <IconTabler name={iconName} {...svgProps} />}
       {iconLibrary === "hugeicons" && (
-        <IconHugeicons name={iconName} {...props} />
+        <IconHugeicons name={iconName} {...svgProps} />
       )}
       {iconLibrary === "phosphor" && (
-        <IconPhosphor name={iconName} {...props} />
+        <IconPhosphor name={iconName} {...svgProps} />
       )}
       {iconLibrary === "remixicon" && (
-        <IconRemixicon name={iconName} {...props} />
+        <IconRemixicon name={iconName} {...svgProps} />
       )}
       {/* [FORCE-UI] */}
       {iconLibrary === "materialSymbols" && (
-        <IconMaterialSymbols name={iconName} {...props} />
+        <IconMaterialSymbols name={iconName} {...svgProps} />
       )}
     </Suspense>
   )
