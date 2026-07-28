@@ -1304,11 +1304,14 @@ export const Components: Record<string, Record<string, any>> = {`
             path: `registry/${style.name}/${file.path}`,
           }))
 
+      // [FORCE-UI] Runtime component imports resolve directly to the
+      // canonical base sources — the apps/v4/styles/<style>/ui snapshot
+      // layer is no longer imported at runtime. CLI JSON emission
+      // (resolvedFiles below) still points at styles/<style>/ui for the
+      // shipping registry artifact until that path is also collapsed.
       const componentPath = files[0]?.path
         ? styleCombination
-          ? isStyledOutputFile(files[0].path)
-            ? `@/styles/${style.name}/${stripFileExtension(files[0].path)}`
-            : `@/registry/bases/${styleCombination.base.name}/${stripFileExtension(files[0].path)}`
+          ? `@/registry/bases/${styleCombination.base.name}/${stripFileExtension(files[0].path)}`
           : `@/registry/${style.name}/${stripFileExtension(files[0].path)}`
         : ""
       const firstFileExt = files[0]?.path ? path.extname(files[0].path) : ""

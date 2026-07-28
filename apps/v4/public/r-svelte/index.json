@@ -2,8 +2,12 @@
   {
     "name": "accordion",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/accordion/accordion-content.svelte",
@@ -37,7 +41,9 @@
   {
     "name": "alert",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/alert/alert-action.svelte",
@@ -71,8 +77,13 @@
   {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/alert-dialog/alert-dialog-action.svelte",
@@ -138,7 +149,9 @@
   {
     "name": "aspect-ratio",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
+    "dependencies": [
+      "bits-ui"
+    ],
     "files": [
       {
         "path": "ui/aspect-ratio/aspect-ratio.svelte",
@@ -160,8 +173,12 @@
   {
     "name": "avatar",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/avatar/avatar-badge.svelte",
@@ -203,7 +220,9 @@
   {
     "name": "badge",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/badge/badge.svelte",
@@ -225,7 +244,9 @@
   {
     "name": "breadcrumb",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/breadcrumb/breadcrumb-ellipsis.svelte",
@@ -271,7 +292,9 @@
   {
     "name": "button",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/button/button.svelte",
@@ -293,7 +316,10 @@
   {
     "name": "button-group",
     "type": "registry:ui",
-    "registryDependencies": ["separator", "utils"],
+    "registryDependencies": [
+      "separator",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/button-group/button-group-separator.svelte",
@@ -323,8 +349,14 @@
   {
     "name": "calendar",
     "type": "registry:ui",
-    "dependencies": ["@internationalized/date", "bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "@internationalized/date",
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/calendar/calendar-caption.svelte",
@@ -414,7 +446,9 @@
   {
     "name": "card",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/card/card-action.svelte",
@@ -460,8 +494,14 @@
   {
     "name": "carousel",
     "type": "registry:ui",
-    "dependencies": ["bits-ui", "embla-carousel-svelte"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "bits-ui",
+      "embla-carousel-svelte"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/carousel/carousel-content.svelte",
@@ -503,7 +543,9 @@
   {
     "name": "chart",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/chart/chart-container.svelte",
@@ -537,8 +579,12 @@
   {
     "name": "checkbox",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/checkbox/checkbox.svelte",
@@ -560,7 +606,9 @@
   {
     "name": "collapsible",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
+    "dependencies": [
+      "bits-ui"
+    ],
     "files": [
       {
         "path": "ui/collapsible/collapsible-content.svelte",
@@ -590,8 +638,14 @@
   {
     "name": "command",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["dialog", "input-group", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "dialog",
+      "input-group",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/command/command-dialog.svelte",
@@ -653,8 +707,12 @@
   {
     "name": "context-menu",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/context-menu/context-menu-checkbox-item.svelte",
@@ -736,8 +794,13 @@
   {
     "name": "dialog",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/dialog/dialog-close.svelte",
@@ -795,8 +858,12 @@
   {
     "name": "drawer",
     "type": "registry:ui",
-    "dependencies": ["vaul-svelte"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "vaul-svelte"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/drawer/drawer-close.svelte",
@@ -858,8 +925,12 @@
   {
     "name": "dropdown-menu",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/dropdown-menu/dropdown-menu-checkbox-group.svelte",
@@ -945,7 +1016,9 @@
   {
     "name": "empty",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/empty/empty-content.svelte",
@@ -987,7 +1060,11 @@
   {
     "name": "field",
     "type": "registry:ui",
-    "registryDependencies": ["label", "separator", "utils"],
+    "registryDependencies": [
+      "label",
+      "separator",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/field/field-content.svelte",
@@ -1045,8 +1122,12 @@
   {
     "name": "hover-card",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/hover-card/hover-card-content.svelte",
@@ -1080,7 +1161,9 @@
   {
     "name": "input",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/input/index.ts",
@@ -1102,7 +1185,12 @@
   {
     "name": "input-group",
     "type": "registry:ui",
-    "registryDependencies": ["button", "input", "textarea", "utils"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "textarea",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/input-group/index.ts",
@@ -1144,8 +1232,12 @@
   {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/input-otp/index.ts",
@@ -1179,7 +1271,10 @@
   {
     "name": "item",
     "type": "registry:ui",
-    "registryDependencies": ["separator", "utils"],
+    "registryDependencies": [
+      "separator",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/item/index.ts",
@@ -1237,7 +1332,9 @@
   {
     "name": "kbd",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/kbd/index.ts",
@@ -1263,8 +1360,12 @@
   {
     "name": "label",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/label/index.ts",
@@ -1286,8 +1387,12 @@
   {
     "name": "menubar",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/menubar/index.ts",
@@ -1373,7 +1478,9 @@
   {
     "name": "native-select",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/native-select/index.ts",
@@ -1403,8 +1510,12 @@
   {
     "name": "navigation-menu",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/navigation-menu/index.ts",
@@ -1454,8 +1565,13 @@
   {
     "name": "pagination",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/pagination/index.ts",
@@ -1509,8 +1625,12 @@
   {
     "name": "popover",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/popover/index.ts",
@@ -1560,8 +1680,12 @@
   {
     "name": "progress",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/progress/index.ts",
@@ -1583,8 +1707,12 @@
   {
     "name": "radio-group",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/radio-group/index.ts",
@@ -1610,8 +1738,14 @@
   {
     "name": "range-calendar",
     "type": "registry:ui",
-    "dependencies": ["@internationalized/date", "bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "@internationalized/date",
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/range-calendar/index.ts",
@@ -1701,8 +1835,12 @@
   {
     "name": "resizable",
     "type": "registry:ui",
-    "dependencies": ["paneforge"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "paneforge"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/resizable/index.ts",
@@ -1728,8 +1866,12 @@
   {
     "name": "scroll-area",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/scroll-area/index.ts",
@@ -1755,8 +1897,13 @@
   {
     "name": "select",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["separator", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "separator",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/select/index.ts",
@@ -1818,8 +1965,12 @@
   {
     "name": "separator",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/separator/index.ts",
@@ -1841,8 +1992,13 @@
   {
     "name": "sheet",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["button", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "button",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/sheet/index.ts",
@@ -1900,7 +2056,9 @@
   {
     "name": "sidebar",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
+    "dependencies": [
+      "bits-ui"
+    ],
     "registryDependencies": [
       "button",
       "input",
@@ -2027,7 +2185,9 @@
   {
     "name": "skeleton",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/skeleton/index.ts",
@@ -2049,8 +2209,12 @@
   {
     "name": "slider",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/slider/index.ts",
@@ -2072,7 +2236,9 @@
   {
     "name": "sonner",
     "type": "registry:ui",
-    "dependencies": ["svelte-sonner"],
+    "dependencies": [
+      "svelte-sonner"
+    ],
     "files": [
       {
         "path": "ui/sonner/index.ts",
@@ -2094,7 +2260,9 @@
   {
     "name": "spinner",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/spinner/index.ts",
@@ -2116,8 +2284,12 @@
   {
     "name": "switch",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/switch/index.ts",
@@ -2139,7 +2311,9 @@
   {
     "name": "table",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/table/index.ts",
@@ -2189,8 +2363,12 @@
   {
     "name": "tabs",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/tabs/index.ts",
@@ -2224,7 +2402,9 @@
   {
     "name": "textarea",
     "type": "registry:ui",
-    "registryDependencies": ["utils"],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/textarea/index.ts",
@@ -2246,8 +2426,12 @@
   {
     "name": "toggle",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/toggle/index.ts",
@@ -2269,8 +2453,13 @@
   {
     "name": "toggle-group",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["toggle", "utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "toggle",
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/toggle-group/index.ts",
@@ -2296,8 +2485,12 @@
   {
     "name": "tooltip",
     "type": "registry:ui",
-    "dependencies": ["bits-ui"],
-    "registryDependencies": ["utils"],
+    "dependencies": [
+      "bits-ui"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
     "files": [
       {
         "path": "ui/tooltip/index.ts",
