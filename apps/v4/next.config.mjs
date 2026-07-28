@@ -15,8 +15,8 @@ if (
 
 const additionalSettings = {}
 
-if(process.env.BUILD_STANDALONE){
-    additionalSettings.output = "standalone";
+if (process.env.BUILD_STANDALONE) {
+  additionalSettings.output = "standalone"
 }
 
 /** @type {import('next').NextConfig} */
@@ -30,6 +30,11 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
+    // [FORCE-UI] Keep production builds within Vercel's memory limit. Registry
+    // and MDX pages retain large module graphs while static pages are rendered.
+    cpus: 2,
+    staticGenerationMaxConcurrency: 2,
+    staticGenerationMinPagesPerWorker: 100,
     // Rewrite barrel imports to deep imports so a single icon doesn't pull the
     // whole package into the module graph. Next already optimizes lucide-react,
     // @tabler/icons-react, date-fns and lodash-es by default; these are the
