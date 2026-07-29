@@ -4,7 +4,7 @@
 import "server-only"
 
 export const ExamplesIndex: Record<string, Record<string, any>> = {
-  "base": {
+  base: {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/base/accordion-basic.tsx",
@@ -1749,22 +1749,6 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "slider-vertical",
       filePath: "examples/base/slider-vertical.tsx",
     },
-    "sonner-demo": {
-      name: "sonner-demo",
-      filePath: "examples/base/sonner-demo.tsx",
-    },
-    "sonner-description": {
-      name: "sonner-description",
-      filePath: "examples/base/sonner-description.tsx",
-    },
-    "sonner-position": {
-      name: "sonner-position",
-      filePath: "examples/base/sonner-position.tsx",
-    },
-    "sonner-types": {
-      name: "sonner-types",
-      filePath: "examples/base/sonner-types.tsx",
-    },
     "spinner-badge": {
       name: "spinner-badge",
       filePath: "examples/base/spinner-badge.tsx",
@@ -1905,6 +1889,18 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "textarea-variants",
       filePath: "examples/base/textarea-variants.tsx",
     },
+    "toast-demo": {
+      name: "toast-demo",
+      filePath: "examples/base/toast-demo.tsx",
+    },
+    "toast-promise": {
+      name: "toast-promise",
+      filePath: "examples/base/toast-promise.tsx",
+    },
+    "toast-types": {
+      name: "toast-types",
+      filePath: "examples/base/toast-types.tsx",
+    },
     "toggle-demo": {
       name: "toggle-demo",
       filePath: "examples/base/toggle-demo.tsx",
@@ -2042,7 +2038,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       filePath: "examples/base/typography-table.tsx",
     },
   },
-  "aria": {
+  aria: {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/aria/accordion-basic.tsx",
@@ -3980,7 +3976,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       filePath: "examples/aria/typography-table.tsx",
     },
   },
-  "radix": {
+  radix: {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/radix/accordion-basic.tsx",
