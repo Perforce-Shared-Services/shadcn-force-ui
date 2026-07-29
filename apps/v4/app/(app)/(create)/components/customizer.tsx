@@ -5,7 +5,6 @@ import dynamic from "next/dynamic"
 import { type RegistryItem } from "shadcn/schema"
 
 import { useIsMobile } from "@/hooks/use-mobile"
-import { getThemesForBaseColor, STYLES } from "@/registry/config"
 import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
@@ -14,6 +13,7 @@ import {
   CardHeader,
 } from "@/registry/bases/base/ui/card"
 import { FieldGroup, FieldSeparator } from "@/registry/bases/base/ui/field"
+import { getThemesForBaseColor, STYLES } from "@/registry/config"
 import { MenuAccentPicker } from "@/app/(app)/(create)/components/accent-picker"
 import { ActionMenu } from "@/app/(app)/(create)/components/action-menu"
 import { BaseColorPicker } from "@/app/(app)/(create)/components/base-color-picker"

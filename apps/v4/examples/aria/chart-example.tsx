@@ -2,7 +2,10 @@
 
 import { Bar, BarChart } from "recharts"
 
-import { ChartContainer, type ChartConfig } from "@/registry/bases/aria/ui/chart"
+import {
+  ChartContainer,
+  type ChartConfig,
+} from "@/registry/bases/aria/ui/chart"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },

@@ -13,8 +13,8 @@ import { getDefaultClassNames, type DayButton } from "react-day-picker"
 import { DayPicker } from "react-day-picker/persian"
 
 import { cn } from "@/lib/utils"
-import { Calendar } from "@/styles/aria-force-ui/ui-rtl/calendar"
 import { Button, buttonVariants } from "@/registry/bases/aria/ui/button"
+import { Calendar } from "@/styles/aria-force-ui/ui-rtl/calendar"
 
 const vazirmatn = Vazirmatn({ subsets: ["arabic"] })
 

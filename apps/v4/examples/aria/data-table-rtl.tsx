@@ -19,6 +19,7 @@ import {
   useTranslation,
   type Translations,
 } from "@/components/language-selector"
+import { buttonVariants } from "@/registry/bases/aria/ui/button"
 import { Button } from "@/styles/aria-force-ui/ui-rtl/button"
 import { Checkbox } from "@/styles/aria-force-ui/ui-rtl/checkbox"
 import {
@@ -38,7 +39,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/styles/aria-force-ui/ui-rtl/table"
-import { buttonVariants } from "@/registry/bases/aria/ui/button"
 
 const translations: Translations = {
   en: {

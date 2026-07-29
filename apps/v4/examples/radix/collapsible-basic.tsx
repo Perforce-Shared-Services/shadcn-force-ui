@@ -1,4 +1,3 @@
-import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 import { Button } from "@/registry/bases/radix/ui/button"
 import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 import {
@@ -6,6 +5,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/registry/bases/radix/ui/collapsible"
+import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 
 export function CollapsibleBasic() {
   return (

@@ -4,10 +4,7 @@ import * as React from "react"
 import { addDays } from "date-fns"
 import { type DateRange } from "react-day-picker"
 
-import {
-  Calendar,
-  CalendarDayButton,
-} from "@/registry/bases/radix/ui/calendar"
+import { Calendar, CalendarDayButton } from "@/registry/bases/radix/ui/calendar"
 import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 
 export function CalendarCustomDays() {

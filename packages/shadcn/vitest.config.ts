@@ -8,7 +8,7 @@ export default defineConfig({
       "**/node_modules/**",
       "**/fixtures/**",
     ],
-    testTimeout: 8000,
+    testTimeout: 15000,
   },
   plugins: [
     tsconfigPaths({

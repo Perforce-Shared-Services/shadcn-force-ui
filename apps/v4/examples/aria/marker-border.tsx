@@ -1,6 +1,10 @@
 import { FileTextIcon, GitBranchIcon, SearchIcon } from "lucide-react"
 
-import { Marker, MarkerContent, MarkerIcon } from "@/registry/bases/aria/ui/marker"
+import {
+  Marker,
+  MarkerContent,
+  MarkerIcon,
+} from "@/registry/bases/aria/ui/marker"
 
 export function MarkerBorderDemo() {
   return (

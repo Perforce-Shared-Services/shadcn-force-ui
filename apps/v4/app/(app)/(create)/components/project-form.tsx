@@ -12,13 +12,6 @@ import { HugeiconsIcon } from "@hugeicons/react"
 import { cn } from "@/lib/utils"
 import { useConfig } from "@/hooks/use-config"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
-import {
-  BASES,
-  buildThemeForPreset,
-  DEFAULT_CONFIG,
-  type BaseName,
-  type DesignSystemConfig,
-} from "@/registry/config"
 import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
@@ -38,7 +31,10 @@ import {
   FieldSet,
   FieldTitle,
 } from "@/registry/bases/base/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/registry/bases/base/ui/radio-group"
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/registry/bases/base/ui/radio-group"
 import { Switch } from "@/registry/bases/base/ui/switch"
 import {
   Tabs,
@@ -50,6 +46,13 @@ import {
   ToggleGroup,
   ToggleGroupItem,
 } from "@/registry/bases/base/ui/toggle-group"
+import {
+  BASES,
+  buildThemeForPreset,
+  DEFAULT_CONFIG,
+  type BaseName,
+  type DesignSystemConfig,
+} from "@/registry/config"
 import { usePresetCode } from "@/app/(app)/(create)/hooks/use-design-system"
 import {
   useDesignSystemSearchParams,

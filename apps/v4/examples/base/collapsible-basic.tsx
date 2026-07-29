@@ -1,4 +1,3 @@
-import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 import { Button } from "@/registry/bases/base/ui/button"
 import { Card, CardContent } from "@/registry/bases/base/ui/card"
 import {
@@ -6,6 +5,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/registry/bases/base/ui/collapsible"
+import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 
 export function CollapsibleBasic() {
   return (

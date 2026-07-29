@@ -79,7 +79,9 @@
   {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/alert-dialog.tsx",
@@ -158,7 +160,9 @@
   {
     "name": "attachment",
     "type": "registry:ui",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/attachment.tsx",
@@ -347,7 +351,9 @@
   {
     "name": "button-group",
     "type": "registry:ui",
-    "registryDependencies": ["separator"],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "ui/button-group.tsx",
@@ -385,8 +391,13 @@
   {
     "name": "calendar",
     "type": "registry:ui",
-    "dependencies": ["react-day-picker@latest", "date-fns"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "react-day-picker@latest",
+      "date-fns"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/calendar.tsx",
@@ -466,8 +477,12 @@
         "type": "registry:ui"
       }
     ],
-    "registryDependencies": ["button"],
-    "dependencies": ["embla-carousel-react"],
+    "registryDependencies": [
+      "button"
+    ],
+    "dependencies": [
+      "embla-carousel-react"
+    ],
     "meta": {
       "links": {
         "base": {
@@ -504,8 +519,12 @@
         "type": "registry:ui"
       }
     ],
-    "registryDependencies": ["card"],
-    "dependencies": ["recharts@3.8.0"],
+    "registryDependencies": [
+      "card"
+    ],
+    "dependencies": [
+      "recharts@3.8.0"
+    ],
     "meta": {
       "links": {
         "base": {
@@ -613,8 +632,13 @@
   {
     "name": "combobox",
     "type": "registry:ui",
-    "registryDependencies": ["button", "input-group"],
-    "dependencies": ["@base-ui/react"],
+    "registryDependencies": [
+      "button",
+      "input-group"
+    ],
+    "dependencies": [
+      "@base-ui/react"
+    ],
     "files": [
       {
         "path": "ui/combobox.tsx",
@@ -648,8 +672,13 @@
   {
     "name": "command",
     "type": "registry:ui",
-    "dependencies": ["cmdk"],
-    "registryDependencies": ["dialog", "input-group"],
+    "dependencies": [
+      "cmdk"
+    ],
+    "registryDependencies": [
+      "dialog",
+      "input-group"
+    ],
     "files": [
       {
         "path": "ui/command.tsx",
@@ -730,7 +759,9 @@
   {
     "name": "dialog",
     "type": "registry:ui",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/dialog.tsx",
@@ -771,7 +802,9 @@
   {
     "name": "direction",
     "type": "registry:ui",
-    "dependencies": ["@base-ui/react"],
+    "dependencies": [
+      "@base-ui/react"
+    ],
     "files": [
       {
         "path": "ui/direction.tsx",
@@ -798,7 +831,9 @@
   {
     "name": "drawer",
     "type": "registry:ui",
-    "dependencies": ["@base-ui/react"],
+    "dependencies": [
+      "@base-ui/react"
+    ],
     "files": [
       {
         "path": "ui/drawer.tsx",
@@ -912,7 +947,10 @@
   {
     "name": "field",
     "type": "registry:ui",
-    "registryDependencies": ["label", "separator"],
+    "registryDependencies": [
+      "label",
+      "separator"
+    ],
     "files": [
       {
         "path": "ui/field.tsx",
@@ -1035,7 +1073,11 @@
   {
     "name": "input-group",
     "type": "registry:ui",
-    "registryDependencies": ["button", "input", "textarea"],
+    "registryDependencies": [
+      "button",
+      "input",
+      "textarea"
+    ],
     "files": [
       {
         "path": "ui/input-group.tsx",
@@ -1074,7 +1116,9 @@
   {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": ["input-otp"],
+    "dependencies": [
+      "input-otp"
+    ],
     "files": [
       {
         "path": "ui/input-otp.tsx",
@@ -1115,7 +1159,9 @@
   {
     "name": "item",
     "type": "registry:ui",
-    "registryDependencies": ["separator"],
+    "registryDependencies": [
+      "separator"
+    ],
     "files": [
       {
         "path": "ui/item.tsx",
@@ -1249,7 +1295,9 @@
   {
     "name": "menubar",
     "type": "registry:ui",
-    "registryDependencies": ["dropdown-menu"],
+    "registryDependencies": [
+      "dropdown-menu"
+    ],
     "files": [
       {
         "path": "ui/menubar.tsx",
@@ -1299,8 +1347,12 @@
   {
     "name": "message-scroller",
     "type": "registry:ui",
-    "dependencies": ["@shadcn/react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "@shadcn/react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/message-scroller.tsx",
@@ -1387,8 +1439,13 @@
   {
     "name": "number-field",
     "type": "registry:ui",
-    "dependencies": ["reka-ui", "@vueuse/core"],
-    "registryDependencies": ["icon-placeholder"],
+    "dependencies": [
+      "reka-ui",
+      "@vueuse/core"
+    ],
+    "registryDependencies": [
+      "icon-placeholder"
+    ],
     "files": [
       {
         "path": "ui/number-field/NumberField.vue",
@@ -1427,7 +1484,9 @@
   {
     "name": "pagination",
     "type": "registry:ui",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/pagination.tsx",
@@ -1465,8 +1524,13 @@
   {
     "name": "pin-input",
     "type": "registry:ui",
-    "dependencies": ["reka-ui", "@vueuse/core"],
-    "registryDependencies": ["icon-placeholder"],
+    "dependencies": [
+      "reka-ui",
+      "@vueuse/core"
+    ],
+    "registryDependencies": [
+      "icon-placeholder"
+    ],
     "files": [
       {
         "path": "ui/pin-input/PinInput.vue",
@@ -1621,8 +1685,14 @@
   {
     "name": "range-calendar",
     "type": "registry:ui",
-    "dependencies": ["reka-ui", "@vueuse/core"],
-    "registryDependencies": ["button", "icon-placeholder"],
+    "dependencies": [
+      "reka-ui",
+      "@vueuse/core"
+    ],
+    "registryDependencies": [
+      "button",
+      "icon-placeholder"
+    ],
     "files": [
       {
         "path": "ui/range-calendar/RangeCalendar.vue",
@@ -1691,7 +1761,9 @@
   {
     "name": "resizable",
     "type": "registry:ui",
-    "dependencies": ["react-resizable-panels"],
+    "dependencies": [
+      "react-resizable-panels"
+    ],
     "files": [
       {
         "path": "ui/resizable.tsx",
@@ -1846,7 +1918,9 @@
   {
     "name": "sheet",
     "type": "registry:ui",
-    "registryDependencies": ["button"],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/sheet.tsx",
@@ -2010,7 +2084,10 @@
   {
     "name": "sonner",
     "type": "registry:ui",
-    "dependencies": ["sonner", "next-themes"],
+    "dependencies": [
+      "sonner",
+      "next-themes"
+    ],
     "files": [
       {
         "path": "ui/sonner.tsx",
@@ -2088,7 +2165,10 @@
   {
     "name": "stepper",
     "type": "registry:ui",
-    "dependencies": ["reka-ui", "@vueuse/core"],
+    "dependencies": [
+      "reka-ui",
+      "@vueuse/core"
+    ],
     "files": [
       {
         "path": "ui/stepper/Stepper.vue",
@@ -2253,8 +2333,13 @@
   {
     "name": "tags-input",
     "type": "registry:ui",
-    "dependencies": ["reka-ui", "@vueuse/core"],
-    "registryDependencies": ["icon-placeholder"],
+    "dependencies": [
+      "reka-ui",
+      "@vueuse/core"
+    ],
+    "registryDependencies": [
+      "icon-placeholder"
+    ],
     "files": [
       {
         "path": "ui/tags-input/TagsInput.vue",
@@ -2331,8 +2416,12 @@
   {
     "name": "toast",
     "type": "registry:ui",
-    "dependencies": ["@base-ui/react"],
-    "registryDependencies": ["button"],
+    "dependencies": [
+      "@base-ui/react"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
     "files": [
       {
         "path": "ui/toast.tsx",
@@ -2392,7 +2481,9 @@
   {
     "name": "toggle-group",
     "type": "registry:ui",
-    "registryDependencies": ["toggle"],
+    "registryDependencies": [
+      "toggle"
+    ],
     "files": [
       {
         "path": "ui/toggle-group.tsx",

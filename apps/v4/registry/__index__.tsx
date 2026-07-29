@@ -5,50 +5,33 @@ import "server-only"
 
 export const Index: Record<string, Record<string, any>> = {
   "radix-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/accordion",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx",
-          api: "https://www.radix-ui.com/primitives/docs/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -56,22 +39,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
-          api: "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -79,111 +53,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
-          api: "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/avatar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx",
-          api: "https://www.radix-ui.com/primitives/docs/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/badge",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -191,203 +123,125 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/calendar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
-          api: "https://react-day-picker.js.org",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx","api":"https://react-day-picker.js.org"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/carousel",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/chart",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/radix-force-ui/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/combobox",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/radix-force-ui/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/command",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -395,68 +249,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/drawer",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
-          api: "https://vaul.emilkowal.ski/getting-started",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx","api":"https://vaul.emilkowal.ski/getting-started"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -464,66 +291,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/empty",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/radix-force-ui/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/field",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -531,66 +333,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/radix-force-ui/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -598,90 +375,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/item",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/label",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/menubar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -689,90 +431,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/pagination",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/popover",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/progress",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -780,45 +487,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/resizable",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -826,324 +515,195 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/separator",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sheet",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "separator",
-        "sheet",
-        "tooltip",
-        "input",
-        "use-mobile",
-        "skeleton",
-      ],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","separator","sheet","tooltip","input","use-mobile","skeleton"],
+      files: [{
+        path: "styles/radix-force-ui/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/slider",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sonner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/spinner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/switch",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/table",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tabs",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/textarea",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -1151,67 +711,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx",
-          api: "https://www.radix-ui.com/docs/primitives/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/kbd",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -1219,72 +753,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/native-select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/direction",
-          api: "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/direction","api":"https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -1294,94 +809,71 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/radix-force-ui/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/radix-force-ui/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
   },
   "base-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/accordion",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/accordion","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/alert",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/alert","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -1389,22 +881,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/alert-dialog",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/alert-dialog","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -1412,110 +895,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/aspect-ratio",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/aspect-ratio","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/avatar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/avatar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/badge",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/badge","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/breadcrumb",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/breadcrumb","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/button",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/button","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -1523,203 +965,125 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/button-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/button-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/calendar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://react-day-picker.js.org",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/calendar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://react-day-picker.js.org"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/card",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/card","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/carousel",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/carousel","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["card"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/chart",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/chart","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/checkbox",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/checkbox","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/collapsible",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/collapsible","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-force-ui/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/combobox",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/combobox","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-force-ui/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/command",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/command","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -1727,68 +1091,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/context-menu",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/context-menu","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/dialog",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/dialog","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/drawer",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/drawer","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -1796,66 +1133,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/dropdown-menu",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/dropdown-menu","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/empty",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/empty","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-force-ui/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/field",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/field","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -1863,66 +1175,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/hover-card",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/hover-card","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/input",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/input","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-force-ui/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/input-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/input-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -1930,90 +1217,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/input-otp",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/input-otp","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/item",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/item","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/label",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/label","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/menubar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/menubar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -2021,90 +1273,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/navigation-menu",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/navigation-menu","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/pagination",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/pagination","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/popover",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/popover","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/progress",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/progress","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -2112,45 +1329,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/radio-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/radio-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/resizable",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/resizable","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -2158,347 +1357,209 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/scroll-area",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/scroll-area","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/select",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/select","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/separator",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/separator","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/sheet",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/sheet","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-force-ui/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/sidebar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/sidebar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/skeleton",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/skeleton","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/slider",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/slider","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/sonner",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/sonner","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/spinner",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/spinner","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/switch",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/switch","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/table",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/table","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/tabs",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/tabs","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/textarea",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/textarea","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/toast",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/toast","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/toggle",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/toggle","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -2506,67 +1567,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/toggle-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/toggle-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/tooltip",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/tooltip","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/kbd",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/kbd","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -2574,72 +1609,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/native-select",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/native-select","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -2649,94 +1665,71 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-force-ui/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-force-ui/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-force-ui/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
   },
   "aria-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/accordion",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/accordion-example.tsx",
-          api: "https://react-aria.adobe.com/DisclosureGroup#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/accordion","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/accordion-example.tsx","api":"https://react-aria.adobe.com/DisclosureGroup#api"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/alert",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/alert","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -2744,22 +1737,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/alert-dialog",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-dialog-example.tsx",
-          api: "https://react-aria.adobe.com/Modal#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/alert-dialog","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-dialog-example.tsx","api":"https://react-aria.adobe.com/Modal#api"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -2767,111 +1751,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/aspect-ratio",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/aspect-ratio","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/avatar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/avatar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/avatar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/avatar-example.tsx"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/badge",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/badge","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/breadcrumb",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/breadcrumb-example.tsx",
-          api: "https://react-aria.adobe.com/Breadcrumbs#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/breadcrumb","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/breadcrumb-example.tsx","api":"https://react-aria.adobe.com/Breadcrumbs#api"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/button",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-example.tsx",
-          api: "https://react-aria.adobe.com/Button#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/button","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-example.tsx","api":"https://react-aria.adobe.com/Button#api"}},
     },
     "button-group": {
       name: "button-group",
@@ -2879,203 +1821,125 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/button-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/button-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "select"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","select"],
+      files: [{
+        path: "styles/aria-force-ui/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/calendar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/calendar-example.tsx",
-          api: "https://react-aria.adobe.com/Calendar#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/calendar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/calendar-example.tsx","api":"https://react-aria.adobe.com/Calendar#api"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/card",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/card","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/carousel",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/docs/api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/carousel","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/docs/api"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["card"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/chart",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/chart","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/checkbox",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/checkbox-example.tsx",
-          api: "https://react-aria.adobe.com/Checkbox#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/checkbox","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/checkbox-example.tsx","api":"https://react-aria.adobe.com/Checkbox#api"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/collapsible",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/collapsible-example.tsx",
-          api: "https://react-aria.adobe.com/Disclosure#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/collapsible","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/collapsible-example.tsx","api":"https://react-aria.adobe.com/Disclosure#api"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/aria-force-ui/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/combobox",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/combobox-example.tsx",
-          api: "https://react-aria.adobe.com/ComboBox#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/combobox","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/combobox-example.tsx","api":"https://react-aria.adobe.com/ComboBox#api"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/aria-force-ui/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/command",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/command-example.tsx",
-          api: "https://react-aria.adobe.com/Autocomplete#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/command","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/command-example.tsx","api":"https://react-aria.adobe.com/Autocomplete#api"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -3083,68 +1947,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/context-menu",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/context-menu-example.tsx",
-          api: "https://react-aria.adobe.com/Menu#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/context-menu","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/context-menu-example.tsx","api":"https://react-aria.adobe.com/Menu#api"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/dialog",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dialog-example.tsx",
-          api: "https://react-aria.adobe.com/Modal#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/dialog","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dialog-example.tsx","api":"https://react-aria.adobe.com/Modal#api"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/drawer",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/drawer","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -3152,112 +1989,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/dropdown-menu",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dropdown-menu-example.tsx",
-          api: "https://react-aria.adobe.com/Menu#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/dropdown-menu","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/dropdown-menu-example.tsx","api":"https://react-aria.adobe.com/Menu#api"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/empty",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/empty","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/aria-force-ui/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/field",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/field","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/field-example.tsx"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/input",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-example.tsx",
-          api: "https://react-aria.adobe.com/TextField#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/input","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-example.tsx","api":"https://react-aria.adobe.com/TextField#api"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/aria-force-ui/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/input-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-group-example.tsx",
-          api: "https://react-aria.adobe.com/Group#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/input-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-group-example.tsx","api":"https://react-aria.adobe.com/Group#api"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -3265,136 +2059,83 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/input-otp",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/input-otp","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/item",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/item-example.tsx",
-          api: "https://react-aria.adobe.com/Link#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/item","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/item-example.tsx","api":"https://react-aria.adobe.com/Link#api"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/label",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/label-example.tsx",
-          api: "https://react-aria.adobe.com/TextField#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/label","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/label-example.tsx","api":"https://react-aria.adobe.com/TextField#api"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/pagination",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/pagination","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/popover",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/popover-example.tsx",
-          api: "https://react-aria.adobe.com/Popover#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/popover","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/popover-example.tsx","api":"https://react-aria.adobe.com/Popover#api"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/progress",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/progress-example.tsx",
-          api: "https://react-aria.adobe.com/ProgressBar#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/progress","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/progress-example.tsx","api":"https://react-aria.adobe.com/ProgressBar#api"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -3402,45 +2143,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/radio-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/radio-group-example.tsx",
-          api: "https://react-aria.adobe.com/RadioGroup#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/radio-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/radio-group-example.tsx","api":"https://react-aria.adobe.com/RadioGroup#api"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/resizable",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/resizable","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -3448,325 +2171,195 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/scroll-area",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/scroll-area-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/scroll-area","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/scroll-area-example.tsx"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["input-group"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/select",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/select-example.tsx",
-          api: "https://react-aria.adobe.com/Select#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/select","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/select-example.tsx","api":"https://react-aria.adobe.com/Select#api"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/separator",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/separator-example.tsx",
-          api: "https://react-aria.adobe.com/Separator#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/separator","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/separator-example.tsx","api":"https://react-aria.adobe.com/Separator#api"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/sheet",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sheet-example.tsx",
-          api: "https://react-aria.adobe.com/Modal#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/sheet","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sheet-example.tsx","api":"https://react-aria.adobe.com/Modal#api"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/aria-force-ui/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/sidebar",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/sidebar","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/skeleton",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/skeleton","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/slider",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/slider-example.tsx",
-          api: "https://react-aria.adobe.com/Slider#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/slider","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/slider-example.tsx","api":"https://react-aria.adobe.com/Slider#api"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/sonner",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/sonner","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/spinner",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/spinner","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/switch",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/switch-example.tsx",
-          api: "https://react-aria.adobe.com/Switch#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/switch","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/switch-example.tsx","api":"https://react-aria.adobe.com/Switch#api"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/table",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/table-example.tsx",
-          api: "https://react-aria.adobe.com/Table#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/table","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/table-example.tsx","api":"https://react-aria.adobe.com/Table#api"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/tabs",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tabs-example.tsx",
-          api: "https://react-aria.adobe.com/Tabs#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/tabs","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tabs-example.tsx","api":"https://react-aria.adobe.com/Tabs#api"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/textarea",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/textarea-example.tsx",
-          api: "https://react-aria.adobe.com/TextField#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/textarea","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/textarea-example.tsx","api":"https://react-aria.adobe.com/TextField#api"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/toggle",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-example.tsx",
-          api: "https://react-aria.adobe.com/ToggleButton#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/toggle","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-example.tsx","api":"https://react-aria.adobe.com/ToggleButton#api"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -3774,67 +2367,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/toggle-group",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-group-example.tsx",
-          api: "https://react-aria.adobe.com/ToggleButtonGroup#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/toggle-group","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/toggle-group-example.tsx","api":"https://react-aria.adobe.com/ToggleButtonGroup#api"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/tooltip",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tooltip-example.tsx",
-          api: "https://react-aria.adobe.com/Tooltip#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/tooltip","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/tooltip-example.tsx","api":"https://react-aria.adobe.com/Tooltip#api"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/kbd",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/kbd","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -3842,86 +2409,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/native-select",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/native-select","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/direction",
-          api: "https://react-aria.adobe.com/I18nProvider#api",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/direction","api":"https://react-aria.adobe.com/I18nProvider#api"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/attachment",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/attachment-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/attachment","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/attachment-example.tsx"}},
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/bubble",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/bubble-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/bubble","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/bubble-example.tsx"}},
     },
     "message-scroller": {
       name: "message-scroller",
@@ -3929,151 +2465,103 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/message-scroller",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-scroller-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/message-scroller","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-scroller-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/marker",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/marker-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/marker","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/marker-example.tsx"}},
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/aria-force-ui/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/aria-force-ui/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://ui.shadcn.com/docs/components/aria/message",
-          examples:
-            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://ui.shadcn.com/docs/components/aria/message","examples":"https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-example.tsx"}},
     },
   },
   "vue-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/accordion/Accordion.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/accordion/AccordionContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/accordion/AccordionItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/accordion/AccordionTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/accordion/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/accordion/Accordion.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/accordion/AccordionContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/accordion/AccordionItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/accordion/AccordionTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/accordion/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/accordion",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/alert/Alert.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert/AlertAction.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert/AlertDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert/AlertTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/alert/Alert.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert/AlertAction.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert/AlertDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert/AlertTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -4081,71 +2569,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialog.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogAction.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogCancel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogMedia.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/alert-dialog/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialog.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogAction.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogCancel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogMedia.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/AlertDialogTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/alert-dialog/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -4153,189 +2623,133 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/aspect-ratio/AspectRatio.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/aspect-ratio/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/aspect-ratio/AspectRatio.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/aspect-ratio/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/avatar/Avatar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/AvatarBadge.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/AvatarFallback.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/AvatarGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/AvatarGroupCount.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/AvatarImage.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/avatar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/avatar/Avatar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/AvatarBadge.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/AvatarFallback.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/AvatarGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/AvatarGroupCount.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/AvatarImage.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/avatar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/avatar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/badge/Badge.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/badge/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/badge/Badge.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/badge/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/badge",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/Breadcrumb.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbEllipsis.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbLink.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbList.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbPage.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/breadcrumb/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/breadcrumb/Breadcrumb.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbEllipsis.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbLink.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbList.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbPage.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/BreadcrumbSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/breadcrumb/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/button/Button.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/button/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/button/Button.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/button/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue"}},
     },
     "button-group": {
       name: "button-group",
@@ -4343,487 +2757,357 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/button-group/ButtonGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/button-group/ButtonGroupSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/button-group/ButtonGroupText.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/button-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/button-group/ButtonGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/button-group/ButtonGroupSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/button-group/ButtonGroupText.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/button-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["native-select", "button", "icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/calendar/Calendar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarCell.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarCellTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarGrid.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarGridBody.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarGridHead.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarGridRow.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarHeadCell.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarHeading.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarNextButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/CalendarPrevButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/calendar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["native-select","button","icon-placeholder"],
+      files: [{
+        path: "styles/vue-force-ui/ui/calendar/Calendar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarCell.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarCellTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarGrid.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarGridBody.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarGridHead.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarGridRow.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarHeadCell.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarHeading.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarNextButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/CalendarPrevButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/calendar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/calendar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/card/Card.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardAction.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/CardTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/card/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/card/Card.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardAction.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/CardTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/card/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/carousel/Carousel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/CarouselContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/CarouselItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/CarouselNext.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/CarouselPrevious.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/interface.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/carousel/useCarousel.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","icon-placeholder"],
+      files: [{
+        path: "styles/vue-force-ui/ui/carousel/Carousel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/CarouselContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/CarouselItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/CarouselNext.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/CarouselPrevious.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/interface.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/carousel/useCarousel.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/carousel",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/chart/ChartContainer.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/chart/ChartLegendContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/chart/ChartStyle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/chart/ChartTooltipContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/chart/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/chart/utils.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/chart/ChartContainer.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/chart/ChartLegendContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/chart/ChartStyle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/chart/ChartTooltipContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/chart/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/chart/utils.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/chart",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/checkbox/Checkbox.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/checkbox/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/checkbox/Checkbox.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/checkbox/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/collapsible/Collapsible.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/collapsible/CollapsibleContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/collapsible/CollapsibleTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/collapsible/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/collapsible/Collapsible.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/collapsible/CollapsibleContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/collapsible/CollapsibleTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/collapsible/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/combobox/Combobox.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxAnchor.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxEmpty.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxItemIndicator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxList.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/ComboboxViewport.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/combobox/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/combobox/Combobox.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxAnchor.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxEmpty.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxItemIndicator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxList.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/ComboboxViewport.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/combobox/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/combobox",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/command/Command.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandDialog.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandEmpty.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandList.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/CommandShortcut.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/command/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/vue-force-ui/ui/command/Command.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandDialog.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandEmpty.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandList.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/CommandShortcut.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/command/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/command",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -4831,235 +3115,177 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenu.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuCheckboxItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuPortal.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuRadioGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuRadioItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuShortcut.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuSub.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuSubContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuSubTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/ContextMenuTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/context-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenu.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuCheckboxItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuPortal.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuRadioGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuRadioItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuShortcut.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuSub.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuSubContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuSubTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/ContextMenuTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/context-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/dialog/Dialog.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogClose.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogOverlay.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogScrollContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/DialogTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dialog/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","icon-placeholder"],
+      files: [{
+        path: "styles/vue-force-ui/ui/dialog/Dialog.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogClose.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogOverlay.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogScrollContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/DialogTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dialog/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/drawer/Drawer.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerClose.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerOverlay.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/DrawerTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/drawer/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/drawer/Drawer.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerClose.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerOverlay.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/DrawerTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/drawer/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/drawer",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -5067,272 +3293,203 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenu.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuCheckboxItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuRadioGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuRadioItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuShortcut.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSub.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSubContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSubTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/dropdown-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenu.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuCheckboxItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuRadioGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuRadioItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuShortcut.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSub.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSubContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuSubTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/DropdownMenuTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/dropdown-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/empty/Empty.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/EmptyContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/EmptyDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/EmptyHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/EmptyMedia.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/EmptyTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/empty/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/empty/Empty.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/EmptyContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/EmptyDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/EmptyHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/EmptyMedia.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/EmptyTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/empty/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/empty",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/field/Field.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldError.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldLegend.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldSet.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/FieldTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/field/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/vue-force-ui/ui/field/Field.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldError.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldLegend.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldSet.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/FieldTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/field/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/field",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue"}},
     },
-    form: {
+    "form": {
       name: "form",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["label"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/form/FormControl.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/FormDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/FormItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/FormLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/FormMessage.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/injectionKeys.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/form/useFormField.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/form/FormControl.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/FormDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/FormItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/FormLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/FormMessage.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/injectionKeys.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/form/useFormField.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/form",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/form","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -5340,115 +3497,81 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/hover-card/HoverCard.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/hover-card/HoverCardContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/hover-card/HoverCardTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/hover-card/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/hover-card/HoverCard.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/hover-card/HoverCardContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/hover-card/HoverCardTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/hover-card/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/input/Input.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/input/Input.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroupAddon.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroupButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroupInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroupText.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/InputGroupTextarea.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/vue-force-ui/ui/input-group/InputGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/InputGroupAddon.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/InputGroupButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/InputGroupInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/InputGroupText.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/InputGroupTextarea.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -5456,269 +3579,197 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/input-otp/InputOTP.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-otp/InputOTPGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-otp/InputOTPSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-otp/InputOTPSlot.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/input-otp/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/input-otp/InputOTP.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-otp/InputOTPGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-otp/InputOTPSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-otp/InputOTPSlot.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/input-otp/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/item/Item.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemActions.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemMedia.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/ItemTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/item/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/item/Item.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemActions.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemMedia.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/ItemTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/item/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/item",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/kbd/Kbd.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/kbd/KbdGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/kbd/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/kbd/Kbd.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/kbd/KbdGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/kbd/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/kbd",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/label/Label.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/label/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/label/Label.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/label/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/label",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/menubar/Menubar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarCheckboxItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarMenu.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarRadioGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarRadioItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarShortcut.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarSub.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarSubContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarSubTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/MenubarTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/menubar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/menubar/Menubar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarCheckboxItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarMenu.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarRadioGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarRadioItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarShortcut.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarSub.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarSubContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarSubTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/MenubarTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/menubar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/menubar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue"}},
     },
     "native-select": {
       name: "native-select",
@@ -5726,36 +3777,25 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/native-select/NativeSelect.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/native-select/NativeSelectOptGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/native-select/NativeSelectOption.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/native-select/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/native-select/NativeSelect.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/native-select/NativeSelectOptGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/native-select/NativeSelectOption.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/native-select/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/native-select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -5763,61 +3803,45 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenu.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuIndicator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuLink.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuList.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuViewport.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/navigation-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenu.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuIndicator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuLink.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuList.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/NavigationMenuViewport.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/navigation-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue"}},
     },
     "number-field": {
       name: "number-field",
@@ -5825,113 +3849,83 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/number-field/NumberField.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/number-field/NumberFieldContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/number-field/NumberFieldDecrement.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/number-field/NumberFieldIncrement.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/number-field/NumberFieldInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/number-field/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/number-field/NumberField.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/number-field/NumberFieldContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/number-field/NumberFieldDecrement.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/number-field/NumberFieldIncrement.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/number-field/NumberFieldInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/number-field/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/number-field",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/number-field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/pagination/Pagination.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationEllipsis.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationFirst.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationLast.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationLink.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationNext.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/PaginationPrevious.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pagination/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","icon-placeholder"],
+      files: [{
+        path: "styles/vue-force-ui/ui/pagination/Pagination.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationEllipsis.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationFirst.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationLast.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationLink.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationNext.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/PaginationPrevious.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pagination/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pagination",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue"}},
     },
     "pin-input": {
       name: "pin-input",
@@ -5939,125 +3933,89 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/pin-input/PinInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pin-input/PinInputGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pin-input/PinInputSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pin-input/PinInputSlot.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/pin-input/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/pin-input/PinInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pin-input/PinInputGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pin-input/PinInputSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pin-input/PinInputSlot.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/pin-input/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/popover/Popover.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverAnchor.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/PopoverTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/popover/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/popover/Popover.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverAnchor.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/PopoverTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/popover/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/popover",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/progress/Progress.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/progress/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/progress/Progress.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/progress/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/progress",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -6065,148 +4023,109 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/radio-group/RadioGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/radio-group/RadioGroupItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/radio-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/radio-group/RadioGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/radio-group/RadioGroupItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/radio-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue"}},
     },
     "range-calendar": {
       name: "range-calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarCell.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarCellTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGrid.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridBody.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridHead.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridRow.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeadCell.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeading.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarNextButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarPrevButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/range-calendar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","icon-placeholder"],
+      files: [{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarCell.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarCellTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGrid.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridBody.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridHead.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarGridRow.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeadCell.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarHeading.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarNextButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/RangeCalendarPrevButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/range-calendar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/resizable/ResizableHandle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/resizable/ResizablePanel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/resizable/ResizablePanelGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/resizable/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/resizable/ResizableHandle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/resizable/ResizablePanel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/resizable/ResizablePanelGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/resizable/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/resizable",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -6214,663 +4133,477 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/scroll-area/ScrollArea.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/scroll-area/ScrollBar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/scroll-area/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/scroll-area/ScrollArea.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/scroll-area/ScrollBar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/scroll-area/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/select/Select.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectItemText.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectScrollDownButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectScrollUpButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/SelectValue.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/select/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/select/Select.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectItemText.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectScrollDownButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectScrollUpButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/SelectValue.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/select/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/separator/Separator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/separator/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/separator/Separator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/separator/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/separator",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/sheet/Sheet.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetClose.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetOverlay.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/SheetTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sheet/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/sheet/Sheet.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetClose.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetOverlay.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/SheetTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sheet/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sheet",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "sheet",
-        "input",
-        "tooltip",
-        "skeleton",
-        "separator",
-        "icon-placeholder",
-        "button",
-      ],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/sidebar/Sidebar.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarGroupAction.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarGroupContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarGroupLabel.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarInset.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenu.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuAction.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuBadge.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuButtonChild.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSkeleton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSub.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSubButton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSubItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarProvider.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarRail.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/SidebarTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sidebar/utils.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["sheet","input","tooltip","skeleton","separator","icon-placeholder","button"],
+      files: [{
+        path: "styles/vue-force-ui/ui/sidebar/Sidebar.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarGroupAction.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarGroupContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarGroupLabel.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarInset.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenu.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuAction.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuBadge.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuButtonChild.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSkeleton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSub.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSubButton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarMenuSubItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarProvider.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarRail.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/SidebarTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sidebar/utils.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/skeleton/Skeleton.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/skeleton/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/skeleton/Skeleton.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/skeleton/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/slider/Slider.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/slider/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/slider/Slider.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/slider/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/slider",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/sonner/Sonner.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/sonner/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/sonner/Sonner.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/sonner/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sonner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/spinner/Spinner.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/spinner/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/spinner/Spinner.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/spinner/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/spinner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue"}},
     },
-    stepper: {
+    "stepper": {
       name: "stepper",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/stepper/Stepper.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperDescription.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperIndicator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperSeparator.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperTitle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/StepperTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/stepper/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/stepper/Stepper.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperDescription.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperIndicator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperSeparator.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperTitle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/StepperTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/stepper/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/stepper",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/stepper","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/switch/Switch.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/switch/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/switch/Switch.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/switch/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/switch",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/table/Table.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableBody.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableCaption.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableCell.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableEmpty.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableFooter.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableHead.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableHeader.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/TableRow.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/table/utils.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/table/Table.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableBody.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableCaption.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableCell.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableEmpty.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableFooter.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableHead.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableHeader.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/TableRow.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/table/utils.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/table",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/tabs/Tabs.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tabs/TabsContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tabs/TabsList.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tabs/TabsTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tabs/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/tabs/Tabs.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tabs/TabsContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tabs/TabsList.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tabs/TabsTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tabs/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tabs",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue"}},
     },
     "tags-input": {
       name: "tags-input",
@@ -6878,100 +4611,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["icon-placeholder"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/tags-input/TagsInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tags-input/TagsInputInput.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tags-input/TagsInputItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tags-input/TagsInputItemDelete.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tags-input/TagsInputItemText.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tags-input/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/tags-input/TagsInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tags-input/TagsInputInput.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tags-input/TagsInputItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tags-input/TagsInputItemDelete.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tags-input/TagsInputItemText.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tags-input/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/textarea/Textarea.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/textarea/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/textarea/Textarea.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/textarea/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/textarea",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/toggle/Toggle.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/toggle/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/toggle/Toggle.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/toggle/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -6979,235 +4681,175 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/toggle-group/ToggleGroup.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/toggle-group/ToggleGroupItem.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/toggle-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/toggle-group/ToggleGroup.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/toggle-group/ToggleGroupItem.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/toggle-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/vue-force-ui/ui/tooltip/Tooltip.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tooltip/TooltipContent.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tooltip/TooltipProvider.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tooltip/TooltipTrigger.vue",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/vue-force-ui/ui/tooltip/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/vue-force-ui/ui/tooltip/Tooltip.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tooltip/TooltipContent.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tooltip/TooltipProvider.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tooltip/TooltipTrigger.vue",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/vue-force-ui/ui/tooltip/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue"}},
     },
   },
   "svelte-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/accordion/accordion-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/accordion/accordion-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/accordion/accordion-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/accordion/accordion.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/accordion/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/accordion/accordion-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/accordion/accordion-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/accordion/accordion-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/accordion/accordion.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/accordion/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/alert/alert-action.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert/alert-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert/alert-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert/alert.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/alert/alert-action.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert/alert-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert/alert-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert/alert.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/alert"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-action.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-cancel.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-media.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-overlay.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/alert-dialog/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-action.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-cancel.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-media.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-overlay.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/alert-dialog.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/alert-dialog/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -7215,604 +4857,457 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/aspect-ratio/aspect-ratio.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/aspect-ratio/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/aspect-ratio/aspect-ratio.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/aspect-ratio/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar-badge.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar-fallback.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar-group-count.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar-image.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/avatar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/avatar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/avatar/avatar-badge.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/avatar-fallback.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/avatar-group-count.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/avatar-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/avatar-image.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/avatar.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/avatar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/badge/badge.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/badge/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/badge/badge.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/badge/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/badge",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/badge"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-ellipsis.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-link.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-list.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-page.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/breadcrumb/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-ellipsis.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-link.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-list.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-page.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/breadcrumb.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/breadcrumb/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/button/button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/button/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/button/button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/button/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/button"}},
     },
     "button-group": {
       name: "button-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["separator", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/button-group/button-group-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/button-group/button-group-text.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/button-group/button-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/button-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["separator","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/button-group/button-group-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/button-group/button-group-text.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/button-group/button-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/button-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-caption.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-cell.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-day.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-grid-body.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-grid-head.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-grid-row.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-grid.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-head-cell.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-month-select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-month.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-months.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-nav.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-next-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-prev-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar-year-select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/calendar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/calendar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-caption.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-cell.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-day.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-grid-body.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-grid-head.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-grid-row.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-grid.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-head-cell.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-month-select.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-month.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-months.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-nav.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-next-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-prev-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar-year-select.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/calendar.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/calendar/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/card/card-action.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/card.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/card/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/card/card-action.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/card.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/card/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/card",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/card"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/carousel/carousel-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/carousel-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/carousel-next.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/carousel-previous.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/carousel.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/context.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/carousel/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/carousel/carousel-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/carousel-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/carousel-next.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/carousel-previous.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/carousel.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/context.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/carousel/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/chart/chart-container.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/chart/chart-style.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/chart/chart-tooltip.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/chart/chart-utils.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/chart/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/chart/chart-container.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/chart/chart-style.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/chart/chart-tooltip.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/chart/chart-utils.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/chart/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/chart",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/chart"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/checkbox/checkbox.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/checkbox/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/checkbox/checkbox.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/checkbox/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/collapsible/collapsible-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/collapsible/collapsible-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/collapsible/collapsible.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/collapsible/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/collapsible/collapsible-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/collapsible/collapsible-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/collapsible/collapsible.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/collapsible/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/command/command-dialog.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-empty.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-input.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-link-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-list.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-loading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command-shortcut.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/command.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/command/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/command/command-dialog.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-empty.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-input.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-link-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-list.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-loading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command-shortcut.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/command.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/command/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/command",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/command"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -7820,244 +5315,189 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-checkbox-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-group-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-radio-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-radio-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-shortcut.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/context-menu.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/context-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-checkbox-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-group-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-radio-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-radio-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-shortcut.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-sub.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/context-menu.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/context-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-close.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-overlay.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/dialog.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dialog/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-close.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-overlay.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/dialog.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dialog/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-close.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-nested.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-overlay.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/drawer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/drawer/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-close.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-nested.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-overlay.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/drawer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/drawer/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -8065,224 +5505,173 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-checkbox-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-checkbox-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-group-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-radio-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-radio-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-shortcut.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/dropdown-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-checkbox-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-checkbox-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-group-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-radio-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-radio-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-shortcut.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-sub.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/dropdown-menu.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/dropdown-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty-media.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/empty.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/empty/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/empty/empty-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/empty-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/empty-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/empty-media.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/empty-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/empty.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/empty/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/empty",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/empty"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/field/field-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-error.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-legend.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-set.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/field.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/field/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/field/field-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-error.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-legend.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-set.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/field.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/field/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/field",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/field"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -8290,114 +5679,85 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/hover-card/hover-card-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/hover-card/hover-card-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/hover-card/hover-card-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/hover-card/hover-card.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/hover-card/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/hover-card/hover-card-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/hover-card/hover-card-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/hover-card/hover-card-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/hover-card/hover-card.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/hover-card/index.ts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/input/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input/input.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/input/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input/input.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/input-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group-addon.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group-input.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group-text.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group-textarea.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-group/input-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/input-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group-addon.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group-input.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group-text.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group-textarea.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-group/input-group.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -8405,269 +5765,205 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/input-otp/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-otp/input-otp-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-otp/input-otp-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-otp/input-otp-slot.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/input-otp/input-otp.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/input-otp/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-otp/input-otp-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-otp/input-otp-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-otp/input-otp-slot.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/input-otp/input-otp.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["separator", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/item/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-actions.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-media.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/item/item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["separator","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/item/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-actions.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-media.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/item/item.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/item",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/item"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/kbd/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/kbd/kbd-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/kbd/kbd.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/kbd/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/kbd/kbd-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/kbd/kbd.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/label/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/label/label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/label/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/label/label.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/label",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/label"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/menubar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-checkbox-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-group-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-menu.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-radio-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-radio-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-shortcut.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-sub-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-sub-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-sub.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/menubar/menubar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/menubar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-checkbox-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-group-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-menu.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-radio-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-radio-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-shortcut.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-sub-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-sub-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-sub.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/menubar/menubar.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar"}},
     },
     "native-select": {
       name: "native-select",
@@ -8675,34 +5971,25 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/native-select/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/native-select/native-select-opt-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/native-select/native-select-option.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/native-select/native-select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/native-select/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/native-select/native-select-opt-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/native-select/native-select-option.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/native-select/native-select.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -8710,209 +5997,159 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-indicator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-link.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-list.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-viewport.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/navigation-menu/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-indicator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-link.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-list.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu-viewport.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/navigation-menu/navigation-menu.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/pagination/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-ellipsis.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-link.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-next-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-next.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-prev-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination-previous.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/pagination/pagination.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/pagination/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-ellipsis.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-link.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-next-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-next.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-prev-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination-previous.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/pagination/pagination.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/popover/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-close.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/popover/popover.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/popover/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-close.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/popover/popover.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/popover",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/popover"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/progress/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/progress/progress.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/progress/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/progress/progress.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/progress"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -8920,169 +6157,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/radio-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/radio-group/radio-group-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/radio-group/radio-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/radio-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/radio-group/radio-group-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/radio-group/radio-group.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group"}},
     },
     "range-calendar": {
       name: "range-calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-caption.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-cell.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-day.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-body.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-head.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-row.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-head-cell.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-month-select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-month.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-months.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-nav.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-next-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-prev-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-year-select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/range-calendar/range-calendar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/range-calendar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-caption.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-cell.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-day.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-body.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-head.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid-row.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-grid.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-head-cell.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-month-select.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-month.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-months.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-nav.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-next-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-prev-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar-year-select.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/range-calendar/range-calendar.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/resizable/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/resizable/resizable-handle.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/resizable/resizable-pane-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/resizable/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/resizable/resizable-handle.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/resizable/resizable-pane-group.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -9090,726 +6287,539 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/scroll-area/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/scroll-area/scroll-area-scrollbar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/scroll-area/scroll-area.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/scroll-area/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/scroll-area/scroll-area-scrollbar.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/scroll-area/scroll-area.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["separator", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/select/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-group-heading.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-scroll-down-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-scroll-up-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/select/select.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["separator","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/select/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-group-heading.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-scroll-down-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-scroll-up-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/select/select.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/select",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/select"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/separator/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/separator/separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/separator/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/separator/separator.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/separator"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/sheet/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-close.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-description.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-overlay.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-title.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sheet/sheet.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/sheet/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-close.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-description.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-overlay.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-title.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sheet/sheet.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "utils",
-      ],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/constants.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/context.svelte.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-action.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-label.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-input.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-inset.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-action.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-badge.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-skeleton.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub-button.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-provider.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-rail.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-separator.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sidebar/sidebar.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/sidebar/constants.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/context.svelte.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-action.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-group-label.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-group.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-input.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-inset.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-action.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-badge.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-skeleton.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub-button.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu-sub.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-menu.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-provider.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-rail.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-separator.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sidebar/sidebar.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/skeleton/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/skeleton/skeleton.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/skeleton/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/skeleton/skeleton.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/slider/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/slider/slider.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/slider/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/slider/slider.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/slider",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/slider"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/sonner/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/sonner/sonner.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/sonner/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/sonner/sonner.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/spinner/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/spinner/spinner.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/spinner/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/spinner/spinner.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/switch/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/switch/switch.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/switch/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/switch/switch.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/switch",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/switch"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/table/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-body.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-caption.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-cell.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-footer.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-head.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-header.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table-row.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/table/table.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/table/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-body.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-caption.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-cell.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-footer.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-head.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-header.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table-row.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/table/table.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/table",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/table"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/tabs/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tabs/tabs-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tabs/tabs-list.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tabs/tabs-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tabs/tabs.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/tabs/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tabs/tabs-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tabs/tabs-list.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tabs/tabs-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tabs/tabs.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/textarea/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/textarea/textarea.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/textarea/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/textarea/textarea.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/toggle/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/toggle/toggle.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/toggle/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/toggle/toggle.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle"}},
     },
     "toggle-group": {
       name: "toggle-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["toggle", "utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/toggle-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/toggle-group/toggle-group-item.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/toggle-group/toggle-group.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["toggle","utils"],
+      files: [{
+        path: "styles/svelte-force-ui/ui/toggle-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/toggle-group/toggle-group-item.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/toggle-group/toggle-group.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["utils"],
-      files: [
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/tooltip-content.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/tooltip-portal.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/tooltip-provider.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/tooltip-trigger.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/svelte-force-ui/ui/tooltip/tooltip.svelte",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/svelte-force-ui/ui/tooltip/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tooltip/tooltip-content.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tooltip/tooltip-portal.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tooltip/tooltip-provider.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tooltip/tooltip-trigger.svelte",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/svelte-force-ui/ui/tooltip/tooltip.svelte",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip"}},
     },
   },
   "ember-force-ui": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/accordion.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/accordion.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/accordion",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -9817,48 +6827,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/alert-dialog.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/alert-dialog.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/alert/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/alert/alert.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/alert/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/alert/alert.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -9866,97 +6859,63 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/aspect-ratio.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/aspect-ratio.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/avatar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/avatar/avatar.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/avatar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/avatar/avatar.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/avatar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/badge/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/badge/badge.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/badge/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/badge/badge.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/badge",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/breadcrumb.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/breadcrumb.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts"}},
     },
     "button-group": {
       name: "button-group",
@@ -9964,141 +6923,91 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/button-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/button-group/button-group.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/button-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/button-group/button-group.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/button/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/button/button.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/button/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/button/button.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/card.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/card.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/checkbox.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/checkbox.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/collapsible.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/collapsible.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/command.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/command.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/command",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -10106,43 +7015,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/context-menu.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/context-menu.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/dialog.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/dialog.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dialog",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -10150,75 +7043,49 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/dropdown-menu.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/dropdown-menu.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/empty/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/empty/empty.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/empty/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/empty/empty.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/empty",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/field/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/field/field.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/field/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/field/field.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/field",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -10226,21 +7093,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/hover-card.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/hover-card.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts"}},
     },
     "input-group": {
       name: "input-group",
@@ -10248,26 +7107,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/input-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/input-group/input-group.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/input-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/input-group/input-group.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -10275,114 +7125,73 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/input-otp.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/input-otp.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/input.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/input.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/item/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/item/item.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/item/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/item/item.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/item",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/kbd.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/kbd.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/kbd",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/label.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/label.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/label",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts"}},
     },
     "native-select": {
       name: "native-select",
@@ -10390,87 +7199,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/native-select.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/native-select.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/native-select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/pagination.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/pagination.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/pagination",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts"}},
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/popover.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/popover.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/popover",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/progress.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/progress.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/progress",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -10478,21 +7255,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/radio-group.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/radio-group.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -10500,288 +7269,185 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/scroll-area.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/scroll-area.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/select.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/select.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/select",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/separator.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/separator.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/separator",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/sheet.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/sheet.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sheet",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/sidebar/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/sidebar/sidebar.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/sidebar/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/sidebar/sidebar.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/skeleton.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/skeleton.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/slider.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/slider.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/slider",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/sonner.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/sonner.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sonner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/spinner.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/spinner.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/spinner",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/switch.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/switch.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/switch",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/table.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/table.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/table",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/tabs.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/tabs.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tabs",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/textarea.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/textarea.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/textarea",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -10789,73 +7455,49 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/toggle-group/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/toggle-group/toggle-group.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/toggle-group/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/toggle-group/toggle-group.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/toggle/index.ts",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/ember-force-ui/ui/toggle/toggle.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/toggle/index.ts",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/ember-force-ui/ui/toggle/toggle.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/ember-force-ui/ui/tooltip.gts",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/ember-force-ui/ui/tooltip.gts",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip",
-          examples:
-            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts",
-        },
-      },
+      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts"}},
     },
   },
 }

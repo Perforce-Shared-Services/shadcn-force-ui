@@ -1,5 +1,8 @@
 import { Field, FieldLabel } from "@/registry/bases/aria/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/registry/bases/aria/ui/radio-group"
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/registry/bases/aria/ui/radio-group"
 
 export function RadioGroupDisabled() {
   return (

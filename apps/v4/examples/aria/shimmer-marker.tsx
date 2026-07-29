@@ -1,4 +1,8 @@
-import { Marker, MarkerContent, MarkerIcon } from "@/registry/bases/aria/ui/marker"
+import {
+  Marker,
+  MarkerContent,
+  MarkerIcon,
+} from "@/registry/bases/aria/ui/marker"
 import { Spinner } from "@/registry/bases/aria/ui/spinner"
 
 export function ShimmerMarker() {

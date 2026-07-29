@@ -3,12 +3,12 @@
 import { LinkSquare02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/registry/bases/base/ui/tooltip"
+import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   CONTENT_OPTIONS,
   DEV_CONTENT_OPTIONS,

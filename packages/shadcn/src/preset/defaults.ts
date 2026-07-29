@@ -1,6 +1,21 @@
 import type { PresetConfig } from "./preset"
 
 export const DEFAULT_PRESETS = {
+  "force-ui": {
+    title: "Force UI",
+    description: "Material Symbols / Noto Sans",
+    style: "force-ui",
+    baseColor: "force-ui",
+    theme: "force-ui",
+    chartColor: "force-ui",
+    iconLibrary: "materialSymbols",
+    font: "noto-sans",
+    fontHeading: "inherit",
+    menuAccent: "subtle",
+    menuColor: "default",
+    radius: "default",
+    rtl: false,
+  }, // [FORCE-UI]
   nova: {
     title: "Nova",
     description: "Lucide / Geist",

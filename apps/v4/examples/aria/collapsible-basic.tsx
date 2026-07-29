@@ -1,10 +1,10 @@
-import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 import { Button } from "@/registry/bases/aria/ui/button"
 import { Card, CardContent } from "@/registry/bases/aria/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
 } from "@/registry/bases/aria/ui/collapsible"
+import { ChevronDownIcon } from "@/registry/icons/__lucide__"
 
 export function CollapsibleBasic() {
   return (

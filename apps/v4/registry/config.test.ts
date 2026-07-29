@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest"
 
 import publicSchema from "../public/schema.json"
+// [FORCE-UI] presets cover the React bases only (framework ports are separate).
+import { REACT_BASES } from "./bases"
 import {
   buildPartialRegistryBase,
   buildRegistryBase,
@@ -12,8 +14,6 @@ import {
   PRESETS,
   STYLES,
 } from "./config"
-// [FORCE-UI] presets cover the React bases only (framework ports are separate).
-import { REACT_BASES } from "./bases"
 
 const legacyPublicSchemaStyles = ["default", "new-york"] as const
 

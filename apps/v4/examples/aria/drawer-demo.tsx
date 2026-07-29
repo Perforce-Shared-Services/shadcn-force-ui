@@ -23,7 +23,10 @@ import {
   FieldLabel,
   FieldTitle,
 } from "@/registry/bases/aria/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/registry/bases/aria/ui/radio-group"
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/registry/bases/aria/ui/radio-group"
 
 const deliveryTimes = [
   {

@@ -39,7 +39,8 @@
     "pub:rc": "cd packages/shadcn && pnpm pub:rc",
     "pub:release": "cd packages/shadcn && pnpm pub:release",
     "test:dev": "turbo run test --force",
-    "test": "pnpm --filter=v4 registry:build && start-server-and-test v4:dev http://localhost:4000 test:dev",
+    "test": "pnpm --filter=shadcn test && pnpm --filter=@shadcn/react test && pnpm --filter=@shadcn/helpers test",
+    "test:integration": "pnpm --filter=v4 registry:build && start-server-and-test v4:dev http://localhost:4000 test:dev",
     "validate:registries": "pnpm --filter=v4 validate:registries",
     "test:apps": "pnpm --filter=v4 test:apps"
   },

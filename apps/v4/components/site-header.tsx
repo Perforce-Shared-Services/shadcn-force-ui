@@ -12,8 +12,8 @@ import { GitHubLink } from "@/components/github-link"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
 import { Button } from "@/registry/bases/radix/ui/button" // [FORCE-UI]
+import { Separator } from "@/registry/new-york-v4/ui/separator"
 
 export function SiteHeader() {
   const colors = getColors()

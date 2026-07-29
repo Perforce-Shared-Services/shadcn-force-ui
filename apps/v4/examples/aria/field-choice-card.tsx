@@ -8,7 +8,10 @@ import {
   FieldSet,
   FieldTitle,
 } from "@/registry/bases/aria/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/registry/bases/aria/ui/radio-group"
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/registry/bases/aria/ui/radio-group"
 
 export default function FieldChoiceCard() {
   return (

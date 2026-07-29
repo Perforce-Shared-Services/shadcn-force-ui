@@ -26,11 +26,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/registry/bases/base/ui/drawer"
-import {
-  Field,
-  FieldContent,
-  FieldLabel,
-} from "@/registry/bases/base/ui/field"
+import { Field, FieldContent, FieldLabel } from "@/registry/bases/base/ui/field"
 import { Input } from "@/registry/bases/base/ui/input"
 import {
   OPEN_PRESET_FORWARD_TYPE,

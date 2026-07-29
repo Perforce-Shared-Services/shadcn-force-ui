@@ -496,7 +496,7 @@ export const init = new Command()
       if (options.defaults && !components.some(isUrl)) {
         const initUrl = resolveInitUrl(
           {
-            ...DEFAULT_PRESETS.nova,
+            ...DEFAULT_PRESETS["force-ui"], // [FORCE-UI]
             base: resolvedBase,
             rtl: options.rtl ?? false,
           },

@@ -1,5 +1,8 @@
 import { Label } from "@/registry/bases/aria/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/registry/bases/aria/ui/radio-group"
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/registry/bases/aria/ui/radio-group"
 
 export function RadioGroupDemo() {
   return (
