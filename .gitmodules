@@ -1,0 +1,3 @@
+[submodule "pd-the-force-design-spec"]
+	path = pd-the-force-design-spec
+	url = https://github.com/Perforce-Shared-Services/pd-the-force-design-spec
