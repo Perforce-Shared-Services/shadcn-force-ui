@@ -23,6 +23,14 @@ export const FRAMEWORKS = [
     bases: ["ember"],
     registry: "@force-ui-ember",
   },
+  // [FORCE-UI-START] angular framework port
+  {
+    name: "angular",
+    title: "Angular",
+    bases: ["angular"],
+    registry: "@force-ui-angular",
+  },
+  // [FORCE-UI-END]
 ] as const
 
 export type Framework = (typeof FRAMEWORKS)[number]
@@ -53,6 +61,8 @@ export function getDefaultBaseForFramework(framework: string): string {
       return "svelte"
     case "ember":
       return "ember"
+    case "angular": // [FORCE-UI]
+      return "angular"
     default:
       return "radix"
   }

@@ -68,6 +68,20 @@ export const BASES: z.infer<typeof registryItemSchema>[] = [
     ],
   },
   // [FORCE-UI-END]
+  // [FORCE-UI-START] angular framework port
+  {
+    name: "angular",
+    type: "registry:style",
+    title: "Angular",
+    description: "Angular standalone components with signal-based inputs.",
+    dependencies: [
+      "@angular/core",
+      "@angular/common",
+      "@angular/platform-browser",
+      "class-variance-authority",
+    ],
+  },
+  // [FORCE-UI-END]
 ]
 
 export type Base = (typeof BASES)[number]

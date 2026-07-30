@@ -25,7 +25,7 @@ import { fonts } from "@/registry/fonts"
 import { STYLES } from "@/registry/styles"
 
 // [FORCE-UI] Framework ports live in packages/registry-{name}, not registry/bases/{name}
-const FRAMEWORK_PORT_BASES = new Set(["vue", "svelte", "ember"])
+const FRAMEWORK_PORT_BASES = new Set(["vue", "svelte", "ember", "angular"])
 function getBaseSrcDir(baseName: string): string {
   if (FRAMEWORK_PORT_BASES.has(baseName)) {
     return path.resolve(process.cwd(), `../../packages/registry-${baseName}`)
@@ -156,7 +156,7 @@ function getStyleCombination(styleName: string) {
 }
 
 type FrameworkRoot = {
-  id: "react" | "vue" | "svelte" | "ember"
+  id: "react" | "vue" | "svelte" | "ember" | "angular" // [FORCE-UI]
   dirName: string
   baseNames: string[]
   styleEntries: Array<{ name: string; label: string }>
@@ -191,6 +191,14 @@ const FRAMEWORK_ROOTS: FrameworkRoot[] = [
     baseNames: ["ember"],
     styleEntries: [{ name: "ember-force-ui", label: "Force UI (Ember)" }],
   },
+  // [FORCE-UI-START] angular framework port
+  {
+    id: "angular",
+    dirName: "r-angular",
+    baseNames: ["angular"],
+    styleEntries: [{ name: "angular-force-ui", label: "Force UI (Angular)" }],
+  },
+  // [FORCE-UI-END]
 ]
 
 function getFrameworkRootOutputDir(root: FrameworkRoot) {
@@ -301,7 +309,7 @@ function getTargetStyles(target: "all" | string | null) {
 }
 
 function stripFileExtension(filePath: string) {
-  return filePath.replace(/\.(tsx|ts|json|mdx|vue|svelte|gts)$/, "")
+  return filePath.replace(/\.(tsx|ts|json|mdx|vue|svelte|gts|html)$/, "") // [FORCE-UI] .html for Angular templates
 }
 
 // Emits the React.lazy() expression used in the generated __components__ files.
@@ -999,7 +1007,7 @@ export const Index: Record<string, Record<string, any>> = {`
         ? `@/registry/bases/${base.name}/${stripFileExtension(files[0].path)}`
         : ""
       const firstFileExt = files[0]?.path ? path.extname(files[0].path) : ""
-      const isNonReactBase = base.name === "vue" || base.name === "svelte" || base.name === "ember"
+      const isNonReactBase = base.name === "vue" || base.name === "svelte" || base.name === "ember" || base.name === "angular" // [FORCE-UI]
       const isReactComponent = !isNonReactBase && (firstFileExt === ".tsx" || firstFileExt === ".ts")
 
       index += `
@@ -1201,7 +1209,8 @@ async function buildBases(bases: Base[], targetStyleNames?: Set<string>) {
             fileExtension === ".ts" ||
             fileExtension === ".vue" ||
             fileExtension === ".svelte" ||
-            fileExtension === ".gts"
+            fileExtension === ".gts" ||
+            fileExtension === ".html" // [FORCE-UI] Angular templates
 
           const transformedContent = shouldTransform
             ? await getCachedStyledContent({
@@ -1398,7 +1407,7 @@ export const Index: Record<string, Record<string, any>> = {`
           : `@/registry/${style.name}/${stripFileExtension(files[0].path)}`
         : ""
       const firstFileExt = files[0]?.path ? path.extname(files[0].path) : ""
-      const isNonReactBase = styleCombination && (styleCombination.base.name === "vue" || styleCombination.base.name === "svelte" || styleCombination.base.name === "ember")
+      const isNonReactBase = styleCombination && (styleCombination.base.name === "vue" || styleCombination.base.name === "svelte" || styleCombination.base.name === "ember" || styleCombination.base.name === "angular") // [FORCE-UI]
       const isReactComponent = !isNonReactBase && (firstFileExt === ".tsx" || firstFileExt === ".ts")
 
       index += `
