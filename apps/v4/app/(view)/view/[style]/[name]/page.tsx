@@ -85,13 +85,24 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const { Index } = await import("@/registry/__index__")
   const { ExamplesIndex } = await import("@/examples/__index__")
+  const { Index: BasesIndex } = await import("@/registry/bases/__index__")
   const params: Array<{ style: string; name: string }> = []
 
   for (const style of legacyStyles) {
-    // Check if this is a base-prefixed style (e.g., base-nova, radix-nova).
+    // Check if this is a base-prefixed style (e.g., base-force-ui, radix-force-ui).
     const baseMatch = style.name.match(/^(base|radix|aria)-/)
     if (baseMatch) {
       const baseName = baseMatch[1]
+
+      // Add blocks from BasesIndex. [FORCE-UI]
+      const baseItems = BasesIndex[baseName]
+      if (baseItems) {
+        for (const itemName of Object.keys(baseItems)) {
+          if (baseItems[itemName].type === "registry:block") {
+            params.push({ style: style.name, name: itemName })
+          }
+        }
+      }
 
       // Add examples from ExamplesIndex.
       const examples = ExamplesIndex[baseName]

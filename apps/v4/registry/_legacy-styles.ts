@@ -1,6 +1,6 @@
 export const legacyStyles = [
   {
-    name: "radix-force-ui", // [FORCE-UI] reference style (blocks/charts/view routes)
+    name: "base-force-ui", // [FORCE-UI] reference style for blocks/charts/view routes
     title: "Force UI",
   },
 ] as const
