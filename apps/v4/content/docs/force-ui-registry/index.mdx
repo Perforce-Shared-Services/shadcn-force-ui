@@ -18,7 +18,7 @@ These steps are written to be copy-pasteable for both humans and coding agents.
 
 Use the registry root that matches your framework.
 
-If you are designing, prototyping, or exploring the component library, start with React unless you specifically need Vue, Svelte, or Ember source files.
+If you are designing, prototyping, or exploring the component library, start with React + Base UI unless you specifically need Vue, Svelte, or Ember source files, or your project already uses Radix UI.
 
 ```bash
 export FORCE_UI_REGISTRY_REACT="https://forceui.public.prd.shared.perforce.com/r-react"
@@ -32,18 +32,18 @@ export FORCE_UI_PRESET_BASE="https://forceui.public.prd.shared.perforce.com/init
 
 ## New React project
 
+### Base UI (default)
+
+```bash
+REGISTRY_URL="$FORCE_UI_REGISTRY_REACT" \
+npx shadcn@latest init -t vite -b base -p "$FORCE_UI_PRESET_BASE" -y
+```
+
 ### Radix UI
 
 ```bash
 REGISTRY_URL="$FORCE_UI_REGISTRY_REACT" \
 npx shadcn@latest init -t vite -b radix -p "$FORCE_UI_PRESET_RADIX" -y
-```
-
-### Base UI
-
-```bash
-REGISTRY_URL="$FORCE_UI_REGISTRY_REACT" \
-npx shadcn@latest init -t vite -b base -p "$FORCE_UI_PRESET_BASE" -y
 ```
 
 After init, React projects should have one of these style values in `components.json`:
@@ -59,16 +59,16 @@ Do not set the React style to `force-ui`. The hosted React registry paths use `r
 
 ```bash
 REGISTRY_URL="$FORCE_UI_REGISTRY_REACT" \
-npx shadcn@latest apply --preset "$FORCE_UI_PRESET_RADIX" -y
+npx shadcn@latest apply --preset "$FORCE_UI_PRESET_BASE" -y
 ```
 
-Use the Base preset URL instead when your project uses Base UI.
+Use the Radix preset URL instead when your project uses Radix UI.
 
 ### Update only the theme and font
 
 ```bash
 REGISTRY_URL="$FORCE_UI_REGISTRY_REACT" \
-npx shadcn@latest apply --preset "$FORCE_UI_PRESET_RADIX" --only theme,font -y
+npx shadcn@latest apply --preset "$FORCE_UI_PRESET_BASE" --only theme,font -y
 ```
 
 This updates the CSS variables and font setup without reinstalling UI components.
@@ -83,7 +83,7 @@ If you want to pin the mappings explicitly, add them yourself:
 
 <RegistryConfigBlock />
 
-For React, keep `style` set to `radix-force-ui` or `base-force-ui`. For the other framework registries, use the matching style value:
+For React, keep `style` set to `base-force-ui` or `radix-force-ui`. For the other framework registries, use the matching style value:
 
 - `vue-force-ui`
 - `svelte-force-ui`
@@ -178,7 +178,7 @@ If you want updated variants for an existing component, reinstall that component
 - For Vue, use `REGISTRY_URL=https://forceui.public.prd.shared.perforce.com/r-vue`.
 - For Svelte, use `REGISTRY_URL=https://forceui.public.prd.shared.perforce.com/r-svelte`.
 - For Ember, use `REGISTRY_URL=https://forceui.public.prd.shared.perforce.com/r-ember`.
-- For React, use `radix-force-ui` or `base-force-ui` as the style value.
+- For React, use `base-force-ui` as the default style value. Use `radix-force-ui` only when the project already uses Radix UI.
 - For React theme and font setup, use the Force UI preset URLs from this page.
 - When `REGISTRY_URL` points at the matching framework root, the CLI can auto-add the Force UI namespace mapping to `components.json`.
 - Theme and font changes come from `init` or `apply`. Variants come from the installed component source.
@@ -198,11 +198,11 @@ Rules:
   - Vue: `https://forceui.public.prd.shared.perforce.com/r-vue`
   - Svelte: `https://forceui.public.prd.shared.perforce.com/r-svelte`
   - Ember: `https://forceui.public.prd.shared.perforce.com/r-ember`
-- For React, use `radix-force-ui` or `base-force-ui` as the `style` value in `components.json`. Do not use `force-ui` as the React style value.
+- For React, use `base-force-ui` as the default `style` value in `components.json`. Use `radix-force-ui` when the project already uses Radix UI. Do not use `force-ui` as the React style value.
+- Use this Base preset URL by default:
+  `https://forceui.public.prd.shared.perforce.com/init?base=base&style=force-ui&baseColor=force-ui&theme=force-ui&chartColor=force-ui&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default`
 - Use this Radix preset URL when the project uses Radix UI:
   `https://forceui.public.prd.shared.perforce.com/init?base=radix&style=force-ui&baseColor=force-ui&theme=force-ui&chartColor=force-ui&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default`
-- Use this Base preset URL when the project uses Base UI:
-  `https://forceui.public.prd.shared.perforce.com/init?base=base&style=force-ui&baseColor=force-ui&theme=force-ui&chartColor=force-ui&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default`
 - Install Force UI components with `npx shadcn@latest add @force-ui/<name>` for React, `@force-ui-vue/<name>` for Vue, `@force-ui-svelte/<name>` for Svelte, and `@force-ui-ember/<name>` for Ember.
 - When `REGISTRY_URL` points at the matching framework root, the CLI can discover and write the Force UI registry mapping to `components.json` automatically.
 - Theme and font changes come from `init` or `apply`. Custom variants come from the installed component source.
@@ -211,7 +211,7 @@ Rules:
 Tasks:
 1. Ask which framework the user wants to use: React, Vue, Svelte, or Ember.
 2. If the user is designing, prototyping, or exploring the library and has no framework requirement, recommend React.
-3. Detect whether the React project uses Radix or Base UI when React is selected.
+3. Default to Base UI for React. Only switch to Radix UI if the project already uses Radix UI or explicitly requests it.
 4. Set `REGISTRY_URL` to the matching Force UI framework root.
 5. If the project is a new React project, run `shadcn init` with the correct Force UI preset URL.
 6. If the project is an existing React project, run `shadcn apply --preset <Force UI preset URL>` instead.
