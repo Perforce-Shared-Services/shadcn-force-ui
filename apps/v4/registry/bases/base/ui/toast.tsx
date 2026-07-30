@@ -37,7 +37,7 @@ function Toast({ className, ...props }: ToastPrimitive.Root.Props) {
       data-slot="toast"
       className={cn(
         // [FORCE-UI] use the same surface, status, border, and text tokens as Sonner
-        "cn-toast group/toast pointer-events-auto absolute right-0 bottom-0 z-[calc(1000-var(--toast-index))] w-full origin-bottom border border-border bg-surface text-surface-foreground shadow-lg will-change-transform outline-none select-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 data-[type=error]:border-error data-[type=error]:bg-error-subtle data-[type=error]:text-error data-[type=info]:border-info data-[type=info]:bg-info-subtle data-[type=info]:text-info data-[type=success]:border-success data-[type=success]:bg-success-subtle data-[type=success]:text-success data-[type=warning]:border-warning data-[type=warning]:bg-warning-subtle data-[type=warning]:text-warning",
+        "cn-toast group/toast pointer-events-auto absolute right-0 bottom-0 z-[calc(1000-var(--toast-index))] w-full origin-bottom border border-border bg-surface text-[13px] text-surface-foreground shadow-lg will-change-transform outline-none select-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 data-[type=error]:border-error data-[type=error]:bg-error-subtle data-[type=error]:text-error data-[type=info]:border-info data-[type=info]:bg-info-subtle data-[type=info]:text-info data-[type=success]:border-success data-[type=success]:bg-success-subtle data-[type=success]:text-success data-[type=warning]:border-warning data-[type=warning]:bg-warning-subtle data-[type=warning]:text-warning",
         "[--gap:0.75rem] [--height:var(--toast-frontmost-height,var(--toast-height))] [--offset-y:calc(var(--toast-offset-y)*-1+calc(var(--toast-index)*var(--gap)*-1)+var(--toast-swipe-movement-y))] [--peek:0.75rem] [--scale:calc(max(0,1-(var(--toast-index)*0.1)))] [--shrink:calc(1-var(--scale))]",
         "h-(--height) [transform:translateX(var(--toast-swipe-movement-x))_translateY(calc(var(--toast-swipe-movement-y)-(var(--toast-index)*var(--peek))-(var(--shrink)*var(--height))))_scale(var(--scale))] [transition:transform_500ms_cubic-bezier(0.22,1,0.36,1),opacity_500ms,height_150ms]",
         "after:absolute after:top-full after:left-0 after:h-[calc(var(--gap)+1px)] after:w-full after:content-['']",
@@ -65,7 +65,7 @@ function ToastContent({ className, ...props }: ToastPrimitive.Content.Props) {
       data-slot="toast-content"
       className={cn(
         // [FORCE-UI] align status icons and content with Sonner's multi-line layout
-        "flex h-full items-start gap-3 overflow-hidden p-4 transition-opacity duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] data-behind:opacity-0 data-expanded:opacity-100",
+        "flex h-full items-start gap-1.5 overflow-hidden p-4 transition-opacity duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] data-behind:opacity-0 data-expanded:opacity-100",
         className
       )}
       {...props}
@@ -77,7 +77,7 @@ function ToastTitle({ className, ...props }: ToastPrimitive.Title.Props) {
   return (
     <ToastPrimitive.Title
       data-slot="toast-title"
-      className={cn("text-sm font-medium", className)}
+      className={cn("leading-[1.5] font-medium text-current", className)}
       {...props}
     />
   )
@@ -90,7 +90,7 @@ function ToastDescription({
   return (
     <ToastPrimitive.Description
       data-slot="toast-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("leading-[1.4] font-normal text-current", className)}
       {...props}
     />
   )
@@ -99,14 +99,14 @@ function ToastDescription({
 function ToastAction({
   className,
   // [FORCE-UI] Sonner uses a primary action button
-  render = <Button variant="default" size="sm" />,
+  render = <Button variant="default" size="xs" />,
   ...props
 }: ToastPrimitive.Action.Props) {
   return (
     <ToastPrimitive.Action
       data-slot="toast-action"
       render={render}
-      className={cn("shrink-0", className)}
+      className={cn("ml-auto shrink-0 rounded-sm!", className)}
       {...props}
     />
   )
@@ -115,7 +115,7 @@ function ToastAction({
 function ToastClose({
   className,
   children,
-  render = <Button variant="ghost" size="icon-sm" />,
+  render = <Button variant="ghost" size="icon-xs" />,
   ...props
 }: ToastPrimitive.Close.Props) {
   return (
@@ -124,8 +124,8 @@ function ToastClose({
       aria-label="Close toast"
       render={render}
       className={cn(
-        // [FORCE-UI] inherit the semantic status color used by Sonner
-        "relative shrink-0 text-current after:absolute after:-inset-2 after:content-[''] hover:text-foreground",
+        // [FORCE-UI] match Sonner's floating status-colored close button
+        "hover:border-border-strong! absolute top-0 left-0 z-1 size-5 -translate-x-1/3 -translate-y-1/3 rounded-full! border! border-border! bg-surface! p-0! text-foreground! hover:bg-muted! data-[type=error]:border-error! data-[type=error]:bg-error-subtle! data-[type=error]:text-error! data-[type=info]:border-info! data-[type=info]:bg-info-subtle! data-[type=info]:text-info! data-[type=success]:border-success! data-[type=success]:bg-success-subtle! data-[type=success]:text-success! data-[type=warning]:border-warning! data-[type=warning]:bg-warning-subtle! data-[type=warning]:text-warning! rtl:translate-x-1/3 [&_svg:not([class*='size-'])]:size-3.5",
         className
       )}
       {...props}
@@ -223,10 +223,11 @@ function ToastIcon({ type }: { type: string | undefined }) {
     return null
   }
 
+  // [FORCE-UI] match Sonner's icon offsets in its 6px flex gap
   return (
     <span
       data-slot="toast-icon"
-      className="shrink-0 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4"
+      className="mr-1 -ml-0.75 shrink-0 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4"
     >
       {icon}
     </span>
@@ -240,7 +241,7 @@ function ToastList() {
     <Toast key={toastItem.id} toast={toastItem}>
       <ToastContent>
         <ToastIcon type={toastItem.type} />
-        <div className="flex min-w-0 flex-1 flex-col gap-1">
+        <div className="flex min-w-0 flex-1 flex-col gap-0.5">
           <ToastTitle />
           <ToastDescription />
         </div>
