@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm registry:build:dev && (pnpm icons:dev & pnpm preview:dev & next dev --turbopack --port 4000)",
-    "preview:dev": "pnpm exec turbo run dev --filter=preview-vue --filter=preview-svelte --filter=preview-ember --parallel",
+    "preview:dev": "pnpm exec turbo run dev --filter=preview-vue --filter=preview-svelte --filter=preview-ember --filter=preview-angular --parallel",
     "preview:dev:vue": "pnpm exec turbo run dev --filter=preview-vue",
     "preview:dev:svelte": "pnpm exec turbo run dev --filter=preview-svelte",
     "preview:dev:ember": "pnpm exec turbo run dev --filter=preview-ember",
-    "preview-server:build": "pnpm exec turbo run preview:build --filter=preview-vue --filter=preview-svelte --filter=preview-ember --concurrency=1 && rm -rf public/preview && mkdir -p public/preview/vue public/preview/svelte public/preview/ember && cp -r ../preview-vue/dist/. public/preview/vue/ && cp -r ../preview-svelte/dist/. public/preview/svelte/ && cp -r ../preview-ember/dist/. public/preview/ember/ && cp ../preview-router/index.html public/preview/index.html",
+    "preview-server:build": "pnpm exec turbo run preview:build --filter=preview-vue --filter=preview-svelte --filter=preview-ember --filter=preview-angular --concurrency=1 && rm -rf public/preview && mkdir -p public/preview/vue public/preview/svelte public/preview/ember public/preview/angular && cp -r ../preview-vue/dist/. public/preview/vue/ && cp -r ../preview-svelte/dist/. public/preview/svelte/ && cp -r ../preview-ember/dist/. public/preview/ember/ && cp -r ../preview-angular/dist/. public/preview/angular/ && cp ../preview-router/index.html public/preview/index.html" // [FORCE-UI],
     "build": "pnpm registry:build && pnpm preview-server:build && next build",
     "start": "next start --port 4000",
     "preview": "pnpm registry:build && pnpm preview-server:build && next build && next start --port 4000",
