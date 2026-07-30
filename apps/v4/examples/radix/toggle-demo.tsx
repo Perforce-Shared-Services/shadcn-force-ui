@@ -1,6 +1,6 @@
 import { BookmarkIcon } from "@/examples/material-symbols"
 
-import { Toggle } from "@/styles/radix-force-ui/ui/toggle"
+import { Toggle } from "@/registry/bases/radix/ui/toggle"
 
 export function ToggleDemo() {
   return (

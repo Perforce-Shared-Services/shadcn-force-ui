@@ -7,7 +7,7 @@ import {
   Marker,
   MarkerContent,
   MarkerIcon,
-} from "@/styles/radix-force-ui/ui/marker"
+} from "@/registry/bases/radix/ui/marker"
 
 export function MarkerLinkButtonDemo() {
   return (

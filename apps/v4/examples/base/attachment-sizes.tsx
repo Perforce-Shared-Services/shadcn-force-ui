@@ -6,7 +6,7 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/base-force-ui/ui/attachment"
+} from "@/registry/bases/base/ui/attachment"
 
 export function AttachmentSizes() {
   return (

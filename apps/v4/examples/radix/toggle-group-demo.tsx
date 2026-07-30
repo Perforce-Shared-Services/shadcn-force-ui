@@ -3,7 +3,7 @@ import { Bold, Italic, Underline } from "@/examples/material-symbols"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/radix-force-ui/ui/toggle-group"
+} from "@/registry/bases/radix/ui/toggle-group"
 
 export function ToggleGroupDemo() {
   return (

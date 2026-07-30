@@ -10,8 +10,8 @@ import {
   ItemGroup,
   ItemMedia,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
-import { Progress } from "@/styles/base-force-ui/ui/progress"
+} from "@/registry/bases/base/ui/item"
+import { Progress } from "@/registry/bases/base/ui/progress"
 
 export function FileUploadList() {
   const files = React.useMemo(

@@ -9,8 +9,8 @@ import {
   AttachmentGroup,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/base-force-ui/ui/attachment"
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+} from "@/registry/bases/base/ui/attachment"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 const images = [
   {

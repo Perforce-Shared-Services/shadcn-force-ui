@@ -1,4 +1,4 @@
-import { Slider } from "@/styles/base-force-ui/ui/slider"
+import { Slider } from "@/registry/bases/base/ui/slider"
 
 export function SliderRange() {
   return (

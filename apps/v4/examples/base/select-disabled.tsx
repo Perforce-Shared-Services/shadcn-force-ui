@@ -5,7 +5,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
+} from "@/registry/bases/base/ui/select"
 
 export function SelectDisabled() {
   const items = [

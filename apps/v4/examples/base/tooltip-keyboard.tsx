@@ -1,12 +1,12 @@
 import { SaveIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Kbd } from "@/styles/base-force-ui/ui/kbd"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Kbd } from "@/registry/bases/base/ui/kbd"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 export function TooltipKeyboard() {
   return (

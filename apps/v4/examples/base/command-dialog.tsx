@@ -19,7 +19,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/styles/base-force-ui/ui/command"
+} from "@/registry/bases/base/ui/command"
 
 export function CommandDialogDemo() {
   const [open, setOpen] = React.useState(false)

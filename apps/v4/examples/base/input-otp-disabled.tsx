@@ -1,10 +1,10 @@
-import { Field, FieldLabel } from "@/styles/base-force-ui/ui/field"
+import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/styles/base-force-ui/ui/input-otp"
+} from "@/registry/bases/base/ui/input-otp"
 
 export function InputOTPDisabled() {
   return (

@@ -16,7 +16,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/styles/radix-force-ui/ui/command"
+} from "@/registry/bases/radix/ui/command"
 
 export function CommandDemo() {
   return (

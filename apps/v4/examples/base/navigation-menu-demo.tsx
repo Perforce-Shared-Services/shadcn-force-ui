@@ -16,7 +16,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/styles/base-force-ui/ui/navigation-menu"
+} from "@/registry/bases/base/ui/navigation-menu"
 
 const components: { title: string; href: string; description: string }[] = [
   {

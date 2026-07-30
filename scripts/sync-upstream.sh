@@ -221,10 +221,13 @@ pnpm --filter=v4 registry:build
 success "Registry rebuilt."
 
 echo ""
-info "5/5 — Type check + lint..."
-pnpm --filter=v4 typecheck
-pnpm --filter=v4 lint
-success "Type check + lint passed."
+info "5/5 — Formatting + CI checks..."
+pnpm --filter=v4 format:write
+pnpm typecheck
+pnpm lint
+pnpm format:check
+pnpm test
+success "Formatting and CI checks passed."
 
 # Stage regenerated/stripped artifacts so the merge commit is self-consistent.
 git add -A

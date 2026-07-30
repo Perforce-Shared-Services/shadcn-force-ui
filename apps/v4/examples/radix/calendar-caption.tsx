@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
 
 export function CalendarCaption() {
   return (

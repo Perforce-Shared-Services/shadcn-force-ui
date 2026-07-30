@@ -3,16 +3,16 @@
 import * as React from "react"
 import { ArrowRightIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/radix-force-ui/ui/button-group"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { ButtonGroup } from "@/registry/bases/radix/ui/button-group"
+import { Input } from "@/registry/bases/radix/ui/input"
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
-} from "@/styles/radix-force-ui/ui/select"
+} from "@/registry/bases/radix/ui/select"
 
 const CURRENCIES = [
   {

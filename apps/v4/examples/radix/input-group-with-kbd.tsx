@@ -10,15 +10,15 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/radix-force-ui/ui/field"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+} from "@/registry/bases/radix/ui/field"
+import { Input } from "@/registry/bases/radix/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
-import { Kbd, KbdGroup } from "@/styles/radix-force-ui/ui/kbd"
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+} from "@/registry/bases/radix/ui/input-group"
+import { Kbd, KbdGroup } from "@/registry/bases/radix/ui/kbd"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 export function InputGroupWithKbd() {
   return (

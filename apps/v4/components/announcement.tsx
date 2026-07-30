@@ -7,7 +7,7 @@ export function Announcement() {
   return (
     <Badge asChild variant="secondary" className="bg-muted">
       <Link href="/docs/changelog">
-        Components for Chat Interfaces <ArrowRightIcon />
+        React Aria is now available <ArrowRightIcon />
       </Link>
     </Badge>
   )

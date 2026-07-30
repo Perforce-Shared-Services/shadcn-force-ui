@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Command,
   CommandDialog,
@@ -11,7 +11,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/styles/radix-force-ui/ui/command"
+} from "@/registry/bases/radix/ui/command"
 
 export function CommandBasic() {
   const [open, setOpen] = React.useState(false)

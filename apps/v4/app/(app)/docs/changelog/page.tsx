@@ -5,7 +5,7 @@ import { IconRss } from "@tabler/icons-react"
 import { getChangelogPages, type ChangelogPageData } from "@/lib/changelog"
 import { absoluteUrl } from "@/lib/utils"
 import { OpenInV0Cta } from "@/components/open-in-v0-cta"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 
 export const revalidate = false
 export const dynamic = "force-static"
@@ -73,7 +73,7 @@ export default function ChangelogPage() {
                   <h2 className="font-heading text-xl font-semibold tracking-tight">
                     {data.title}
                   </h2>
-                  <div className="prose-changelog mt-6 *:first:mt-0">
+                  <div className="typeset mt-6 *:first:mt-0">
                     <MDX components={mdxComponents} />
                   </div>
                 </article>
@@ -93,7 +93,7 @@ export default function ChangelogPage() {
                       <Link
                         key={page.url}
                         href={page.url}
-                        className="flex w-full flex-col rounded-xl bg-surface px-4 py-3 text-surface-foreground transition-colors hover:bg-surface/80"
+                        className="flex w-full flex-col rounded-2xl bg-surface px-4 py-3 text-surface-foreground transition-colors hover:bg-surface/80"
                       >
                         <span className="text-xs text-muted-foreground">
                           {date}

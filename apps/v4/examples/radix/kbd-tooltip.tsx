@@ -1,11 +1,11 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/radix-force-ui/ui/button-group"
-import { Kbd, KbdGroup } from "@/styles/radix-force-ui/ui/kbd"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { ButtonGroup } from "@/registry/bases/radix/ui/button-group"
+import { Kbd, KbdGroup } from "@/registry/bases/radix/ui/kbd"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/radix-force-ui/ui/tooltip"
+} from "@/registry/bases/radix/ui/tooltip"
 
 export default function KbdTooltip() {
   return (

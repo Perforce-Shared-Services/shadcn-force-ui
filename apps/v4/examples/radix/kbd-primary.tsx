@@ -1,4 +1,4 @@
-import { Kbd } from "@/styles/radix-force-ui/ui/kbd"
+import { Kbd } from "@/registry/bases/radix/ui/kbd"
 
 export default function KbdPrimary() {
   return (

@@ -1,4 +1,5 @@
 import fs from "fs"
+import path from "path"
 import { ExamplesIndex } from "@/examples/__index__"
 
 import { PAGES_NEW } from "@/lib/docs"
@@ -38,6 +39,37 @@ function getRegistryEntry(name: string, styleName: string) {
   )
 }
 
+// [FORCE-UI-START] Limit Turbopack tracing to known source roots.
+function readSourceFile(src: string) {
+  const normalizedPath = src.replace(/^\/+/, "")
+  const [root, ...segments] = normalizedPath.split("/")
+
+  if (segments.includes("..")) {
+    return null
+  }
+
+  switch (root) {
+    case "examples":
+      return fs.readFileSync(
+        path.join(process.cwd(), "examples", ...segments),
+        "utf8"
+      )
+    case "registry":
+      return fs.readFileSync(
+        path.join(process.cwd(), "registry", ...segments),
+        "utf8"
+      )
+    case "styles":
+      return fs.readFileSync(
+        path.join(process.cwd(), "styles", ...segments),
+        "utf8"
+      )
+    default:
+      return null
+  }
+}
+// [FORCE-UI-END]
+
 function getComponentsList(variant: "all" | "new") {
   const componentsFolder = source.pageTree.children.find(
     (page) => page.$id === "components"
@@ -47,14 +79,14 @@ function getComponentsList(variant: "all" | "new") {
     return ""
   }
 
-  return getPagesFromFolder(componentsFolder as PageTreeFolder, "radix")
+  return getPagesFromFolder(componentsFolder as PageTreeFolder, "base")
     .filter(
       (component) => variant === "all" || PAGES_NEW.includes(component.url)
     )
     .map((component) => {
       const slug = component.url.replace(/^\/docs\//, "").split("/")
       const description = source.getPage(slug)?.data.description?.trim()
-      const url = absoluteUrl(component.url.replace("/radix/", "/"))
+      const url = absoluteUrl(component.url.replace("/base/", "/"))
       return `- [${component.name}](${url})${
         description ? `: ${description}` : ""
       }`
@@ -97,7 +129,11 @@ export function processMdxForLLMs(content: string, style: Style["name"]) {
         return match
       }
 
-      let source = fs.readFileSync(src, "utf8")
+      let source = readSourceFile(src)
+
+      if (!source) {
+        return match
+      }
 
       // Replace all base-specific paths.
       for (const base of BASES) {

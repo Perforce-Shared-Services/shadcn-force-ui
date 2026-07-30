@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/radix-force-ui/ui/badge"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Badge } from "@/registry/bases/radix/ui/badge"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Card,
   CardAction,
@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/radix-force-ui/ui/card"
+} from "@/registry/bases/radix/ui/card"
 
 export function CardImage() {
   return (

@@ -1,8 +1,8 @@
-import { Label } from "@/styles/base-force-ui/ui/label"
+import { Label } from "@/registry/bases/base/ui/label"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/base-force-ui/ui/radio-group"
+} from "@/registry/bases/base/ui/radio-group"
 
 export function RadioGroupDemo() {
   return (

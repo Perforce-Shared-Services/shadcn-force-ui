@@ -24,7 +24,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react"
 
 import { cn } from "@/lib/utils"
-import { Card } from "@/styles/base-force-ui/ui/card"
+import { Card } from "@/registry/bases/base/ui/card"
 import {
   Sidebar,
   SidebarContent,
@@ -35,7 +35,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/base-force-ui/ui/sidebar"
+} from "@/registry/bases/base/ui/sidebar"
 
 function SidebarSection({
   label,

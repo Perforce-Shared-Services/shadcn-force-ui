@@ -7,7 +7,7 @@ import {
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/base-force-ui/ui/toggle-group"
+} from "@/registry/bases/base/ui/toggle-group"
 
 export function ToggleGroupVertical() {
   return (

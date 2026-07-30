@@ -3,11 +3,11 @@ import {
   FieldContent,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/field"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@/styles/base-force-ui/ui/radio-group"
+} from "@/registry/bases/base/ui/radio-group"
 
 export function RadioGroupDescription() {
   return (

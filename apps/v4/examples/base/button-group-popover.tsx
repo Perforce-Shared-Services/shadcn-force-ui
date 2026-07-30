@@ -1,12 +1,12 @@
 import { BotIcon, ChevronDownIcon } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { ButtonGroup } from "@/styles/base-force-ui/ui/button-group"
+import { Button } from "@/registry/bases/base/ui/button"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
+} from "@/registry/bases/base/ui/field"
 import {
   Popover,
   PopoverContent,
@@ -14,8 +14,8 @@ import {
   PopoverHeader,
   PopoverTitle,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
-import { Textarea } from "@/styles/base-force-ui/ui/textarea"
+} from "@/registry/bases/base/ui/popover"
+import { Textarea } from "@/registry/bases/base/ui/textarea"
 
 export default function ButtonGroupPopover() {
   return (

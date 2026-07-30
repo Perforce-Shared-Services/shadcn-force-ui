@@ -10,15 +10,15 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
-import { Kbd, KbdGroup } from "@/styles/base-force-ui/ui/kbd"
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+} from "@/registry/bases/base/ui/input-group"
+import { Kbd, KbdGroup } from "@/registry/bases/base/ui/kbd"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 export function InputGroupWithKbd() {
   return (

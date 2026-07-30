@@ -1,15 +1,30 @@
 {
   "AlertCircle": {
     "lucide": "AlertCircle",
-    "radix": "ExclamationTriangleIcon"
+    "radix": "ExclamationTriangleIcon",
+    "tabler": "IconAlertCircle",
+    "hugeicons": "AlertCircleIcon",
+    "phosphor": "WarningCircleIcon",
+    "remixicon": "RiErrorWarningLine",
+    "materialSymbols": "error"
   },
   "ArrowLeft": {
     "lucide": "ArrowLeft",
-    "radix": "ArrowLeftIcon"
+    "radix": "ArrowLeftIcon",
+    "tabler": "IconArrowLeft",
+    "hugeicons": "ArrowLeft02Icon",
+    "phosphor": "ArrowLeftIcon",
+    "remixicon": "RiArrowLeftLine",
+    "materialSymbols": "arrow_left"
   },
   "ArrowRight": {
     "lucide": "ArrowRight",
-    "radix": "ArrowRightIcon"
+    "radix": "ArrowRightIcon",
+    "tabler": "IconArrowRight",
+    "hugeicons": "ArrowRight01Icon",
+    "phosphor": "ArrowRightIcon",
+    "remixicon": "RiArrowRightLine",
+    "materialSymbols": "arrow_right"
   },
   "ArrowUpDown": {
     "lucide": "ArrowUpDown",
@@ -21,39 +36,84 @@
   },
   "Bold": {
     "lucide": "Bold",
-    "radix": "FontBoldIcon"
+    "radix": "FontBoldIcon",
+    "tabler": "IconBold",
+    "hugeicons": "TextBoldIcon",
+    "phosphor": "TextBIcon",
+    "remixicon": "RiBold",
+    "materialSymbols": "format_bold"
   },
   "Calculator": {
     "lucide": "Calculator",
-    "radix": "ComponentPlaceholderIcon"
+    "radix": "ComponentPlaceholderIcon",
+    "tabler": "IconCalculator",
+    "hugeicons": "CalculatorIcon",
+    "phosphor": "CalculatorIcon",
+    "remixicon": "RiCalculatorLine",
+    "materialSymbols": "calculate"
   },
   "Calendar": {
     "lucide": "Calendar",
-    "radix": "CalendarIcon"
+    "radix": "CalendarIcon",
+    "tabler": "IconCalendar",
+    "hugeicons": "Calendar03Icon",
+    "phosphor": "CalendarIcon",
+    "remixicon": "RiCalendarLine",
+    "materialSymbols": "calendar_month"
   },
   "Check": {
     "lucide": "Check",
-    "radix": "CheckIcon"
+    "radix": "CheckIcon",
+    "tabler": "IconCheck",
+    "hugeicons": "Tick02Icon",
+    "phosphor": "CheckIcon",
+    "remixicon": "RiCheckLine",
+    "materialSymbols": "check"
   },
   "ChevronDown": {
     "lucide": "ChevronDown",
-    "radix": "ChevronDownIcon"
+    "radix": "ChevronDownIcon",
+    "tabler": "IconChevronDown",
+    "hugeicons": "ArrowDown01Icon",
+    "phosphor": "CaretDownIcon",
+    "remixicon": "RiArrowDownSLine",
+    "materialSymbols": "keyboard_arrow_down"
   },
   "ChevronLeft": {
     "lucide": "ChevronLeft",
-    "radix": "ChevronLeftIcon"
+    "radix": "ChevronLeftIcon",
+    "tabler": "IconChevronLeft",
+    "hugeicons": "ArrowLeft01Icon",
+    "phosphor": "CaretLeftIcon",
+    "remixicon": "RiArrowLeftSLine",
+    "materialSymbols": "chevron_left"
   },
   "ChevronRight": {
     "lucide": "ChevronRight",
-    "radix": "ChevronRightIcon"
+    "radix": "ChevronRightIcon",
+    "tabler": "IconChevronRight",
+    "hugeicons": "ArrowRight01Icon",
+    "phosphor": "CaretRightIcon",
+    "remixicon": "RiArrowRightSLine",
+    "materialSymbols": "chevron_right"
   },
   "ChevronUp": {
     "lucide": "ChevronUp",
-    "radix": "ChevronUpIcon"
+    "radix": "ChevronUpIcon",
+    "tabler": "IconChevronUp",
+    "hugeicons": "ArrowUp01Icon",
+    "phosphor": "CaretUpIcon",
+    "remixicon": "RiArrowUpSLine",
+    "materialSymbols": "keyboard_arrow_up"
   },
   "ChevronsUpDown": {
     "lucide": "ChevronsUpDown",
-    "radix": "CaretSortIcon"
+    "radix": "CaretSortIcon",
+    "tabler": "IconSelector",
+    "hugeicons": "UnfoldMoreIcon",
+    "phosphor": "CaretUpDownIcon",
+    "remixicon": "RiArrowUpDownLine",
+    "materialSymbols": "unfold_more"
   },
   "Circle": {
     "lucide": "Circle",
@@ -61,27 +121,57 @@
   },
   "Copy": {
     "lucide": "Copy",
-    "radix": "CopyIcon"
+    "radix": "CopyIcon",
+    "tabler": "IconCopy",
+    "hugeicons": "Copy01Icon",
+    "phosphor": "CopyIcon",
+    "remixicon": "RiFileCopyLine",
+    "materialSymbols": "content_copy"
   },
   "CreditCard": {
     "lucide": "CreditCard",
-    "radix": "ComponentPlaceholderIcon"
+    "radix": "ComponentPlaceholderIcon",
+    "tabler": "IconCreditCard",
+    "hugeicons": "CreditCardIcon",
+    "phosphor": "CreditCardIcon",
+    "remixicon": "RiBankCardLine",
+    "materialSymbols": "credit_card"
   },
   "GripVertical": {
     "lucide": "GripVertical",
-    "radix": "DragHandleDots2Icon"
+    "radix": "DragHandleDots2Icon",
+    "tabler": "IconGripVertical",
+    "hugeicons": "DragDropVerticalIcon",
+    "phosphor": "DotsSixVerticalIcon",
+    "remixicon": "RiDraggable",
+    "materialSymbols": "drag_indicator"
   },
   "Italic": {
     "lucide": "Italic",
-    "radix": "FontItalicIcon"
+    "radix": "FontItalicIcon",
+    "tabler": "IconItalic",
+    "hugeicons": "TextItalicIcon",
+    "phosphor": "TextItalicIcon",
+    "remixicon": "RiItalic",
+    "materialSymbols": "format_italic"
   },
   "Loader2": {
     "lucide": "Loader2",
-    "radix": "ReloadIcon"
+    "radix": "ReloadIcon",
+    "tabler": "IconLoader",
+    "hugeicons": "Loading03Icon",
+    "phosphor": "SpinnerIcon",
+    "remixicon": "RiLoaderLine",
+    "materialSymbols": "progress_activity"
   },
   "Mail": {
     "lucide": "Mail",
-    "radix": "EnvelopeClosedIcon"
+    "radix": "EnvelopeClosedIcon",
+    "tabler": "IconMail",
+    "hugeicons": "Mail01Icon",
+    "phosphor": "EnvelopeIcon",
+    "remixicon": "RiMailLine",
+    "materialSymbols": "mail"
   },
   "MailOpen": {
     "lucide": "MailOpen",
@@ -89,35 +179,75 @@
   },
   "Minus": {
     "lucide": "Minus",
-    "radix": "MinusIcon"
+    "radix": "MinusIcon",
+    "tabler": "IconMinus",
+    "hugeicons": "MinusSignIcon",
+    "phosphor": "MinusIcon",
+    "remixicon": "RiSubtractLine",
+    "materialSymbols": "remove"
   },
   "Moon": {
     "lucide": "Moon",
-    "radix": "MoonIcon"
+    "radix": "MoonIcon",
+    "tabler": "IconMoon",
+    "hugeicons": "MoonIcon",
+    "phosphor": "MoonIcon",
+    "remixicon": "RiMoonLine",
+    "materialSymbols": "dark_mode"
   },
   "MoreHorizontal": {
     "lucide": "MoreHorizontal",
-    "radix": "DotsHorizontalIcon"
+    "radix": "DotsHorizontalIcon",
+    "tabler": "IconDots",
+    "hugeicons": "MoreHorizontalCircle01Icon",
+    "phosphor": "DotsThreeOutlineIcon",
+    "remixicon": "RiMoreLine",
+    "materialSymbols": "more_horiz"
   },
   "PanelLeft": {
     "lucide": "PanelLeft",
-    "radix": "ViewVerticalIcon"
+    "radix": "ViewVerticalIcon",
+    "tabler": "IconLayoutSidebar",
+    "hugeicons": "SidebarLeftIcon",
+    "phosphor": "SidebarIcon",
+    "remixicon": "RiLayoutLeftLine",
+    "materialSymbols": "left_panel_open"
   },
   "Plus": {
     "lucide": "Plus",
-    "radix": "PlusIcon"
+    "radix": "PlusIcon",
+    "tabler": "IconPlus",
+    "hugeicons": "Add01Icon",
+    "phosphor": "PlusIcon",
+    "remixicon": "RiAddLine",
+    "materialSymbols": "add"
   },
   "Search": {
     "lucide": "Search",
-    "radix": "MagnifyingGlassIcon"
+    "radix": "MagnifyingGlassIcon",
+    "tabler": "IconSearch",
+    "hugeicons": "SearchIcon",
+    "phosphor": "MagnifyingGlassIcon",
+    "remixicon": "RiSearchLine",
+    "materialSymbols": "search"
   },
   "Send": {
     "lucide": "Send",
-    "radix": "PaperPlaneIcon"
+    "radix": "PaperPlaneIcon",
+    "tabler": "IconSend",
+    "hugeicons": "SentIcon",
+    "phosphor": "PaperPlaneTiltIcon",
+    "remixicon": "RiSendPlaneLine",
+    "materialSymbols": "send"
   },
   "Settings": {
     "lucide": "Settings",
-    "radix": "GearIcon"
+    "radix": "GearIcon",
+    "tabler": "IconSettings",
+    "hugeicons": "SettingsIcon",
+    "phosphor": "GearIcon",
+    "remixicon": "RiSettingsLine",
+    "materialSymbols": "settings"
   },
   "Slash": {
     "lucide": "Slash",
@@ -125,26 +255,1274 @@
   },
   "Smile": {
     "lucide": "Smile",
-    "radix": "FaceIcon"
+    "radix": "FaceIcon",
+    "tabler": "IconMoodSmile",
+    "hugeicons": "SmileIcon",
+    "phosphor": "SmileyIcon",
+    "remixicon": "RiEmotionLine",
+    "materialSymbols": "mood"
   },
   "Sun": {
     "lucide": "Sun",
-    "radix": "SunIcon"
+    "radix": "SunIcon",
+    "tabler": "IconSun",
+    "hugeicons": "Sun03Icon",
+    "phosphor": "SunIcon",
+    "remixicon": "RiSunLine",
+    "materialSymbols": "light_mode"
   },
   "Terminal": {
     "lucide": "Terminal",
-    "radix": "RocketIcon"
+    "radix": "RocketIcon",
+    "tabler": "IconTerminal",
+    "hugeicons": "ComputerTerminal01Icon",
+    "phosphor": "TerminalIcon",
+    "remixicon": "RiTerminalBoxLine",
+    "materialSymbols": "terminal"
   },
   "Underline": {
     "lucide": "Underline",
-    "radix": "UnderlineIcon"
+    "radix": "UnderlineIcon",
+    "tabler": "IconUnderline",
+    "hugeicons": "TextUnderlineIcon",
+    "phosphor": "TextUnderlineIcon",
+    "remixicon": "RiUnderline",
+    "materialSymbols": "format_underlined"
   },
   "User": {
     "lucide": "User",
-    "radix": "PersonIcon"
+    "radix": "PersonIcon",
+    "tabler": "IconUser",
+    "hugeicons": "UserIcon",
+    "phosphor": "UserIcon",
+    "remixicon": "RiUserLine",
+    "materialSymbols": "person"
   },
   "X": {
     "lucide": "X",
-    "radix": "Cross2Icon"
+    "radix": "Cross2Icon",
+    "tabler": "IconX",
+    "hugeicons": "Cancel01Icon",
+    "phosphor": "XIcon",
+    "remixicon": "RiCloseLine",
+    "materialSymbols": "close"
+  },
+  "ActivityIcon": {
+    "lucide": "ActivityIcon",
+    "tabler": "IconActivity",
+    "hugeicons": "ActivityIcon",
+    "phosphor": "ActivityIcon",
+    "remixicon": "RiPulseLine",
+    "materialSymbols": "monitor_heart"
+  },
+  "AlertTriangleIcon": {
+    "lucide": "AlertTriangleIcon",
+    "tabler": "IconAlertTriangle",
+    "hugeicons": "AlertCircleIcon",
+    "phosphor": "WarningIcon",
+    "remixicon": "RiErrorWarningLine",
+    "materialSymbols": "warning"
+  },
+  "AppWindowIcon": {
+    "lucide": "AppWindowIcon",
+    "tabler": "IconAppWindow",
+    "hugeicons": "CursorInWindowIcon",
+    "phosphor": "AppWindowIcon",
+    "remixicon": "RiWindowLine",
+    "materialSymbols": "web_asset"
+  },
+  "ArchiveIcon": {
+    "lucide": "ArchiveIcon",
+    "tabler": "IconArchive",
+    "hugeicons": "Archive02Icon",
+    "phosphor": "ArchiveIcon",
+    "remixicon": "RiArchiveLine",
+    "materialSymbols": "archive"
+  },
+  "ArchiveXIcon": {
+    "lucide": "ArchiveXIcon",
+    "tabler": "IconArchiveOff",
+    "hugeicons": "ArchiveIcon",
+    "phosphor": "ArchiveIcon",
+    "remixicon": "RiArchiveLine",
+    "materialSymbols": "archive"
+  },
+  "ArrowDownIcon": {
+    "lucide": "ArrowDownIcon",
+    "tabler": "IconArrowDown",
+    "hugeicons": "ArrowDownIcon",
+    "phosphor": "ArrowDownIcon",
+    "remixicon": "RiArrowDownLine",
+    "materialSymbols": "arrow_downward"
+  },
+  "ArrowLeftCircleIcon": {
+    "lucide": "ArrowLeftCircleIcon",
+    "tabler": "IconCircleArrowLeft",
+    "hugeicons": "CircleArrowLeft02Icon",
+    "phosphor": "ArrowCircleLeftIcon",
+    "remixicon": "RiArrowLeftCircleLine",
+    "materialSymbols": "arrow_circle_left"
+  },
+  "ArrowLeftRightIcon": {
+    "lucide": "ArrowLeftRightIcon",
+    "tabler": "IconArrowsLeftRight",
+    "hugeicons": "ArrowDataTransferHorizontalIcon",
+    "phosphor": "ArrowsLeftRightIcon",
+    "remixicon": "RiArrowLeftRightLine",
+    "materialSymbols": "swap_horiz"
+  },
+  "ArrowUpIcon": {
+    "lucide": "ArrowUpIcon",
+    "tabler": "IconArrowUp",
+    "hugeicons": "ArrowUpIcon",
+    "phosphor": "ArrowUpIcon",
+    "remixicon": "RiArrowUpLine",
+    "materialSymbols": "arrow_upward"
+  },
+  "ArrowUpRightIcon": {
+    "lucide": "ArrowUpRightIcon",
+    "tabler": "IconArrowUpRight",
+    "hugeicons": "ArrowUpRightIcon",
+    "phosphor": "ArrowUpRightIcon",
+    "remixicon": "RiArrowRightUpLine",
+    "materialSymbols": "north_east"
+  },
+  "AudioLinesIcon": {
+    "lucide": "AudioLinesIcon",
+    "tabler": "IconPlayerRecordFilled",
+    "hugeicons": "AudioWave01Icon",
+    "phosphor": "RecordIcon",
+    "remixicon": "RiRecordCircleLine",
+    "materialSymbols": "graphic_eq"
+  },
+  "BadgeCheck": {
+    "lucide": "BadgeCheck",
+    "tabler": "IconRosetteDiscountCheck",
+    "hugeicons": "CheckmarkBadge02Icon",
+    "phosphor": "CheckCircleIcon",
+    "remixicon": "RiCheckboxCircleLine",
+    "materialSymbols": "verified"
+  },
+  "BadgeCheckIcon": {
+    "lucide": "BadgeCheckIcon",
+    "tabler": "IconRosetteDiscountCheck",
+    "hugeicons": "CheckmarkBadgeIcon",
+    "phosphor": "CheckCircleIcon",
+    "remixicon": "RiCheckboxCircleLine",
+    "materialSymbols": "verified"
+  },
+  "BellIcon": {
+    "lucide": "BellIcon",
+    "tabler": "IconNotification",
+    "hugeicons": "Notification03Icon",
+    "phosphor": "BellIcon",
+    "remixicon": "RiNotification3Line",
+    "materialSymbols": "notifications"
+  },
+  "BlocksIcon": {
+    "lucide": "BlocksIcon",
+    "tabler": "IconCube",
+    "hugeicons": "CubeIcon",
+    "phosphor": "CubeIcon",
+    "remixicon": "RiBox3Line",
+    "materialSymbols": "widgets"
+  },
+  "BluetoothIcon": {
+    "lucide": "BluetoothIcon",
+    "tabler": "IconBluetooth",
+    "hugeicons": "BluetoothIcon",
+    "phosphor": "BluetoothIcon",
+    "remixicon": "RiBluetoothLine",
+    "materialSymbols": "bluetooth"
+  },
+  "BookOpen": {
+    "lucide": "BookOpen",
+    "tabler": "IconBook",
+    "hugeicons": "BookOpen02Icon",
+    "phosphor": "BookOpenIcon",
+    "remixicon": "RiBookOpenLine",
+    "materialSymbols": "menu_book"
+  },
+  "BookOpenIcon": {
+    "lucide": "BookOpenIcon",
+    "tabler": "IconBook",
+    "hugeicons": "BookOpen02Icon",
+    "phosphor": "BookOpenIcon",
+    "remixicon": "RiBookOpenLine",
+    "materialSymbols": "menu_book"
+  },
+  "BookmarkIcon": {
+    "lucide": "BookmarkIcon",
+    "tabler": "IconBookmark",
+    "hugeicons": "BookmarkIcon",
+    "phosphor": "BookmarkIcon",
+    "remixicon": "RiBookmarkLine",
+    "materialSymbols": "bookmark"
+  },
+  "BotIcon": {
+    "lucide": "BotIcon",
+    "tabler": "IconRobot",
+    "hugeicons": "RoboticIcon",
+    "phosphor": "RobotIcon",
+    "remixicon": "RiRobotLine",
+    "materialSymbols": "smart_toy"
+  },
+  "BrainIcon": {
+    "lucide": "BrainIcon",
+    "tabler": "IconBrain",
+    "hugeicons": "AiBrainIcon",
+    "phosphor": "BrainIcon",
+    "remixicon": "RiBrainLine"
+  },
+  "Building2Icon": {
+    "lucide": "Building2Icon",
+    "tabler": "IconBuildingBank",
+    "hugeicons": "BankIcon",
+    "phosphor": "BankIcon",
+    "remixicon": "RiBankLine",
+    "materialSymbols": "apartment"
+  },
+  "CameraIcon": {
+    "lucide": "CameraIcon",
+    "tabler": "IconCamera",
+    "hugeicons": "Camera01Icon",
+    "phosphor": "CameraIcon",
+    "remixicon": "RiCameraLine",
+    "materialSymbols": "camera"
+  },
+  "CaptionsIcon": {
+    "lucide": "CaptionsIcon",
+    "tabler": "IconTextCaption",
+    "hugeicons": "TextCheckIcon",
+    "phosphor": "TextTIcon",
+    "remixicon": "RiTextWrap",
+    "materialSymbols": "closed_caption"
+  },
+  "CarIcon": {
+    "lucide": "CarIcon",
+    "tabler": "IconCar",
+    "hugeicons": "Car01Icon",
+    "phosphor": "CarIcon",
+    "remixicon": "RiCarLine",
+    "materialSymbols": "directions_car"
+  },
+  "ChartBarIcon": {
+    "lucide": "ChartBarIcon",
+    "tabler": "IconChartBar",
+    "hugeicons": "ChartHistogramIcon",
+    "phosphor": "ChartBarIcon",
+    "remixicon": "RiBarChartLine",
+    "materialSymbols": "bar_chart"
+  },
+  "ChartLineIcon": {
+    "lucide": "ChartLineIcon",
+    "tabler": "IconChartLine",
+    "hugeicons": "ChartIcon",
+    "phosphor": "ChartLineIcon",
+    "remixicon": "RiLineChartLine",
+    "materialSymbols": "show_chart"
+  },
+  "ChartPieIcon": {
+    "lucide": "ChartPieIcon",
+    "tabler": "IconChartPie",
+    "hugeicons": "Chart03Icon",
+    "phosphor": "ChartPieIcon",
+    "remixicon": "RiPieChartLine",
+    "materialSymbols": "pie_chart"
+  },
+  "CheckCircle2Icon": {
+    "lucide": "CheckCircle2Icon",
+    "tabler": "IconCircleCheckFilled",
+    "hugeicons": "CheckmarkCircle02Icon",
+    "phosphor": "CheckCircleIcon",
+    "remixicon": "RiCheckboxCircleLine",
+    "materialSymbols": "check_circle"
+  },
+  "ChevronsLeftIcon": {
+    "lucide": "ChevronsLeftIcon",
+    "tabler": "IconChevronsLeft",
+    "hugeicons": "ArrowLeftDoubleIcon",
+    "phosphor": "CaretDoubleLeftIcon",
+    "remixicon": "RiSkipLeftLine",
+    "materialSymbols": "keyboard_double_arrow_left"
+  },
+  "ChevronsRightIcon": {
+    "lucide": "ChevronsRightIcon",
+    "tabler": "IconChevronsRight",
+    "hugeicons": "ArrowRightDoubleIcon",
+    "phosphor": "CaretDoubleRightIcon",
+    "remixicon": "RiSkipRightLine",
+    "materialSymbols": "keyboard_double_arrow_right"
+  },
+  "CircleAlertIcon": {
+    "lucide": "CircleAlertIcon",
+    "tabler": "IconExclamationCircle",
+    "hugeicons": "AlertCircleIcon",
+    "phosphor": "WarningCircleIcon",
+    "remixicon": "RiErrorWarningLine",
+    "materialSymbols": "error"
+  },
+  "CircleCheckIcon": {
+    "lucide": "CircleCheckIcon",
+    "tabler": "IconCircleCheckFilled",
+    "hugeicons": "CheckmarkCircle01Icon",
+    "phosphor": "CheckCircleIcon",
+    "remixicon": "RiCheckboxCircleFill",
+    "materialSymbols": "check_circle"
+  },
+  "CircleDashedIcon": {
+    "lucide": "CircleDashedIcon",
+    "tabler": "IconCircleDashed",
+    "hugeicons": "DashedLineCircleIcon",
+    "phosphor": "CircleDashedIcon",
+    "remixicon": "RiLoaderLine",
+    "materialSymbols": "circle"
+  },
+  "CircleHelpIcon": {
+    "lucide": "CircleHelpIcon",
+    "tabler": "IconHelp",
+    "hugeicons": "HelpCircleIcon",
+    "phosphor": "QuestionIcon",
+    "remixicon": "RiQuestionLine",
+    "materialSymbols": "help"
+  },
+  "CirclePlusIcon": {
+    "lucide": "CirclePlusIcon",
+    "tabler": "IconCirclePlusFilled",
+    "hugeicons": "PlusSignCircleIcon",
+    "phosphor": "PlusCircleIcon",
+    "remixicon": "RiAddCircleFill",
+    "materialSymbols": "add_circle"
+  },
+  "CircleUserIcon": {
+    "lucide": "CircleUserIcon",
+    "tabler": "IconUserCircle",
+    "hugeicons": "UserCircleIcon",
+    "phosphor": "UserCircleIcon",
+    "remixicon": "RiUserSmileLine"
+  },
+  "CircleUserRoundIcon": {
+    "lucide": "CircleUserRoundIcon",
+    "tabler": "IconUserCircle",
+    "hugeicons": "UserCircle02Icon",
+    "phosphor": "UserCircleIcon",
+    "remixicon": "RiUserLine",
+    "materialSymbols": "account_circle"
+  },
+  "ClipboardPasteIcon": {
+    "lucide": "ClipboardPasteIcon",
+    "tabler": "IconClipboard",
+    "hugeicons": "ClipboardIcon",
+    "phosphor": "ClipboardIcon",
+    "remixicon": "RiClipboardLine",
+    "materialSymbols": "content_paste"
+  },
+  "Clock2Icon": {
+    "lucide": "Clock2Icon",
+    "tabler": "IconClockHour2",
+    "hugeicons": "Clock03Icon",
+    "phosphor": "ClockIcon",
+    "remixicon": "RiTimeLine",
+    "materialSymbols": "schedule"
+  },
+  "ClockIcon": {
+    "lucide": "ClockIcon",
+    "tabler": "IconClock",
+    "hugeicons": "Clock01Icon",
+    "phosphor": "ClockIcon",
+    "remixicon": "RiTimeLine"
+  },
+  "CloudIcon": {
+    "lucide": "CloudIcon",
+    "tabler": "IconCloud",
+    "hugeicons": "CloudUploadIcon",
+    "phosphor": "CloudIcon",
+    "remixicon": "RiCloudLine",
+    "materialSymbols": "cloud"
+  },
+  "CodeIcon": {
+    "lucide": "CodeIcon",
+    "tabler": "IconCode",
+    "hugeicons": "CodeIcon",
+    "phosphor": "CodeIcon",
+    "remixicon": "RiCodeLine",
+    "materialSymbols": "code"
+  },
+  "CoffeeIcon": {
+    "lucide": "CoffeeIcon",
+    "tabler": "IconCoffee",
+    "hugeicons": "CoffeeIcon",
+    "phosphor": "CoffeeIcon",
+    "remixicon": "RiCupLine",
+    "materialSymbols": "coffee"
+  },
+  "Columns3Icon": {
+    "lucide": "Columns3Icon",
+    "tabler": "IconLayoutColumns",
+    "hugeicons": "LeftToRightListBulletIcon",
+    "phosphor": "ColumnsIcon",
+    "remixicon": "RiLayoutColumnLine",
+    "materialSymbols": "view_column"
+  },
+  "CommandIcon": {
+    "lucide": "CommandIcon",
+    "tabler": "IconInnerShadowTop",
+    "hugeicons": "CommandIcon",
+    "phosphor": "CommandIcon",
+    "remixicon": "RiCommandLine",
+    "materialSymbols": "keyboard_command_key"
+  },
+  "ContainerIcon": {
+    "lucide": "ContainerIcon",
+    "tabler": "IconBox",
+    "hugeicons": "CubeIcon",
+    "phosphor": "CubeIcon",
+    "remixicon": "RiBox1Line",
+    "materialSymbols": "deployed_code"
+  },
+  "CornerUpLeftIcon": {
+    "lucide": "CornerUpLeftIcon",
+    "tabler": "IconCornerUpLeft",
+    "hugeicons": "UndoIcon",
+    "phosphor": "ArrowBendUpLeftIcon",
+    "remixicon": "RiCornerUpLeftLine",
+    "materialSymbols": "turn_left"
+  },
+  "CornerUpRightIcon": {
+    "lucide": "CornerUpRightIcon",
+    "tabler": "IconCornerUpRight",
+    "hugeicons": "RedoIcon",
+    "phosphor": "ArrowBendUpRightIcon",
+    "remixicon": "RiCornerUpRightLine",
+    "materialSymbols": "turn_right"
+  },
+  "DatabaseIcon": {
+    "lucide": "DatabaseIcon",
+    "tabler": "IconDatabase",
+    "hugeicons": "Database01Icon",
+    "phosphor": "DatabaseIcon",
+    "remixicon": "RiDatabase2Line",
+    "materialSymbols": "database"
+  },
+  "DownloadIcon": {
+    "lucide": "DownloadIcon",
+    "tabler": "IconDownload",
+    "hugeicons": "DownloadIcon",
+    "phosphor": "DownloadIcon",
+    "remixicon": "RiDownloadLine",
+    "materialSymbols": "download"
+  },
+  "EllipsisVerticalIcon": {
+    "lucide": "EllipsisVerticalIcon",
+    "tabler": "IconDotsVertical",
+    "hugeicons": "MoreVerticalCircle01Icon",
+    "phosphor": "DotsThreeVerticalIcon",
+    "remixicon": "RiMore2Line",
+    "materialSymbols": "more_vert"
+  },
+  "ExternalLinkIcon": {
+    "lucide": "ExternalLinkIcon",
+    "tabler": "IconExternalLink",
+    "hugeicons": "LinkSquare02Icon",
+    "phosphor": "ArrowSquareOutIcon",
+    "remixicon": "RiExternalLinkLine",
+    "materialSymbols": "open_in_new"
+  },
+  "EyeIcon": {
+    "lucide": "EyeIcon",
+    "tabler": "IconEye",
+    "hugeicons": "EyeIcon",
+    "phosphor": "EyeIcon",
+    "remixicon": "RiEyeLine",
+    "materialSymbols": "visibility"
+  },
+  "EyeOffIcon": {
+    "lucide": "EyeOffIcon",
+    "tabler": "IconEyeClosed",
+    "hugeicons": "ViewOffIcon",
+    "phosphor": "EyeSlashIcon",
+    "remixicon": "RiEyeOffLine",
+    "materialSymbols": "visibility_off"
+  },
+  "FileArchiveIcon": {
+    "lucide": "FileArchiveIcon",
+    "tabler": "IconFileZip",
+    "hugeicons": "File01Icon",
+    "phosphor": "FileZipIcon",
+    "remixicon": "RiFileZipLine"
+  },
+  "FileBarChartIcon": {
+    "lucide": "FileBarChartIcon",
+    "tabler": "IconReportAnalytics",
+    "hugeicons": "ChartBarLineIcon",
+    "phosphor": "ChartBarIcon",
+    "remixicon": "RiBarChartLine",
+    "materialSymbols": "bar_chart"
+  },
+  "FileChartColumnIcon": {
+    "lucide": "FileChartColumnIcon",
+    "tabler": "IconReport",
+    "hugeicons": "Analytics01Icon",
+    "phosphor": "ChartLineIcon",
+    "remixicon": "RiFileChartLine",
+    "materialSymbols": "bar_chart"
+  },
+  "FileCodeIcon": {
+    "lucide": "FileCodeIcon",
+    "tabler": "IconFileCode",
+    "hugeicons": "File01Icon",
+    "phosphor": "FileCodeIcon",
+    "remixicon": "RiFileCodeLine",
+    "materialSymbols": "code"
+  },
+  "FileIcon": {
+    "lucide": "FileIcon",
+    "tabler": "IconFileWord",
+    "hugeicons": "File01Icon",
+    "phosphor": "FileIcon",
+    "remixicon": "RiFileLine",
+    "materialSymbols": "description"
+  },
+  "FileSearchIcon": {
+    "lucide": "FileSearchIcon",
+    "tabler": "IconFileSearch",
+    "hugeicons": "FileSearchIcon",
+    "phosphor": "FileSearchIcon",
+    "remixicon": "RiFileSearchLine"
+  },
+  "FileTextIcon": {
+    "lucide": "FileTextIcon",
+    "tabler": "IconFileDescription",
+    "hugeicons": "File01Icon",
+    "phosphor": "FileTextIcon",
+    "remixicon": "RiFileTextLine",
+    "materialSymbols": "description"
+  },
+  "FileWarningIcon": {
+    "lucide": "FileWarningIcon",
+    "tabler": "IconFileAlert",
+    "hugeicons": "FileCorruptIcon",
+    "phosphor": "FileXIcon",
+    "remixicon": "RiFileWarningLine"
+  },
+  "FlipHorizontalIcon": {
+    "lucide": "FlipHorizontalIcon",
+    "tabler": "IconFlipHorizontal",
+    "hugeicons": "FlipHorizontalIcon",
+    "phosphor": "ArrowsHorizontalIcon",
+    "remixicon": "RiArrowLeftRightLine",
+    "materialSymbols": "flip"
+  },
+  "FlipVerticalIcon": {
+    "lucide": "FlipVerticalIcon",
+    "tabler": "IconFlipVertical",
+    "hugeicons": "FlipVerticalIcon",
+    "phosphor": "ArrowsVerticalIcon",
+    "remixicon": "RiArrowUpDownLine",
+    "materialSymbols": "flip"
+  },
+  "FolderIcon": {
+    "lucide": "FolderIcon",
+    "tabler": "IconFolder",
+    "hugeicons": "Folder01Icon",
+    "phosphor": "FolderIcon",
+    "remixicon": "RiFolderLine",
+    "materialSymbols": "folder"
+  },
+  "FolderOpenIcon": {
+    "lucide": "FolderOpenIcon",
+    "tabler": "IconFolderOpen",
+    "hugeicons": "FolderOpenIcon",
+    "phosphor": "FolderOpenIcon",
+    "remixicon": "RiFolderOpenLine",
+    "materialSymbols": "folder_open"
+  },
+  "FolderPlusIcon": {
+    "lucide": "FolderPlusIcon",
+    "tabler": "IconFolderPlus",
+    "hugeicons": "FolderAddIcon",
+    "phosphor": "FolderPlusIcon",
+    "remixicon": "RiFolderAddLine",
+    "materialSymbols": "create_new_folder"
+  },
+  "FolderSearchIcon": {
+    "lucide": "FolderSearchIcon",
+    "tabler": "IconFolderSearch",
+    "hugeicons": "SearchIcon",
+    "phosphor": "MagnifyingGlassIcon",
+    "remixicon": "RiSearchLine",
+    "materialSymbols": "folder"
+  },
+  "FrameIcon": {
+    "lucide": "FrameIcon",
+    "tabler": "IconFrame",
+    "hugeicons": "CropIcon",
+    "phosphor": "CropIcon",
+    "remixicon": "RiCropLine",
+    "materialSymbols": "crop_square"
+  },
+  "GalleryVerticalEndIcon": {
+    "lucide": "GalleryVerticalEndIcon",
+    "tabler": "IconLayoutRows",
+    "hugeicons": "LayoutBottomIcon",
+    "phosphor": "RowsIcon",
+    "remixicon": "RiGalleryLine",
+    "materialSymbols": "stacks"
+  },
+  "GaugeIcon": {
+    "lucide": "GaugeIcon",
+    "tabler": "IconGauge",
+    "hugeicons": "Settings01Icon",
+    "phosphor": "GaugeIcon",
+    "remixicon": "RiDashboardLine",
+    "materialSymbols": "speed"
+  },
+  "GitBranchIcon": {
+    "lucide": "GitBranchIcon",
+    "tabler": "IconGitBranch",
+    "hugeicons": "GitBranchIcon",
+    "phosphor": "GitBranchIcon",
+    "remixicon": "RiGitBranchLine"
+  },
+  "GlobeIcon": {
+    "lucide": "GlobeIcon",
+    "tabler": "IconWorld",
+    "hugeicons": "Globe02Icon",
+    "phosphor": "GlobeIcon",
+    "remixicon": "RiGlobalLine",
+    "materialSymbols": "globe"
+  },
+  "HeartIcon": {
+    "lucide": "HeartIcon",
+    "tabler": "IconBell",
+    "hugeicons": "Notification02Icon",
+    "phosphor": "HeartIcon",
+    "remixicon": "RiHeartLine",
+    "materialSymbols": "favorite"
+  },
+  "HelpCircleIcon": {
+    "lucide": "HelpCircleIcon",
+    "tabler": "IconHelpCircle",
+    "hugeicons": "HelpCircleIcon",
+    "phosphor": "QuestionIcon",
+    "remixicon": "RiQuestionLine",
+    "materialSymbols": "help"
+  },
+  "HomeIcon": {
+    "lucide": "HomeIcon",
+    "tabler": "IconHome",
+    "hugeicons": "HomeIcon",
+    "phosphor": "HouseIcon",
+    "remixicon": "RiHomeLine",
+    "materialSymbols": "home"
+  },
+  "ImageIcon": {
+    "lucide": "ImageIcon",
+    "tabler": "IconPhoto",
+    "hugeicons": "Image01Icon",
+    "phosphor": "ImageIcon",
+    "remixicon": "RiImageLine",
+    "materialSymbols": "image"
+  },
+  "InboxIcon": {
+    "lucide": "InboxIcon",
+    "tabler": "IconInbox",
+    "hugeicons": "InboxIcon",
+    "phosphor": "TrayIcon",
+    "remixicon": "RiInboxLine",
+    "materialSymbols": "inbox"
+  },
+  "InfoIcon": {
+    "lucide": "InfoIcon",
+    "tabler": "IconInfoCircle",
+    "hugeicons": "AlertCircleIcon",
+    "phosphor": "InfoIcon",
+    "remixicon": "RiInformationLine",
+    "materialSymbols": "info"
+  },
+  "KeyboardIcon": {
+    "lucide": "KeyboardIcon",
+    "tabler": "IconKeyboard",
+    "hugeicons": "KeyboardIcon",
+    "phosphor": "KeyboardIcon",
+    "remixicon": "RiKeyboardLine",
+    "materialSymbols": "keyboard"
+  },
+  "LanguagesIcon": {
+    "lucide": "LanguagesIcon",
+    "tabler": "IconLanguage",
+    "hugeicons": "LanguageCircleIcon",
+    "phosphor": "TranslateIcon",
+    "remixicon": "RiTranslate",
+    "materialSymbols": "translate"
+  },
+  "LayoutDashboardIcon": {
+    "lucide": "LayoutDashboardIcon",
+    "tabler": "IconDashboard",
+    "hugeicons": "DashboardSquare01Icon",
+    "phosphor": "SquaresFourIcon",
+    "remixicon": "RiDashboardLine",
+    "materialSymbols": "dashboard"
+  },
+  "LayoutGridIcon": {
+    "lucide": "LayoutGridIcon",
+    "tabler": "IconLayoutGrid",
+    "hugeicons": "GridIcon",
+    "phosphor": "GridFourIcon",
+    "remixicon": "RiGridLine",
+    "materialSymbols": "grid_view"
+  },
+  "LayoutIcon": {
+    "lucide": "LayoutIcon",
+    "tabler": "IconLayout",
+    "hugeicons": "LayoutIcon",
+    "phosphor": "LayoutIcon",
+    "remixicon": "RiLayoutLine",
+    "materialSymbols": "dashboard"
+  },
+  "LifeBuoy": {
+    "lucide": "LifeBuoy",
+    "tabler": "IconLifebuoy",
+    "hugeicons": "ChartRingIcon",
+    "phosphor": "LifebuoyIcon",
+    "remixicon": "RiLifebuoyLine",
+    "materialSymbols": "support"
+  },
+  "LifeBuoyIcon": {
+    "lucide": "LifeBuoyIcon",
+    "tabler": "IconLifebuoy",
+    "hugeicons": "ChartRingIcon",
+    "phosphor": "LifebuoyIcon",
+    "remixicon": "RiLifebuoyLine",
+    "materialSymbols": "support"
+  },
+  "LinkIcon": {
+    "lucide": "LinkIcon",
+    "tabler": "IconLink",
+    "hugeicons": "LinkIcon",
+    "phosphor": "LinkIcon",
+    "remixicon": "RiLinksLine",
+    "materialSymbols": "link"
+  },
+  "ListIcon": {
+    "lucide": "ListIcon",
+    "tabler": "IconListDetails",
+    "hugeicons": "Menu01Icon",
+    "phosphor": "ListIcon",
+    "remixicon": "RiListUnordered",
+    "materialSymbols": "list"
+  },
+  "LoaderIcon": {
+    "lucide": "LoaderIcon",
+    "tabler": "IconLoader",
+    "hugeicons": "Loading03Icon",
+    "phosphor": "SpinnerIcon",
+    "remixicon": "RiLoader4Line",
+    "materialSymbols": "progress_activity"
+  },
+  "LockIcon": {
+    "lucide": "LockIcon",
+    "tabler": "IconLock",
+    "hugeicons": "SquareLock02Icon",
+    "phosphor": "LockKeyIcon",
+    "remixicon": "RiLockLine",
+    "materialSymbols": "lock"
+  },
+  "LockKeyholeIcon": {
+    "lucide": "LockKeyholeIcon",
+    "tabler": "IconLock",
+    "hugeicons": "SquareLock02Icon",
+    "phosphor": "LockKeyIcon",
+    "remixicon": "RiLockLine",
+    "materialSymbols": "lock"
+  },
+  "LogOutIcon": {
+    "lucide": "LogOutIcon",
+    "tabler": "IconLogout",
+    "hugeicons": "Logout01Icon",
+    "phosphor": "SignOutIcon",
+    "remixicon": "RiLogoutBoxLine",
+    "materialSymbols": "logout"
+  },
+  "MapIcon": {
+    "lucide": "MapIcon",
+    "tabler": "IconMap",
+    "hugeicons": "MapsIcon",
+    "phosphor": "MapTrifoldIcon",
+    "remixicon": "RiMapLine",
+    "materialSymbols": "map"
+  },
+  "MaximizeIcon": {
+    "lucide": "MaximizeIcon",
+    "tabler": "IconMaximize",
+    "hugeicons": "PlusSignIcon",
+    "phosphor": "PlusIcon",
+    "remixicon": "RiAddLine",
+    "materialSymbols": "fullscreen"
+  },
+  "MenuIcon": {
+    "lucide": "MenuIcon",
+    "tabler": "IconMenu",
+    "hugeicons": "Menu09Icon",
+    "phosphor": "ListIcon",
+    "remixicon": "RiMenuLine",
+    "materialSymbols": "menu"
+  },
+  "MessageCircleIcon": {
+    "lucide": "MessageCircleIcon",
+    "tabler": "IconMessageQuestion",
+    "hugeicons": "MessageIcon",
+    "phosphor": "ChatCircleIcon",
+    "remixicon": "RiChat1Line",
+    "materialSymbols": "chat_bubble"
+  },
+  "MessageCircleQuestionIcon": {
+    "lucide": "MessageCircleQuestionIcon",
+    "tabler": "IconMessageQuestion",
+    "hugeicons": "MessageQuestionIcon",
+    "phosphor": "ChatCircleIcon",
+    "remixicon": "RiQuestionLine",
+    "materialSymbols": "quiz"
+  },
+  "MessageSquareIcon": {
+    "lucide": "MessageSquareIcon",
+    "tabler": "IconMessage",
+    "hugeicons": "Message01Icon",
+    "phosphor": "ChatIcon",
+    "remixicon": "RiChat1Line",
+    "materialSymbols": "chat"
+  },
+  "MicIcon": {
+    "lucide": "MicIcon",
+    "tabler": "IconMicrophone",
+    "hugeicons": "VoiceIcon",
+    "phosphor": "MicrophoneIcon",
+    "remixicon": "RiMicLine",
+    "materialSymbols": "mic"
+  },
+  "MinimizeIcon": {
+    "lucide": "MinimizeIcon",
+    "tabler": "IconMinimize",
+    "hugeicons": "MinusSignIcon",
+    "phosphor": "MinusIcon",
+    "remixicon": "RiSubtractLine",
+    "materialSymbols": "fullscreen_exit"
+  },
+  "MonitorIcon": {
+    "lucide": "MonitorIcon",
+    "tabler": "IconDeviceDesktop",
+    "hugeicons": "ComputerIcon",
+    "phosphor": "MonitorIcon",
+    "remixicon": "RiComputerLine",
+    "materialSymbols": "monitor"
+  },
+  "MoreVerticalIcon": {
+    "lucide": "MoreVerticalIcon",
+    "tabler": "IconDotsVertical",
+    "hugeicons": "MoreVerticalCircle01Icon",
+    "phosphor": "DotsThreeVerticalIcon",
+    "remixicon": "RiMore2Line",
+    "materialSymbols": "more_vert"
+  },
+  "OctagonXIcon": {
+    "lucide": "OctagonXIcon",
+    "tabler": "IconAlertOctagon",
+    "hugeicons": "MultiplicationSignCircleIcon",
+    "phosphor": "XCircleIcon",
+    "remixicon": "RiCloseCircleLine",
+    "materialSymbols": "dangerous"
+  },
+  "PaintbrushIcon": {
+    "lucide": "PaintbrushIcon",
+    "tabler": "IconPalette",
+    "hugeicons": "PaintBoardIcon",
+    "phosphor": "PaletteIcon",
+    "remixicon": "RiPaletteLine",
+    "materialSymbols": "brush"
+  },
+  "PaletteIcon": {
+    "lucide": "PaletteIcon",
+    "tabler": "IconPalette",
+    "hugeicons": "PaintBoardIcon",
+    "phosphor": "PaletteIcon",
+    "remixicon": "RiPaletteLine",
+    "materialSymbols": "palette"
+  },
+  "PaperclipIcon": {
+    "lucide": "PaperclipIcon",
+    "tabler": "IconPaperclip",
+    "hugeicons": "AttachmentIcon",
+    "phosphor": "PaperclipIcon",
+    "remixicon": "RiAttachmentLine"
+  },
+  "PencilIcon": {
+    "lucide": "PencilIcon",
+    "tabler": "IconPencil",
+    "hugeicons": "EditIcon",
+    "phosphor": "PencilIcon",
+    "remixicon": "RiPencilLine",
+    "materialSymbols": "edit"
+  },
+  "PieChartIcon": {
+    "lucide": "PieChartIcon",
+    "tabler": "IconChartPie",
+    "hugeicons": "PieChartIcon",
+    "phosphor": "ChartPieIcon",
+    "remixicon": "RiPieChartLine",
+    "materialSymbols": "pie_chart"
+  },
+  "PlusCircleIcon": {
+    "lucide": "PlusCircleIcon",
+    "tabler": "IconCirclePlus",
+    "hugeicons": "AddCircleIcon",
+    "phosphor": "PlusCircleIcon",
+    "remixicon": "RiAddCircleLine",
+    "materialSymbols": "add_circle"
+  },
+  "PresentationIcon": {
+    "lucide": "PresentationIcon",
+    "tabler": "IconPresentation",
+    "hugeicons": "Presentation01Icon",
+    "phosphor": "PresentationIcon",
+    "remixicon": "RiSlideshowLine"
+  },
+  "RadioIcon": {
+    "lucide": "RadioIcon",
+    "tabler": "IconPlayerRecordFilled",
+    "hugeicons": "RecordIcon",
+    "phosphor": "RecordIcon",
+    "remixicon": "RiRecordCircleLine",
+    "materialSymbols": "radio"
+  },
+  "RefreshCcwIcon": {
+    "lucide": "RefreshCcwIcon",
+    "tabler": "IconRefresh",
+    "hugeicons": "ReloadIcon",
+    "phosphor": "ArrowClockwiseIcon",
+    "remixicon": "RiRefreshLine"
+  },
+  "RefreshCwIcon": {
+    "lucide": "RefreshCwIcon",
+    "tabler": "IconRefresh",
+    "hugeicons": "RepeatIcon",
+    "phosphor": "ArrowsClockwiseIcon",
+    "remixicon": "RiRefreshLine",
+    "materialSymbols": "refresh"
+  },
+  "RepeatIcon": {
+    "lucide": "RepeatIcon",
+    "tabler": "IconRepeat",
+    "hugeicons": "RepeatIcon",
+    "phosphor": "RepeatIcon",
+    "remixicon": "RiRepeatLine",
+    "materialSymbols": "repeat"
+  },
+  "RotateCwIcon": {
+    "lucide": "RotateCwIcon",
+    "tabler": "IconRotateClockwise2",
+    "hugeicons": "Rotate01Icon",
+    "phosphor": "ArrowClockwiseIcon",
+    "remixicon": "RiRefreshLine",
+    "materialSymbols": "rotate_right"
+  },
+  "SaveIcon": {
+    "lucide": "SaveIcon",
+    "tabler": "IconDeviceFloppy",
+    "hugeicons": "FloppyDiskIcon",
+    "phosphor": "FloppyDiskIcon",
+    "remixicon": "RiSaveLine",
+    "materialSymbols": "save"
+  },
+  "ScissorsIcon": {
+    "lucide": "ScissorsIcon",
+    "tabler": "IconCut",
+    "hugeicons": "ScissorIcon",
+    "phosphor": "ScissorsIcon",
+    "remixicon": "RiScissorsLine",
+    "materialSymbols": "content_cut"
+  },
+  "SendIcon": {
+    "lucide": "SendIcon",
+    "tabler": "IconSend",
+    "hugeicons": "SentIcon",
+    "phosphor": "PaperPlaneTiltIcon",
+    "remixicon": "RiSendPlaneLine",
+    "materialSymbols": "send"
+  },
+  "ServerIcon": {
+    "lucide": "ServerIcon",
+    "tabler": "IconServer",
+    "hugeicons": "ServerStackIcon",
+    "phosphor": "HardDrivesIcon",
+    "remixicon": "RiHardDriveLine",
+    "materialSymbols": "dns"
+  },
+  "Settings2Icon": {
+    "lucide": "Settings2Icon",
+    "tabler": "IconSettings",
+    "hugeicons": "Settings05Icon",
+    "phosphor": "GearIcon",
+    "remixicon": "RiSettingsLine",
+    "materialSymbols": "settings"
+  },
+  "ShareIcon": {
+    "lucide": "ShareIcon",
+    "tabler": "IconShare3",
+    "hugeicons": "Share01Icon",
+    "phosphor": "ShareIcon",
+    "remixicon": "RiShareLine",
+    "materialSymbols": "share"
+  },
+  "ShieldIcon": {
+    "lucide": "ShieldIcon",
+    "tabler": "IconShield",
+    "hugeicons": "ShieldIcon",
+    "phosphor": "ShieldIcon",
+    "remixicon": "RiShieldLine",
+    "materialSymbols": "shield"
+  },
+  "ShoppingBagIcon": {
+    "lucide": "ShoppingBagIcon",
+    "tabler": "IconShoppingBag",
+    "hugeicons": "ShoppingBag01Icon",
+    "phosphor": "BagIcon",
+    "remixicon": "RiShoppingBagLine",
+    "materialSymbols": "shopping_bag"
+  },
+  "ShoppingCartIcon": {
+    "lucide": "ShoppingCartIcon",
+    "tabler": "IconShoppingCart",
+    "hugeicons": "ShoppingCart01Icon",
+    "phosphor": "ShoppingCartIcon",
+    "remixicon": "RiShoppingCartLine",
+    "materialSymbols": "shopping_cart"
+  },
+  "SparklesIcon": {
+    "lucide": "SparklesIcon",
+    "tabler": "IconSparkles",
+    "hugeicons": "SparklesIcon",
+    "phosphor": "SparkleIcon",
+    "remixicon": "RiSparklingLine",
+    "materialSymbols": "star_shine"
+  },
+  "SquareIcon": {
+    "lucide": "SquareIcon",
+    "tabler": "IconPlayerStop",
+    "hugeicons": "StopCircleIcon",
+    "phosphor": "StopCircleIcon",
+    "remixicon": "RiStopCircleLine"
+  },
+  "StarIcon": {
+    "lucide": "StarIcon",
+    "tabler": "IconStar",
+    "hugeicons": "StarIcon",
+    "phosphor": "StarIcon",
+    "remixicon": "RiStarLine",
+    "materialSymbols": "star"
+  },
+  "StarOffIcon": {
+    "lucide": "StarOffIcon",
+    "tabler": "IconStarOff",
+    "hugeicons": "StarOffIcon",
+    "phosphor": "StarIcon",
+    "remixicon": "RiStarOffLine",
+    "materialSymbols": "star"
+  },
+  "StopCircleIcon": {
+    "lucide": "StopCircleIcon",
+    "tabler": "IconPlayerStop",
+    "hugeicons": "StopCircleIcon",
+    "phosphor": "StopCircleIcon",
+    "remixicon": "RiStopCircleLine"
+  },
+  "TableIcon": {
+    "lucide": "TableIcon",
+    "tabler": "IconTable",
+    "hugeicons": "TableIcon",
+    "phosphor": "TableIcon",
+    "remixicon": "RiTableLine",
+    "materialSymbols": "table"
+  },
+  "TargetIcon": {
+    "lucide": "TargetIcon",
+    "tabler": "IconTarget",
+    "hugeicons": "Target02Icon",
+    "phosphor": "TargetIcon",
+    "remixicon": "RiFocus3Line",
+    "materialSymbols": "target"
+  },
+  "TerminalSquareIcon": {
+    "lucide": "TerminalSquareIcon",
+    "tabler": "IconTerminal2",
+    "hugeicons": "ComputerTerminalIcon",
+    "phosphor": "TerminalIcon",
+    "remixicon": "RiTerminalBoxLine",
+    "materialSymbols": "terminal"
+  },
+  "ThermometerIcon": {
+    "lucide": "ThermometerIcon",
+    "tabler": "IconThermometer",
+    "hugeicons": "ThermometerWarmIcon",
+    "phosphor": "ThermometerIcon",
+    "remixicon": "RiThermometerLine",
+    "materialSymbols": "device_thermostat"
+  },
+  "ThumbsDownIcon": {
+    "lucide": "ThumbsDownIcon",
+    "tabler": "IconThumbDown",
+    "hugeicons": "ThumbsDownIcon",
+    "phosphor": "ThumbsDownIcon",
+    "remixicon": "RiThumbDownLine"
+  },
+  "ThumbsUpIcon": {
+    "lucide": "ThumbsUpIcon",
+    "tabler": "IconThumbUp",
+    "hugeicons": "ThumbsUpIcon",
+    "phosphor": "ThumbsUpIcon",
+    "remixicon": "RiThumbUpLine"
+  },
+  "TimerIcon": {
+    "lucide": "TimerIcon",
+    "tabler": "IconClock",
+    "hugeicons": "Clock03Icon",
+    "phosphor": "TimerIcon",
+    "remixicon": "RiTimerLine",
+    "materialSymbols": "timer"
+  },
+  "Trash2Icon": {
+    "lucide": "Trash2Icon",
+    "tabler": "IconTrash",
+    "hugeicons": "Delete02Icon",
+    "phosphor": "TrashIcon",
+    "remixicon": "RiDeleteBinLine",
+    "materialSymbols": "delete"
+  },
+  "TrashIcon": {
+    "lucide": "TrashIcon",
+    "tabler": "IconTrash",
+    "hugeicons": "DeleteIcon",
+    "phosphor": "TrashIcon",
+    "remixicon": "RiDeleteBinLine",
+    "materialSymbols": "delete"
+  },
+  "TrendingDownIcon": {
+    "lucide": "TrendingDownIcon",
+    "tabler": "IconTrendingDown",
+    "hugeicons": "ChartDownIcon",
+    "phosphor": "TrendDownIcon",
+    "remixicon": "RiArrowDownLine",
+    "materialSymbols": "trending_down"
+  },
+  "TrendingUpIcon": {
+    "lucide": "TrendingUpIcon",
+    "tabler": "IconTrendingUp",
+    "hugeicons": "ChartUpIcon",
+    "phosphor": "TrendUpIcon",
+    "remixicon": "RiArrowUpLine",
+    "materialSymbols": "trending_up"
+  },
+  "TriangleAlertIcon": {
+    "lucide": "TriangleAlertIcon",
+    "tabler": "IconAlertTriangle",
+    "hugeicons": "Alert02Icon",
+    "phosphor": "WarningIcon",
+    "remixicon": "RiErrorWarningLine",
+    "materialSymbols": "warning"
+  },
+  "TvIcon": {
+    "lucide": "TvIcon",
+    "tabler": "IconDeviceTv",
+    "hugeicons": "Tv01Icon",
+    "phosphor": "TelevisionIcon",
+    "remixicon": "RiTvLine",
+    "materialSymbols": "tv"
+  },
+  "UploadCloudIcon": {
+    "lucide": "UploadCloudIcon",
+    "tabler": "IconCloudUpload",
+    "hugeicons": "CloudUploadIcon",
+    "phosphor": "CloudArrowUpIcon",
+    "remixicon": "RiUploadCloudLine",
+    "materialSymbols": "cloud_upload"
+  },
+  "UserRoundXIcon": {
+    "lucide": "UserRoundXIcon",
+    "tabler": "IconUserX",
+    "hugeicons": "UserRemove01Icon",
+    "phosphor": "UserMinusIcon",
+    "remixicon": "RiUserUnfollowLine",
+    "materialSymbols": "person_off"
+  },
+  "UsersIcon": {
+    "lucide": "UsersIcon",
+    "tabler": "IconUsers",
+    "hugeicons": "UserGroupIcon",
+    "phosphor": "UsersIcon",
+    "remixicon": "RiGroupLine",
+    "materialSymbols": "group"
+  },
+  "VideoIcon": {
+    "lucide": "VideoIcon",
+    "tabler": "IconVideoPlus",
+    "hugeicons": "RecordIcon",
+    "phosphor": "VideoIcon",
+    "remixicon": "RiVideoLine",
+    "materialSymbols": "videocam"
+  },
+  "Volume2Icon": {
+    "lucide": "Volume2Icon",
+    "tabler": "IconVolume",
+    "hugeicons": "VolumeHighIcon",
+    "phosphor": "SpeakerHighIcon",
+    "remixicon": "RiVolumeUpLine",
+    "materialSymbols": "volume_up"
+  },
+  "VolumeOffIcon": {
+    "lucide": "VolumeOffIcon",
+    "tabler": "IconVolume",
+    "hugeicons": "VolumeOffIcon",
+    "phosphor": "SpeakerSlashIcon",
+    "remixicon": "RiVolumeMuteLine",
+    "materialSymbols": "volume_off"
+  },
+  "VolumeX": {
+    "lucide": "VolumeX",
+    "tabler": "IconVolume",
+    "hugeicons": "VolumeOffIcon",
+    "phosphor": "SpeakerSlashIcon",
+    "remixicon": "RiVolumeMuteLine",
+    "materialSymbols": "volume_off"
+  },
+  "WalletIcon": {
+    "lucide": "WalletIcon",
+    "tabler": "IconWallet",
+    "hugeicons": "Wallet01Icon",
+    "phosphor": "WalletIcon",
+    "remixicon": "RiWalletLine",
+    "materialSymbols": "wallet"
+  },
+  "ZapIcon": {
+    "lucide": "ZapIcon",
+    "tabler": "IconBolt",
+    "hugeicons": "ZapIcon",
+    "phosphor": "LightningIcon",
+    "remixicon": "RiFlashlightLine",
+    "materialSymbols": "bolt"
+  },
+  "ZoomInIcon": {
+    "lucide": "ZoomInIcon",
+    "tabler": "IconZoomIn",
+    "hugeicons": "ZoomInAreaIcon",
+    "phosphor": "MagnifyingGlassPlusIcon",
+    "remixicon": "RiZoomInLine",
+    "materialSymbols": "zoom_in"
+  },
+  "ZoomOutIcon": {
+    "lucide": "ZoomOutIcon",
+    "tabler": "IconZoomOut",
+    "hugeicons": "ZoomOutAreaIcon",
+    "phosphor": "MagnifyingGlassMinusIcon",
+    "remixicon": "RiSearchEyeLine",
+    "materialSymbols": "zoom_out"
   }
 }

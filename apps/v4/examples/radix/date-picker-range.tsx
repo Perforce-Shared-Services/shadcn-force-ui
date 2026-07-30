@@ -5,14 +5,14 @@ import { CalendarIcon } from "@/examples/material-symbols"
 import { addDays, format } from "date-fns"
 import { type DateRange } from "react-day-picker"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
-import { Field, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
+} from "@/registry/bases/radix/ui/popover"
 
 export function DatePickerWithRange() {
   const [date, setDate] = React.useState<DateRange | undefined>({

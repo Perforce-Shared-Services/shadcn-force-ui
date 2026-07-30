@@ -3,9 +3,9 @@
 import * as React from "react"
 import { addDays } from "date-fns"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/styles/radix-force-ui/ui/card"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
+import { Card, CardContent, CardFooter } from "@/registry/bases/radix/ui/card"
 
 export function CalendarWithPresets() {
   const [date, setDate] = React.useState<Date | undefined>(

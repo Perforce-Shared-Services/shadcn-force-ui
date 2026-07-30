@@ -3,8 +3,8 @@
 import * as React from "react"
 import { es } from "react-day-picker/locale"
 
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
-import { Card, CardContent } from "@/styles/radix-force-ui/ui/card"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
+import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 
 export function CalendarBookedDates() {
   const [date, setDate] = React.useState<Date | undefined>(

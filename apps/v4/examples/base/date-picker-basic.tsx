@@ -3,14 +3,14 @@
 import * as React from "react"
 import { format } from "date-fns"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Calendar } from "@/styles/base-force-ui/ui/calendar"
-import { Field, FieldLabel } from "@/styles/base-force-ui/ui/field"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Calendar } from "@/registry/bases/base/ui/calendar"
+import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/base-force-ui/ui/popover"
+} from "@/registry/bases/base/ui/popover"
 
 export function DatePickerSimple() {
   const [date, setDate] = React.useState<Date>()

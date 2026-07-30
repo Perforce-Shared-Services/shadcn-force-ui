@@ -10,7 +10,7 @@ import {
   UserIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Command,
   CommandDialog,
@@ -21,7 +21,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/styles/base-force-ui/ui/command"
+} from "@/registry/bases/base/ui/command"
 
 export function CommandWithGroups() {
   const [open, setOpen] = React.useState(false)

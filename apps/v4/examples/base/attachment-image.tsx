@@ -10,7 +10,7 @@ import {
   AttachmentMedia,
   AttachmentTitle,
   AttachmentTrigger,
-} from "@/styles/base-force-ui/ui/attachment"
+} from "@/registry/bases/base/ui/attachment"
 
 const images = [
   {

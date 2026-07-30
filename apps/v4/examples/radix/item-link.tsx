@@ -6,7 +6,7 @@ import {
   ItemContent,
   ItemDescription,
   ItemTitle,
-} from "@/styles/radix-force-ui/ui/item"
+} from "@/registry/bases/radix/ui/item"
 
 export function ItemLink() {
   return (

@@ -7,7 +7,7 @@ import {
   ItemGroup,
   ItemHeader,
   ItemTitle,
-} from "@/styles/radix-force-ui/ui/item"
+} from "@/registry/bases/radix/ui/item"
 
 const models = [
   {

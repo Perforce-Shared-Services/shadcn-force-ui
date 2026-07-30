@@ -2,7 +2,7 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from "@/styles/radix-force-ui/ui/input-otp"
+} from "@/registry/bases/radix/ui/input-otp"
 
 export function InputOTPDemo() {
   return (

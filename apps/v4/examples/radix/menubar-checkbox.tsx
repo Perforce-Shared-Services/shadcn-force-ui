@@ -7,7 +7,7 @@ import {
   MenubarSeparator,
   MenubarShortcut,
   MenubarTrigger,
-} from "@/styles/radix-force-ui/ui/menubar"
+} from "@/registry/bases/radix/ui/menubar"
 
 export function MenubarCheckbox() {
   return (

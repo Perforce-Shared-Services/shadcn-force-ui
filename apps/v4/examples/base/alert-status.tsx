@@ -8,7 +8,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "@/styles/base-force-ui/ui/alert"
+} from "@/registry/bases/base/ui/alert"
 
 export default function AlertStatus() {
   return (

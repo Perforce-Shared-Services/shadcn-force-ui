@@ -1,4 +1,4 @@
-import { Input } from "@/styles/radix-force-ui/ui/input"
+import { Input } from "@/registry/bases/radix/ui/input"
 
 export function InputVariants() {
   return (

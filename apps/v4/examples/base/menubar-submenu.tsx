@@ -9,7 +9,7 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from "@/styles/base-force-ui/ui/menubar"
+} from "@/registry/bases/base/ui/menubar"
 
 export function MenubarSubmenu() {
   return (

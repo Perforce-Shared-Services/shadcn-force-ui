@@ -6,7 +6,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/radix-force-ui/ui/collapsible"
+} from "@/registry/bases/radix/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -19,7 +19,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarProvider,
-} from "@/styles/radix-force-ui/ui/sidebar"
+} from "@/registry/bases/radix/ui/sidebar"
 
 const items = [
   {

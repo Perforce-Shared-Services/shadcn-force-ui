@@ -1,4 +1,4 @@
-import { Bubble, BubbleContent } from "@/styles/radix-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/radix/ui/bubble"
 
 export function BubbleAlignmentDemo() {
   return (

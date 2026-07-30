@@ -3,13 +3,13 @@ import { Link2Icon } from "@/examples/material-symbols"
 import {
   ButtonGroup,
   ButtonGroupText,
-} from "@/styles/base-force-ui/ui/button-group"
+} from "@/registry/bases/base/ui/button-group"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
-import { Label } from "@/styles/base-force-ui/ui/label"
+} from "@/registry/bases/base/ui/input-group"
+import { Label } from "@/registry/bases/base/ui/label"
 
 export default function InputGroupButtonGroup() {
   return (

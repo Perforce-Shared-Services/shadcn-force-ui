@@ -4,14 +4,14 @@ import {
   FolderIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { Card, CardContent, CardHeader } from "@/styles/radix-force-ui/ui/card"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { Card, CardContent, CardHeader } from "@/registry/bases/radix/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/radix-force-ui/ui/collapsible"
-import { Tabs, TabsList, TabsTrigger } from "@/styles/radix-force-ui/ui/tabs"
+} from "@/registry/bases/radix/ui/collapsible"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/bases/radix/ui/tabs"
 
 type FileTreeItem = { name: string } | { name: string; items: FileTreeItem[] }
 

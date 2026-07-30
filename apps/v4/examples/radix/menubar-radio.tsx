@@ -11,7 +11,7 @@ import {
   MenubarRadioItem,
   MenubarSeparator,
   MenubarTrigger,
-} from "@/styles/radix-force-ui/ui/menubar"
+} from "@/registry/bases/radix/ui/menubar"
 
 export function MenubarRadio() {
   const [user, setUser] = React.useState("benoit")

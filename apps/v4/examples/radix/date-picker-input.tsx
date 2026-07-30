@@ -3,19 +3,19 @@
 import * as React from "react"
 import { CalendarIcon } from "@/examples/material-symbols"
 
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
-import { Field, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
+} from "@/registry/bases/radix/ui/popover"
 
 function formatDate(date: Date | undefined) {
   if (!date) {

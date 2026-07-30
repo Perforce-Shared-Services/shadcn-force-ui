@@ -171,7 +171,7 @@ export const designSystemConfigSchema = z
 export type DesignSystemConfig = z.infer<typeof designSystemConfigSchema>
 
 export const DEFAULT_CONFIG: DesignSystemConfig = {
-  base: "radix",
+  base: "base", // [FORCE-UI] adopt upstream default base (was "radix")
   style: "force-ui",
   baseColor: "force-ui",
   theme: "force-ui",
@@ -218,6 +218,24 @@ export const PRESETS: Preset[] = [
     title: "Force UI (Base)",
     description: "Force UI / Material Symbols / Noto Sans", // [FORCE-UI]
     base: "base",
+    style: "force-ui",
+    baseColor: "force-ui",
+    theme: "force-ui",
+    chartColor: "force-ui",
+    iconLibrary: "materialSymbols", // [FORCE-UI]
+    font: "noto-sans",
+    fontHeading: "inherit",
+    item: "Item",
+    rtl: false,
+    menuAccent: "subtle",
+    menuColor: "default",
+    radius: "default",
+  },
+  {
+    name: "aria-force-ui",
+    title: "Force UI (Aria)",
+    description: "Force UI / Material Symbols / Noto Sans", // [FORCE-UI]
+    base: "aria",
     style: "force-ui",
     baseColor: "force-ui",
     theme: "force-ui",

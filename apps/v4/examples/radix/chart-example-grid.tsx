@@ -5,7 +5,7 @@ import { Bar, BarChart, CartesianGrid } from "recharts"
 import {
   ChartContainer,
   type ChartConfig,
-} from "@/styles/radix-force-ui/ui/chart"
+} from "@/registry/bases/radix/ui/chart"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },

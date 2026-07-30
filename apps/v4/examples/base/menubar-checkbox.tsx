@@ -7,7 +7,7 @@ import {
   MenubarSeparator,
   MenubarShortcut,
   MenubarTrigger,
-} from "@/styles/base-force-ui/ui/menubar"
+} from "@/registry/bases/base/ui/menubar"
 
 export function MenubarCheckbox() {
   return (

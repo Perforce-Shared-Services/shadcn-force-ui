@@ -5,13 +5,13 @@ import {
   ThumbsUpIcon,
 } from "lucide-react"
 
-import { Bubble, BubbleContent } from "@/styles/base-force-ui/ui/bubble"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Bubble, BubbleContent } from "@/registry/bases/base/ui/bubble"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Message,
   MessageContent,
   MessageFooter,
-} from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/message"
 
 export function MessageActionsDemo() {
   return (

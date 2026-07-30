@@ -4,13 +4,13 @@ import * as React from "react"
 import { ChevronDownIcon } from "@/examples/material-symbols"
 import { format } from "date-fns"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/styles/radix-force-ui/ui/popover"
+} from "@/registry/bases/radix/ui/popover"
 
 export function DatePickerDemo() {
   const [date, setDate] = React.useState<Date>()

@@ -19,8 +19,8 @@ import {
   type VisibilityState,
 } from "@tanstack/react-table"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
-import { Checkbox } from "@/styles/radix-force-ui/ui/checkbox"
+import { Button } from "@/registry/bases/radix/ui/button"
+import { Checkbox } from "@/registry/bases/radix/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -29,8 +29,8 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "@/styles/radix-force-ui/ui/dropdown-menu"
-import { Input } from "@/styles/radix-force-ui/ui/input"
+} from "@/registry/bases/radix/ui/dropdown-menu"
+import { Input } from "@/registry/bases/radix/ui/input"
 import {
   Table,
   TableBody,
@@ -38,7 +38,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/radix-force-ui/ui/table"
+} from "@/registry/bases/radix/ui/table"
 
 const data: Payment[] = [
   {

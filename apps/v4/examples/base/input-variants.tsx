@@ -1,4 +1,4 @@
-import { Input } from "@/styles/base-force-ui/ui/input"
+import { Input } from "@/registry/bases/base/ui/input"
 
 export function InputVariants() {
   return (

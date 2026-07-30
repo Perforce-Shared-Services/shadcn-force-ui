@@ -1,7 +1,7 @@
 import { Cancel01Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -10,14 +10,14 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/styles/base-force-ui/ui/field"
-import { Progress } from "@/styles/base-force-ui/ui/progress"
+} from "@/registry/bases/base/ui/field"
+import { Progress } from "@/registry/bases/base/ui/progress"
 import {
   Select,
   SelectContent,
@@ -25,8 +25,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
-import { Textarea } from "@/styles/base-force-ui/ui/textarea"
+} from "@/registry/bases/base/ui/select"
+import { Textarea } from "@/registry/bases/base/ui/textarea"
 
 const CURRENCIES = [
   { label: "USD — United States Dollar", value: "usd" },

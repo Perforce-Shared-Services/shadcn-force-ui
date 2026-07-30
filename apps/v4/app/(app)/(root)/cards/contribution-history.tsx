@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -8,12 +8,12 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 import {
   Item,
   ItemContent,
   ItemDescription,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 
 const chartData = [
   { month: "Dec", amount: 800 },

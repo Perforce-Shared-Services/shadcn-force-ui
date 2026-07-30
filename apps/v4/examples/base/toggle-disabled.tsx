@@ -1,4 +1,4 @@
-import { Toggle } from "@/styles/base-force-ui/ui/toggle"
+import { Toggle } from "@/registry/bases/base/ui/toggle"
 
 export function ToggleDisabled() {
   return (

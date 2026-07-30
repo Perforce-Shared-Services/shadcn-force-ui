@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Progress } from "@/styles/radix-force-ui/ui/progress"
-import { Slider } from "@/styles/radix-force-ui/ui/slider"
+import { Progress } from "@/registry/bases/radix/ui/progress"
+import { Slider } from "@/registry/bases/radix/ui/slider"
 
 export function ProgressControlled() {
   const [value, setValue] = React.useState([50])

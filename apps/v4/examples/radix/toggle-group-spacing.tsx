@@ -1,7 +1,7 @@
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/styles/radix-force-ui/ui/toggle-group"
+} from "@/registry/bases/radix/ui/toggle-group"
 
 export function ToggleGroupSpacing() {
   return (

@@ -11,7 +11,7 @@ import {
   SendIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Sidebar,
   SidebarContent,
@@ -23,7 +23,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/styles/base-force-ui/ui/sidebar"
+} from "@/registry/bases/base/ui/sidebar"
 
 const projects = [
   {

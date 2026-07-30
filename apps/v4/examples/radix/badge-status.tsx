@@ -1,4 +1,4 @@
-import { Badge } from "@/styles/radix-force-ui/ui/badge"
+import { Badge } from "@/registry/bases/radix/ui/badge"
 
 export function BadgeStatus() {
   return (

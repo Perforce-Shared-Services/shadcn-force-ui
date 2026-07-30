@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from "@/examples/material-symbols"
 
-import { Badge } from "@/styles/base-force-ui/ui/badge"
+import { Badge } from "@/registry/bases/base/ui/badge"
 
 export function BadgeAsLink() {
   return (

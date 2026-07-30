@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 
 export function CardImage() {
   return (

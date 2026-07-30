@@ -6,7 +6,7 @@ import { IconCheck, IconCopy, IconPlus } from "@tabler/icons-react"
 import { useConfig } from "@/hooks/use-config"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -15,7 +15,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/styles/base-force-ui/ui/dialog"
+} from "@/registry/bases/base/ui/dialog"
 import {
   Drawer,
   DrawerClose,
@@ -24,18 +24,18 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-} from "@/styles/base-force-ui/ui/drawer"
+} from "@/registry/bases/base/ui/drawer"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/tabs"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/styles/base-force-ui/ui/tooltip"
+} from "@/registry/bases/base/ui/tooltip"
 
 const DirectoryAddContext = React.createContext<{
   open: (registry: { name: string }) => void
@@ -185,9 +185,7 @@ export function DirectoryAddProvider({
             </DrawerHeader>
             <div className="px-4">{Content}</div>
             <DrawerFooter>
-              <DrawerClose asChild>
-                <Button size="sm">Done</Button>
-              </DrawerClose>
+              <DrawerClose render={<Button size="sm" />}>Done</DrawerClose>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

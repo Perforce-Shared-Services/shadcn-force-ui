@@ -1,10 +1,10 @@
-import { Bubble, BubbleContent } from "@/styles/radix-force-ui/ui/bubble"
+import { Bubble, BubbleContent } from "@/registry/bases/radix/ui/bubble"
 import {
   Message,
   MessageContent,
   MessageFooter,
   MessageHeader,
-} from "@/styles/radix-force-ui/ui/message"
+} from "@/registry/bases/radix/ui/message"
 
 export function MessageHeaderFooterDemo() {
   return (

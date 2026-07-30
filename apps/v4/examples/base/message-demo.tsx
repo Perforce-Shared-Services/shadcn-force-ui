@@ -2,20 +2,20 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/base-force-ui/ui/avatar"
+} from "@/registry/bases/base/ui/avatar"
 import {
   Bubble,
   BubbleContent,
   BubbleGroup,
   BubbleReactions,
-} from "@/styles/base-force-ui/ui/bubble"
-import { Marker, MarkerContent } from "@/styles/base-force-ui/ui/marker"
+} from "@/registry/bases/base/ui/bubble"
+import { Marker, MarkerContent } from "@/registry/bases/base/ui/marker"
 import {
   Message,
   MessageAvatar,
   MessageContent,
   MessageFooter,
-} from "@/styles/base-force-ui/ui/message"
+} from "@/registry/bases/base/ui/message"
 
 export function MessageDemo() {
   return (

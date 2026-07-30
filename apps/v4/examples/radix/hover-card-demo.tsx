@@ -1,9 +1,9 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/styles/radix-force-ui/ui/hover-card"
+} from "@/registry/bases/radix/ui/hover-card"
 
 export default function HoverCardDemo() {
   return (

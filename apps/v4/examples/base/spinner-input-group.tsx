@@ -6,8 +6,8 @@ import {
   InputGroupButton,
   InputGroupInput,
   InputGroupTextarea,
-} from "@/styles/base-force-ui/ui/input-group"
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+} from "@/registry/bases/base/ui/input-group"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 export function SpinnerInputGroup() {
   return (

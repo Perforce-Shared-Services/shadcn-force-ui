@@ -4,8 +4,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
-import { Separator } from "@/styles/base-force-ui/ui/separator"
+} from "@/registry/bases/base/ui/card"
+import { Separator } from "@/registry/bases/base/ui/separator"
 
 const chartData = [
   { hour: "6a", usage: 1.2 },

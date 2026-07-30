@@ -7,7 +7,7 @@ import {
   UserIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Command,
   CommandDialog,
@@ -17,7 +17,7 @@ import {
   CommandItem,
   CommandList,
   CommandShortcut,
-} from "@/styles/radix-force-ui/ui/command"
+} from "@/registry/bases/radix/ui/command"
 
 export function CommandWithShortcuts() {
   const [open, setOpen] = React.useState(false)

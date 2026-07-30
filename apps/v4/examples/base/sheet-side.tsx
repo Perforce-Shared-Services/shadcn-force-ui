@@ -1,4 +1,4 @@
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Sheet,
   SheetClose,
@@ -8,7 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/styles/base-force-ui/ui/sheet"
+} from "@/registry/bases/base/ui/sheet"
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
 

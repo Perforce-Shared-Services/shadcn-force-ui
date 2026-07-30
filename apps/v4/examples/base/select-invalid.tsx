@@ -1,4 +1,4 @@
-import { Field, FieldError, FieldLabel } from "@/styles/base-force-ui/ui/field"
+import { Field, FieldError, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   Select,
   SelectContent,
@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/styles/base-force-ui/ui/select"
+} from "@/registry/bases/base/ui/select"
 
 const items = [
   { label: "Select a fruit", value: null },

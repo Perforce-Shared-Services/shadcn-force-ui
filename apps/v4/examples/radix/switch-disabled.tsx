@@ -1,5 +1,5 @@
-import { Field, FieldLabel } from "@/styles/radix-force-ui/ui/field"
-import { Switch } from "@/styles/radix-force-ui/ui/switch"
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
+import { Switch } from "@/registry/bases/radix/ui/switch"
 
 export function SwitchDisabled() {
   return (

@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/styles/base-force-ui/ui/accordion"
+} from "@/registry/bases/base/ui/accordion"
 
 export default function AccordionDisabled() {
   return (

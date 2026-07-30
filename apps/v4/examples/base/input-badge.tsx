@@ -1,6 +1,6 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Field, FieldLabel } from "@/styles/base-force-ui/ui/field"
-import { Input } from "@/styles/base-force-ui/ui/input"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
+import { Input } from "@/registry/bases/base/ui/input"
 
 export function InputBadge() {
   return (

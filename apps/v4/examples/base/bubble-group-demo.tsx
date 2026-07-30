@@ -3,7 +3,7 @@ import {
   BubbleContent,
   BubbleGroup,
   BubbleReactions,
-} from "@/styles/base-force-ui/ui/bubble"
+} from "@/registry/bases/base/ui/bubble"
 
 export function BubbleGroupDemo() {
   return (

@@ -6,13 +6,13 @@ import {
   EmptyDescription,
   EmptyHeader,
   EmptyTitle,
-} from "@/styles/base-force-ui/ui/empty"
+} from "@/registry/bases/base/ui/empty"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/base-force-ui/ui/input-group"
-import { Kbd } from "@/styles/base-force-ui/ui/kbd"
+} from "@/registry/bases/base/ui/input-group"
+import { Kbd } from "@/registry/bases/base/ui/kbd"
 
 export default function EmptyInputGroup() {
   return (

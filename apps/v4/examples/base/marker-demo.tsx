@@ -4,8 +4,8 @@ import {
   Marker,
   MarkerContent,
   MarkerIcon,
-} from "@/styles/base-force-ui/ui/marker"
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+} from "@/registry/bases/base/ui/marker"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 export function MarkerDemo() {
   return (

@@ -6,7 +6,7 @@ import {
   AttachmentDescription,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/radix-force-ui/ui/attachment"
+} from "@/registry/bases/radix/ui/attachment"
 
 export function AttachmentSizes() {
   return (

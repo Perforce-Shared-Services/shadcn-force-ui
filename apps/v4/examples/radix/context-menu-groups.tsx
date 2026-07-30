@@ -7,7 +7,7 @@ import {
   ContextMenuSeparator,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from "@/styles/radix-force-ui/ui/context-menu"
+} from "@/registry/bases/radix/ui/context-menu"
 
 export function ContextMenuGroups() {
   return (

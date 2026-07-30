@@ -4,14 +4,14 @@ import {
   FolderIcon,
 } from "@/examples/material-symbols"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Card, CardContent, CardHeader } from "@/styles/base-force-ui/ui/card"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Card, CardContent, CardHeader } from "@/registry/bases/base/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/styles/base-force-ui/ui/collapsible"
-import { Tabs, TabsList, TabsTrigger } from "@/styles/base-force-ui/ui/tabs"
+} from "@/registry/bases/base/ui/collapsible"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/bases/base/ui/tabs"
 
 type FileTreeItem = { name: string } | { name: string; items: FileTreeItem[] }
 

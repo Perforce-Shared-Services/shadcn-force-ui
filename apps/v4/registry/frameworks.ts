@@ -2,7 +2,7 @@ export const FRAMEWORKS = [
   {
     name: "react",
     title: "React",
-    bases: ["radix", "base"],
+    bases: ["base", "aria", "radix"], // [FORCE-UI] base default + react-aria
     registry: "@force-ui",
   },
   {
@@ -27,7 +27,7 @@ export const FRAMEWORKS = [
 
 export type Framework = (typeof FRAMEWORKS)[number]
 
-const REACT_BASES = new Set(["radix", "base"])
+const REACT_BASES = new Set(["radix", "base", "aria"]) // [FORCE-UI] react-aria
 
 export function getFrameworkForBase(base: string): Framework {
   if (REACT_BASES.has(base)) {
@@ -46,7 +46,7 @@ export function isReactBase(base: string): boolean {
 export function getDefaultBaseForFramework(framework: string): string {
   switch (framework) {
     case "react":
-      return "radix"
+      return "base" // [FORCE-UI] base is the default react base
     case "vue":
       return "vue"
     case "svelte":

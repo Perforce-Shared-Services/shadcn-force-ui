@@ -1,8 +1,8 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   ButtonGroup,
   ButtonGroupSeparator,
-} from "@/styles/radix-force-ui/ui/button-group"
+} from "@/registry/bases/radix/ui/button-group"
 
 export default function ButtonGroupSeparatorDemo() {
   return (

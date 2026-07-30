@@ -15,7 +15,7 @@ import {
   AttachmentGroup,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/base-force-ui/ui/attachment"
+} from "@/registry/bases/base/ui/attachment"
 
 type Item = {
   name: string

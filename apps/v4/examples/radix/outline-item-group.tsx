@@ -7,7 +7,7 @@ import {
   ItemGroup,
   ItemMedia,
   ItemTitle,
-} from "@/styles/radix-force-ui/ui/item"
+} from "@/registry/bases/radix/ui/item"
 
 export function OutlineItemGroup() {
   return (

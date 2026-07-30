@@ -1,5 +1,5 @@
-import { Calendar } from "@/styles/base-force-ui/ui/calendar"
-import { Card, CardContent } from "@/styles/base-force-ui/ui/card"
+import { Calendar } from "@/registry/bases/base/ui/calendar"
+import { Card, CardContent } from "@/registry/bases/base/ui/card"
 
 export function CalendarMultiple() {
   return (

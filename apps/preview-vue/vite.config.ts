@@ -8,6 +8,13 @@ export default defineConfig({
   base: "/preview/vue/",
   build: {
     assetsDir: "_assets",
+    // Keep peak memory down so this build fits the Vercel build container
+    // alongside the other preview builds and `next build`.
+    sourcemap: false,
+    reportCompressedSize: false,
+    rollupOptions: {
+      maxParallelFileOps: 4,
+    },
   },
   // [FORCE-UI] Render @material-symbols/svg-400 SVGs as Vue components (?component).
   // svg-400 files have no fill + fixed 48px size; force currentColor and drop the

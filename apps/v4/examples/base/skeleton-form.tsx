@@ -1,4 +1,4 @@
-import { Skeleton } from "@/styles/base-force-ui/ui/skeleton"
+import { Skeleton } from "@/registry/bases/base/ui/skeleton"
 
 export function SkeletonForm() {
   return (

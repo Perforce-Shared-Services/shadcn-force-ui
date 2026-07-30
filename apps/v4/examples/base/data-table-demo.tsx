@@ -19,8 +19,8 @@ import {
   type VisibilityState,
 } from "@tanstack/react-table"
 
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Checkbox } from "@/styles/base-force-ui/ui/checkbox"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Checkbox } from "@/registry/bases/base/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -30,8 +30,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
-import { Input } from "@/styles/base-force-ui/ui/input"
+} from "@/registry/bases/base/ui/dropdown-menu"
+import { Input } from "@/registry/bases/base/ui/input"
 import {
   Table,
   TableBody,
@@ -39,7 +39,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/base-force-ui/ui/table"
+} from "@/registry/bases/base/ui/table"
 
 const data: Payment[] = [
   {

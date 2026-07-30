@@ -9,8 +9,8 @@ import {
   AttachmentGroup,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/styles/radix-force-ui/ui/attachment"
-import { Spinner } from "@/styles/radix-force-ui/ui/spinner"
+} from "@/registry/bases/radix/ui/attachment"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
 
 const images = [
   {

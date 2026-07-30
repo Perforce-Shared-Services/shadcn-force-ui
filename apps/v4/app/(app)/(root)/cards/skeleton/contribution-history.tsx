@@ -3,8 +3,8 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/styles/base-force-ui/ui/card"
-import { Skeleton } from "@/styles/base-force-ui/ui/skeleton"
+} from "@/registry/bases/base/ui/card"
+import { Skeleton } from "@/registry/bases/base/ui/skeleton"
 
 const bars = [60, 80, 65, 95, 50, 100]
 

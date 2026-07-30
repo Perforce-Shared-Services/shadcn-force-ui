@@ -7,7 +7,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig,
-} from "@/styles/base-force-ui/ui/chart"
+} from "@/registry/bases/base/ui/chart"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },

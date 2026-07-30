@@ -7,7 +7,7 @@ import {
   ContextMenuSeparator,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from "@/styles/base-force-ui/ui/context-menu"
+} from "@/registry/bases/base/ui/context-menu"
 
 export function ContextMenuGroups() {
   return (

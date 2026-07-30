@@ -1,12 +1,12 @@
 import { InfoIcon } from "@/examples/material-symbols"
 
-import { Field, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 
 export function InputInputGroup() {
   return (

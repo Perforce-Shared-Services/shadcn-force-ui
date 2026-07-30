@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/styles/base-force-ui/ui/table"
+} from "@/registry/bases/base/ui/table"
 
 const invoices = [
   {

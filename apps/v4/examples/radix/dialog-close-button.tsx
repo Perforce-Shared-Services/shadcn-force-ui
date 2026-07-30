@@ -1,4 +1,4 @@
-import { Button } from "@/styles/radix-force-ui/ui/button"
+import { Button } from "@/registry/bases/radix/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -8,9 +8,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/styles/radix-force-ui/ui/dialog"
-import { Input } from "@/styles/radix-force-ui/ui/input"
-import { Label } from "@/styles/radix-force-ui/ui/label"
+} from "@/registry/bases/radix/ui/dialog"
+import { Input } from "@/registry/bases/radix/ui/input"
+import { Label } from "@/registry/bases/radix/ui/label"
 
 export function DialogCloseButton() {
   return (

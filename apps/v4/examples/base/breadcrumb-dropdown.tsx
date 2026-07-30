@@ -8,14 +8,14 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/styles/base-force-ui/ui/breadcrumb"
+} from "@/registry/bases/base/ui/breadcrumb"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 
 export function BreadcrumbDropdown() {
   return (
@@ -33,7 +33,7 @@ export function BreadcrumbDropdown() {
               render={<button className="flex items-center gap-1" />}
             >
               Components
-              <ChevronDownIcon data-icon="inline-end" />
+              <ChevronDownIcon data-icon="inline-end" className="size-3.5" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
               <DropdownMenuGroup>

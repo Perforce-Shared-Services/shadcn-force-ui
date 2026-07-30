@@ -4,8 +4,8 @@ import {
   FieldGroup,
   FieldLabel,
   FieldSet,
-} from "@/styles/base-force-ui/ui/field"
-import { Textarea } from "@/styles/base-force-ui/ui/textarea"
+} from "@/registry/bases/base/ui/field"
+import { Textarea } from "@/registry/bases/base/ui/textarea"
 
 export default function FieldTextarea() {
   return (

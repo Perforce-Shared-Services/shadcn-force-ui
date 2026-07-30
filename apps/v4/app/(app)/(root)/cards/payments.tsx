@@ -14,16 +14,16 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/styles/base-force-ui/ui/breadcrumb"
-import { Button } from "@/styles/base-force-ui/ui/button"
-import { Card, CardContent, CardHeader } from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/breadcrumb"
+import { Button } from "@/registry/bases/base/ui/button"
+import { Card, CardContent, CardHeader } from "@/registry/bases/base/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/styles/base-force-ui/ui/dropdown-menu"
+} from "@/registry/bases/base/ui/dropdown-menu"
 import {
   Item,
   ItemContent,
@@ -31,7 +31,7 @@ import {
   ItemGroup,
   ItemMedia,
   ItemTitle,
-} from "@/styles/base-force-ui/ui/item"
+} from "@/registry/bases/base/ui/item"
 
 export function Payments() {
   return (

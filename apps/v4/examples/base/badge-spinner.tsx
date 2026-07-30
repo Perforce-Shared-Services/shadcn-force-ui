@@ -1,5 +1,5 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Spinner } from "@/styles/base-force-ui/ui/spinner"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Spinner } from "@/registry/bases/base/ui/spinner"
 
 export function BadgeWithSpinner() {
   return (

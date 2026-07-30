@@ -7,7 +7,7 @@ import {
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/styles/base-force-ui/ui/input-otp"
+} from "@/registry/bases/base/ui/input-otp"
 
 export function InputOTPAlphanumeric() {
   return (

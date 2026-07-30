@@ -1,6 +1,6 @@
 import { AppWindowIcon, CodeIcon } from "@/examples/material-symbols"
 
-import { Tabs, TabsList, TabsTrigger } from "@/styles/base-force-ui/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/bases/base/ui/tabs"
 
 export function TabsIcons() {
   return (

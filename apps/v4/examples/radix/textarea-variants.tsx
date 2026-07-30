@@ -1,4 +1,4 @@
-import { Textarea } from "@/styles/radix-force-ui/ui/textarea"
+import { Textarea } from "@/registry/bases/radix/ui/textarea"
 
 export function TextareaVariants() {
   return (

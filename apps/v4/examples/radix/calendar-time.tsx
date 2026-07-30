@@ -3,14 +3,14 @@
 import * as React from "react"
 import { Clock2Icon } from "@/examples/material-symbols"
 
-import { Calendar } from "@/styles/radix-force-ui/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/styles/radix-force-ui/ui/card"
-import { Field, FieldGroup, FieldLabel } from "@/styles/radix-force-ui/ui/field"
+import { Calendar } from "@/registry/bases/radix/ui/calendar"
+import { Card, CardContent, CardFooter } from "@/registry/bases/radix/ui/card"
+import { Field, FieldGroup, FieldLabel } from "@/registry/bases/radix/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@/styles/radix-force-ui/ui/input-group"
+} from "@/registry/bases/radix/ui/input-group"
 
 export function CalendarWithTime() {
   const [date, setDate] = React.useState<Date | undefined>(

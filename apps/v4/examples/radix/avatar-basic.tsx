@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/styles/radix-force-ui/ui/avatar"
+} from "@/registry/bases/radix/ui/avatar"
 
 export default function AvatarDemo() {
   return (

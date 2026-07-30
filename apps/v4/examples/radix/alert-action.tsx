@@ -3,8 +3,8 @@ import {
   AlertAction,
   AlertDescription,
   AlertTitle,
-} from "@/styles/radix-force-ui/ui/alert"
-import { Button } from "@/styles/radix-force-ui/ui/button"
+} from "@/registry/bases/radix/ui/alert"
+import { Button } from "@/registry/bases/radix/ui/button"
 
 export default function AlertActionExample() {
   return (

@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-import { Label } from "@/styles/radix-force-ui/ui/label"
-import { Slider } from "@/styles/radix-force-ui/ui/slider"
+import { Label } from "@/registry/bases/radix/ui/label"
+import { Slider } from "@/registry/bases/radix/ui/slider"
 
 export function SliderControlled() {
   const [value, setValue] = React.useState([0.3, 0.7])

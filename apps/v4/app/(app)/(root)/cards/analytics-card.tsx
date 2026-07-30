@@ -1,12 +1,12 @@
-import { Badge } from "@/styles/base-force-ui/ui/badge"
-import { Button } from "@/styles/base-force-ui/ui/button"
+import { Badge } from "@/registry/bases/base/ui/badge"
+import { Button } from "@/registry/bases/base/ui/button"
 import {
   Card,
   CardAction,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/styles/base-force-ui/ui/card"
+} from "@/registry/bases/base/ui/card"
 
 const areaPath = "M0 52L18 40L36 46L54 70L72 50L100 49V86H0Z"
 const strokePath = "M0 52L18 40L36 46L54 70L72 50L100 49"
