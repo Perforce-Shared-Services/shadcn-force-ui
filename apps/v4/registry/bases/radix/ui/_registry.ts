@@ -12,7 +12,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/accordion",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/accordion",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx",
         api: "https://www.radix-ui.com/primitives/docs/components/accordion.md",
@@ -30,7 +30,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx",
       },
@@ -48,7 +48,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert-dialog",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
         api: "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md",
@@ -66,7 +66,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/aspect-ratio",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
         api: "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md",
@@ -84,7 +84,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/avatar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/avatar",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx",
         api: "https://www.radix-ui.com/primitives/docs/components/avatar.md",
@@ -102,7 +102,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/badge",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/badge",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx",
       },
@@ -119,7 +119,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/breadcrumb",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx",
       },
@@ -136,7 +136,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx",
       },
@@ -154,7 +154,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button-group",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx",
       },
@@ -173,7 +173,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/calendar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/calendar",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
         api: "https://react-day-picker.js.org",
@@ -191,7 +191,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/card",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx",
       },
@@ -210,7 +210,7 @@ export const ui: Registry["items"] = [
     dependencies: ["embla-carousel-react"],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/carousel",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/carousel",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx",
         api: "https://www.embla-carousel.com/get-started/react",
@@ -229,7 +229,7 @@ export const ui: Registry["items"] = [
     dependencies: ["recharts@3.8.0"],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/chart",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/chart",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx",
       },
@@ -246,7 +246,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/checkbox",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/checkbox.md",
@@ -264,7 +264,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/collapsible",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/collapsible.md",
@@ -284,7 +284,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/combobox",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/combobox",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
         api: "https://base-ui.com/react/components/combobox",
@@ -304,7 +304,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/command",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/command",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
         api: "https://github.com/dip/cmdk",
@@ -322,7 +322,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/context-menu",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/context-menu.md",
@@ -341,7 +341,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dialog",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
@@ -360,7 +360,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/drawer",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/drawer",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
         api: "https://vaul.emilkowal.ski/getting-started",
@@ -378,7 +378,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dropdown-menu",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md",
@@ -396,7 +396,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/empty",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/empty",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx",
       },
@@ -414,7 +414,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/field",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/field",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx",
       },
@@ -435,7 +435,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/hover-card",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/hover-card.md",
@@ -453,7 +453,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx",
       },
@@ -471,7 +471,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-group",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx",
       },
@@ -489,7 +489,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-otp",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
         api: "https://input-otp.rodz.dev",
@@ -508,7 +508,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/item",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/item",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx",
       },
@@ -525,7 +525,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/label",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/label",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/label.md",
@@ -543,7 +543,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/menubar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/menubar",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/menubar.md",
@@ -561,7 +561,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/navigation-menu",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/navigation-menu.md",
@@ -580,7 +580,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/pagination",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/pagination",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
       },
@@ -597,7 +597,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/popover",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/popover",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/popover.md",
@@ -615,7 +615,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/progress",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/progress",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/progress.md",
@@ -633,7 +633,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/radio-group",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/radio-group.md",
@@ -652,7 +652,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/resizable",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/resizable",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
         api: "https://github.com/bvaughn/react-resizable-panels",
@@ -670,7 +670,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/scroll-area",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/scroll-area.md",
@@ -688,7 +688,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/select",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/select.md",
@@ -706,7 +706,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/separator",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/separator",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/separator.md",
@@ -725,7 +725,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sheet",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sheet",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
@@ -752,7 +752,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sidebar",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx",
       },
@@ -769,7 +769,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/skeleton",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx",
       },
@@ -786,7 +786,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/slider",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/slider",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/slider.md",
@@ -805,7 +805,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sonner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sonner",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx",
         api: "https://sonner.emilkowal.ski",
@@ -823,7 +823,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/spinner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/spinner",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx",
       },
@@ -840,7 +840,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/switch",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/switch",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/switch.md",
@@ -858,7 +858,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/table",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/table",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx",
       },
@@ -875,7 +875,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tabs",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tabs",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/tabs.md",
@@ -893,7 +893,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/textarea",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/textarea",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx",
       },
@@ -910,7 +910,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/toggle.md",
@@ -929,7 +929,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle-group",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/toggle-group.md",
@@ -963,7 +963,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tooltip",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx",
         api: "https://www.radix-ui.com/docs/primitives/components/tooltip.md",
@@ -981,7 +981,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/kbd",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/kbd",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx",
       },
@@ -998,7 +998,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/native-select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/native-select",
         examples:
           "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx",
       },
@@ -1015,7 +1015,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/direction",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/direction",
         api: "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md",
       },
     },

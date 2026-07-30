@@ -17,7 +17,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/accordion.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/accordion.md"}},
     },
     "alert": {
       name: "alert",
@@ -31,7 +31,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -45,7 +45,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -59,7 +59,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"}},
     },
     "avatar": {
       name: "avatar",
@@ -73,7 +73,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/avatar.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx","api":"https://www.radix-ui.com/primitives/docs/components/avatar.md"}},
     },
     "badge": {
       name: "badge",
@@ -87,7 +87,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx"}},
     },
     "breadcrumb": {
       name: "breadcrumb",
@@ -101,7 +101,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx"}},
     },
     "button": {
       name: "button",
@@ -115,7 +115,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -129,7 +129,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx"}},
     },
     "calendar": {
       name: "calendar",
@@ -143,7 +143,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx","api":"https://react-day-picker.js.org"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx","api":"https://react-day-picker.js.org"}},
     },
     "card": {
       name: "card",
@@ -157,7 +157,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx"}},
     },
     "carousel": {
       name: "carousel",
@@ -171,7 +171,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
     "chart": {
       name: "chart",
@@ -185,7 +185,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx"}},
     },
     "checkbox": {
       name: "checkbox",
@@ -199,7 +199,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/checkbox.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/checkbox.md"}},
     },
     "collapsible": {
       name: "collapsible",
@@ -213,7 +213,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/collapsible.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/collapsible.md"}},
     },
     "combobox": {
       name: "combobox",
@@ -227,7 +227,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox"}},
     },
     "command": {
       name: "command",
@@ -241,7 +241,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -255,7 +255,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/context-menu.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/context-menu.md"}},
     },
     "dialog": {
       name: "dialog",
@@ -269,7 +269,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
     },
     "drawer": {
       name: "drawer",
@@ -283,7 +283,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx","api":"https://vaul.emilkowal.ski/getting-started"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx","api":"https://vaul.emilkowal.ski/getting-started"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -297,7 +297,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md"}},
     },
     "empty": {
       name: "empty",
@@ -311,7 +311,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx"}},
     },
     "field": {
       name: "field",
@@ -325,7 +325,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -339,7 +339,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/hover-card.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/hover-card.md"}},
     },
     "input": {
       name: "input",
@@ -353,7 +353,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
@@ -367,7 +367,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -381,7 +381,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
     "item": {
       name: "item",
@@ -395,7 +395,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx"}},
     },
     "label": {
       name: "label",
@@ -409,7 +409,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/label.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/label.md"}},
     },
     "menubar": {
       name: "menubar",
@@ -423,7 +423,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/menubar.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -437,7 +437,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/navigation-menu.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/navigation-menu.md"}},
     },
     "pagination": {
       name: "pagination",
@@ -451,7 +451,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx"}},
     },
     "popover": {
       name: "popover",
@@ -465,7 +465,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/popover.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/popover.md"}},
     },
     "progress": {
       name: "progress",
@@ -479,7 +479,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/progress.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -493,7 +493,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/radio-group.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/radio-group.md"}},
     },
     "resizable": {
       name: "resizable",
@@ -507,7 +507,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -521,7 +521,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/scroll-area.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/scroll-area.md"}},
     },
     "select": {
       name: "select",
@@ -535,7 +535,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/select.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/select.md"}},
     },
     "separator": {
       name: "separator",
@@ -549,7 +549,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/separator.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/separator.md"}},
     },
     "sheet": {
       name: "sheet",
@@ -563,7 +563,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/dialog.md"}},
     },
     "sidebar": {
       name: "sidebar",
@@ -577,7 +577,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"}},
     },
     "skeleton": {
       name: "skeleton",
@@ -591,7 +591,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"}},
     },
     "slider": {
       name: "slider",
@@ -605,7 +605,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/slider.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/slider.md"}},
     },
     "sonner": {
       name: "sonner",
@@ -619,7 +619,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
     "spinner": {
       name: "spinner",
@@ -633,7 +633,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx"}},
     },
     "switch": {
       name: "switch",
@@ -647,7 +647,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/switch.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/switch.md"}},
     },
     "table": {
       name: "table",
@@ -661,7 +661,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx"}},
     },
     "tabs": {
       name: "tabs",
@@ -675,7 +675,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tabs.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tabs.md"}},
     },
     "textarea": {
       name: "textarea",
@@ -689,7 +689,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx"}},
     },
     "toggle": {
       name: "toggle",
@@ -703,7 +703,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -717,7 +717,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle-group.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/toggle-group.md"}},
     },
     "tooltip": {
       name: "tooltip",
@@ -731,7 +731,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tooltip.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx","api":"https://www.radix-ui.com/docs/primitives/components/tooltip.md"}},
     },
     "kbd": {
       name: "kbd",
@@ -745,7 +745,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -759,7 +759,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx"}},
     },
     "direction": {
       name: "direction",
@@ -773,7 +773,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/radix/direction","api":"https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/radix/direction","api":"https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"}},
     },
     "attachment": {
       name: "attachment",
@@ -2531,7 +2531,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue"}},
     },
     "alert": {
       name: "alert",
@@ -2561,7 +2561,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -2615,7 +2615,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -2633,7 +2633,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue"}},
     },
     "avatar": {
       name: "avatar",
@@ -2671,7 +2671,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue"}},
     },
     "badge": {
       name: "badge",
@@ -2689,7 +2689,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue"}},
     },
     "breadcrumb": {
       name: "breadcrumb",
@@ -2731,7 +2731,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue"}},
     },
     "button": {
       name: "button",
@@ -2749,7 +2749,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue"}},
     },
     "button-group": {
       name: "button-group",
@@ -2775,7 +2775,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue"}},
     },
     "calendar": {
       name: "calendar",
@@ -2837,7 +2837,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/calendar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue"}},
     },
     "card": {
       name: "card",
@@ -2879,7 +2879,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue"}},
     },
     "carousel": {
       name: "carousel",
@@ -2921,7 +2921,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/carousel","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue"}},
     },
     "chart": {
       name: "chart",
@@ -2955,7 +2955,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/chart","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue"}},
     },
     "checkbox": {
       name: "checkbox",
@@ -2973,7 +2973,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue"}},
     },
     "collapsible": {
       name: "collapsible",
@@ -2999,7 +2999,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue"}},
     },
     "combobox": {
       name: "combobox",
@@ -3057,7 +3057,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/combobox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue"}},
     },
     "command": {
       name: "command",
@@ -3107,7 +3107,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -3181,7 +3181,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue"}},
     },
     "dialog": {
       name: "dialog",
@@ -3235,7 +3235,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue"}},
     },
     "drawer": {
       name: "drawer",
@@ -3285,7 +3285,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/drawer","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -3355,7 +3355,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue"}},
     },
     "empty": {
       name: "empty",
@@ -3393,7 +3393,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue"}},
     },
     "field": {
       name: "field",
@@ -3447,7 +3447,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue"}},
     },
     "form": {
       name: "form",
@@ -3489,7 +3489,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/form","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/form","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -3515,7 +3515,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue"}},
     },
     "input": {
       name: "input",
@@ -3533,7 +3533,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue"}},
     },
     "input-group": {
       name: "input-group",
@@ -3571,7 +3571,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -3601,7 +3601,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue"}},
     },
     "item": {
       name: "item",
@@ -3655,7 +3655,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue"}},
     },
     "kbd": {
       name: "kbd",
@@ -3677,7 +3677,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue"}},
     },
     "label": {
       name: "label",
@@ -3695,7 +3695,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue"}},
     },
     "menubar": {
       name: "menubar",
@@ -3769,7 +3769,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/menubar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue"}},
     },
     "native-select": {
       name: "native-select",
@@ -3795,7 +3795,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -3841,7 +3841,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/navigation-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue"}},
     },
     "number-field": {
       name: "number-field",
@@ -3875,7 +3875,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/number-field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/number-field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue"}},
     },
     "pagination": {
       name: "pagination",
@@ -3925,7 +3925,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue"}},
     },
     "pin-input": {
       name: "pin-input",
@@ -3955,7 +3955,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/pin-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue"}},
     },
     "popover": {
       name: "popover",
@@ -3997,7 +3997,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue"}},
     },
     "progress": {
       name: "progress",
@@ -4015,7 +4015,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -4037,7 +4037,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue"}},
     },
     "range-calendar": {
       name: "range-calendar",
@@ -4099,7 +4099,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/range-calendar"}},
     },
     "resizable": {
       name: "resizable",
@@ -4125,7 +4125,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/resizable","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -4147,7 +4147,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/scroll-area","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue"}},
     },
     "select": {
       name: "select",
@@ -4205,7 +4205,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue"}},
     },
     "separator": {
       name: "separator",
@@ -4223,7 +4223,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue"}},
     },
     "sheet": {
       name: "sheet",
@@ -4273,7 +4273,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue"}},
     },
     "sidebar": {
       name: "sidebar",
@@ -4387,7 +4387,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue"}},
     },
     "skeleton": {
       name: "skeleton",
@@ -4405,7 +4405,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue"}},
     },
     "slider": {
       name: "slider",
@@ -4423,7 +4423,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue"}},
     },
     "sonner": {
       name: "sonner",
@@ -4441,7 +4441,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue"}},
     },
     "spinner": {
       name: "spinner",
@@ -4459,7 +4459,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue"}},
     },
     "stepper": {
       name: "stepper",
@@ -4501,7 +4501,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/stepper","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/stepper","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue"}},
     },
     "switch": {
       name: "switch",
@@ -4519,7 +4519,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue"}},
     },
     "table": {
       name: "table",
@@ -4573,7 +4573,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue"}},
     },
     "tabs": {
       name: "tabs",
@@ -4603,7 +4603,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue"}},
     },
     "tags-input": {
       name: "tags-input",
@@ -4637,7 +4637,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/tags-input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue"}},
     },
     "textarea": {
       name: "textarea",
@@ -4655,7 +4655,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue"}},
     },
     "toggle": {
       name: "toggle",
@@ -4673,7 +4673,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -4695,7 +4695,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue"}},
     },
     "tooltip": {
       name: "tooltip",
@@ -4725,7 +4725,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/vue/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue"}},
     },
   },
   "svelte-force-ui": {
@@ -4757,7 +4757,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/accordion"}},
     },
     "alert": {
       name: "alert",
@@ -4787,7 +4787,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/alert"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -4849,7 +4849,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert-dialog"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -4867,7 +4867,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/aspect-ratio"}},
     },
     "avatar": {
       name: "avatar",
@@ -4905,7 +4905,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/avatar"}},
     },
     "badge": {
       name: "badge",
@@ -4923,7 +4923,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/badge"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/badge"}},
     },
     "breadcrumb": {
       name: "breadcrumb",
@@ -4965,7 +4965,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb"}},
     },
     "button": {
       name: "button",
@@ -4983,7 +4983,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/button"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button"}},
     },
     "button-group": {
       name: "button-group",
@@ -5009,7 +5009,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button-group"}},
     },
     "calendar": {
       name: "calendar",
@@ -5095,7 +5095,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/calendar"}},
     },
     "card": {
       name: "card",
@@ -5137,7 +5137,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/card"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/card"}},
     },
     "carousel": {
       name: "carousel",
@@ -5175,7 +5175,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/carousel"}},
     },
     "chart": {
       name: "chart",
@@ -5205,7 +5205,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/chart"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/chart"}},
     },
     "checkbox": {
       name: "checkbox",
@@ -5223,7 +5223,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/checkbox"}},
     },
     "collapsible": {
       name: "collapsible",
@@ -5249,7 +5249,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/collapsible"}},
     },
     "command": {
       name: "command",
@@ -5307,7 +5307,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/command"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/command"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -5385,7 +5385,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/context-menu"}},
     },
     "dialog": {
       name: "dialog",
@@ -5439,7 +5439,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog"}},
     },
     "drawer": {
       name: "drawer",
@@ -5497,7 +5497,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/drawer"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -5579,7 +5579,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dropdown-menu"}},
     },
     "empty": {
       name: "empty",
@@ -5617,7 +5617,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/empty"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/empty"}},
     },
     "field": {
       name: "field",
@@ -5671,7 +5671,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/field"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/field"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -5701,7 +5701,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/hover-card"}},
     },
     "input": {
       name: "input",
@@ -5719,7 +5719,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input"}},
     },
     "input-group": {
       name: "input-group",
@@ -5757,7 +5757,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-group"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -5787,7 +5787,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-otp"}},
     },
     "item": {
       name: "item",
@@ -5841,7 +5841,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/item"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/item"}},
     },
     "kbd": {
       name: "kbd",
@@ -5863,7 +5863,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/kbd"}},
     },
     "label": {
       name: "label",
@@ -5881,7 +5881,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/label"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/label"}},
     },
     "menubar": {
       name: "menubar",
@@ -5963,7 +5963,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar"}},
     },
     "native-select": {
       name: "native-select",
@@ -5989,7 +5989,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/native-select"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -6035,7 +6035,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/navigation-menu"}},
     },
     "pagination": {
       name: "pagination",
@@ -6085,7 +6085,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/pagination"}},
     },
     "popover": {
       name: "popover",
@@ -6131,7 +6131,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/popover"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/popover"}},
     },
     "progress": {
       name: "progress",
@@ -6149,7 +6149,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/progress"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/progress"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -6171,7 +6171,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/radio-group"}},
     },
     "range-calendar": {
       name: "range-calendar",
@@ -6257,7 +6257,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/range-calendar"}},
     },
     "resizable": {
       name: "resizable",
@@ -6279,7 +6279,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/resizable"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -6301,7 +6301,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/scroll-area"}},
     },
     "select": {
       name: "select",
@@ -6359,7 +6359,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/select"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/select"}},
     },
     "separator": {
       name: "separator",
@@ -6377,7 +6377,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/separator"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/separator"}},
     },
     "sheet": {
       name: "sheet",
@@ -6431,7 +6431,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sheet"}},
     },
     "sidebar": {
       name: "sidebar",
@@ -6545,7 +6545,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sidebar"}},
     },
     "skeleton": {
       name: "skeleton",
@@ -6563,7 +6563,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/skeleton"}},
     },
     "slider": {
       name: "slider",
@@ -6581,7 +6581,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/slider"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/slider"}},
     },
     "sonner": {
       name: "sonner",
@@ -6599,7 +6599,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sonner"}},
     },
     "spinner": {
       name: "spinner",
@@ -6617,7 +6617,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/spinner"}},
     },
     "switch": {
       name: "switch",
@@ -6635,7 +6635,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/switch"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/switch"}},
     },
     "table": {
       name: "table",
@@ -6681,7 +6681,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/table"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/table"}},
     },
     "tabs": {
       name: "tabs",
@@ -6711,7 +6711,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tabs"}},
     },
     "textarea": {
       name: "textarea",
@@ -6729,7 +6729,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/textarea"}},
     },
     "toggle": {
       name: "toggle",
@@ -6747,7 +6747,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -6769,7 +6769,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle-group"}},
     },
     "tooltip": {
       name: "tooltip",
@@ -6803,7 +6803,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tooltip"}},
     },
   },
   "ember-force-ui": {
@@ -6819,7 +6819,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/accordion","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -6833,7 +6833,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert-dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts"}},
     },
     "alert": {
       name: "alert",
@@ -6851,7 +6851,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -6865,7 +6865,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/aspect-ratio","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts"}},
     },
     "avatar": {
       name: "avatar",
@@ -6883,7 +6883,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/avatar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts"}},
     },
     "badge": {
       name: "badge",
@@ -6901,7 +6901,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/badge","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts"}},
     },
     "breadcrumb": {
       name: "breadcrumb",
@@ -6915,7 +6915,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/breadcrumb","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts"}},
     },
     "button-group": {
       name: "button-group",
@@ -6933,7 +6933,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/button-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts"}},
     },
     "button": {
       name: "button",
@@ -6951,7 +6951,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/button","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts"}},
     },
     "card": {
       name: "card",
@@ -6965,7 +6965,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts"}},
     },
     "checkbox": {
       name: "checkbox",
@@ -6979,7 +6979,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/checkbox","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts"}},
     },
     "collapsible": {
       name: "collapsible",
@@ -6993,7 +6993,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/collapsible","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts"}},
     },
     "command": {
       name: "command",
@@ -7007,7 +7007,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/command","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -7021,7 +7021,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/context-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts"}},
     },
     "dialog": {
       name: "dialog",
@@ -7035,7 +7035,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/dialog","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -7049,7 +7049,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/dropdown-menu","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts"}},
     },
     "empty": {
       name: "empty",
@@ -7067,7 +7067,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/empty","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts"}},
     },
     "field": {
       name: "field",
@@ -7085,7 +7085,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/field","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -7099,7 +7099,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/hover-card","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts"}},
     },
     "input-group": {
       name: "input-group",
@@ -7117,7 +7117,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -7131,7 +7131,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-otp","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts"}},
     },
     "input": {
       name: "input",
@@ -7145,7 +7145,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/input","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts"}},
     },
     "item": {
       name: "item",
@@ -7163,7 +7163,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/item","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts"}},
     },
     "kbd": {
       name: "kbd",
@@ -7177,7 +7177,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/kbd","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts"}},
     },
     "label": {
       name: "label",
@@ -7191,7 +7191,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/label","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts"}},
     },
     "native-select": {
       name: "native-select",
@@ -7205,7 +7205,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/native-select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts"}},
     },
     "pagination": {
       name: "pagination",
@@ -7219,7 +7219,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/pagination","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts"}},
     },
     "popover": {
       name: "popover",
@@ -7233,7 +7233,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/popover","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts"}},
     },
     "progress": {
       name: "progress",
@@ -7247,7 +7247,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/progress","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -7261,7 +7261,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/radio-group","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -7275,7 +7275,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/scroll-area"}},
     },
     "select": {
       name: "select",
@@ -7289,7 +7289,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/select","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts"}},
     },
     "separator": {
       name: "separator",
@@ -7303,7 +7303,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/separator","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts"}},
     },
     "sheet": {
       name: "sheet",
@@ -7317,7 +7317,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/sheet","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts"}},
     },
     "sidebar": {
       name: "sidebar",
@@ -7335,7 +7335,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/sidebar","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts"}},
     },
     "skeleton": {
       name: "skeleton",
@@ -7349,7 +7349,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/skeleton","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts"}},
     },
     "slider": {
       name: "slider",
@@ -7363,7 +7363,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/slider","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts"}},
     },
     "sonner": {
       name: "sonner",
@@ -7377,7 +7377,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/sonner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts"}},
     },
     "spinner": {
       name: "spinner",
@@ -7391,7 +7391,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/spinner","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts"}},
     },
     "switch": {
       name: "switch",
@@ -7405,7 +7405,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/switch","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts"}},
     },
     "table": {
       name: "table",
@@ -7419,7 +7419,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/table","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts"}},
     },
     "tabs": {
       name: "tabs",
@@ -7433,7 +7433,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/tabs","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts"}},
     },
     "textarea": {
       name: "textarea",
@@ -7447,7 +7447,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/textarea","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -7465,7 +7465,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle-group"}},
     },
     "toggle": {
       name: "toggle",
@@ -7483,7 +7483,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts"}},
     },
     "tooltip": {
       name: "tooltip",
@@ -7497,7 +7497,7 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       }],
       categories: undefined,
-      meta: {"links":{"docs":"https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts"}},
+      meta: {"links":{"docs":"https://forceui.public.prd.shared.perforce.com/docs/components/ember/tooltip","examples":"https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts"}},
     },
   },
 }

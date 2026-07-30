@@ -22,7 +22,8 @@ function ToastViewport({ className, ...props }: ToastPrimitive.Viewport.Props) {
     <ToastPrimitive.Viewport
       data-slot="toast-viewport"
       className={cn(
-        "pointer-events-none fixed inset-x-4 bottom-4 z-50 mx-auto w-auto max-w-sm outline-none sm:right-4 sm:left-auto sm:mx-0 sm:w-full",
+        // [FORCE-UI] match Sonner's fixed 312px toast width and Force UI toast stacking token
+        "pointer-events-none fixed inset-x-4 bottom-4 z-[800] mx-auto w-auto max-w-[calc(100vw-2rem)] outline-none sm:right-4 sm:left-auto sm:mx-0 sm:w-[312px]",
         className
       )}
       {...props}
@@ -35,7 +36,8 @@ function Toast({ className, ...props }: ToastPrimitive.Root.Props) {
     <ToastPrimitive.Root
       data-slot="toast"
       className={cn(
-        "cn-toast group/toast pointer-events-auto absolute right-0 bottom-0 z-[calc(1000-var(--toast-index))] w-full origin-bottom border bg-popover text-popover-foreground shadow-lg will-change-transform outline-none select-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",
+        // [FORCE-UI] use the same surface, status, border, and text tokens as Sonner
+        "cn-toast group/toast pointer-events-auto absolute right-0 bottom-0 z-[calc(1000-var(--toast-index))] w-full origin-bottom border border-border bg-surface text-surface-foreground shadow-lg will-change-transform outline-none select-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 data-[type=error]:border-error data-[type=error]:bg-error-subtle data-[type=error]:text-error data-[type=info]:border-info data-[type=info]:bg-info-subtle data-[type=info]:text-info data-[type=success]:border-success data-[type=success]:bg-success-subtle data-[type=success]:text-success data-[type=warning]:border-warning data-[type=warning]:bg-warning-subtle data-[type=warning]:text-warning",
         "[--gap:0.75rem] [--height:var(--toast-frontmost-height,var(--toast-height))] [--offset-y:calc(var(--toast-offset-y)*-1+calc(var(--toast-index)*var(--gap)*-1)+var(--toast-swipe-movement-y))] [--peek:0.75rem] [--scale:calc(max(0,1-(var(--toast-index)*0.1)))] [--shrink:calc(1-var(--scale))]",
         "h-(--height) [transform:translateX(var(--toast-swipe-movement-x))_translateY(calc(var(--toast-swipe-movement-y)-(var(--toast-index)*var(--peek))-(var(--shrink)*var(--height))))_scale(var(--scale))] [transition:transform_500ms_cubic-bezier(0.22,1,0.36,1),opacity_500ms,height_150ms]",
         "after:absolute after:top-full after:left-0 after:h-[calc(var(--gap)+1px)] after:w-full after:content-['']",
@@ -62,7 +64,8 @@ function ToastContent({ className, ...props }: ToastPrimitive.Content.Props) {
     <ToastPrimitive.Content
       data-slot="toast-content"
       className={cn(
-        "flex h-full items-center gap-3 overflow-hidden p-4 transition-opacity duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] data-behind:opacity-0 data-expanded:opacity-100",
+        // [FORCE-UI] align status icons and content with Sonner's multi-line layout
+        "flex h-full items-start gap-3 overflow-hidden p-4 transition-opacity duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] data-behind:opacity-0 data-expanded:opacity-100",
         className
       )}
       {...props}
@@ -95,7 +98,8 @@ function ToastDescription({
 
 function ToastAction({
   className,
-  render = <Button variant="outline" size="sm" />,
+  // [FORCE-UI] Sonner uses a primary action button
+  render = <Button variant="default" size="sm" />,
   ...props
 }: ToastPrimitive.Action.Props) {
   return (
@@ -120,7 +124,8 @@ function ToastClose({
       aria-label="Close toast"
       render={render}
       className={cn(
-        "relative shrink-0 text-muted-foreground after:absolute after:-inset-2 after:content-[''] hover:text-foreground",
+        // [FORCE-UI] inherit the semantic status color used by Sonner
+        "relative shrink-0 text-current after:absolute after:-inset-2 after:content-[''] hover:text-foreground",
         className
       )}
       {...props}
@@ -139,6 +144,7 @@ function ToastClose({
   )
 }
 
+// [FORCE-UI] status icons use the same semantic tokens as Sonner
 function ToastIcon({ type }: { type: string | undefined }) {
   let icon: React.ReactNode = null
 
@@ -150,6 +156,7 @@ function ToastIcon({ type }: { type: string | undefined }) {
         hugeicons="CheckmarkCircle02Icon"
         phosphor="CheckCircleIcon"
         remixicon="RiCheckboxCircleLine"
+        className="text-success"
         aria-hidden="true"
       />
     )
@@ -163,6 +170,7 @@ function ToastIcon({ type }: { type: string | undefined }) {
         hugeicons="InformationCircleIcon"
         phosphor="InfoIcon"
         remixicon="RiInformationLine"
+        className="text-info"
         aria-hidden="true"
       />
     )
@@ -176,6 +184,7 @@ function ToastIcon({ type }: { type: string | undefined }) {
         hugeicons="Alert02Icon"
         phosphor="WarningIcon"
         remixicon="RiErrorWarningLine"
+        className="text-warning"
         aria-hidden="true"
       />
     )
@@ -189,7 +198,8 @@ function ToastIcon({ type }: { type: string | undefined }) {
         hugeicons="MultiplicationSignCircleIcon"
         phosphor="XCircleIcon"
         remixicon="RiCloseCircleLine"
-        className="text-destructive"
+        // [FORCE-UI] use the same semantic status token as Sonner
+        className="text-error"
         aria-hidden="true"
       />
     )

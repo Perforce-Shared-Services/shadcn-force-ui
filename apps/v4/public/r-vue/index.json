@@ -31,7 +31,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/accordion",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/accordion",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue"
         }
       }
@@ -65,7 +65,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/alert",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue"
         }
       }
@@ -130,7 +130,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert-dialog",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue"
         }
       }
@@ -155,7 +155,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/aspect-ratio",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue"
         }
       }
@@ -201,7 +201,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/avatar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/avatar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue"
         }
       }
@@ -227,7 +227,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/badge",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue"
         }
       }
@@ -276,7 +276,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/breadcrumb",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue"
         }
       }
@@ -301,7 +301,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/button",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/button",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue"
         }
       }
@@ -338,7 +338,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/button-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/button-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue"
         }
       }
@@ -413,7 +413,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/calendar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/calendar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue"
         }
       }
@@ -459,7 +459,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/card",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/card",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue"
         }
       }
@@ -513,7 +513,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/carousel",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/carousel",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue"
         }
       }
@@ -555,7 +555,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/chart",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/chart",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue"
         }
       }
@@ -581,7 +581,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/checkbox",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue"
         }
       }
@@ -614,7 +614,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/collapsible",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue"
         }
       }
@@ -683,7 +683,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/combobox",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/combobox",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue"
         }
       }
@@ -745,7 +745,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/command",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/command",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue"
         }
       }
@@ -827,7 +827,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/context-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue"
         }
       }
@@ -893,7 +893,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/dialog",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/dialog",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue"
         }
       }
@@ -952,7 +952,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/drawer",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/drawer",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue"
         }
       }
@@ -1030,7 +1030,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/dropdown-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue"
         }
       }
@@ -1072,7 +1072,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/empty",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/empty",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue"
         }
       }
@@ -1134,7 +1134,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/field",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/field",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue"
         }
       }
@@ -1189,7 +1189,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/form",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/form",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue"
         }
       }
@@ -1223,7 +1223,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/hover-card",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue"
         }
       }
@@ -1248,7 +1248,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/input",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue"
         }
       }
@@ -1295,7 +1295,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/input-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue"
         }
       }
@@ -1337,7 +1337,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-otp",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue"
         }
       }
@@ -1401,7 +1401,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/item",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/item",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue"
         }
       }
@@ -1427,7 +1427,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/kbd",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/kbd",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue"
         }
       }
@@ -1453,7 +1453,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/label",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/label",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue"
         }
       }
@@ -1538,7 +1538,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/menubar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/menubar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue"
         }
       }
@@ -1575,7 +1575,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/native-select",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/native-select",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue"
         }
       }
@@ -1632,7 +1632,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/navigation-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue"
         }
       }
@@ -1677,7 +1677,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/number-field",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/number-field",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue"
         }
       }
@@ -1739,7 +1739,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/pagination",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/pagination",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue"
         }
       }
@@ -1780,7 +1780,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/pin-input",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue"
         }
       }
@@ -1830,7 +1830,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/popover",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/popover",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue"
         }
       }
@@ -1856,7 +1856,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/progress",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/progress",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue"
         }
       }
@@ -1886,7 +1886,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/radio-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue"
         }
       }
@@ -1960,7 +1960,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/range-calendar"
         }
       }
     }
@@ -1993,7 +1993,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/resizable",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/resizable",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue"
         }
       }
@@ -2023,7 +2023,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/scroll-area",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue"
         }
       }
@@ -2089,7 +2089,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/select",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/select",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue"
         }
       }
@@ -2115,7 +2115,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/separator",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/separator",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue"
         }
       }
@@ -2176,7 +2176,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/sheet",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sheet",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue"
         }
       }
@@ -2307,7 +2307,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sidebar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue"
         }
       }
@@ -2329,7 +2329,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/skeleton",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue"
         }
       }
@@ -2355,7 +2355,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/slider",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/slider",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue"
         }
       }
@@ -2383,7 +2383,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/sonner",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sonner",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue"
         }
       }
@@ -2408,7 +2408,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/spinner",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/spinner",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue"
         }
       }
@@ -2458,7 +2458,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/stepper",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/stepper",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue"
         }
       }
@@ -2484,7 +2484,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/switch",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/switch",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue"
         }
       }
@@ -2546,7 +2546,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/table",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/table",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue"
         }
       }
@@ -2584,7 +2584,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/tabs",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tabs",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue"
         }
       }
@@ -2629,7 +2629,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tags-input",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue"
         }
       }
@@ -2654,7 +2654,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/textarea",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/textarea",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue"
         }
       }
@@ -2680,7 +2680,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue"
         }
       }
@@ -2713,7 +2713,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue"
         }
       }
@@ -2751,7 +2751,7 @@
     "meta": {
       "links": {
         "vue": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tooltip",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue"
         }
       }

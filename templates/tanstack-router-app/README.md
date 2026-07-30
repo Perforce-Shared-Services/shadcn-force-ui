@@ -40,7 +40,7 @@ This project is wired to the hosted Force UI registry. Add more (or refresh
 existing) component source with:
 
 ```bash
-REGISTRY_URL="https://shadcn-force-ui.vercel.app/r-react" \
+REGISTRY_URL="https://forceui.public.prd.shared.perforce.com/r-react" \
 npx shadcn@latest add @force-ui/button
 ```
 
@@ -51,9 +51,9 @@ component already in the project **and** overwrites fonts and CSS variables
 (design tokens) — so components pick up new tokens in the same pass:
 
 ```bash
-REGISTRY_URL="https://shadcn-force-ui.vercel.app/r-react" \
+REGISTRY_URL="https://forceui.public.prd.shared.perforce.com/r-react" \
 npx shadcn@latest apply \
-  --preset "https://shadcn-force-ui.vercel.app/init?base=radix&style=force-ui&baseColor=force-ui&theme=force-ui&chartColor=force-ui&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default" \
+  --preset "https://forceui.public.prd.shared.perforce.com/init?base=radix&style=force-ui&baseColor=force-ui&theme=force-ui&chartColor=force-ui&iconLibrary=lucide&font=noto-sans&rtl=false&menuAccent=subtle&menuColor=default&radius=default" \
   -y
 ```
 

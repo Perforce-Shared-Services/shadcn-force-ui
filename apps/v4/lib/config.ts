@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Force UI",
-  url: "https://github.com/lobiklukas/shadcn-ui",
-  ogImage: "https://github.com/lobiklukas/shadcn-ui/og.jpg",
+  url: "https://forceui.public.prd.shared.perforce.com",
+  ogImage: "https://forceui.public.prd.shared.perforce.com/opengraph-image.png",
   description:
     "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.",
   links: {

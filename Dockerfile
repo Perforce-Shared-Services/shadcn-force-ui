@@ -2,7 +2,7 @@
 #
 # Build from the repo root:
 #   docker build -t force-ui \
-#     --build-arg NEXT_PUBLIC_APP_URL=https://force-ui.example.com \
+#     --build-arg NEXT_PUBLIC_APP_URL=https://forceui.public.prd.shared.perforce.com \
 #     --build-arg NEXT_PUBLIC_V0_URL=https://v0.dev \
 #     .
 #   docker run -p 4000:4000 force-ui

@@ -21,7 +21,7 @@
           "api": "https://react-aria.adobe.com/DisclosureGroup#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/accordion",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/accordion",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx",
           "api": "https://www.radix-ui.com/primitives/docs/components/accordion.md"
         }
@@ -48,7 +48,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/alert-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/alert",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx"
         }
       }
@@ -79,7 +79,7 @@
           "api": "https://react-aria.adobe.com/Modal#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert-dialog",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
           "api": "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"
         }
@@ -106,7 +106,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/aspect-ratio-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/aspect-ratio",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
           "api": "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"
         }
@@ -155,7 +155,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/avatar-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/avatar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/avatar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx",
           "api": "https://www.radix-ui.com/primitives/docs/components/avatar.md"
         }
@@ -182,7 +182,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/badge-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/badge",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/badge",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx"
         }
       }
@@ -209,7 +209,7 @@
           "api": "https://react-aria.adobe.com/Breadcrumbs#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/breadcrumb",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx"
         }
       }
@@ -254,7 +254,7 @@
           "api": "https://react-aria.adobe.com/Button#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/button",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx"
         }
       }
@@ -283,7 +283,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/button-group-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/button-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx"
         }
       }
@@ -318,7 +318,7 @@
           "api": "https://react-aria.adobe.com/Calendar#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/calendar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/calendar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
           "api": "https://react-day-picker.js.org"
         }
@@ -345,7 +345,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/card-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/card",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/card",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx"
         }
       }
@@ -379,7 +379,7 @@
           "api": "https://www.embla-carousel.com/docs/api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/carousel",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/carousel",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx",
           "api": "https://www.embla-carousel.com/get-started/react"
         }
@@ -412,7 +412,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/chart-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/chart",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/chart",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx"
         }
       }
@@ -440,7 +440,7 @@
           "api": "https://react-aria.adobe.com/Checkbox#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/checkbox",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/checkbox.md"
         }
@@ -469,7 +469,7 @@
           "api": "https://react-aria.adobe.com/Disclosure#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/collapsible",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/collapsible.md"
         }
@@ -505,7 +505,7 @@
           "api": "https://react-aria.adobe.com/ComboBox#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/combobox",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/combobox",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
           "api": "https://base-ui.com/react/components/combobox"
         }
@@ -541,7 +541,7 @@
           "api": "https://react-aria.adobe.com/Autocomplete#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/command",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/command",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
           "api": "https://github.com/dip/cmdk"
         }
@@ -570,7 +570,7 @@
           "api": "https://react-aria.adobe.com/Menu#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/context-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/context-menu.md"
         }
@@ -602,7 +602,7 @@
           "api": "https://react-aria.adobe.com/Modal#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/dialog",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dialog",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/dialog.md"
         }
@@ -632,7 +632,7 @@
           "api": "https://react-aria.adobe.com/I18nProvider#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/direction",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/direction",
           "api": "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"
         }
       }
@@ -663,7 +663,7 @@
           "api": "https://base-ui.com/react/components/drawer.md"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/drawer",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/drawer",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
           "api": "https://vaul.emilkowal.ski/getting-started"
         }
@@ -692,7 +692,7 @@
           "api": "https://react-aria.adobe.com/Menu#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dropdown-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md"
         }
@@ -719,7 +719,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/empty-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/empty",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/empty",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx"
         }
       }
@@ -749,7 +749,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/field-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/field",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/field",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx"
         }
       }
@@ -776,7 +776,7 @@
           "api": "https://base-ui.com/react/components/hover-card.md"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/hover-card",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/hover-card.md"
         }
@@ -804,7 +804,7 @@
           "api": "https://react-aria.adobe.com/TextField#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/input",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx"
         }
       }
@@ -836,7 +836,7 @@
           "api": "https://react-aria.adobe.com/Group#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/input-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx"
         }
       }
@@ -867,7 +867,7 @@
           "api": "https://input-otp.rodz.dev"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-otp",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
           "api": "https://input-otp.rodz.dev"
         }
@@ -898,7 +898,7 @@
           "api": "https://react-aria.adobe.com/Link#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/item",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/item",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx"
         }
       }
@@ -924,7 +924,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/kbd-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/kbd",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/kbd",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx"
         }
       }
@@ -952,7 +952,7 @@
           "api": "https://react-aria.adobe.com/TextField#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/label",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/label",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/label.md"
         }
@@ -997,7 +997,7 @@
           "api": "https://base-ui.com/react/components/menubar.md"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/menubar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/menubar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/menubar.md"
         }
@@ -1066,7 +1066,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/native-select-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/native-select",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/native-select",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx"
         }
       }
@@ -1089,7 +1089,7 @@
           "api": "https://base-ui.com/react/components/navigation-menu.md"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/navigation-menu",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/navigation-menu.md"
         }
@@ -1119,7 +1119,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/pagination",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/pagination",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx"
         }
       }
@@ -1147,7 +1147,7 @@
           "api": "https://react-aria.adobe.com/Popover#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/popover",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/popover",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/popover.md"
         }
@@ -1176,7 +1176,7 @@
           "api": "https://react-aria.adobe.com/ProgressBar#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/progress",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/progress",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/progress.md"
         }
@@ -1205,7 +1205,7 @@
           "api": "https://react-aria.adobe.com/RadioGroup#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/radio-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/radio-group.md"
         }
@@ -1237,7 +1237,7 @@
           "api": "https://github.com/bvaughn/react-resizable-panels"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/resizable",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/resizable",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
           "api": "https://github.com/bvaughn/react-resizable-panels"
         }
@@ -1265,7 +1265,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/scroll-area-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/scroll-area",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/scroll-area.md"
         }
@@ -1294,7 +1294,7 @@
           "api": "https://react-aria.adobe.com/Select#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/select",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/select",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/select.md"
         }
@@ -1323,7 +1323,7 @@
           "api": "https://react-aria.adobe.com/Separator#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/separator",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/separator",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/separator.md"
         }
@@ -1355,7 +1355,7 @@
           "api": "https://react-aria.adobe.com/Modal#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/sheet",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sheet",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/dialog.md"
         }
@@ -1391,7 +1391,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/sidebar-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sidebar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"
         }
       }
@@ -1417,7 +1417,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/skeleton-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/skeleton",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx"
         }
       }
@@ -1445,7 +1445,7 @@
           "api": "https://react-aria.adobe.com/Slider#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/slider",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/slider",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/slider.md"
         }
@@ -1478,7 +1478,7 @@
           "api": "https://sonner.emilkowal.ski"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/sonner",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sonner",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx",
           "api": "https://sonner.emilkowal.ski"
         }
@@ -1505,7 +1505,7 @@
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/spinner-example.tsx"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/spinner",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/spinner",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx"
         }
       }
@@ -1533,7 +1533,7 @@
           "api": "https://react-aria.adobe.com/Switch#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/switch",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/switch",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/switch.md"
         }
@@ -1561,7 +1561,7 @@
           "api": "https://react-aria.adobe.com/Table#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/table",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/table",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx"
         }
       }
@@ -1589,7 +1589,7 @@
           "api": "https://react-aria.adobe.com/Tabs#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/tabs",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tabs",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/tabs.md"
         }
@@ -1617,7 +1617,7 @@
           "api": "https://react-aria.adobe.com/TextField#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/textarea",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/textarea",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx"
         }
       }
@@ -1670,7 +1670,7 @@
           "api": "https://react-aria.adobe.com/ToggleButton#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/toggle.md"
         }
@@ -1702,7 +1702,7 @@
           "api": "https://react-aria.adobe.com/ToggleButtonGroup#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/toggle-group.md"
         }
@@ -1732,7 +1732,7 @@
           "api": "https://react-aria.adobe.com/Tooltip#api"
         },
         "radix": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip",
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tooltip",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/tooltip.md"
         }

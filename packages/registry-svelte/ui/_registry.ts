@@ -30,7 +30,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/accordion",
       },
     },
   },
@@ -62,7 +62,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert",
       },
     },
   },
@@ -130,7 +130,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert-dialog",
       },
     },
   },
@@ -150,7 +150,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/aspect-ratio",
       },
     },
   },
@@ -191,7 +191,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/avatar",
       },
     },
   },
@@ -211,7 +211,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/badge",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/badge",
       },
     },
   },
@@ -255,7 +255,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb",
       },
     },
   },
@@ -275,7 +275,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button",
       },
     },
   },
@@ -306,7 +306,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button-group",
       },
     },
   },
@@ -401,7 +401,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/calendar",
       },
     },
   },
@@ -445,7 +445,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/card",
       },
     },
   },
@@ -492,7 +492,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/carousel",
       },
     },
   },
@@ -524,7 +524,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/chart",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/chart",
       },
     },
   },
@@ -545,7 +545,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/checkbox",
       },
     },
   },
@@ -573,7 +573,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/collapsible",
       },
     },
   },
@@ -638,7 +638,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/command",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/command",
       },
     },
   },
@@ -719,7 +719,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/context-menu",
       },
     },
   },
@@ -779,7 +779,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog",
       },
     },
   },
@@ -840,7 +840,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/drawer",
       },
     },
   },
@@ -925,7 +925,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dropdown-menu",
       },
     },
   },
@@ -965,7 +965,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/empty",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/empty",
       },
     },
   },
@@ -1025,7 +1025,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/field",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/field",
       },
     },
   },
@@ -1058,7 +1058,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/hover-card",
       },
     },
   },
@@ -1078,7 +1078,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input",
       },
     },
   },
@@ -1123,7 +1123,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-group",
       },
     },
   },
@@ -1156,7 +1156,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-otp",
       },
     },
   },
@@ -1215,7 +1215,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/item",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/item",
       },
     },
   },
@@ -1239,7 +1239,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/kbd",
       },
     },
   },
@@ -1260,7 +1260,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/label",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/label",
       },
     },
   },
@@ -1345,7 +1345,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar",
       },
     },
   },
@@ -1373,7 +1373,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/native-select",
       },
     },
   },
@@ -1422,7 +1422,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/navigation-menu",
       },
     },
   },
@@ -1478,7 +1478,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/pagination",
       },
     },
   },
@@ -1527,7 +1527,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/popover",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/popover",
       },
     },
   },
@@ -1548,7 +1548,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/progress",
       },
     },
   },
@@ -1573,7 +1573,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/radio-group",
       },
     },
   },
@@ -1668,7 +1668,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/range-calendar",
       },
     },
   },
@@ -1693,7 +1693,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/resizable",
       },
     },
   },
@@ -1718,7 +1718,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/scroll-area",
       },
     },
   },
@@ -1782,7 +1782,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/select",
       },
     },
   },
@@ -1803,7 +1803,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/separator",
       },
     },
   },
@@ -1863,7 +1863,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sheet",
       },
     },
   },
@@ -1988,7 +1988,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sidebar",
       },
     },
   },
@@ -2008,7 +2008,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/skeleton",
       },
     },
   },
@@ -2029,7 +2029,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/slider",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/slider",
       },
     },
   },
@@ -2049,7 +2049,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sonner",
       },
     },
   },
@@ -2069,7 +2069,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/spinner",
       },
     },
   },
@@ -2090,7 +2090,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/switch",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/switch",
       },
     },
   },
@@ -2138,7 +2138,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/table",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/table",
       },
     },
   },
@@ -2171,7 +2171,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tabs",
       },
     },
   },
@@ -2191,7 +2191,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/textarea",
       },
     },
   },
@@ -2212,7 +2212,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle",
       },
     },
   },
@@ -2240,7 +2240,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle-group",
       },
     },
   },
@@ -2277,7 +2277,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tooltip",
       },
     },
   },

@@ -16,7 +16,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/accordion",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/accordion",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts",
       },
     },
@@ -36,7 +36,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert-dialog",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts",
       },
     },
@@ -57,7 +57,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts",
       },
     },
@@ -74,7 +74,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/aspect-ratio",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts",
       },
     },
@@ -97,7 +97,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/avatar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/avatar",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts",
       },
     },
@@ -118,7 +118,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/badge",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/badge",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts",
       },
     },
@@ -135,7 +135,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/breadcrumb",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts",
       },
     },
@@ -156,7 +156,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/button-group",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts",
       },
     },
@@ -177,7 +177,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/button",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts",
       },
     },
@@ -194,7 +194,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/card",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts",
       },
     },
@@ -211,7 +211,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/checkbox",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts",
       },
     },
@@ -230,7 +230,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/collapsible",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts",
       },
     },
@@ -251,7 +251,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/command",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/command",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts",
       },
     },
@@ -273,7 +273,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/context-menu",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts",
       },
     },
@@ -293,7 +293,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dialog",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/dialog",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts",
       },
     },
@@ -315,7 +315,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/dropdown-menu",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts",
       },
     },
@@ -338,7 +338,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/empty",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/empty",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts",
       },
     },
@@ -359,7 +359,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/field",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/field",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts",
       },
     },
@@ -380,7 +380,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/hover-card",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts",
       },
     },
@@ -401,7 +401,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-group",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts",
       },
     },
@@ -421,7 +421,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-otp",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts",
       },
     },
@@ -438,7 +438,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts",
       },
     },
@@ -459,7 +459,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/item",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/item",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts",
       },
     },
@@ -476,7 +476,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/kbd",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/kbd",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts",
       },
     },
@@ -493,7 +493,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/label",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/label",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts",
       },
     },
@@ -510,7 +510,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/native-select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/native-select",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts",
       },
     },
@@ -527,7 +527,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/pagination",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/pagination",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts",
       },
     },
@@ -549,7 +549,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/popover",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/popover",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts",
       },
     },
@@ -566,7 +566,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/progress",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/progress",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts",
       },
     },
@@ -585,7 +585,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/radio-group",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts",
       },
     },
@@ -602,7 +602,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/scroll-area",
       },
     },
   },
@@ -623,7 +623,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/select",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/select",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts",
       },
     },
@@ -640,7 +640,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/separator",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/separator",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts",
       },
     },
@@ -660,7 +660,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sheet",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sheet",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts",
       },
     },
@@ -685,7 +685,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sidebar",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts",
       },
     },
@@ -702,7 +702,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/skeleton",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts",
       },
     },
@@ -719,7 +719,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/slider",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/slider",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts",
       },
     },
@@ -740,7 +740,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sonner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sonner",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts",
       },
     },
@@ -757,7 +757,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/spinner",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/spinner",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts",
       },
     },
@@ -774,7 +774,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/switch",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/switch",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts",
       },
     },
@@ -791,7 +791,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/table",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/table",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts",
       },
     },
@@ -810,7 +810,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tabs",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tabs",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts",
       },
     },
@@ -827,7 +827,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/textarea",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/textarea",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts",
       },
     },
@@ -850,7 +850,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle-group",
       },
     },
   },
@@ -870,7 +870,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts",
       },
     },
@@ -891,7 +891,7 @@ export const ui: Registry["items"] = [
     ],
     meta: {
       links: {
-        docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip",
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tooltip",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts",
       },
     },

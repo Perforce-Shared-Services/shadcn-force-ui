@@ -33,7 +33,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/accordion"
         }
       }
     }
@@ -69,7 +69,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert"
         }
       }
     }
@@ -141,7 +141,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert-dialog"
         }
       }
     }
@@ -165,7 +165,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/aspect-ratio"
         }
       }
     }
@@ -212,7 +212,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/avatar"
         }
       }
     }
@@ -236,7 +236,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/badge"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/badge"
         }
       }
     }
@@ -284,7 +284,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb"
         }
       }
     }
@@ -308,7 +308,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/button"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button"
         }
       }
     }
@@ -341,7 +341,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button-group"
         }
       }
     }
@@ -438,7 +438,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/calendar"
         }
       }
     }
@@ -486,7 +486,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/card"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/card"
         }
       }
     }
@@ -535,7 +535,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/carousel"
         }
       }
     }
@@ -571,7 +571,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/chart"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/chart"
         }
       }
     }
@@ -598,7 +598,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/checkbox"
         }
       }
     }
@@ -630,7 +630,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/collapsible"
         }
       }
     }
@@ -699,7 +699,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/command"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/command"
         }
       }
     }
@@ -786,7 +786,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/context-menu"
         }
       }
     }
@@ -850,7 +850,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog"
         }
       }
     }
@@ -917,7 +917,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/drawer"
         }
       }
     }
@@ -1008,7 +1008,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dropdown-menu"
         }
       }
     }
@@ -1052,7 +1052,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/empty"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/empty"
         }
       }
     }
@@ -1114,7 +1114,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/field"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/field"
         }
       }
     }
@@ -1153,7 +1153,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/hover-card"
         }
       }
     }
@@ -1177,7 +1177,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input"
         }
       }
     }
@@ -1224,7 +1224,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-group"
         }
       }
     }
@@ -1263,7 +1263,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-otp"
         }
       }
     }
@@ -1324,7 +1324,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/item"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/item"
         }
       }
     }
@@ -1352,7 +1352,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/kbd"
         }
       }
     }
@@ -1379,7 +1379,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/label"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/label"
         }
       }
     }
@@ -1470,7 +1470,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar"
         }
       }
     }
@@ -1502,7 +1502,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/native-select"
         }
       }
     }
@@ -1557,7 +1557,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/navigation-menu"
         }
       }
     }
@@ -1617,7 +1617,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/pagination"
         }
       }
     }
@@ -1672,7 +1672,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/popover"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/popover"
         }
       }
     }
@@ -1699,7 +1699,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/progress"
         }
       }
     }
@@ -1730,7 +1730,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/radio-group"
         }
       }
     }
@@ -1827,7 +1827,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/range-calendar"
         }
       }
     }
@@ -1858,7 +1858,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/resizable"
         }
       }
     }
@@ -1889,7 +1889,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/scroll-area"
         }
       }
     }
@@ -1957,7 +1957,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/select"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/select"
         }
       }
     }
@@ -1984,7 +1984,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/separator"
         }
       }
     }
@@ -2048,7 +2048,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sheet"
         }
       }
     }
@@ -2177,7 +2177,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sidebar"
         }
       }
     }
@@ -2201,7 +2201,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/skeleton"
         }
       }
     }
@@ -2228,7 +2228,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/slider"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/slider"
         }
       }
     }
@@ -2252,7 +2252,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sonner"
         }
       }
     }
@@ -2276,7 +2276,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/spinner"
         }
       }
     }
@@ -2303,7 +2303,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/switch"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/switch"
         }
       }
     }
@@ -2355,7 +2355,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/table"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/table"
         }
       }
     }
@@ -2394,7 +2394,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tabs"
         }
       }
     }
@@ -2418,7 +2418,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/textarea"
         }
       }
     }
@@ -2445,7 +2445,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle"
         }
       }
     }
@@ -2477,7 +2477,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle-group"
         }
       }
     }
@@ -2520,7 +2520,7 @@
     "meta": {
       "links": {
         "svelte": {
-          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip"
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tooltip"
         }
       }
     }

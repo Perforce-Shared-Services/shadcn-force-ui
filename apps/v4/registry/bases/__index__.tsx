@@ -7274,7 +7274,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/accordion",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/accordion",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/accordion-example.tsx",
           api: "https://www.radix-ui.com/primitives/docs/components/accordion.md",
@@ -7297,7 +7297,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-example.tsx",
         },
@@ -7319,7 +7319,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/alert-dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
           api: "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md",
@@ -7342,7 +7342,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/aspect-ratio",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
           api: "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md",
@@ -7365,7 +7365,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/avatar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/avatar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/avatar-example.tsx",
           api: "https://www.radix-ui.com/primitives/docs/components/avatar.md",
@@ -7388,7 +7388,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/badge",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/badge",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/badge-example.tsx",
         },
@@ -7410,7 +7410,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/breadcrumb",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/breadcrumb",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/breadcrumb-example.tsx",
         },
@@ -7432,7 +7432,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-example.tsx",
         },
@@ -7454,7 +7454,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/button-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/button-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/button-group-example.tsx",
         },
@@ -7476,7 +7476,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/calendar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/calendar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/calendar-example.tsx",
           api: "https://react-day-picker.js.org",
@@ -7499,7 +7499,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/card-example.tsx",
         },
@@ -7521,7 +7521,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/carousel",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/carousel",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/carousel-example.tsx",
           api: "https://www.embla-carousel.com/get-started/react",
@@ -7544,7 +7544,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/chart",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/chart",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/chart-example.tsx",
         },
@@ -7566,7 +7566,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/checkbox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/checkbox",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/checkbox-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/checkbox.md",
@@ -7589,7 +7589,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/collapsible",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/collapsible",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/collapsible-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/collapsible.md",
@@ -7612,7 +7612,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/combobox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/combobox",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/combobox-example.tsx",
           api: "https://base-ui.com/react/components/combobox",
@@ -7635,7 +7635,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/command",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/command",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
           api: "https://github.com/dip/cmdk",
@@ -7658,7 +7658,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/context-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/context-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/context-menu-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/context-menu.md",
@@ -7681,7 +7681,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dialog-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
@@ -7704,7 +7704,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/drawer",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/drawer",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/drawer-example.tsx",
           api: "https://vaul.emilkowal.ski/getting-started",
@@ -7727,7 +7727,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/dropdown-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/dropdown-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/dropdown-menu-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/dropdown-menu.md",
@@ -7750,7 +7750,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/empty",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/empty",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/empty-example.tsx",
         },
@@ -7772,7 +7772,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/field",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/field",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/field-example.tsx",
         },
@@ -7794,7 +7794,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/hover-card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/hover-card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/hover-card-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/hover-card.md",
@@ -7817,7 +7817,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-example.tsx",
         },
@@ -7839,7 +7839,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-group-example.tsx",
         },
@@ -7861,7 +7861,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/input-otp",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/input-otp",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
           api: "https://input-otp.rodz.dev",
@@ -7884,7 +7884,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/item",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/item",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/item-example.tsx",
         },
@@ -7906,7 +7906,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/label",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/label",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/label-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/label.md",
@@ -7929,7 +7929,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/menubar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/menubar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/menubar-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/menubar.md",
@@ -7952,7 +7952,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/navigation-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/navigation-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/navigation-menu-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/navigation-menu.md",
@@ -7975,7 +7975,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/pagination",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/pagination",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
         },
@@ -7997,7 +7997,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/popover",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/popover",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/popover-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/popover.md",
@@ -8020,7 +8020,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/progress",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/progress",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/progress-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/progress.md",
@@ -8043,7 +8043,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/radio-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/radio-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/radio-group-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/radio-group.md",
@@ -8066,7 +8066,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/resizable",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/resizable",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
           api: "https://github.com/bvaughn/react-resizable-panels",
@@ -8089,7 +8089,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/scroll-area",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/scroll-area",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/scroll-area-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/scroll-area.md",
@@ -8112,7 +8112,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/select-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/select.md",
@@ -8135,7 +8135,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/separator",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/separator",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/separator-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/separator.md",
@@ -8158,7 +8158,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sheet",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sheet",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sheet-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/dialog.md",
@@ -8189,7 +8189,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sidebar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sidebar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx",
         },
@@ -8211,7 +8211,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/skeleton",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/skeleton",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/skeleton-example.tsx",
         },
@@ -8233,7 +8233,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/slider",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/slider",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/slider-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/slider.md",
@@ -8256,7 +8256,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/sonner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/sonner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sonner-example.tsx",
           api: "https://sonner.emilkowal.ski",
@@ -8279,7 +8279,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/spinner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/spinner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/spinner-example.tsx",
         },
@@ -8301,7 +8301,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/switch",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/switch",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/switch-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/switch.md",
@@ -8324,7 +8324,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/table",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/table",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/table-example.tsx",
         },
@@ -8346,7 +8346,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tabs",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tabs",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tabs-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/tabs.md",
@@ -8369,7 +8369,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/textarea",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/textarea",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/textarea-example.tsx",
         },
@@ -8391,7 +8391,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/toggle.md",
@@ -8414,7 +8414,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/toggle-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/toggle-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/toggle-group-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/toggle-group.md",
@@ -8437,7 +8437,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/tooltip",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/tooltip",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/tooltip-example.tsx",
           api: "https://www.radix-ui.com/docs/primitives/components/tooltip.md",
@@ -8460,7 +8460,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/kbd",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/kbd",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/kbd-example.tsx",
         },
@@ -8482,7 +8482,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/native-select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/native-select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/native-select-example.tsx",
         },
@@ -8504,7 +8504,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/radix/direction",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/radix/direction",
           api: "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md",
         },
       },
@@ -10942,7 +10942,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/accordion",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/accordion",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue",
         },
@@ -10984,7 +10984,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue",
         },
@@ -11056,7 +11056,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/alert-dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue",
         },
@@ -11083,7 +11083,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/aspect-ratio",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue",
         },
@@ -11135,7 +11135,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/avatar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/avatar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue",
         },
@@ -11162,7 +11162,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/badge",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
         },
@@ -11219,7 +11219,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/breadcrumb",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue",
         },
@@ -11246,7 +11246,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/button",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue",
         },
@@ -11283,7 +11283,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/button-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue",
         },
@@ -11365,7 +11365,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/calendar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/calendar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue",
         },
@@ -11422,7 +11422,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue",
         },
@@ -11479,7 +11479,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/carousel",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/carousel",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue",
         },
@@ -11526,7 +11526,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/chart",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/chart",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue",
         },
@@ -11553,7 +11553,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/checkbox",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue",
         },
@@ -11590,7 +11590,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/collapsible",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue",
         },
@@ -11667,7 +11667,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/combobox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/combobox",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue",
         },
@@ -11734,7 +11734,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/command",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/command",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue",
         },
@@ -11831,7 +11831,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/context-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue",
         },
@@ -11903,7 +11903,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue",
         },
@@ -11970,7 +11970,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/drawer",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/drawer",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue",
         },
@@ -12062,7 +12062,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/dropdown-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue",
         },
@@ -12114,7 +12114,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/empty",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/empty",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue",
         },
@@ -12186,7 +12186,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/field",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/field",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue",
         },
@@ -12243,7 +12243,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/form",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/form",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue",
         },
@@ -12280,7 +12280,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/hover-card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue",
         },
@@ -12307,7 +12307,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue",
         },
@@ -12359,7 +12359,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue",
         },
@@ -12401,7 +12401,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/input-otp",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue",
         },
@@ -12473,7 +12473,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/item",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/item",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue",
         },
@@ -12505,7 +12505,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/kbd",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/kbd",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue",
         },
@@ -12532,7 +12532,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/label",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/label",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
         },
@@ -12629,7 +12629,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/menubar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/menubar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue",
         },
@@ -12666,7 +12666,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/native-select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/native-select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue",
         },
@@ -12728,7 +12728,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/navigation-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue",
         },
@@ -12775,7 +12775,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/number-field",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/number-field",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue",
         },
@@ -12842,7 +12842,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pagination",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/pagination",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue",
         },
@@ -12884,7 +12884,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/pin-input",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue",
         },
@@ -12941,7 +12941,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/popover",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/popover",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue",
         },
@@ -12968,7 +12968,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/progress",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/progress",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue",
         },
@@ -13000,7 +13000,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/radio-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue",
         },
@@ -13082,7 +13082,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/range-calendar",
         },
       },
     },
@@ -13117,7 +13117,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/resizable",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/resizable",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue",
         },
@@ -13149,7 +13149,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/scroll-area",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue",
         },
@@ -13226,7 +13226,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue",
         },
@@ -13253,7 +13253,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/separator",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/separator",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue",
         },
@@ -13320,7 +13320,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sheet",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sheet",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue",
         },
@@ -13475,7 +13475,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sidebar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue",
         },
@@ -13502,7 +13502,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/skeleton",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue",
         },
@@ -13529,7 +13529,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/slider",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/slider",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue",
         },
@@ -13556,7 +13556,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sonner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/sonner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue",
         },
@@ -13583,7 +13583,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/spinner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/spinner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue",
         },
@@ -13640,7 +13640,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/stepper",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/stepper",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue",
         },
@@ -13667,7 +13667,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/switch",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/switch",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue",
         },
@@ -13739,7 +13739,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/table",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/table",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue",
         },
@@ -13781,7 +13781,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tabs",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tabs",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue",
         },
@@ -13828,7 +13828,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tags-input",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue",
         },
@@ -13855,7 +13855,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/textarea",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/textarea",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue",
         },
@@ -13882,7 +13882,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue",
         },
@@ -13914,7 +13914,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/toggle-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue",
         },
@@ -13956,7 +13956,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/tooltip",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue",
         },
@@ -16023,7 +16023,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/accordion",
         },
       },
     },
@@ -16063,7 +16063,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert",
         },
       },
     },
@@ -16143,7 +16143,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/alert-dialog",
         },
       },
     },
@@ -16168,7 +16168,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/aspect-ratio",
         },
       },
     },
@@ -16218,7 +16218,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/avatar",
         },
       },
     },
@@ -16243,7 +16243,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/badge",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/badge",
         },
       },
     },
@@ -16298,7 +16298,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb",
         },
       },
     },
@@ -16323,7 +16323,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button",
         },
       },
     },
@@ -16358,7 +16358,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/button-group",
         },
       },
     },
@@ -16468,7 +16468,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/calendar",
         },
       },
     },
@@ -16523,7 +16523,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/card",
         },
       },
     },
@@ -16573,7 +16573,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/carousel",
         },
       },
     },
@@ -16613,7 +16613,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/chart",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/chart",
         },
       },
     },
@@ -16638,7 +16638,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/checkbox",
         },
       },
     },
@@ -16673,7 +16673,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/collapsible",
         },
       },
     },
@@ -16748,7 +16748,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/command",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/command",
         },
       },
     },
@@ -16848,7 +16848,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/context-menu",
         },
       },
     },
@@ -16918,7 +16918,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog",
         },
       },
     },
@@ -16993,7 +16993,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/drawer",
         },
       },
     },
@@ -17098,7 +17098,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dropdown-menu",
         },
       },
     },
@@ -17148,7 +17148,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/empty",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/empty",
         },
       },
     },
@@ -17218,7 +17218,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/field",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/field",
         },
       },
     },
@@ -17258,7 +17258,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/hover-card",
         },
       },
     },
@@ -17283,7 +17283,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input",
         },
       },
     },
@@ -17333,7 +17333,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-group",
         },
       },
     },
@@ -17373,7 +17373,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/input-otp",
         },
       },
     },
@@ -17443,7 +17443,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/item",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/item",
         },
       },
     },
@@ -17473,7 +17473,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/kbd",
         },
       },
     },
@@ -17498,7 +17498,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/label",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/label",
         },
       },
     },
@@ -17603,7 +17603,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar",
         },
       },
     },
@@ -17638,7 +17638,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/native-select",
         },
       },
     },
@@ -17698,7 +17698,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/navigation-menu",
         },
       },
     },
@@ -17763,7 +17763,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/pagination",
         },
       },
     },
@@ -17823,7 +17823,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/popover",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/popover",
         },
       },
     },
@@ -17848,7 +17848,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/progress",
         },
       },
     },
@@ -17878,7 +17878,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/radio-group",
         },
       },
     },
@@ -17988,7 +17988,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/range-calendar",
         },
       },
     },
@@ -18018,7 +18018,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/resizable",
         },
       },
     },
@@ -18048,7 +18048,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/scroll-area",
         },
       },
     },
@@ -18123,7 +18123,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/select",
         },
       },
     },
@@ -18148,7 +18148,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/separator",
         },
       },
     },
@@ -18218,7 +18218,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sheet",
         },
       },
     },
@@ -18371,7 +18371,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sidebar",
         },
       },
     },
@@ -18396,7 +18396,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/skeleton",
         },
       },
     },
@@ -18421,7 +18421,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/slider",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/slider",
         },
       },
     },
@@ -18446,7 +18446,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/sonner",
         },
       },
     },
@@ -18471,7 +18471,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/spinner",
         },
       },
     },
@@ -18496,7 +18496,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/switch",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/switch",
         },
       },
     },
@@ -18556,7 +18556,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/table",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/table",
         },
       },
     },
@@ -18596,7 +18596,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tabs",
         },
       },
     },
@@ -18621,7 +18621,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/textarea",
         },
       },
     },
@@ -18646,7 +18646,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle",
         },
       },
     },
@@ -18676,7 +18676,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/toggle-group",
         },
       },
     },
@@ -18721,7 +18721,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/tooltip",
         },
       },
     },
@@ -22594,7 +22594,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/accordion",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/accordion",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts",
         },
@@ -22616,7 +22616,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert-dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts",
         },
@@ -22643,7 +22643,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/alert",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts",
         },
@@ -22665,7 +22665,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/aspect-ratio",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts",
         },
@@ -22692,7 +22692,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/avatar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/avatar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts",
         },
@@ -22719,7 +22719,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/badge",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/badge",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts",
         },
@@ -22741,7 +22741,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/breadcrumb",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts",
         },
@@ -22768,7 +22768,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/button-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts",
         },
@@ -22795,7 +22795,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/button",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/button",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts",
         },
@@ -22817,7 +22817,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts",
         },
@@ -22839,7 +22839,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/checkbox",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts",
         },
@@ -22861,7 +22861,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/collapsible",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts",
         },
@@ -22883,7 +22883,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/command",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/command",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts",
         },
@@ -22905,7 +22905,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/context-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts",
         },
@@ -22927,7 +22927,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dialog",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/dialog",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts",
         },
@@ -22949,7 +22949,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/dropdown-menu",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts",
         },
@@ -22976,7 +22976,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/empty",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/empty",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts",
         },
@@ -23003,7 +23003,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/field",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/field",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts",
         },
@@ -23025,7 +23025,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/hover-card",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts",
         },
@@ -23052,7 +23052,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts",
         },
@@ -23074,7 +23074,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input-otp",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts",
         },
@@ -23096,7 +23096,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/input",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts",
         },
@@ -23123,7 +23123,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/item",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/item",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts",
         },
@@ -23145,7 +23145,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/kbd",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/kbd",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts",
         },
@@ -23167,7 +23167,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/label",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/label",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts",
         },
@@ -23189,7 +23189,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/native-select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/native-select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts",
         },
@@ -23211,7 +23211,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/pagination",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/pagination",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts",
         },
@@ -23233,7 +23233,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/popover",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/popover",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts",
         },
@@ -23255,7 +23255,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/progress",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/progress",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts",
         },
@@ -23277,7 +23277,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/radio-group",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts",
         },
@@ -23299,7 +23299,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/scroll-area",
         },
       },
     },
@@ -23319,7 +23319,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/select",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/select",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts",
         },
@@ -23341,7 +23341,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/separator",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/separator",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts",
         },
@@ -23363,7 +23363,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sheet",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sheet",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts",
         },
@@ -23390,7 +23390,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sidebar",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts",
         },
@@ -23412,7 +23412,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/skeleton",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts",
         },
@@ -23434,7 +23434,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/slider",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/slider",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts",
         },
@@ -23456,7 +23456,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/sonner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/sonner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts",
         },
@@ -23478,7 +23478,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/spinner",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/spinner",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts",
         },
@@ -23500,7 +23500,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/switch",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/switch",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts",
         },
@@ -23522,7 +23522,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/table",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/table",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts",
         },
@@ -23544,7 +23544,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tabs",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tabs",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts",
         },
@@ -23566,7 +23566,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/textarea",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/textarea",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts",
         },
@@ -23593,7 +23593,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle-group",
         },
       },
     },
@@ -23618,7 +23618,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts",
         },
@@ -23640,7 +23640,7 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: {
         links: {
-          docs: "https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip",
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tooltip",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts",
         },
