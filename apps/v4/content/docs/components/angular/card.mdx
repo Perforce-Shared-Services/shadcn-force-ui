@@ -1,0 +1,97 @@
+---
+title: Card
+description: Displays a card with header, content, and footer.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="card-demo" previewClassName="h-[30rem]" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/card
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="card" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  CardComponent, CardHeaderComponent, CardTitleComponent,
+  CardDescriptionComponent, CardActionComponent,
+  CardContentComponent, CardFooterComponent,
+} from "@/components/ui/card"
+```
+
+```html
+<div uiCard>
+  <div uiCardHeader>
+    <h3 uiCardTitle>Title</h3>
+    <p uiCardDescription>Description</p>
+    <div uiCardAction><!-- action --></div>
+  </div>
+  <div uiCardContent><!-- content --></div>
+  <div uiCardFooter><!-- footer --></div>
+</div>
+```
+
+Use a real heading element for `uiCardTitle` so the page heading hierarchy is correct for screen readers.
+
+## Composition
+
+```text
+[uiCard]
+├── [uiCardHeader]
+│   ├── [uiCardTitle]
+│   ├── [uiCardDescription]
+│   └── [uiCardAction]
+├── [uiCardContent]
+└── [uiCardFooter]
+```
+
+## Examples
+
+### Small size
+
+<ComponentPreview framework="angular" name="card-small" previewClassName="h-64" />
+
+## API Reference
+
+### CardComponent
+
+| Input   | Type                | Default     |
+| ------- | ------------------- | ----------- |
+| `size`  | `"default" \| "sm"` | `"default"` |
+| `class` | `string`            | –           |
+
+### CardHeaderComponent · CardTitleComponent · CardDescriptionComponent · CardActionComponent · CardContentComponent · CardFooterComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |

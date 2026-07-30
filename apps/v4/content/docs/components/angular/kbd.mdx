@@ -1,0 +1,85 @@
+---
+title: Kbd
+description: Used to display textual user input from keyboard.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="kbd-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/kbd
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="kbd" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { KbdComponent, KbdGroupComponent } from "@/components/ui/kbd"
+```
+
+```html
+<kbd uiKbd>Ctrl</kbd>
+```
+
+## Composition
+
+```text
+[uiKbdGroup]
+├── [uiKbd]
+└── [uiKbd]
+```
+
+## Examples
+
+### Group
+
+<ComponentPreview framework="angular" name="kbd-group" />
+
+### Primary
+
+Use `variant="primary"` when placing a `Kbd` on a solid or brand surface.
+
+<ComponentPreview framework="angular" name="kbd-primary" />
+
+## API Reference
+
+### KbdComponent
+
+| Input     | Type                     | Default     |
+| --------- | ------------------------ | ----------- |
+| `variant` | `"default" \| "primary"` | `"default"` |
+| `class`   | `string`                 | –           |
+
+### KbdGroupComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |

@@ -1,0 +1,60 @@
+---
+title: Label
+description: Renders an accessible label associated with controls.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="label-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/label
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="label" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { LabelComponent } from "@/components/ui/label"
+```
+
+```html
+<label uiLabel for="email">Your email address</label>
+```
+
+The attribute selector keeps the host as a native `<label>`, so the browser's implicit label–control association via `for`/`id` or nesting works for free (WCAG 1.3.1).
+
+## API Reference
+
+### LabelComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |

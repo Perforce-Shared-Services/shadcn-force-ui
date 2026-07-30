@@ -1,0 +1,132 @@
+---
+title: Button
+description: Displays a button or a component that looks like a button.
+featured: true
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="button-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</CodeTabs>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/button
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="button" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { ButtonComponent } from "@/components/ui/button"
+```
+
+```html
+<button uiButton variant="outline">Button</button>
+```
+
+Use the attribute selector `[uiButton]` on a native `<button>` or `<a>` element. This keeps the host element's native semantics — Angular's idiomatic equivalent of React's `asChild`.
+
+```ts
+@Component({
+  imports: [ButtonComponent],
+  template: `<button uiButton>Click me</button>`,
+})
+```
+
+## Disabled on anchors
+
+On `<a uiButton>`, the native `disabled` attribute has no effect. The component automatically applies `aria-disabled="true"`, `tabindex="-1"`, and a click guard instead (WCAG 2.1.1 / 4.1.2).
+
+```html
+<a uiButton variant="link" href="/path" [disabled]="true">Disabled link</a>
+```
+
+## Examples
+
+### Sizes
+
+<ComponentPreview framework="angular" name="button-size" />
+
+### Default
+
+<ComponentPreview framework="angular" name="button-default" />
+
+### Outline
+
+<ComponentPreview framework="angular" name="button-outline" />
+
+### Secondary
+
+<ComponentPreview framework="angular" name="button-secondary" />
+
+### Ghost
+
+<ComponentPreview framework="angular" name="button-ghost" />
+
+### Destructive
+
+<ComponentPreview framework="angular" name="button-destructive" />
+
+### Link
+
+<ComponentPreview framework="angular" name="button-link" />
+
+### Icon
+
+<ComponentPreview framework="angular" name="button-icon" />
+
+### With Icon
+
+Use `data-icon="inline-start"` or `data-icon="inline-end"` on the `<svg>` for correct spacing.
+
+<ComponentPreview framework="angular" name="button-with-icon" />
+
+### Loading
+
+The `loading` input shows a spinner, sets `aria-busy="true"`, and blocks interaction.
+
+<ComponentPreview framework="angular" name="button-spinner" />
+
+## API Reference
+
+### ButtonComponent
+
+| Input       | Type                                                                                    | Default     |
+| ----------- | --------------------------------------------------------------------------------------- | ----------- |
+| `variant`   | `"default" \| "outline" \| "ghost" \| "destructive" \| "secondary" \| "link"`          | `"default"` |
+| `size`      | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
+| `disabled`  | `boolean`                                                                               | `false`     |
+| `loading`   | `boolean`                                                                               | `false`     |
+| `class`     | `string`                                                                                | –           |

@@ -1,0 +1,13 @@
+{
+  "title": "Angular",
+  "pages": [
+    "badge",
+    "button",
+    "card",
+    "kbd",
+    "label",
+    "separator",
+    "skeleton",
+    "spinner"
+  ]
+}

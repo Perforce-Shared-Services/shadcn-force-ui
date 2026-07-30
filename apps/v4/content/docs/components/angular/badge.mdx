@@ -1,0 +1,82 @@
+---
+title: Badge
+description: Displays a badge or a component that looks like a badge.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="badge-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/badge
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="badge" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { BadgeComponent } from "@/components/ui/badge"
+```
+
+```html
+<span uiBadge variant="success">Synced</span>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview framework="angular" name="badge-variants" />
+
+### Status Variants
+
+<ComponentPreview framework="angular" name="badge-status" />
+
+### With Icon
+
+Project an inline `<svg>` tagged `data-icon="inline-start"` or `"inline-end"`.
+
+<ComponentPreview framework="angular" name="badge-icon" />
+
+### Solid Status Variants
+
+Use solid variants for maximum-attention states (critical counts, overdue flags).
+
+<ComponentPreview framework="angular" name="badge-solid" />
+
+## API Reference
+
+### BadgeComponent
+
+| Input     | Type                                                                                                                                                                                     | Default     |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `variant` | `"default" \| "secondary" \| "destructive" \| "outline" \| "ghost" \| "link" \| "warning" \| "success" \| "info" \| "success-solid" \| "warning-solid" \| "info-solid" \| "error-solid"` | `"default"` |
+| `srLabel` | `string`                                                                                                                                                                                 | –           |
+| `class`   | `string`                                                                                                                                                                                 | –           |
