@@ -77,9 +77,11 @@ export function ComponentPreview({
     const ext =
       framework === "vue" ? "vue"
       : framework === "ember" ? "gts"
-      : framework === "angular" ? "ts" // [FORCE-UI]
       : "svelte"
-    const srcPath = `../preview-${framework}/src/${framework}/${name}.${ext}`
+    // [FORCE-UI] Angular examples live in a single consolidated file
+    const srcPath = framework === "angular"
+      ? `../preview-angular/src/examples.ts`
+      : `../preview-${framework}/src/${framework}/${name}.${ext}`
     const content = (
       <ComponentPreviewTabs
         className={className}
