@@ -26895,4 +26895,282 @@ export const Index: Record<string, Record<string, any>> = {
       meta: undefined,
     },
   },
+  angular: {
+    button: {
+      name: "button",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/button/button.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/button/button.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/button/button.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/button/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/button",
+        },
+      },
+    },
+    badge: {
+      name: "badge",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/badge/badge.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/badge/badge.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/badge/badge.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/badge/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/badge",
+        },
+      },
+    },
+    card: {
+      name: "card",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/card/card.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/card/card.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/card/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/card",
+        },
+      },
+    },
+    separator: {
+      name: "separator",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/separator/separator.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/separator/separator.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/separator/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/separator",
+        },
+      },
+    },
+    skeleton: {
+      name: "skeleton",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/skeleton/skeleton.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/skeleton/skeleton.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/skeleton/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/skeleton",
+        },
+      },
+    },
+    label: {
+      name: "label",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/label/label.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/label/label.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/label/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/label",
+        },
+      },
+    },
+    kbd: {
+      name: "kbd",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/kbd/kbd.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/kbd/kbd.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/kbd/kbd.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/kbd/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/kbd",
+        },
+      },
+    },
+    spinner: {
+      name: "spinner",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/spinner/spinner.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/spinner/spinner.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/spinner/spinner.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/spinner/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/spinner",
+        },
+      },
+    },
+    utils: {
+      name: "utils",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/lib/utils.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+  },
 }
