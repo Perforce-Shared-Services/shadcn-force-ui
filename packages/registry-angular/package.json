@@ -1,0 +1,11 @@
+{
+  "name": "@force-ui/registry-angular",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Angular component registry for Force UI",
+  "type": "module",
+  "dependencies": {
+    "shadcn": "workspace:*",
+    "zod": "^3.25.76"
+  }
+}
