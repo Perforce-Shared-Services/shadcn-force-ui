@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/skeleton/skeleton.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * Angular port of @force-ui/skeleton (radix-force-ui style).\n *\n * Usage:\n *   <div uiSkeleton class=\"h-4 w-48\"></div>\n *   <div uiSkeleton class=\"size-12 rounded-full\"></div>\n *\n * The skeleton is aria-hidden — it is purely visual. The \"loading\" state\n * belongs on the container via aria-busy=\"true\".\n *\n * cn-skeleton CSS class provides: animate-pulse rounded-md bg-muted\n * motion-reduce:animate-none — no need to repeat them here.\n */\n@Component({\n  selector: \"[uiSkeleton]\",\n  standalone: true,\n  templateUrl: \"./skeleton.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"skeleton\",\n    \"aria-hidden\": \"true\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class SkeletonComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\"cn-skeleton\", this.className())\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/skeleton/skeleton.component.html",
+      "content": "",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/skeleton/index.ts",
+      "content": "export { SkeletonComponent as Skeleton } from \"./skeleton.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/skeleton"
+    }
+  },
+  "type": "registry:ui"
+}

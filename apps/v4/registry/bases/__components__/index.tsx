@@ -506,6 +506,10 @@ const shards: Record<
     load: () => import("./ember"),
     names: new Set([]),
   },
+  angular: {
+    load: () => import("./angular"),
+    names: new Set([]),
+  },
 }
 
 const cache = new Map<string, any>()

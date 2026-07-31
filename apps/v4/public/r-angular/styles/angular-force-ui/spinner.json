@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/spinner/spinner.variants.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\n// cn-spinner base CSS class does not exist in style-force-ui.css — structural\n// classes are inlined here. See DIVERGENCES.md §spinner-1.\n//\n// animate-spinner (500ms linear) is the Force spec value. The consuming app's\n// tailwind.css must define: --animate-spinner: spin 500ms linear infinite\n// See DIVERGENCES.md §spinner-2.\n//\n// [&_svg]:fill-current added — Material Symbols SVGs are fill-based.\n// See DIVERGENCES.md §spinner-4.\nexport const spinnerVariants = cva(\n  \"animate-spinner inline-flex shrink-0 items-center justify-center motion-reduce:animate-none [&_svg]:size-full [&_svg]:shrink-0 [&_svg]:fill-current\",\n  {\n    variants: {\n      color: {\n        default: \"text-muted-foreground\",\n        primary: \"text-primary\",\n        onPrimary: \"text-primary-foreground\",\n        inherit: \"text-current\",\n      },\n      size: {\n        xs: \"size-3\",\n        sm: \"size-4\",\n        md: \"size-6\",\n        lg: \"size-10\",\n      },\n    },\n    defaultVariants: { color: \"default\", size: \"sm\" },\n  }\n)\n\nexport type SpinnerVariants = VariantProps<typeof spinnerVariants>\nexport type SpinnerColor = NonNullable<SpinnerVariants[\"color\"]>\nexport type SpinnerSize = NonNullable<SpinnerVariants[\"size\"]>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/spinner/spinner.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  inject,\n  input,\n} from \"@angular/core\"\nimport { DomSanitizer, type SafeHtml } from \"@angular/platform-browser\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport {\n  spinnerVariants,\n  type SpinnerColor,\n  type SpinnerSize,\n} from \"./spinner.variants\"\n\n// Raw SVG from @material-symbols/svg-400 (progress_activity, Rounded) —\n// single swap point for the spinner glyph.\nconst SPINNER_SVG = `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\"><path d=\"M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q17 0 28.5 11.5T520-840q0 17-11.5 28.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-17 11.5-28.5T840-520q17 0 28.5 11.5T880-480q0 82-31.5 155t-86 127.5Q707-143 634.5-111.5T480-80Z\"/></svg>`\n\n/**\n * Angular port of @force-ui/spinner (radix-force-ui style).\n *\n * Usage:\n *   <span uiSpinner></span>\n *   <span uiSpinner color=\"primary\" size=\"lg\"></span>\n *   <span uiSpinner color=\"onPrimary\"></span>\n *\n * aria-hidden=\"true\" — the spinner is purely visual. The container owns the\n * semantic loading state via aria-busy=\"true\" + an aria-live region.\n * See DIVERGENCES.md §spinner-5.\n *\n * animate-spinner requires --animate-spinner: spin 500ms linear infinite in\n * the consuming app's tailwind.css. See DIVERGENCES.md §spinner-2.\n */\n@Component({\n  selector: \"[uiSpinner]\",\n  standalone: true,\n  templateUrl: \"./spinner.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"spinner\",\n    \"aria-hidden\": \"true\",\n    \"[attr.data-color]\": \"color()\",\n    \"[attr.data-size]\": \"size()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class SpinnerComponent {\n  readonly color = input<SpinnerColor>(\"default\")\n  readonly size = input<SpinnerSize>(\"sm\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly icon: SafeHtml =\n    inject(DomSanitizer).bypassSecurityTrustHtml(SPINNER_SVG)\n\n  protected readonly classes = computed(() =>\n    cn(\n      spinnerVariants({ color: this.color(), size: this.size() }),\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/spinner/spinner.component.html",
+      "content": "<span\n  class=\"flex size-full items-center justify-center\"\n  [innerHTML]=\"icon\"\n></span>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/spinner/index.ts",
+      "content": "export { SpinnerComponent as Spinner } from \"./spinner.component\"\nexport {\n  spinnerVariants,\n  type SpinnerVariants,\n  type SpinnerColor,\n  type SpinnerSize,\n} from \"./spinner.variants\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/spinner"
+    }
+  },
+  "type": "registry:ui"
+}

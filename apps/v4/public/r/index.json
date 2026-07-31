@@ -79,9 +79,7 @@
   {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button"
-    ],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/alert-dialog.tsx",
@@ -160,9 +158,7 @@
   {
     "name": "attachment",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button"
-    ],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/attachment.tsx",
@@ -250,6 +246,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/badge",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/badge"
         }
       }
     }
@@ -344,6 +343,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/button",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/button"
         }
       }
     }
@@ -351,9 +353,7 @@
   {
     "name": "button-group",
     "type": "registry:ui",
-    "registryDependencies": [
-      "separator"
-    ],
+    "registryDependencies": ["separator"],
     "files": [
       {
         "path": "ui/button-group.tsx",
@@ -391,13 +391,8 @@
   {
     "name": "calendar",
     "type": "registry:ui",
-    "dependencies": [
-      "react-day-picker@latest",
-      "date-fns"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
+    "dependencies": ["react-day-picker@latest", "date-fns"],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/calendar.tsx",
@@ -464,6 +459,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/card",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/card"
         }
       }
     }
@@ -477,12 +475,8 @@
         "type": "registry:ui"
       }
     ],
-    "registryDependencies": [
-      "button"
-    ],
-    "dependencies": [
-      "embla-carousel-react"
-    ],
+    "registryDependencies": ["button"],
+    "dependencies": ["embla-carousel-react"],
     "meta": {
       "links": {
         "base": {
@@ -519,12 +513,8 @@
         "type": "registry:ui"
       }
     ],
-    "registryDependencies": [
-      "card"
-    ],
-    "dependencies": [
-      "recharts@3.8.0"
-    ],
+    "registryDependencies": ["card"],
+    "dependencies": ["recharts@3.8.0"],
     "meta": {
       "links": {
         "base": {
@@ -632,13 +622,8 @@
   {
     "name": "combobox",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button",
-      "input-group"
-    ],
-    "dependencies": [
-      "@base-ui/react"
-    ],
+    "registryDependencies": ["button", "input-group"],
+    "dependencies": ["@base-ui/react"],
     "files": [
       {
         "path": "ui/combobox.tsx",
@@ -672,13 +657,8 @@
   {
     "name": "command",
     "type": "registry:ui",
-    "dependencies": [
-      "cmdk"
-    ],
-    "registryDependencies": [
-      "dialog",
-      "input-group"
-    ],
+    "dependencies": ["cmdk"],
+    "registryDependencies": ["dialog", "input-group"],
     "files": [
       {
         "path": "ui/command.tsx",
@@ -759,9 +739,7 @@
   {
     "name": "dialog",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button"
-    ],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/dialog.tsx",
@@ -802,9 +780,7 @@
   {
     "name": "direction",
     "type": "registry:ui",
-    "dependencies": [
-      "@base-ui/react"
-    ],
+    "dependencies": ["@base-ui/react"],
     "files": [
       {
         "path": "ui/direction.tsx",
@@ -831,9 +807,7 @@
   {
     "name": "drawer",
     "type": "registry:ui",
-    "dependencies": [
-      "@base-ui/react"
-    ],
+    "dependencies": ["@base-ui/react"],
     "files": [
       {
         "path": "ui/drawer.tsx",
@@ -947,10 +921,7 @@
   {
     "name": "field",
     "type": "registry:ui",
-    "registryDependencies": [
-      "label",
-      "separator"
-    ],
+    "registryDependencies": ["label", "separator"],
     "files": [
       {
         "path": "ui/field.tsx",
@@ -1073,11 +1044,7 @@
   {
     "name": "input-group",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button",
-      "input",
-      "textarea"
-    ],
+    "registryDependencies": ["button", "input", "textarea"],
     "files": [
       {
         "path": "ui/input-group.tsx",
@@ -1116,9 +1083,7 @@
   {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": [
-      "input-otp"
-    ],
+    "dependencies": ["input-otp"],
     "files": [
       {
         "path": "ui/input-otp.tsx",
@@ -1159,9 +1124,7 @@
   {
     "name": "item",
     "type": "registry:ui",
-    "registryDependencies": [
-      "separator"
-    ],
+    "registryDependencies": ["separator"],
     "files": [
       {
         "path": "ui/item.tsx",
@@ -1230,6 +1193,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/kbd",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/kbd"
         }
       }
     }
@@ -1270,6 +1236,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/label",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/label"
         }
       }
     }
@@ -1295,9 +1264,7 @@
   {
     "name": "menubar",
     "type": "registry:ui",
-    "registryDependencies": [
-      "dropdown-menu"
-    ],
+    "registryDependencies": ["dropdown-menu"],
     "files": [
       {
         "path": "ui/menubar.tsx",
@@ -1347,12 +1314,8 @@
   {
     "name": "message-scroller",
     "type": "registry:ui",
-    "dependencies": [
-      "@shadcn/react"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
+    "dependencies": ["@shadcn/react"],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/message-scroller.tsx",
@@ -1439,13 +1402,8 @@
   {
     "name": "number-field",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/number-field/NumberField.vue",
@@ -1484,9 +1442,7 @@
   {
     "name": "pagination",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button"
-    ],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/pagination.tsx",
@@ -1524,13 +1480,8 @@
   {
     "name": "pin-input",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/pin-input/PinInput.vue",
@@ -1685,14 +1636,8 @@
   {
     "name": "range-calendar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/range-calendar/RangeCalendar.vue",
@@ -1761,9 +1706,7 @@
   {
     "name": "resizable",
     "type": "registry:ui",
-    "dependencies": [
-      "react-resizable-panels"
-    ],
+    "dependencies": ["react-resizable-panels"],
     "files": [
       {
         "path": "ui/resizable.tsx",
@@ -1911,6 +1854,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/separator",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/separator"
         }
       }
     }
@@ -1918,9 +1864,7 @@
   {
     "name": "sheet",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button"
-    ],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/sheet.tsx",
@@ -2037,6 +1981,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/skeleton",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/skeleton"
         }
       }
     }
@@ -2084,10 +2031,7 @@
   {
     "name": "sonner",
     "type": "registry:ui",
-    "dependencies": [
-      "sonner",
-      "next-themes"
-    ],
+    "dependencies": ["sonner", "next-themes"],
     "files": [
       {
         "path": "ui/sonner.tsx",
@@ -2158,6 +2102,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/spinner",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/spinner"
         }
       }
     }
@@ -2165,10 +2112,7 @@
   {
     "name": "stepper",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/stepper/Stepper.vue",
@@ -2333,13 +2277,8 @@
   {
     "name": "tags-input",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/tags-input/TagsInput.vue",
@@ -2416,12 +2355,8 @@
   {
     "name": "toast",
     "type": "registry:ui",
-    "dependencies": [
-      "@base-ui/react"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
+    "dependencies": ["@base-ui/react"],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/toast.tsx",
@@ -2481,9 +2416,7 @@
   {
     "name": "toggle-group",
     "type": "registry:ui",
-    "registryDependencies": [
-      "toggle"
-    ],
+    "registryDependencies": ["toggle"],
     "files": [
       {
         "path": "ui/toggle-group.tsx",

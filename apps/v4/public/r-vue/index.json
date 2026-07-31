@@ -2,10 +2,7 @@
   {
     "name": "accordion",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/accordion/Accordion.vue",
@@ -74,13 +71,8 @@
   {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/alert-dialog/AlertDialog.vue",
@@ -139,9 +131,7 @@
   {
     "name": "aspect-ratio",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui"
-    ],
+    "dependencies": ["reka-ui"],
     "files": [
       {
         "path": "ui/aspect-ratio/AspectRatio.vue",
@@ -164,10 +154,7 @@
   {
     "name": "avatar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/avatar/Avatar.vue",
@@ -210,10 +197,7 @@
   {
     "name": "badge",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/badge/Badge.vue",
@@ -236,9 +220,7 @@
   {
     "name": "breadcrumb",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui"
-    ],
+    "dependencies": ["reka-ui"],
     "files": [
       {
         "path": "ui/breadcrumb/Breadcrumb.vue",
@@ -285,9 +267,7 @@
   {
     "name": "button",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui"
-    ],
+    "dependencies": ["reka-ui"],
     "files": [
       {
         "path": "ui/button/Button.vue",
@@ -310,13 +290,8 @@
   {
     "name": "button-group",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "separator"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["separator"],
     "files": [
       {
         "path": "ui/button-group/ButtonGroup.vue",
@@ -347,15 +322,8 @@
   {
     "name": "calendar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "native-select",
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["native-select", "button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/calendar/Calendar.vue",
@@ -468,14 +436,8 @@
   {
     "name": "carousel",
     "type": "registry:ui",
-    "dependencies": [
-      "embla-carousel-vue",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["embla-carousel-vue", "@vueuse/core"],
+    "registryDependencies": ["button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/carousel/Carousel.vue",
@@ -522,10 +484,7 @@
   {
     "name": "chart",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/chart/ChartContainer.vue",
@@ -564,10 +523,7 @@
   {
     "name": "checkbox",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/checkbox/Checkbox.vue",
@@ -590,9 +546,7 @@
   {
     "name": "collapsible",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui"
-    ],
+    "dependencies": ["reka-ui"],
     "files": [
       {
         "path": "ui/collapsible/Collapsible.vue",
@@ -623,13 +577,8 @@
   {
     "name": "combobox",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/combobox/Combobox.vue",
@@ -692,14 +641,8 @@
   {
     "name": "command",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "dialog",
-      "input-group"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["dialog", "input-group"],
     "files": [
       {
         "path": "ui/command/Command.vue",
@@ -754,10 +697,7 @@
   {
     "name": "context-menu",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/context-menu/ContextMenu.vue",
@@ -836,14 +776,8 @@
   {
     "name": "dialog",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/dialog/Dialog.vue",
@@ -902,11 +836,7 @@
   {
     "name": "drawer",
     "type": "registry:ui",
-    "dependencies": [
-      "vaul-vue",
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["vaul-vue", "reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/drawer/Drawer.vue",
@@ -961,10 +891,7 @@
   {
     "name": "dropdown-menu",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/dropdown-menu/DropdownMenu.vue",
@@ -1081,10 +1008,7 @@
   {
     "name": "field",
     "type": "registry:ui",
-    "registryDependencies": [
-      "label",
-      "separator"
-    ],
+    "registryDependencies": ["label", "separator"],
     "files": [
       {
         "path": "ui/field/Field.vue",
@@ -1149,9 +1073,7 @@
       "@vee-validate/zod",
       "zod@3.25.76"
     ],
-    "registryDependencies": [
-      "label"
-    ],
+    "registryDependencies": ["label"],
     "files": [
       {
         "path": "ui/form/FormControl.vue",
@@ -1198,10 +1120,7 @@
   {
     "name": "hover-card",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/hover-card/HoverCard.vue",
@@ -1232,9 +1151,7 @@
   {
     "name": "input",
     "type": "registry:ui",
-    "dependencies": [
-      "@vueuse/core"
-    ],
+    "dependencies": ["@vueuse/core"],
     "files": [
       {
         "path": "ui/input/Input.vue",
@@ -1257,11 +1174,7 @@
   {
     "name": "input-group",
     "type": "registry:ui",
-    "registryDependencies": [
-      "button",
-      "input",
-      "textarea"
-    ],
+    "registryDependencies": ["button", "input", "textarea"],
     "files": [
       {
         "path": "ui/input-group/InputGroup.vue",
@@ -1304,14 +1217,8 @@
   {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": [
-      "vue-input-otp",
-      "@vueuse/core",
-      "reka-ui"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["vue-input-otp", "@vueuse/core", "reka-ui"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/input-otp/InputOTP.vue",
@@ -1346,12 +1253,8 @@
   {
     "name": "item",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui"
-    ],
-    "registryDependencies": [
-      "separator"
-    ],
+    "dependencies": ["reka-ui"],
+    "registryDependencies": ["separator"],
     "files": [
       {
         "path": "ui/item/Item.vue",
@@ -1436,10 +1339,7 @@
   {
     "name": "label",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/label/Label.vue",
@@ -1462,13 +1362,8 @@
   {
     "name": "menubar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/menubar/Menubar.vue",
@@ -1547,13 +1442,8 @@
   {
     "name": "native-select",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/native-select/NativeSelect.vue",
@@ -1584,13 +1474,8 @@
   {
     "name": "navigation-menu",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/navigation-menu/NavigationMenu.vue",
@@ -1641,13 +1526,8 @@
   {
     "name": "number-field",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/number-field/NumberField.vue",
@@ -1686,14 +1566,8 @@
   {
     "name": "pagination",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/pagination/Pagination.vue",
@@ -1748,13 +1622,8 @@
   {
     "name": "pin-input",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/pin-input/PinInput.vue",
@@ -1789,10 +1658,7 @@
   {
     "name": "popover",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/popover/Popover.vue",
@@ -1839,10 +1705,7 @@
   {
     "name": "progress",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/progress/Progress.vue",
@@ -1865,10 +1728,7 @@
   {
     "name": "radio-group",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/radio-group/RadioGroup.vue",
@@ -1895,14 +1755,8 @@
   {
     "name": "range-calendar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button",
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button", "icon-placeholder"],
     "files": [
       {
         "path": "ui/range-calendar/RangeCalendar.vue",
@@ -1968,10 +1822,7 @@
   {
     "name": "resizable",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/resizable/ResizableHandle.vue",
@@ -2002,10 +1853,7 @@
   {
     "name": "scroll-area",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/scroll-area/ScrollArea.vue",
@@ -2032,10 +1880,7 @@
   {
     "name": "select",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/select/Select.vue",
@@ -2098,10 +1943,7 @@
   {
     "name": "separator",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/separator/Separator.vue",
@@ -2124,13 +1966,8 @@
   {
     "name": "sheet",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["button"],
     "files": [
       {
         "path": "ui/sheet/Sheet.vue",
@@ -2185,10 +2022,7 @@
   {
     "name": "sidebar",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "registryDependencies": [
       "sheet",
       "input",
@@ -2338,10 +2172,7 @@
   {
     "name": "slider",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/slider/Slider.vue",
@@ -2364,12 +2195,8 @@
   {
     "name": "sonner",
     "type": "registry:ui",
-    "dependencies": [
-      "vue-sonner"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["vue-sonner"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/sonner/Sonner.vue",
@@ -2392,9 +2219,7 @@
   {
     "name": "spinner",
     "type": "registry:ui",
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/spinner/Spinner.vue",
@@ -2417,10 +2242,7 @@
   {
     "name": "stepper",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/stepper/Stepper.vue",
@@ -2467,10 +2289,7 @@
   {
     "name": "switch",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/switch/Switch.vue",
@@ -2493,10 +2312,7 @@
   {
     "name": "table",
     "type": "registry:ui",
-    "dependencies": [
-      "@vueuse/core",
-      "@tanstack/vue-table"
-    ],
+    "dependencies": ["@vueuse/core", "@tanstack/vue-table"],
     "files": [
       {
         "path": "ui/table/Table.vue",
@@ -2555,10 +2371,7 @@
   {
     "name": "tabs",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/tabs/Tabs.vue",
@@ -2593,13 +2406,8 @@
   {
     "name": "tags-input",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "icon-placeholder"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["icon-placeholder"],
     "files": [
       {
         "path": "ui/tags-input/TagsInput.vue",
@@ -2638,9 +2446,7 @@
   {
     "name": "textarea",
     "type": "registry:ui",
-    "dependencies": [
-      "@vueuse/core"
-    ],
+    "dependencies": ["@vueuse/core"],
     "files": [
       {
         "path": "ui/textarea/Textarea.vue",
@@ -2663,10 +2469,7 @@
   {
     "name": "toggle",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/toggle/Toggle.vue",
@@ -2689,13 +2492,8 @@
   {
     "name": "toggle-group",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
-    "registryDependencies": [
-      "toggle"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
+    "registryDependencies": ["toggle"],
     "files": [
       {
         "path": "ui/toggle-group/ToggleGroup.vue",
@@ -2722,10 +2520,7 @@
   {
     "name": "tooltip",
     "type": "registry:ui",
-    "dependencies": [
-      "reka-ui",
-      "@vueuse/core"
-    ],
+    "dependencies": ["reka-ui", "@vueuse/core"],
     "files": [
       {
         "path": "ui/tooltip/Tooltip.vue",

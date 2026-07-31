@@ -2,10 +2,7 @@
   {
     "name": "accordion",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-modifier",
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-modifier", "ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/accordion.gts",
@@ -47,10 +44,7 @@
   {
     "name": "alert-dialog",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-modifier",
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-modifier", "ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/alert-dialog.gts",
@@ -88,9 +82,7 @@
   {
     "name": "avatar",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-truth-helpers"
-    ],
+    "dependencies": ["ember-truth-helpers"],
     "files": [
       {
         "path": "ui/avatar/index.ts",
@@ -239,9 +231,7 @@
   {
     "name": "collapsible",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/collapsible.gts",
@@ -307,10 +297,7 @@
   {
     "name": "dialog",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-modifier",
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-modifier", "ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/dialog.gts",
@@ -353,9 +340,7 @@
   {
     "name": "empty",
     "type": "registry:ui",
-    "dependencies": [
-      "class-variance-authority"
-    ],
+    "dependencies": ["class-variance-authority"],
     "files": [
       {
         "path": "ui/empty/index.ts",
@@ -466,10 +451,7 @@
   {
     "name": "input-otp",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-modifier",
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-modifier", "ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/input-otp.gts",
@@ -630,9 +612,7 @@
   {
     "name": "radio-group",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/radio-group.gts",
@@ -712,10 +692,7 @@
   {
     "name": "sheet",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-modifier",
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-modifier", "ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/sheet.gts",
@@ -879,9 +856,7 @@
   {
     "name": "tabs",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/tabs.gts",
@@ -942,9 +917,7 @@
   {
     "name": "toggle-group",
     "type": "registry:ui",
-    "dependencies": [
-      "ember-provide-consume-context"
-    ],
+    "dependencies": ["ember-provide-consume-context"],
     "files": [
       {
         "path": "ui/toggle-group/index.ts",

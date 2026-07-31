@@ -1,0 +1,202 @@
+[
+  {
+    "name": "button",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/button/button.variants.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/button/button.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/button/button.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/button/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/button"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "badge",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/badge/badge.variants.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/badge/badge.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/badge/badge.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/badge/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/badge"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "card",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/card/card.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/card/card.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/card/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/card"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "separator",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/separator/separator.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/separator/separator.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/separator/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/separator"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "skeleton",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/skeleton/skeleton.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/skeleton/skeleton.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/skeleton/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/skeleton"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "label",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/label/label.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/label/label.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/label/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/label"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "kbd",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/kbd/kbd.variants.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/kbd/kbd.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/kbd/kbd.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/kbd/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/kbd"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
+    "name": "spinner",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/spinner/spinner.variants.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/spinner/spinner.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/spinner/spinner.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/spinner/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/spinner"
+      }
+    },
+    "type": "registry:ui"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/separator/separator.component.ts",
+      "content": "import {\n  booleanAttribute,\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport type SeparatorOrientation = \"horizontal\" | \"vertical\"\n\n/**\n * Angular port of @force-ui/separator (radix-force-ui style).\n *\n * Usage:\n *   <div uiSeparator></div>\n *   <div uiSeparator orientation=\"vertical\"></div>\n *\n * Uses data-[orientation=…] Tailwind variants directly — the cn-separator*\n * CSS tokens in style-force-ui.css are unused by all framework ports.\n * See DIVERGENCES.md §separator-1.\n *\n * decorative (default true): decorative separators get role=\"none\" and are\n * hidden from the a11y tree. Pass decorative=\"false\" for a semantic separator\n * between landmark regions (announces as role=\"separator\").\n */\n@Component({\n  selector: \"[uiSeparator]\",\n  standalone: true,\n  templateUrl: \"./separator.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"separator\",\n    \"[attr.role]\": \"decorative() ? 'none' : 'separator'\",\n    \"[attr.aria-orientation]\":\n      \"!decorative() && orientation() === 'vertical' ? 'vertical' : null\",\n    \"[attr.data-orientation]\": \"orientation()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class SeparatorComponent {\n  readonly orientation = input<SeparatorOrientation>(\"horizontal\")\n  readonly decorative = input(true, { transform: booleanAttribute })\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"shrink-0 bg-border data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px data-[orientation=vertical]:self-stretch\",\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/separator/separator.component.html",
+      "content": "",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/separator/index.ts",
+      "content": "export {\n  SeparatorComponent as Separator,\n  type SeparatorOrientation,\n} from \"./separator.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/separator"
+    }
+  },
+  "type": "registry:ui"
+}

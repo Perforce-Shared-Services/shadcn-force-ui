@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/kbd/kbd.variants.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\n// [&_svg]:fill-current added — Material Symbols SVGs are fill-based.\n// See DIVERGENCES.md §kbd-1.\nexport const kbdVariants = cva(\n  \"pointer-events-none inline-flex h-5 w-fit min-w-5 items-center justify-center gap-1 rounded-sm bg-muted px-1 font-sans text-xs font-medium text-muted-foreground select-none in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background dark:in-data-[slot=tooltip-content]:bg-background/10 [&_svg]:fill-current [&_svg:not([class*='size-'])]:size-3\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-muted text-muted-foreground\",\n        primary: \"bg-background/20 text-background dark:bg-background/10\",\n      },\n    },\n    defaultVariants: { variant: \"default\" },\n  }\n)\n\nexport type KbdVariants = VariantProps<typeof kbdVariants>\nexport type KbdVariant = NonNullable<KbdVariants[\"variant\"]>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/kbd/kbd.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { kbdVariants, type KbdVariant } from \"./kbd.variants\"\n\n/**\n * Angular port of @force-ui/kbd (radix-force-ui style).\n *\n * Attribute selectors on native <kbd> elements — usage:\n *   <kbd uiKbd>Ctrl</kbd>\n *   <kbd uiKbd variant=\"primary\">⌘</kbd>\n *   <span uiKbdGroup><kbd uiKbd>⌘</kbd><kbd uiKbd>K</kbd></span>\n *\n * variant=\"default\" — muted pill for light surfaces.\n * variant=\"primary\" — translucent pill for placement on a solid/brand surface\n * (e.g. inside a default button or tooltip). Matches Figma Background=Primary.\n */\n@Component({\n  selector: \"[uiKbd]\",\n  standalone: true,\n  templateUrl: \"./kbd.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"kbd\",\n    \"[attr.data-variant]\": \"variant()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class KbdComponent {\n  readonly variant = input<KbdVariant>(\"default\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(kbdVariants({ variant: this.variant() }), this.className())\n  )\n}\n\n@Component({\n  selector: \"[uiKbdGroup]\",\n  standalone: true,\n  templateUrl: \"./kbd.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"kbd-group\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class KbdGroupComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\"cn-kbd-group inline-flex items-center\", this.className())\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/kbd/kbd.component.html",
+      "content": "<ng-content />\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/kbd/index.ts",
+      "content": "export {\n  KbdComponent as Kbd,\n  KbdGroupComponent as KbdGroup,\n} from \"./kbd.component\"\nexport { kbdVariants, type KbdVariants, type KbdVariant } from \"./kbd.variants\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/kbd"
+    }
+  },
+  "type": "registry:ui"
+}

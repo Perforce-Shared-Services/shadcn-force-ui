@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/label/label.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * Angular port of @force-ui/label (radix-force-ui style).\n *\n * Attribute selector on a native <label> — usage:\n *   <label uiLabel for=\"email\">Email</label>\n *\n * Keeping the host as a native <label> gives the browser implicit\n * label→control association via for/id or nesting for free (WCAG 1.3.1).\n *\n * Disabled styling is driven by peer-disabled:* / group-data-[disabled=true]:*\n * classes: place the label as a sibling after a `peer` control, or inside a\n * group carrying data-disabled=\"true\".\n *\n * peer-disabled:cursor-not-allowed is kept in the component — it is not\n * included in the cn-label CSS token. See DIVERGENCES.md §label-1.\n */\n@Component({\n  selector: \"[uiLabel]\",\n  standalone: true,\n  templateUrl: \"./label.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"label\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class LabelComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-label flex items-center select-none group-data-[disabled=true]:pointer-events-none peer-disabled:cursor-not-allowed\",\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/label/label.component.html",
+      "content": "<ng-content />\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/label/index.ts",
+      "content": "export { LabelComponent as Label } from \"./label.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/label"
+    }
+  },
+  "type": "registry:ui"
+}
