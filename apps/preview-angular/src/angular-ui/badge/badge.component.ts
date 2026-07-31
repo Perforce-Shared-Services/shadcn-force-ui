@@ -20,7 +20,10 @@ import { badgeVariants, type BadgeVariant } from "./badge.variants"
 @Component({
   selector: "[uiBadge]",
   standalone: true,
-  templateUrl: "./badge.component.html",
+  template: `@if (srLabel()) {
+  <span class="sr-only">{{ srLabel() }} </span>
+}
+<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "badge",

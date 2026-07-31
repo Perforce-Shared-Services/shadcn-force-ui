@@ -32,7 +32,7 @@ const SPINNER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960
 @Component({
   selector: "[uiSpinner]",
   standalone: true,
-  templateUrl: "./spinner.component.html",
+  template: `<span class="flex size-full items-center justify-center" [innerHTML]="icon"></span>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "spinner",

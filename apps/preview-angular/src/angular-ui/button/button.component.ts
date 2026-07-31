@@ -35,7 +35,10 @@ const SPINNER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960
 @Component({
   selector: "[uiButton]",
   standalone: true,
-  templateUrl: "./button.component.html",
+  template: `@if (loading()) {
+  <span class="inline-flex animate-spin" data-slot="button-spinner" aria-hidden="true" [innerHTML]="spinnerIcon"></span>
+}
+<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "button",

@@ -18,7 +18,7 @@ import { kbdVariants, type KbdVariant } from "./kbd.variants"
 @Component({
   selector: "[uiKbd]",
   standalone: true,
-  templateUrl: "./kbd.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "kbd",
@@ -38,7 +38,7 @@ export class KbdComponent {
 @Component({
   selector: "[uiKbdGroup]",
   standalone: true,
-  templateUrl: "./kbd.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "kbd-group",

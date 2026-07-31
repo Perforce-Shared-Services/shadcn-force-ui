@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils"
 @Component({
   selector: "[uiSkeleton]",
   standalone: true,
-  templateUrl: "./skeleton.component.html",
+  template: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "skeleton",

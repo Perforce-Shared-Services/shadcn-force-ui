@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils"
 @Component({
   selector: "[uiLabel]",
   standalone: true,
-  templateUrl: "./label.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "label",

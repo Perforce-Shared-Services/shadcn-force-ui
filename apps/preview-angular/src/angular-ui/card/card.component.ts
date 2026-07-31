@@ -25,7 +25,7 @@ export type CardSize = "default" | "sm"
 @Component({
   selector: "[uiCard]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card",
@@ -45,7 +45,7 @@ export class CardComponent {
 @Component({
   selector: "[uiCardHeader]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-header",
@@ -66,7 +66,7 @@ export class CardHeaderComponent {
 @Component({
   selector: "[uiCardTitle]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-title",
@@ -84,7 +84,7 @@ export class CardTitleComponent {
 @Component({
   selector: "[uiCardDescription]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-description",
@@ -102,7 +102,7 @@ export class CardDescriptionComponent {
 @Component({
   selector: "[uiCardAction]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-action",
@@ -120,7 +120,7 @@ export class CardActionComponent {
 @Component({
   selector: "[uiCardContent]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-content",
@@ -138,7 +138,7 @@ export class CardContentComponent {
 @Component({
   selector: "[uiCardFooter]",
   standalone: true,
-  templateUrl: "./card.component.html",
+  template: `<ng-content />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "card-footer",

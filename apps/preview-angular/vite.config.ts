@@ -11,7 +11,7 @@ export default defineConfig({
     reportCompressedSize: false,
     rollupOptions: { maxParallelFileOps: 4 },
   },
-  plugins: [angular(), tailwindcss()],
+  plugins: [angular({ tsconfig: path.resolve(__dirname, "tsconfig.json") }), tailwindcss()],
   resolve: {
     alias: { "@": path.resolve(__dirname, "src") },
   },

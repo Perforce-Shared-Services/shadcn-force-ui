@@ -4,11 +4,11 @@ import {
   Component,
   EnvironmentInjector,
   inject,
-  Type,
   ViewChild,
   ViewContainerRef,
 } from "@angular/core"
 import { bootstrapApplication } from "@angular/platform-browser"
+import { EXAMPLES } from "./examples"
 import { getComponentName, reportOverlays, syncTheme } from "./preview-shell"
 
 @Component({
@@ -20,7 +20,7 @@ class AppComponent implements AfterViewInit {
   @ViewChild("outlet", { read: ViewContainerRef }) outlet!: ViewContainerRef
   private injector = inject(EnvironmentInjector)
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     const name = getComponentName()
     if (!name) {
       this.outlet.element.nativeElement.insertAdjacentHTML(
@@ -30,10 +30,8 @@ class AppComponent implements AfterViewInit {
       return
     }
 
-    const modules = import.meta.glob<{ default: Type<unknown> }>("./angular/*.ts")
-    const modulePath = `./angular/${name}.ts`
-
-    if (!modules[modulePath]) {
+    const component = EXAMPLES[name]
+    if (!component) {
       this.outlet.element.nativeElement.insertAdjacentHTML(
         "afterend",
         `<p style='padding:1rem'>Angular component "${name}" not found.</p>`
@@ -41,8 +39,7 @@ class AppComponent implements AfterViewInit {
       return
     }
 
-    const mod = await modules[modulePath]()
-    this.outlet.createComponent(mod.default, { environmentInjector: this.injector })
+    this.outlet.createComponent(component, { environmentInjector: this.injector })
   }
 }
 

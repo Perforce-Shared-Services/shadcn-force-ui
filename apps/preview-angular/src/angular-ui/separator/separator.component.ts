@@ -28,7 +28,7 @@ export type SeparatorOrientation = "horizontal" | "vertical"
 @Component({
   selector: "[uiSeparator]",
   standalone: true,
-  templateUrl: "./separator.component.html",
+  template: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     "data-slot": "separator",
