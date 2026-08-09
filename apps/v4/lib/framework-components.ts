@@ -172,6 +172,24 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "tooltip",
     "typography",
   ]),
+  // [FORCE-UI] Angular Phase 1+2a components
+  angular: new Set([
+    "alert",
+    "aspect-ratio",
+    "avatar",
+    "badge",
+    "button",
+    "card",
+    "empty",
+    "input",
+    "kbd",
+    "label",
+    "progress",
+    "separator",
+    "skeleton",
+    "spinner",
+    "textarea",
+  ]),
 }
 
 export function hasComponentForBase(

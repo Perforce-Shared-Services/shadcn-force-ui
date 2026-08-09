@@ -5,14 +5,15 @@ import * as React from "react"
 const STORAGE_KEY = "framework"
 const DEFAULT_FRAMEWORK = "react"
 
-type Framework = "react" | "vue" | "svelte" | "ember"
+type Framework = "react" | "vue" | "svelte" | "ember" | "angular" // [FORCE-UI]
 
 function isValidFramework(value: string): value is Framework {
   return (
     value === "react" ||
     value === "vue" ||
     value === "svelte" ||
-    value === "ember"
+    value === "ember" ||
+    value === "angular" // [FORCE-UI]
   )
 }
 

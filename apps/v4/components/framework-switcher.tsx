@@ -23,6 +23,7 @@ const FRAMEWORK_OPTIONS = [
   { value: "vue" as const, label: "Vue" },
   { value: "svelte" as const, label: "Svelte" },
   { value: "ember" as const, label: "Ember" },
+  { value: "angular" as const, label: "Angular" }, // [FORCE-UI]
 ]
 
 export function FrameworkSwitcher({ className }: { className?: string }) {
@@ -33,7 +34,7 @@ export function FrameworkSwitcher({ className }: { className?: string }) {
   // Sync framework preference from URL when on a component page.
   React.useEffect(() => {
     const match = pathname.match(
-      /\/docs\/components\/(radix|base|vue|svelte|ember)\//
+      /\/docs\/components\/(radix|base|vue|svelte|ember|angular)\// // [FORCE-UI]
     )
     if (match) {
       const urlFramework = getFrameworkForBase(match[1]).name
@@ -46,11 +47,11 @@ export function FrameworkSwitcher({ className }: { className?: string }) {
   const currentLabel =
     FRAMEWORK_OPTIONS.find((o) => o.value === framework)?.label ?? "React"
 
-  function handleSelect(value: "react" | "vue" | "svelte" | "ember") {
+  function handleSelect(value: "react" | "vue" | "svelte" | "ember" | "angular") { // [FORCE-UI]
     setFramework(value)
 
     const componentMatch = pathname.match(
-      /\/docs\/components\/(radix|base|vue|svelte|ember)\/(.+)/
+      /\/docs\/components\/(radix|base|vue|svelte|ember|angular)\/(.+)/ // [FORCE-UI]
     )
     if (componentMatch) {
       const component = componentMatch[2]

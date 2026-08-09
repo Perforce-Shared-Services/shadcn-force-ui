@@ -225,6 +225,11 @@ const nextConfig = {
           source: "/preview/ember/:path((?!_assets).*)",
           destination: "/preview/ember/index.html",
         },
+        // [FORCE-UI] Angular preview SPA routing
+        {
+          source: "/preview/angular/:path((?!_assets).*)",
+          destination: "/preview/angular/index.html",
+        },
       ],
       afterFiles: [
         {
