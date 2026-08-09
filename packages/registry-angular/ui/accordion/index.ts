@@ -1,0 +1,1 @@
+export { AccordionComponent as Accordion, AccordionItemComponent as AccordionItem, AccordionTriggerComponent as AccordionTrigger, AccordionContentComponent as AccordionContent } from "./accordion.component"
