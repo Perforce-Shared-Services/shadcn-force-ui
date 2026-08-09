@@ -141,6 +141,9 @@ importers:
       '@angular/platform-browser':
         specifier: ^20.0.0
         version: 20.3.26(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))
+      '@force-ui/preview-shell':
+        specifier: workspace:*
+        version: link:../../packages/preview-shell
       '@radix-ng/primitives':
         specifier: ^1.0.0
         version: 1.1.2(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))(@angular/forms@20.3.27(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))(@angular/platform-browser@20.3.26(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)))(rxjs@7.8.2))(@floating-ui/dom@1.7.6)(@internationalized/date@3.12.2)(@internationalized/number@3.6.7)
@@ -187,6 +190,9 @@ importers:
       '@floating-ui/dom':
         specifier: ^1.7.6
         version: 1.7.6
+      '@force-ui/preview-shell':
+        specifier: workspace:*
+        version: link:../../packages/preview-shell
       '@glimmer/component':
         specifier: ^2.0.0
         version: 2.1.1
@@ -285,10 +291,11 @@ importers:
         specifier: ^6.0.0
         version: 6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1)
 
-  apps/preview-router: {}
-
   apps/preview-svelte:
     dependencies:
+      '@force-ui/preview-shell':
+        specifier: workspace:*
+        version: link:../../packages/preview-shell
       '@internationalized/date':
         specifier: ^3.7.0
         version: 3.12.2
@@ -392,6 +399,9 @@ importers:
 
   apps/preview-vue:
     dependencies:
+      '@force-ui/preview-shell':
+        specifier: workspace:*
+        version: link:../../packages/preview-shell
       '@internationalized/date':
         specifier: ^3.7.0
         version: 3.12.2
@@ -812,6 +822,8 @@ importers:
         specifier: ^3.2.6
         version: 3.2.6(@types/debug@4.1.12)(@types/node@20.19.10)(@vitest/browser@3.2.6)(jiti@2.7.0)(jsdom@28.1.0(@noble/hashes@1.8.0))(lightningcss@1.32.0)(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1)
 
+  packages/preview-shell: {}
+
   packages/react:
     dependencies:
       '@types/react':
@@ -866,6 +878,8 @@ importers:
       zod:
         specifier: ^3.25.76
         version: 3.25.76
+
+  packages/registry-shared: {}
 
   packages/registry-svelte:
     dependencies:

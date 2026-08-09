@@ -1,5 +1,5 @@
 import "./styles.css"
-import { syncTheme, getComponentName, reportOverlays } from "./preview-shell"
+import { syncTheme, getComponentName, reportOverlays } from "@force-ui/preview-shell"
 import { mount } from "svelte"
 
 async function renderPreview() {

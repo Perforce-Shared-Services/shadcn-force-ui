@@ -13,6 +13,7 @@
     "@angular/core": "^20.0.0",
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
+    "@force-ui/preview-shell": "workspace:*",
     "@radix-ng/primitives": "^1.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

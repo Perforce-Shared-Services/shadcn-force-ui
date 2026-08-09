@@ -1,29 +1,14 @@
 import { registryItemSchema, type Registry } from "shadcn/schema"
 import { z } from "zod"
 
+import { FORCE_UI_STYLE_BASE } from "../registry-shared/style"
 import { examples } from "./examples/_registry"
 import { lib } from "./lib/_registry"
 import { ui } from "./ui/_registry"
 
 const SVELTE_STYLE = {
-  type: "registry:style",
+  ...FORCE_UI_STYLE_BASE,
   dependencies: ["class-variance-authority", "svelte", "bits-ui"],
-  devDependencies: ["tw-animate-css", "shadcn"],
-  registryDependencies: ["utils"],
-  css: {
-    '@import "tw-animate-css"': {},
-    '@import "shadcn/tailwind.css"': {},
-    "@layer base": {
-      "*": {
-        "@apply border-border outline-ring/50": {},
-      },
-      body: {
-        "@apply bg-background text-foreground": {},
-      },
-    },
-  },
-  cssVars: {},
-  files: [],
 }
 
 export const registry = {

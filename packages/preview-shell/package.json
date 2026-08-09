@@ -1,0 +1,10 @@
+{
+  "name": "@force-ui/preview-shell",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared iframe<->docs bridge for Force UI framework preview apps",
+  "type": "module",
+  "exports": {
+    ".": "./src/preview-shell.ts"
+  }
+}

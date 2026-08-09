@@ -10,7 +10,9 @@
  *
  * Targets:
  *  - app/globals.css — :root / .dark / @theme inline
- *  - preview-{vue,svelte,ember}/src/styles.css — same as globals.css
+ *  - preview-shared/styles.css — same as globals.css (single shared copy
+ *    imported by every preview-{vue,svelte,ember,angular} app; see
+ *    apps/preview-shared/styles.css)
  *  - app/legacy-themes.css — standalone .theme-{name} blocks (generated section)
  *
  * The preview servers iframe into the docs site, so they MUST carry the same
@@ -31,20 +33,19 @@ import * as path from "node:path"
 import { fileURLToPath } from "node:url"
 
 import { THEMES } from "../registry/themes.ts"
-import { PREVIEW_FRAMEWORKS } from "../registry/frameworks.ts" // [FORCE-UI] derive preview targets so new frameworks can't be missed
+import { PREVIEW_FRAMEWORKS } from "../registry/frameworks.ts" // [FORCE-UI] sanity-check that preview apps still exist
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 
 const GLOBALS_CSS = path.join(ROOT_DIR, "app/globals.css")
 
-// [FORCE-UI] Framework preview servers (Vue/Svelte/Ember/Angular). These iframe
-// into the docs site and must carry the same Force UI :root/.dark palette and
-// the same `@theme inline` mappings as app/globals.css. Derived from
-// registry/frameworks.ts (previewDir) instead of a hand-maintained list so a
-// newly ported framework is never missed.
-const PREVIEW_TARGETS = PREVIEW_FRAMEWORKS.map((f) =>
-  path.join(ROOT_DIR, `../${f.previewDir}/src/styles.css`)
-)
+// [FORCE-UI] Every framework preview server (Vue/Svelte/Ember/Angular) imports
+// this single shared stylesheet (apps/preview-shared/styles.css) instead of
+// each carrying its own copy — see that file's header comment. It must carry
+// the same Force UI :root/.dark palette and the same `@theme inline`
+// mappings as app/globals.css.
+const PREVIEW_SHARED_CSS = path.join(ROOT_DIR, "../preview-shared/styles.css")
+const PREVIEW_TARGETS = [PREVIEW_SHARED_CSS]
 
 const CSS_TARGETS = [GLOBALS_CSS, ...PREVIEW_TARGETS]
 
@@ -128,6 +129,12 @@ function regenerateLegacyThemes(css: string, themes: typeof THEMES): string {
 }
 
 function main() {
+  // [FORCE-UI] Sanity-check that at least one preview framework is still
+  // registered before writing the single shared preview stylesheet.
+  if (PREVIEW_FRAMEWORKS.length === 0) {
+    throw new Error("No PREVIEW_FRAMEWORKS registered in registry/frameworks.ts")
+  }
+
   const forceUi = THEMES.find((t) => t.name === "force-ui")
   if (!forceUi?.cssVars?.light || !forceUi?.cssVars?.dark) {
     throw new Error("force-ui theme not found or missing cssVars")

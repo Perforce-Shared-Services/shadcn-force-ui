@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@floating-ui/dom": "^1.7.6",
+    "@force-ui/preview-shell": "workspace:*",
     "@glimmer/component": "^2.0.0",
     "@glimmer/tracking": "^1.1.2",
     "@internationalized/date": "^3.7.0",

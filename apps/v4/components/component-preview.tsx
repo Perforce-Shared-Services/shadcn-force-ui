@@ -98,13 +98,9 @@ export function ComponentPreview({
   if (framework) {
     const iframeSrc = getIframeSrc(framework, name)
     const ext = getPreviewFramework(framework)?.demoExt ?? "ts"
-    // [FORCE-UI] TODO: Angular examples currently live in a single consolidated
-    // file (apps/preview-angular/src/examples.ts) instead of per-file demos like
-    // the other frameworks. Delete this special case once that file is split
-    // into per-file demos under apps/preview-angular/src/angular/.
-    const srcPath = framework === "angular"
-      ? `../preview-angular/src/examples.ts`
-      : `../preview-${framework}/src/${framework}/${name}.${ext}`
+    // [FORCE-UI] No leading "../": readFileFromRoot allowlists sibling preview
+    // apps by their previewDir name and rejects any path containing "..".
+    const srcPath = `preview-${framework}/src/${framework}/${name}.${ext}`
     const content = (
       <ComponentPreviewTabs
         className={className}
