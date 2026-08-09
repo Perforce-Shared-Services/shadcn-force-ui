@@ -1,0 +1,58 @@
+---
+title: Empty
+description: A placeholder state for when content is absent.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="empty-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/empty
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+<Step>Copy and paste the following code into your project.</Step>
+<ComponentSource framework="angular" name="empty" />
+<Step>Update the import paths to match your project setup.</Step>
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyContent } from "@/components/ui/empty"
+```
+
+```html
+<div uiEmpty>
+  <div uiEmptyHeader>
+    <div uiEmptyMedia variant="icon"><!-- icon --></div>
+    <h3 uiEmptyTitle>No results</h3>
+    <p uiEmptyDescription>Try adjusting your search.</p>
+  </div>
+  <div uiEmptyContent>
+    <button uiButton>Create item</button>
+  </div>
+</div>
+```
+
+## API Reference
+
+### EmptyMediaComponent
+
+| Input     | Type                    | Default     |
+| --------- | ----------------------- | ----------- |
+| `variant` | `"default" \| "icon"`   | `"default"` |
+| `class`   | `string`                | –           |
+
+All other sub-components accept only `class`.

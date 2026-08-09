@@ -1,0 +1,62 @@
+---
+title: Avatar
+description: An image element with a fallback for representing the user.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="avatar-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/avatar
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+<Step>Copy and paste the following code into your project.</Step>
+<ComponentSource framework="angular" name="avatar" />
+<Step>Update the import paths to match your project setup.</Step>
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+```
+
+```html
+<span uiAvatar>
+  <img uiAvatarImage src="..." alt="Ada Lovelace" />
+  <span uiAvatarFallback>AL</span>
+</span>
+```
+
+`AvatarImage` tracks load/error events and updates a shared signal. `AvatarFallback` is shown while the image hasn't loaded.
+
+## Examples
+
+### Group
+
+<ComponentPreview framework="angular" name="avatar-group" />
+
+## API Reference
+
+### AvatarComponent
+| Input   | Type                        | Default     |
+| ------- | --------------------------- | ----------- |
+| `size`  | `"default" \| "sm" \| "lg"` | `"default"` |
+| `class` | `string`                    | –           |
+
+### AvatarImageComponent · AvatarFallbackComponent · AvatarBadgeComponent
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |

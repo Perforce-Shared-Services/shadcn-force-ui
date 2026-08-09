@@ -1,13 +1,20 @@
 {
   "title": "Angular",
   "pages": [
+    "alert",
+    "aspect-ratio",
+    "avatar",
     "badge",
     "button",
     "card",
+    "empty",
+    "input",
     "kbd",
     "label",
+    "progress",
     "separator",
     "skeleton",
-    "spinner"
+    "spinner",
+    "textarea"
   ]
 }

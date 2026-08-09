@@ -1,0 +1,48 @@
+---
+title: Textarea
+description: Displays a form textarea or a component that looks like a textarea.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="textarea-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/textarea
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+<Step>Copy and paste the following code into your project.</Step>
+<ComponentSource framework="angular" name="textarea" />
+<Step>Update the import paths to match your project setup.</Step>
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Textarea } from "@/components/ui/textarea"
+```
+
+```html
+<textarea uiTextarea placeholder="Write a message…"></textarea>
+```
+
+## API Reference
+
+### TextareaComponent
+
+| Input       | Type                                              | Default     |
+| ----------- | ------------------------------------------------- | ----------- |
+| `variant`   | `"outline" \| "filled" \| "underline" \| "ghost"` | `"outline"` |
+| `resizable` | `boolean`                                         | `true`      |
+| `class`     | `string`                                          | –           |

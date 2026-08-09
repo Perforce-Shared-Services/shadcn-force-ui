@@ -1,0 +1,58 @@
+---
+title: Alert
+description: Displays a callout for important information.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="alert-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/alert
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+<Step>Copy and paste the following code into your project.</Step>
+<ComponentSource framework="angular" name="alert" />
+<Step>Update the import paths to match your project setup.</Step>
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
+```
+
+```html
+<div uiAlert variant="warning">
+  <div uiAlertTitle>Heads up</div>
+  <div uiAlertDescription>Something happened.</div>
+</div>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview framework="angular" name="alert-variants" />
+
+## API Reference
+
+### AlertComponent
+
+| Input     | Type                                                             | Default     |
+| --------- | ---------------------------------------------------------------- | ----------- |
+| `variant` | `"default" \| "destructive" \| "warning" \| "success" \| "info"` | `"default"` |
+| `icon`    | `"auto" \| "none" \| "info" \| "warning" \| "success" \| "error" \| "bell"` | `"auto"` |
+| `role`    | `"auto" \| "alert" \| "status"`                                 | `"auto"`    |
+| `class`   | `string`                                                         | –           |

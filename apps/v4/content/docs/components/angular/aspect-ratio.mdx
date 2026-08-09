@@ -1,0 +1,51 @@
+---
+title: Aspect Ratio
+description: Displays content within a desired ratio.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="aspect-ratio-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/aspect-ratio
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+<Step>Copy and paste the following code into your project.</Step>
+<ComponentSource framework="angular" name="aspect-ratio" />
+<Step>Update the import paths to match your project setup.</Step>
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { AspectRatio } from "@/components/ui/aspect-ratio"
+```
+
+```html
+<div uiAspectRatio [ratio]="16/9" class="overflow-hidden rounded-lg">
+  <img src="..." alt="..." class="size-full object-cover" />
+</div>
+```
+
+Uses the native CSS `aspect-ratio` property — no padding-bottom hack needed for modern browsers (Angular 20+ baseline).
+
+## API Reference
+
+### AspectRatioComponent
+
+| Input   | Type                 | Default   |
+| ------- | -------------------- | --------- |
+| `ratio` | `number \| string`   | `16/9`    |
+| `class` | `string`             | –         |
