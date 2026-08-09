@@ -10,6 +10,7 @@ const ANGULAR_STYLE = {
     "@angular/core",
     "@angular/common",
     "@angular/platform-browser",
+    "@radix-ng/primitives",
     "class-variance-authority",
   ],
   registryDependencies: ["utils"],
