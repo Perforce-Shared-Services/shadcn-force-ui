@@ -103,6 +103,94 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "accordion",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/accordion/accordion.component.ts", type: "registry:ui" },
+      { path: "ui/accordion/accordion-trigger.component.html", type: "registry:ui" },
+      { path: "ui/accordion/accordion-content.component.html", type: "registry:ui" },
+      { path: "ui/accordion/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion" } },
+  },
+  {
+    name: "checkbox",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/checkbox/checkbox.component.ts", type: "registry:ui" },
+      { path: "ui/checkbox/checkbox.component.html", type: "registry:ui" },
+      { path: "ui/checkbox/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/checkbox" } },
+  },
+  {
+    name: "collapsible",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/collapsible/collapsible.component.ts", type: "registry:ui" },
+      { path: "ui/collapsible/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible" } },
+  },
+  {
+    name: "radio-group",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/radio-group/radio-group.component.ts", type: "registry:ui" },
+      { path: "ui/radio-group/radio-group-item.component.html", type: "registry:ui" },
+      { path: "ui/radio-group/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group" } },
+  },
+  {
+    name: "switch",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/switch/switch.component.ts", type: "registry:ui" },
+      { path: "ui/switch/switch.component.html", type: "registry:ui" },
+      { path: "ui/switch/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch" } },
+  },
+  {
+    name: "tabs",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/tabs/tabs.variants.ts", type: "registry:ui" },
+      { path: "ui/tabs/tabs.component.ts", type: "registry:ui" },
+      { path: "ui/tabs/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs" } },
+  },
+  {
+    name: "toggle",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/toggle/toggle.variants.ts", type: "registry:ui" },
+      { path: "ui/toggle/toggle.component.ts", type: "registry:ui" },
+      { path: "ui/toggle/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle" } },
+  },
+  {
+    name: "toggle-group",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    registryDependencies: ["toggle"],
+    files: [
+      { path: "ui/toggle-group/toggle-group.component.ts", type: "registry:ui" },
+      { path: "ui/toggle-group/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group" } },
+  },
+  {
     name: "alert",
     type: "registry:ui",
     files: [
