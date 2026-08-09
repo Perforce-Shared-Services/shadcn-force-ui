@@ -1,9 +1,0 @@
-{
-  "name": "preview-router",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "preview:build": "echo 'Static files only - no build needed'"
-  }
-}
