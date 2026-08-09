@@ -19,6 +19,16 @@ import { Progress } from "@/angular-ui/progress"
 import { AspectRatio } from "@/angular-ui/aspect-ratio"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyContent } from "@/angular-ui/empty"
 
+// Phase 2b
+import { Checkbox } from "@/angular-ui/checkbox"
+import { Switch } from "@/angular-ui/switch"
+import { RadioGroup, RadioGroupItem } from "@/angular-ui/radio-group"
+import { Toggle } from "@/angular-ui/toggle"
+import { ToggleGroup, ToggleGroupItem } from "@/angular-ui/toggle-group"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/angular-ui/tabs"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/angular-ui/accordion"
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/angular-ui/collapsible"
+
 // ---------------------------------------------------------------------------
 // Badge
 // ---------------------------------------------------------------------------
@@ -27,10 +37,8 @@ import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyCont
   template: `
     <div class="flex flex-col items-center gap-2">
       <div class="flex w-full flex-wrap gap-2">
-        <span uiBadge>Badge</span>
-        <span uiBadge variant="secondary">Secondary</span>
-        <span uiBadge variant="destructive">Destructive</span>
-        <span uiBadge variant="outline">Outline</span>
+        <span uiBadge>Badge</span><span uiBadge variant="secondary">Secondary</span>
+        <span uiBadge variant="destructive">Destructive</span><span uiBadge variant="outline">Outline</span>
       </div>
       <div class="flex w-full flex-wrap gap-2">
         <span uiBadge class="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums">8</span>
@@ -41,38 +49,19 @@ import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyCont
 export class BadgeDemoComponent {}
 
 @Component({ selector: "preview-badge-variants", standalone: true, imports: [Badge],
-  template: `
-    <div class="flex flex-wrap gap-2">
-      <span uiBadge>Default</span><span uiBadge variant="secondary">Secondary</span>
-      <span uiBadge variant="destructive">Destructive</span><span uiBadge variant="outline">Outline</span>
-      <span uiBadge variant="ghost">Ghost</span><span uiBadge variant="link">Link</span>
-    </div>` })
+  template: `<div class="flex flex-wrap gap-2"><span uiBadge>Default</span><span uiBadge variant="secondary">Secondary</span><span uiBadge variant="destructive">Destructive</span><span uiBadge variant="outline">Outline</span><span uiBadge variant="ghost">Ghost</span><span uiBadge variant="link">Link</span></div>` })
 export class BadgeVariantsComponent {}
 
 @Component({ selector: "preview-badge-status", standalone: true, imports: [Badge],
-  template: `
-    <div class="flex flex-wrap gap-2">
-      <span uiBadge variant="success">Success</span><span uiBadge variant="warning">Warning</span>
-      <span uiBadge variant="destructive">Error</span><span uiBadge variant="info">Info</span>
-    </div>` })
+  template: `<div class="flex flex-wrap gap-2"><span uiBadge variant="success">Success</span><span uiBadge variant="warning">Warning</span><span uiBadge variant="destructive">Error</span><span uiBadge variant="info">Info</span></div>` })
 export class BadgeStatusComponent {}
 
 @Component({ selector: "preview-badge-solid", standalone: true, imports: [Badge],
-  template: `
-    <div class="flex flex-wrap gap-2">
-      <span uiBadge variant="success-solid">Deployed</span><span uiBadge variant="warning-solid">Expiring</span>
-      <span uiBadge variant="info-solid">Beta</span><span uiBadge variant="error-solid">Failed</span>
-    </div>` })
+  template: `<div class="flex flex-wrap gap-2"><span uiBadge variant="success-solid">Deployed</span><span uiBadge variant="warning-solid">Expiring</span><span uiBadge variant="info-solid">Beta</span><span uiBadge variant="error-solid">Failed</span></div>` })
 export class BadgeSolidComponent {}
 
 @Component({ selector: "preview-badge-icon", standalone: true, imports: [Badge],
-  template: `
-    <span uiBadge variant="success">
-      <svg data-icon="inline-start" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-        <path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
-      </svg>
-      Synced
-    </span>` })
+  template: `<span uiBadge variant="success"><svg data-icon="inline-start" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>Synced</span>` })
 export class BadgeIconComponent {}
 
 // ---------------------------------------------------------------------------
@@ -80,13 +69,7 @@ export class BadgeIconComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-button-demo", standalone: true, imports: [Button],
-  template: `
-    <div class="flex flex-wrap items-center gap-2">
-      <button uiButton variant="outline">Button</button>
-      <button uiButton variant="outline" size="icon" aria-label="Submit">
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg>
-      </button>
-    </div>` })
+  template: `<div class="flex flex-wrap items-center gap-2"><button uiButton variant="outline">Button</button><button uiButton variant="outline" size="icon" aria-label="Submit"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg></button></div>` })
 export class ButtonDemoComponent {}
 
 @Component({ selector: "preview-button-default", standalone: true, imports: [Button], template: `<button uiButton>Default</button>` })
@@ -103,54 +86,19 @@ export class ButtonDestructiveComponent {}
 export class ButtonLinkComponent {}
 
 @Component({ selector: "preview-button-size", standalone: true, imports: [Button],
-  template: `
-    <div class="flex flex-col items-start gap-8 sm:flex-row">
-      <div class="flex items-start gap-2">
-        <button uiButton size="sm" variant="outline">Small</button>
-        <button uiButton size="icon-sm" variant="outline" aria-label="Submit">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg>
-        </button>
-      </div>
-      <div class="flex items-start gap-2">
-        <button uiButton variant="outline">Default</button>
-        <button uiButton size="icon" variant="outline" aria-label="Submit">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg>
-        </button>
-      </div>
-      <div class="flex items-start gap-2">
-        <button uiButton size="lg" variant="outline">Large</button>
-        <button uiButton size="icon-lg" variant="outline" aria-label="Submit">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg>
-        </button>
-      </div>
-    </div>` })
+  template: `<div class="flex flex-col items-start gap-8 sm:flex-row"><div class="flex items-start gap-2"><button uiButton size="sm" variant="outline">Small</button><button uiButton size="icon-sm" variant="outline" aria-label="Submit"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg></button></div><div class="flex items-start gap-2"><button uiButton variant="outline">Default</button><button uiButton size="icon" variant="outline" aria-label="Submit"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg></button></div><div class="flex items-start gap-2"><button uiButton size="lg" variant="outline">Large</button><button uiButton size="icon-lg" variant="outline" aria-label="Submit"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z"/></svg></button></div></div>` })
 export class ButtonSizeComponent {}
 
 @Component({ selector: "preview-button-icon", standalone: true, imports: [Button],
-  template: `
-    <button uiButton size="icon" variant="outline" aria-label="Settings">
-      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-        <path d="M370-80q-16 0-28-10t-15-26l-19-117q-26-9-51.5-23.5T210-289l-109 45q-15 6-30 1t-23-19L6-381q-8-14-5-30t16-26l95-74q-3-14-4.5-28.5T106-568q0-14 1.5-28.5T112-625L17-699q-13-10-16-26t5-30l52-109q8-14 23-19t30 1l109 45q23-20 48.5-34.5T320-895l19-117q3-16 15-26t28-10h104q16 0 28 10t15 26l19 117q26 9 51.5 23.5T600-847l109-45q15-6 30-1t23 19l52 109q8 14 5 30t-16 26l-95 74q3 14 4.5 28.5t1.5 28.5q0 14-1.5 28.5T758-551l95 74q13 10 16 26t-5 30L812-312q-8 14-23 19t-30-1l-109-45q-23 20-48.5 34.5T550-281l-19 117q-3 16-15 26t-28 10H370Z"/>
-      </svg>
-    </button>` })
+  template: `<button uiButton size="icon" variant="outline" aria-label="Settings"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M370-80q-16 0-28-10t-15-26l-19-117q-26-9-51.5-23.5T210-289l-109 45q-15 6-30 1t-23-19L6-381q-8-14-5-30t16-26l95-74q-3-14-4.5-28.5T106-568q0-14 1.5-28.5T112-625L17-699q-13-10-16-26t5-30l52-109q8-14 23-19t30 1l109 45q23-20 48.5-34.5T320-895l19-117q3-16 15-26t28-10h104q16 0 28 10t15 26l19 117q26 9 51.5 23.5T600-847l109-45q15-6 30-1t23 19l52 109q8 14 5 30t-16 26l-95 74q3 14 4.5 28.5t1.5 28.5q0 14-1.5 28.5T758-551l95 74q13 10 16 26t-5 30L812-312q-8 14-23 19t-30-1l-109-45q-23 20-48.5 34.5T550-281l-19 117q-3 16-15 26t-28 10H370Z"/></svg></button>` })
 export class ButtonIconComponent {}
 
 @Component({ selector: "preview-button-with-icon", standalone: true, imports: [Button],
-  template: `
-    <button uiButton>
-      <svg data-icon="inline-start" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-        <path d="M197.69-140q-23.61 0-40.65-17.04T140-197.69v-564.62q0-23.61 17.04-40.65T197.69-820h451.85q11.61 0 22.73 4.81 11.11 4.81 18.73 12.42L802.77-691q7.61 7.62 12.42 18.73 4.81 11.12 4.81 22.73v451.85q0 23.61-17.04 40.65T762.31-140H197.69Z"/>
-      </svg>
-      Save version
-    </button>` })
+  template: `<button uiButton><svg data-icon="inline-start" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M197.69-140q-23.61 0-40.65-17.04T140-197.69v-564.62q0-23.61 17.04-40.65T197.69-820h451.85q11.61 0 22.73 4.81 11.11 4.81 18.73 12.42L802.77-691q7.61 7.62 12.42 18.73 4.81 11.12 4.81 22.73v451.85q0 23.61-17.04 40.65T762.31-140H197.69Z"/></svg>Save version</button>` })
 export class ButtonWithIconComponent {}
 
 @Component({ selector: "preview-button-spinner", standalone: true, imports: [Button],
-  template: `
-    <div class="flex flex-wrap items-center gap-3">
-      <button uiButton [loading]="true">Saving…</button>
-      <button uiButton variant="outline" [loading]="true">Syncing…</button>
-    </div>` })
+  template: `<div class="flex flex-wrap items-center gap-3"><button uiButton [loading]="true">Saving…</button><button uiButton variant="outline" [loading]="true">Syncing…</button></div>` })
 export class ButtonSpinnerComponent {}
 
 // ---------------------------------------------------------------------------
@@ -184,16 +132,7 @@ export class CardDemoComponent {}
 
 @Component({ selector: "preview-card-small", standalone: true,
   imports: [Card, CardHeader, CardTitle, CardDescription, CardContent],
-  template: `
-    <div uiCard size="sm" class="w-full max-w-sm">
-      <div uiCardHeader>
-        <h3 uiCardTitle>Workspace settings</h3>
-        <p uiCardDescription>Manage how this workspace syncs.</p>
-      </div>
-      <div uiCardContent>
-        <p class="text-muted-foreground text-sm">Compact size card with reduced spacing.</p>
-      </div>
-    </div>` })
+  template: `<div uiCard size="sm" class="w-full max-w-sm"><div uiCardHeader><h3 uiCardTitle>Workspace settings</h3><p uiCardDescription>Manage how this workspace syncs.</p></div><div uiCardContent><p class="text-muted-foreground text-sm">Compact size card.</p></div></div>` })
 export class CardSmallComponent {}
 
 // ---------------------------------------------------------------------------
@@ -201,28 +140,11 @@ export class CardSmallComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-separator-demo", standalone: true, imports: [Separator],
-  template: `
-    <div>
-      <div class="space-y-1">
-        <h4 class="text-sm font-medium leading-none">Radix Primitives</h4>
-        <p class="text-muted-foreground text-sm">An open-source UI component library.</p>
-      </div>
-      <div uiSeparator class="my-4"></div>
-      <div class="flex h-5 items-center space-x-4 text-sm">
-        <div>Blog</div><div uiSeparator orientation="vertical"></div>
-        <div>Docs</div><div uiSeparator orientation="vertical"></div>
-        <div>Source</div>
-      </div>
-    </div>` })
+  template: `<div><div class="space-y-1"><h4 class="text-sm font-medium leading-none">Radix Primitives</h4><p class="text-muted-foreground text-sm">An open-source UI component library.</p></div><div uiSeparator class="my-4"></div><div class="flex h-5 items-center space-x-4 text-sm"><div>Blog</div><div uiSeparator orientation="vertical"></div><div>Docs</div><div uiSeparator orientation="vertical"></div><div>Source</div></div></div>` })
 export class SeparatorDemoComponent {}
 
 @Component({ selector: "preview-separator-vertical", standalone: true, imports: [Separator],
-  template: `
-    <div class="flex h-5 items-center space-x-4 text-sm">
-      <div>Blog</div><div uiSeparator orientation="vertical"></div>
-      <div>Docs</div><div uiSeparator orientation="vertical"></div>
-      <div>Source</div>
-    </div>` })
+  template: `<div class="flex h-5 items-center space-x-4 text-sm"><div>Blog</div><div uiSeparator orientation="vertical"></div><div>Docs</div><div uiSeparator orientation="vertical"></div><div>Source</div></div>` })
 export class SeparatorVerticalComponent {}
 
 // ---------------------------------------------------------------------------
@@ -230,14 +152,7 @@ export class SeparatorVerticalComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-skeleton-demo", standalone: true, imports: [Skeleton],
-  template: `
-    <div class="flex items-center space-x-4">
-      <div uiSkeleton class="size-12 rounded-full"></div>
-      <div class="space-y-2">
-        <div uiSkeleton class="h-4 w-[250px]"></div>
-        <div uiSkeleton class="h-4 w-[200px]"></div>
-      </div>
-    </div>` })
+  template: `<div class="flex items-center space-x-4"><div uiSkeleton class="size-12 rounded-full"></div><div class="space-y-2"><div uiSkeleton class="h-4 w-[250px]"></div><div uiSkeleton class="h-4 w-[200px]"></div></div></div>` })
 export class SkeletonDemoComponent {}
 
 // ---------------------------------------------------------------------------
@@ -245,11 +160,7 @@ export class SkeletonDemoComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-label-demo", standalone: true, imports: [Label],
-  template: `
-    <div class="flex items-center space-x-2">
-      <input id="terms" type="checkbox" class="size-4 rounded border" />
-      <label uiLabel for="terms">Accept terms and conditions</label>
-    </div>` })
+  template: `<div class="flex items-center space-x-2"><input id="terms" type="checkbox" class="size-4 rounded border" /><label uiLabel for="terms">Accept terms and conditions</label></div>` })
 export class LabelDemoComponent {}
 
 // ---------------------------------------------------------------------------
@@ -265,16 +176,7 @@ export class KbdDemoComponent {}
 export class KbdGroupPreviewComponent {}
 
 @Component({ selector: "preview-kbd-primary", standalone: true, imports: [Button, Kbd, KbdGroup],
-  template: `
-    <div class="flex items-center gap-4">
-      <kbd uiKbd variant="default">⌘K</kbd>
-      <button uiButton>
-        Open palette
-        <span uiKbdGroup data-icon="inline-end">
-          <kbd uiKbd variant="primary">⌘</kbd><kbd uiKbd variant="primary">K</kbd>
-        </span>
-      </button>
-    </div>` })
+  template: `<div class="flex items-center gap-4"><kbd uiKbd variant="default">⌘K</kbd><button uiButton>Open palette<span uiKbdGroup data-icon="inline-end"><kbd uiKbd variant="primary">⌘</kbd><kbd uiKbd variant="primary">K</kbd></span></button></div>` })
 export class KbdPrimaryComponent {}
 
 // ---------------------------------------------------------------------------
@@ -285,31 +187,15 @@ export class KbdPrimaryComponent {}
 export class SpinnerDemoComponent {}
 
 @Component({ selector: "preview-spinner-colors", standalone: true, imports: [Spinner],
-  template: `
-    <div class="flex items-center gap-4">
-      <span uiSpinner color="default" size="md"></span>
-      <span uiSpinner color="primary" size="md"></span>
-      <div class="rounded-lg bg-primary p-2"><span uiSpinner color="onPrimary" size="md"></span></div>
-    </div>` })
+  template: `<div class="flex items-center gap-4"><span uiSpinner color="default" size="md"></span><span uiSpinner color="primary" size="md"></span><div class="rounded-lg bg-primary p-2"><span uiSpinner color="onPrimary" size="md"></span></div></div>` })
 export class SpinnerColorsComponent {}
 
 @Component({ selector: "preview-spinner-sizes", standalone: true, imports: [Spinner],
-  template: `
-    <div class="flex items-center gap-4">
-      <span uiSpinner color="primary" size="xs"></span><span uiSpinner color="primary" size="sm"></span>
-      <span uiSpinner color="primary" size="md"></span><span uiSpinner color="primary" size="lg"></span>
-    </div>` })
+  template: `<div class="flex items-center gap-4"><span uiSpinner color="primary" size="xs"></span><span uiSpinner color="primary" size="sm"></span><span uiSpinner color="primary" size="md"></span><span uiSpinner color="primary" size="lg"></span></div>` })
 export class SpinnerSizesComponent {}
 
 @Component({ selector: "preview-spinner-button", standalone: true, imports: [Button, Spinner],
-  template: `
-    <div class="flex flex-wrap items-center gap-3">
-      <button uiButton [loading]="true">Submitting…</button>
-      <button uiButton variant="outline" [loading]="true">Syncing…</button>
-      <button uiButton variant="ghost">
-        <span uiSpinner color="inherit" data-icon="inline-start"></span>Loading
-      </button>
-    </div>` })
+  template: `<div class="flex flex-wrap items-center gap-3"><button uiButton [loading]="true">Submitting…</button><button uiButton variant="outline" [loading]="true">Syncing…</button><button uiButton variant="ghost"><span uiSpinner color="inherit" data-icon="inline-start"></span>Loading</button></div>` })
 export class SpinnerButtonComponent {}
 
 // ---------------------------------------------------------------------------
@@ -335,21 +221,11 @@ export class AlertVariantsComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-avatar-demo", standalone: true, imports: [Avatar, AvatarImage, AvatarFallback],
-  template: `
-    <span uiAvatar>
-      <img uiAvatarImage src="https://github.com/shadcn.png" alt="shadcn" />
-      <span uiAvatarFallback>SC</span>
-    </span>` })
+  template: `<span uiAvatar><img uiAvatarImage src="https://github.com/shadcn.png" alt="shadcn" /><span uiAvatarFallback>SC</span></span>` })
 export class AvatarDemoComponent {}
 
 @Component({ selector: "preview-avatar-group", standalone: true, imports: [Avatar, AvatarFallback, AvatarGroup, AvatarGroupCount],
-  template: `
-    <div uiAvatarGroup>
-      <span uiAvatar><span uiAvatarFallback>AL</span></span>
-      <span uiAvatar><span uiAvatarFallback>JD</span></span>
-      <span uiAvatar><span uiAvatarFallback>SC</span></span>
-      <div uiAvatarGroupCount>+3</div>
-    </div>` })
+  template: `<div uiAvatarGroup><span uiAvatar><span uiAvatarFallback>AL</span></span><span uiAvatar><span uiAvatarFallback>JD</span></span><span uiAvatar><span uiAvatarFallback>SC</span></span><div uiAvatarGroupCount>+3</div></div>` })
 export class AvatarGroupPreviewComponent {}
 
 // ---------------------------------------------------------------------------
@@ -357,21 +233,11 @@ export class AvatarGroupPreviewComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-input-demo", standalone: true, imports: [Input, Label],
-  template: `
-    <div class="flex flex-col gap-1.5 w-full max-w-sm">
-      <label uiLabel for="email-demo">Email</label>
-      <input uiInput id="email-demo" type="email" placeholder="m@example.com" />
-    </div>` })
+  template: `<div class="flex flex-col gap-1.5 w-full max-w-sm"><label uiLabel for="email-demo">Email</label><input uiInput id="email-demo" type="email" placeholder="m@example.com" /></div>` })
 export class InputDemoComponent {}
 
 @Component({ selector: "preview-input-variants", standalone: true, imports: [Input],
-  template: `
-    <div class="flex flex-col gap-3 w-full max-w-sm">
-      <input uiInput variant="outline" placeholder="Outline" />
-      <input uiInput variant="filled" placeholder="Filled" />
-      <input uiInput variant="underline" placeholder="Underline" />
-      <input uiInput variant="ghost" placeholder="Ghost" />
-    </div>` })
+  template: `<div class="flex flex-col gap-3 w-full max-w-sm"><input uiInput variant="outline" placeholder="Outline" /><input uiInput variant="filled" placeholder="Filled" /><input uiInput variant="underline" placeholder="Underline" /><input uiInput variant="ghost" placeholder="Ghost" /></div>` })
 export class InputVariantsComponent {}
 
 // ---------------------------------------------------------------------------
@@ -379,11 +245,7 @@ export class InputVariantsComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-textarea-demo", standalone: true, imports: [Textarea, Label],
-  template: `
-    <div class="flex flex-col gap-1.5 w-full max-w-sm">
-      <label uiLabel for="msg">Message</label>
-      <textarea uiTextarea id="msg" placeholder="Write your message…"></textarea>
-    </div>` })
+  template: `<div class="flex flex-col gap-1.5 w-full max-w-sm"><label uiLabel for="msg">Message</label><textarea uiTextarea id="msg" placeholder="Write your message…"></textarea></div>` })
 export class TextareaDemoComponent {}
 
 // ---------------------------------------------------------------------------
@@ -403,10 +265,7 @@ export class ProgressIndeterminateComponent {}
 // ---------------------------------------------------------------------------
 
 @Component({ selector: "preview-aspect-ratio-demo", standalone: true, imports: [AspectRatio],
-  template: `
-    <div uiAspectRatio [ratio]="16/9" class="w-full max-w-sm overflow-hidden rounded-lg bg-muted">
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Mountain" class="size-full object-cover" />
-    </div>` })
+  template: `<div uiAspectRatio [ratio]="16/9" class="w-full max-w-sm overflow-hidden rounded-lg bg-muted"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Mountain" class="size-full object-cover" /></div>` })
 export class AspectRatioDemoComponent {}
 
 // ---------------------------------------------------------------------------
@@ -418,17 +277,179 @@ export class AspectRatioDemoComponent {}
   template: `
     <div uiEmpty class="border">
       <div uiEmptyHeader>
-        <div uiEmptyMedia variant="icon">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-          </svg>
-        </div>
+        <div uiEmptyMedia variant="icon"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></div>
         <h3 uiEmptyTitle>No files yet</h3>
-        <p uiEmptyDescription>Upload your first file to get started syncing with the server.</p>
+        <p uiEmptyDescription>Upload your first file to get started.</p>
       </div>
       <div uiEmptyContent><button uiButton>Upload file</button></div>
     </div>` })
 export class EmptyDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Checkbox
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-checkbox-demo", standalone: true, imports: [Checkbox, Label],
+  template: `
+    <div class="flex flex-col gap-3">
+      <div class="flex items-center gap-2">
+        <button uiCheckbox id="tos" [checked]="false"></button>
+        <label uiLabel for="tos">Accept terms and conditions</label>
+      </div>
+      <div class="flex items-center gap-2">
+        <button uiCheckbox id="checked-demo" [checked]="true"></button>
+        <label uiLabel for="checked-demo">Already accepted</label>
+      </div>
+      <div class="flex items-center gap-2 opacity-50">
+        <button uiCheckbox id="disabled-demo" [checked]="false" disabled></button>
+        <label uiLabel for="disabled-demo">Disabled</label>
+      </div>
+    </div>` })
+export class CheckboxDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Switch
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-switch-demo", standalone: true, imports: [Switch, Label],
+  template: `
+    <div class="flex flex-col gap-3">
+      <div class="flex items-center gap-2">
+        <button uiSwitch id="airplane" [checked]="false"></button>
+        <label uiLabel for="airplane">Airplane mode</label>
+      </div>
+      <div class="flex items-center gap-2">
+        <button uiSwitch id="enabled" [checked]="true"></button>
+        <label uiLabel for="enabled">Notifications enabled</label>
+      </div>
+    </div>` })
+export class SwitchDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Radio Group
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-radio-group-demo", standalone: true, imports: [RadioGroup, RadioGroupItem, Label],
+  template: `
+    <div uiRadioGroup defaultValue="option-1" class="gap-3">
+      <div class="flex items-center gap-2">
+        <button uiRadioGroupItem id="r1" value="option-1"></button>
+        <label uiLabel for="r1">Default</label>
+      </div>
+      <div class="flex items-center gap-2">
+        <button uiRadioGroupItem id="r2" value="option-2"></button>
+        <label uiLabel for="r2">Comfortable</label>
+      </div>
+      <div class="flex items-center gap-2">
+        <button uiRadioGroupItem id="r3" value="option-3"></button>
+        <label uiLabel for="r3">Compact</label>
+      </div>
+    </div>` })
+export class RadioGroupDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Toggle
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-toggle-demo", standalone: true, imports: [Toggle],
+  template: `
+    <div class="flex flex-wrap items-center gap-2">
+      <button uiToggle aria-label="Bold">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M272-200v-560h221q65 0 114 40.5T656-608q0 38-21 070t-56 49q43 15 68.5 51t25.5 81q0 68-52.5 107.5T495-200H272Zm138-325h83q34 0 55.5-18.5T570-594q0-35-21.5-53.5T493-666h-83v141Zm0 193h88q35 0 58-19.5t23-54.5q0-35-23-54.5T498-479h-88v147Z"/></svg>
+      </button>
+      <button uiToggle variant="outline" aria-label="Italic">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200v-100h160l120-360H320v-100h400v100H580L460-300h140v100H200Z"/></svg>
+      </button>
+    </div>` })
+export class ToggleDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Toggle Group
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-toggle-group-demo", standalone: true, imports: [ToggleGroup, ToggleGroupItem],
+  template: `
+    <div uiToggleGroup type="single" value="center">
+      <button uiToggleGroupItem value="left" aria-label="Left align">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-120v-80h720v80H120Zm0-160v-80h480v80H120Zm0-160v-80h720v80H120Zm0-160v-80h480v80H120Zm0-160v-80h720v80H120Z"/></svg>
+      </button>
+      <button uiToggleGroupItem value="center" aria-label="Center align">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-120v-80h720v80H120Zm160-160v-80h400v80H280ZM120-440v-80h720v80H120Zm160-160v-80h400v80H280ZM120-760v-80h720v80H120Z"/></svg>
+      </button>
+      <button uiToggleGroupItem value="right" aria-label="Right align">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-120v-80h720v80H120Zm240-160v-80h480v80H360ZM120-440v-80h720v80H120Zm240-160v-80h480v80H360ZM120-760v-80h720v80H120Z"/></svg>
+      </button>
+    </div>` })
+export class ToggleGroupDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Tabs
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-tabs-demo", standalone: true, imports: [Tabs, TabsList, TabsTrigger, TabsContent],
+  template: `
+    <div uiTabs defaultValue="account" class="w-full max-w-sm">
+      <div uiTabsList class="w-full">
+        <button uiTabsTrigger value="account">Account</button>
+        <button uiTabsTrigger value="password">Password</button>
+      </div>
+      <div uiTabsContent value="account" class="mt-2 p-3 text-sm">
+        Make changes to your account here.
+      </div>
+      <div uiTabsContent value="password" class="mt-2 p-3 text-sm">
+        Change your password here.
+      </div>
+    </div>` })
+export class TabsDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Accordion
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-accordion-demo", standalone: true,
+  imports: [Accordion, AccordionItem, AccordionTrigger, AccordionContent],
+  template: `
+    <div uiAccordion type="single" collapsible class="w-full max-w-sm">
+      <div uiAccordionItem value="item-1">
+        <div uiAccordionTrigger>Is it accessible?</div>
+        <div uiAccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</div>
+      </div>
+      <div uiAccordionItem value="item-2">
+        <div uiAccordionTrigger>Is it styled?</div>
+        <div uiAccordionContent>Yes. It comes with default styles that match the other components.</div>
+      </div>
+      <div uiAccordionItem value="item-3">
+        <div uiAccordionTrigger>Is it animated?</div>
+        <div uiAccordionContent>Yes. It's animated by default, but you can disable it if you prefer.</div>
+      </div>
+    </div>` })
+export class AccordionDemoComponent {}
+
+// ---------------------------------------------------------------------------
+// Collapsible
+// ---------------------------------------------------------------------------
+
+@Component({ selector: "preview-collapsible-demo", standalone: true,
+  imports: [Button, Collapsible, CollapsibleTrigger, CollapsibleContent],
+  template: `
+    <div uiCollapsible class="flex w-full max-w-sm flex-col gap-2">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-medium">&#64;shadcn starred 3 repositories</span>
+        <button uiCollapsibleTrigger>
+          <button uiButton variant="ghost" size="icon-sm" aria-label="Toggle">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+        </button>
+      </div>
+      <div class="rounded-md border border-border px-4 py-3 text-sm">&#64;radix-ui/primitives</div>
+      <div uiCollapsibleContent>
+        <div class="flex flex-col gap-2">
+          <div class="rounded-md border border-border px-4 py-3 text-sm">&#64;radix-ui/colors</div>
+          <div class="rounded-md border border-border px-4 py-3 text-sm">&#64;stitches/react</div>
+        </div>
+      </div>
+    </div>` })
+export class CollapsibleDemoComponent {}
 
 // ---------------------------------------------------------------------------
 // Registry map
@@ -477,4 +498,13 @@ export const EXAMPLES: Record<string, Type<unknown>> = {
   "progress-demo": ProgressDemoComponent,
   "progress-indeterminate": ProgressIndeterminateComponent,
   "textarea-demo": TextareaDemoComponent,
+  // Phase 2b
+  "accordion-demo": AccordionDemoComponent,
+  "checkbox-demo": CheckboxDemoComponent,
+  "collapsible-demo": CollapsibleDemoComponent,
+  "radio-group-demo": RadioGroupDemoComponent,
+  "switch-demo": SwitchDemoComponent,
+  "tabs-demo": TabsDemoComponent,
+  "toggle-demo": ToggleDemoComponent,
+  "toggle-group-demo": ToggleGroupDemoComponent,
 }

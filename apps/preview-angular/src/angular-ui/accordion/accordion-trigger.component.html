@@ -1,0 +1,14 @@
+<button
+  rdxAccordionTrigger
+  type="button"
+  data-slot="accordion-trigger"
+  [class]="classes()"
+>
+  <span class="group-hover/accordion-trigger:underline"><ng-content /></span>
+  <span
+    class="pointer-events-none inline-flex shrink-0 text-muted-foreground transition-transform duration-200 group-aria-expanded/accordion-trigger:rotate-180 group-aria-expanded/accordion-trigger:text-foreground motion-reduce:transition-none [&>svg]:size-5 [&>svg]:fill-current"
+    data-slot="accordion-trigger-icon"
+    aria-hidden="true"
+    [innerHTML]="chevronIcon"
+  ></span>
+</button>
