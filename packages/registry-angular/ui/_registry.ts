@@ -103,6 +103,80 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "alert",
+    type: "registry:ui",
+    files: [
+      { path: "ui/alert/alert.variants.ts", type: "registry:ui" },
+      { path: "ui/alert/alert.icons.ts", type: "registry:ui" },
+      { path: "ui/alert/alert.component.ts", type: "registry:ui" },
+      { path: "ui/alert/alert.component.html", type: "registry:ui" },
+      { path: "ui/alert/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert" } },
+  },
+  {
+    name: "avatar",
+    type: "registry:ui",
+    files: [
+      { path: "ui/avatar/avatar.component.ts", type: "registry:ui" },
+      { path: "ui/avatar/avatar-fallback.component.html", type: "registry:ui" },
+      { path: "ui/avatar/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/avatar" } },
+  },
+  {
+    name: "input",
+    type: "registry:ui",
+    files: [
+      { path: "ui/input/input.variants.ts", type: "registry:ui" },
+      { path: "ui/input/input.component.ts", type: "registry:ui" },
+      { path: "ui/input/input.component.html", type: "registry:ui" },
+      { path: "ui/input/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input" } },
+  },
+  {
+    name: "textarea",
+    type: "registry:ui",
+    files: [
+      { path: "ui/textarea/textarea.variants.ts", type: "registry:ui" },
+      { path: "ui/textarea/textarea.component.ts", type: "registry:ui" },
+      { path: "ui/textarea/textarea.component.html", type: "registry:ui" },
+      { path: "ui/textarea/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea" } },
+  },
+  {
+    name: "progress",
+    type: "registry:ui",
+    files: [
+      { path: "ui/progress/progress.component.ts", type: "registry:ui" },
+      { path: "ui/progress/progress.component.html", type: "registry:ui" },
+      { path: "ui/progress/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/progress" } },
+  },
+  {
+    name: "aspect-ratio",
+    type: "registry:ui",
+    files: [
+      { path: "ui/aspect-ratio/aspect-ratio.component.ts", type: "registry:ui" },
+      { path: "ui/aspect-ratio/aspect-ratio.component.html", type: "registry:ui" },
+      { path: "ui/aspect-ratio/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio" } },
+  },
+  {
+    name: "empty",
+    type: "registry:ui",
+    files: [
+      { path: "ui/empty/empty.variants.ts", type: "registry:ui" },
+      { path: "ui/empty/empty.component.ts", type: "registry:ui" },
+      { path: "ui/empty/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty" } },
+  },
+  {
     name: "spinner",
     type: "registry:ui",
     files: [
