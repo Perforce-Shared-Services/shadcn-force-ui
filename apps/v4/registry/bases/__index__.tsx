@@ -27121,6 +27121,471 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    accordion: {
+      name: "accordion",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/accordion/accordion.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/accordion-trigger.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/accordion-content.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion",
+        },
+      },
+    },
+    checkbox: {
+      name: "checkbox",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/checkbox/checkbox.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/checkbox/checkbox.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/checkbox/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/checkbox",
+        },
+      },
+    },
+    collapsible: {
+      name: "collapsible",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/collapsible/collapsible.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/collapsible/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible",
+        },
+      },
+    },
+    "radio-group": {
+      name: "radio-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/radio-group/radio-group.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/radio-group/radio-group-item.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/radio-group/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group",
+        },
+      },
+    },
+    switch: {
+      name: "switch",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/switch/switch.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/switch/switch.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/switch/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch",
+        },
+      },
+    },
+    tabs: {
+      name: "tabs",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/tabs/tabs.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/tabs/tabs.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/tabs/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs",
+        },
+      },
+    },
+    toggle: {
+      name: "toggle",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/toggle/toggle.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle/toggle.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle",
+        },
+      },
+    },
+    "toggle-group": {
+      name: "toggle-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["toggle"],
+      files: [
+        {
+          path: "registry/bases/angular/ui/toggle-group/toggle-group.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle-group/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group",
+        },
+      },
+    },
+    alert: {
+      name: "alert",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/alert/alert.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.icons.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert",
+        },
+      },
+    },
+    avatar: {
+      name: "avatar",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/avatar/avatar.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/avatar/avatar-fallback.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/avatar/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/avatar",
+        },
+      },
+    },
+    input: {
+      name: "input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/input/input.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/input.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/input.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input",
+        },
+      },
+    },
+    textarea: {
+      name: "textarea",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea",
+        },
+      },
+    },
+    progress: {
+      name: "progress",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/progress/progress.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/progress/progress.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/progress/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/progress",
+        },
+      },
+    },
+    "aspect-ratio": {
+      name: "aspect-ratio",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/aspect-ratio.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/aspect-ratio.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio",
+        },
+      },
+    },
+    empty: {
+      name: "empty",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/empty/empty.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/empty/empty.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/empty/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty",
+        },
+      },
+    },
     spinner: {
       name: "spinner",
       title: "undefined",

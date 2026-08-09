@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/accordion/accordion.component.ts",
+      "content": "import {\n  booleanAttribute,\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  inject,\n  input,\n} from \"@angular/core\"\nimport { DomSanitizer, type SafeHtml } from \"@angular/platform-browser\"\nimport {\n  injectAccordionItemContext,\n  RdxAccordionHeaderDirective,\n  RdxAccordionItemDirective,\n  RdxAccordionPanelDirective,\n  RdxAccordionRootDirective,\n  RdxAccordionTriggerDirective,\n} from \"@radix-ng/primitives/accordion\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst CHEVRON_DOWN_SVG = `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\"><path d=\"M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z\"/></svg>`\n\n/**\n * Angular port of @force-ui/accordion (radix-force-ui style).\n * Uses @radix-ng/primitives v1.x API.\n *\n * Usage:\n *   <div uiAccordion [multiple]=\"false\">\n *     <div uiAccordionItem value=\"item-1\">\n *       <div uiAccordionTrigger>Is it accessible?</div>\n *       <div uiAccordionContent>Yes. It uses WAI-ARIA design patterns.</div>\n *     </div>\n *   </div>\n *\n * Note: v1.x uses [multiple] instead of type=\"single\"|\"multiple\" + collapsible.\n */\n@Component({\n  selector: \"[uiAccordion]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxAccordionRootDirective,\n      inputs: [\"value\", \"defaultValue\", \"multiple\", \"disabled\", \"orientation\"],\n      outputs: [\"valueChange\", \"onValueChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"accordion\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class AccordionComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\"flex w-full flex-col\", this.className())\n  )\n}\n\n@Component({\n  selector: \"[uiAccordionItem]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxAccordionItemDirective,\n      inputs: [\"value\", \"disabled\"],\n      outputs: [\"onOpenChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"accordion-item\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class AccordionItemComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\"cn-accordion-item border-border\", this.className())\n  )\n}\n\n@Component({\n  selector: \"[uiAccordionTrigger]\",\n  standalone: true,\n  imports: [RdxAccordionTriggerDirective],\n  templateUrl: \"./accordion-trigger.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [RdxAccordionHeaderDirective],\n  host: {\n    \"data-slot\": \"accordion-header\",\n    class: \"flex\",\n  },\n})\nexport class AccordionTriggerComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly chevronIcon: SafeHtml =\n    inject(DomSanitizer).bypassSecurityTrustHtml(CHEVRON_DOWN_SVG)\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-accordion-trigger flex flex-1 items-center justify-between font-medium outline-none\",\n      this.className()\n    )\n  )\n}\n\n@Component({\n  selector: \"[uiAccordionContent]\",\n  standalone: true,\n  templateUrl: \"./accordion-content.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [RdxAccordionPanelDirective],\n  host: {\n    \"data-slot\": \"accordion-content\",\n    class: \"cn-accordion-content overflow-hidden\",\n  },\n})\nexport class AccordionContentComponent {}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/accordion/accordion-trigger.component.html",
+      "content": "<button\n  rdxAccordionTrigger\n  type=\"button\"\n  data-slot=\"accordion-trigger\"\n  [class]=\"classes()\"\n>\n  <span class=\"group-hover/accordion-trigger:underline\"><ng-content /></span>\n  <span\n    class=\"pointer-events-none inline-flex shrink-0 text-muted-foreground transition-transform duration-200 group-aria-expanded/accordion-trigger:rotate-180 group-aria-expanded/accordion-trigger:text-foreground motion-reduce:transition-none [&>svg]:size-5 [&>svg]:fill-current\"\n    data-slot=\"accordion-trigger-icon\"\n    aria-hidden=\"true\"\n    [innerHTML]=\"chevronIcon\"\n  ></span>\n</button>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/accordion/accordion-content.component.html",
+      "content": "<div\n  class=\"cn-accordion-content-inner [&_a]:underline [&_a]:underline-offset-3\"\n>\n  <ng-content />\n</div>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/accordion/index.ts",
+      "content": "export {\n  AccordionComponent as Accordion,\n  AccordionItemComponent as AccordionItem,\n  AccordionTriggerComponent as AccordionTrigger,\n  AccordionContentComponent as AccordionContent,\n} from \"./accordion.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion"
+    }
+  },
+  "type": "registry:ui"
+}

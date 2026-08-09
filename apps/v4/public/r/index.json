@@ -35,6 +35,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/accordion",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion"
         }
       }
     }
@@ -72,6 +75,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/alert",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert"
         }
       }
     }
@@ -151,6 +157,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/aspect-ratio",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio"
         }
       }
     }
@@ -209,6 +218,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/avatar",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/avatar"
         }
       }
     }
@@ -575,6 +587,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/checkbox",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/checkbox"
         }
       }
     }
@@ -615,6 +630,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/collapsible",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible"
         }
       }
     }
@@ -914,6 +932,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/empty",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty"
         }
       }
     }
@@ -1037,6 +1058,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/input",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input"
         }
       }
     }
@@ -1589,6 +1613,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/progress",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/progress"
         }
       }
     }
@@ -1629,6 +1656,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/radio-group",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group"
         }
       }
     }
@@ -2192,6 +2222,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/switch",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch"
         }
       }
     }
@@ -2270,6 +2303,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tabs",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs"
         }
       }
     }
@@ -2348,6 +2384,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/textarea",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea"
         }
       }
     }
@@ -2409,6 +2448,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle"
         }
       }
     }
@@ -2449,6 +2491,9 @@
         },
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/toggle-group"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group"
         }
       }
     }

@@ -2,12 +2,35 @@ import * as React from "react"
 import Image from "next/image"
 
 import { getRegistryComponent } from "@/lib/registry"
+import { getPreviewFramework, type PreviewFramework } from "@/registry/frameworks"
 import { ComponentPreviewTabs } from "@/components/component-preview-tabs"
 import { ComponentSource } from "@/components/component-source"
 import { FrameworkPreviewIframe } from "@/components/framework-preview-iframe"
 
-const PREVIEW_SERVER_URL =
-  process.env.NEXT_PUBLIC_PREVIEW_SERVER_URL ?? "/preview"
+// [FORCE-UI-START] per-framework dev preview server support
+// NEXT_PUBLIC_PREVIEW_SERVER_URL is a legacy override escape hatch: if set, it is
+// used verbatim as the base URL for every framework (useful for pointing at a
+// single ad-hoc server). Prefer NEXT_PUBLIC_PREVIEW_DEV_SERVERS=1 for local dev,
+// which derives the correct per-framework port (and the vite "base" of
+// "/preview/{framework}/") from the frameworks table instead.
+const PREVIEW_SERVER_URL_OVERRIDE = process.env.NEXT_PUBLIC_PREVIEW_SERVER_URL
+const PREVIEW_DEV_SERVERS =
+  process.env.NEXT_PUBLIC_PREVIEW_DEV_SERVERS === "1"
+
+function getIframeSrc(framework: PreviewFramework["name"], name: string) {
+  if (PREVIEW_SERVER_URL_OVERRIDE) {
+    return `${PREVIEW_SERVER_URL_OVERRIDE}/${framework}/${name}`
+  }
+
+  const fw = getPreviewFramework(framework)
+
+  if (PREVIEW_DEV_SERVERS && fw) {
+    return `http://localhost:${fw.devPort}/preview/${framework}/${name}`
+  }
+
+  return `/preview/${framework}/${name}`
+}
+// [FORCE-UI-END]
 
 export function ComponentPreview({
   name,
@@ -25,7 +48,7 @@ export function ComponentPreview({
 }: React.ComponentProps<"div"> & {
   name: string
   styleName?: string
-  framework?: "vue" | "svelte" | "ember" | "angular" // [FORCE-UI]
+  framework?: PreviewFramework["name"] // [FORCE-UI]
   align?: "center" | "start" | "end"
   description?: string
   hideCode?: boolean
@@ -73,12 +96,12 @@ export function ComponentPreview({
   }
 
   if (framework) {
-    const iframeSrc = `${PREVIEW_SERVER_URL}/${framework}/${name}`
-    const ext =
-      framework === "vue" ? "vue"
-      : framework === "ember" ? "gts"
-      : "svelte"
-    // [FORCE-UI] Angular examples live in a single consolidated file
+    const iframeSrc = getIframeSrc(framework, name)
+    const ext = getPreviewFramework(framework)?.demoExt ?? "ts"
+    // [FORCE-UI] TODO: Angular examples currently live in a single consolidated
+    // file (apps/preview-angular/src/examples.ts) instead of per-file demos like
+    // the other frameworks. Delete this special case once that file is split
+    // into per-file demos under apps/preview-angular/src/angular/.
     const srcPath = framework === "angular"
       ? `../preview-angular/src/examples.ts`
       : `../preview-${framework}/src/${framework}/${name}.${ext}`

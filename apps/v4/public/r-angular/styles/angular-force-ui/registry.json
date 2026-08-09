@@ -8,11 +8,25 @@
         "@angular/core",
         "@angular/common",
         "@angular/platform-browser",
+        "@radix-ng/primitives",
         "class-variance-authority"
       ],
+      "devDependencies": ["tw-animate-css", "shadcn"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},
+      "css": {
+        "@import \"tw-animate-css\"": {},
+        "@import \"shadcn/tailwind.css\"": {},
+        "@layer base": {
+          "*": {
+            "@apply border-border outline-ring/50": {}
+          },
+          "body": {
+            "@apply bg-background text-foreground": {}
+          }
+        }
+      },
       "type": "registry:style"
     },
     {
@@ -21,11 +35,25 @@
         "@angular/core",
         "@angular/common",
         "@angular/platform-browser",
+        "@radix-ng/primitives",
         "class-variance-authority"
       ],
+      "devDependencies": ["tw-animate-css", "shadcn"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},
+      "css": {
+        "@import \"tw-animate-css\"": {},
+        "@import \"shadcn/tailwind.css\"": {},
+        "@layer base": {
+          "*": {
+            "@apply border-border outline-ring/50": {}
+          },
+          "body": {
+            "@apply bg-background text-foreground": {}
+          }
+        }
+      },
       "type": "registry:style"
     },
     {
@@ -197,6 +225,372 @@
       "meta": {
         "links": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/kbd"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "accordion",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/accordion/accordion.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/accordion/accordion-trigger.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/accordion/accordion-content.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/accordion/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "checkbox",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/checkbox/checkbox.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/checkbox/checkbox.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/checkbox/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/checkbox"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "collapsible",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/collapsible/collapsible.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/collapsible/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "radio-group",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/radio-group/radio-group.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/radio-group/radio-group-item.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/radio-group/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "switch",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/switch/switch.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/switch/switch.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/switch/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "tabs",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/tabs/tabs.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/tabs/tabs.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "toggle",
+      "dependencies": ["@radix-ng/primitives"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/toggle/toggle.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/toggle/toggle.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/toggle/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "toggle-group",
+      "dependencies": ["@radix-ng/primitives"],
+      "registryDependencies": ["toggle"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/toggle-group/toggle-group.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/toggle-group/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "alert",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/alert/alert.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/alert/alert.icons.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/alert/alert.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/alert/alert.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/alert/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "avatar",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/avatar/avatar.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/avatar/avatar-fallback.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/avatar/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/avatar"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "input",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/input/input.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/input/input.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/input/input.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/input/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "textarea",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/textarea/textarea.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/textarea/textarea.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/textarea/textarea.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/textarea/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "progress",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/progress/progress.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/progress/progress.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/progress/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/progress"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "aspect-ratio",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/aspect-ratio/aspect-ratio.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/aspect-ratio/aspect-ratio.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/aspect-ratio/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
+      "name": "empty",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/empty/empty.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/empty/empty.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/empty/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty"
         }
       },
       "type": "registry:ui"

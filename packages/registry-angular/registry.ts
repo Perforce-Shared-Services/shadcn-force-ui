@@ -13,7 +13,20 @@ const ANGULAR_STYLE = {
     "@radix-ng/primitives",
     "class-variance-authority",
   ],
+  devDependencies: ["tw-animate-css", "shadcn"],
   registryDependencies: ["utils"],
+  css: {
+    '@import "tw-animate-css"': {},
+    '@import "shadcn/tailwind.css"': {},
+    "@layer base": {
+      "*": {
+        "@apply border-border outline-ring/50": {},
+      },
+      body: {
+        "@apply bg-background text-foreground": {},
+      },
+    },
+  },
   cssVars: {},
   files: [],
 }

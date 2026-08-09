@@ -31,19 +31,20 @@ import * as path from "node:path"
 import { fileURLToPath } from "node:url"
 
 import { THEMES } from "../registry/themes.ts"
+import { PREVIEW_FRAMEWORKS } from "../registry/frameworks.ts" // [FORCE-UI] derive preview targets so new frameworks can't be missed
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 
 const GLOBALS_CSS = path.join(ROOT_DIR, "app/globals.css")
 
-// [FORCE-UI] Framework preview servers (Vue/Svelte/Ember). These iframe into
-// the docs site and must carry the same Force UI :root/.dark palette and the
-// same `@theme inline` mappings as app/globals.css.
-const PREVIEW_TARGETS = [
-  path.join(ROOT_DIR, "../preview-vue/src/styles.css"),
-  path.join(ROOT_DIR, "../preview-svelte/src/styles.css"),
-  path.join(ROOT_DIR, "../preview-ember/src/styles.css"),
-]
+// [FORCE-UI] Framework preview servers (Vue/Svelte/Ember/Angular). These iframe
+// into the docs site and must carry the same Force UI :root/.dark palette and
+// the same `@theme inline` mappings as app/globals.css. Derived from
+// registry/frameworks.ts (previewDir) instead of a hand-maintained list so a
+// newly ported framework is never missed.
+const PREVIEW_TARGETS = PREVIEW_FRAMEWORKS.map((f) =>
+  path.join(ROOT_DIR, `../${f.previewDir}/src/styles.css`)
+)
 
 const CSS_TARGETS = [GLOBALS_CSS, ...PREVIEW_TARGETS]
 

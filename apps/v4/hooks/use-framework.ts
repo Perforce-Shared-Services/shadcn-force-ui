@@ -2,20 +2,15 @@
 
 import * as React from "react"
 
+import {
+  isFrameworkName,
+  type FrameworkName as Framework, // [FORCE-UI] derive union from FRAMEWORKS table
+} from "@/registry/frameworks"
+
 const STORAGE_KEY = "framework"
-const DEFAULT_FRAMEWORK = "react"
+const DEFAULT_FRAMEWORK: Framework = "react"
 
-type Framework = "react" | "vue" | "svelte" | "ember" | "angular" // [FORCE-UI]
-
-function isValidFramework(value: string): value is Framework {
-  return (
-    value === "react" ||
-    value === "vue" ||
-    value === "svelte" ||
-    value === "ember" ||
-    value === "angular" // [FORCE-UI]
-  )
-}
+const isValidFramework = isFrameworkName // [FORCE-UI] derived from FRAMEWORKS table
 
 // Module-level shared store
 let currentFramework: Framework = DEFAULT_FRAMEWORK

@@ -15,6 +15,6 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "src") },
   },
-  server: { port: 3003, cors: true },
+  server: { port: 3004, cors: true }, // [FORCE-UI] avoid port collision with preview-ember (3003)
   appType: "spa",
 })

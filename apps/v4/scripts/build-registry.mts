@@ -22,10 +22,20 @@ import { BASE_COLORS } from "@/registry/base-colors"
 import { BASES, type Base } from "@/registry/bases"
 import { PRESETS } from "@/registry/config"
 import { fonts } from "@/registry/fonts"
+import {
+  FRAMEWORKS,
+  isReactBase,
+  PREVIEW_FRAMEWORKS,
+  type FrameworkName,
+} from "@/registry/frameworks"
 import { STYLES } from "@/registry/styles"
 
-// [FORCE-UI] Framework ports live in packages/registry-{name}, not registry/bases/{name}
-const FRAMEWORK_PORT_BASES = new Set(["vue", "svelte", "ember", "angular"])
+// [FORCE-UI] Framework ports live in packages/registry-{name}, not
+// registry/bases/{name}. Derived from PREVIEW_FRAMEWORKS (every framework
+// besides react) so a new framework needs no edit here.
+const FRAMEWORK_PORT_BASES = new Set<string>(
+  PREVIEW_FRAMEWORKS.map((framework) => framework.name)
+)
 function getBaseSrcDir(baseName: string): string {
   if (FRAMEWORK_PORT_BASES.has(baseName)) {
     return path.resolve(process.cwd(), `../../packages/registry-${baseName}`)
@@ -156,50 +166,29 @@ function getStyleCombination(styleName: string) {
 }
 
 type FrameworkRoot = {
-  id: "react" | "vue" | "svelte" | "ember" | "angular" // [FORCE-UI]
+  id: FrameworkName // [FORCE-UI]
   dirName: string
   baseNames: string[]
   styleEntries: Array<{ name: string; label: string }>
 }
 
-const FRAMEWORK_ROOTS: FrameworkRoot[] = [
-  {
-    id: "react",
-    dirName: "r-react",
-    baseNames: ["radix", "base", "aria"], // [FORCE-UI] react-aria base
-    styleEntries: [
-      { name: "radix-force-ui", label: "Force UI (Radix)" },
-      { name: "base-force-ui", label: "Force UI (Base)" },
-      { name: "aria-force-ui", label: "Force UI (Aria)" }, // [FORCE-UI]
-    ],
-  },
-  {
-    id: "vue",
-    dirName: "r-vue",
-    baseNames: ["vue"],
-    styleEntries: [{ name: "vue-force-ui", label: "Force UI (Vue)" }],
-  },
-  {
-    id: "svelte",
-    dirName: "r-svelte",
-    baseNames: ["svelte"],
-    styleEntries: [{ name: "svelte-force-ui", label: "Force UI (Svelte)" }],
-  },
-  {
-    id: "ember",
-    dirName: "r-ember",
-    baseNames: ["ember"],
-    styleEntries: [{ name: "ember-force-ui", label: "Force UI (Ember)" }],
-  },
-  // [FORCE-UI-START] angular framework port
-  {
-    id: "angular",
-    dirName: "r-angular",
-    baseNames: ["angular"],
-    styleEntries: [{ name: "angular-force-ui", label: "Force UI (Angular)" }],
-  },
-  // [FORCE-UI-END]
-]
+// [FORCE-UI] Derived from FRAMEWORKS (registry/frameworks.ts) instead of
+// restating the framework list here. A new framework only needs an entry in
+// FRAMEWORKS to get a root. Style entry names/labels follow the existing
+// "<base>-force-ui" / "Force UI (<Base>)" convention for every base.
+function capitalizeBaseName(baseName: string) {
+  return baseName.charAt(0).toUpperCase() + baseName.slice(1)
+}
+
+const FRAMEWORK_ROOTS: FrameworkRoot[] = FRAMEWORKS.map((framework) => ({
+  id: framework.name,
+  dirName: `r-${framework.name}`,
+  baseNames: [...framework.bases],
+  styleEntries: framework.bases.map((baseName) => ({
+    name: `${baseName}-force-ui`,
+    label: `Force UI (${capitalizeBaseName(baseName)})`,
+  })),
+}))
 
 function getFrameworkRootOutputDir(root: FrameworkRoot) {
   return path.join(process.cwd(), `public/${root.dirName}`)
@@ -1007,8 +996,9 @@ export const Index: Record<string, Record<string, any>> = {`
         ? `@/registry/bases/${base.name}/${stripFileExtension(files[0].path)}`
         : ""
       const firstFileExt = files[0]?.path ? path.extname(files[0].path) : ""
-      const isNonReactBase = base.name === "vue" || base.name === "svelte" || base.name === "ember" || base.name === "angular" // [FORCE-UI]
-      const isReactComponent = !isNonReactBase && (firstFileExt === ".tsx" || firstFileExt === ".ts")
+      const isReactComponent =
+        isReactBase(base.name) && // [FORCE-UI] derived from frameworks.ts
+        (firstFileExt === ".tsx" || firstFileExt === ".ts")
 
       index += `
     "${item.name}": {
@@ -1407,8 +1397,9 @@ export const Index: Record<string, Record<string, any>> = {`
           : `@/registry/${style.name}/${stripFileExtension(files[0].path)}`
         : ""
       const firstFileExt = files[0]?.path ? path.extname(files[0].path) : ""
-      const isNonReactBase = styleCombination && (styleCombination.base.name === "vue" || styleCombination.base.name === "svelte" || styleCombination.base.name === "ember" || styleCombination.base.name === "angular") // [FORCE-UI]
-      const isReactComponent = !isNonReactBase && (firstFileExt === ".tsx" || firstFileExt === ".ts")
+      const isReactComponent =
+        (!styleCombination || isReactBase(styleCombination.base.name)) && // [FORCE-UI] derived from frameworks.ts
+        (firstFileExt === ".tsx" || firstFileExt === ".ts")
 
       index += `
     "${item.name}": {
