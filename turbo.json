@@ -65,6 +65,7 @@
     },
     "preview:build": {
       "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/apps/preview-shared/**"],
       "outputs": ["dist/**"]
     },
     "preview-server:build": {
