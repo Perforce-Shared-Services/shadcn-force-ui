@@ -39,13 +39,22 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
+    // [FORCE-UI] more specific aliases first so "@/ui" and "@/lib" resolve to the shared
+    // registry package instead of being swallowed by the generic "@" -> src alias. "@/ui" and
+    // "@/lib" match what registry-vue/ui/**'s own files import internally (e.g. Input.vue
+    // imports "@/lib/utils"). "@/components" stays pointed at this app's src/components since
+    // registry-vue has no components/ directory of its own.
+    alias: [
+      { find: "@/ui", replacement: path.resolve(__dirname, "../../packages/registry-vue/ui") },
+      { find: "@/lib", replacement: path.resolve(__dirname, "../../packages/registry-vue/lib") },
+      { find: "@", replacement: path.resolve(__dirname, "src") },
+    ],
   },
   server: {
     port: 3001,
     cors: true,
+    // [FORCE-UI] allow Vite to read files outside the app root (registry-vue package)
+    fs: { allow: [path.resolve(__dirname, "../..")] },
   },
   appType: "spa",
 })

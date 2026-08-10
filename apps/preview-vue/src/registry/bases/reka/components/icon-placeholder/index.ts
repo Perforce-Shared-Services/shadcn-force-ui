@@ -1,1 +1,1 @@
-export { default as IconPlaceholder } from "@/components/IconPlaceholder.vue"
+export { default as IconPlaceholder } from "@/components/icon-placeholder/IconPlaceholder.vue"

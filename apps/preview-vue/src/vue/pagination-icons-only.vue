@@ -6,7 +6,6 @@ import {
 import {
   Pagination,
   PaginationContent,
-  PaginationItem,
   PaginationNext,
   PaginationPrevious,
 } from '@/ui/pagination'
@@ -40,12 +39,8 @@ import {
     </Field>
     <Pagination class="mx-0 w-auto" :total="100" :items-per-page="25">
       <PaginationContent>
-        <PaginationItem>
-          <PaginationPrevious />
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationNext />
-        </PaginationItem>
+        <PaginationPrevious />
+        <PaginationNext />
       </PaginationContent>
     </Pagination>
   </div>

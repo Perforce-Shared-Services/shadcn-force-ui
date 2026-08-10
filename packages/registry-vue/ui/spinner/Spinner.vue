@@ -1,31 +1,9 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue"
-import { cva, type VariantProps } from "class-variance-authority"
+import type { SpinnerVariants } from "."
 import { cn } from "@/lib/utils"
 import { IconPlaceholder } from "@/components/icon-placeholder"
-
-export const spinnerVariants = cva("cn-spinner animate-spin", {
-  variants: {
-    color: {
-      default: "cn-spinner-color-default",
-      primary: "cn-spinner-color-primary",
-      onPrimary: "cn-spinner-color-onPrimary",
-      inherit: "cn-spinner-color-inherit",
-    },
-    size: {
-      xs: "cn-spinner-size-xs",
-      sm: "cn-spinner-size-sm",
-      md: "cn-spinner-size-md",
-      lg: "cn-spinner-size-lg",
-    },
-  },
-  defaultVariants: {
-    color: "default",
-    size: "sm",
-  },
-})
-
-export type SpinnerVariants = VariantProps<typeof spinnerVariants>
+import { spinnerVariants } from "."
 
 const props = defineProps<{
   color?: SpinnerVariants["color"]

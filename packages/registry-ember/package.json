@@ -5,7 +5,22 @@
   "description": "Ember.js component registry for Force UI",
   "type": "module",
   "dependencies": {
+    "@floating-ui/dom": "^1.7.6",
+    "@glimmer/component": "^2.0.0",
+    "@glimmer/tracking": "^1.1.2",
+    "@glint/template": "^1.8.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ember-cli-flash": "^7.0.0",
+    "ember-click-outside": "^6.1.1",
+    "ember-keyboard": "^9.0.4",
+    "ember-modifier": "^4.3.0",
+    "ember-provide-consume-context": "^0.9.0",
+    "ember-source": "~6.9.0",
+    "ember-truth-helpers": "^5.0.0",
     "shadcn": "workspace:*",
+    "tailwind-merge": "^3.0.0",
+    "tracked-built-ins": "^4.1.2",
     "zod": "^3.25.76"
   }
 }

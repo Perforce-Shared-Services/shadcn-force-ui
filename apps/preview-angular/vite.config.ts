@@ -1,40 +1,7 @@
-import { createRequire } from "node:module"
 import path from "node:path"
 import angular from "@analogjs/vite-plugin-angular"
 import tailwindcss from "@tailwindcss/vite"
-import { defineConfig, type Plugin } from "vite"
-
-// [FORCE-UI] registry-angular/ui/** imports packages (class-variance-authority, @radix-ng/primitives,
-// @angular/*, ...) that are declared as dependencies of *this app*, not of registry-angular itself
-// (it's never installed standalone). Under pnpm's strict node_modules, plain Node resolution from
-// packages/registry-angular/ui/** can't see them, so resolve those bare specifiers through this
-// app's own node_modules instead - via Node's real resolution algorithm (respecting "exports" maps,
-// e.g. "@radix-ng/primitives/accordion") rather than a naive path-prefix alias.
-function resolveRegistryDepsFromApp(): Plugin {
-  const requireFromApp = createRequire(path.resolve(__dirname, "package.json"))
-  const bareDeps = [
-    "class-variance-authority",
-    "clsx",
-    "tailwind-merge",
-    "@radix-ng/primitives",
-    "@angular/core",
-    "@angular/common",
-    "@angular/forms",
-    "@angular/platform-browser",
-  ]
-  return {
-    name: "force-ui-resolve-registry-deps",
-    enforce: "pre",
-    resolveId(source) {
-      if (!bareDeps.some((dep) => source === dep || source.startsWith(`${dep}/`))) return null
-      try {
-        return requireFromApp.resolve(source)
-      } catch {
-        return null
-      }
-    },
-  }
-}
+import { defineConfig } from "vite"
 
 export default defineConfig({
   base: "/preview/angular/",
@@ -45,7 +12,6 @@ export default defineConfig({
     rollupOptions: { maxParallelFileOps: 4 },
   },
   plugins: [
-    resolveRegistryDepsFromApp(),
     angular({ tsconfig: path.resolve(__dirname, "tsconfig.json") }),
     tailwindcss(),
   ],

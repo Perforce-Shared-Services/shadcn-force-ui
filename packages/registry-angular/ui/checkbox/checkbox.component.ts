@@ -52,7 +52,7 @@ export class CheckboxComponent {
   private readonly sanitizer = inject(DomSanitizer)
 
   protected readonly indicatorIcon = computed<SafeHtml>(() => {
-    const state = this.ctx.checked()
+    const state = this.ctx.state()
     const svg = state === "indeterminate" ? INDETERMINATE_SVG : CHECK_SVG
     return this.sanitizer.bypassSecurityTrustHtml(svg)
   })

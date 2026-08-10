@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 
 import { cn } from '@/lib/utils';
 
-import { buttonVariants } from './button.gts';
+import { buttonVariants } from '@/ui/button/button';
 
 import type { TOC } from '@ember/component/template-only';
 

@@ -1,7 +1,15 @@
 import type { VariantProps } from "class-variance-authority"
+import type { ButtonVariants } from "@/ui/button"
 import { cva } from "class-variance-authority"
 
-
+export {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupText,
+  InputGroupInput,
+  InputGroupTextarea,
+} from "./input-group"
 
 export const inputGroupAddonVariants = cva(
   "text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&>svg:not([class*=size-])]:size-4 [&>kbd]:rounded-[calc(var(--radius)-5px)] group-data-[disabled=true]/input-group:opacity-50",
@@ -48,5 +56,5 @@ export type InputGroupButtonVariants = VariantProps<typeof inputGroupButtonVaria
 export interface InputGroupButtonProps {
   variant?: ButtonVariants["variant"]
   size?: InputGroupButtonVariants["size"]
-  class?: HTMLAttributes["class"]
+  class?: string
 }
