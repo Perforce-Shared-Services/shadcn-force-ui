@@ -87,10 +87,19 @@ export async function ComponentSource({
     })
   }
 
+  // [FORCE-UI] The collapsed preview shows maxLines of ONE file with no
+  // switcher, so formatting and highlighting every file there is pure waste -
+  // and it is rendered on every statically generated component page. Narrow to
+  // the file that would be shown.
+  const filesToProcess =
+    maxLines ?
+      [pickDefaultRawFile(rawFiles, item?.name)]
+    : rawFiles
+
   // [FORCE-UI] Multi-file items (framework ports especially) need every
   // file rendered behind a file switcher, not just the first one.
   const processedFiles: ComponentSourceFile[] = await Promise.all(
-    rawFiles.map(async (file: { path: string; content: string }) => {
+    filesToProcess.map(async (file: { path: string; content: string }) => {
       const lang = language ?? file.path.split(".").pop() ?? "tsx"
       let fileCode = file.content
 
@@ -143,6 +152,22 @@ export async function ComponentSource({
 // button.variants.ts first, which isn't the component itself); otherwise
 // fall back to the first file.
 function pickDefaultFile(files: ComponentSourceFile[], itemName?: string) {
+  return pickDefaultByPath(files, itemName)
+}
+
+// [FORCE-UI] Same selection over anything carrying a `path`, so the collapsed
+// preview can choose its single file BEFORE paying to format/highlight.
+function pickDefaultRawFile<T extends { path: string }>(
+  files: T[],
+  itemName?: string
+) {
+  return pickDefaultByPath(files, itemName)
+}
+
+function pickDefaultByPath<T extends { path: string }>(
+  files: T[],
+  itemName?: string
+): T {
   const stem = (filePath: string) => {
     const fileName = filePath.split("/").pop() ?? filePath
     const lastDot = fileName.lastIndexOf(".")

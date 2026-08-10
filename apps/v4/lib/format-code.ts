@@ -1,5 +1,7 @@
+import { createHash } from "crypto"
 import { promises as fsPromises } from "fs"
 import path from "path"
+import { LRUCache } from "lru-cache"
 import { materialSymbolNames } from "@/examples/material-symbols-map"
 import {
   createStyleMap,
@@ -105,7 +107,32 @@ function rewriteMaterialSymbolsHelperImport(code: string) {
   )
 }
 
+// [FORCE-UI] formatCode spins up a fresh ts-morph Project per call, which is
+// the expensive part. It is deterministic in (code, styleName), and callers hit
+// it with identical input repeatedly: ComponentPreview renders both a full
+// source tab and a 3-line collapsed preview from the same file, and shared
+// components recur across many statically-generated pages. Memoize it.
+const formatCache = new LRUCache<string, string>({
+  max: 2000,
+  ttl: 1000 * 60 * 60, // 1 hour.
+})
+
 export async function formatCode(code: string, styleName: string) {
+  const cacheKey = createHash("sha256")
+    .update(`${styleName}:${code}`)
+    .digest("hex")
+
+  const cached = formatCache.get(cacheKey)
+  if (cached !== undefined) {
+    return cached
+  }
+
+  const formatted = await formatCodeUncached(code, styleName)
+  formatCache.set(cacheKey, formatted)
+  return formatted
+}
+
+async function formatCodeUncached(code: string, styleName: string) {
   code = code.replaceAll(`@/registry/${styleName}/`, "@/components/")
 
   // Always rewrite the legacy tree so src-based sources render clean imports

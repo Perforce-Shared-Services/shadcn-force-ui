@@ -5,8 +5,11 @@ import type { ShikiTransformer } from "shiki"
 
 // LRU cache for cross-request caching of highlighted code.
 // Shiki highlighting is CPU-intensive and deterministic, so caching is safe.
+// [FORCE-UI] Raised from 500: a full build statically generates ~584 pages,
+// each with several code blocks, so 500 entries thrashed and re-highlighted
+// the same shared components over and over.
 const highlightCache = new LRUCache<string, string>({
-  max: 500,
+  max: 5000,
   ttl: 1000 * 60 * 60, // 1 hour.
 })
 
