@@ -1,3 +1,8 @@
+// [FORCE-UI] zone.js must load before @angular/core, or bootstrapApplication
+// throws NG0908 ("Angular requires Zone.js") and nothing renders at all. This
+// app is a plain Vite SPA, so there is no angular.json "polyfills" entry to
+// supply it - the import has to be here, and first.
+import "zone.js"
 import "./styles.css"
 
 import {
