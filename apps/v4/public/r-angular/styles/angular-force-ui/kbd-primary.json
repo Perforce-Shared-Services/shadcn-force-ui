@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-primary",
+  "title": "Kbd Primary",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/kbd-primary.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Kbd, KbdGroup } from \"@/ui/kbd\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-kbd-primary\",\n  standalone: true,\n  imports: [Button, Kbd, KbdGroup],\n  template: `<div class=\"flex items-center gap-4\">\n    <kbd uiKbd variant=\"default\">⌘K</kbd\n    ><button uiButton>\n      Open palette<span uiKbdGroup data-icon=\"inline-end\"\n        ><kbd uiKbd variant=\"primary\">⌘</kbd\n        ><kbd uiKbd variant=\"primary\">K</kbd></span\n      >\n    </button>\n  </div>`,\n})\nexport class KbdPrimaryComponent {}\n\nexport default KbdPrimaryComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-vertical",
+  "title": "Separator Vertical",
+  "dependencies": [],
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/separator-vertical.ts",
+      "content": "import { Separator } from \"@/ui/separator\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-separator-vertical\",\n  standalone: true,\n  imports: [Separator],\n  template: `<div class=\"flex h-5 items-center space-x-4 text-sm\">\n    <div>Blog</div>\n    <div uiSeparator orientation=\"vertical\"></div>\n    <div>Docs</div>\n    <div uiSeparator orientation=\"vertical\"></div>\n    <div>Source</div>\n  </div>`,\n})\nexport class SeparatorVerticalComponent {}\n\nexport default SeparatorVerticalComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

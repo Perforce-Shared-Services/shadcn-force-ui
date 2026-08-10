@@ -623,6 +623,630 @@
       "type": "registry:ui"
     },
     {
+      "name": "accordion-demo",
+      "title": "Accordion Demo",
+      "dependencies": [],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/accordion-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "alert-demo",
+      "title": "Alert Demo",
+      "dependencies": [],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/alert-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "alert-variants",
+      "title": "Alert Variants",
+      "dependencies": [],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/alert-variants.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "aspect-ratio-demo",
+      "title": "Aspect Ratio Demo",
+      "dependencies": [],
+      "registryDependencies": ["aspect-ratio"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/aspect-ratio-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "avatar-demo",
+      "title": "Avatar Demo",
+      "dependencies": [],
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/avatar-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "avatar-group",
+      "title": "Avatar Group",
+      "dependencies": [],
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/avatar-group.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "badge-demo",
+      "title": "Badge Demo",
+      "dependencies": [],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/badge-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "badge-icon",
+      "title": "Badge Icon",
+      "dependencies": [],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/badge-icon.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "badge-solid",
+      "title": "Badge Solid",
+      "dependencies": [],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/badge-solid.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "badge-status",
+      "title": "Badge Status",
+      "dependencies": [],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/badge-status.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "badge-variants",
+      "title": "Badge Variants",
+      "dependencies": [],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/badge-variants.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-default",
+      "title": "Button Default",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-default.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-demo",
+      "title": "Button Demo",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-destructive",
+      "title": "Button Destructive",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-destructive.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-ghost",
+      "title": "Button Ghost",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-ghost.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-icon",
+      "title": "Button Icon",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-icon.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-link",
+      "title": "Button Link",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-link.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-outline",
+      "title": "Button Outline",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-outline.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-secondary",
+      "title": "Button Secondary",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-secondary.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-size",
+      "title": "Button Size",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-size.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-spinner",
+      "title": "Button Spinner",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-spinner.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "button-with-icon",
+      "title": "Button With Icon",
+      "dependencies": [],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/button-with-icon.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "card-demo",
+      "title": "Card Demo",
+      "dependencies": [],
+      "registryDependencies": ["button", "card"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/card-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "card-small",
+      "title": "Card Small",
+      "dependencies": [],
+      "registryDependencies": ["card"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/card-small.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "checkbox-demo",
+      "title": "Checkbox Demo",
+      "dependencies": [],
+      "registryDependencies": ["checkbox", "label"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/checkbox-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "collapsible-demo",
+      "title": "Collapsible Demo",
+      "dependencies": [],
+      "registryDependencies": ["button", "collapsible"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/collapsible-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "empty-demo",
+      "title": "Empty Demo",
+      "dependencies": [],
+      "registryDependencies": ["button", "empty"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/empty-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "input-demo",
+      "title": "Input Demo",
+      "dependencies": [],
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/input-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "input-variants",
+      "title": "Input Variants",
+      "dependencies": [],
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/input-variants.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "kbd-demo",
+      "title": "Kbd Demo",
+      "dependencies": [],
+      "registryDependencies": ["kbd"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/kbd-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "kbd-group",
+      "title": "Kbd Group",
+      "dependencies": [],
+      "registryDependencies": ["kbd"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/kbd-group.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "kbd-primary",
+      "title": "Kbd Primary",
+      "dependencies": [],
+      "registryDependencies": ["button", "kbd"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/kbd-primary.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "label-demo",
+      "title": "Label Demo",
+      "dependencies": [],
+      "registryDependencies": ["label"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/label-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "progress-demo",
+      "title": "Progress Demo",
+      "dependencies": [],
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/progress-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "progress-indeterminate",
+      "title": "Progress Indeterminate",
+      "dependencies": [],
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/progress-indeterminate.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "radio-group-demo",
+      "title": "Radio Group Demo",
+      "dependencies": [],
+      "registryDependencies": ["label", "radio-group"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/radio-group-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "separator-demo",
+      "title": "Separator Demo",
+      "dependencies": [],
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/separator-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "separator-vertical",
+      "title": "Separator Vertical",
+      "dependencies": [],
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/separator-vertical.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "skeleton-demo",
+      "title": "Skeleton Demo",
+      "dependencies": [],
+      "registryDependencies": ["skeleton"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/skeleton-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "spinner-button",
+      "title": "Spinner Button",
+      "dependencies": [],
+      "registryDependencies": ["button", "spinner"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/spinner-button.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "spinner-colors",
+      "title": "Spinner Colors",
+      "dependencies": [],
+      "registryDependencies": ["spinner"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/spinner-colors.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "spinner-demo",
+      "title": "Spinner Demo",
+      "dependencies": [],
+      "registryDependencies": ["spinner"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/spinner-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "spinner-sizes",
+      "title": "Spinner Sizes",
+      "dependencies": [],
+      "registryDependencies": ["spinner"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/spinner-sizes.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "switch-demo",
+      "title": "Switch Demo",
+      "dependencies": [],
+      "registryDependencies": ["label", "switch"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/switch-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "tabs-demo",
+      "title": "Tabs Demo",
+      "dependencies": [],
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/tabs-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "textarea-demo",
+      "title": "Textarea Demo",
+      "dependencies": [],
+      "registryDependencies": ["label", "textarea"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/textarea-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "toggle-demo",
+      "title": "Toggle Demo",
+      "dependencies": [],
+      "registryDependencies": ["toggle"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/toggle-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "toggle-group-demo",
+      "title": "Toggle Group Demo",
+      "dependencies": [],
+      "registryDependencies": ["toggle-group"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/toggle-group-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
       "name": "utils",
       "files": [
         {

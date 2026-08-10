@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-demo",
+  "title": "Badge Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/badge-demo.ts",
+      "content": "import { Badge } from \"@/ui/badge\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-badge-demo\",\n  standalone: true,\n  imports: [Badge],\n  template: ` <div class=\"flex flex-col items-center gap-2\">\n    <div class=\"flex w-full flex-wrap gap-2\">\n      <span uiBadge>Badge</span\n      ><span uiBadge variant=\"secondary\">Secondary</span>\n      <span uiBadge variant=\"destructive\">Destructive</span\n      ><span uiBadge variant=\"outline\">Outline</span>\n    </div>\n    <div class=\"flex w-full flex-wrap gap-2\">\n      <span uiBadge class=\"h-5 min-w-5 rounded-full px-1 font-mono tabular-nums\"\n        >8</span\n      >\n      <span\n        uiBadge\n        variant=\"destructive\"\n        class=\"h-5 min-w-5 rounded-full px-1 font-mono tabular-nums\"\n        >99</span\n      >\n      <span\n        uiBadge\n        variant=\"outline\"\n        class=\"h-5 min-w-5 rounded-full px-1 font-mono tabular-nums\"\n        >20+</span\n      >\n    </div>\n  </div>`,\n})\nexport class BadgeDemoComponent {}\n\nexport default BadgeDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-default",
+  "title": "Button Default",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-default.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-default\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton>Default</button>`,\n})\nexport class ButtonDefaultComponent {}\n\nexport default ButtonDefaultComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

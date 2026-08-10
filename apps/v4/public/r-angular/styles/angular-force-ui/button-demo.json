@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-demo",
+  "title": "Button Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-demo.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-demo\",\n  standalone: true,\n  imports: [Button],\n  template: `<div class=\"flex flex-wrap items-center gap-2\">\n    <button uiButton variant=\"outline\">Button</button\n    ><button uiButton variant=\"outline\" size=\"icon\" aria-label=\"Submit\">\n      <svg\n        aria-hidden=\"true\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        viewBox=\"0 -960 960 960\"\n      >\n        <path\n          d=\"M440-80v-647L256-543l-56-57 280-280 280 280-56 57-184-184v647h-80Z\"\n        />\n      </svg>\n    </button>\n  </div>`,\n})\nexport class ButtonDemoComponent {}\n\nexport default ButtonDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group-demo",
+  "title": "Radio Group Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "label",
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/radio-group-demo.ts",
+      "content": "import { Label } from \"@/ui/label\"\nimport { RadioGroup, RadioGroupItem } from \"@/ui/radio-group\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-radio-group-demo\",\n  standalone: true,\n  imports: [RadioGroup, RadioGroupItem, Label],\n  template: ` <div uiRadioGroup defaultValue=\"option-1\" class=\"gap-3\">\n    <div class=\"flex items-center gap-2\">\n      <button uiRadioGroupItem id=\"r1\" value=\"option-1\"></button>\n      <label uiLabel for=\"r1\">Default</label>\n    </div>\n    <div class=\"flex items-center gap-2\">\n      <button uiRadioGroupItem id=\"r2\" value=\"option-2\"></button>\n      <label uiLabel for=\"r2\">Comfortable</label>\n    </div>\n    <div class=\"flex items-center gap-2\">\n      <button uiRadioGroupItem id=\"r3\" value=\"option-3\"></button>\n      <label uiLabel for=\"r3\">Compact</label>\n    </div>\n  </div>`,\n})\nexport class RadioGroupDemoComponent {}\n\nexport default RadioGroupDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

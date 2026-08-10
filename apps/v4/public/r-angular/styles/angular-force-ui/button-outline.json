@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-outline",
+  "title": "Button Outline",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-outline.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-outline\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton variant=\"outline\">Outline</button>`,\n})\nexport class ButtonOutlineComponent {}\n\nexport default ButtonOutlineComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

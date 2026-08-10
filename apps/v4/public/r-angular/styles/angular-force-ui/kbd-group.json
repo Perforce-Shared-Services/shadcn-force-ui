@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-group",
+  "title": "Kbd Group",
+  "dependencies": [],
+  "registryDependencies": [
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/kbd-group.ts",
+      "content": "import { Kbd, KbdGroup } from \"@/ui/kbd\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-kbd-group\",\n  standalone: true,\n  imports: [Kbd, KbdGroup],\n  template: `<span uiKbdGroup\n    ><kbd uiKbd>Ctrl</kbd><kbd uiKbd>Shift</kbd><kbd uiKbd>P</kbd></span\n  >`,\n})\nexport class KbdGroupPreviewComponent {}\n\nexport default KbdGroupPreviewComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

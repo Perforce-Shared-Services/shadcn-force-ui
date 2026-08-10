@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-demo",
+  "title": "Switch Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "label",
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/switch-demo.ts",
+      "content": "import { Label } from \"@/ui/label\"\nimport { Switch } from \"@/ui/switch\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-switch-demo\",\n  standalone: true,\n  imports: [Switch, Label],\n  template: ` <div class=\"flex flex-col gap-3\">\n    <div class=\"flex items-center gap-2\">\n      <button uiSwitch id=\"airplane\" [checked]=\"false\"></button>\n      <label uiLabel for=\"airplane\">Airplane mode</label>\n    </div>\n    <div class=\"flex items-center gap-2\">\n      <button uiSwitch id=\"enabled\" [checked]=\"true\"></button>\n      <label uiLabel for=\"enabled\">Notifications enabled</label>\n    </div>\n  </div>`,\n})\nexport class SwitchDemoComponent {}\n\nexport default SwitchDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

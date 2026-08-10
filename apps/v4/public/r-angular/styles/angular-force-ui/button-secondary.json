@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-secondary",
+  "title": "Button Secondary",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-secondary.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-secondary\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton variant=\"secondary\">Secondary</button>`,\n})\nexport class ButtonSecondaryComponent {}\n\nexport default ButtonSecondaryComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

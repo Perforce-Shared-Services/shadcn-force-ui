@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-demo",
+  "title": "Kbd Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/kbd-demo.ts",
+      "content": "import { Kbd } from \"@/ui/kbd\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-kbd-demo\",\n  standalone: true,\n  imports: [Kbd],\n  template: `<div class=\"flex items-center gap-2\">\n    <kbd uiKbd>Ctrl</kbd><kbd uiKbd>⌘K</kbd><kbd uiKbd>Ctrl + B</kbd>\n  </div>`,\n})\nexport class KbdDemoComponent {}\n\nexport default KbdDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

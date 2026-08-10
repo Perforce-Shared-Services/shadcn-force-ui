@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port 3004",
     "preview:build": "vite build",
-    "preview": "vite preview --port 3004"
+    "preview": "vite preview --port 3004",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@angular/common": "^20.0.0",

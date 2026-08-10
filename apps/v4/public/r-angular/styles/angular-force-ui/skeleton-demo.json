@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-demo",
+  "title": "Skeleton Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "skeleton"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/skeleton-demo.ts",
+      "content": "import { Skeleton } from \"@/ui/skeleton\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-skeleton-demo\",\n  standalone: true,\n  imports: [Skeleton],\n  template: `<div class=\"flex items-center space-x-4\">\n    <div uiSkeleton class=\"size-12 rounded-full\"></div>\n    <div class=\"space-y-2\">\n      <div uiSkeleton class=\"h-4 w-[250px]\"></div>\n      <div uiSkeleton class=\"h-4 w-[200px]\"></div>\n    </div>\n  </div>`,\n})\nexport class SkeletonDemoComponent {}\n\nexport default SkeletonDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -79,7 +79,9 @@ export function emberPlugins(stubsDir: string): Plugin[] {
         ],
         ["@babel/plugin-transform-runtime", { useESModules: true }],
       ],
-      include: ["**/ember/**", "**/ember-ui/**", "**/ember-lib/**"],
+      // [FORCE-UI] registry-ember/{ui,lib}/** (aliased in vite.config.ts) must also go through
+      // babel - it ships raw .gts/decorators just like this app's own src/ember/**.
+      include: ["**/ember/**", "**/ember-ui/**", "**/ember-lib/**", "**/registry-ember/**"],
     }) as Plugin,
     Icons({
       compiler: "ember",

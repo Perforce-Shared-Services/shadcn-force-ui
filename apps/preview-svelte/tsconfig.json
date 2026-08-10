@@ -12,6 +12,15 @@
     "noEmit": true,
     "strict": true,
     "paths": {
+      "@/svelte-ui/form/*": ["./src/svelte-ui/form/*"],
+      "@/svelte-ui/data-table/*": ["./src/svelte-ui/data-table/*"],
+      "@/svelte-ui/*": ["../../packages/registry-svelte/ui/*"],
+      "$lib/registry/hooks/*": ["./src/svelte-hooks/*"],
+      "$lib/registry/ui/*": ["../../packages/registry-svelte/ui/*"],
+      "$lib/components/*": ["./src/svelte-components/*"],
+      "$lib/utils": ["./src/svelte-lib/utils"],
+      "@/svelte-lib/*": ["./src/svelte-lib/*"],
+      "@/svelte-hooks/*": ["./src/svelte-hooks/*"],
       "@/*": ["./src/*"]
     }
   },

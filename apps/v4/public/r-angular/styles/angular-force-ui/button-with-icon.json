@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-with-icon",
+  "title": "Button With Icon",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-with-icon.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-with-icon\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton>\n    <svg\n      data-icon=\"inline-start\"\n      aria-hidden=\"true\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      viewBox=\"0 -960 960 960\"\n    >\n      <path\n        d=\"M197.69-140q-23.61 0-40.65-17.04T140-197.69v-564.62q0-23.61 17.04-40.65T197.69-820h451.85q11.61 0 22.73 4.81 11.11 4.81 18.73 12.42L802.77-691q7.61 7.62 12.42 18.73 4.81 11.12 4.81 22.73v451.85q0 23.61-17.04 40.65T762.31-140H197.69Z\"\n      /></svg\n    >Save version\n  </button>`,\n})\nexport class ButtonWithIconComponent {}\n\nexport default ButtonWithIconComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -21,6 +21,7 @@
         ".next/**",
         "!.next/cache/**",
         "public/r/styles/**",
+        "public/preview/**",
         "styles/**"
       ]
     },
@@ -60,11 +61,15 @@
       "outputs": []
     },
     "registry:build": {
-      "outputs": []
+      "outputs": ["public/r/**", "styles/**"]
     },
     "preview:build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
+    },
+    "preview-server:build": {
+      "dependsOn": ["preview:build"],
+      "outputs": ["public/preview/**"]
     }
   }
 }

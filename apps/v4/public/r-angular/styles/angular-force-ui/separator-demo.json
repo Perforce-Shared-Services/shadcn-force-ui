@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-demo",
+  "title": "Separator Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/separator-demo.ts",
+      "content": "import { Separator } from \"@/ui/separator\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-separator-demo\",\n  standalone: true,\n  imports: [Separator],\n  template: `<div>\n    <div class=\"space-y-1\">\n      <h4 class=\"text-sm leading-none font-medium\">Radix Primitives</h4>\n      <p class=\"text-sm text-muted-foreground\">\n        An open-source UI component library.\n      </p>\n    </div>\n    <div uiSeparator class=\"my-4\"></div>\n    <div class=\"flex h-5 items-center space-x-4 text-sm\">\n      <div>Blog</div>\n      <div uiSeparator orientation=\"vertical\"></div>\n      <div>Docs</div>\n      <div uiSeparator orientation=\"vertical\"></div>\n      <div>Source</div>\n    </div>\n  </div>`,\n})\nexport class SeparatorDemoComponent {}\n\nexport default SeparatorDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-variants",
+  "title": "Badge Variants",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/badge-variants.ts",
+      "content": "import { Badge } from \"@/ui/badge\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-badge-variants\",\n  standalone: true,\n  imports: [Badge],\n  template: `<div class=\"flex flex-wrap gap-2\">\n    <span uiBadge>Default</span\n    ><span uiBadge variant=\"secondary\">Secondary</span\n    ><span uiBadge variant=\"destructive\">Destructive</span\n    ><span uiBadge variant=\"outline\">Outline</span\n    ><span uiBadge variant=\"ghost\">Ghost</span\n    ><span uiBadge variant=\"link\">Link</span>\n  </div>`,\n})\nexport class BadgeVariantsComponent {}\n\nexport default BadgeVariantsComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

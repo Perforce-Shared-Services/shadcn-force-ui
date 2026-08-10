@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-demo",
+  "title": "Input Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/input-demo.ts",
+      "content": "import { Input } from \"@/ui/input\"\nimport { Label } from \"@/ui/label\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-input-demo\",\n  standalone: true,\n  imports: [Input, Label],\n  template: `<div class=\"flex w-full max-w-sm flex-col gap-1.5\">\n    <label uiLabel for=\"email-demo\">Email</label\n    ><input uiInput id=\"email-demo\" type=\"email\" placeholder=\"m@example.com\" />\n  </div>`,\n})\nexport class InputDemoComponent {}\n\nexport default InputDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

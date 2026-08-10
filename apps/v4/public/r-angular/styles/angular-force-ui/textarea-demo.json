@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-demo",
+  "title": "Textarea Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "label",
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/textarea-demo.ts",
+      "content": "import { Label } from \"@/ui/label\"\nimport { Textarea } from \"@/ui/textarea\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-textarea-demo\",\n  standalone: true,\n  imports: [Textarea, Label],\n  template: `<div class=\"flex w-full max-w-sm flex-col gap-1.5\">\n    <label uiLabel for=\"msg\">Message</label\n    ><textarea uiTextarea id=\"msg\" placeholder=\"Write your message…\"></textarea>\n  </div>`,\n})\nexport class TextareaDemoComponent {}\n\nexport default TextareaDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

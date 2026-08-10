@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-demo",
+  "title": "Alert Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/alert-demo.ts",
+      "content": "import { Alert, AlertDescription, AlertTitle } from \"@/ui/alert\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-alert-demo\",\n  standalone: true,\n  imports: [Alert, AlertTitle, AlertDescription],\n  template: `<div uiAlert>\n    <div uiAlertTitle>Default alert</div>\n    <div uiAlertDescription>Something you should know.</div>\n  </div>`,\n})\nexport class AlertDemoComponent {}\n\nexport default AlertDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
