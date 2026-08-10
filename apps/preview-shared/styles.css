@@ -425,7 +425,13 @@ body {
   color: var(--color-foreground);
 }
 
-#app {
+/* [FORCE-UI] The preview mount element. Vue/Svelte/Ember mount into
+   <div id="app">, but Angular has to mount into its bootstrap selector
+   <app-root>, which is an unknown element and so defaults to display:inline -
+   without this it gets no centering, no padding and no min-height, and the
+   demo renders cramped into the top-left of the iframe. */
+#app,
+app-root {
   display: flex;
   justify-content: center;
   align-items: center;
