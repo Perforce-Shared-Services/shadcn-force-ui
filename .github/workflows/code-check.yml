@@ -168,6 +168,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      # [FORCE-UI] Blocking: this one is generated, so drift is always a real
+      # bug with a mechanical fix (`pnpm --filter=v4 framework-components`).
+      # A stale manifest silently hides component pages from the framework
+      # switcher, which is how vue lost 10 pages and aria lost all 61.
+      - run: pnpm --filter=v4 framework-components:check
+
       # [FORCE-UI] Non-blocking for now: the checks are correct but surface a
       # backlog of pre-existing findings (undefined cn-* classes, dead
       # ComponentSource references). Keeping the job visible-but-green means

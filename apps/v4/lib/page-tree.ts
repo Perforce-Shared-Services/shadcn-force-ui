@@ -1,5 +1,7 @@
 import type { source } from "@/lib/source"
 
+import { BASES } from "@/registry/bases"
+
 export type PageTreeNode = (typeof source.pageTree)["children"][number]
 export type PageTreeFolder = Extract<PageTreeNode, { type: "folder" }>
 export type PageTreePage = Extract<PageTreeNode, { type: "page" }>
@@ -26,24 +28,16 @@ export function getPagesFromFolder(
 ): PageTreePage[] {
   // For the components folder, find the base subfolder.
   if (folder.$id === "components" || folder.name === "Components") {
+    const baseTitle = BASES.find((b) => b.name === currentBase)?.title
+
     for (const child of folder.children) {
       if (child.type === "folder") {
-        // Match by $id or by name.
-        const isRadix = child.$id === "radix" || child.name === "Radix UI"
-        const isBase = child.$id === "base" || child.name === "Base UI"
-        const isReactAria = child.$id === "aria" || child.name === "React Aria"
-        const isVue = child.$id === "vue" || child.name === "Vue"
-        const isSvelte = child.$id === "svelte" || child.name === "Svelte"
-        const isEmber = child.$id === "ember" || child.name === "Ember"
-
-        if (
-          (currentBase === "radix" && isRadix) ||
-          (currentBase === "base" && isBase) ||
-          (currentBase === "aria" && isReactAria) ||
-          (currentBase === "vue" && isVue) ||
-          (currentBase === "svelte" && isSvelte) ||
-          (currentBase === "ember" && isEmber)
-        ) {
+        // [FORCE-UI] Derived from BASES rather than one hardcoded branch per
+        // base. The hardcoded version never got an "angular" branch, so with
+        // Angular selected nothing matched and this fell through to the
+        // "return every page from every base" fallback below - which made all
+        // components look available and pointed hrefs at arbitrary frameworks.
+        if (child.$id === currentBase || child.name === baseTitle) {
           return child.children.filter(
             (c): c is PageTreePage => c.type === "page"
           )
@@ -63,10 +57,16 @@ export function getPagesFromFolder(
   )
 }
 
-// Get current base (radix, base, aria, vue, svelte, or ember) from pathname.
+// Get the current base from a pathname.
+// [FORCE-UI] Alternation built from BASES so a newly ported framework cannot be
+// missed here - the hardcoded list had already gone stale on "angular".
+const BASE_PATH_RE = new RegExp(
+  `/docs/components/(${BASES.map((b) =>
+    b.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+  ).join("|")})/`
+)
+
 export function getCurrentBase(pathname: string): string {
-  const baseMatch = pathname.match(
-    /\/docs\/components\/(radix|base|aria|vue|svelte|ember)\//
-  )
+  const baseMatch = pathname.match(BASE_PATH_RE)
   return baseMatch ? baseMatch[1] : "base" // [FORCE-UI] default to base (was radix)
 }
