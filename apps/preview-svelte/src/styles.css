@@ -4,3 +4,13 @@
 
 /* [FORCE-UI] shared theme tokens + base styles for all preview apps — see apps/preview-shared/styles.css */
 @import "../../preview-shared/styles.css";
+
+/* [FORCE-UI] Tailwind must be told to scan the registry package. These
+   components used to be copied into this app under src/, so Tailwind saw
+   their class strings while scanning the app root. They are now aliased
+   straight at packages/registry-svelte (no duplicate copy), which is outside
+   that root - so any utility referenced ONLY there silently stopped being
+   generated. That is how the Angular button lost [&_svg]:fill-current and
+   rendered its icons black instead of inheriting currentColor. */
+@source "../../../packages/registry-svelte/ui";
+@source "../../../packages/registry-svelte/lib";
