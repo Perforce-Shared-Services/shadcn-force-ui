@@ -149,18 +149,54 @@ async function listComponentEntries(uiDir: string) {
 // (rather than the whole line) avoids false positives from prose comments
 // like "// Uses cn-badge-* tokens from style-force-ui.css."
 function extractCnTokensFromLine(line: string): string[] {
-  const tokens: string[] = []
+  return extractCnStringsFromLine(line).flatMap((s) => s.cnTokens)
+}
+
+// [FORCE-UI] Same extraction, but keeping each quoted string intact so callers
+// can tell whether a cn-* class was the string's ONLY content.
+//
+// This distinction is what separates a real bug from noise. Per the decision
+// process in .claude/commands/review-force-ui-variants.md, an undefined cn-*
+// class only causes a silent no-op when the cva value has nothing else to
+// distinguish it:
+//
+//   default: "cn-marker-variant-default"              <- BUG: renders nothing
+//   default: "cn-tabs-list-variant-default bg-muted"  <- fine: bg-muted still applies
+//
+// Treating both as failures buries ~3 real bugs under ~88 harmless unused
+// hooks, which is why this started out too noisy to gate on.
+function extractCnStringsFromLine(
+  line: string
+): { cnTokens: string[]; hasOtherUtilities: boolean }[] {
+  const result: { cnTokens: string[]; hasOtherUtilities: boolean }[] = []
   const stringRegex = /"([^"]*)"|'([^']*)'|`([^`]*)`/g
   let stringMatch: RegExpExecArray | null
   while ((stringMatch = stringRegex.exec(line))) {
     const str = stringMatch[1] ?? stringMatch[2] ?? stringMatch[3] ?? ""
-    const tokenRegex = /cn-[a-zA-Z0-9-]+/g
-    let tokenMatch: RegExpExecArray | null
-    while ((tokenMatch = tokenRegex.exec(str))) {
-      tokens.push(tokenMatch[0].replace(/-+$/, ""))
+    const cnTokens: string[] = []
+    const others: string[] = []
+    for (const word of str.split(/\s+/)) {
+      if (!word) continue
+      if (/^cn-[a-zA-Z0-9-]+$/.test(word)) {
+        cnTokens.push(word.replace(/-+$/, ""))
+        continue
+      }
+      const embedded = word.match(/cn-[a-zA-Z0-9-]+/g)
+      if (embedded) {
+        // A cn-* token inside a larger selector/variant expression, e.g.
+        // "[&_.cn-foo]:hidden" — not a bare class, and the surrounding
+        // expression is itself a real utility.
+        cnTokens.push(...embedded.map((t) => t.replace(/-+$/, "")))
+        others.push(word)
+        continue
+      }
+      others.push(word)
+    }
+    if (cnTokens.length > 0) {
+      result.push({ cnTokens, hasOtherUtilities: others.length > 0 })
     }
   }
-  return tokens
+  return result
 }
 
 async function main() {
@@ -176,6 +212,10 @@ async function main() {
 
   // token -> first place it was referenced (for error messages)
   const referenced = new Map<string, { file: string; line: number }>()
+  // [FORCE-UI] tokens that appeared at least once as the ENTIRE class string,
+  // with no other utility alongside them. If such a token has no CSS rule, the
+  // value it encodes renders nothing at all - a real silent no-op.
+  const bareOnly = new Set<string>()
   // componentName -> bucket label -> set of variant values
   const variantsByComponent = new Map<string, Map<string, Set<string>>>()
 
@@ -193,7 +233,14 @@ async function main() {
         const content = await fs.readFile(file, "utf-8")
         const lines = content.split("\n")
         for (let i = 0; i < lines.length; i++) {
-          const tokens = extractCnTokensFromLine(lines[i])
+          const strings = extractCnStringsFromLine(lines[i])
+          const tokens = strings.flatMap((s) => s.cnTokens)
+          for (const s of strings) {
+            if (s.hasOtherUtilities) continue
+            if (s.cnTokens.length === 1) {
+              bareOnly.add(s.cnTokens[0])
+            }
+          }
           for (const token of tokens) {
             if (!referenced.has(token)) {
               referenced.set(token, {
@@ -225,17 +272,55 @@ async function main() {
     .filter((token) => !STYLELESS_SLOT_HOOKS.has(token))
     .sort()
 
-  if (undefinedClasses.length > 0) {
-    for (const token of undefinedClasses) {
+  // [FORCE-UI] Split by severity. A token that is the entire class string and
+  // has no CSS rule renders nothing - a real bug. A token that sits alongside
+  // other utilities is just an unused styling hook, which is an intentional
+  // pattern here, so report it as a warning and do not fail the build on it.
+  // A bare, undefined class on a plain slot may be deliberate - the slot needs
+  // no styling and the class is only there for consumers to hook. But on a
+  // variant/size/color AXIS it is unambiguous: that value of the axis renders
+  // nothing while its siblings style themselves, which is the exact recurring
+  // bug review-force-ui-variants exists to catch. Only the axis case fails.
+  const isAxisValue = (t: string) => /-(variant|size|color)-[a-zA-Z0-9-]+$/.test(t)
+  const silentNoOps = undefinedClasses.filter(
+    (t) => bareOnly.has(t) && isAxisValue(t)
+  )
+  const bareSlots = undefinedClasses.filter(
+    (t) => bareOnly.has(t) && !isAxisValue(t)
+  )
+  const unusedHooks = undefinedClasses.filter((t) => !bareOnly.has(t))
+
+  if (silentNoOps.length > 0) {
+    for (const token of silentNoOps) {
       const loc = referenced.get(token)!
       fail(
-        `Check 1: "${token}" is referenced at ${loc.file}:${loc.line} but has no ` +
-          `".${token}" rule in ${path.relative(REPO_ROOT, CSS_FILE)}. If this is a ` +
-          `variant/color/size axis, every value renders identically (silent no-op).`
+        `Check 1: "${token}" (${loc.file}:${loc.line}) is a variant-axis value ` +
+          `whose ENTIRE class string is this one class, but there is no ` +
+          `".${token}" rule in ${path.relative(REPO_ROOT, CSS_FILE)} - so this ` +
+          `value renders nothing while its sibling values style themselves. ` +
+          `Add the CSS rule (or give the value real utilities).`
       )
     }
   } else {
-    console.log("✅ Check 1: every referenced cn-* class has a CSS rule")
+    console.log("✅ Check 1: no variant-axis value renders as a silent no-op")
+  }
+
+  if (bareSlots.length > 0) {
+    warn(
+      `Check 1: ${bareSlots.length} slot class(es) are the entire class string ` +
+        `with no CSS rule - deliberate hooks if the slot needs no styling, ` +
+        `dead weight otherwise: ${bareSlots.slice(0, 8).join(", ")}` +
+        (bareSlots.length > 8 ? `, +${bareSlots.length - 8} more` : "")
+    )
+  }
+
+  if (unusedHooks.length > 0) {
+    warn(
+      `Check 1: ${unusedHooks.length} cn-* class(es) have no CSS rule but sit ` +
+        `alongside other utilities, so they are unused styling hooks rather ` +
+        `than no-ops: ${unusedHooks.slice(0, 8).join(", ")}` +
+        (unusedHooks.length > 8 ? `, +${unusedHooks.length - 8} more` : "")
+    )
   }
 
   // ---------------------------------------------------------------------
