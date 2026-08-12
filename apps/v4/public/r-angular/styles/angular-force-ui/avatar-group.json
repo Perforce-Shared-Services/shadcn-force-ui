@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group",
+  "title": "Avatar Group",
+  "dependencies": [],
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/avatar-group.ts",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarGroupCount,\n} from \"@/ui/avatar\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-avatar-group\",\n  standalone: true,\n  imports: [Avatar, AvatarFallback, AvatarGroup, AvatarGroupCount],\n  template: `<div uiAvatarGroup>\n    <span uiAvatar><span uiAvatarFallback>AL</span></span\n    ><span uiAvatar><span uiAvatarFallback>JD</span></span\n    ><span uiAvatar><span uiAvatarFallback>SC</span></span>\n    <div uiAvatarGroupCount>+3</div>\n  </div>`,\n})\nexport class AvatarGroupPreviewComponent {}\n\nexport default AvatarGroupPreviewComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

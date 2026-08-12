@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/tabs/tabs.variants.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\nexport const tabsListVariants = cva(\n  \"group/tabs-list inline-flex items-center justify-center rounded-lg p-[3px] text-muted-foreground group-data-horizontal/tabs:h-8 group-data-vertical/tabs:h-fit group-data-vertical/tabs:flex-col data-[variant=line]:rounded-none\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-muted\",\n        line: \"gap-1 bg-transparent\",\n      },\n    },\n    defaultVariants: { variant: \"default\" },\n  }\n)\n\nexport type TabsListVariant = NonNullable<\n  VariantProps<typeof tabsListVariants>[\"variant\"]\n>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/tabs/tabs.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\nimport {\n  RdxTabsList,\n  RdxTabsPanel,\n  RdxTabsRoot,\n  RdxTabsTab,\n} from \"@radix-ng/primitives/tabs\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { tabsListVariants, type TabsListVariant } from \"./tabs.variants\"\n\n/**\n * Angular port of @force-ui/tabs (radix-force-ui style).\n *\n * Usage:\n *   <div uiTabs defaultValue=\"account\">\n *     <div uiTabsList>\n *       <button uiTabsTrigger value=\"account\">Account</button>\n *       <button uiTabsTrigger value=\"password\">Password</button>\n *     </div>\n *     <div uiTabsContent value=\"account\">Account content.</div>\n *     <div uiTabsContent value=\"password\">Password content.</div>\n *   </div>\n *\n * Uses @radix-ng/primitives v1.x API (RdxTabsRoot/List/Tab/Panel).\n * Panels hide via the `hidden` attribute — no getBaseId() needed.\n */\n@Component({\n  selector: \"[uiTabs]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxTabsRoot,\n      inputs: [\"value\", \"defaultValue\", \"orientation\"],\n      outputs: [\"valueChange\", \"onValueChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"tabs\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class TabsComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-tabs group/tabs flex gap-2 data-horizontal:flex-col\",\n      this.className()\n    )\n  )\n}\n\n@Component({\n  selector: \"[uiTabsList]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [RdxTabsList],\n  host: {\n    \"data-slot\": \"tabs-list\",\n    \"[attr.data-variant]\": \"variant()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class TabsListComponent {\n  readonly variant = input<TabsListVariant>(\"default\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(tabsListVariants({ variant: this.variant() }), this.className())\n  )\n}\n\n@Component({\n  selector: \"[uiTabsTrigger]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxTabsTab,\n      inputs: [\"value\", \"disabled\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"tabs-trigger\",\n    nativeButton: \"true\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class TabsTriggerComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-tabs-trigger relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center whitespace-nowrap text-foreground/60 transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start after:absolute after:bg-primary after:opacity-0 after:transition-opacity group-data-horizontal/tabs:after:inset-x-0 group-data-horizontal/tabs:after:bottom-[-5px] group-data-horizontal/tabs:after:h-0.5 group-data-vertical/tabs:after:inset-y-0 group-data-vertical/tabs:after:-right-1 group-data-vertical/tabs:after:w-0.5 hover:text-foreground focus-visible:ring-[3px] focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-background data-[active]:text-foreground data-[active]:shadow-sm group-data-[variant=line]/tabs-list:data-[active]:after:opacity-100 motion-reduce:transition-none motion-reduce:after:transition-none dark:text-muted-foreground dark:hover:text-foreground dark:data-[active]:border-input dark:data-[active]:bg-input/30 dark:data-[active]:text-foreground [&_svg]:fill-current\",\n      this.className()\n    )\n  )\n}\n\n@Component({\n  selector: \"[uiTabsContent]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxTabsPanel,\n      inputs: [\"value\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"tabs-content\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class TabsContentComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\"cn-tabs-content flex-1 outline-none\", this.className())\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/tabs/index.ts",
+      "content": "export {\n  TabsComponent as Tabs,\n  TabsListComponent as TabsList,\n  TabsTriggerComponent as TabsTrigger,\n  TabsContentComponent as TabsContent,\n} from \"./tabs.component\"\nexport { tabsListVariants, type TabsListVariant } from \"./tabs.variants\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs"
+    }
+  },
+  "type": "registry:ui"
+}

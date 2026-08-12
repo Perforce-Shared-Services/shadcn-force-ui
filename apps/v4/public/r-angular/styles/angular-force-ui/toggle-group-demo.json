@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group-demo",
+  "title": "Toggle Group Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/toggle-group-demo.ts",
+      "content": "import { ToggleGroup, ToggleGroupItem } from \"@/ui/toggle-group\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-toggle-group-demo\",\n  standalone: true,\n  imports: [ToggleGroup, ToggleGroupItem],\n  template: ` <div uiToggleGroup type=\"single\" value=\"center\">\n    <button uiToggleGroupItem value=\"left\" aria-label=\"Left align\">\n      <svg\n        aria-hidden=\"true\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        viewBox=\"0 -960 960 960\"\n      >\n        <path\n          d=\"M120-120v-80h720v80H120Zm0-160v-80h480v80H120Zm0-160v-80h720v80H120Zm0-160v-80h480v80H120Zm0-160v-80h720v80H120Z\"\n        />\n      </svg>\n    </button>\n    <button uiToggleGroupItem value=\"center\" aria-label=\"Center align\">\n      <svg\n        aria-hidden=\"true\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        viewBox=\"0 -960 960 960\"\n      >\n        <path\n          d=\"M120-120v-80h720v80H120Zm160-160v-80h400v80H280ZM120-440v-80h720v80H120Zm160-160v-80h400v80H280ZM120-760v-80h720v80H120Z\"\n        />\n      </svg>\n    </button>\n    <button uiToggleGroupItem value=\"right\" aria-label=\"Right align\">\n      <svg\n        aria-hidden=\"true\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        viewBox=\"0 -960 960 960\"\n      >\n        <path\n          d=\"M120-120v-80h720v80H120Zm240-160v-80h480v80H360ZM120-440v-80h720v80H120Zm240-160v-80h480v80H360ZM120-760v-80h720v80H120Z\"\n        />\n      </svg>\n    </button>\n  </div>`,\n})\nexport class ToggleGroupDemoComponent {}\n\nexport default ToggleGroupDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

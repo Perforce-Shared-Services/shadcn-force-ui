@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label-demo",
+  "title": "Label Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/label-demo.ts",
+      "content": "import { Label } from \"@/ui/label\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-label-demo\",\n  standalone: true,\n  imports: [Label],\n  template: `<div class=\"flex items-center space-x-2\">\n    <input id=\"terms\" type=\"checkbox\" class=\"size-4 rounded border\" /><label\n      uiLabel\n      for=\"terms\"\n      >Accept terms and conditions</label\n    >\n  </div>`,\n})\nexport class LabelDemoComponent {}\n\nexport default LabelDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

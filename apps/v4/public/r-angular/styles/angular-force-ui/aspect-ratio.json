@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/aspect-ratio/aspect-ratio.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * Angular port of @force-ui/aspect-ratio (radix-force-ui style).\n *\n * Uses the CSS `aspect-ratio` property directly — no padding-bottom hack needed\n * for Angular 20+ (modern browser baseline). Set `ratio` as a number (width/height)\n * or a CSS string like \"16/9\".\n *\n * Usage:\n *   <div uiAspectRatio [ratio]=\"16/9\">\n *     <img src=\"...\" alt=\"...\" class=\"size-full object-cover\" />\n *   </div>\n *   <div uiAspectRatio ratio=\"4/3\">…</div>\n */\n@Component({\n  selector: \"div[uiAspectRatio]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"aspect-ratio\",\n    \"[style.aspectRatio]\": \"ratio()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class AspectRatioComponent {\n  readonly ratio = input<number | string>(16 / 9)\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\"relative w-full\", this.className())\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/aspect-ratio/aspect-ratio.component.html",
+      "content": "<ng-content />\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/aspect-ratio/index.ts",
+      "content": "export { AspectRatioComponent as AspectRatio } from \"./aspect-ratio.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio"
+    }
+  },
+  "type": "registry:ui"
+}

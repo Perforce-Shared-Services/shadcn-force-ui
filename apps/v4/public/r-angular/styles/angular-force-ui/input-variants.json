@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-variants",
+  "title": "Input Variants",
+  "dependencies": [],
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/input-variants.ts",
+      "content": "import { Input } from \"@/ui/input\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-input-variants\",\n  standalone: true,\n  imports: [Input],\n  template: `<div class=\"flex w-full max-w-sm flex-col gap-3\">\n    <input uiInput variant=\"outline\" placeholder=\"Outline\" /><input\n      uiInput\n      variant=\"filled\"\n      placeholder=\"Filled\"\n    /><input uiInput variant=\"underline\" placeholder=\"Underline\" /><input\n      uiInput\n      variant=\"ghost\"\n      placeholder=\"Ghost\"\n    />\n  </div>`,\n})\nexport class InputVariantsComponent {}\n\nexport default InputVariantsComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

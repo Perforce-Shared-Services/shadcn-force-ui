@@ -4,6 +4,9 @@ import { defineConfig } from "vite"
 import { emberPlugins } from "./src/vite-plugins/ember"
 
 const stubsDir = path.resolve(__dirname, "src/stubs")
+const registryEmberDir = path.resolve(__dirname, "../../packages/registry-ember")
+const registryEmberUiDir = path.join(registryEmberDir, "ui")
+const registryEmberLibDir = path.join(registryEmberDir, "lib")
 
 const embroiderMacrosStub = {
   name: "embroider-macros-stub",
@@ -47,14 +50,24 @@ export default defineConfig({
     },
   },
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
+    // [FORCE-UI] more specific aliases first so "@/ember-ui", "@/ember-lib", "@/ui" and "@/lib"
+    // resolve to the shared registry package instead of being swallowed by the generic
+    // "@" -> src alias. "@/ui" and "@/lib" match what registry-ember/ui/**'s own files import
+    // internally (e.g. sidebar.gts imports "@/ui/button" and "@/lib/utils").
+    alias: [
+      { find: "@/ember-ui", replacement: registryEmberUiDir },
+      { find: "@/ember-lib", replacement: registryEmberLibDir },
+      { find: "@/ui", replacement: registryEmberUiDir },
+      { find: "@/lib", replacement: registryEmberLibDir },
+      { find: "@", replacement: path.resolve(__dirname, "src") },
+    ],
     extensions: [".mjs", ".gjs", ".js", ".mts", ".gts", ".ts", ".json"],
   },
   server: {
     port: 3003,
     cors: true,
+    // [FORCE-UI] allow Vite to read files outside the app root (registry-ember package)
+    fs: { allow: [path.resolve(__dirname, "../..")] },
   },
   appType: "spa",
 })

@@ -29,10 +29,10 @@
 		{#snippet children()}
 			<Pagination.Content>
 				<Pagination.Item>
-					<Pagination.Previous />
+					<Pagination.PrevButton />
 				</Pagination.Item>
 				<Pagination.Item>
-					<Pagination.Next />
+					<Pagination.NextButton />
 				</Pagination.Item>
 			</Pagination.Content>
 		{/snippet}

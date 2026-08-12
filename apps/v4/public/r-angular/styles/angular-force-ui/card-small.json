@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-small",
+  "title": "Card Small",
+  "dependencies": [],
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/card-small.ts",
+      "content": "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/ui/card\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-card-small\",\n  standalone: true,\n  imports: [Card, CardHeader, CardTitle, CardDescription, CardContent],\n  template: `<div uiCard size=\"sm\" class=\"w-full max-w-sm\">\n    <div uiCardHeader>\n      <h3 uiCardTitle>Workspace settings</h3>\n      <p uiCardDescription>Manage how this workspace syncs.</p>\n    </div>\n    <div uiCardContent>\n      <p class=\"text-sm text-muted-foreground\">Compact size card.</p>\n    </div>\n  </div>`,\n})\nexport class CardSmallComponent {}\n\nexport default CardSmallComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-variants",
+  "title": "Alert Variants",
+  "dependencies": [],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/alert-variants.ts",
+      "content": "import { Alert, AlertDescription, AlertTitle } from \"@/ui/alert\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-alert-variants\",\n  standalone: true,\n  imports: [Alert, AlertTitle, AlertDescription],\n  template: ` <div class=\"flex w-full flex-col gap-3\">\n    <div uiAlert variant=\"info\">\n      <div uiAlertTitle>Info</div>\n      <div uiAlertDescription>Some additional context.</div>\n    </div>\n    <div uiAlert variant=\"success\">\n      <div uiAlertTitle>Success</div>\n      <div uiAlertDescription>Your action was completed.</div>\n    </div>\n    <div uiAlert variant=\"warning\">\n      <div uiAlertTitle>Warning</div>\n      <div uiAlertDescription>Proceed with caution.</div>\n    </div>\n    <div uiAlert variant=\"destructive\">\n      <div uiAlertTitle>Error</div>\n      <div uiAlertDescription>Something went wrong.</div>\n    </div>\n  </div>`,\n})\nexport class AlertVariantsComponent {}\n\nexport default AlertVariantsComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

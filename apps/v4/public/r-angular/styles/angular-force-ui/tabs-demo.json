@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-demo",
+  "title": "Tabs Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/tabs-demo.ts",
+      "content": "import { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/ui/tabs\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-tabs-demo\",\n  standalone: true,\n  imports: [Tabs, TabsList, TabsTrigger, TabsContent],\n  template: ` <div uiTabs defaultValue=\"account\" class=\"w-full max-w-sm\">\n    <div uiTabsList class=\"w-full\">\n      <button uiTabsTrigger value=\"account\">Account</button>\n      <button uiTabsTrigger value=\"password\">Password</button>\n    </div>\n    <div uiTabsContent value=\"account\" class=\"mt-2 p-3 text-sm\">\n      Make changes to your account here.\n    </div>\n    <div uiTabsContent value=\"password\" class=\"mt-2 p-3 text-sm\">\n      Change your password here.\n    </div>\n  </div>`,\n})\nexport class TabsDemoComponent {}\n\nexport default TabsDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

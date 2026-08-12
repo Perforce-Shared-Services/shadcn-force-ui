@@ -3,7 +3,7 @@
 	import * as Field from "@/svelte-ui/field/index.js";
 </script>
 
-<Field.Root class="mx-auto max-w-xs">
+<Field.Field class="mx-auto max-w-xs">
 	<Field.Label for="input-otp-rtl">رمز التحقق</Field.Label>
 	<InputOTP.Root maxlength={6} value="123456" dir="rtl" id="input-otp-rtl">
 		{#snippet children({ cells })}
@@ -14,4 +14,4 @@
 			</InputOTP.Group>
 		{/snippet}
 	</InputOTP.Root>
-</Field.Root>
+</Field.Field>

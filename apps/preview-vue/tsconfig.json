@@ -12,6 +12,8 @@
     "noEmit": true,
     "strict": true,
     "paths": {
+      "@/ui/*": ["../../packages/registry-vue/ui/*"],
+      "@/lib/*": ["../../packages/registry-vue/lib/*"],
       "@/*": ["./src/*"]
     }
   },

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-button",
+  "title": "Spinner Button",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/spinner-button.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Spinner } from \"@/ui/spinner\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-spinner-button\",\n  standalone: true,\n  imports: [Button, Spinner],\n  template: `<div class=\"flex flex-wrap items-center gap-3\">\n    <button uiButton [loading]=\"true\">Submitting…</button\n    ><button uiButton variant=\"outline\" [loading]=\"true\">Syncing…</button\n    ><button uiButton variant=\"ghost\">\n      <span uiSpinner color=\"inherit\" data-icon=\"inline-start\"></span>Loading\n    </button>\n  </div>`,\n})\nexport class SpinnerButtonComponent {}\n\nexport default SpinnerButtonComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

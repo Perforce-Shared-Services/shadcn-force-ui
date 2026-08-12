@@ -12,6 +12,10 @@
     "noEmit": true,
     "strict": true,
     "paths": {
+      "@/ember-ui/*": ["../../packages/registry-ember/ui/*"],
+      "@/ember-lib/*": ["../../packages/registry-ember/lib/*"],
+      "@/ui/*": ["../../packages/registry-ember/ui/*"],
+      "@/lib/*": ["../../packages/registry-ember/lib/*"],
       "@/*": ["./src/*"]
     }
   },

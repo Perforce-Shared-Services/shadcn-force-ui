@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "empty-demo",
+  "title": "Empty Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "empty"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/empty-demo.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport {\n  Empty,\n  EmptyContent,\n  EmptyDescription,\n  EmptyHeader,\n  EmptyMedia,\n  EmptyTitle,\n} from \"@/ui/empty\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-empty-demo\",\n  standalone: true,\n  imports: [\n    Empty,\n    EmptyHeader,\n    EmptyMedia,\n    EmptyTitle,\n    EmptyDescription,\n    EmptyContent,\n    Button,\n  ],\n  template: ` <div uiEmpty class=\"border\">\n    <div uiEmptyHeader>\n      <div uiEmptyMedia variant=\"icon\">\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 -960 960 960\"\n        >\n          <path d=\"M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z\" />\n        </svg>\n      </div>\n      <h3 uiEmptyTitle>No files yet</h3>\n      <p uiEmptyDescription>Upload your first file to get started.</p>\n    </div>\n    <div uiEmptyContent><button uiButton>Upload file</button></div>\n  </div>`,\n})\nexport class EmptyDemoComponent {}\n\nexport default EmptyDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

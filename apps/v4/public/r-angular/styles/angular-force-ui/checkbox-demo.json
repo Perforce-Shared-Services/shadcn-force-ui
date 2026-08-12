@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-demo",
+  "title": "Checkbox Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "checkbox",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/checkbox-demo.ts",
+      "content": "import { Checkbox } from \"@/ui/checkbox\"\nimport { Label } from \"@/ui/label\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-checkbox-demo\",\n  standalone: true,\n  imports: [Checkbox, Label],\n  template: ` <div class=\"flex flex-col gap-3\">\n    <div class=\"flex items-center gap-2\">\n      <button uiCheckbox id=\"tos\" [checked]=\"false\"></button>\n      <label uiLabel for=\"tos\">Accept terms and conditions</label>\n    </div>\n    <div class=\"flex items-center gap-2\">\n      <button uiCheckbox id=\"checked-demo\" [checked]=\"true\"></button>\n      <label uiLabel for=\"checked-demo\">Already accepted</label>\n    </div>\n    <div class=\"flex items-center gap-2 opacity-50\">\n      <button uiCheckbox id=\"disabled-demo\" [checked]=\"false\" disabled></button>\n      <label uiLabel for=\"disabled-demo\">Disabled</label>\n    </div>\n  </div>`,\n})\nexport class CheckboxDemoComponent {}\n\nexport default CheckboxDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

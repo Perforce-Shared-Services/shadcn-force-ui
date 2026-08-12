@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/textarea/textarea.variants.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\nexport const textareaVariants = cva(\n  \"flex field-sizing-content min-h-16 w-full rounded-lg border border-input bg-transparent px-2.5 py-2 text-base transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&[readonly]]:border-border [&[readonly]]:bg-muted\",\n  {\n    variants: {\n      variant: {\n        outline: \"border-border hover:border-input\",\n        filled: \"border-border bg-muted hover:border-input dark:bg-muted\",\n        underline:\n          \"rounded-none border-0 border-b border-input bg-transparent px-0 dark:bg-transparent\",\n        ghost:\n          \"border-transparent bg-transparent hover:bg-muted/50 dark:bg-transparent\",\n      },\n    },\n    defaultVariants: { variant: \"outline\" },\n  }\n)\n\nexport type TextareaVariants = VariantProps<typeof textareaVariants>\nexport type TextareaVariant = NonNullable<TextareaVariants[\"variant\"]>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/textarea/textarea.component.ts",
+      "content": "import {\n  booleanAttribute,\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { textareaVariants, type TextareaVariant } from \"./textarea.variants\"\n\n/**\n * Angular port of @force-ui/textarea (radix-force-ui style).\n *\n * Attribute selector on a native <textarea> — usage:\n *   <textarea uiTextarea placeholder=\"Write a message…\"></textarea>\n *   <textarea uiTextarea variant=\"filled\" [resizable]=\"false\"></textarea>\n */\n@Component({\n  selector: \"textarea[uiTextarea]\",\n  standalone: true,\n  template: \"\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"textarea\",\n    \"[attr.data-variant]\": \"variant()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class TextareaComponent {\n  readonly variant = input<TextareaVariant>(\"outline\")\n  readonly resizable = input(true, { transform: booleanAttribute })\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\n      textareaVariants({ variant: this.variant() }),\n      this.resizable() ? \"resize-y\" : \"resize-none\",\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/textarea/textarea.component.html",
+      "content": "",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/textarea/index.ts",
+      "content": "export { TextareaComponent as Textarea } from \"./textarea.component\"\nexport {\n  textareaVariants,\n  type TextareaVariants,\n  type TextareaVariant,\n} from \"./textarea.variants\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea"
+    }
+  },
+  "type": "registry:ui"
+}

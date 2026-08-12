@@ -12,34 +12,19 @@ import { cn } from "@/lib/utils"
 import { useFramework } from "@/hooks/use-framework"
 import { getDefaultBaseForFramework } from "@/registry/frameworks"
 
-// [FORCE-UI] upstream extracted ComponentLink; we keep it but don't use it directly
-// since our version handles unavailable components differently.
-function ComponentLink({
-  component,
-  showNewIndicator,
-}: {
-  component: PageTreePage
-  showNewIndicator: boolean
-}) {
-  const isNew = showNewIndicator && PAGES_NEW.includes(component.url)
-
-  return (
-    <Link
-      href={component.url}
-      className="inline-flex items-center gap-2 text-lg font-medium underline-offset-4 hover:underline md:text-base"
-    >
-      {component.name}
-      {isNew && (
-        <>
-          <span className="sr-only">New</span>
-          <span
-            aria-hidden="true"
-            className="flex size-2 rounded-full bg-blue-500"
-          />
-        </>
-      )}
-    </Link>
+// [FORCE-UI] "New" is a property of the component, not of a particular
+// framework port: PAGES_NEW only ever lists the React base/radix URLs, so
+// matching on a full URL made the indicator wrong for every other framework
+// (and would never fire for them at all once the href is framework-specific).
+// Compare on the trailing slug instead.
+const NEW_COMPONENT_SLUGS = new Set(
+  PAGES_NEW.filter((url) => url.startsWith("/docs/components/")).map((url) =>
+    url.split("/").pop()
   )
+)
+
+function isNewComponent(url: string) {
+  return NEW_COMPONENT_SLUGS.has(url.split("/").pop())
 }
 
 export function ComponentsList({
@@ -54,7 +39,15 @@ export function ComponentsList({
   const currentBase = getDefaultBaseForFramework(framework)
 
   // Get the canonical list (radix has all components).
-  const allComponents = getPagesFromFolder(componentsFolder, "radix")
+  const canonicalComponents = getPagesFromFolder(componentsFolder, "radix")
+
+  // [FORCE-UI] variant was accepted but never read, so the "New Components"
+  // section on /docs/components rendered the entire component list, identical
+  // to "All Components" right below it.
+  const allComponents =
+    variant === "new" ?
+      canonicalComponents.filter((c) => isNewComponent(String(c.url)))
+    : canonicalComponents
 
   // Get the available list for the current base.
   const availableComponents = getPagesFromFolder(componentsFolder, currentBase)
@@ -98,7 +91,7 @@ export function ComponentsList({
             className="inline-flex items-center gap-2 text-lg font-medium underline-offset-4 hover:underline md:text-base"
           >
             {component.name}
-            {PAGES_NEW.includes(component.url) && (
+            {isNewComponent(String(component.url)) && (
               <>
                 <span className="sr-only">New</span>
                 <span

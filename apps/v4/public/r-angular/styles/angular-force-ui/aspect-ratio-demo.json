@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio-demo",
+  "title": "Aspect Ratio Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "aspect-ratio"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/aspect-ratio-demo.ts",
+      "content": "import { AspectRatio } from \"@/ui/aspect-ratio\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-aspect-ratio-demo\",\n  standalone: true,\n  imports: [AspectRatio],\n  template: `<div\n    uiAspectRatio\n    [ratio]=\"16 / 9\"\n    class=\"w-full max-w-sm overflow-hidden rounded-lg bg-muted\"\n  >\n    <img\n      src=\"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800\"\n      alt=\"Mountain\"\n      class=\"size-full object-cover\"\n    />\n  </div>`,\n})\nexport class AspectRatioDemoComponent {}\n\nexport default AspectRatioDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

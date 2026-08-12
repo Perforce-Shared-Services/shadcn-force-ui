@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "registryDependencies": [
+    "toggle"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/toggle-group/toggle-group.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  inject,\n  input,\n} from \"@angular/core\"\nimport { RdxToggle } from \"@radix-ng/primitives/toggle\"\nimport { RdxToggleGroup } from \"@radix-ng/primitives/toggle-group\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport {\n  toggleVariants,\n  type ToggleSize,\n  type ToggleVariant,\n} from \"../toggle/toggle.variants\"\n\nexport type ToggleGroupOrientation = \"horizontal\" | \"vertical\"\n\n/**\n * Angular port of @force-ui/toggle-group (radix-force-ui style).\n *\n * Usage:\n *   <div uiToggleGroup type=\"single\" [(value)]=\"alignment\">\n *     <button uiToggleGroupItem value=\"left\" aria-label=\"Left\">…</button>\n *   </div>\n *\n * Note: ToggleGroupItem uses RdxToggle (not a separate directive in v1.x).\n * Pass value on each item for the group to track selection.\n */\n@Component({\n  selector: \"[uiToggleGroup]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxToggleGroup,\n      inputs: [\"value\", \"disabled\"],\n      outputs: [\"valueChange\", \"onValueChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"toggle-group\",\n    \"[attr.data-variant]\": \"variant()\",\n    \"[attr.data-size]\": \"size()\",\n    \"[attr.data-orientation]\": \"orientation()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class ToggleGroupComponent {\n  readonly variant = input<ToggleVariant>(\"default\")\n  readonly size = input<ToggleSize>(\"default\")\n  readonly orientation = input<ToggleGroupOrientation>(\"horizontal\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-toggle-group group/toggle-group flex items-center\",\n      this.orientation() === \"vertical\" ? \"flex-col\" : \"flex-row\",\n      this.className()\n    )\n  )\n}\n\n@Component({\n  selector: \"button[uiToggleGroupItem]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxToggle,\n      inputs: [\"pressed\", \"defaultPressed\", \"disabled\", \"value\"],\n      outputs: [\"onPressedChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"toggle-group-item\",\n    type: \"button\",\n    \"[attr.data-variant]\": \"resolvedVariant()\",\n    \"[attr.data-size]\": \"resolvedSize()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class ToggleGroupItemComponent {\n  readonly variant = input<ToggleVariant>(\"default\")\n  readonly size = input<ToggleSize>(\"default\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly group = inject(ToggleGroupComponent, { optional: true })\n\n  protected readonly resolvedVariant = computed<ToggleVariant>(\n    () => this.group?.variant() ?? this.variant()\n  )\n  protected readonly resolvedSize = computed<ToggleSize>(\n    () => this.group?.size() ?? this.size()\n  )\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-toggle-group-item shrink-0 focus:z-10 focus-visible:z-10\",\n      toggleVariants({\n        variant: this.resolvedVariant(),\n        size: this.resolvedSize(),\n      }),\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/toggle-group/index.ts",
+      "content": "export {\n  ToggleGroupComponent as ToggleGroup,\n  ToggleGroupItemComponent as ToggleGroupItem,\n  type ToggleGroupOrientation,\n} from \"./toggle-group.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group"
+    }
+  },
+  "type": "registry:ui"
+}

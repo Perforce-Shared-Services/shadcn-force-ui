@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-indeterminate",
+  "title": "Progress Indeterminate",
+  "dependencies": [],
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/progress-indeterminate.ts",
+      "content": "import { Progress } from \"@/ui/progress\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-progress-indeterminate\",\n  standalone: true,\n  imports: [Progress],\n  template: `<div\n    uiProgress\n    [value]=\"null\"\n    aria-label=\"Syncing…\"\n    class=\"w-full max-w-sm\"\n  ></div>`,\n})\nexport class ProgressIndeterminateComponent {}\n\nexport default ProgressIndeterminateComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-demo",
+  "title": "Spinner Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/spinner-demo.ts",
+      "content": "import { Spinner } from \"@/ui/spinner\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-spinner-demo\",\n  standalone: true,\n  imports: [Spinner],\n  template: `<span uiSpinner></span>`,\n})\nexport class SpinnerDemoComponent {}\n\nexport default SpinnerDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

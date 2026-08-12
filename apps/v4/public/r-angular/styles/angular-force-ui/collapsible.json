@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/collapsible/collapsible.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\nimport {\n  RdxCollapsiblePanelDirective,\n  RdxCollapsibleRootDirective,\n  RdxCollapsibleTriggerDirective,\n} from \"@radix-ng/primitives/collapsible\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * Angular port of @force-ui/collapsible (radix-force-ui style).\n * Uses @radix-ng/primitives v1.x API (RdxCollapsiblePanelDirective).\n *\n * Usage:\n *   <div uiCollapsible [(open)]=\"open\">\n *     <button uiCollapsibleTrigger>Toggle</button>\n *     <div uiCollapsibleContent>Collapsible content</div>\n *   </div>\n */\n@Component({\n  selector: \"[uiCollapsible]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxCollapsibleRootDirective,\n      inputs: [\"open\", \"disabled\"],\n      outputs: [\"openChange\", \"onOpenChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"collapsible\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class CollapsibleComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() => cn(this.className()))\n}\n\n@Component({\n  selector: \"[uiCollapsibleTrigger]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [RdxCollapsibleTriggerDirective],\n  host: {\n    \"data-slot\": \"collapsible-trigger\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class CollapsibleTriggerComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() => cn(this.className()))\n}\n\n@Component({\n  selector: \"[uiCollapsibleContent]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [RdxCollapsiblePanelDirective],\n  host: {\n    \"data-slot\": \"collapsible-content\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class CollapsibleContentComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() => cn(this.className()))\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/collapsible/index.ts",
+      "content": "export {\n  CollapsibleComponent as Collapsible,\n  CollapsibleTriggerComponent as CollapsibleTrigger,\n  CollapsibleContentComponent as CollapsibleContent,\n} from \"./collapsible.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible"
+    }
+  },
+  "type": "registry:ui"
+}

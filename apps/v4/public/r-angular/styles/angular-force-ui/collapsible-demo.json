@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-demo",
+  "title": "Collapsible Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "collapsible"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/collapsible-demo.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/ui/collapsible\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-collapsible-demo\",\n  standalone: true,\n  imports: [Button, Collapsible, CollapsibleTrigger, CollapsibleContent],\n  template: ` <div uiCollapsible class=\"flex w-full max-w-sm flex-col gap-2\">\n    <div class=\"flex items-center justify-between\">\n      <span class=\"text-sm font-medium\"\n        >&#64;shadcn starred 3 repositories</span\n      >\n      <button uiCollapsibleTrigger>\n        <button uiButton variant=\"ghost\" size=\"icon-sm\" aria-label=\"Toggle\">\n          <svg\n            aria-hidden=\"true\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            viewBox=\"0 -960 960 960\"\n          >\n            <path d=\"M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z\" />\n          </svg>\n        </button>\n      </button>\n    </div>\n    <div class=\"rounded-md border border-border px-4 py-3 text-sm\">\n      &#64;radix-ui/primitives\n    </div>\n    <div uiCollapsibleContent>\n      <div class=\"flex flex-col gap-2\">\n        <div class=\"rounded-md border border-border px-4 py-3 text-sm\">\n          &#64;radix-ui/colors\n        </div>\n        <div class=\"rounded-md border border-border px-4 py-3 text-sm\">\n          &#64;stitches/react\n        </div>\n      </div>\n    </div>\n  </div>`,\n})\nexport class CollapsibleDemoComponent {}\n\nexport default CollapsibleDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -7,7 +7,7 @@ Force UI is an **internal brand kit** forked from [shadcn/ui](https://github.com
 - `apps/v4/registry/bases/radix/` and `apps/v4/registry/bases/base/` — upstream React component sources. Edit minimally.
 - `apps/v4/registry/styles/style-force-ui.css` — Force UI component styles. Safe to edit freely.
 - `packages/theme-force-ui/src/index.ts` — brand tokens (OKLCH). Edit here for color changes.
-- `packages/registry-{ember,vue,svelte}/` — framework ports. Upstream never touches these.
+- `packages/registry-{ember,vue,svelte,angular}/` — framework ports. Upstream never touches these.
 
 ## [FORCE-UI] marker system
 

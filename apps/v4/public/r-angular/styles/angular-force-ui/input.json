@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/input/input.variants.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\nexport const inputVariants = cva(\n  \"h-8 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none file:inline-flex file:h-6 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&[readonly]]:border-border [&[readonly]]:bg-muted\",\n  {\n    variants: {\n      variant: {\n        outline:\n          \"border-border hover:border-input disabled:bg-muted dark:disabled:bg-muted\",\n        filled: \"border-border bg-muted hover:border-input dark:bg-muted\",\n        underline:\n          \"rounded-none border-0 border-b border-input bg-transparent px-0 dark:bg-transparent\",\n        ghost:\n          \"border-transparent bg-transparent hover:bg-muted/50 dark:bg-transparent\",\n      },\n    },\n    defaultVariants: { variant: \"outline\" },\n  }\n)\n\nexport type InputVariants = VariantProps<typeof inputVariants>\nexport type InputVariant = NonNullable<InputVariants[\"variant\"]>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/input/input.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { inputVariants, type InputVariant } from \"./input.variants\"\n\n/**\n * Angular port of @force-ui/input (radix-force-ui style).\n *\n * Attribute selector on a native <input> — usage:\n *   <input uiInput type=\"email\" placeholder=\"m@example.com\" />\n *   <input uiInput variant=\"filled\" />\n *\n * Four variants: outline (default), filled, underline, ghost.\n * See DIVERGENCES.md for notes on the tiered border approach.\n */\n@Component({\n  selector: \"input[uiInput]\",\n  standalone: true,\n  template: \"\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    \"data-slot\": \"input\",\n    \"[attr.data-variant]\": \"variant()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class InputComponent {\n  readonly variant = input<InputVariant>(\"outline\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly classes = computed(() =>\n    cn(inputVariants({ variant: this.variant() }), this.className())\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/input/input.component.html",
+      "content": "",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/input/index.ts",
+      "content": "export { InputComponent as Input } from \"./input.component\"\nexport {\n  inputVariants,\n  type InputVariants,\n  type InputVariant,\n} from \"./input.variants\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input"
+    }
+  },
+  "type": "registry:ui"
+}

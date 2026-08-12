@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-status",
+  "title": "Badge Status",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/badge-status.ts",
+      "content": "import { Badge } from \"@/ui/badge\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-badge-status\",\n  standalone: true,\n  imports: [Badge],\n  template: `<div class=\"flex flex-wrap gap-2\">\n    <span uiBadge variant=\"success\">Success</span\n    ><span uiBadge variant=\"warning\">Warning</span\n    ><span uiBadge variant=\"destructive\">Error</span\n    ><span uiBadge variant=\"info\">Info</span>\n  </div>`,\n})\nexport class BadgeStatusComponent {}\n\nexport default BadgeStatusComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

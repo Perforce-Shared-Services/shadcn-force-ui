@@ -45,7 +45,7 @@
     "styles/vue-force-ui",
     "styles/svelte-force-ui",
     "styles/ember-force-ui",
-    "preview-server/dist",
+    "styles/angular-force-ui",
     "public/preview"
   ]
 }

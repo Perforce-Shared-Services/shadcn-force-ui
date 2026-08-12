@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/switch/switch.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\nimport { RdxSwitchRoot, RdxSwitchThumb } from \"@radix-ng/primitives/switch\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport type SwitchSize = \"default\" | \"sm\"\n\n/**\n * Angular port of @force-ui/switch (radix-force-ui style).\n *\n * Attribute selector on a native <button> — usage:\n *   <button uiSwitch [(checked)]=\"enabled\"></button>\n *   <button uiSwitch size=\"sm\" [checked]=\"true\"></button>\n */\n@Component({\n  selector: \"button[uiSwitch]\",\n  standalone: true,\n  imports: [RdxSwitchThumb],\n  templateUrl: \"./switch.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxSwitchRoot,\n      inputs: [\"checked\", \"defaultChecked\", \"disabled\", \"required\"],\n      outputs: [\"checkedChange\", \"onCheckedChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"switch\",\n    \"[attr.data-size]\": \"size()\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class SwitchComponent {\n  readonly size = input<SwitchSize>(\"default\")\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n\n  protected readonly thumbClass = computed(() =>\n    cn(\n      \"cn-switch-thumb group/switch pointer-events-none block rounded-full ring-0 transition-transform motion-reduce:transition-none\"\n    )\n  )\n\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-switch group/switch peer relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-colors outline-none focus-visible:ring-3 enabled:cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:ring-3 motion-reduce:transition-none\",\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/switch/switch.component.html",
+      "content": "<span rdxSwitchThumb data-slot=\"switch-thumb\" [class]=\"thumbClass()\"></span>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/switch/index.ts",
+      "content": "export { SwitchComponent as Switch, type SwitchSize } from \"./switch.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch"
+    }
+  },
+  "type": "registry:ui"
+}

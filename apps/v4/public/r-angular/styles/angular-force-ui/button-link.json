@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-link",
+  "title": "Button Link",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-link.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-link\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton variant=\"link\">Link</button>`,\n})\nexport class ButtonLinkComponent {}\n\nexport default ButtonLinkComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

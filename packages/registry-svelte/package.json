@@ -5,7 +5,25 @@
   "description": "Svelte 5 component registry for Force UI",
   "type": "module",
   "dependencies": {
+    "@internationalized/date": "^3.7.0",
+    "@tabler/icons-svelte": "^3.0.0",
+    "@tanstack/table-core": "^8.0.0",
+    "bits-ui": "^2.16.3",
+    "clsx": "^2.1.1",
+    "d3-scale": "^4.0.0",
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-svelte": "^8.0.0",
+    "formsnap": "^2.0.1",
+    "layerchart": "2.0.0-next.43",
+    "mode-watcher": "^0.5.0",
+    "paneforge": "^1.0.2",
     "shadcn": "workspace:*",
+    "svelte": "^5.0.0",
+    "svelte-sonner": "^0.3.0",
+    "sveltekit-superforms": "^2.30.1",
+    "tailwind-merge": "^3.0.0",
+    "tailwind-variants": "^0.3.0",
+    "vaul-svelte": "^0.3.2",
     "zod": "^3.25.76"
   }
 }

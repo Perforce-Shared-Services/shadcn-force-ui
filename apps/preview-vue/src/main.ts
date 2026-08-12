@@ -1,5 +1,5 @@
 import "./styles.css"
-import { syncTheme, getComponentName, reportOverlays } from "./preview-shell"
+import { syncTheme, getComponentName, reportOverlays } from "@force-ui/preview-shell"
 import { createApp } from "vue"
 
 async function renderPreview() {

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-ghost",
+  "title": "Button Ghost",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-ghost.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-ghost\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton variant=\"ghost\">Ghost</button>`,\n})\nexport class ButtonGhostComponent {}\n\nexport default ButtonGhostComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

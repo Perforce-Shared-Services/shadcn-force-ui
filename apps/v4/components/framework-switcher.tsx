@@ -6,9 +6,12 @@ import { usePathname, useRouter } from "next/navigation"
 import { hasComponentForBase } from "@/lib/framework-components"
 import { cn } from "@/lib/utils"
 import { useFramework } from "@/hooks/use-framework"
+import { BASES } from "@/registry/bases"
 import {
+  FRAMEWORKS,
   getDefaultBaseForFramework,
   getFrameworkForBase,
+  type FrameworkName,
 } from "@/registry/frameworks"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
@@ -18,13 +21,22 @@ import {
   DropdownMenuTrigger,
 } from "@/registry/new-york-v4/ui/dropdown-menu"
 
-const FRAMEWORK_OPTIONS = [
-  { value: "react" as const, label: "React" },
-  { value: "vue" as const, label: "Vue" },
-  { value: "svelte" as const, label: "Svelte" },
-  { value: "ember" as const, label: "Ember" },
-  { value: "angular" as const, label: "Angular" }, // [FORCE-UI]
-]
+// [FORCE-UI] generated from FRAMEWORKS table instead of hand-duplicated
+const FRAMEWORK_OPTIONS = FRAMEWORKS.map((f) => ({
+  value: f.name,
+  label: f.title,
+}))
+
+// [FORCE-UI] alternation built from BASES so new bases can't be missed
+const BASE_NAMES_PATTERN = BASES.map((b) =>
+  b.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+).join("|")
+const COMPONENT_BASE_PATH_RE = new RegExp(
+  `/docs/components/(${BASE_NAMES_PATTERN})/`
+)
+const COMPONENT_BASE_SLUG_RE = new RegExp(
+  `/docs/components/(${BASE_NAMES_PATTERN})/(.+)`
+)
 
 export function FrameworkSwitcher({ className }: { className?: string }) {
   const { framework, setFramework } = useFramework()
@@ -33,13 +45,11 @@ export function FrameworkSwitcher({ className }: { className?: string }) {
 
   // Sync framework preference from URL when on a component page.
   React.useEffect(() => {
-    const match = pathname.match(
-      /\/docs\/components\/(radix|base|vue|svelte|ember|angular)\// // [FORCE-UI]
-    )
+    const match = pathname.match(COMPONENT_BASE_PATH_RE)
     if (match) {
       const urlFramework = getFrameworkForBase(match[1]).name
       if (urlFramework !== framework) {
-        setFramework(urlFramework as "react" | "vue" | "svelte" | "ember")
+        setFramework(urlFramework)
       }
     }
   }, [pathname, framework, setFramework])
@@ -47,12 +57,10 @@ export function FrameworkSwitcher({ className }: { className?: string }) {
   const currentLabel =
     FRAMEWORK_OPTIONS.find((o) => o.value === framework)?.label ?? "React"
 
-  function handleSelect(value: "react" | "vue" | "svelte" | "ember" | "angular") { // [FORCE-UI]
+  function handleSelect(value: FrameworkName) {
     setFramework(value)
 
-    const componentMatch = pathname.match(
-      /\/docs\/components\/(radix|base|vue|svelte|ember|angular)\/(.+)/ // [FORCE-UI]
-    )
+    const componentMatch = pathname.match(COMPONENT_BASE_SLUG_RE)
     if (componentMatch) {
       const component = componentMatch[2]
       const targetBase = getDefaultBaseForFramework(value)

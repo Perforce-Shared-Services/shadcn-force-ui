@@ -12,6 +12,7 @@ import { Index as StylesIndex } from "@/registry/__index__"
 import { BASES } from "@/registry/bases"
 import { getComponent as getBasesComponent } from "@/registry/bases/__components__"
 import { Index as BasesIndex } from "@/registry/bases/__index__"
+import { PREVIEW_FRAMEWORKS } from "@/registry/frameworks"
 
 // LRU cache for cross-request caching of registry items.
 // File reads are I/O-bound, so caching improves dev server performance.
@@ -201,8 +202,28 @@ export async function getRegistryItem(name: string, styleName: string) {
   return parsed.data
 }
 
+// [FORCE-UI] Framework-port files are recorded in the generated index as
+// "registry/bases/{framework}/..." for historical reasons, but the actual
+// sources live in packages/registry-{framework}/... (see
+// packages/registry-{framework}/). Rewrite the path used for reading the
+// file on disk only — the path used for display/relative-linking elsewhere
+// is left untouched.
+function resolveRegistrySourcePath(filePath: string) {
+  for (const framework of PREVIEW_FRAMEWORKS) {
+    const prefix = `registry/bases/${framework.name}/`
+    if (filePath.startsWith(prefix)) {
+      return filePath.replace(
+        prefix,
+        `../../packages/${framework.registryPackage}/`
+      )
+    }
+  }
+
+  return filePath
+}
+
 async function getFileContent(file: z.infer<typeof registryItemFileSchema>) {
-  let code = await fs.readFile(file.path, "utf-8")
+  let code = await fs.readFile(resolveRegistrySourcePath(file.path), "utf-8")
 
   // Some registry items uses default export.
   // We want to use named export instead.

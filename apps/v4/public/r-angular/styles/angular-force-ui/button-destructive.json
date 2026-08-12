@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-destructive",
+  "title": "Button Destructive",
+  "dependencies": [],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/button-destructive.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-button-destructive\",\n  standalone: true,\n  imports: [Button],\n  template: `<button uiButton variant=\"destructive\">Delete</button>`,\n})\nexport class ButtonDestructiveComponent {}\n\nexport default ButtonDestructiveComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

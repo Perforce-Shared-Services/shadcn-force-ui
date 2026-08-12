@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-colors",
+  "title": "Spinner Colors",
+  "dependencies": [],
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/spinner-colors.ts",
+      "content": "import { Spinner } from \"@/ui/spinner\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-spinner-colors\",\n  standalone: true,\n  imports: [Spinner],\n  template: `<div class=\"flex items-center gap-4\">\n    <span uiSpinner color=\"default\" size=\"md\"></span\n    ><span uiSpinner color=\"primary\" size=\"md\"></span>\n    <div class=\"rounded-lg bg-primary p-2\">\n      <span uiSpinner color=\"onPrimary\" size=\"md\"></span>\n    </div>\n  </div>`,\n})\nexport class SpinnerColorsComponent {}\n\nexport default SpinnerColorsComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

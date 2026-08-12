@@ -1,11 +1,13 @@
 import { registryItemSchema, type Registry } from "shadcn/schema"
 import { z } from "zod"
 
+import { FORCE_UI_STYLE_BASE } from "../registry-shared/style"
+import { examples } from "./examples/_registry"
 import { lib } from "./lib/_registry"
 import { ui } from "./ui/_registry"
 
 const ANGULAR_STYLE = {
-  type: "registry:style",
+  ...FORCE_UI_STYLE_BASE,
   dependencies: [
     "@angular/core",
     "@angular/common",
@@ -13,9 +15,6 @@ const ANGULAR_STYLE = {
     "@radix-ng/primitives",
     "class-variance-authority",
   ],
-  registryDependencies: ["utils"],
-  cssVars: {},
-  files: [],
 }
 
 export const registry = {
@@ -31,6 +30,7 @@ export const registry = {
       ...ANGULAR_STYLE,
     },
     ...ui,
+    ...examples,
     ...lib,
   ]),
 } satisfies Registry

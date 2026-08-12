@@ -1,7 +1,7 @@
 import type { VariantProps } from "class-variance-authority"
 import { cva } from "class-variance-authority"
 
-
+export { Alert, AlertTitle, AlertDescription, AlertAction } from "./alert"
 
 export const alertVariants = cva("cn-alert w-full relative group/alert", {
   variants: {

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-demo",
+  "title": "Avatar Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/avatar-demo.ts",
+      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/ui/avatar\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-avatar-demo\",\n  standalone: true,\n  imports: [Avatar, AvatarImage, AvatarFallback],\n  template: `<span uiAvatar\n    ><img uiAvatarImage src=\"https://github.com/shadcn.png\" alt=\"shadcn\" /><span\n      uiAvatarFallback\n      >SC</span\n    ></span\n  >`,\n})\nexport class AvatarDemoComponent {}\n\nexport default AvatarDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

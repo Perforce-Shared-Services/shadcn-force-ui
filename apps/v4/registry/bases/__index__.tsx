@@ -27121,6 +27121,471 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    accordion: {
+      name: "accordion",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/accordion/accordion.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/accordion-trigger.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/accordion-content.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/accordion/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/accordion",
+        },
+      },
+    },
+    checkbox: {
+      name: "checkbox",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/checkbox/checkbox.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/checkbox/checkbox.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/checkbox/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/checkbox",
+        },
+      },
+    },
+    collapsible: {
+      name: "collapsible",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/collapsible/collapsible.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/collapsible/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/collapsible",
+        },
+      },
+    },
+    "radio-group": {
+      name: "radio-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/radio-group/radio-group.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/radio-group/radio-group-item.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/radio-group/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group",
+        },
+      },
+    },
+    switch: {
+      name: "switch",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/switch/switch.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/switch/switch.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/switch/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/switch",
+        },
+      },
+    },
+    tabs: {
+      name: "tabs",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/tabs/tabs.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/tabs/tabs.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/tabs/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tabs",
+        },
+      },
+    },
+    toggle: {
+      name: "toggle",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/toggle/toggle.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle/toggle.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle",
+        },
+      },
+    },
+    "toggle-group": {
+      name: "toggle-group",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["toggle"],
+      files: [
+        {
+          path: "registry/bases/angular/ui/toggle-group/toggle-group.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/toggle-group/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/toggle-group",
+        },
+      },
+    },
+    alert: {
+      name: "alert",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/alert/alert.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.icons.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/alert.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/alert/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert",
+        },
+      },
+    },
+    avatar: {
+      name: "avatar",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/avatar/avatar.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/avatar/avatar-fallback.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/avatar/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/avatar",
+        },
+      },
+    },
+    input: {
+      name: "input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/input/input.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/input.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/input.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/input/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input",
+        },
+      },
+    },
+    textarea: {
+      name: "textarea",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/textarea.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/textarea/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/textarea",
+        },
+      },
+    },
+    progress: {
+      name: "progress",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/progress/progress.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/progress/progress.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/progress/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/progress",
+        },
+      },
+    },
+    "aspect-ratio": {
+      name: "aspect-ratio",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/aspect-ratio.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/aspect-ratio.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/aspect-ratio/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/aspect-ratio",
+        },
+      },
+    },
+    empty: {
+      name: "empty",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/empty/empty.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/empty/empty.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/empty/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty",
+        },
+      },
+    },
     spinner: {
       name: "spinner",
       title: "undefined",
@@ -27155,6 +27620,774 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/spinner",
         },
       },
+    },
+    "accordion-demo": {
+      name: "accordion-demo",
+      title: "Accordion Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["accordion"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/accordion-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-demo": {
+      name: "alert-demo",
+      title: "Alert Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/alert-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-variants": {
+      name: "alert-variants",
+      title: "Alert Variants",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/alert-variants.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "aspect-ratio-demo": {
+      name: "aspect-ratio-demo",
+      title: "Aspect Ratio Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["aspect-ratio"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/aspect-ratio-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-demo": {
+      name: "avatar-demo",
+      title: "Avatar Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/avatar-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group": {
+      name: "avatar-group",
+      title: "Avatar Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/avatar-group.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-demo": {
+      name: "badge-demo",
+      title: "Badge Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/badge-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-icon": {
+      name: "badge-icon",
+      title: "Badge Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/badge-icon.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-solid": {
+      name: "badge-solid",
+      title: "Badge Solid",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/badge-solid.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-status": {
+      name: "badge-status",
+      title: "Badge Status",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/badge-status.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-variants": {
+      name: "badge-variants",
+      title: "Badge Variants",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/badge-variants.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-default": {
+      name: "button-default",
+      title: "Button Default",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-default.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-demo": {
+      name: "button-demo",
+      title: "Button Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-destructive": {
+      name: "button-destructive",
+      title: "Button Destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-destructive.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-ghost": {
+      name: "button-ghost",
+      title: "Button Ghost",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-ghost.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-icon": {
+      name: "button-icon",
+      title: "Button Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-icon.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-link": {
+      name: "button-link",
+      title: "Button Link",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-link.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-outline": {
+      name: "button-outline",
+      title: "Button Outline",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-outline.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-secondary": {
+      name: "button-secondary",
+      title: "Button Secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-secondary.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-size": {
+      name: "button-size",
+      title: "Button Size",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-size.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-spinner": {
+      name: "button-spinner",
+      title: "Button Spinner",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-spinner.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-with-icon": {
+      name: "button-with-icon",
+      title: "Button With Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/button-with-icon.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "card-demo": {
+      name: "card-demo",
+      title: "Card Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "card"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/card-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "card-small": {
+      name: "card-small",
+      title: "Card Small",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["card"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/card-small.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "checkbox-demo": {
+      name: "checkbox-demo",
+      title: "Checkbox Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["checkbox", "label"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/checkbox-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "collapsible-demo": {
+      name: "collapsible-demo",
+      title: "Collapsible Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "collapsible"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/collapsible-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "empty-demo": {
+      name: "empty-demo",
+      title: "Empty Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "empty"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/empty-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-demo": {
+      name: "input-demo",
+      title: "Input Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["input", "label"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/input-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-variants": {
+      name: "input-variants",
+      title: "Input Variants",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["input"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/input-variants.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "kbd-demo": {
+      name: "kbd-demo",
+      title: "Kbd Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["kbd"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/kbd-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "kbd-group": {
+      name: "kbd-group",
+      title: "Kbd Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["kbd"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/kbd-group.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "kbd-primary": {
+      name: "kbd-primary",
+      title: "Kbd Primary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "kbd"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/kbd-primary.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "label-demo": {
+      name: "label-demo",
+      title: "Label Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["label"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/label-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "progress-demo": {
+      name: "progress-demo",
+      title: "Progress Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["progress"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/progress-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "progress-indeterminate": {
+      name: "progress-indeterminate",
+      title: "Progress Indeterminate",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["progress"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/progress-indeterminate.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "radio-group-demo": {
+      name: "radio-group-demo",
+      title: "Radio Group Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["label", "radio-group"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/radio-group-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "separator-demo": {
+      name: "separator-demo",
+      title: "Separator Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["separator"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/separator-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "separator-vertical": {
+      name: "separator-vertical",
+      title: "Separator Vertical",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["separator"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/separator-vertical.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "skeleton-demo": {
+      name: "skeleton-demo",
+      title: "Skeleton Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["skeleton"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/skeleton-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "spinner-button": {
+      name: "spinner-button",
+      title: "Spinner Button",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "spinner"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/spinner-button.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "spinner-colors": {
+      name: "spinner-colors",
+      title: "Spinner Colors",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["spinner"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/spinner-colors.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "spinner-demo": {
+      name: "spinner-demo",
+      title: "Spinner Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["spinner"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/spinner-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "spinner-sizes": {
+      name: "spinner-sizes",
+      title: "Spinner Sizes",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["spinner"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/spinner-sizes.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "switch-demo": {
+      name: "switch-demo",
+      title: "Switch Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["label", "switch"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/switch-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "tabs-demo": {
+      name: "tabs-demo",
+      title: "Tabs Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["tabs"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/tabs-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "textarea-demo": {
+      name: "textarea-demo",
+      title: "Textarea Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["label", "textarea"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/textarea-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "toggle-demo": {
+      name: "toggle-demo",
+      title: "Toggle Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["toggle"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/toggle-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "toggle-group-demo": {
+      name: "toggle-group-demo",
+      title: "Toggle Group Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["toggle-group"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/toggle-group-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
     },
     utils: {
       name: "utils",

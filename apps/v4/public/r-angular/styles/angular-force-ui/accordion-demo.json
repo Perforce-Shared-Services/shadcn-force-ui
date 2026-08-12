@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-demo",
+  "title": "Accordion Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "accordion"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/accordion-demo.ts",
+      "content": "import {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/ui/accordion\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-accordion-demo\",\n  standalone: true,\n  imports: [Accordion, AccordionItem, AccordionTrigger, AccordionContent],\n  template: ` <div\n    uiAccordion\n    type=\"single\"\n    collapsible\n    class=\"w-full max-w-sm\"\n  >\n    <div uiAccordionItem value=\"item-1\">\n      <div uiAccordionTrigger>Is it accessible?</div>\n      <div uiAccordionContent>\n        Yes. It adheres to the WAI-ARIA design pattern.\n      </div>\n    </div>\n    <div uiAccordionItem value=\"item-2\">\n      <div uiAccordionTrigger>Is it styled?</div>\n      <div uiAccordionContent>\n        Yes. It comes with default styles that match the other components.\n      </div>\n    </div>\n    <div uiAccordionItem value=\"item-3\">\n      <div uiAccordionTrigger>Is it animated?</div>\n      <div uiAccordionContent>\n        Yes. It's animated by default, but you can disable it if you prefer.\n      </div>\n    </div>\n  </div>`,\n})\nexport class AccordionDemoComponent {}\n\nexport default AccordionDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

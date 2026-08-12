@@ -128,3 +128,103 @@ jobs:
         run: pnpm --filter=v4 registry:build --style all
 
       - run: pnpm typecheck
+
+  # [FORCE-UI] Mechanical checks for the preview/demo/registry wiring
+  # documented in .claude/commands/review-force-ui-variants.md: undefined
+  # cn-* marker classes, ComponentPreview/ComponentSource call sites that
+  # don't resolve to a real demo or registry file, and cross-framework
+  # variant drift. See apps/v4/scripts/validate-previews.mts.
+  validate-previews:
+    runs-on: ubuntu-latest
+    name: pnpm validate:previews
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 10.33.4
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
+
+      # [FORCE-UI] Blocking: this one is generated, so drift is always a real
+      # bug with a mechanical fix (`pnpm --filter=v4 framework-components`).
+      # A stale manifest silently hides component pages from the framework
+      # switcher, which is how vue lost 10 pages and aria lost all 61.
+      - run: pnpm --filter=v4 framework-components:check
+
+      # [FORCE-UI] Non-blocking for now: the checks are correct but surface a
+      # backlog of pre-existing findings (undefined cn-* classes, dead
+      # ComponentSource references). Keeping the job visible-but-green means
+      # the report shows up on every run while the backlog is triaged. Flip
+      # continue-on-error off once the existing findings are cleared.
+      - run: pnpm --filter=v4 validate:previews
+        continue-on-error: true
+
+  # [FORCE-UI] Builds the four framework preview Vite apps the same way
+  # `pnpm --filter=v4 preview-server:build` does for a real deploy. Nothing
+  # else in CI compiles these apps, so a missing demo file or an unknown
+  # Tailwind utility in a preview app previously shipped undetected.
+  build-previews:
+    runs-on: ubuntu-latest
+    name: pnpm preview-server:build
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 10.33.4
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build packages
+        run: pnpm build:packages
+
+      # Builds preview-vue/svelte/ember/angular one at a time
+      # (--concurrency=1, same as the production build) to keep peak memory
+      # usage down, then copies each dist/ into apps/v4/public/preview/.
+      - name: Build preview apps
+        run: pnpm --filter=v4 preview-server:build

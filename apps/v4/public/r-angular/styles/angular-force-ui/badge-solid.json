@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-solid",
+  "title": "Badge Solid",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/badge-solid.ts",
+      "content": "import { Badge } from \"@/ui/badge\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-badge-solid\",\n  standalone: true,\n  imports: [Badge],\n  template: `<div class=\"flex flex-wrap gap-2\">\n    <span uiBadge variant=\"success-solid\">Deployed</span\n    ><span uiBadge variant=\"warning-solid\">Expiring</span\n    ><span uiBadge variant=\"info-solid\">Beta</span\n    ><span uiBadge variant=\"error-solid\">Failed</span>\n  </div>`,\n})\nexport class BadgeSolidComponent {}\n\nexport default BadgeSolidComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

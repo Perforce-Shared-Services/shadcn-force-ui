@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group",
+  "dependencies": [
+    "@radix-ng/primitives"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/ui/radio-group/radio-group.component.ts",
+      "content": "import {\n  ChangeDetectionStrategy,\n  Component,\n  computed,\n  input,\n} from \"@angular/core\"\nimport {\n  RdxRadioGroupDirective,\n  RdxRadioIndicatorDirective,\n  RdxRadioItemDirective,\n} from \"@radix-ng/primitives/radio\"\n\nimport { cn } from \"@/lib/utils\"\n\n/**\n * Angular port of @force-ui/radio-group (radix-force-ui style).\n *\n * Usage:\n *   <div uiRadioGroup [(value)]=\"selected\">\n *     <button uiRadioGroupItem value=\"option-1\"></button>\n *     <label>Option 1</label>\n *   </div>\n */\n@Component({\n  selector: \"[uiRadioGroup]\",\n  standalone: true,\n  template: \"<ng-content />\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxRadioGroupDirective,\n      inputs: [\"value\", \"defaultValue\", \"disabled\", \"required\", \"orientation\"],\n      outputs: [\"valueChange\", \"onValueChange\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"radio-group\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class RadioGroupComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\"cn-radio-group grid w-full\", this.className())\n  )\n}\n\n@Component({\n  selector: \"button[uiRadioGroupItem]\",\n  standalone: true,\n  imports: [RdxRadioIndicatorDirective],\n  templateUrl: \"./radio-group-item.component.html\",\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  hostDirectives: [\n    {\n      directive: RdxRadioItemDirective,\n      inputs: [\"value\", \"id\", \"required\", \"disabled\"],\n    },\n  ],\n  host: {\n    \"data-slot\": \"radio-group-item\",\n    \"[class]\": \"classes()\",\n  },\n})\nexport class RadioGroupItemComponent {\n  readonly className = input<string | undefined>(undefined, { alias: \"class\" })\n  protected readonly classes = computed(() =>\n    cn(\n      \"cn-radio-group-item peer relative flex aspect-square shrink-0 cursor-pointer rounded-full border transition-colors outline-none focus-visible:ring-3 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:ring-3 motion-reduce:transition-none\",\n      this.className()\n    )\n  )\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/radio-group/radio-group-item.component.html",
+      "content": "<span\n  rdxRadioIndicator\n  data-slot=\"radio-group-indicator\"\n  aria-hidden=\"true\"\n  class=\"cn-radio-group-indicator transition-transform motion-reduce:transition-none data-checked:scale-100 data-unchecked:scale-0\"\n>\n  <span class=\"cn-radio-group-indicator-icon\"></span>\n</span>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/angular-force-ui/ui/radio-group/index.ts",
+      "content": "export {\n  RadioGroupComponent as RadioGroup,\n  RadioGroupItemComponent as RadioGroupItem,\n} from \"./radio-group.component\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "meta": {
+    "links": {
+      "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/radio-group"
+    }
+  },
+  "type": "registry:ui"
+}

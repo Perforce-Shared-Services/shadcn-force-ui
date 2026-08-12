@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-demo",
+  "title": "Progress Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/progress-demo.ts",
+      "content": "import { Progress } from \"@/ui/progress\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-progress-demo\",\n  standalone: true,\n  imports: [Progress],\n  template: `<div\n    uiProgress\n    [value]=\"75\"\n    aria-label=\"Uploading (75%)\"\n    class=\"w-full max-w-sm\"\n  ></div>`,\n})\nexport class ProgressDemoComponent {}\n\nexport default ProgressDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

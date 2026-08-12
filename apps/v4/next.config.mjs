@@ -213,22 +213,16 @@ const nextConfig = {
   rewrites() {
     return {
       beforeFiles: [
+        // [FORCE-UI] Single parameterized rewrite for every framework preview
+        // SPA (replaces one hardcoded entry per framework). ":framework" is a
+        // plain path segment (e.g. vue/svelte/ember/angular) so a new
+        // framework's preview needs no edit here. The required ":path"
+        // segment (with the negative lookahead excluding "_assets") means
+        // this never matches the bare "/preview/index.html" landing page,
+        // which has no trailing segments.
         {
-          source: "/preview/vue/:path((?!_assets).*)",
-          destination: "/preview/vue/index.html",
-        },
-        {
-          source: "/preview/svelte/:path((?!_assets).*)",
-          destination: "/preview/svelte/index.html",
-        },
-        {
-          source: "/preview/ember/:path((?!_assets).*)",
-          destination: "/preview/ember/index.html",
-        },
-        // [FORCE-UI] Angular preview SPA routing
-        {
-          source: "/preview/angular/:path((?!_assets).*)",
-          destination: "/preview/angular/index.html",
+          source: "/preview/:framework/:path((?!_assets).*)",
+          destination: "/preview/:framework/index.html",
         },
       ],
       afterFiles: [

@@ -12,6 +12,9 @@
     "emitDecoratorMetadata": false,
     "types": ["vite/client"],
     "paths": {
+      "@/angular-ui/*": ["../../packages/registry-angular/ui/*"],
+      "@/lib/*": ["../../packages/registry-angular/lib/*"],
+      "@force-ui/preview-shell": ["../../packages/preview-shell/src/preview-shell.ts"],
       "@/*": ["./src/*"]
     }
   },

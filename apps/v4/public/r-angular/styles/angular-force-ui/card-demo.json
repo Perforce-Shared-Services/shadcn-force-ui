@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-demo",
+  "title": "Card Demo",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/card-demo.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport {\n  Card,\n  CardAction,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/ui/card\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-card-demo\",\n  standalone: true,\n  imports: [\n    Button,\n    Card,\n    CardHeader,\n    CardTitle,\n    CardDescription,\n    CardAction,\n    CardContent,\n    CardFooter,\n  ],\n  template: ` <div uiCard class=\"w-full max-w-sm\">\n    <div uiCardHeader>\n      <h3 uiCardTitle>Login to your account</h3>\n      <p uiCardDescription>Enter your email below to login</p>\n      <div uiCardAction><button uiButton variant=\"link\">Sign Up</button></div>\n    </div>\n    <div uiCardContent>\n      <div class=\"grid w-full items-center gap-4\">\n        <div class=\"flex flex-col space-y-1.5\">\n          <label class=\"text-sm font-medium\" for=\"email\">Email</label>\n          <input\n            id=\"email\"\n            type=\"email\"\n            placeholder=\"m@example.com\"\n            class=\"flex h-8 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm placeholder:text-muted-foreground\"\n          />\n        </div>\n      </div>\n    </div>\n    <div uiCardFooter class=\"flex-col gap-2\">\n      <button uiButton class=\"w-full\">Login</button>\n      <button uiButton variant=\"outline\" class=\"w-full\">\n        Login with Google\n      </button>\n    </div>\n  </div>`,\n})\nexport class CardDemoComponent {}\n\nexport default CardDemoComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
