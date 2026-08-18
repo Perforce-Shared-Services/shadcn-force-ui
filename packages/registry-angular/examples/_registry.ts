@@ -671,6 +671,51 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "table-demo",
+    title: "Table Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/table-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "table",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "table-footer",
+    title: "Table Footer",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/table-footer.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "table",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "table-rtl",
+    title: "Table Rtl",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/table-rtl.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "table",
+    ],
+    dependencies: [],
+  },
+  {
     name: "tabs-demo",
     title: "Tabs Demo",
     type: "registry:example",

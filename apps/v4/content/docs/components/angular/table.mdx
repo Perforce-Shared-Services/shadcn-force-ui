@@ -1,0 +1,164 @@
+---
+title: Table
+description: A responsive table component.
+base: angular
+component: true
+---
+
+<ComponentPreview
+  framework="angular"
+  name="table-demo"
+  previewClassName="h-[30rem]"
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/table
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="table" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableContainer,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+```
+
+```html
+<div uiTableContainer>
+  <table uiTable>
+    <caption uiTableCaption>
+      A list of your recent invoices.
+    </caption>
+    <thead uiTableHeader>
+      <tr uiTableRow>
+        <th uiTableHead class="w-[100px]">Invoice</th>
+        <th uiTableHead>Status</th>
+      </tr>
+    </thead>
+    <tbody uiTableBody>
+      <tr uiTableRow>
+        <td uiTableCell class="font-medium">INV001</td>
+        <td uiTableCell>Paid</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+Every part is an attribute selector on the native table element it styles, so the
+markup stays a real `<table>` for assistive technology. Unlike the React, Vue and
+Svelte ports — where `Table` renders the scroll container itself — Angular requires
+the `[uiTableContainer]` wrapper to be written explicitly, because an attribute
+selector cannot wrap its own host element.
+
+## Composition
+
+Use the following composition to build a `Table`:
+
+```text
+[uiTableContainer]
+└── [uiTable]
+    ├── [uiTableCaption]
+    ├── [uiTableHeader]
+    │   └── [uiTableRow]
+    │       ├── [uiTableHead]
+    │       ├── [uiTableHead]
+    │       ├── [uiTableHead]
+    │       └── [uiTableHead]
+    ├── [uiTableBody]
+    │   └── [uiTableRow]
+    │       ├── [uiTableCell]
+    │       ├── [uiTableCell]
+    │       ├── [uiTableCell]
+    │       └── [uiTableCell]
+    └── [uiTableFooter]
+        └── [uiTableRow]
+            ├── [uiTableCell]
+            └── [uiTableCell]
+```
+
+## Footer
+
+Use a `<tfoot uiTableFooter>` element to add a summary row to the table.
+
+<ComponentPreview framework="angular" name="table-footer" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="table-rtl"
+  direction="rtl"
+  previewClassName="h-auto"
+/>
+
+## API Reference
+
+Every part accepts a `class` input that is merged with the part's own classes. No
+other inputs are added on top of the native element, so all native attributes
+(`colspan`, `scope`, `dir`, …) are written directly on the host element.
+
+### TableContainer
+
+Angular-only part. Renders the scroll container that React's `Table` renders
+implicitly; it must wrap `[uiTable]`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+### Table
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+### TableHeader · TableBody · TableFooter
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+### TableRow · TableHead · TableCell · TableCaption
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
