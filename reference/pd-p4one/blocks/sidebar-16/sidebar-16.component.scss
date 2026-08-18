@@ -1,0 +1,17 @@
+@reference "../../../tailwind.css";
+
+// `ui/sidebar`'s `[uiSidebar]` component only forwards its `class` input onto
+// the outer display-toggle host (`<nav uiSidebar>`) — the element that
+// actually carries `position: fixed` + `inset-y-0` is an INTERNAL child div
+// (`[data-slot="sidebar-container"]`) with no exposed class-override surface.
+// A plain `class="top-(--header-height)! h-[...]!"` on `<nav uiSidebar>`
+// therefore lands on an element that's `position: static` — the override has
+// zero effect, and the sidebar renders under the sticky header (found via
+// `getComputedStyle` showing `position: static` on the host, not by reading
+// the class string, which looked correct). `::ng-deep` is the sanctioned
+// escape hatch for exactly this case per `app/CLAUDE.md`'s styling rules
+// (overriding a child primitive's internal element with no exposed API).
+::ng-deep [data-slot='sidebar-container'] {
+  top: var(--header-height) !important;
+  height: calc(100svh - var(--header-height)) !important;
+}

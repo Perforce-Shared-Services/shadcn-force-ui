@@ -1,0 +1,1054 @@
+/* Tailwind v4 entry. Lives in its own .css file (outside the SCSS pipeline)
+ * because Sass swallows `@import "tailwindcss"` before the v4 PostCSS plugin
+ * can recognize it as the framework entry point. Listed alongside styles.scss
+ * in angular.json's "styles" array.
+ *
+ * Component .scss files that use `@apply` need `@reference "tailwindcss";`
+ * at their top so v4 knows about the utility/theme tokens defined here.
+ */
+
+@import "tailwindcss";
+
+/* Force UI: tw-animate-css ships the keyframe utilities that the `cn-*`
+ * component classes below reference (fade-in/out, zoom, slide, etc.). */
+@import "tw-animate-css";
+
+/* Also scan the release-notes markdown that lives outside src/. */
+@source "../extra/releasenotes.md";
+
+@theme {
+  /* Text font — Noto Sans (matches Figma). Font files loaded via index.html
+     (app) + .storybook/preview-head.html (Storybook). Tailwind preflight binds
+     this to <html>, so body + all `font-sans` utilities inherit it. */
+  --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* p4one palette */
+  --color-p4one-lighterblue: rgb(50, 116, 192);
+  --color-p4one-lightblue:   rgb(45, 105, 173);
+  --color-p4one-blue:        rgb(16, 51, 147);
+  --color-p4one-mutedblue:   rgb(63, 92, 154);
+  --color-p4one-lighterorange: rgb(205, 151, 105);
+  --color-p4one-lightorange:   rgb(180, 130, 80);
+  --color-p4one-orange:        rgb(90, 83, 57);
+  --color-p4one-darkorange:    rgb(204, 82, 0);
+  --color-p4one-shade:  rgb(12, 38, 110);
+  --color-p4one-mint:   rgb(7, 157, 107);
+  --color-p4one-p4one:  rgb(244, 244, 244);
+  --color-p4one-silver: rgb(204, 204, 204);
+  --color-p4one-nickel: rgb(102, 102, 102);
+  --color-p4one-pewter: rgb(51, 51, 51);
+  --color-p4one-tar:    rgb(38, 38, 38);
+  --color-p4one-coal:   rgb(30, 30, 30);
+  /* bare `bg-p4one` shorthand (was `primary.DEFAULT` in v3 config) */
+  --color-p4one: rgb(16, 51, 147);
+
+  /* Custom animations */
+  --animate-wiggle: wiggle 1s ease-in-out;
+  /* Matches the 1000ms hold-to-navigate timer in changeview drag handling. */
+  --animate-drag-hover-charge: drag-hover-charge 1s ease-out forwards;
+  --animate-filecount-bump: filecount-bump 250ms ease-out;
+  --animate-logo-spin: logo-spin 2s ease-in-out infinite;
+  /* Spinner: one 360° rotation per --force-duration-entrance (500ms), linear
+   * (infinite loops use linear, never an easing token — Force spec spinner.md).
+   * Reuses Tailwind's built-in `spin` keyframe; the component swaps to
+   * animate-pulse under prefers-reduced-motion (WCAG 2.3.3). */
+  --animate-spinner: spin 500ms linear infinite;
+  --animate-logo-intro: logo-spin 2s ease-in-out infinite, fade-in 1s ease-in both;
+  /* Two-bar Material-style linear progress (indeterminate). Secondary bar's
+   * 1.15s delay is in the shorthand so it offsets from primary. */
+  --animate-indeterminate-primary:   indeterminate-primary 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+  --animate-indeterminate-secondary: indeterminate-secondary 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+
+  @keyframes wiggle {
+    0%   { transform: translateX(0); }
+    10%  { transform: translateX(-10px); }
+    20%  { transform: translateX(10px); }
+    30%  { transform: translateX(-12px); }
+    40%  { transform: translateX(12px); }
+    50%  { transform: translateX(-10px); }
+    60%  { transform: translateX(10px); }
+    70%  { transform: translateX(-8px); }
+    80%  { transform: translateX(8px); }
+    90%  { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes drag-hover-charge {
+    0%   {
+      background-color: rgba(50, 116, 192, 0.15);
+      box-shadow: inset 0 0 0 1px rgba(50, 116, 192, 0.4);
+    }
+    100% {
+      background-color: rgba(50, 116, 192, 0.55);
+      box-shadow: inset 0 0 0 3px rgba(50, 116, 192, 1);
+    }
+  }
+  @keyframes filecount-bump {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.25); }
+    100% { transform: scale(1); }
+  }
+  @keyframes logo-spin {
+    0%   { transform: rotate(90deg); }
+    100% { transform: rotate(450deg); }
+  }
+  @keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes indeterminate-primary {
+    0%   { left: -35%;  right: 100%; }
+    60%  { left: 100%;  right: -90%; }
+    100% { left: 100%;  right: -90%; }
+  }
+  @keyframes indeterminate-secondary {
+    0%   { left: -200%; right: 100%; }
+    60%  { left: 107%;  right: -8%;  }
+    100% { left: 107%;  right: -8%;  }
+  }
+}
+
+/* Tokens whose values are runtime CSS variables (set in :root by styles.scss
+ * and overridden by .dark-theme). `@theme inline` makes Tailwind emit the
+ * var() expression verbatim into utilities so they re-resolve at runtime. */
+@theme inline {
+  /* bg-base / bg-card / bg-app-bar / bg-hover */
+  --color-base:    var(--background-base);
+  --color-card:    var(--background-card);
+  --color-app-bar: var(--background-app-bar);
+  --color-hover:   var(--background-hover);
+
+  /* text-hint (legacy alias) */
+  --color-hint: var(--text-hint);
+
+  /* ----------------------------------------------------------------------
+   * Force UI tokens (canonical shadcn names) — values declared in
+   * styles.scss :root (light) and .dark-theme (dark). Stored as full
+   * rgb(...) literals (converted from oklch for review parity), so the binding is a bare var().
+   * --------------------------------------------------------------------*/
+  --color-background:           var(--background);
+  --color-foreground:           var(--foreground);
+  --color-card:                 var(--card);
+  --color-card-foreground:      var(--card-foreground);
+  --color-popover:              var(--popover);
+  --color-popover-foreground:   var(--popover-foreground);
+  --color-primary:              var(--primary);
+  --color-primary-foreground:   var(--primary-foreground);
+  --color-primary-hover:        var(--primary-hover);
+  --color-primary-subtle:       var(--primary-subtle);
+  --color-control-primary-wash: var(--control-primary-wash);
+  --color-link:                 var(--link);
+  --color-secondary:            var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted:                var(--muted);
+  --color-muted-foreground:     var(--muted-foreground);
+  --color-tertiary:             var(--tertiary);
+  --color-accent:               var(--accent);
+  --color-accent-foreground:    var(--accent-foreground);
+  --color-destructive:          var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-error:                var(--error);
+  --color-error-subtle:         var(--error-subtle);
+  --color-warning:              var(--warning);
+  --color-success:              var(--success);
+  --color-info:                 var(--info);
+  /* Subtle status tints — alert/callout backgrounds. Alias 6. FUI Semantic
+     bg/{status}-subtle (the canonical tinted-callout background). */
+  --color-warning-subtle:       var(--warning-subtle);
+  --color-success-subtle:       var(--success-subtle);
+  --color-info-subtle:          var(--info-subtle);
+  /* Solid status fills (strong badges/banners) — alias 6. FUI Semantic
+     bg/{status} (the {hue}.500 primitive in light, .300 in dark). Pair with the
+     matching --on-{status} foreground. error solid = --destructive (cranberry). */
+  --color-success-solid:        var(--success-solid);
+  --color-warning-solid:        var(--warning-solid);
+  --color-info-solid:           var(--info-solid);
+  --color-on-success:           var(--on-success);
+  --color-on-warning:           var(--on-warning);
+  --color-on-info:              var(--on-info);
+  --color-on-error:             var(--on-error);
+  --color-border:               var(--border);
+  --color-input:                var(--input);
+  --color-ring:                 var(--ring);
+  --color-outline:              var(--outline);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar:                       var(--sidebar);
+  --color-sidebar-foreground:            var(--sidebar-foreground);
+  --color-sidebar-primary:               var(--sidebar-primary);
+  --color-sidebar-primary-foreground:    var(--sidebar-primary-foreground);
+  --color-sidebar-accent:                var(--sidebar-accent);
+  --color-sidebar-accent-foreground:     var(--sidebar-accent-foreground);
+  --color-sidebar-border:                var(--sidebar-border);
+  --color-sidebar-ring:                  var(--sidebar-ring);
+  --color-surface:               var(--surface);
+  --color-surface-foreground:    var(--surface-foreground);
+  --color-code:                  var(--code);
+  --color-code-foreground:       var(--code-foreground);
+  --color-code-highlight:        var(--code-highlight);
+  --color-code-number:           var(--code-number);
+  --color-selection:             var(--selection);
+  --color-selection-foreground:  var(--selection-foreground);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* ----------------------------------------------------------------------
+   * Force UI elevation — two-layer box-shadows (Force spec shadow.xs..xl).
+   * Light/dark values declared as --elevation-* in :root / .dark-theme
+   * (dark carries higher alphas). Binding here makes Tailwind emit
+   * shadow-xs..shadow-xl reading the runtime var, so .dark-theme overrides
+   * them automatically. Use per spec: xs=dropdowns, sm=popovers/selects,
+   * md=floating panels, lg=modals/drawers, xl=wizard panels/major overlays.
+   * --------------------------------------------------------------------*/
+  --shadow-xs: var(--elevation-xs);
+  --shadow-sm: var(--elevation-sm);
+  --shadow-md: var(--elevation-md);
+  --shadow-lg: var(--elevation-lg);
+  --shadow-xl: var(--elevation-xl);
+
+  /* ----------------------------------------------------------------------
+   * Force UI focus rings — two-stop spread shadows: inner spacer separates
+   * the element from the outer brand band (Force spec shadow.focus-ring /
+   * -error / -on-brand). Bound to existing color tokens (--surface,
+   * --primary, --destructive) so they re-resolve per theme — no separate
+   * dark override needed. Apply on keyboard focus alongside the focus
+   * border; spec-compatible alternative to the ring-3 ring-ring/50 approach.
+   *   focus-ring          → elements on standard surfaces (indigo band)
+   *   focus-ring-error    → focused inputs in a validation-error state
+   *   focus-ring-on-brand → elements sitting on bg.primary (surface band)
+   * --------------------------------------------------------------------*/
+  --shadow-focus-ring:          0 0 0 2px var(--surface), 0 0 0 4px var(--primary);
+  --shadow-focus-ring-error:    0 0 0 2px var(--surface), 0 0 0 4px var(--destructive);
+  --shadow-focus-ring-on-brand: 0 0 0 2px var(--primary), 0 0 0 4px var(--surface);
+}
+
+/* ===========================================================================
+ * Force UI — vendored from github.com/lobiklukas/shadcn-ui
+ *
+ * Mirrors the upstream radix-force-ui registry so this app can author
+ * components whose visual output matches what
+ *   `shadcn view @force-ui/<name>` (alias → /r/styles/radix-force-ui/<name>.json)
+ * prints. Components consume the canonical shadcn token names (bg-primary,
+ * text-foreground, …) via real Tailwind utility classes — the upstream `cn-*`
+ * placeholders in the .vue/.tsx authoring sources are replaced by the registry
+ * build step with the expanded class strings, which is what consumers (us) see.
+ *
+ * Keep these blocks in sync with upstream:
+ *
+ *   1. Custom variants + @utility no-scrollbar
+ *      ← node_modules/shadcn/dist/tailwind.css (packages/shadcn/src/tailwind.css)
+ *      Used by Force UI's expanded class strings: `data-open:`, `data-closed:`,
+ *      `data-checked:`, etc.
+ *   2. :root / .dark-theme color tokens — THE Force UI theme
+ *      ← apps/v4/public/r/colors/force-ui.json  ≡  packages/theme-force-ui/src/index.ts
+ *
+ * Dark mode: P4 One toggles `.dark-theme` on <body>, so the `dark` variant is
+ * aliased to that ancestor class (upstream uses `.dark`).
+ * ========================================================================= */
+
+/* ------- (1) shared variants + utilities (vendored from `shadcn/tailwind.css`) */
+@theme inline {
+  @keyframes accordion-down {
+    from { height: 0; }
+    to   { height: var(--radix-accordion-content-height, var(--accordion-panel-height, auto)); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height, var(--accordion-panel-height, auto)); }
+    to   { height: 0; }
+  }
+  /* scroll-fade — see the @utility block below for why these exist */
+  @keyframes scroll-fade-reveal-t {
+    from { --scroll-fade-t: 0px; }
+    to   { --scroll-fade-t: var(--_scroll-fade-size-t, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10)))); }
+  }
+  @keyframes scroll-fade-reveal-b {
+    from { --scroll-fade-b: var(--_scroll-fade-size-b, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10)))); }
+    to   { --scroll-fade-b: 0px; }
+  }
+  @keyframes scroll-fade-reveal-s {
+    from { --scroll-fade-s: 0px; }
+    to   { --scroll-fade-s: var(--_scroll-fade-size-s, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10)))); }
+  }
+  @keyframes scroll-fade-reveal-e {
+    from { --scroll-fade-e: var(--_scroll-fade-size-e, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10)))); }
+    to   { --scroll-fade-e: 0px; }
+  }
+}
+
+@custom-variant data-open {
+  &:where([data-state="open"]),
+  &:where([data-open]:not([data-open="false"])) { @slot; }
+}
+@custom-variant data-closed {
+  &:where([data-state="closed"]),
+  &:where([data-closed]:not([data-closed="false"])) { @slot; }
+}
+@custom-variant data-checked {
+  &:where([data-state="checked"]),
+  &:where([data-checked]:not([data-checked="false"])) { @slot; }
+}
+@custom-variant data-unchecked {
+  &:where([data-state="unchecked"]),
+  &:where([data-unchecked]:not([data-unchecked="false"])) { @slot; }
+}
+@custom-variant data-selected {
+  &:where([data-selected="true"]) { @slot; }
+}
+@custom-variant data-disabled {
+  &:where([data-disabled="true"]),
+  &:where([data-disabled]:not([data-disabled="false"])) { @slot; }
+}
+@custom-variant data-active {
+  &:where([data-state="active"]),
+  &:where([data-active]:not([data-active="false"])) { @slot; }
+}
+@custom-variant data-horizontal {
+  &:where([data-orientation="horizontal"]) { @slot; }
+}
+@custom-variant data-vertical {
+  &:where([data-orientation="vertical"]) { @slot; }
+}
+
+/* P4 One uses .dark-theme on <body>; upstream Force UI uses .dark. Alias here
+ * so `dark:bg-foo` utilities (used heavily inside style-force-ui below) work
+ * with our existing toggle. */
+@custom-variant dark (&:where(.dark-theme *));
+@custom-variant style-force-ui (&:where(.style-force-ui *));
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+/* Apple-style thin, rounded, inset overlay scrollbar for token-styled overflow
+ * panels (select menu, dropdowns, command lists). Overrides the app-wide global
+ * `::-webkit-scrollbar-thumb` via class specificity. Thumb colour is the
+ * `--muted-foreground` token mixed to a subtle alpha (no hardcoded colour);
+ * `background-clip: content-box` + a transparent border insets the thumb so it
+ * reads as a slim floating pill. Firefox falls back to `scrollbar-width: thin`. */
+@utility scrollbar-overlay {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent;
+  &::-webkit-scrollbar { width: 0.625rem; height: 0.625rem; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: color-mix(in oklab, var(--muted-foreground) 30%, transparent);
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: color-mix(in oklab, var(--muted-foreground) 55%, transparent);
+  }
+}
+
+/* Scroll-aware edge fades for scroll containers — vendored verbatim from
+ * `packages/shadcn/src/tailwind.css` (upstream Force UI, "scroll-fade and
+ * shimmer" changelog entry). CSS-only, no JS: a `mask-image` gradient sized by
+ * `--scroll-fade-{t,b,s,e}` custom properties, driven by native CSS
+ * scroll-driven animations (`animation-timeline: scroll(self ...)`) so the
+ * fade grows/shrinks in from at most `--scroll-fade-reveal` (default 6rem) of
+ * scroll travel and disappears at the ends. `@supports not
+ * (animation-timeline: scroll())` falls back to a static half-size fade for
+ * engines without scroll-driven-animation support — Electron's bundled
+ * Chromium always has it, so that fallback branch is effectively dead code
+ * here, kept only for upstream parity. `scroll-fade`/`-y` = vertical both
+ * edges, `-x` = horizontal both edges (RTL-aware), `-t`/`-b`/`-s`/`-e` = a
+ * single edge (`-l`/`-r` are the non-RTL-aware horizontal aliases). Size
+ * modifiers: `scroll-fade-<n>`, `scroll-fade-{t,b,s,e}-<n>`. `scroll-fade-none`
+ * removes the mask entirely. Apply to the SCROLLING element itself (`self` in
+ * the animation-timeline refers to the element's own scrollport) — see
+ * `ui/scroll-area`'s viewport for the usage. */
+@property --scroll-fade-t {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --scroll-fade-b {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --scroll-fade-s {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --scroll-fade-e {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --scroll-fade-mask {
+  syntax: "*";
+  inherits: false;
+}
+
+@utility scroll-fade {
+  --_scroll-fade-size-t: var(--scroll-fade-t-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --_scroll-fade-size-b: var(--scroll-fade-b-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-block: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 var(--scroll-fade-t, 0px),
+    #000 calc(100% - var(--scroll-fade-b, 0px)),
+    transparent 100%
+  );
+  -webkit-mask-image: var(--scroll-fade-mask, var(--scroll-fade-block));
+  mask-image: var(--scroll-fade-mask, var(--scroll-fade-block));
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-t 1ms ease-in-out, scroll-fade-reveal-b 1ms ease-in-out;
+    animation-timeline: scroll(self y), scroll(self y);
+    animation-range:
+      0 var(--scroll-fade-reveal, calc(var(--spacing) * 24)),
+      calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-t: var(--_scroll-fade-size-t);
+    --scroll-fade-b: var(--_scroll-fade-size-b);
+  }
+}
+
+@utility scroll-fade-y {
+  --_scroll-fade-size-t: var(--scroll-fade-t-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --_scroll-fade-size-b: var(--scroll-fade-b-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-block: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 var(--scroll-fade-t, 0px),
+    #000 calc(100% - var(--scroll-fade-b, 0px)),
+    transparent 100%
+  );
+  -webkit-mask-image: var(--scroll-fade-mask, var(--scroll-fade-block));
+  mask-image: var(--scroll-fade-mask, var(--scroll-fade-block));
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-t 1ms ease-in-out, scroll-fade-reveal-b 1ms ease-in-out;
+    animation-timeline: scroll(self y), scroll(self y);
+    animation-range:
+      0 var(--scroll-fade-reveal, calc(var(--spacing) * 24)),
+      calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-t: var(--_scroll-fade-size-t);
+    --scroll-fade-b: var(--_scroll-fade-size-b);
+  }
+}
+
+@utility scroll-fade-x {
+  --_scroll-fade-size-s: var(--scroll-fade-s-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --_scroll-fade-size-e: var(--scroll-fade-e-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-inline: linear-gradient(
+    to right,
+    transparent 0,
+    #000 var(--scroll-fade-s, 0px),
+    #000 calc(100% - var(--scroll-fade-e, 0px)),
+    transparent 100%
+  );
+  &:where([dir="rtl"], [dir="rtl"] *) {
+    --scroll-fade-inline: linear-gradient(
+      to left,
+      transparent 0,
+      #000 var(--scroll-fade-s, 0px),
+      #000 calc(100% - var(--scroll-fade-e, 0px)),
+      transparent 100%
+    );
+  }
+  -webkit-mask-image: var(--scroll-fade-mask, var(--scroll-fade-inline));
+  mask-image: var(--scroll-fade-mask, var(--scroll-fade-inline));
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-s 1ms ease-in-out, scroll-fade-reveal-e 1ms ease-in-out;
+    animation-timeline: scroll(self inline), scroll(self inline);
+    animation-range:
+      0 var(--scroll-fade-reveal, calc(var(--spacing) * 24)),
+      calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-s: var(--_scroll-fade-size-s);
+    --scroll-fade-e: var(--_scroll-fade-size-e);
+  }
+}
+
+@utility scroll-fade-t {
+  --_scroll-fade-size-t: var(--scroll-fade-t-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to bottom, transparent 0, #000 var(--scroll-fade-t, 0px), #000 100%);
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-t 1ms ease-in-out;
+    animation-timeline: scroll(self y);
+    animation-range: 0 var(--scroll-fade-reveal, calc(var(--spacing) * 24));
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-t: var(--_scroll-fade-size-t);
+  }
+}
+
+@utility scroll-fade-b {
+  --_scroll-fade-size-b: var(--scroll-fade-b-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to bottom, #000 0, #000 calc(100% - var(--scroll-fade-b, 0px)), transparent 100%);
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-b 1ms ease-in-out;
+    animation-timeline: scroll(self y);
+    animation-range: calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-b: var(--_scroll-fade-size-b);
+  }
+}
+
+@utility scroll-fade-l {
+  --_scroll-fade-size-s: var(--scroll-fade-s-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to right, transparent 0, #000 var(--scroll-fade-s, 0px), #000 100%);
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-s 1ms ease-in-out;
+    animation-timeline: scroll(self x);
+    animation-range: 0 var(--scroll-fade-reveal, calc(var(--spacing) * 24));
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-s: var(--_scroll-fade-size-s);
+  }
+}
+
+@utility scroll-fade-r {
+  --_scroll-fade-size-e: var(--scroll-fade-e-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to right, #000 0, #000 calc(100% - var(--scroll-fade-e, 0px)), transparent 100%);
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-e 1ms ease-in-out;
+    animation-timeline: scroll(self x);
+    animation-range: calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-e: var(--_scroll-fade-size-e);
+  }
+}
+
+@utility scroll-fade-s {
+  --_scroll-fade-size-s: var(--scroll-fade-s-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to right, transparent 0, #000 var(--scroll-fade-s, 0px), #000 100%);
+  &:where([dir="rtl"], [dir="rtl"] *) {
+    --scroll-fade-mask: linear-gradient(to left, transparent 0, #000 var(--scroll-fade-s, 0px), #000 100%);
+  }
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-s 1ms ease-in-out;
+    animation-timeline: scroll(self inline);
+    animation-range: 0 var(--scroll-fade-reveal, calc(var(--spacing) * 24));
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-s: var(--_scroll-fade-size-s);
+  }
+}
+
+@utility scroll-fade-e {
+  --_scroll-fade-size-e: var(--scroll-fade-e-size, var(--scroll-fade-size, min(12%, calc(var(--spacing) * 10))));
+  --scroll-fade-mask: linear-gradient(to right, #000 0, #000 calc(100% - var(--scroll-fade-e, 0px)), transparent 100%);
+  &:where([dir="rtl"], [dir="rtl"] *) {
+    --scroll-fade-mask: linear-gradient(to left, #000 0, #000 calc(100% - var(--scroll-fade-e, 0px)), transparent 100%);
+  }
+  -webkit-mask-image: var(--scroll-fade-mask);
+  mask-image: var(--scroll-fade-mask);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  @supports (animation-timeline: scroll()) {
+    animation: scroll-fade-reveal-e 1ms ease-in-out;
+    animation-timeline: scroll(self inline);
+    animation-range: calc(100% - var(--scroll-fade-reveal, calc(var(--spacing) * 24))) 100%;
+    animation-fill-mode: both;
+  }
+  @supports not (animation-timeline: scroll()) {
+    --scroll-fade-e: var(--_scroll-fade-size-e);
+  }
+}
+
+@utility scroll-fade-* {
+  --scroll-fade-size: calc(var(--spacing) * --value(integer));
+  --scroll-fade-size: --value([length], [percentage]);
+}
+@utility scroll-fade-t-* {
+  --scroll-fade-t-size: calc(var(--spacing) * --value(integer));
+  --scroll-fade-t-size: --value([length], [percentage]);
+}
+@utility scroll-fade-b-* {
+  --scroll-fade-b-size: calc(var(--spacing) * --value(integer));
+  --scroll-fade-b-size: --value([length], [percentage]);
+}
+@utility scroll-fade-s-* {
+  --scroll-fade-s-size: calc(var(--spacing) * --value(integer));
+  --scroll-fade-s-size: --value([length], [percentage]);
+}
+@utility scroll-fade-e-* {
+  --scroll-fade-e-size: calc(var(--spacing) * --value(integer));
+  --scroll-fade-e-size: --value([length], [percentage]);
+}
+@utility scroll-fade-none {
+  --scroll-fade-mask: none;
+}
+
+/* Shimmer text — vendored verbatim from `packages/shadcn/src/tailwind.css`
+ * (upstream shadcn/ui, same "scroll-fade and shimmer" changelog entry as the
+ * scroll-fade utilities above). CSS-only, no JS: a `background-clip: text`
+ * gradient animated via `background-position`, clipped to the text using
+ * `-webkit-text-fill-color`. Used by `ui/attachment`'s title while
+ * uploading/processing (`group-data-[state=uploading]/attachment:shimmer`).
+ * Ships its own `prefers-reduced-motion` guard (WCAG 2.3.3) — no
+ * `motion-reduce:` variant needed at call sites. `@variant dark` resolves via
+ * this app's `.dark-theme` alias (see the `@custom-variant dark` declaration
+ * below). */
+@property --shimmer-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 20deg;
+}
+@property --shimmer-image {
+  syntax: "*";
+  inherits: false;
+}
+@property --shimmer-text-fill {
+  syntax: "*";
+  inherits: false;
+}
+
+@theme inline {
+  @keyframes tw-shimmer {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+}
+
+@utility shimmer {
+  --_spread: var(--shimmer-spread, calc(3ch + 40px));
+  --_base: currentColor;
+  --_highlight: var(
+    --shimmer-color,
+    oklch(from currentColor l c h / calc(alpha* 0.2))
+  );
+
+  background-image: var(
+    --shimmer-image,
+    linear-gradient(
+      calc(90deg + var(--shimmer-angle)),
+      var(--_base) calc(50% - var(--_spread)),
+      color-mix(in oklch, var(--_highlight), var(--_base) 50%)
+        calc(50% - var(--_spread) * 0.5),
+      var(--_highlight) 50%,
+      color-mix(in oklch, var(--_highlight), var(--_base) 50%)
+        calc(50% + var(--_spread) * 0.5),
+      var(--_base) calc(50% + var(--_spread))
+    )
+  );
+  background-repeat: no-repeat;
+  background-size: calc(200% + var(--_spread) * 2) 100%;
+  background-position: 0 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--shimmer-text-fill, transparent);
+  animation: tw-shimmer var(--shimmer-duration, 2s) linear infinite;
+
+  @variant dark {
+    --_highlight: var(
+      --shimmer-color,
+      oklch(from currentColor max(0.8, calc(l + 0.4)) c h / calc(alpha + 0.4))
+    );
+  }
+
+  &:where([dir="rtl"], [dir="rtl"] *) {
+    animation-direction: reverse;
+  }
+}
+
+@utility shimmer-once {
+  animation-iteration-count: 1;
+}
+
+@utility shimmer-reverse {
+  animation-direction: reverse;
+}
+
+@utility shimmer-none {
+  --shimmer-image: none;
+  --shimmer-text-fill: currentColor;
+}
+
+@utility shimmer-color-* {
+  --shimmer-color: --value(--color, [color]);
+  --shimmer-color: color-mix(
+    in oklch,
+    --value(--color, [color]) calc(--modifier(integer) * 1%),
+    transparent
+  );
+}
+
+@utility shimmer-duration-* {
+  --shimmer-duration: calc(--value(integer) * 1ms);
+}
+
+@utility shimmer-spread-* {
+  --shimmer-spread: calc(var(--spacing) * --value(integer));
+  --shimmer-spread: --value([length], [percentage]);
+}
+
+@utility shimmer-angle-* {
+  --shimmer-angle: calc(--value(integer) * 1deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+    background-image: none;
+    -webkit-text-fill-color: currentColor;
+  }
+}
+
+/* ------- (2) Force UI theme tokens — must stay in sync with upstream
+ *           apps/v4/public/r/colors/force-ui.json (light + dark blocks).
+ *           This is THE color system; do not invent variants. */
+:root {
+  --background: rgb(255 255 255);
+  --foreground: rgb(0 0 0);
+  /* card = bg.surface / text.primary (Force spec): card interior is the surface
+     bg (neutral.0 = white), card text is primary (base.black). Was stale shadcn
+     slate (#f8fafc / #020617); matches Figma 3.Mode base/card + base/card-foreground. */
+  --card: rgb(255 255 255);
+  --card-foreground: rgb(0 0 0);
+  --popover: rgb(255 255 255);
+  --popover-foreground: rgb(2 6 23);
+  --primary: rgb(84 5 255);
+  --primary-foreground: rgb(255 255 255);
+  /* interactive states — alias "6. FUI Semantic" bg/primary-hover (indigo-600),
+     bg/primary-subtle (indigo-50), text/link (indigo-500). */
+  --primary-hover: rgb(68 0 216);
+  --primary-subtle: rgb(240 232 255);
+  /* Selected-control wash (ui/questionnaire's checked Choice card) — primary
+     at low alpha over whatever's behind, not a flattened solid like
+     --primary-subtle. Figma "custom/control-primary-wash", 3.Mode Light. */
+  --control-primary-wash: rgb(84 5 255 / 5%);
+  --link: rgb(84 5 255);
+  --secondary: rgb(248 248 253);
+  --secondary-foreground: rgb(0 0 0);
+  --muted: rgb(248 248 253);
+  --muted-foreground: rgb(82 82 96);
+  /* text.tertiary — Force "6. FUI Semantic" color/light/text/tertiary ->
+     neutral-600. Currently equal to --muted-foreground (which also aliases
+     text/tertiary in the Force UI file), but kept as a SEPARATE semantic token
+     so a future spec change to text.tertiary updates only this, not muted.
+     Used by the table header (text-tertiary). Mirrors Figma 3.Mode base/tertiary. */
+  --tertiary: rgb(82 82 96);
+  --accent: rgb(248 248 253);
+  --accent-foreground: rgb(0 0 0);
+  --destructive: rgb(209 19 35);
+  --destructive-foreground: rgb(254 242 242);
+  /* destructive + warning/success/info: Force UI canonical, matching Figma "3. Mode"
+     base/destructive → "6. FUI Semantic" bg/destructive (cranberry #d11323), and the
+     status text accents. NOT upstream shadcn red — keep in sync with 6. FUI Semantic. */
+  /* warning TEXT accent darkened one ramp step orange-700 -> orange-800 for
+     WCAG AA: orange-700 (#c14f0a) was 4.18:1 on warning-subtle (< 4.5).
+     orange-800 (#943c08, the _7. FUI Primitives ramp step) is ~7:1 on
+     warning-subtle / white — same hue, just darker. Only the text/accent
+     darkens (no solid bg-warning in use); 6. FUI Semantic text/warning is
+     re-pointed orange/700 -> orange/800 to match. Dark --warning unchanged
+     (light orange on dark already passes). */
+  --warning: rgb(148 60 8);
+  --success: rgb(15 102 15);
+  --info: rgb(0 102 181);
+  --error: rgb(163 14 28);
+  /* subtle status tints (alert/callout bg) — 6. FUI Semantic bg/{status}-subtle */
+  --warning-subtle: rgb(255 251 247);
+  --success-subtle: rgb(243 252 243);
+  --info-subtle: rgb(245 251 254);
+  --error-subtle: rgb(253 245 246);
+  /* solid status fills — 6. FUI Semantic bg/{status} = {hue}.500 primitives:
+     green-500 #138613, orange-500 #ff680e. error solid = --destructive
+     (cranberry-500 #d11323). on-* foregrounds: white, except on-warning = black
+     (orange-500 fails AA with white).
+     INFO: the spec's bg.info = blue.500 #0084e8 with white text computes 3.84:1,
+     which FAILS WCAG 1.4.3 AA for normal text (the spec asserts it passes — a
+     spec defect, raise upstream). Use blue.600 #0077d2 ("Info hover" in the same
+     ramp) for the solid fill so white-on-info reaches 4.60:1. Mirror this in
+     Figma 3.Mode bg/info. Dark info-solid (blue-300 + black on-info) already
+     passes, so only the light value changes. */
+  --success-solid: rgb(19 134 19);
+  --warning-solid: rgb(255 104 14);
+  --info-solid: rgb(0 119 210);
+  --on-success: rgb(255 255 255);
+  --on-warning: rgb(0 0 0);
+  --on-info: rgb(255 255 255);
+  --on-error: rgb(255 255 255);
+  --border: rgb(233 233 238);
+  --input: rgb(113 113 128);
+  --ring: rgb(84 5 255);
+  --outline: rgb(84 5 255);
+  --chart-1: rgb(84 5 255);
+  --chart-2: rgb(0 207 255);
+  --chart-3: rgb(19 134 19);
+  --chart-4: rgb(255 104 14);
+  --chart-5: rgb(209 19 35);
+  --radius: 0.625rem;
+  /* Force UI elevation (light) — two-layer, Force spec shadow.xs..xl. */
+  --elevation-xs: 0 1px 2px 0 #00000014, 0 0 2px 0 #0000001a;
+  --elevation-sm: 0 2px 4px 0 #0000001a, 0 0 2px 0 #00000014;
+  --elevation-md: 0 4px 8px 0 #0000001a, 0 0 4px 0 #00000014;
+  --elevation-lg: 0 8px 16px 0 #0000001a, 0 0 8px 0 #00000014;
+  --elevation-xl: 0 16px 32px 0 #0000001f, 0 0 16px 0 #00000014;
+  /* Sidebar tokens (2026-07-02 Figma sync, base/sidebar-* in 3. Mode):
+     these are NOT neutral grays — bg/interactive-active (accent) and
+     border/focus (ring) resolve to the brand indigo, same family as
+     the app's own --ring; the stale values here predated any sidebar
+     Figma sync (never wired to a real component before this port). */
+  --sidebar: rgb(243 243 248);
+  --sidebar-foreground: rgb(0 0 0);
+  --sidebar-primary: rgb(84 5 255);
+  --sidebar-primary-foreground: rgb(255 255 255);
+  --sidebar-accent: rgb(240 232 255);
+  --sidebar-accent-foreground: rgb(59 0 191);
+  --sidebar-border: rgb(233 233 238);
+  --sidebar-ring: rgb(84 5 255);
+  --surface: rgb(244 247 250);
+  --surface-foreground: var(--foreground);
+  --code: var(--surface);
+  --code-foreground: var(--surface-foreground);
+  --code-highlight: rgb(236 241 245);
+  --code-number: rgb(100 116 139);
+  --selection: rgb(84 5 255);
+  --selection-foreground: rgb(248 250 252);
+}
+
+.dark-theme {
+  --background: rgb(38 38 46);
+  --foreground: rgb(248 248 253);
+  /* card = bg.surface / text.primary (Force spec): surface bg neutral.800
+     (= --background), primary text neutral.50 (= --foreground). Was stale slate. */
+  --card: rgb(38 38 46);
+  --card-foreground: rgb(248 248 253);
+  --popover: rgb(15 23 42);
+  --popover-foreground: rgb(248 250 252);
+  /* Dark-mode primary = CYAN per Force spec update (cyan is the dark brand
+     primary, indigo is light). primary=cyan.500, hover=cyan.400, subtle=#002a36
+     (deep cyan, also bg.interactive-active), link=cyan.300. on-primary stays
+     black (spec text.on-primary dark = black; black on cyan passes WCAG). */
+  --primary: rgb(0 207 255);
+  --primary-foreground: rgb(0 0 0);
+  --primary-hover: rgb(60 222 255);
+  --primary-subtle: rgb(0 42 54);
+  /* Figma "custom/control-primary-wash", 3.Mode Dark: cyan @ 10% (not 5% —
+     the design's own dark-mode value, verified via the variable's per-mode
+     valuesByMode, not derived). */
+  --control-primary-wash: rgb(0 207 255 / 10%);
+  --link: rgb(153 238 255);
+  --secondary: rgb(33 33 41);
+  --secondary-foreground: rgb(248 248 253);
+  --muted: rgb(33 33 41);
+  --muted-foreground: rgb(156 156 168);
+  /* text.tertiary dark — color/dark/text/tertiary -> neutral-400. See :root note. */
+  --tertiary: rgb(156 156 168);
+  --accent: rgb(38 38 46);
+  --accent-foreground: rgb(248 248 253);
+  --destructive: rgb(235 107 114);
+  --destructive-foreground: rgb(254 242 242);
+  --warning: rgb(252 167 113);
+  --success: rgb(94 194 94);
+  --info: rgb(99 182 245);
+  --error: rgb(235 107 114);
+  /* subtle status tints (alert/callout bg) — 6. FUI Semantic bg/{status}-subtle */
+  --warning-subtle: rgb(81 33 5);
+  --success-subtle: rgb(7 44 7);
+  --info-subtle: rgb(0 42 74);
+  --error-subtle: rgb(70 7 12);
+  /* solid status fills (dark) — 6. FUI Semantic bg/{status} = {hue}.300 in dark:
+     green-300, orange-300, blue-300 (same values as the dark text accents). The
+     bright .300 fills need BLACK foreground in dark — on-* all black here. */
+  --success-solid: rgb(94 194 94);
+  --warning-solid: rgb(252 167 113);
+  --info-solid: rgb(99 182 245);
+  --on-success: rgb(0 0 0);
+  --on-warning: rgb(0 0 0);
+  --on-info: rgb(0 0 0);
+  --on-error: rgb(0 0 0);
+  --border: rgb(55 55 66);
+  --input: rgb(113 113 128);
+  --ring: rgb(60 222 255);
+  --outline: rgb(0 207 255);
+  /* charts realigned to Force spec dark series: chart.1=cyan.400, chart.2=indigo.300,
+     chart.3=green.300, chart.4=orange.300, chart.5=cranberry.300 (was a mono-cyan ramp). */
+  --chart-1: rgb(60 222 255);
+  --chart-2: rgb(156 108 255);
+  --chart-3: rgb(94 194 94);
+  --chart-4: rgb(252 167 113);
+  --chart-5: rgb(235 107 114);
+  /* Sidebar tokens (2026-07-02 Figma sync) — dark accent/ring resolve to
+     the same cyan family as the app's own --border/--ring (bit-for-bit
+     match), confirming these are the real Force UI sidebar tokens, not
+     a one-off. See the :root note above. */
+  --sidebar: rgb(28 28 36);
+  --sidebar-foreground: rgb(248 248 253);
+  --sidebar-primary: rgb(0 207 255);
+  --sidebar-primary-foreground: rgb(0 0 0);
+  --sidebar-accent: rgb(0 42 54);
+  --sidebar-accent-foreground: rgb(153 238 255);
+  --sidebar-border: rgb(55 55 66);
+  --sidebar-ring: rgb(60 222 255);
+  --surface: rgb(13 19 33);
+  --surface-foreground: rgb(149 163 184);
+  --code: var(--surface);
+  --code-foreground: var(--surface-foreground);
+  --code-highlight: rgb(20 26 41);
+  --code-number: rgb(151 166 187);
+  --selection: rgb(0 207 255);
+  --selection-foreground: rgb(15 23 42);
+  /* Force UI elevation (dark) — same geometry, higher alphas (Force spec). */
+  --elevation-xs: 0 1px 2px 0 #00000033, 0 0 2px 0 #00000040;
+  --elevation-sm: 0 2px 4px 0 #00000040, 0 0 2px 0 #00000033;
+  --elevation-md: 0 4px 8px 0 #00000040, 0 0 4px 0 #00000033;
+  --elevation-lg: 0 8px 16px 0 #00000040, 0 0 8px 0 #00000033;
+  --elevation-xl: 0 16px 32px 0 #0000004d, 0 0 16px 0 #00000040;
+}
+
+/* ------- (3) third-party overrides ---------------------------------------- */
+
+/* @swimlane/ngx-charts' bar chart components hardcode their tooltip's
+   StyleTypes to "tooltip" (dark, `background:#000000bf`) rather than
+   "popover" (white) — an internal implementation detail, not exposed as a
+   public @Input on the chart components (verified against the installed
+   ngx-charts@24.0.0 source), so there's no way to override it from a
+   template binding. The tooltip portal is also appended straight to
+   <body> (tooltipAppendToBody defaults true), outside any [data-chart]
+   scope, so this has to be a global override, not a scoped one. Our own
+   `ui-chart-tooltip-content` (ui/chart) renders as the tooltip's projected
+   content — this override just strips ngx-charts' own dark chrome around it
+   so only our white rounded card is visible. This app is currently the only
+   ngx-charts consumer; revisit if that changes.
+
+   `!important` is required, not stylistic: ngx-charts injects this same
+   selector as an Angular ViewEncapsulation.None component style, appended to
+   <head> at runtime — later in source order than this stylesheet despite
+   identical specificity (two classes each), so a plain override loses the
+   cascade tie silently (confirmed via getComputedStyle in the browser, not
+   assumed).
+
+   Scoped with `:has(ui-chart-tooltip-content)` — NOT every `.type-tooltip`
+   wraps our own custom content. `ngx-charts-line-chart`/`-area-chart`'s
+   crosshair ("tooltip-area") combined multi-series tooltip uses ngx-charts'
+   OWN unstyled `.area-tooltip-container` markup, not our
+   `<ui-chart-tooltip-content>` — stripping ITS background too (found by
+   hovering a line chart in Storybook, not assumed) left plain text floating
+   over the chart with no box at all. Scoping to `:has(ui-chart-tooltip-content)`
+   keeps ngx-charts' native dark box for that case while still stripping it
+   for every chart type that supplies its own styled content
+   (bar/donut/radar/sparkline, and line/area's own per-point tooltip). */
+.ngx-charts-tooltip-content.type-tooltip:has(ui-chart-tooltip-content) {
+  background: transparent !important;
+  padding: 0 !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+.ngx-charts-tooltip-content.type-tooltip:has(ui-chart-tooltip-content) .tooltip-caret {
+  display: none !important;
+}
+
+/* ngx-charts hardcodes gridline stroke to `#ddd` (`.gridline-path`,
+   `.gridline-path-dotted` — used for reference lines), a fixed light gray
+   with no theme awareness. Barely visible in light mode; far too bright
+   against a dark background in `.dark-theme` (confirmed visually, not
+   assumed — a chart in dark mode showed near-white gridlines against the
+   dark surface). `var(--border)` already resolves per theme (light
+   rgb(233 233 238), dark rgb(55 55 66)), so swapping to it makes gridlines
+   theme-aware for free. Same `!important`-required reasoning as the tooltip
+   override above — ngx-charts' own component style wins the cascade tie
+   otherwise. */
+.gridline-path,
+.gridline-path-dotted {
+  stroke: var(--border) !important;
+}
+
+/* ngx-charts' `GaugeComponent` (`ngx-charts-gauge`, used by `ui-chart-radial`
+   and `ui-chart-gauge`) hardcodes its background-arc track to a
+   near-transparent black (`fill:#0000000d`, i.e. black at ~5% opacity) —
+   fine on a light background, but on a dark surface it reads as barely-there
+   instead of a visible track ring. Same root cause and same
+   `!important`-required fix as the tooltip/gridline overrides above:
+   ngx-charts injects this as a `ViewEncapsulation.None` component style at
+   runtime, later in source order than this stylesheet. `var(--muted)`
+   already resolves per theme, giving a visible-but-subtle track in both. */
+.gauge .background-arc path {
+  fill: var(--muted) !important;
+}
+
+/* `GaugeComponent`'s own centered value+units `<text>` (its big "62 / CPU"
+   label) carries no `fill` at all, unlike its axis-tick `<text>` elements
+   (`.gauge-tick text`, which ngx-charts already styles to `#666` globally) —
+   the value text falls back to the SVG default of solid black, unreadable
+   against a dark surface. `.gauge.chart > text` targets only the direct-child
+   value/units text (tick text lives nested under `.gauge-tick`, so this
+   selector doesn't touch it) — confirmed by inspecting the rendered DOM in
+   Storybook's dark ramp, not assumed. No `!important` needed here since
+   ngx-charts sets no competing fill on this element at all. */
+.gauge.chart > text {
+  fill: var(--foreground);
+}
+
