@@ -279,4 +279,17 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "stepper",
+    type: "registry:ui",
+    files: [
+      { path: "ui/stepper/stepper.component.ts", type: "registry:ui" },
+      { path: "ui/stepper/index.ts", type: "registry:ui" },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/stepper",
+      },
+    },
+  },
 ]

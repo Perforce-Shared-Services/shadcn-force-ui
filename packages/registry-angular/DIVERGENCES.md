@@ -337,6 +337,129 @@ Angular idiom and avoids double-kbd nesting.
 
 ---
 
+## stepper
+
+### 1. Source used — Vue registry, not p4one or React
+
+| | Stepper source available |
+|---|---|
+| `/opt/dev/pd-p4one/app/src/app/ui/stepper/` | Not present in the porting environment |
+| `apps/v4/registry/bases/*/ui/stepper.tsx` | Does not exist — React has no stepper |
+| `packages/registry-vue/ui/stepper/*.vue` | ✓ (thin wrapper over `reka-ui`'s stepper) |
+
+**Why it diverges:** the p4one reference tree was unavailable when this component was
+ported and the monorepo has no React/base stepper at all, so the Vue registry package
+(`Stepper.vue`, `StepperItem.vue`, `StepperTrigger.vue`, `StepperIndicator.vue`,
+`StepperTitle.vue`, `StepperDescription.vue`, `StepperSeparator.vue`) is the source of
+truth for the part list, the class strings and the `active` / `completed` / `inactive`
+state model. Vue's examples (`packages/registry-vue/examples/stepper/*.vue`) are the
+source for the preview examples.
+
+**Angular registry action:** Keep the Vue-derived API. Re-check against
+`/opt/dev/pd-p4one/app/src/app/ui/stepper/` when that tree is available and reconcile the
+input names (`step`, `value`, `orientation`, `linear`) if p4one named them differently.
+
+---
+
+### 2. No `cn-stepper*` CSS tokens exist
+
+| | Tokens |
+|---|---|
+| `style-force-ui.css` | No `.cn-stepper*` rule of any kind |
+| Vue registry | Plain inline Tailwind, no tokens |
+
+**Why it diverges:** the token layer never gained stepper classes because no React
+stepper was ever authored. Referencing a `cn-stepper*` class that has no CSS rule is a
+silent no-op and is flagged by `pnpm --filter=v4 validate:previews`.
+
+**Angular registry action:** Inline Tailwind in the class strings, mirroring Vue. Do not
+invent `cn-stepper*` classes until `style-force-ui.css` defines them.
+
+**Upstream fix needed:** If the stepper is ever added to the React bases, add
+`.cn-stepper`, `.cn-stepper-item`, `.cn-stepper-trigger`, `.cn-stepper-indicator`,
+`.cn-stepper-separator` tokens and migrate every framework port onto them.
+
+---
+
+### 3. Shared state — DI instead of a headless primitive
+
+| | Mechanism |
+|---|---|
+| Vue | `reka-ui` `StepperRoot` provides context; parts consume it |
+| Angular | `[uiStepper]` provides itself via the `STEPPER_ROOT` injection token; `[uiStepperItem]` provides itself via `STEPPER_ITEM` |
+
+**Why it diverges:** `@radix-ng/primitives` v1.1.2 ships no stepper, so there is no
+`hostDirectives` primitive to delegate to (the mechanism `tabs`/`accordion` use). The
+root owns the current step as a `model<number>()` (two-way bindable `[(value)]`), items
+register their step signal with the root on construction and de-register via
+`DestroyRef`, which is what makes `totalSteps()` / `isLastStep()` / `next()` / `prev()`
+work without the caller passing a step count.
+
+**Angular registry action:** Keep the token-based pattern. It is the pure-Angular
+equivalent of the Vue provide/inject context, and it keeps the presentational parts
+(indicator, title, description, separator) injection-free — they style themselves off the
+item's `data-state` through `group-data-[state=…]/stepper-item:` variants.
+
+---
+
+### 4. Angular-only host semantics
+
+| | Behaviour |
+|---|---|
+| Vue | `StepperTrigger` uses `as-child` to hand its props to a `Button` |
+| Angular | Two components cannot share one host element, so `[uiStepperTrigger]` is styled directly |
+
+Related Angular-only additions, all following existing registry precedent:
+
+- `[uiStepperTrigger]` detects a non-`<button>` host and applies `role="button"`,
+  `tabindex` and `aria-disabled` plus an Enter/Space handler instead of the native
+  `disabled` attribute — the `isAnchor` dual-mechanism pattern from
+  `button.component.ts` (WCAG 2.1.1 / 4.1.2). It also sets `aria-current="step"` on the
+  active step, which the Vue wrapper does not.
+- `[uiStepperItem]` carries both `group` and `group/stepper-item`. The named group is
+  what this component's own parts key off; the bare `group` keeps class strings copied
+  from the Vue docs (which use unnamed `group-data-*`) working unchanged.
+- `[uiStepper]` adds `data-[orientation=vertical]:flex-col` to its base string so
+  `orientation="vertical"` lays out without the caller re-stating `flex-col`. Vue's base
+  is `flex gap-2` only and leaves that to the example.
+- `[&_svg]:fill-current` added to `[uiStepperIndicator]` (Material Symbols are
+  fill-based — same root cause as button §2).
+
+---
+
+### 5. `text-md` on the title is a no-op in Tailwind
+
+| | Class |
+|---|---|
+| Vue `StepperTitle.vue` | `text-md font-semibold whitespace-nowrap` |
+| Angular `[uiStepperTitle]` | `text-sm font-semibold whitespace-nowrap` |
+
+**Why it diverges:** Tailwind's default type scale has no `md` step, so `text-md`
+generates nothing and the Vue title silently inherits its parent's font size. The Angular
+port pins `text-sm` (the size the Vue examples override to anyway with
+`text-sm lg:text-base`).
+
+**Upstream fix needed:** Replace `text-md` with a real scale value in
+`packages/registry-vue/ui/stepper/StepperTitle.vue`.
+
+---
+
+### 6. Example set — no Form variant
+
+Vue ships four examples: `StepperDemo`, `StepperHorizental` (sic), `StepperVertical` and
+`StepperForm`. The Angular port ships `stepper-demo`, `stepper-horizontal` (spelling
+corrected) and `stepper-vertical`.
+
+**Why it diverges:** `StepperForm` composes `Form`, `FormField`, `FormControl`,
+`FormMessage`, `Select` and vee-validate/zod. None of `form`, `select` or a validation
+message primitive is ported to the Angular registry yet, so the example cannot be built
+without inventing those components here.
+
+**Angular registry action:** Add `stepper-form` once the Angular `form`/`select` ports
+land.
+
+---
+
 ## Upstream fixes summary
 
 Issues that should be fixed in the registry source (not Angular-specific):
@@ -353,3 +476,5 @@ Issues that should be fixed in the registry source (not Angular-specific):
 | 8 | `style-force-ui.css` `@theme` | Add `--animate-spinner: spin 500ms linear infinite` |
 | 9 | `bases/radix/ui/spinner.tsx` + Vue/Svelte | Remove `role="status" aria-label="Loading"` from spinner SVG |
 | 10 | `style-force-ui.css` | Remove `.cn-separator`, `.cn-separator-horizontal`, `.cn-separator-vertical` (dead code), or migrate all framework ports to use them |
+| 11 | `registry-vue/ui/stepper/StepperTitle.vue` | Replace `text-md` (not a Tailwind scale value — generates nothing) with a real size |
+| 12 | `style-force-ui.css` | Add `.cn-stepper*` tokens if a React stepper is ever authored; every framework port inlines Tailwind today |
