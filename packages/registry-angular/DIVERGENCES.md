@@ -194,6 +194,98 @@ self-start justify-self-end`). There is no `cn-card-action` class in `style-forc
 
 ---
 
+## button-group
+
+### 1. No p4one reference available
+
+| | Source consulted |
+|---|---|
+| p4one `button-group/` | ✗ not present in this checkout (`reference/pd-p4one/`, `/opt/dev/pd-p4one/`) |
+| Registry React | ✓ `bases/radix/ui/button-group.tsx` (canonical class strings) |
+| `style-force-ui.css` | ✓ `.cn-button-group*` tokens |
+
+**Why it matters:** every other entry in this file compares the p4one implementation against
+the registry source. For `button-group` there was no p4one implementation to read, so the port
+was derived from the registry React source plus the established Angular patterns in this
+package (`button`, `card`, `separator`).
+
+**Angular registry action:** Documentation note only — no style divergence. If a p4one
+`button-group` surfaces later, reconcile it against this entry.
+
+---
+
+### 2. `ButtonGroupSeparator` does not compose `Separator`
+
+| | Mechanism |
+|---|---|
+| Registry React | `ButtonGroupSeparator` renders `<Separator>` and overrides its classes |
+| Angular registry | Self-contained `[uiButtonGroupSeparator]` that duplicates the separator host bindings (`data-slot`, `role="none"`, `[attr.data-orientation]`) and the merged class string |
+
+**Why it diverges:** Angular's directive-composition API (`hostDirectives`) cannot reference a
+`@Component` — only directives may be host directives — so `SeparatorComponent` cannot be
+composed the way React composes `<Separator>`. Importing the component class and re-templating
+it would change the host element, which the attribute-selector convention forbids.
+
+**Angular registry action:** Keep `ButtonGroupSeparatorComponent` self-contained. The class
+string is the `cn()` result of the React `Separator` base merged with the
+`cn-button-group-separator` overrides, expressed with `data-[orientation=…]` variants to match
+the Angular `separator` port (see §separator-1). Angular-specific behavioral requirement, not a
+style divergence.
+
+---
+
+### 3. `asChild` on `ButtonGroupText` omitted
+
+| | Mechanism |
+|---|---|
+| Registry React | `asChild` swaps the rendered `div` for the child element via Radix `Slot` |
+| Angular registry | Attribute selector — the host element is whatever the caller writes |
+
+**Why it diverges:** Angular has no `Slot` equivalent. The attribute selector already gives the
+caller full control of the host element (`<div uiButtonGroupText>`, `<label uiButtonGroupText>`),
+which is the same idiom used by Button and Card.
+
+**Angular registry action:** No `asChild` input. Document the attribute-selector idiom instead.
+
+---
+
+### 4. Structural classes not covered by `cn-button-group-*` tokens
+
+| | Covered by CSS tokens |
+|---|---|
+| `cn-button-group` | `has-[>[data-slot=button-group]]:gap-2` + a `select` rounding fix only |
+| `cn-button-group-orientation-horizontal` / `-vertical` | last-child `rounded-r-lg!` / `rounded-b-lg!` only |
+| Registry React CVA | also carries `flex w-fit items-stretch`, `*:focus-visible:z-10`, `flex-col` (vertical), and the per-side rounding/border removal on the middle children |
+
+**Why it diverges:** the `cn-button-group*` tokens only cover the gap/rounding polish; the
+layout, focus stacking, and the `rounded-*-none` / `border-*-0` seam removal that makes the
+buttons look like one control have no token equivalent.
+
+**Angular registry action:** Use the `cn-button-group*` tokens and inline the remaining
+structural utilities verbatim from the registry React CVA (per the porting guide's "styles NOT
+covered by CSS tokens" rule).
+
+---
+
+### 5. SVG fill on `ButtonGroupText` — `[&_svg]:fill-current`
+
+| | Has `fill-current` |
+|---|---|
+| Registry React | ✗ (`[&_svg]:pointer-events-none` only) |
+| `cn-button-group-text` CSS | ✗ (sizes icons via `[&_svg:not([class*='size-'])]:size-4`) |
+| Angular registry | ✓ |
+
+**Why it diverges:** same root cause as §button-2 — Material Symbols are fill-based SVGs that
+paint black without an explicit `fill: currentColor`.
+
+**Angular registry action:** Include `[&_svg]:fill-current` alongside
+`[&_svg]:pointer-events-none` on `ButtonGroupText`.
+
+**Upstream fix needed:** Add `[&_svg]:fill-current` to `.cn-button-group-text` in
+`style-force-ui.css`.
+
+---
+
 ## separator
 
 ### 1. `cn-separator*` CSS tokens unused by all frameworks
@@ -353,3 +445,4 @@ Issues that should be fixed in the registry source (not Angular-specific):
 | 8 | `style-force-ui.css` `@theme` | Add `--animate-spinner: spin 500ms linear infinite` |
 | 9 | `bases/radix/ui/spinner.tsx` + Vue/Svelte | Remove `role="status" aria-label="Loading"` from spinner SVG |
 | 10 | `style-force-ui.css` | Remove `.cn-separator`, `.cn-separator-horizontal`, `.cn-separator-vertical` (dead code), or migrate all framework ports to use them |
+| 11 | `style-force-ui.css` `.cn-button-group-text` | Add `[&_svg]:fill-current` |

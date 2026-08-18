@@ -279,4 +279,20 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "button-group",
+    type: "registry:ui",
+    registryDependencies: ["button"],
+    files: [
+      { path: "ui/button-group/button-group.variants.ts", type: "registry:ui" },
+      { path: "ui/button-group/button-group.component.ts", type: "registry:ui" },
+      { path: "ui/button-group/button-group.component.html", type: "registry:ui" },
+      { path: "ui/button-group/index.ts", type: "registry:ui" },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/button-group",
+      },
+    },
+  },
 ]
