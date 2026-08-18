@@ -115,6 +115,19 @@ too, port it into the matching `packages/registry-{fw}/ui/` package and add its 
 `FRAMEWORK_COMPONENTS` in `apps/v4/lib/framework-components.ts` — see
 [Previews and examples](#previews-and-examples) below.
 
+A framework port is expected to reach **example-set and MDX-structure parity with the
+`base` (Base UI React) page** — the same examples, in the same order, under the same flat
+`##` headings, backed by demo files with the same names. The canonical structure and its
+worked examples are in [docs/component-docs-standard.md](docs/component-docs-standard.md);
+read it before writing a port's docs. Framework-specific differences (Ember's `@arg`
+invocation, Angular's `[input]` bindings, a primitive that doesn't exist in a framework)
+must be **documented inline in the matching section**, and are never a reason to fork the
+page structure — no `## Examples` wrapper, no per-framework props table on a page whose
+`base` page links out to upstream docs. `pnpm --filter=v4 example-parity:check` reports the
+current gaps per framework and component; it runs in CI as a report today (there is a large
+pre-existing backlog, mostly Angular), so read its output rather than assuming a green job
+means parity.
+
 ## Previews and examples
 
 React component previews render inline in `apps/v4` using the demo files under
