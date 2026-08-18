@@ -182,6 +182,19 @@ jobs:
       - run: pnpm --filter=v4 validate:previews
         continue-on-error: true
 
+      # [FORCE-UI] Non-blocking by design: this reports per-component gaps
+      # between each framework port's demo files and the React `base` example
+      # set (docs/component-docs-standard.md). The Angular port - and to a
+      # lesser extent Ember - is a long way short of base today, so gating on
+      # it would fail every unrelated PR for a backlog nobody introduced in
+      # that PR. The script itself always exits 0; this step exists to keep
+      # the report in front of reviewers. Make it blocking (drop
+      # continue-on-error and have the script exit non-zero) once the
+      # per-component migration has closed the Angular/Ember gap and only
+      # DOCUMENTED_EXCEPTIONS entries remain.
+      - run: pnpm --filter=v4 example-parity:check
+        continue-on-error: true
+
   # [FORCE-UI] Builds the four framework preview Vite apps the same way
   # `pnpm --filter=v4 preview-server:build` does for a real deploy. Nothing
   # else in CI compiles these apps, so a missing demo file or an unknown
