@@ -387,6 +387,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "avatar",
     "badge",
     "button",
+    "button-group",
     "card",
     "empty",
     "input",

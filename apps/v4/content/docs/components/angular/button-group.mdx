@@ -1,0 +1,124 @@
+---
+title: Button Group
+description: Groups related buttons and other controls into a single unit.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="button-group-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/button-group
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="button-group" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  ButtonGroupComponent,
+  ButtonGroupSeparatorComponent,
+  ButtonGroupTextComponent,
+} from "@/components/ui/button-group"
+```
+
+```html
+<div uiButtonGroup>
+  <button uiButton variant="outline">Archive</button>
+  <div uiButtonGroupSeparator></div>
+  <button uiButton variant="outline">Report</button>
+</div>
+```
+
+Each part is an attribute selector, so the host element stays caller-controlled — Angular's idiomatic equivalent of React's `asChild`. `[uiButtonGroupText]` renders a non-interactive label segment, and `[uiButtonGroupSeparator]` renders a divider between segments.
+
+```html
+<div uiButtonGroup>
+  <div uiButtonGroupText>https://</div>
+  <input class="..." />
+</div>
+```
+
+## Composition
+
+```text
+[uiButtonGroup]
+├── [uiButtonGroupText]
+├── [uiButtonGroupSeparator]
+└── (buttons, inputs, nested [uiButtonGroup])
+```
+
+## Examples
+
+### Orientation
+
+Set `orientation="vertical"` to stack the group's children instead of laying them out in a row.
+
+<ComponentPreview framework="angular" name="button-group-orientation" />
+
+### Separator
+
+Use `[uiButtonGroupSeparator]` between buttons that share a background, such as `secondary` buttons.
+
+<ComponentPreview framework="angular" name="button-group-separator" />
+
+### Nested
+
+Nest button groups to visually separate sets of related actions.
+
+<ComponentPreview framework="angular" name="button-group-nested" />
+
+## API Reference
+
+### ButtonGroupComponent
+
+| Input         | Type                         | Default        |
+| ------------- | ---------------------------- | -------------- |
+| `orientation` | `"horizontal" \| "vertical"` | `"horizontal"` |
+| `class`       | `string`                     | –              |
+
+### ButtonGroupTextComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+### ButtonGroupSeparatorComponent
+
+| Input         | Type                         | Default      |
+| ------------- | ---------------------------- | ------------ |
+| `orientation` | `"horizontal" \| "vertical"` | `"vertical"` |
+| `class`       | `string`                     | –            |

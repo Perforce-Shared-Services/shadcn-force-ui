@@ -227,6 +227,70 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "button-group-demo",
+    title: "Button Group Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/button-group-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "button-group",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "button-group-nested",
+    title: "Button Group Nested",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/button-group-nested.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "button-group",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "button-group-orientation",
+    title: "Button Group Orientation",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/button-group-orientation.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "button-group",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "button-group-separator",
+    title: "Button Group Separator",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/button-group-separator.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "button-group",
+    ],
+    dependencies: [],
+  },
+  {
     name: "button-icon",
     title: "Button Icon",
     type: "registry:example",
