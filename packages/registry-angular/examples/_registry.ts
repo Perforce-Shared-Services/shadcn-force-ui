@@ -655,6 +655,52 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "stepper-demo",
+    title: "Stepper Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/stepper-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "stepper",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "stepper-horizontal",
+    title: "Stepper Horizontal",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/stepper-horizontal.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "stepper",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "stepper-vertical",
+    title: "Stepper Vertical",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/stepper-vertical.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "stepper",
+    ],
+    dependencies: [],
+  },
+  {
     name: "switch-demo",
     title: "Switch Demo",
     type: "registry:example",

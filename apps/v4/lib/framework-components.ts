@@ -396,6 +396,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "separator",
     "skeleton",
     "spinner",
+    "stepper",
     "textarea",
   ]),
 }

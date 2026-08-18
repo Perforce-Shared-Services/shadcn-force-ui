@@ -1,0 +1,156 @@
+---
+title: Stepper
+description: A set of steps that indicate progress through a multi-step process.
+base: angular
+component: true
+---
+
+<ComponentPreview
+  framework="angular"
+  name="stepper-demo"
+  previewClassName="h-64"
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/stepper
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="stepper" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  StepperComponent, StepperItemComponent, StepperTriggerComponent,
+  StepperIndicatorComponent, StepperTitleComponent,
+  StepperDescriptionComponent, StepperSeparatorComponent,
+} from "@/components/ui/stepper"
+```
+
+```html
+<div uiStepper [(value)]="step">
+  <div uiStepperItem [step]="1">
+    <button uiStepperTrigger>
+      <span uiStepperIndicator>1</span>
+    </button>
+    <div uiStepperSeparator></div>
+    <h4 uiStepperTitle>Your details</h4>
+    <p uiStepperDescription>Provide your name and email</p>
+  </div>
+  <div uiStepperItem [step]="2">
+    <button uiStepperTrigger>
+      <span uiStepperIndicator>2</span>
+    </button>
+    <h4 uiStepperTitle>Your password</h4>
+    <p uiStepperDescription>Choose a password</p>
+  </div>
+</div>
+```
+
+`value` is the current step number and is two-way bindable, so `[(value)]="step"` keeps a
+signal in the host component in sync with clicks on the triggers. Each `[uiStepperItem]`
+derives its own `active` / `completed` / `inactive` state from that value and exposes it as
+`data-state` on the item element, which the indicator, separator, title and description
+style themselves against.
+
+A stepper is linear by default: a trigger for a step that has not been reached yet is
+disabled. Set `[linear]="false"` to let the user jump to any step, or call `next()` /
+`prev()` on the root to advance a linear stepper once the current step is valid.
+
+## Composition
+
+```text
+[uiStepper]
+└── [uiStepperItem]
+    ├── [uiStepperTrigger]
+    │   └── [uiStepperIndicator]
+    ├── [uiStepperSeparator]
+    ├── [uiStepperTitle]
+    └── [uiStepperDescription]
+```
+
+## Examples
+
+### Horizontal
+
+<ComponentPreview
+  framework="angular"
+  name="stepper-horizontal"
+  previewClassName="h-56"
+/>
+
+### Vertical
+
+<ComponentPreview
+  framework="angular"
+  name="stepper-vertical"
+  previewClassName="h-96"
+/>
+
+## API Reference
+
+### StepperComponent
+
+| Input         | Type                         | Default        |
+| ------------- | ---------------------------- | -------------- |
+| `value`       | `number` (two-way, `model`)  | `1`            |
+| `orientation` | `"horizontal" \| "vertical"` | `"horizontal"` |
+| `linear`      | `boolean`                    | `true`         |
+| `class`       | `string`                     | –              |
+
+| Member        | Type                     | Description                                               |
+| ------------- | ------------------------ | --------------------------------------------------------- |
+| `steps`       | `Signal<number[]>`       | Step numbers of every registered item, ascending.         |
+| `totalSteps`  | `Signal<number>`         | Number of registered items.                               |
+| `isFirstStep` | `Signal<boolean>`        | Whether the current step is the first one.                |
+| `isLastStep`  | `Signal<boolean>`        | Whether the current step is the last one.                 |
+| `goToStep`    | `(step: number) => void` | Navigates to a step, honouring `linear`.                  |
+| `next`        | `() => void`             | Advances to the next registered step, bypassing `linear`. |
+| `prev`        | `() => void`             | Returns to the previous registered step.                  |
+
+### StepperItemComponent
+
+| Input       | Type      | Default    |
+| ----------- | --------- | ---------- |
+| `step`      | `number`  | – required |
+| `disabled`  | `boolean` | `false`    |
+| `completed` | `boolean` | `false`    |
+| `class`     | `string`  | –          |
+
+Sets `data-state="active | completed | inactive"` and, when disabled, `data-disabled` on the
+host, plus the `group/stepper-item` class the other parts key off.
+
+### StepperTriggerComponent · StepperIndicatorComponent · StepperTitleComponent · StepperDescriptionComponent · StepperSeparatorComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+Use a `<button>` host for `uiStepperTrigger` so it is keyboard operable natively; a
+non-button host gets `role="button"`, `tabindex` and `aria-disabled` instead.
