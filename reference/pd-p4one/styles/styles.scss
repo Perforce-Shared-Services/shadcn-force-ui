@@ -1,0 +1,639 @@
+@use "./@vex/styles/core";
+@use './sentry-custom';
+
+// Tailwind v4 entry (`@import "tailwindcss"`, `@theme`, `@theme inline`)
+// lives in src/tailwind.css — Sass eats v4 directives, so that file is loaded
+// as a sibling stylesheet via angular.json's "styles" array. To make `@apply`
+// work inside this SCSS pipeline, pull in the theme reference here.
+@reference "./tailwind.css";
+
+// Tippy.js tooltip styles (CSS-only, no Sass APIs)
+@import 'tippy.js/dist/tippy.css';
+@import 'tippy.js/animations/scale.css';
+
+$globalFontFilter: '';
+
+// ---------------------------------------------------------------------------
+// CSS Custom Properties – Light-theme defaults
+// (previously in @vex/styles/partials/styles/_style-default.scss)
+// ---------------------------------------------------------------------------
+:root {
+  // Generic
+  --padding-gutter: 0.4rem;
+  --padding: 1.5rem;
+  --padding-16: 1rem;
+  --padding-12: 0.75rem;
+  --padding-8: 0.5rem;
+  --padding-4: 0.25rem;
+
+  // Typography
+  --font: var(--font-sans);
+
+  // App colour tokens
+  --mat-color-primary: var(--color-p4one-lightblue);
+  --color-primary-contrast: #017CF7;
+  --color-accent: yellow;
+  --color-accent-contrast: black;
+  --color-warn: #f0dbdb;
+  --color-warn-contrast: #e04444;
+
+  // Text colours
+  --text-color: rgba(0, 0, 0, 0.87);
+  --text-color-light: white;
+  --text-secondary: rgba(0, 0, 0, 0.54);
+  --text-secondary-light: rgba(255, 255, 255, 0.7);
+  --text-hint: rgba(0, 0, 0, 0.38);
+  --text-hint-light: rgba(255, 255, 255, 0.5);
+
+  // Foreground
+  --foreground-divider: rgba(82, 63, 105, 0.06);
+
+  // Background
+  --background-base: rgb(245, 245, 248);
+  --background-card: white;
+  --background-app-bar: #ebebee;
+  --background-hover: rgba(0, 0, 0, 0.04);
+
+  // Sidenav
+  --sidenav-background: var(--color-p4one-tar);
+  --sidenav-width: 280px;
+  --sidenav-collapsed-width: 72px;
+  --sidenav-color: white;
+  --sidenav-item-background-active: var(--color-p4one-lightblue);
+  --sidenav-item-color: #d6d7dab6;
+  --sidenav-item-head: #d6d7da78;
+  --sidenav-item-color-active: white;
+  --sidenav-item-icon-color: #d6d7da;
+  --sidenav-item-icon-color-active: var(--mat-color-primary);
+  --sidenav-item-icon-gap: 8px;
+  --sidenav-item-icon-size: 16px;
+  --sidenav-item-border-color: transparent;
+  --sidenav-item-border-color-active: var(--mat-color-primary);
+  --sidenav-toolbar-background: #222224;
+  --sidenav-item-dropdown-background: #1f1f1f;
+  --sidenav-item-dropdown-background-hover: #1a1a1a;
+  --sidenav-item-padding: var(--padding);
+  --sidenav-item-dropdown-gap: 12px;
+
+  // Toolbar
+  --toolbar-height: 64px;
+  --toolbar-background: white;
+  --toolbar-color: rgba(0, 0, 0, 0.87);
+  --toolbar-icon-color: var(--mat-color-primary);
+
+  // Secondary Toolbar
+  --secondary-toolbar-background: var(--background-card);
+  --secondary-toolbar-height: 54px;
+
+  // Page Layouts
+  --page-layout-header-height: 120px;
+  --page-layout-toolbar-height: 30px;
+
+  // Misc
+  --blink-scrollbar-width: 12px;
+  --default-icon-size: 24px;
+  --border-radius: 4px;
+  --footer-color: var(--text-color);
+  --background-pattern-color: #e0e0e0;
+}
+
+// ---------------------------------------------------------------------------
+// Dark-theme overrides (activated by <body class="dark-theme">)
+// (previously in @vex/styles/partials/styles/_style-dark.scss)
+// ---------------------------------------------------------------------------
+.dark-theme {
+  // Text
+  --text-color: white;
+  --text-color-light: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-secondary-light: rgba(0, 0, 0, 0.54);
+  --text-hint: rgba(255, 255, 255, 0.5);
+  --text-hint-light: rgba(0, 0, 0, 0.38);
+
+  // Foreground
+  --foreground-divider: rgba(255, 255, 255, 0.12);
+
+  // Background
+  --background-base: #373940;
+  --background-card: #2c2e33;
+  --background-app-bar: #222427;
+  --background-hover: rgba(255, 255, 255, 0.04);
+  --background-pattern-color: #1b1d1f;
+
+  // Toolbar
+  --toolbar-background: var(--background-card);
+  --toolbar-color: white;
+  --toolbar-icon-color: var(--mat-color-primary);
+
+  // Footer
+  --footer-color: var(--text-color);
+
+  // Secondary toolbar
+  --secondary-toolbar-background: var(--background-card);
+
+  .mat-checkbox-checkmark-path {
+    stroke: var(--sidenav-item-color) !important;
+  }
+}
+
+html,
+body {
+  background-color: #43454e; // set a custom background-color, to avoid the white background when resizing
+  @apply w-full h-full text-white leading-normal antialiased select-none;
+}
+
+/* Material Symbols Rounded — the icon font (loaded via index.html +
+   .storybook/preview-head.html). Default = outline (FILL 0), weight 300;
+   `data-fill="1"` / `.filled` = active/selected. font-size inherits, so size
+   icons with the surrounding text size or a `text-*` utility. Components funnel
+   icons through their `<name>.icons.ts` swap point. See icon-swap-strategy memory. */
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  // Material Symbols render the glyph via a ligature on the literal name
+  // (e.g. "expand_more"). Without 'liga' the browser falls back and shows the
+  // raw text instead of the icon.
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-rounded[data-fill="1"],
+.material-symbols-rounded.filled {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+.sensitive-data {
+  filter: var(--globalFontFilter, $globalFontFilter) !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-base); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #717171; 
+  &:hover{
+    background: #b3b3b3; 
+  }
+}
+
+.mat-checkbox-checkmark-path {
+  stroke: var(--sidenav-item-color) !important;
+}
+
+.link {
+  color: #7ebdfd;
+  cursor: pointer;
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+a, mat-checkbox, button, img {
+  
+  -webkit-app-region: no-drag;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+.custom-drag {
+  -webkit-app-region: drag;
+}
+
+.custom-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.mat-mdc-tooltip {
+  font-size: 14px !important;
+}
+
+.mat-mdc-radio-button .mdc-radio__inner-circle {
+  background-color: var(--text-color) !important;
+}
+
+*:focus {
+  // no border around any focused elements
+  outline: none;
+}
+
+.ltr\:mr-2 { // breadcrumb seperator icon
+  margin-right: .5rem !important;
+}
+
+.ltr\:mr-3 { // breadcrumb seperator text
+  margin-right: .5rem !important;
+}
+
+.ltr\:mr-4 { // breadcrumb seperator text
+  margin-right: 1rem;
+ }
+
+.ltr\:border-r {
+  border-right-width: 1px;
+}
+
+.ltr\:pl-3 {
+  padding-left: 0.5rem !important;
+}
+
+.ltr\:pl-4 {
+  padding-left: 1rem !important;
+}
+
+.ltr\:pr-3 {
+  padding-right: 0.5rem !important;
+}
+
+.ltr\:pr-4 {
+  padding-right: 1rem !important;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.spinning-ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.progress-perforce-logo {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.modal-qrcode {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Globally used filter or input field */
+.custom-text-input-field {
+  // layout
+  @apply flex flex-row rounded gap-x-2 px-2 items-center;
+  // visual
+  @apply bg-p4one-pewter/60 shadow-inner border border-transparent hover:border-p4one-lightblue;
+  transition: border-color 120ms ease-in-out, background-color 120ms ease-in-out;
+
+  // Show the focus state via the container border so the inputs inside can
+  // safely use `outline-none` without losing keyboard accessibility.
+  &:focus-within {
+    @apply border-p4one-lighterblue;
+    background-color: rgba(51, 51, 51, 0.75);
+  }
+}
+
+/* Dialog form-field label rendered above its input (replaces <mat-label>). */
+.p4o-field-label {
+  @apply block text-xs font-medium text-gray-300 ml-1 mb-1 select-none;
+  letter-spacing: 0.2px;
+}
+
+/* Wrapper for a single label+field group in a dialog — gives consistent
+ * vertical rhythm between fields. */
+.p4o-field-group {
+  @apply mb-3;
+}
+
+/* Inside dialogs that use .p4o-field-label, the form-field's own internal
+ * label slot and subscript wrapper are unused. Collapse them so the visible
+ * input sits flush below the external label. */
+.p4o-dialog .mat-mdc-form-field-infix {
+  min-height: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.p4o-dialog .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+.p4o-dialog .mat-mdc-text-field-wrapper {
+  padding: 0;
+  background: transparent;
+}
+.p4o-dialog .mat-mdc-form-field-flex {
+  padding: 0;
+}
+.p4o-dialog .mdc-line-ripple {
+  display: none;
+}
+
+/* Dropdown panel anchored beneath a .custom-text-input-field inside a dialog. */
+.p4o-dropdown-panel {
+  @apply absolute w-full flex flex-col rounded-md shadow-xl z-20 bg-p4one-tar;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  max-height: 12rem;
+  overflow: hidden;
+}
+.p4o-dropdown-panel--up {
+  bottom: 100%;
+  margin-bottom: 4px;
+}
+.p4o-dropdown-panel--down {
+  top: 100%;
+  margin-top: 4px;
+}
+.p4o-dropdown-panel ul {
+  @apply py-1 overflow-y-auto;
+  max-height: inherit;
+}
+.p4o-dropdown-panel li {
+  @apply px-3 py-1.5 text-xs font-medium flex flex-row items-center gap-x-2 cursor-pointer text-white;
+  transition: background-color 80ms ease-in-out;
+}
+.p4o-dropdown-panel li:hover {
+  background: rgba(50, 116, 192, 0.20);
+}
+.p4o-dropdown-panel li.is-disabled {
+  @apply opacity-30 cursor-default;
+}
+.p4o-dropdown-panel li.is-disabled:hover {
+  background: transparent;
+}
+.p4o-dropdown-panel li.is-empty {
+  @apply text-gray-400 cursor-default;
+}
+.p4o-dropdown-panel li.is-empty:hover {
+  background: transparent;
+}
+
+.snackbar-error { 
+  background-color: var(--color-warn-contrast) !important; 
+  color: var(--color-warn) !important; 
+}
+
+// Toolbar grid-size slider — native <input type="range">.
+// Replaces the old <mat-slider> which, after the Material 11 → 20 (MDC)
+// migration, fought every override and rendered with misaligned knob,
+// runaway width, and overflow-overlap onto the preceding toggle group.
+// A native range input is dependency-free, has a deterministic box
+// model, and wires up to changeSize() unchanged.
+.grid-size-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 4px;
+  background: #6a6a6a;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #aaaaaa;
+    cursor: pointer;
+    border: none;
+  }
+
+  &:disabled::-webkit-slider-thumb {
+    cursor: not-allowed;
+  }
+}
+
+// Center the background overlay when hovering over an emoji for the native picker
+// https://github.com/scttcper/ngx-emoji-mart/issues/385
+// Suggested fix in the GH issue doesn't work, but the code below does.
+.emoji-mart-dark .emoji-mart-emoji {
+  opacity: 0.8;
+  &:hover {
+    filter: contrast(1.2);
+    opacity: 1.0;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+// Focused buttons in Angular get an odd overlay that we don't want.
+// With the code below we deactivate it globally
+.mat-mdc-icon-button .mat-mdc-button-persistent-ripple {
+  display: none !important;
+}
+
+// https://github.com/angular/components/issues/16100
+// Unset background color since the ripple effect is
+// not removed for hover/touch
+.mat-ripple-element {
+  background-color: unset !important;
+}
+
+.tippy-content {
+  white-space: pre-line !important;
+}
+
+@keyframes custom-wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.custom-animate-wiggle {
+    animation: custom-wiggle 1s ease-in-out;
+}
+
+.multiline-tooltip{
+  white-space: pre-line !important;
+}
+
+::ng-deep .full-width-tooltip {
+  max-width: none !important;
+  width: 100% !important;
+  white-space: normal;
+}
+
+// Restore the outer dialog gutter that the Material MDC migration moved off
+// the container. MDC drives slot padding through CSS custom properties; we
+// zero the horizontal slot padding and put the 24px gutter back on the
+// surface so absolute children of slots, and elements rendered outside a
+// slot, recover the rim they had under the legacy mat-dialog-container.
+.mat-mdc-dialog-container {
+  --mat-dialog-headline-padding: 6px 0 13px;
+  --mat-dialog-content-padding: 20px 0;
+  --mat-dialog-with-actions-content-padding: 20px 0 0 0;
+  --mat-dialog-actions-padding: 16px 0;
+
+  .mat-mdc-dialog-surface {
+    padding: 0 24px;
+  }
+}
+
+.rounded-dialog .mat-mdc-dialog-container .mat-mdc-dialog-surface {
+  padding: 0 !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+// ---------------------------------------------------------------------------
+// Angular Material overrides (from @vex partials)
+// ---------------------------------------------------------------------------
+.mat-icon,
+.mat-mdc-icon-button .mat-icon {
+  font-size: var(--default-icon-size);
+  height: unset;
+  width: unset;
+}
+
+.ic-inline > svg {
+  display: inline-block;
+}
+
+ic-icon:not(.ic-inline) > svg,
+.iconify:not(.ic-inline) > svg {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.vex-scrollblock {
+  position: fixed;
+  width: 100%;
+}
+
+.mat-mdc-icon-button .mat-mdc-button-base > *,
+.mat-mdc-menu-item .mat-icon,
+.mat-mdc-button .mat-icon {
+  vertical-align: middle !important;
+}
+
+.mat-mdc-form-field-icon-suffix, .mat-mdc-form-field-icon-prefix {
+  .mat-mdc-icon-button .mat-icon {
+    font-size: inherit;
+  }
+}
+
+.mat-table {
+  mat-row,
+  mat-header-row,
+  mat-footer-row,
+  th.mat-header-cell,
+  td.mat-cell,
+  td.mat-footer-cell {
+    border-bottom-color: var(--foreground-divider);
+  }
+}
+
+.mat-mdc-form-field {
+  margin-bottom: 4px;
+}
+
+.mat-mdc-form-field.mat-form-field-invalid {
+  &.mat-focused .mat-mdc-form-field-icon-prefix,
+  &.mat-focused .mat-mdc-form-field-icon-suffix {
+    @apply text-red-500;
+  }
+}
+
+.mat-table .mat-cell,
+.mat-table .mat-header-cell {
+  box-sizing: content-box;
+  padding-left: var(--padding-12);
+  padding-right: var(--padding-12);
+  white-space: nowrap;
+}
+
+.mat-mdc-paginator-page-size-select.mat-mdc-form-field .mat-mdc-form-field-flex {
+  padding-top: 0;
+}
+
+.mat-menu-item ic-icon {
+  margin-inline-end: var(--padding-16);
+  vertical-align: middle;
+
+  > svg {
+    vertical-align: middle;
+  }
+}
+
+.mat-mdc-select-panel {
+  @apply text-base;
+}
+
+.mat-drawer-side {
+  border: 0;
+}
+
+textarea.mat-mdc-input-element {
+  @apply leading-normal;
+}
+
+.vex-flex-form-field {
+  .mat-mdc-form-field-infix {
+    width: 50px;
+  }
+}
+
+.vex-dense-form-field {
+  margin-bottom: -1.34375em;
+
+  &.mat-mdc-form-field-appearance-outline {
+    .mat-mdc-form-field-infix {
+      padding-top: 4px;
+    }
+  }
+}
+
+.vex-tabs {
+  .mat-mdc-tab.mat-mdc-tab-active {
+    opacity: 1;
+  }
+
+  .mat-mdc-tab-link.mat-mdc-tab-active {
+    opacity: 1;
+  }
+}
+
+.vex-tabs-dense {
+  .mat-mdc-tab {
+    min-width: 0;
+  }
+}
+
+.uppercase > * > .mat-sort-header-button {
+  text-transform: uppercase;
+}
+
+.mat-mdc-card-image {
+  max-width: none;
+}

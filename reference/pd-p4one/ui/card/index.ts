@@ -1,0 +1,7 @@
+export { CardComponent as Card, type CardSize } from './card.component';
+export { CardHeaderComponent as CardHeader } from './card.component';
+export { CardTitleComponent as CardTitle } from './card.component';
+export { CardDescriptionComponent as CardDescription } from './card.component';
+export { CardActionComponent as CardAction } from './card.component';
+export { CardContentComponent as CardContent } from './card.component';
+export { CardFooterComponent as CardFooter } from './card.component';
