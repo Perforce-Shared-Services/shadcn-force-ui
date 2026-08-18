@@ -115,6 +115,25 @@ too, port it into the matching `packages/registry-{fw}/ui/` package and add its 
 `FRAMEWORK_COMPONENTS` in `apps/v4/lib/framework-components.ts` — see
 [Previews and examples](#previews-and-examples) below.
 
+A framework port is expected to reach **feature-for-feature parity with the React
+`base` page**, not just to have a page: the same set of examples, under the same
+file names, documented with the same section headings in the same order. The
+canonical structure — heading order, example file naming, and what belongs in
+`## API Reference` — is written down in
+[docs/component-docs-standard.md](docs/component-docs-standard.md). Genuine
+framework-specific behaviour (Ember's `{{@arg}}` invocation, Vue's `v-model`, a
+primitive whose upstream equivalent lacks a prop) is documented as an inline note
+in the section it affects; it never justifies renaming a section, collapsing the
+examples under a single `## Examples` heading, or forking the page's structure.
+
+`pnpm --filter=v4 example-parity:check` reports the example-count half of this per
+framework and per component, honoring a documented-exceptions list in
+`apps/v4/scripts/check-example-parity.mts`. It is **reporting-only today** — it
+always exits 0, and CI runs it with `continue-on-error: true` — because the
+existing ports (Angular especially) carry a large pre-existing gap. Do not add to
+that gap: a new or updated component should come out of the check with no new
+entries.
+
 ## Previews and examples
 
 React component previews render inline in `apps/v4` using the demo files under
