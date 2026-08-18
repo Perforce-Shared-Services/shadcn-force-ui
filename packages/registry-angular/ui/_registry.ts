@@ -279,4 +279,23 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "pagination",
+    type: "registry:ui",
+    registryDependencies: ["button"],
+    files: [
+      { path: "ui/pagination/pagination.icons.ts", type: "registry:ui" },
+      { path: "ui/pagination/pagination.component.ts", type: "registry:ui" },
+      { path: "ui/pagination/pagination.component.html", type: "registry:ui" },
+      { path: "ui/pagination/pagination-previous.component.html", type: "registry:ui" },
+      { path: "ui/pagination/pagination-next.component.html", type: "registry:ui" },
+      { path: "ui/pagination/pagination-ellipsis.component.html", type: "registry:ui" },
+      { path: "ui/pagination/index.ts", type: "registry:ui" },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/pagination",
+      },
+    },
+  },
 ]

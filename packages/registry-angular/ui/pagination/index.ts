@@ -1,0 +1,7 @@
+export { PaginationComponent as Pagination } from "./pagination.component"
+export { PaginationContentComponent as PaginationContent } from "./pagination.component"
+export { PaginationItemComponent as PaginationItem } from "./pagination.component"
+export { PaginationLinkComponent as PaginationLink } from "./pagination.component"
+export { PaginationPreviousComponent as PaginationPrevious } from "./pagination.component"
+export { PaginationNextComponent as PaginationNext } from "./pagination.component"
+export { PaginationEllipsisComponent as PaginationEllipsis } from "./pagination.component"

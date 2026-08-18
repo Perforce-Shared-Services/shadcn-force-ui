@@ -337,6 +337,97 @@ Angular idiom and avoids double-kbd nesting.
 
 ---
 
+## pagination
+
+### 1. Reference implementation unavailable in this checkout
+
+Neither `reference/pd-p4one/` nor `/opt/dev/pd-p4one/` is present here, so the
+Angular pagination port was derived from the canonical React source
+(`apps/v4/registry/bases/radix/ui/pagination.tsx`), the already-ported Vue and
+Svelte registries, and the existing Angular `button`/`card`/`toggle-group`
+patterns — not from a direct p4one diff.
+
+**Angular registry action:** Reconcile the entries below against
+`p4one/ui/pagination/` if/when the submodule becomes available.
+
+---
+
+### 2. `IconPlaceholder` → inline SVG + `DomSanitizer`
+
+Same root cause as button §5: React's `IconPlaceholder` (which renders the
+caller's chosen icon pack) has no Angular equivalent.
+
+**Angular registry action:** Ship raw Material Symbols SVG strings in
+`pagination.icons.ts` and render them with `bypassSecurityTrustHtml` — one swap
+point for all three glyphs (`chevron_left`, `chevron_right`, `more_horiz`).
+
+---
+
+### 3. `cn-rtl-flip` omitted on the previous/next chevrons
+
+| | Has `cn-rtl-flip` |
+|---|---|
+| Registry React | ✓ (on the `IconPlaceholder`) |
+| Registry Vue / Svelte | ✗ |
+| Angular | ✗ |
+
+`cn-rtl-flip` has no rule in `style-force-ui.css`; it is applied by the shadcn
+CLI's RTL transform, not by the stylesheet. Vue and Svelte already omit it.
+
+**Angular registry action:** Omit it, matching the existing Vue/Svelte ports.
+Revisit if an RTL mechanism is introduced for the framework ports.
+
+---
+
+### 4. `PaginationLink`/`Previous`/`Next` apply `buttonVariants` directly
+
+| | Mechanism |
+|---|---|
+| Registry React | `<Button asChild variant=… size=…>` wrapping an `<a>` |
+| Registry Vue / Svelte | `cn(buttonVariants({ … }), "cn-pagination-…")` on the anchor |
+| Angular | `cn(buttonVariants({ … }), "cn-pagination-…")` on the host anchor |
+
+React needs `Button asChild` because there is no other way to put the button
+classes on an anchor. Angular's attribute selectors already decorate the
+caller's own element, and `ButtonComponent`'s extra machinery
+(`loading`, disabled-anchor guard) does not apply to a plain styled link.
+
+**Angular registry action:** Import `buttonVariants` from
+`../button/button.variants` and declare `registryDependencies: ["button"]` —
+the same arrangement `toggle-group` uses for `toggleVariants`.
+
+---
+
+### 5. `PaginationPrevious`/`PaginationNext` are standalone, not `PaginationLink` wrappers
+
+React/Vue/Svelte implement previous/next by rendering a `PaginationLink` with
+extra children. An Angular attribute-selector component decorates an *existing*
+host element, so doing the same would mean nesting `<a uiPaginationLink>` inside
+`<a uiPaginationPrevious>` — invalid HTML.
+
+**Angular registry action:** Give each its own component that computes
+`buttonVariants({ variant: "ghost", size: "default" })` plus the
+`cn-pagination-previous` / `cn-pagination-next` marker. The rendered class list,
+`data-slot="pagination-link"`, `data-size="default"` and `aria-label` match the
+React output exactly; only the composition mechanism differs.
+
+---
+
+### 6. Example parity — `pagination-icons-only` and `pagination-rtl` deferred
+
+The React `base` example set has four pagination examples; the Angular port
+ships two (`pagination-demo`, `pagination-simple`). `pagination-icons-only`
+composes `Field` + `Select`, neither of which is ported to Angular yet, and
+`pagination-rtl` depends on a React-only demo helper with no Angular
+equivalent.
+
+**Angular registry action:** Recorded as
+`DOCUMENTED_EXCEPTIONS["angular:pagination"]` in
+`apps/v4/scripts/check-example-parity.mts`; revisit once `Field`/`Select` land
+and an Angular RTL demo pattern exists.
+
+---
+
 ## Upstream fixes summary
 
 Issues that should be fixed in the registry source (not Angular-specific):

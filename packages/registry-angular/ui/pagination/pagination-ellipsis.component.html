@@ -1,0 +1,5 @@
+<!-- aria-hidden is scoped to the icon only: hiding it on the host span would
+     also hide the sr-only label below (WCAG 4.1.2) — matches the [FORCE-UI]
+     note in the canonical React source. -->
+<span class="inline-flex" aria-hidden="true" [innerHTML]="moreIcon"></span>
+<span class="sr-only">More pages</span>
