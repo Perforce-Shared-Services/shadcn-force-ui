@@ -337,6 +337,56 @@ Angular idiom and avoids double-kbd nesting.
 
 ---
 
+## table
+
+### 1. Scroll container is a separate part (`TableContainer`)
+
+| | Who renders `div[data-slot="table-container"]` |
+|---|---|
+| Registry React (`bases/radix/ui/table.tsx`) | `Table` renders the container `<div class="cn-table-container">` and the `<table class="cn-table">` inside it |
+| Registry Vue (`Table.vue`) | Same — one component renders both elements |
+| Angular registry | Two parts: `TableContainer` (`div[uiTableContainer]`) wrapping `Table` (`table[uiTable]`), nested explicitly by the caller |
+
+**Why it diverges:** Angular attribute-selector components decorate an existing host
+element; they render content *inside* the host via `<ng-content />` and cannot wrap the
+host in additional markup. Rendering the container from `TableComponent` would require
+`Renderer2` DOM surgery (create a `div`, insert it before the host, re-parent the
+`<table>`), a pattern with no precedent anywhere in this registry. Keeping the `<table>`
+a real caller-authored `<table>` is also what the attribute-selector rule exists for
+(WCAG 4.1.2), so the container is exposed as its own part instead.
+
+**Angular registry action:** Ship a ninth part, `TableContainer`
+(`div[uiTableContainer]`, `data-slot="table-container"`, class `cn-table-container`),
+and nest it explicitly:
+
+```html
+<div uiTableContainer>
+  <table uiTable>…</table>
+</div>
+```
+
+This mirrors the explicit-nesting shape `card` already uses (`uiCard` + `uiCardHeader`
+are separate elements the caller writes). It is an Angular-specific structural
+requirement, not a style divergence — the rendered DOM and class strings are identical
+to React's. No upstream fix needed.
+
+---
+
+### 2. `TableEmpty` not ported
+
+| | Has a `TableEmpty` part |
+|---|---|
+| Registry React / Svelte / Ember | ✗ |
+| Registry Vue (`TableEmpty.vue`) | ✓ |
+
+**Why it diverges:** `TableEmpty` is a Vue-only addition; it is absent from the React
+source of truth, from `table.mdx`, and from the other ports.
+
+**Angular registry action:** Do not port it. The Angular registry ships the canonical
+8 parts plus `TableContainer` (§1).
+
+---
+
 ## Upstream fixes summary
 
 Issues that should be fixed in the registry source (not Angular-specific):
