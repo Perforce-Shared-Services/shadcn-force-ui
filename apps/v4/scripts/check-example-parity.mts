@@ -56,10 +56,14 @@ const REFERENCE_EXT = "tsx"
 //
 //   ["ember:combobox", "Ember port intentionally ships one composed demo: ..."]
 //
-// Empty on purpose today: every current gap is an unported example, not a
-// documented framework difference. See the "Documenting a deviation" section
-// of docs/component-docs-standard.md before adding one.
-const DOCUMENTED_EXCEPTIONS = new Map<string, string>()
+// See the "Documenting a deviation" section of
+// docs/component-docs-standard.md before adding one.
+const DOCUMENTED_EXCEPTIONS = new Map<string, string>([
+  [
+    "angular:item",
+    "item-dropdown composes DropdownMenu, which Angular has not ported yet (Group B backlog in packages/registry-angular/AGENT-PORTING-GUIDE.md); the docs page keeps the ## Dropdown heading with a Callout instead, and the example lands with dropdown-menu.",
+  ],
+])
 
 type SlugCounts = Map<string, number>
 

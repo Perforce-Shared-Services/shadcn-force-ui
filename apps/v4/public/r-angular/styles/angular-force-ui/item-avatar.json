@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "item-avatar",
+  "title": "Item Avatar",
+  "dependencies": [],
+  "registryDependencies": [
+    "avatar",
+    "button",
+    "item"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/item-avatar.ts",
+      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/ui/avatar\"\nimport { Button } from \"@/ui/button\"\nimport {\n  Item,\n  ItemActions,\n  ItemContent,\n  ItemDescription,\n  ItemMedia,\n  ItemTitle,\n} from \"@/ui/item\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-item-avatar\",\n  standalone: true,\n  imports: [\n    Avatar,\n    AvatarImage,\n    AvatarFallback,\n    Button,\n    Item,\n    ItemMedia,\n    ItemContent,\n    ItemTitle,\n    ItemDescription,\n    ItemActions,\n  ],\n  template: `<div class=\"flex w-full max-w-lg flex-col gap-6\">\n    <div uiItem variant=\"outline\">\n      <div uiItemMedia>\n        <span uiAvatar class=\"size-10\"\n          ><img\n            uiAvatarImage\n            src=\"https://github.com/evilrabbit.png\"\n            alt=\"@evilrabbit\"\n          /><span uiAvatarFallback>ER</span></span\n        >\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>Evil Rabbit</div>\n        <p uiItemDescription>Last seen 5 months ago</p>\n      </div>\n      <div uiItemActions>\n        <button\n          uiButton\n          variant=\"outline\"\n          size=\"icon-sm\"\n          class=\"rounded-full\"\n          aria-label=\"Invite\"\n        >\n          <svg\n            aria-hidden=\"true\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            viewBox=\"0 -960 960 960\"\n          >\n            <path\n              d=\"M450-450H230q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h220v-220q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v220h220q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H510v220q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-220Z\"\n            />\n          </svg>\n        </button>\n      </div>\n    </div>\n    <div uiItem variant=\"outline\">\n      <div uiItemMedia>\n        <div\n          class=\"flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background *:data-[slot=avatar]:grayscale\"\n        >\n          <span uiAvatar class=\"hidden sm:flex\"\n            ><img\n              uiAvatarImage\n              src=\"https://github.com/shadcn.png\"\n              alt=\"@shadcn\"\n            /><span uiAvatarFallback>CN</span></span\n          ><span uiAvatar class=\"hidden sm:flex\"\n            ><img\n              uiAvatarImage\n              src=\"https://github.com/maxleiter.png\"\n              alt=\"@maxleiter\"\n            /><span uiAvatarFallback>LR</span></span\n          ><span uiAvatar\n            ><img\n              uiAvatarImage\n              src=\"https://github.com/evilrabbit.png\"\n              alt=\"@evilrabbit\"\n            /><span uiAvatarFallback>ER</span></span\n          >\n        </div>\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>No Team Members</div>\n        <p uiItemDescription>\n          Invite your team to collaborate on this project.\n        </p>\n      </div>\n      <div uiItemActions>\n        <button uiButton variant=\"outline\" size=\"sm\">Invite</button>\n      </div>\n    </div>\n  </div>`,\n})\nexport class ItemAvatarComponent {}\n\nexport default ItemAvatarComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

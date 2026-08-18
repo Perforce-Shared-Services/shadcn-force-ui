@@ -27586,6 +27586,41 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    item: {
+      name: "item",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/angular/ui/item/item.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/item/item.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/item/item.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/angular/ui/item/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item",
+        },
+      },
+    },
     spinner: {
       name: "spinner",
       title: "undefined",
@@ -28078,6 +28113,166 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/angular/examples/input-variants.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-avatar": {
+      name: "item-avatar",
+      title: "Item Avatar",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar", "button", "item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-avatar.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-demo": {
+      name: "item-demo",
+      title: "Item Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-demo.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-group": {
+      name: "item-group",
+      title: "Item Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar", "button", "item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-group.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-header": {
+      name: "item-header",
+      title: "Item Header",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-header.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-icon": {
+      name: "item-icon",
+      title: "Item Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-icon.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-image": {
+      name: "item-image",
+      title: "Item Image",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-image.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-link": {
+      name: "item-link",
+      title: "Item Link",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-link.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-rtl": {
+      name: "item-rtl",
+      title: "Item Rtl",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-rtl.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-size": {
+      name: "item-size",
+      title: "Item Size",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-size.ts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "item-variant": {
+      name: "item-variant",
+      title: "Item Variant",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["item"],
+      files: [
+        {
+          path: "registry/bases/angular/examples/item-variant.ts",
           type: "registry:example",
           target: "",
         },

@@ -539,6 +539,33 @@
     "type": "registry:ui"
   },
   {
+    "name": "item",
+    "files": [
+      {
+        "path": "registry/angular-force-ui/ui/item/item.variants.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/item/item.component.ts",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/item/item.component.html",
+        "type": "registry:ui"
+      },
+      {
+        "path": "registry/angular-force-ui/ui/item/index.ts",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item"
+      }
+    },
+    "type": "registry:ui"
+  },
+  {
     "name": "spinner",
     "files": [
       {

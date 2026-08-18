@@ -11549,6 +11549,41 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    item: {
+      name: "item",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/angular-force-ui/ui/item/item.variants.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/angular-force-ui/ui/item/item.component.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/angular-force-ui/ui/item/item.component.html",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/angular-force-ui/ui/item/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item",
+        },
+      },
+    },
     spinner: {
       name: "spinner",
       title: "undefined",

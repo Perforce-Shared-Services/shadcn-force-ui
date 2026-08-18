@@ -1180,6 +1180,9 @@
         "ember": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/item",
           "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts"
+        },
+        "angular": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item"
         }
       }
     }

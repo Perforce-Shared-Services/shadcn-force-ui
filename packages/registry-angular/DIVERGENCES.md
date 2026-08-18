@@ -337,6 +337,56 @@ Angular idiom and avoids double-kbd nesting.
 
 ---
 
+## item
+
+### 1. `ItemSeparator` cannot compose `Separator`
+
+| | Mechanism |
+|---|---|
+| Registry React (`ui/item.tsx`) | `ItemSeparator` renders `<Separator data-slot="item-separator" orientation="horizontal" class="cn-item-separator" />` |
+| Angular registry | `ItemSeparatorComponent` is self-contained: it repeats `SeparatorComponent`'s base class string plus `cn-item-separator`, and hardcodes `role="none"` + `data-orientation="horizontal"` |
+
+**Why it diverges:** Angular's `Separator` port is a `@Component` with an attribute
+selector (`[uiSeparator]`), not a wrapping element, and Angular refuses to instantiate
+two components on the same host element (NG0300). `<div uiSeparator uiItemSeparator>` is
+therefore not a legal translation of React's nested render, and Angular has no
+`asChild`/`Slot` equivalent to wrap with. Duplicating the (small, stable) separator base
+class string keeps the rendered DOM identical to React's while leaving
+`<div uiItemSeparator>` a one-attribute API.
+
+**Angular registry action:** Keep `ItemSeparatorComponent` self-contained and keep its
+base class string in sync with `ui/separator/separator.component.ts` (called out in a
+comment on the class). No `registryDependencies` entry for `separator`, since nothing is
+imported.
+
+**Upstream fix needed:** None — this is an Angular framework constraint, not a registry
+source problem.
+
+---
+
+### 2. SVG fill — `[&_svg]:fill-current`
+
+| | Has `fill-current` |
+|---|---|
+| Registry React/Vue CVA base | ✗ |
+| `cn-item` CSS | ✗ |
+| `cn-item-media-variant-icon` CSS | ✓ (already patched for Force UI) |
+
+**Why it diverges:** Same root cause as §button-2 — Material Symbols are fill-based, so
+an SVG with no `fill` paints black. `.cn-item-media-variant-icon` covers icons inside
+`<div uiItemMedia variant="icon">`, but the examples also place icons in `ItemActions`
+and in `ItemMedia`'s `default` variant (see `item-demo`, `item-link`, `item-rtl`), which
+that token does not reach.
+
+**Angular registry action:** Include `[&_svg]:fill-current` in the root `itemVariants`
+base, per the porting guide's "add it to any CVA base that accepts SVG icons" rule. It is
+a no-op for stroke-based icon sets.
+
+**Upstream fix needed:** Add `[&_svg]:fill-current` to `.cn-item` in
+`style-force-ui.css` so all frameworks get it.
+
+---
+
 ## Upstream fixes summary
 
 Issues that should be fixed in the registry source (not Angular-specific):
@@ -352,4 +402,5 @@ Issues that should be fixed in the registry source (not Angular-specific):
 | 7 | `style-force-ui.css` | Add `.cn-spinner {}` with structural base classes, or remove `cn-spinner` from all CVA bases |
 | 8 | `style-force-ui.css` `@theme` | Add `--animate-spinner: spin 500ms linear infinite` |
 | 9 | `bases/radix/ui/spinner.tsx` + Vue/Svelte | Remove `role="status" aria-label="Loading"` from spinner SVG |
-| 10 | `style-force-ui.css` | Remove `.cn-separator`, `.cn-separator-horizontal`, `.cn-separator-vertical` (dead code), or migrate all framework ports to use them |
+| 10 | `style-force-ui.css` `.cn-item` | Add `[&_svg]:fill-current` |
+| 11 | `style-force-ui.css` | Remove `.cn-separator`, `.cn-separator-horizontal`, `.cn-separator-vertical` (dead code), or migrate all framework ports to use them |

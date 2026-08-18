@@ -596,6 +596,33 @@
       "type": "registry:ui"
     },
     {
+      "name": "item",
+      "files": [
+        {
+          "path": "registry/angular-force-ui/ui/item/item.variants.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/item/item.component.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/item/item.component.html",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/angular-force-ui/ui/item/index.ts",
+          "type": "registry:ui"
+        }
+      ],
+      "meta": {
+        "links": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item"
+        }
+      },
+      "type": "registry:ui"
+    },
+    {
       "name": "spinner",
       "files": [
         {
@@ -994,6 +1021,136 @@
       "files": [
         {
           "path": "registry/angular-force-ui/examples/input-variants.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-avatar",
+      "title": "Item Avatar",
+      "dependencies": [],
+      "registryDependencies": ["avatar", "button", "item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-avatar.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-demo",
+      "title": "Item Demo",
+      "dependencies": [],
+      "registryDependencies": ["button", "item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-demo.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-group",
+      "title": "Item Group",
+      "dependencies": [],
+      "registryDependencies": ["avatar", "button", "item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-group.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-header",
+      "title": "Item Header",
+      "dependencies": [],
+      "registryDependencies": ["item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-header.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-icon",
+      "title": "Item Icon",
+      "dependencies": [],
+      "registryDependencies": ["button", "item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-icon.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-image",
+      "title": "Item Image",
+      "dependencies": [],
+      "registryDependencies": ["item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-image.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-link",
+      "title": "Item Link",
+      "dependencies": [],
+      "registryDependencies": ["item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-link.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-rtl",
+      "title": "Item Rtl",
+      "dependencies": [],
+      "registryDependencies": ["button", "item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-rtl.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-size",
+      "title": "Item Size",
+      "dependencies": [],
+      "registryDependencies": ["item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-size.ts",
+          "type": "registry:example"
+        }
+      ],
+      "type": "registry:example"
+    },
+    {
+      "name": "item-variant",
+      "title": "Item Variant",
+      "dependencies": [],
+      "registryDependencies": ["item"],
+      "files": [
+        {
+          "path": "registry/angular-force-ui/examples/item-variant.ts",
           "type": "registry:example"
         }
       ],

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "item-size",
+  "title": "Item Size",
+  "dependencies": [],
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/item-size.ts",
+      "content": "import {\n  Item,\n  ItemContent,\n  ItemDescription,\n  ItemMedia,\n  ItemTitle,\n} from \"@/ui/item\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-item-size\",\n  standalone: true,\n  imports: [Item, ItemMedia, ItemContent, ItemTitle, ItemDescription],\n  template: `<div class=\"flex w-full max-w-md flex-col gap-6\">\n    <div uiItem variant=\"outline\">\n      <div uiItemMedia variant=\"icon\">\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 -960 960 960\"\n        >\n          <path\n            d=\"M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-136H634q-26 40-67.5 61.5T480-233q-45 0-86.5-21.5T326-316H180v136Zm300.02-113q34.98 0 64.48-17.5Q574-328 591-359q7-10 18.5-13.5T633-376h147v-404H180v404h147q12 0 23.5 3.5T369-359q17 31 46.52 48.5 29.51 17.5 64.5 17.5ZM180-180h600-600Z\"\n          />\n        </svg>\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>Default Size</div>\n        <p uiItemDescription>The standard size for most use cases.</p>\n      </div>\n    </div>\n    <div uiItem variant=\"outline\" size=\"sm\">\n      <div uiItemMedia variant=\"icon\">\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 -960 960 960\"\n        >\n          <path\n            d=\"M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-136H634q-26 40-67.5 61.5T480-233q-45 0-86.5-21.5T326-316H180v136Zm300.02-113q34.98 0 64.48-17.5Q574-328 591-359q7-10 18.5-13.5T633-376h147v-404H180v404h147q12 0 23.5 3.5T369-359q17 31 46.52 48.5 29.51 17.5 64.5 17.5ZM180-180h600-600Z\"\n          />\n        </svg>\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>Small Size</div>\n        <p uiItemDescription>A compact size for dense layouts.</p>\n      </div>\n    </div>\n    <div uiItem variant=\"outline\" size=\"xs\">\n      <div uiItemMedia variant=\"icon\">\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 -960 960 960\"\n        >\n          <path\n            d=\"M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-136H634q-26 40-67.5 61.5T480-233q-45 0-86.5-21.5T326-316H180v136Zm300.02-113q34.98 0 64.48-17.5Q574-328 591-359q7-10 18.5-13.5T633-376h147v-404H180v404h147q12 0 23.5 3.5T369-359q17 31 46.52 48.5 29.51 17.5 64.5 17.5ZM180-180h600-600Z\"\n          />\n        </svg>\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>Extra Small Size</div>\n        <p uiItemDescription>The most compact size available.</p>\n      </div>\n    </div>\n  </div>`,\n})\nexport class ItemSizeComponent {}\n\nexport default ItemSizeComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -442,6 +442,163 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "item-avatar",
+    title: "Item Avatar",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-avatar.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "avatar",
+      "button",
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-demo",
+    title: "Item Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-group",
+    title: "Item Group",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-group.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "avatar",
+      "button",
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-header",
+    title: "Item Header",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-header.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-icon",
+    title: "Item Icon",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-icon.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-image",
+    title: "Item Image",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-image.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-link",
+    title: "Item Link",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-link.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-rtl",
+    title: "Item Rtl",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-rtl.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-size",
+    title: "Item Size",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-size.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "item-variant",
+    title: "Item Variant",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/item-variant.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "item",
+    ],
+    dependencies: [],
+  },
+  {
     name: "kbd-demo",
     title: "Kbd Demo",
     type: "registry:example",

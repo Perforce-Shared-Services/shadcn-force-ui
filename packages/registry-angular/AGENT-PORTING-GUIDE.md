@@ -11,28 +11,28 @@ file.
 | Path | Purpose |
 |---|---|
 | `packages/registry-angular/ui/` | **Registry source** — what users install. Separate `.html` template files required. |
-| `apps/preview-angular/src/angular-ui/` | **Preview copies** — copied from registry, but `templateUrl` replaced with inline `template` (see §Preview app). |
-| `apps/preview-angular/src/examples.ts` | **Single file** containing ALL preview example components + `EXAMPLES` map. |
+| `apps/preview-angular/src/angular/` | **Preview demos** — one file per example, auto-discovered. No copy of the registry: `@/angular-ui/*` is aliased straight at `packages/registry-angular/ui/*`. |
+| `packages/registry-angular/examples/` | **Generated** from the preview demos by `scripts/generate-examples.mjs`. Never hand-edit. |
 | `apps/v4/content/docs/components/angular/` | **MDX docs** per component. |
 | `/opt/dev/pd-p4one/app/src/app/ui/` | **Reference implementation** in Angular 20 using `@radix-ng/primitives` v0.50.0. |
 | `packages/registry-angular/DIVERGENCES.md` | **Upstream fix tracker** — document any new divergences here. |
 
 ---
 
-## What is already ported (24 components)
+## What is already ported (25 components)
 
 Phase 1 (pure, no radix-ng):
 `badge`, `button`, `card`, `kbd`, `label`, `separator`, `skeleton`, `spinner`
 
 Phase 2a (pure, no radix-ng):
-`alert`, `aspect-ratio`, `avatar`, `empty`, `input`, `progress`, `textarea`
+`alert`, `aspect-ratio`, `avatar`, `empty`, `input`, `item`, `progress`, `textarea`
 
 Phase 2b (uses `@radix-ng/primitives`):
 `accordion`, `checkbox`, `collapsible`, `radio-group`, `switch`, `tabs`, `toggle`, `toggle-group`
 
 ---
 
-## What is NOT yet ported (33 components)
+## What is NOT yet ported (32 components)
 
 ### Group A — Pure Angular, no CDK/overlay (port first)
 
@@ -43,7 +43,6 @@ Phase 2b (uses `@radix-ng/primitives`):
 | `field` | Form field wrapper with label, description, error slots. |
 | `input-group` | Input with prefix/suffix addons. |
 | `input-otp` | OTP input (6 cells). Uses `@radix-ng/primitives/input-otp` in p4one. |
-| `item` | List row primitive (icon + label + aside). CVA variants. |
 | `native-select` | Styled `<select>` wrapper. |
 | `pagination` | Pure structural; p4one uses Angular CDK for link handling only. |
 | `resizable` | Split-pane. p4one is pure (no CDK). |
@@ -168,33 +167,29 @@ Add an entry to `packages/registry-angular/ui/_registry.ts`:
 
 ### 5. Add preview examples
 
-**All examples live in ONE file**: `apps/preview-angular/src/examples.ts`
+**One file per example**: `apps/preview-angular/src/angular/<component>-<variant>.ts`,
+e.g. `item-demo.ts`, `item-variant.ts`. `main.ts` discovers them with
+`import.meta.glob("./angular/*.ts")`, keyed by file name — that name is what
+`<ComponentPreview framework="angular" name="..." />` refers to in the MDX.
 
-Add to the file:
-1. Import the new components from `@/angular-ui/<component>`
-2. Add one or more `@Component` classes (use inline `template`, NOT `templateUrl`)
-3. Add entries to the `EXAMPLES` map at the bottom
+Each file is a standalone `@Component` with:
+1. Imports from `@/angular-ui/<component>` (aliased at `packages/registry-angular/ui/`
+   by both `vite.config.ts` and `tsconfig.json` — there is **no** `src/angular-ui/`
+   copy of the registry any more, and no `templateUrl` inlining step)
+2. A unique `preview-<component>-<variant>` selector and a unique exported class name
+3. An inline `template`
+4. `export default <Class>` at the bottom
 
-**Naming rule**: every example class name must be globally unique in the file. Use pattern `<ComponentName><VariantOrType>Component`, e.g. `TabsDemoComponent`, `AccordionDemoComponent`.
+Inline any icon SVG directly in the template (see `button-with-icon.ts`); the preview
+app does not import icon assets.
 
-**Copy angular-ui files to preview**: After writing registry files, copy them to the preview:
+**Then regenerate the registry copies of the examples**:
 ```bash
-mkdir -p apps/preview-angular/src/angular-ui/<component>
-cp packages/registry-angular/ui/<component>/* apps/preview-angular/src/angular-ui/<component>/
+node packages/registry-angular/scripts/generate-examples.mjs
 ```
-
-**Then inline `templateUrl` references** in the preview copies (the preview app uses inline templates):
-```python
-import re
-with open("apps/preview-angular/src/angular-ui/<comp>/<comp>.component.ts") as f:
-    src = f.read()
-with open("apps/preview-angular/src/angular-ui/<comp>/<comp>.component.html") as f:
-    html = f.read().strip()
-escaped = html.replace('\\', '\\\\').replace('`', '\\`')
-src = re.sub(r"templateUrl:\s*['\"][^'\"]+['\"],?", f"template: `{escaped}`,", src)
-with open("apps/preview-angular/src/angular-ui/<comp>/<comp>.component.ts", 'w') as f:
-    f.write(src)
-```
+This writes `packages/registry-angular/examples/*.ts` + `examples/_registry.ts`
+(rewriting the `@/angular-ui/` import prefix to `@/ui/` and deriving
+`registryDependencies`). Both are generated — edit the preview demo, never these.
 
 ### 6. Verify the build passes
 
@@ -203,8 +198,6 @@ cd apps/preview-angular && pnpm run preview:build
 ```
 
 Expected output: `✓ N modules transformed. ✓ built in Xs`
-
-If it fails with **"Identifier already declared"** from Rollup: Angular ivy is inlining a class from a dependency. The fix is always the same — all examples must be in the single `examples.ts` file (not separate files). Do NOT split examples into multiple `.ts` files.
 
 If it fails with **"not exported by … .mjs"**: the radix-ng v1.x API name is different. Check with:
 ```bash
@@ -237,7 +230,17 @@ Create `apps/v4/content/docs/components/angular/<component>.mdx`.
 
 Add the component slug to `apps/v4/content/docs/components/angular/meta.json` `pages` array (keep alphabetical).
 
-Also add to `apps/v4/lib/framework-components.ts` in the `angular` Set.
+Then regenerate `apps/v4/lib/framework-components.ts` — it is generated, not hand-edited:
+
+```bash
+pnpm --filter=v4 framework-components        # write
+pnpm --filter=v4 framework-components:check  # CI-blocking check
+```
+
+Follow `docs/component-docs-standard.md` for the page structure (flat `##` heading per
+example, `## RTL`, one `### PartName` API table per exported part). If an example cannot
+be ported yet, keep its heading with a `<Callout>` and add a `DOCUMENTED_EXCEPTIONS`
+entry in `apps/v4/scripts/check-example-parity.mts`.
 
 ### 8. Commit atomically
 
@@ -247,8 +250,7 @@ git add packages/registry-angular/ui/<comp>/
 git commit -m "feat(angular): add <comp> component"
 
 # After preview examples + docs:
-git add apps/preview-angular/src/angular-ui/<comp>/
-# (examples.ts changes go in a batch commit per phase)
+git add apps/preview-angular/src/angular/<comp>-*.ts packages/registry-angular/examples/
 git add apps/v4/content/docs/components/angular/<comp>.mdx
 git commit -m "docs(angular): add <comp> docs and preview"
 ```
@@ -260,10 +262,15 @@ Run `pnpm install` + commit lockfile if new dependencies were added.
 ## Architecture decisions (do not change)
 
 ### Registry components use separate `.html` files
-`templateUrl` for registry, inline `template` for preview copies. The preview inlining step is a one-time Python script (see §5).
+`templateUrl` + a sibling `.component.html` for multi-part components (see `card`, `item`);
+a trivial `template: "<ng-content />"` is acceptable for single-purpose parts (see `empty`).
+The preview app compiles the registry sources directly, so there is nothing to inline.
 
-### All preview examples in ONE file
-`apps/preview-angular/src/examples.ts` must remain a single file. Multiple files cause Angular ivy to inline dependency classes, creating Rollup "Identifier already declared" errors.
+### Preview examples are one file per example
+`apps/preview-angular/src/angular/<name>.ts`, each with `export default`, discovered by
+`import.meta.glob`. The old single-`examples.ts` rule is gone: the preview app no longer
+carries a copy of the registry, so the Rollup "Identifier already declared" duplication
+that motivated it cannot occur.
 
 ### Use `cn-*` CSS tokens, not expanded Tailwind
 The `style-force-ui.css` defines `cn-button`, `cn-button-variant-default`, etc. Use these token class names in CVA. The build pipeline expands them. Do NOT copy expanded Tailwind strings from p4one's `*.variants.ts` — those are already expanded (the app bypasses the token system).
@@ -286,7 +293,7 @@ packages/registry-angular/DIVERGENCES.md          — upstream divergences + fix
 packages/registry-angular/ui/button/              — best reference for Phase 1 pattern
 packages/registry-angular/ui/tabs/tabs.component.ts — best reference for radix-ng v1.x pattern
 packages/registry-angular/ui/_registry.ts         — all registered items
-apps/preview-angular/src/examples.ts              — all preview examples (single file)
+apps/preview-angular/src/angular/                 — preview examples (one file per example)
 apps/v4/content/docs/components/angular/button.mdx — doc template to copy
 apps/v4/registry/styles/style-force-ui.css         — CSS token definitions
 ```

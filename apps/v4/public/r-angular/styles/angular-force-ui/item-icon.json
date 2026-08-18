@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "item-icon",
+  "title": "Item Icon",
+  "dependencies": [],
+  "registryDependencies": [
+    "button",
+    "item"
+  ],
+  "files": [
+    {
+      "path": "registry/angular-force-ui/examples/item-icon.ts",
+      "content": "import { Button } from \"@/ui/button\"\nimport {\n  Item,\n  ItemActions,\n  ItemContent,\n  ItemDescription,\n  ItemMedia,\n  ItemTitle,\n} from \"@/ui/item\"\nimport { Component } from \"@angular/core\"\n\n@Component({\n  selector: \"preview-item-icon\",\n  standalone: true,\n  imports: [\n    Button,\n    Item,\n    ItemMedia,\n    ItemContent,\n    ItemTitle,\n    ItemDescription,\n    ItemActions,\n  ],\n  template: `<div class=\"flex w-full max-w-lg flex-col gap-6\">\n    <div uiItem variant=\"outline\">\n      <div uiItemMedia variant=\"icon\">\n        <svg\n          aria-hidden=\"true\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 -960 960 960\"\n        >\n          <path\n            d=\"M426-190v-196l-170 98q-20 11-41 6t-32-25q-11-20-6-41.5t25-32.5l170-99-169-98q-20-11-25.5-32.5T183-652q11-20 32-25t41 6l170 98v-197q0-23 15.5-38.5T480-824q23 0 38.5 15.5T534-770v197l170-98q20-11 41-6t32 25q11 20 5.5 41.5T757-578l-169 98 170 99q20 11 25 32.5t-6 41.5q-11 20-32 25t-41-6l-170-98v196q0 23-15.5 38.5T480-136q-23 0-38.5-15.5T426-190Z\"\n          />\n        </svg>\n      </div>\n      <div uiItemContent>\n        <div uiItemTitle>Security Alert</div>\n        <p uiItemDescription>New login detected from unknown device.</p>\n      </div>\n      <div uiItemActions>\n        <button uiButton variant=\"outline\" size=\"sm\">Review</button>\n      </div>\n    </div>\n  </div>`,\n})\nexport class ItemIconComponent {}\n\nexport default ItemIconComponent\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

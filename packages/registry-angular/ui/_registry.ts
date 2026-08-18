@@ -265,6 +265,17 @@ export const ui: Registry["items"] = [
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/empty" } },
   },
   {
+    name: "item",
+    type: "registry:ui",
+    files: [
+      { path: "ui/item/item.variants.ts", type: "registry:ui" },
+      { path: "ui/item/item.component.ts", type: "registry:ui" },
+      { path: "ui/item/item.component.html", type: "registry:ui" },
+      { path: "ui/item/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/item" } },
+  },
+  {
     name: "spinner",
     type: "registry:ui",
     files: [
