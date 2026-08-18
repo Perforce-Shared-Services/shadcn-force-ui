@@ -392,6 +392,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "input",
     "kbd",
     "label",
+    "pagination",
     "progress",
     "separator",
     "skeleton",

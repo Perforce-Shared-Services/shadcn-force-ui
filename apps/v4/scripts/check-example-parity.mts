@@ -56,10 +56,20 @@ const REFERENCE_EXT = "tsx"
 //
 //   ["ember:combobox", "Ember port intentionally ships one composed demo: ..."]
 //
-// Empty on purpose today: every current gap is an unported example, not a
-// documented framework difference. See the "Documenting a deviation" section
-// of docs/component-docs-standard.md before adding one.
-const DOCUMENTED_EXCEPTIONS = new Map<string, string>()
+// See the "Documenting a deviation" section of
+// docs/component-docs-standard.md before adding one.
+const DOCUMENTED_EXCEPTIONS = new Map<string, string>([
+  [
+    "angular:pagination",
+    "Angular ships pagination-demo + pagination-simple only. base's " +
+      "pagination-icons-only composes Field + Select, neither of which is " +
+      "ported to Angular yet (Field: Group A backlog; Select: Group B, CDK " +
+      "overlay, a materially larger lift). base's pagination-rtl uses a " +
+      "React-only language-selector demo helper and no Angular component has " +
+      "an RTL demo pattern yet. Revisit both once Field/Select land and an " +
+      "Angular RTL demo pattern exists.",
+  ],
+])
 
 type SlugCounts = Map<string, number>
 

@@ -1,0 +1,123 @@
+---
+title: Pagination
+description: Pagination with page navigation, next and previous links.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="pagination-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/pagination
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="pagination" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+The links reuse the button variants, so `@force-ui-angular/button` is installed alongside pagination.
+
+## Usage
+
+```ts
+import {
+  PaginationComponent,
+  PaginationContentComponent,
+  PaginationEllipsisComponent,
+  PaginationItemComponent,
+  PaginationLinkComponent,
+  PaginationNextComponent,
+  PaginationPreviousComponent,
+} from "@/components/ui/pagination"
+```
+
+```html
+<nav uiPagination>
+  <ul uiPaginationContent>
+    <li uiPaginationItem><a uiPaginationPrevious href="#"></a></li>
+    <li uiPaginationItem><a uiPaginationLink href="#">1</a></li>
+    <li uiPaginationItem><a uiPaginationLink href="#" isActive>2</a></li>
+    <li uiPaginationItem><span uiPaginationEllipsis></span></li>
+    <li uiPaginationItem><a uiPaginationNext href="#"></a></li>
+  </ul>
+</nav>
+```
+
+The component is presentational only — it renders links, it does not own the current page. Bind `isActive` to your own page state and point each `href` (or `routerLink`) at the page it navigates to.
+
+## Composition
+
+```text
+[uiPagination]
+└── [uiPaginationContent]
+    └── [uiPaginationItem]
+        ├── [uiPaginationLink]
+        ├── [uiPaginationPrevious]
+        ├── [uiPaginationNext]
+        └── [uiPaginationEllipsis]
+```
+
+## Examples
+
+### Simple
+
+<ComponentPreview framework="angular" name="pagination-simple" />
+
+## API Reference
+
+### PaginationLinkComponent
+
+| Input      | Type                                                                                 | Default  |
+| ---------- | ------------------------------------------------------------------------------------ | -------- |
+| `isActive` | `boolean`                                                                            | `false`  |
+| `size`     | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"icon"` |
+| `class`    | `string`                                                                             | –        |
+
+`isActive` renders the link with the `outline` button variant and sets `aria-current="page"`; inactive links use `ghost`.
+
+### PaginationPreviousComponent · PaginationNextComponent
+
+| Input   | Type     | Default                 |
+| ------- | -------- | ----------------------- |
+| `text`  | `string` | `"Previous"` / `"Next"` |
+| `class` | `string` | –                       |
+
+Both render their own chevron icon and label, and carry `aria-label="Go to previous page"` / `"Go to next page"`. The label is hidden below the `sm` breakpoint; the `aria-label` keeps them announced.
+
+### PaginationComponent · PaginationContentComponent · PaginationItemComponent · PaginationEllipsisComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+`PaginationEllipsisComponent` hides its icon from assistive technology and exposes a visually hidden “More pages” label instead.

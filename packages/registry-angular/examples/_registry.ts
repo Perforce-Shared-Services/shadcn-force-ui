@@ -503,6 +503,36 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "pagination-demo",
+    title: "Pagination Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/pagination-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "pagination",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "pagination-simple",
+    title: "Pagination Simple",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/pagination-simple.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "pagination",
+    ],
+    dependencies: [],
+  },
+  {
     name: "progress-demo",
     title: "Progress Demo",
     type: "registry:example",
