@@ -390,6 +390,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "card",
     "empty",
     "input",
+    "input-otp",
     "kbd",
     "label",
     "progress",

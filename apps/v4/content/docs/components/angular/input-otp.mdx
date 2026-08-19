@@ -1,0 +1,176 @@
+---
+title: Input OTP
+description: Accessible one-time password component with copy-paste functionality.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="input-otp-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/input-otp
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="input-otp" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## About
+
+Unlike the React, Vue, and Svelte ports — which each wrap a framework-specific headless package (`input-otp`, `vue-input-otp`, `bits-ui`) — the Angular component is hand-rolled: no equivalent primitive ships for Angular. It keeps the same contract: one real, invisible `<input>` owns focus, keyboard, paste, mobile IME, and screen-reader behaviour, and the slots are decorative cells that react to its state. See `DIVERGENCES.md` in the Angular registry for the details.
+
+## Usage
+
+```ts
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+  REGEXP_ONLY_DIGITS,
+} from "@/components/ui/input-otp"
+```
+
+```html
+<div uiInputOtp aria-label="One-time password" [maxLength]="6" [(value)]="code">
+  <div uiInputOtpGroup>
+    <div uiInputOtpSlot [index]="0"></div>
+    <div uiInputOtpSlot [index]="1"></div>
+    <div uiInputOtpSlot [index]="2"></div>
+  </div>
+  <div uiInputOtpSeparator></div>
+  <div uiInputOtpGroup>
+    <div uiInputOtpSlot [index]="3"></div>
+    <div uiInputOtpSlot [index]="4"></div>
+    <div uiInputOtpSlot [index]="5"></div>
+  </div>
+</div>
+```
+
+Give the control an accessible name with either `aria-label` or a real `<label for>` paired with `id` — `id`, `name`, `pattern`, `required`, `disabled`, and the `aria-*` inputs are all forwarded to the real `<input>`, never to the container.
+
+## Composition
+
+```text
+[uiInputOtp]
+├── [uiInputOtpGroup]
+│   └── [uiInputOtpSlot] [index]
+├── [uiInputOtpSeparator]
+└── [uiInputOtpGroup]
+    └── [uiInputOtpSlot] [index]
+```
+
+## Examples
+
+### Separator
+
+<ComponentPreview framework="angular" name="input-otp-separator" />
+
+### Pattern
+
+Pass `REGEXP_ONLY_DIGITS`, `REGEXP_ONLY_CHARS`, or `REGEXP_ONLY_DIGITS_AND_CHARS` to `pattern` to restrict which characters are accepted. Digits-only also switches the input to `inputmode="numeric"`.
+
+<ComponentPreview framework="angular" name="input-otp-pattern" />
+
+### Alphanumeric
+
+<ComponentPreview framework="angular" name="input-otp-alphanumeric" />
+
+### Four digits
+
+<ComponentPreview framework="angular" name="input-otp-four-digits" />
+
+### Controlled
+
+`value` is a two-way bindable signal input — use `[(value)]` to read and write the code, and `(complete)` to react once every slot is filled.
+
+<ComponentPreview framework="angular" name="input-otp-controlled" />
+
+### Disabled
+
+<ComponentPreview framework="angular" name="input-otp-disabled" />
+
+### Invalid
+
+Set `aria-invalid` on the root so assistive tech hears the error, on each affected slot for its destructive ring, and link a visible message with `aria-describedby` — colour alone is not a sufficient signal (WCAG 1.4.1 / 3.3.1).
+
+<ComponentPreview framework="angular" name="input-otp-invalid" />
+
+## API Reference
+
+### InputOTPComponent
+
+| Input              | Type      | Default |
+| ------------------ | --------- | ------- |
+| `value`            | `string`  | `""`    |
+| `maxLength`        | `number`  | `6`     |
+| `pattern`          | `string`  | –       |
+| `disabled`         | `boolean` | `false` |
+| `required`         | `boolean` | `false` |
+| `name`             | `string`  | –       |
+| `id`               | `string`  | –       |
+| `aria-label`       | `string`  | –       |
+| `aria-invalid`     | `boolean` | `false` |
+| `aria-describedby` | `string`  | –       |
+| `class`            | `string`  | –       |
+
+| Output     | Type     | Description                                       |
+| ---------- | -------- | ------------------------------------------------- |
+| `complete` | `string` | Emits once `value` reaches `maxLength` characters |
+
+`value` is a model input: bind one-way with `[value]` or two-way with `[(value)]`.
+
+### InputOTPSlotComponent
+
+| Input   | Type     | Default    |
+| ------- | -------- | ---------- |
+| `index` | `number` | – required |
+| `class` | `string` | –          |
+
+### InputOTPGroupComponent
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | –       |
+
+### InputOTPSeparatorComponent
+
+Takes no inputs — a decorative `role="separator"` divider between groups.
+
+### Constants
+
+| Name                           | Value            |
+| ------------------------------ | ---------------- |
+| `REGEXP_ONLY_DIGITS`           | `^\d+$`          |
+| `REGEXP_ONLY_CHARS`            | `^[a-zA-Z]+$`    |
+| `REGEXP_ONLY_DIGITS_AND_CHARS` | `^[a-zA-Z0-9]+$` |

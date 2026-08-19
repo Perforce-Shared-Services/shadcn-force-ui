@@ -427,6 +427,128 @@ export const examples: Registry["items"] = [
     dependencies: [],
   },
   {
+    name: "input-otp-alphanumeric",
+    title: "Input Otp Alphanumeric",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-alphanumeric.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+      "label",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-controlled",
+    title: "Input Otp Controlled",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-controlled.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-demo",
+    title: "Input Otp Demo",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-demo.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-disabled",
+    title: "Input Otp Disabled",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-disabled.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-four-digits",
+    title: "Input Otp Four Digits",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-four-digits.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-invalid",
+    title: "Input Otp Invalid",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-invalid.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-pattern",
+    title: "Input Otp Pattern",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-pattern.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+      "label",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "input-otp-separator",
+    title: "Input Otp Separator",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/input-otp-separator.ts",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "input-otp",
+    ],
+    dependencies: [],
+  },
+  {
     name: "input-variants",
     title: "Input Variants",
     type: "registry:example",
