@@ -337,6 +337,96 @@ Angular idiom and avoids double-kbd nesting.
 
 ---
 
+## input-otp
+
+### 1. No headless primitive exists for Angular
+
+| | Behavioral engine |
+|---|---|
+| Registry React | `input-otp` npm package (`OTPInput` + `OTPInputContext`) |
+| Registry Vue | `vue-input-otp` |
+| Registry Svelte | `bits-ui` `PinInput` |
+| `@radix-ng/primitives` v1.1.2 | **no `input-otp` module at all** (verified: no `fesm2022/radix-ng-primitives-input-otp.mjs`, no `"./input-otp"` export) |
+| p4one | Hand-rolled: one hidden native `<input>` + signal-driven decorative slots |
+
+**Why it diverges:** AGENT-PORTING-GUIDE.md's Group A table claims p4one builds this
+on `@radix-ng/primitives/input-otp`. It does not — no such module ships in either
+v0.50.0 (p4one) or v1.1.2 (registry), and p4one's own source imports nothing from
+radix-ng for this component. Every framework in the monorepo wraps a *different*
+framework-specific third-party widget here, so there is no shared primitive to lean on.
+
+**Angular registry action:** Hand-roll the component (no `dependencies` entry added to
+`ui/_registry.ts`, since no external package is required). Keep the registry's public
+shape — Root / Group / Slot / Separator, `data-slot`/`data-active`/`data-disabled`
+attributes, the `cn-input-otp*` token classes — and the same headless contract: one real,
+invisible `<input>` owns focus/keyboard/paste/mobile-IME/screen-reader behavior, and the
+slots are purely decorative elements reacting to shared signal state, read from the root
+through `inject(InputOTPComponent, { optional: true })` (the Angular equivalent of
+React's `OTPInputContext` / Vue's `provide`+`inject`).
+
+**Upstream fix needed:** Correct the `input-otp` row of
+`packages/registry-angular/AGENT-PORTING-GUIDE.md` §"Group A" (and item 12 of its
+suggested order) — it points at a primitive that does not exist.
+
+---
+
+### 2. Hidden input stretched over the row instead of a measured caret
+
+| | Hidden input geometry |
+|---|---|
+| Registry (React/Vue/Svelte, via their packages) | Input sized with measured per-character `letter-spacing` so the *native* caret lands pixel-aligned inside each slot box |
+| Angular registry (this port) | Input stretched over the full slot row (`absolute inset-0 z-20`), caret transparent; the visible caret is the existing `cn-input-otp-caret-line` fake caret |
+
+**Why it diverges:** the letter-spacing measurement is the defining, package-specific
+trick of the third-party widgets and has no accessibility payoff — the native caret is
+`caret-transparent` in every framework, so only the fake caret is ever visible. The
+container therefore gains `relative` (to anchor the input) and the input gains `z-20`:
+each slot is itself `position: relative` for its focus ring, and a relatively positioned
+box with later tree order paints over an absolutely positioned earlier sibling at the
+same auto z-index, so without explicit stacking the slots would swallow every click
+before it reached the input.
+
+**Angular registry action:** Keep the stretched input. `cn-input-otp-input` (the class
+React puts on its hidden input, and which has no rule in `style-force-ui.css`) is kept on
+the input for cross-framework class-name parity, with the positioning utilities inline
+next to it — they are structural, not a duplicate of any token.
+
+---
+
+### 3. Prop routing and disabled forwarding
+
+| | Where `id`/`name`/`pattern`/`required`/`aria-*` land |
+|---|---|
+| Registry React | On the real `<input>` (the `input-otp` package's own prop routing) |
+| Angular registry | Same — the root nulls them off its host element and re-applies them to the `<input>` |
+
+**Why it diverges:** Angular applies a static host attribute (`<div uiInputOtp id="otp">`)
+as an input *and* still renders it on the host element, which would duplicate `id` onto
+the container and break `label[for]` (it resolves to the first, non-form-control match).
+The host bindings `[attr.id]="null"` etc. are an Angular-specific requirement, not a
+style divergence.
+
+`data-disabled` on the slot is forwarded from the root's `disabled()` signal — the same
+workaround React (`InputOTPDisabledContext`) and Vue (`disabled-context.ts`) use, because
+the upstream slot context has no `disabled` field while `.cn-input-otp-slot` needs the
+`data-[disabled=true]` hook for its muted fill.
+
+---
+
+### 4. SVG fill on the separator — `[&_svg]:fill-current`
+
+Same root cause as button §2: the registry renders a stroke-based lucide `MinusIcon`,
+this port inlines the fill-based Material Symbols `remove` glyph.
+
+**Angular registry action:** Include `[&_svg]:fill-current` on the
+`[uiInputOtpSeparator]` host class.
+
+**Upstream fix needed:** Add `[&_svg]:fill-current` to `.cn-input-otp-separator` in
+`style-force-ui.css` so all frameworks benefit (a no-op for lucide users — no `fill`
+attribute to override).
+
+---
+
 ## Upstream fixes summary
 
 Issues that should be fixed in the registry source (not Angular-specific):
@@ -353,3 +443,5 @@ Issues that should be fixed in the registry source (not Angular-specific):
 | 8 | `style-force-ui.css` `@theme` | Add `--animate-spinner: spin 500ms linear infinite` |
 | 9 | `bases/radix/ui/spinner.tsx` + Vue/Svelte | Remove `role="status" aria-label="Loading"` from spinner SVG |
 | 10 | `style-force-ui.css` | Remove `.cn-separator`, `.cn-separator-horizontal`, `.cn-separator-vertical` (dead code), or migrate all framework ports to use them |
+| 11 | `style-force-ui.css` `.cn-input-otp-separator` | Add `[&_svg]:fill-current` (Material Symbols glyphs paint black without it) |
+| 12 | `AGENT-PORTING-GUIDE.md` Group A table | `input-otp` does not use `@radix-ng/primitives/input-otp` — no such module exists in v0.50.0 or v1.1.2 |

@@ -1,0 +1,25 @@
+<input
+  #inputEl
+  data-slot="input-otp"
+  type="text"
+  autocomplete="one-time-code"
+  spellcheck="false"
+  class="cn-input-otp-input absolute inset-0 z-20 h-full w-full cursor-text border-0 bg-transparent p-0 text-transparent caret-transparent outline-none disabled:cursor-not-allowed"
+  [attr.id]="id()"
+  [attr.name]="name()"
+  [attr.pattern]="pattern()"
+  [attr.maxlength]="maxLength()"
+  [attr.inputmode]="inputMode()"
+  [attr.aria-label]="ariaLabel()"
+  [attr.aria-invalid]="ariaInvalid() ? 'true' : null"
+  [attr.aria-describedby]="describedBy()"
+  [required]="required()"
+  [disabled]="disabled()"
+  [value]="value()"
+  (input)="onInput($event)"
+  (focus)="onFocus()"
+  (blur)="onBlur()"
+  (click)="syncCaret()"
+  (keyup)="syncCaret()"
+/>
+<ng-content />

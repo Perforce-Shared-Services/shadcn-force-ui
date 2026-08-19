@@ -279,4 +279,21 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "input-otp",
+    type: "registry:ui",
+    files: [
+      { path: "ui/input-otp/input-otp.component.ts", type: "registry:ui" },
+      { path: "ui/input-otp/input-otp.component.html", type: "registry:ui" },
+      { path: "ui/input-otp/input-otp-group.component.html", type: "registry:ui" },
+      { path: "ui/input-otp/input-otp-slot.component.html", type: "registry:ui" },
+      { path: "ui/input-otp/input-otp-separator.component.html", type: "registry:ui" },
+      { path: "ui/input-otp/index.ts", type: "registry:ui" },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/input-otp",
+      },
+    },
+  },
 ]
