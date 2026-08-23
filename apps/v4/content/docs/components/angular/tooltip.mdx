@@ -1,0 +1,115 @@
+---
+title: Tooltip
+description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/tooltip
+  api: https://radix-ng.com/primitives/tooltip
+---
+
+<ComponentPreview framework="angular" name="tooltip-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/tooltip
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="tooltip" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipPortal,
+  TooltipPositioner,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+```
+
+```html
+<div uiTooltip>
+  <button uiButton variant="outline" uiTooltipTrigger type="button">Hover</button>
+  <ng-template uiTooltipPortal>
+    <div uiTooltipPositioner side="top">
+      <div uiTooltipContent>Add to library</div>
+    </div>
+  </ng-template>
+</div>
+```
+
+Unlike React — where `TooltipContent` folds the portal, positioned box and arrow into one component — radix-ng splits them: `<ng-template uiTooltipPortal>` teleports, `[uiTooltipPositioner]` positions (default side is `top`, collision flipping is automatic), and `[uiTooltipContent]` is the styled box. The optional `[uiTooltipArrow]` goes inside the content.
+
+## Composition
+
+```txt
+<div uiTooltip>
+├── <button uiTooltipTrigger>          // any element; opens on hover/focus
+└── <ng-template uiTooltipPortal>      // teleports to document.body
+    └── <div uiTooltipPositioner>      // side / sideOffset / align / alignOffset
+        └── <div uiTooltipContent>     // styled box, role="tooltip"
+            └── <span uiTooltipArrow /> // optional
+```
+
+## Side
+
+Use the `side` input on the positioner to change which side the tooltip renders on (`top`, `bottom`, `left`, `right`).
+
+<ComponentPreview framework="angular" name="tooltip-sides" />
+
+## With Keyboard Shortcut
+
+Compose a `<kbd uiKbd>` chip inside the content to show a shortcut hint. The content's `[&_svg]:fill-current` keeps fill-based Material Symbols icons tinted correctly.
+
+<ComponentPreview framework="angular" name="tooltip-keyboard" />
+
+## Disabled Button
+
+Show a tooltip on a disabled button by wrapping it with a span carrying `[uiTooltipTrigger]` — a disabled button emits no pointer events, so the wrapper receives hover/focus instead.
+
+<ComponentPreview framework="angular" name="tooltip-disabled" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+Set `dir="rtl"` on each `[uiTooltipPositioner]`; logical sides (`inline-start` / `inline-end`) flip with the direction.
+
+<ComponentPreview framework="angular" name="tooltip-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng Tooltip](https://radix-ng.com/primitives/tooltip) documentation.

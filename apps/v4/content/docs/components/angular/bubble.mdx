@@ -1,0 +1,165 @@
+---
+title: Bubble
+description: Chat message bubble with grouping, reactions, and variants for conversation UIs.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="bubble-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/bubble
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="bubble" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Bubble,
+  BubbleContent,
+  BubbleGroup,
+  BubbleReactions,
+} from "@/components/ui/bubble"
+```
+
+```html
+<div uiBubble variant="muted">
+  <div uiBubbleContent>Can you tell me what's the issue?</div>
+</div>
+```
+
+All parts are attribute selectors that decorate the host element you write — Angular's idiomatic equivalent of React's `asChild`. Put `<div uiBubbleContent>` on a `<button>` or `<a>` to make the bubble itself clickable; it picks up the focus-visible ring automatically.
+
+`Bubble`'s `variant` colors every slotted `BubbleContent` via descendant CSS tokens — set the variant on the outer `Bubble`, not on `BubbleContent`.
+
+## Composition
+
+```
+BubbleGroup
+└── Bubble (variant, align)
+    ├── BubbleContent
+    └── BubbleReactions (side, align)
+        └── emoji spans or Button / Tooltip / Popover
+```
+
+## Variants
+
+Seven visual variants driven by the `variant` input: `default`, `secondary`, `muted`, `tinted`, `outline`, `ghost`, and `destructive`.
+
+<ComponentPreview framework="angular" name="bubble-variants" />
+
+## Alignment
+
+Use `align="end"` for outgoing (user) messages; `start` is the default for incoming messages.
+
+<ComponentPreview framework="angular" name="bubble-alignment" />
+
+## Grouping
+
+`BubbleGroup` stacks consecutive bubbles from the same speaker with consistent spacing.
+
+<ComponentPreview framework="angular" name="bubble-group-demo" />
+
+## Reactions
+
+`BubbleReactions` is an absolutely-positioned pill anchored to a corner of its bubble. Use `side="top" | "bottom"` and `align="start" | "end"`.
+
+<ComponentPreview framework="angular" name="bubble-reactions" />
+
+When the reaction content is a bare emoji or count, always add `role="img"` and an `aria-label` describing the reactions (WCAG 1.1.1).
+
+## With Buttons & Links
+
+Host `uiBubbleContent` on native `<button>` or `<a>` elements to make bubble text actionable.
+
+<ComponentPreview framework="angular" name="bubble-link-button" />
+
+## Markdown Content
+
+Ghost bubbles take full-width unframed assistant text.
+
+<ComponentPreview framework="angular" name="bubble-markdown" />
+
+<Callout>
+The React docs render this example through the markdown pipeline; the Angular preview renders the same copy as pre-formatted text.
+</Callout>
+
+## Collapsible
+
+Long bubble content can be collapsed behind a Show more trigger.
+
+<ComponentPreview framework="angular" name="bubble-collapsible" />
+
+## With Tooltip
+
+<ComponentPreview framework="angular" name="bubble-tooltip" />
+
+## With Popover
+
+<ComponentPreview framework="angular" name="bubble-popover" />
+
+## RTL
+
+See [RTL](/docs/rtl) for details.
+
+<ComponentPreview framework="angular" name="bubble-rtl" />
+
+## API Reference
+
+Force UI original component — no upstream primitive.
+
+### Bubble
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"` | `"default"` |
+| `align` | `"start" \| "end"` | `"start"` |
+| `class` | `string \| undefined` | — |
+
+### BubbleContent
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `class` | `string \| undefined` | — |
+
+### BubbleGroup
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `class` | `string \| undefined` | — |
+
+### BubbleReactions
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `side` | `"top" \| "bottom"` | `"bottom"` |
+| `align` | `"start" \| "end"` | `"end"` |
+| `class` | `string \| undefined` | — |

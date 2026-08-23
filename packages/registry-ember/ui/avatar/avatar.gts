@@ -1,7 +1,7 @@
 import { on } from '@ember/modifier';
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import { eq } from 'ember-truth-helpers';
+import { eq, or } from 'ember-truth-helpers';
 
 import { cn } from '@/lib/utils';
 
@@ -11,6 +11,7 @@ interface AvatarSignature {
   Element: HTMLDivElement;
   Args: {
     class?: string;
+    size?: 'default' | 'sm' | 'lg';
   };
   Blocks: {
     default: [];
@@ -24,6 +25,7 @@ const Avatar: TOC<AvatarSignature> = <template>
       @class
     }}
     data-slot="avatar"
+    data-size={{or @size 'default'}}
     ...attributes
   >
     {{yield}}
@@ -94,4 +96,82 @@ const AvatarFallback: TOC<AvatarFallbackSignature> = <template>
   </div>
 </template>;
 
-export { Avatar, AvatarImage, AvatarFallback };
+// [FORCE-UI] AvatarBadge / AvatarGroup / AvatarGroupCount ported from the
+// base-ui React source (bases/base/ui/avatar.tsx) for example parity.
+interface AvatarBadgeSignature {
+  Element: HTMLSpanElement;
+  Args: {
+    class?: string;
+  };
+  Blocks: {
+    default: [];
+  };
+}
+
+const AvatarBadge: TOC<AvatarBadgeSignature> = <template>
+  <span
+    class={{cn
+      "cn-avatar-badge absolute right-0 bottom-0 z-10 inline-flex select-none items-center justify-center rounded-full bg-blend-color ring-2"
+      @class
+    }}
+    data-slot="avatar-badge"
+    ...attributes
+  >
+    {{yield}}
+  </span>
+</template>;
+
+interface AvatarGroupSignature {
+  Element: HTMLDivElement;
+  Args: {
+    class?: string;
+  };
+  Blocks: {
+    default: [];
+  };
+}
+
+const AvatarGroup: TOC<AvatarGroupSignature> = <template>
+  <div
+    class={{cn
+      "cn-avatar-group group/avatar-group flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background"
+      @class
+    }}
+    data-slot="avatar-group"
+    ...attributes
+  >
+    {{yield}}
+  </div>
+</template>;
+
+interface AvatarGroupCountSignature {
+  Element: HTMLDivElement;
+  Args: {
+    class?: string;
+  };
+  Blocks: {
+    default: [];
+  };
+}
+
+const AvatarGroupCount: TOC<AvatarGroupCountSignature> = <template>
+  <div
+    class={{cn
+      "cn-avatar-group-count relative flex shrink-0 items-center justify-center ring-2 ring-background"
+      @class
+    }}
+    data-slot="avatar-group-count"
+    ...attributes
+  >
+    {{yield}}
+  </div>
+</template>;
+
+export {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+  AvatarBadge,
+  AvatarGroup,
+  AvatarGroupCount,
+};

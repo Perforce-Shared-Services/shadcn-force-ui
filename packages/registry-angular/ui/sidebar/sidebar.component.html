@@ -1,0 +1,41 @@
+<ng-template #projected><ng-content /></ng-template>
+
+@if (branch() === "none") {
+  <ng-container [ngTemplateOutlet]="projected" />
+} @else if (branch() === "mobile") {
+  <!-- Mobile drawer: rendered through the host's RdxDialogRoot context,
+       driven by the provider's openMobile flag. -->
+  <ng-template uiSheetPortal>
+    <div
+      uiSheetContent
+      [side]="side()"
+      data-sidebar="sidebar"
+      data-mobile="true"
+      class="w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+      [style.--sidebar-width]="mobileWidth"
+    >
+      <div uiSheetHeader class="sr-only">
+        <h2 uiSheetTitle>Sidebar</h2>
+        <p uiSheetDescription>Displays the mobile sidebar.</p>
+      </div>
+      <div class="flex h-full w-full flex-col">
+        <ng-container [ngTemplateOutlet]="projected" />
+      </div>
+    </div>
+  </ng-template>
+} @else {
+  <div data-slot="sidebar-gap" [class]="gapClasses()"></div>
+  <div
+    data-slot="sidebar-container"
+    [attr.data-side]="side()"
+    [class]="containerClasses()"
+  >
+    <div
+      data-sidebar="sidebar"
+      data-slot="sidebar-inner"
+      class="cn-sidebar-inner flex size-full flex-col"
+    >
+      <ng-container [ngTemplateOutlet]="projected" />
+    </div>
+  </div>
+}

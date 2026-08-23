@@ -1,0 +1,206 @@
+---
+title: Table
+description: A responsive table component.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="table-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/table
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="table" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+```
+
+```html showLineNumbers
+<div uiTableContainer>
+  <table uiTable>
+    <caption uiTableCaption>A list of your recent invoices.</caption>
+    <thead uiTableHeader>
+      <tr uiTableRow>
+        <th uiTableHead>Invoice</th>
+        <th uiTableHead class="text-right">Amount</th>
+      </tr>
+    </thead>
+    <tbody uiTableBody>
+      <tr uiTableRow>
+        <td uiTableCell class="font-medium">INV001</td>
+        <td uiTableCell class="text-right">$250.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+Every part is an attribute selector on a native table element, so the host
+keeps its native semantics — screen readers get a real table, not a styled div.
+
+`[uiTableContainer]` is the Angular split of the registry's internal wrapper
+`<div data-slot="table-container">`: an attribute selector can't wrap its own
+host, so the overflow-x scroller frame is exposed as an opt-in directive. Wrap
+with it whenever a table can be wider than its columns so it scrolls
+horizontally instead of breaking the layout.
+
+## Composition
+
+Use the following composition to build a `Table`:
+
+```text
+TableContainer
+└── Table
+    ├── TableCaption
+    ├── TableHeader
+    │   └── TableRow
+    │       └── TableHead
+    ├── TableBody
+    │   └── TableRow
+    │       └── TableCell
+    └── TableFooter
+        └── TableRow
+            └── TableCell
+```
+
+## Footer
+
+A `<tfoot uiTableFooter>` renders the muted, medium-weight summary row pinned after the body.
+
+<ComponentPreview framework="angular" name="table-footer" />
+
+## Actions
+
+Compose a row's last cell with a ghost icon `Button` to host per-row actions.
+
+<Callout>
+  The React example opens a dropdown menu from the trigger. The Angular
+  preview shows the trigger styling only; compose `dropdown-menu` inside the
+  cell for the full menu behaviour.
+</Callout>
+
+<ComponentPreview framework="angular" name="table-actions" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="table-rtl" direction="rtl" />
+
+## API Reference
+
+### TableContainer
+
+The horizontal-scroll frame around the table. Applied via `[uiTableContainer]`
+on a `<div>` wrapping `<table uiTable>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### Table
+
+Applied via `[uiTable]` on a native `<table>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableHeader
+
+Applied via `[uiTableHeader]` on a native `<thead>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableBody
+
+Applied via `[uiTableBody]` on a native `<tbody>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableFooter
+
+Applied via `[uiTableFooter]` on a native `<tfoot>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableRow
+
+Applied via `[uiTableRow]` on a native `<tr>`. Set `data-state="selected"` (with
+`aria-selected="true"`) to tint a selected row; a row whose content expands
+(`aria-expanded`) tints automatically.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableHead
+
+Applied via `[uiTableHead]` on a native `<th>`. Renders uppercase, tertiary
+text with `white-space: nowrap`; override with `class="whitespace-normal"` on
+headers that should wrap.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableCell
+
+Applied via `[uiTableCell]` on a native `<td>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### TableCaption
+
+Applied via `[uiTableCaption]` on a native `<caption>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |

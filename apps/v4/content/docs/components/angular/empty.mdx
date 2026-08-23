@@ -30,7 +30,14 @@ npx shadcn@latest add @force-ui-angular/empty
 ## Usage
 
 ```ts
-import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyContent } from "@/components/ui/empty"
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from "@/components/ui/empty"
 ```
 
 ```html
@@ -46,13 +53,69 @@ import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyCont
 </div>
 ```
 
+## Outline
+
+Use the `border` utility class to create an outline empty state.
+
+<ComponentPreview
+  framework="angular"
+  name="empty-outline"
+  previewClassName="h-96 p-6 md:p-10"
+/>
+
+## Background
+
+Use the `bg-*` utilities to add a background to the empty state.
+
+<ComponentPreview
+  framework="angular"
+  name="empty-background"
+  previewClassName="h-96 p-0"
+/>
+
+## Avatar
+
+Use the `EmptyMedia` component to display an avatar in the empty state.
+
+<ComponentPreview
+  framework="angular"
+  name="empty-avatar"
+  previewClassName="h-96 p-0"
+/>
+
+## Avatar Group
+
+Use the `EmptyMedia` component to display an avatar group in the empty state.
+
+<ComponentPreview
+  framework="angular"
+  name="empty-avatar-group"
+  previewClassName="h-96 p-0"
+/>
+
+## Input Group
+
+You can add an `InputGroup` component to the `EmptyContent` component.
+
+<ComponentPreview
+  framework="angular"
+  name="empty-input-group"
+  previewClassName="h-96 p-0"
+/>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="empty-rtl" direction="rtl" />
+
 ## API Reference
 
 ### EmptyMediaComponent
 
-| Input     | Type                    | Default     |
-| --------- | ----------------------- | ----------- |
-| `variant` | `"default" \| "icon"`   | `"default"` |
-| `class`   | `string`                | –           |
+| Input     | Type                  | Default     |
+| --------- | --------------------- | ----------- |
+| `variant` | `"default" \| "icon"` | `"default"` |
+| `class`   | `string`              | –           |
 
 All other sub-components accept only `class`.

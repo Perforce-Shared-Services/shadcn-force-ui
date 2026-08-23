@@ -1,0 +1,151 @@
+---
+title: Bubble
+description: Chat bubble with variants, alignment, and reaction slots for conversation UIs.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="bubble-demo" />
+
+The `Bubble` component renders chat message bubbles with start/end alignment, color variants, and a `BubbleReactions` slot. Group consecutive bubbles with `BubbleGroup`.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/bubble
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="bubble" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import { Bubble, BubbleContent, BubbleGroup, BubbleReactions } from '@/ui/bubble';
+```
+
+```hbs showLineNumbers
+<Bubble @align="end">
+  <BubbleContent>Hey there! what's up?</BubbleContent>
+</Bubble>
+<BubbleGroup>
+  <Bubble @variant="muted">
+    <BubbleContent>Sure thing.</BubbleContent>
+  </Bubble>
+</BubbleGroup>
+```
+
+## Alignment
+
+Use `@align` to switch sides of the thread. Start is the default for incoming messages; end aligns outgoing messages.
+
+<ComponentPreview framework="ember" name="bubble-alignment" />
+
+## Variants
+
+<ComponentPreview framework="ember" name="bubble-variants" />
+
+| Variant       | Description                                      |
+| ------------- | ------------------------------------------------ |
+| `default`     | The primary bubble for outgoing messages.        |
+| `secondary`   | A softer bubble for secondary participants.      |
+| `muted`       | Low emphasis bubble for incoming messages.       |
+| `tinted`      | Soft tint derived from the primary color.        |
+| `outline`     | Outlined bubble without fill.                    |
+| `ghost`       | Full width, unframed content for assistant text. |
+| `destructive` | Error or failure bubbles.                        |
+
+## Group
+
+`BubbleGroup` visually connects consecutive bubbles from the same participant.
+
+<ComponentPreview framework="ember" name="bubble-group-demo" />
+
+## Reactions
+
+`BubbleReactions` floats emoji reactions on the bubble edge. Use `@side` and `@align` to position.
+
+<ComponentPreview framework="ember" name="bubble-reactions" />
+
+## With Popover
+
+Combine reactions with a [`Popover`](/docs/components/ember/popover) for error details.
+
+<ComponentPreview framework="ember" name="bubble-popover" />
+
+## With Tooltip
+
+<ComponentPreview framework="ember" name="bubble-tooltip" />
+
+## Collapsible Content
+
+Long assistant replies can collapse behind a show-more trigger built with [`Collapsible`](/docs/components/ember/collapsible).
+
+<ComponentPreview framework="ember" name="bubble-collapsible" />
+
+## Links and Buttons
+
+Render quick-reply actions inside the bubble content.
+
+<ComponentPreview framework="ember" name="bubble-link-button" />
+
+## API Reference
+
+### Bubble
+
+The bubble container.
+
+| Prop       | Type                                                                                       | Default     | Description                                      |
+| ---------- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------ |
+| `@variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"` | `"default"` | The visual style of the bubble.                  |
+| `@align`   | `"start" \| "end"`                                                                         | `"start"`   | Which side of the thread the bubble sits on.     |
+| `@class`   | `string`                                                                                   | -           | Additional classes to apply to the root element. |
+
+### BubbleContent
+
+The bubble's inner content wrapper.
+
+| Prop     | Type     | Default | Description                                      |
+| -------- | -------- | ------- | ------------------------------------------------ |
+| `@class` | `string` | -       | Additional classes to apply to the content slot. |
+
+### BubbleGroup
+
+Groups consecutive bubbles from one participant.
+
+| Prop     | Type     | Default | Description                                       |
+| -------- | -------- | ------- | ------------------------------------------------- |
+| `@class` | `string` | -       | Additional classes to apply to the group element. |
+
+### BubbleReactions
+
+Floating reactions row attached to a bubble.
+
+| Prop     | Type                | Default    | Description                                       |
+| -------- | ------------------- | ---------- | ------------------------------------------------- |
+| `@side`  | `"top" \| "bottom"` | `"bottom"` | Which edge of the bubble the reactions attach to. |
+| `@align` | `"start" \| "end"`  | `"end"`    | Horizontal alignment within the bubble.           |
+| `@class` | `string`            | -          | Additional classes to apply.                      |

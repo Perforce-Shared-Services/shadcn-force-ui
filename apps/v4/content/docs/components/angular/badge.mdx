@@ -49,9 +49,9 @@ import { BadgeComponent } from "@/components/ui/badge"
 <span uiBadge variant="success">Synced</span>
 ```
 
-## Examples
+## Variants
 
-### Variants
+Use the `variant` input to change the variant of the badge.
 
 <ComponentPreview framework="angular" name="badge-variants" />
 
@@ -59,17 +59,41 @@ import { BadgeComponent } from "@/components/ui/badge"
 
 <ComponentPreview framework="angular" name="badge-status" />
 
-### With Icon
+## With Icon
 
 Project an inline `<svg>` tagged `data-icon="inline-start"` or `"inline-end"`.
 
 <ComponentPreview framework="angular" name="badge-icon" />
 
+## With Spinner
+
+You can render a spinner inside the badge. Remember to add the `data-icon="inline-start"` or `data-icon="inline-end"` attribute to the spinner.
+
+<ComponentPreview framework="angular" name="badge-spinner" />
+
+## Link
+
+Use the badge on a native `<a>` element — the attribute selector rides the anchor directly, Angular's idiomatic equivalent of React's `render` prop.
+
+<ComponentPreview framework="angular" name="badge-link" />
+
 ### Solid Status Variants
 
-Use solid variants for maximum-attention states (critical counts, overdue flags).
+Use solid variants for maximum-attention states like critical counts or overdue flags.
 
 <ComponentPreview framework="angular" name="badge-solid" />
+
+## Custom Colors
+
+You can customize the colors of a badge by adding custom classes such as `bg-green-50 dark:bg-green-800` to the badge element.
+
+<ComponentPreview framework="angular" name="badge-colors" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="badge-rtl" direction="rtl" />
 
 ## API Reference
 

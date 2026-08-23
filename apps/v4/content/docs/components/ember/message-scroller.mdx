@@ -1,0 +1,106 @@
+---
+title: Message Scroller
+description: A scroll container for chat threads with auto-scroll and jump-to-latest behavior.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="message-scroller-demo" />
+
+The `MessageScroller` component pins a chat thread to the newest message as content arrives, backs off when the reader scrolls up, and shows a button to jump back to the end.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/message-scroller
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="message-scroller" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import {
+  MessageScroller,
+  MessageScrollerButton,
+  MessageScrollerContent,
+  MessageScrollerItem,
+  MessageScrollerViewport,
+} from '@/ui/message-scroller';
+```
+
+```hbs showLineNumbers
+<MessageScroller>
+  <MessageScrollerViewport>
+    <MessageScrollerContent>
+      {{#each this.messages as |message|}}
+        <MessageScrollerItem>...</MessageScrollerItem>
+      {{/each}}
+    </MessageScrollerContent>
+  </MessageScrollerViewport>
+  <MessageScrollerButton />
+</MessageScroller>
+```
+
+## Behavior
+
+- **Auto-scroll** (default on): the viewport jumps to the bottom on mount and whenever content grows while already at the end.
+- **Back-off**: scrolling away from the end disables auto-scroll until the reader returns.
+- **Jump-to-latest**: `MessageScrollerButton` appears when the target edge is out of view. Use `@direction="start"` for a jump-to-start button.
+
+Disable auto-scroll by passing `@autoScroll={{false}}` to `MessageScroller`.
+
+## API Reference
+
+### MessageScroller
+
+Root component owning scroll state.
+
+| Prop          | Type      | Default | Description                                              |
+| ------------- | --------- | ------- | -------------------------------------------------------- |
+| `@autoScroll` | `boolean` | `true`  | Pin to the newest content on mount and while at the end. |
+
+### MessageScrollerViewport
+
+The overflow container. Tracks scroll position and reports it to the root.
+
+### MessageScrollerContent
+
+Column layout wrapper for the items.
+
+### MessageScrollerItem
+
+Wrapper for a single message. Uses `content-visibility: auto` to skip rendering work for off-screen messages.
+
+### MessageScrollerButton
+
+Jump button shown only when its target edge is out of view.
+
+| Prop         | Type               | Default | Description                        |
+| ------------ | ------------------ | ------- | ---------------------------------- |
+| `@direction` | `"start" \| "end"` | `"end"` | Which edge this button scrolls to. |
+| `@class`     | `string`           | -       | Additional classes to apply.       |

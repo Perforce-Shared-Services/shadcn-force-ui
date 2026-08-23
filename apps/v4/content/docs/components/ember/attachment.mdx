@@ -1,0 +1,151 @@
+---
+title: Attachment
+description: File or image attachment card with upload states, sizes, and actions.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="attachment-demo" />
+
+The `Attachment` component displays files and images being shared in a conversation, with states for idle, uploading, processing, error, and done.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/attachment
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="attachment" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import {
+  Attachment,
+  AttachmentActions,
+  AttachmentAction,
+  AttachmentContent,
+  AttachmentDescription,
+  AttachmentMedia,
+  AttachmentTitle,
+} from '@/ui/attachment';
+```
+
+```hbs showLineNumbers
+<Attachment>
+  <AttachmentMedia>
+    <FileText />
+  </AttachmentMedia>
+  <AttachmentContent>
+    <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
+    <AttachmentDescription>PDF · 2.4 MB</AttachmentDescription>
+  </AttachmentContent>
+  <AttachmentActions>
+    <AttachmentAction aria-label="Remove">
+      <Close />
+    </AttachmentAction>
+  </AttachmentActions>
+</Attachment>
+```
+
+## States
+
+Use `@state` to drive the border, media tint, and shimmer behavior: `idle` renders dashed borders while `error` tints the media destructive.
+
+<ComponentPreview framework="ember" name="attachment-states" />
+
+| State        | Description                                    |
+| ------------ | ---------------------------------------------- |
+| `idle`       | Selected but not yet uploaded. Dashed border.  |
+| `uploading`  | Upload in progress. Pair with a `Spinner`.     |
+| `processing` | Server-side processing. Title shimmers.        |
+| `error`      | Upload failed. Media and description tint red. |
+| `done`       | Default completed state.                       |
+
+## Sizes
+
+<ComponentPreview framework="ember" name="attachment-sizes" />
+
+## Image
+
+Use `@variant="image"` on the media slot to render a full-bleed image.
+
+<ComponentPreview framework="ember" name="attachment-image" />
+
+## Group
+
+`AttachmentGroup` lays out attachments on a horizontal snap-scrolling rail.
+
+<ComponentPreview framework="ember" name="attachment-group" />
+
+## Trigger
+
+`AttachmentTrigger` overlays the whole card so clicking it opens a preview, while `AttachmentActions` stay independently clickable above it.
+
+<ComponentPreview framework="ember" name="attachment-trigger" />
+
+## API Reference
+
+### Attachment
+
+The attachment card root.
+
+| Prop           | Type                                                         | Default        | Description                                      |
+| -------------- | ------------------------------------------------------------ | -------------- | ------------------------------------------------ |
+| `@state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`       | Upload lifecycle state driving visual treatment. |
+| `@size`        | `"default" \| "sm" \| "xs"`                                  | `"default"`    | Card density.                                    |
+| `@orientation` | `"horizontal" \| "vertical"`                                 | `"horizontal"` | Layout of media vs content.                      |
+| `@class`       | `string`                                                     | -              | Additional classes to apply.                     |
+
+### AttachmentMedia
+
+Square media frame for icons or images.
+
+| Prop       | Type                | Default  | Description                    |
+| ---------- | ------------------- | -------- | ------------------------------ |
+| `@variant` | `"icon" \| "image"` | `"icon"` | Icon tile or full-bleed image. |
+| `@class`   | `string`            | -        | Additional classes to apply.   |
+
+### AttachmentContent
+
+Flexible middle column holding title and description.
+
+### AttachmentTitle / AttachmentDescription
+
+Single-line truncated text slots. The description shimmers while state is `uploading`/`processing`.
+
+### AttachmentActions / AttachmentAction
+
+Right-aligned action row; `AttachmentAction` wraps [`Button`](/docs/components/ember/button) (defaults to `ghost`, `icon-xs`).
+
+### AttachmentTrigger
+
+Absolutely positioned transparent button covering the card. Rendered below the action row's z-index.
+
+### AttachmentGroup
+
+Horizontal scroll-snap rail of attachments.

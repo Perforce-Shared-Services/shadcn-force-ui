@@ -1,0 +1,145 @@
+---
+title: Alert Dialog
+description: A modal dialog that interrupts the user with important content and expects a response.
+featured: true
+base: angular
+component: true
+links:
+  doc: https://www.radix-ng.com/primitives/alert-dialog
+  api: https://www.radix-ng.com/primitives/alert-dialog
+---
+
+<ComponentPreview framework="angular" name="alert-dialog-demo" previewClassName="h-56" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/alert-dialog
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="alert-dialog" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+```
+
+```html
+<div uiAlertDialog>
+  <button uiButton variant="outline" uiAlertDialogTrigger>Show Dialog</button>
+  <ng-template uiAlertDialogPortal>
+    <div uiAlertDialogOverlay></div>
+    <div uiAlertDialogContent>…</div>
+  </ng-template>
+</div>
+```
+
+An alert dialog has no close (X) button and cannot be dismissed by clicking the backdrop — the user must choose a footer action. Escape still closes, matching the React behaviour.
+
+## Composition
+
+Use the following composition to build an `AlertDialog`:
+
+```text
+AlertDialog
+├── AlertDialogTrigger
+└── ng-template (uiAlertDialogPortal)
+    ├── AlertDialogOverlay
+    └── AlertDialogContent
+        ├── AlertDialogHeader
+        │   ├── AlertDialogMedia
+        │   ├── AlertDialogTitle
+        │   └── AlertDialogDescription
+        └── AlertDialogFooter
+            ├── AlertDialogCancel
+            └── AlertDialogAction
+```
+
+## Basic
+
+A basic alert dialog with a title, description, and cancel and continue buttons.
+
+<ComponentPreview framework="angular" name="alert-dialog-basic" previewClassName="h-56" />
+
+## Small
+
+Use the `size="sm"` input on `AlertDialogContent` to make the alert dialog smaller.
+
+<ComponentPreview framework="angular" name="alert-dialog-small" previewClassName="h-56" />
+
+## Media
+
+Use the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
+
+<ComponentPreview framework="angular" name="alert-dialog-media" previewClassName="h-56" />
+
+## Small with Media
+
+Use the `size="sm"` input to make the alert dialog smaller and the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
+
+<ComponentPreview framework="angular" name="alert-dialog-small-media" previewClassName="h-56" />
+
+## Destructive
+
+Use the `variant="destructive"` button inside `AlertDialogAction` to add a destructive action to the alert dialog.
+
+<ComponentPreview framework="angular" name="alert-dialog-destructive" previewClassName="h-56" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="alert-dialog-rtl" direction="rtl" previewClassName="h-56" />
+
+## API Reference
+
+### size
+
+Use the `size` input on the `AlertDialogContent` component to control the size of the alert dialog. It accepts the following values:
+
+| Input  | Type                | Default     |
+| ------ | ------------------- | ----------- |
+| `size` | `"default" \| "sm"` | `"default"` |
+
+For more information about the other parts and their inputs, see the [radix-ng Alert Dialog](https://www.radix-ng.com/primitives/alert-dialog) documentation.

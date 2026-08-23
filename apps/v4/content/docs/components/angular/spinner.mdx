@@ -46,8 +46,7 @@ import { SpinnerComponent } from "@/components/ui/spinner"
 ```
 
 ```html
-<span uiSpinner></span>
-<span uiSpinner color="primary" size="lg"></span>
+<span uiSpinner></span> <span uiSpinner color="primary" size="lg"></span>
 ```
 
 The spinner is `aria-hidden` — it is purely visual. The container owns the loading state via `aria-busy="true"` + an `aria-live` region.
@@ -60,19 +59,45 @@ The `animate-spinner` animation (500ms) requires this in your `tailwind.css`:
 }
 ```
 
-## Examples
-
-### Colors
+## Colors
 
 <ComponentPreview framework="angular" name="spinner-colors" />
 
-### Sizes
+## Sizes
 
 <ComponentPreview framework="angular" name="spinner-sizes" />
 
-### In a Button
+## Size
+
+Use the `size` utility class for arbitrary spinner dimensions.
+
+<ComponentPreview framework="angular" name="spinner-size" />
+
+## Button
 
 <ComponentPreview framework="angular" name="spinner-button" />
+
+## Badge
+
+<ComponentPreview framework="angular" name="spinner-badge" />
+
+## Input Group
+
+<ComponentPreview framework="angular" name="spinner-input-group" />
+
+## Empty
+
+<ComponentPreview
+  framework="angular"
+  name="spinner-empty"
+  previewClassName="h-96 p-0"
+/>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="spinner-rtl" direction="rtl" />
 
 ## API Reference
 

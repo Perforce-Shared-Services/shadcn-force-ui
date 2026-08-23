@@ -1,5 +1,4 @@
 import type { source } from "@/lib/source"
-
 import { BASES } from "@/registry/bases"
 
 export type PageTreeNode = (typeof source.pageTree)["children"][number]

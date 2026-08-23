@@ -1,0 +1,266 @@
+---
+title: Drawer
+description: A panel that slides in from the edge of the screen.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="drawer-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/drawer
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="drawer" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerPortal,
+  DrawerRoot,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+```
+
+```html showLineNumbers
+<div uiDrawerRoot>
+  <button uiButton variant="outline" uiDrawerTrigger>Open</button>
+  <ng-template uiDrawerPortal>
+    <div uiDrawerOverlay></div>
+    <div uiDrawerContent direction="bottom">
+      <div uiDrawerHeader>
+        <h2 uiDrawerTitle>Are you absolutely sure?</h2>
+        <p uiDrawerDescription>This action cannot be undone.</p>
+      </div>
+      <div class="p-4">{/* Content here */}</div>
+      <div uiDrawerFooter>
+        <button uiButton>Submit</button>
+        <button uiButton variant="outline" uiDrawerClose>Cancel</button>
+      </div>
+    </div>
+  </ng-template>
+</div>
+```
+
+Every part is an attribute selector on a native element (or an `<ng-template>`
+for the portal), so hosts keep their native semantics — Angular's idiomatic
+equivalent of React's `asChild`/`render`. The panel is built on
+`@radix-ng/primitives/dialog`; a drawer is a dialog with rounded corners, a
+directional grab-handle bar and a `bottom` edge default.
+
+## Composition
+
+Use the following composition to build a `Drawer`:
+
+```text
+DrawerRoot
+├── DrawerTrigger
+└── DrawerPortal (ng-template)
+    ├── DrawerOverlay
+    └── DrawerContent
+        ├── DrawerHeader
+        │   ├── DrawerTitle
+        │   └── DrawerDescription
+        └── DrawerFooter
+```
+
+## Custom Sizes
+
+A vertical drawer sizes itself to its content and is capped at `80vh` by
+default. A side drawer spans `75%` of the viewport width, or `24rem` (`sm:`) on
+larger screens.
+
+To customize the height of a vertical drawer or the width of a side drawer,
+use the `h-*` / `max-h-*` and `w-*` / `max-w-*` utilities on `DrawerContent`:
+
+```html showLineNumbers
+<div uiDrawerContent direction="bottom" class="h-[50vh]"></div>
+<div uiDrawerContent direction="right" class="w-96"></div>
+```
+
+To make a region of the drawer scrollable, make the scroll container a flex
+item. Avoid `h-full`, which does not resolve inside a content-sized drawer.
+
+## Position
+
+Use the `direction` input on `[uiDrawerContent]` to set the edge the drawer
+slides in from: `top`, `right`, `bottom` (default), or `left`.
+
+<ComponentPreview framework="angular" name="drawer-sides" />
+
+## Swipe Handle
+
+The grab-handle bar renders automatically for bottom drawers.
+
+<Callout>
+  The handle is decorative in the Angular port — vaul's drag-to-dismiss gesture
+  has no radix-ng equivalent, so dismissal is Escape, outside click, or an
+  action in the footer.
+</Callout>
+
+<ComponentPreview framework="angular" name="drawer-swipe-handle" />
+
+## Nested
+
+Open drawers from inside another drawer. Parent drawers stay mounted and stack behind the frontmost drawer.
+
+<ComponentPreview framework="angular" name="drawer-nested" />
+
+## Non Modal
+
+Set `[modal]="false"` to allow interaction with the rest of the page while the
+drawer is open. Combine with `[disablePointerDismissal]="true"` to prevent the
+drawer from closing on outside presses. Use `modal="trap-focus"` to keep focus
+inside the drawer while leaving scroll and pointer interaction unrestricted.
+
+<ComponentPreview framework="angular" name="drawer-non-modal" />
+
+## Snap Points
+
+A drawer sized between a compact peek and a near full-height view.
+
+<ComponentPreview framework="angular" name="drawer-snap-points" />
+
+<Callout>
+snap points are part of vaul's swipe physics, which has no radix-ng
+equivalent — the Angular demo renders the same content at a fixed height
+instead of snapping.
+</Callout>
+
+## Responsive
+
+You can combine the `Dialog` and `Drawer` components to create a responsive
+dialog — a `Dialog` on desktop and a `Drawer` on mobile.
+
+<Callout>
+  The Angular `dialog` port is pending, so the preview shows the drawer half of
+  the pattern only; compose it with `[uiDialogRoot]` once that port lands.
+</Callout>
+
+<ComponentPreview framework="angular" name="drawer-dialog" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="drawer-rtl" direction="rtl" />
+
+## API Reference
+
+The drawer wraps [`@radix-ng/primitives/dialog`](https://radix-ng.com/primitives/dialog). Inputs and outputs not listed below are forwarded to the underlying radix-ng directives (`open`, `modal`, `disablePointerDismissal` on the root; `escapeKeyDown`, `pointerDownOutside`, `interactOutside` on the content).
+
+### DrawerRoot
+
+Groups all parts of the drawer and owns the open state. Applied via `[uiDrawerRoot]` on any wrapper element. Supports `[(open)]` two-way binding.
+
+| Input                    | Type                              | Default |
+| ------------------------ | --------------------------------- | ------- |
+| `class`                  | `string`                          | -       |
+
+### DrawerTrigger
+
+Opens the drawer. Applied via `[uiDrawerTrigger]` on a `<button>`.
+
+| Input      | Type      | Default |
+| ---------- | --------- | ------- |
+| `disabled` | `boolean` | `false` |
+| `id`       | `string`  | -       |
+
+### DrawerPortal
+
+Portals the drawer content to the overlay container while open. Applied via `uiDrawerPortal` on an `<ng-template>`.
+
+### DrawerOverlay
+
+The translucent scrim behind the panel. Applied via `[uiDrawerOverlay]`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### DrawerContent
+
+The edge-pinned panel. Hosts the dialog popup (`role="dialog"`), wires
+`aria-labelledby`/`aria-describedby` from the projected title/description, and
+renders the decorative grab handle for `direction="bottom"`.
+
+| Input      | Type                                  | Default   |
+| ---------- | ------------------------------------- | --------- |
+| `class`    | `string`                              | -         |
+| `direction`| `"top" \| "right" \| "bottom" \| "left"` | `"bottom"` |
+
+### DrawerHeader
+
+Stacks the title and description at the top of the panel. Applied via `[uiDrawerHeader]`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### DrawerTitle
+
+The accessible name of the drawer. Applied via `[uiDrawerTitle]` on any heading element.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### DrawerDescription
+
+The accessible description of the drawer. Applied via `[uiDrawerDescription]` on a `<p>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### DrawerFooter
+
+Pins actions to the bottom of the panel. Applied via `[uiDrawerFooter]`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### DrawerClose
+
+Closes the drawer. Applied via `[uiDrawerClose]` on a `<button>`.

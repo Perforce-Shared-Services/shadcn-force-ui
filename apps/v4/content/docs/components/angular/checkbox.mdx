@@ -1,0 +1,108 @@
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/checkbox
+  api: https://radix-ng.com/primitives/checkbox
+---
+
+<ComponentPreview framework="angular" name="checkbox-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/checkbox
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="checkbox" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Checkbox } from "@/components/ui/checkbox"
+```
+
+```html showLineNumbers
+<button uiCheckbox id="tos" [checked]="false"></button>
+<label uiLabel for="tos">Accept terms and conditions</label>
+```
+
+## Basic
+
+The smallest checkbox wired to a field label.
+
+<ComponentPreview framework="angular" name="checkbox-basic" />
+
+## Description
+
+Pair the checkbox with helper text via `FieldContent` and `FieldDescription`.
+
+<ComponentPreview framework="angular" name="checkbox-description" />
+
+## Disabled
+
+Disable the checkbox inside a field marked `data-disabled`.
+
+<ComponentPreview framework="angular" name="checkbox-disabled" />
+
+## Invalid State
+
+Set `aria-invalid` on the checkbox and `data-invalid` on the field wrapper to
+show the invalid styles.
+
+<ComponentPreview framework="angular" name="checkbox-invalid" />
+
+## Group
+
+Group related checkboxes in a `FieldSet` with a legend and description.
+
+<ComponentPreview framework="angular" name="checkbox-group" />
+
+## Table
+
+Use checkboxes for row selection inside a data table.
+
+<ComponentPreview framework="angular" name="checkbox-table" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="checkbox-rtl" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/checkbox) documentation for more information.

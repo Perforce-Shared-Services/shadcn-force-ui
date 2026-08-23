@@ -73,60 +73,76 @@ On `<a uiButton>`, the native `disabled` attribute has no effect. The component 
 <a uiButton variant="link" href="/path" [disabled]="true">Disabled link</a>
 ```
 
-## Examples
-
-### Sizes
+## Size
 
 <ComponentPreview framework="angular" name="button-size" />
 
-### Default
+## Default
 
 <ComponentPreview framework="angular" name="button-default" />
 
-### Outline
+## Outline
 
 <ComponentPreview framework="angular" name="button-outline" />
 
-### Secondary
+## Secondary
 
 <ComponentPreview framework="angular" name="button-secondary" />
 
-### Ghost
+## Ghost
 
 <ComponentPreview framework="angular" name="button-ghost" />
 
-### Destructive
+## Destructive
 
 <ComponentPreview framework="angular" name="button-destructive" />
 
-### Link
+## Link
 
 <ComponentPreview framework="angular" name="button-link" />
 
-### Icon
+## Icon
 
 <ComponentPreview framework="angular" name="button-icon" />
 
-### With Icon
+## With Icon
 
 Use `data-icon="inline-start"` or `data-icon="inline-end"` on the `<svg>` for correct spacing.
 
 <ComponentPreview framework="angular" name="button-with-icon" />
 
-### Loading
+## Rounded
+
+Use the `rounded-full` class to make the button rounded.
+
+<ComponentPreview framework="angular" name="button-rounded" />
+
+## Loading
 
 The `loading` input shows a spinner, sets `aria-busy="true"`, and blocks interaction.
 
 <ComponentPreview framework="angular" name="button-spinner" />
 
+## As Link
+
+You can use the `buttonVariants` helper to make a link look like a button — Angular's attribute-selector host keeps native `<a>` semantics, so no `render` prop is needed.
+
+<ComponentPreview framework="angular" name="button-render" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="button-rtl" />
+
 ## API Reference
 
 ### ButtonComponent
 
-| Input       | Type                                                                                    | Default     |
-| ----------- | --------------------------------------------------------------------------------------- | ----------- |
-| `variant`   | `"default" \| "outline" \| "ghost" \| "destructive" \| "secondary" \| "link"`          | `"default"` |
-| `size`      | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
-| `disabled`  | `boolean`                                                                               | `false`     |
-| `loading`   | `boolean`                                                                               | `false`     |
-| `class`     | `string`                                                                                | –           |
+| Input      | Type                                                                                 | Default     |
+| ---------- | ------------------------------------------------------------------------------------ | ----------- |
+| `variant`  | `"default" \| "outline" \| "ghost" \| "destructive" \| "secondary" \| "link"`        | `"default"` |
+| `size`     | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
+| `disabled` | `boolean`                                                                            | `false`     |
+| `loading`  | `boolean`                                                                            | `false`     |
+| `class`    | `string`                                                                             | –           |

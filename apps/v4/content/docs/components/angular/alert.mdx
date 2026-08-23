@@ -30,7 +30,7 @@ npx shadcn@latest add @force-ui-angular/alert
 ## Usage
 
 ```ts
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 ```
 
 ```html
@@ -40,19 +40,55 @@ import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
 </div>
 ```
 
-## Examples
+## Variants
 
-### Variants
+All semantic variants rendered side by side — `default`, `destructive`, `warning`, `success` and `info`.
 
 <ComponentPreview framework="angular" name="alert-variants" />
+
+## Basic
+
+A basic alert with an icon, title and description.
+
+<ComponentPreview framework="angular" name="alert-basic" previewClassName="h-auto sm:h-72 p-6" />
+
+## Destructive
+
+Use `variant="destructive"` to create a destructive alert.
+
+<ComponentPreview framework="angular" name="alert-destructive" previewClassName="h-auto sm:h-72 p-6" />
+
+## Status Variants
+
+Use `variant="warning"`, `variant="success"`, or `variant="info"` for semantic status alerts.
+
+<ComponentPreview framework="angular" name="alert-status" previewClassName="p-6" />
+
+## Action
+
+Use `uiAlertAction` to add a button or other action element to the alert.
+
+<ComponentPreview framework="angular" name="alert-action" previewClassName="h-auto sm:h-72 p-6" />
+
+## Custom Colors
+
+You can customize the alert colors by adding custom classes such as `bg-amber-50 dark:bg-amber-950` to the alert element.
+
+<ComponentPreview framework="angular" name="alert-colors" previewClassName="h-auto sm:h-72 p-6" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="alert-rtl" direction="rtl" previewClassName="h-auto sm:h-72 p-6" />
 
 ## API Reference
 
 ### AlertComponent
 
-| Input     | Type                                                             | Default     |
-| --------- | ---------------------------------------------------------------- | ----------- |
-| `variant` | `"default" \| "destructive" \| "warning" \| "success" \| "info"` | `"default"` |
-| `icon`    | `"auto" \| "none" \| "info" \| "warning" \| "success" \| "error" \| "bell"` | `"auto"` |
-| `role`    | `"auto" \| "alert" \| "status"`                                 | `"auto"`    |
-| `class`   | `string`                                                         | –           |
+| Input     | Type                                                                        | Default     |
+| --------- | --------------------------------------------------------------------------- | ----------- |
+| `variant` | `"default" \| "destructive" \| "warning" \| "success" \| "info"`            | `"default"` |
+| `icon`    | `"auto" \| "none" \| "info" \| "warning" \| "success" \| "error" \| "bell"` | `"auto"`    |
+| `role`    | `"auto" \| "alert" \| "status"`                                             | `"auto"`    |
+| `class`   | `string`                                                                    | –           |

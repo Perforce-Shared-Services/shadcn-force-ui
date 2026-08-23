@@ -1,0 +1,248 @@
+---
+title: Bubble
+description: A chat bubble for conversation content, with variants, alignment, and reactions.
+base: vue
+component: true
+---
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-demo"
+  previewClassName="h-auto theme-blue"
+/>
+
+The `Bubble` component renders chat conversation content. It ships with a `BubbleGroup` for consecutive messages, and `BubbleReactions` for overlaid reaction chips.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-vue/bubble
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="vue" name="bubble" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```vue showLineNumbers
+<script setup lang="ts">
+import { Bubble, BubbleContent, BubbleReactions } from "@/components/ui/bubble"
+</script>
+
+<template>
+  <Bubble>
+    <BubbleContent>
+      I checked the registry output and removed the stale route.
+    </BubbleContent>
+    <BubbleReactions>
+      <span>👍</span>
+    </BubbleReactions>
+  </Bubble>
+</template>
+```
+
+## Composition
+
+Use the following composition to build a bubble:
+
+```text
+Bubble
+├── BubbleContent
+└── BubbleReactions
+```
+
+Use `BubbleGroup` to group consecutive bubbles from the same sender:
+
+```text
+BubbleGroup
+├── Bubble
+│   └── BubbleContent
+└── Bubble
+    └── BubbleContent
+```
+
+## Features
+
+- Seven visual variants, from a strong primary bubble to unframed ghost content
+- Start and end alignment for sender and receiver bubbles
+- Reactions that anchor to the bubble edge with configurable side and alignment
+- Bubbles size to their content, up to 80% of the container width
+- Polymorphic content via the `as` prop for link and button bubbles
+- Customizable styling through the `class` prop on every part
+
+## Variants
+
+Use `variant` to change the visual treatment of the bubble.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-variants"
+  previewClassName="h-auto theme-blue"
+/>
+
+| Variant       | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| `default`     | A strong primary bubble, usually for the current user. |
+| `secondary`   | The standard neutral bubble for conversation content.  |
+| `muted`       | A lower-emphasis bubble for quiet supporting content.  |
+| `tinted`      | A subtle primary-tinted bubble.                        |
+| `outline`     | A bordered bubble for secondary or rich content.       |
+| `ghost`       | Unframed content for assistant text or rich content.   |
+| `destructive` | A destructive bubble for error or failed actions.      |
+
+A bubble sizes to its content, up to 80% of the container width. The `ghost` variant removes the max-width so assistant text and rich content can span the full row.
+
+## Alignment
+
+Use `align` to switch between the start (receiver) and end (sender) side of the row.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-alignment"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Bubble Group
+
+Use `BubbleGroup` to group consecutive bubbles from the same sender.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-group-demo"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Links and Buttons
+
+Use the `as` prop on `BubbleContent` to render quick replies as buttons.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-link-button"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Reactions
+
+Anchor `BubbleReactions` to any edge of a bubble with `side` and `align`.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-reactions"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Show More / Collapsible
+
+Compose with [`Collapsible`](/docs/components/vue/collapsible) for long assistant messages.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-collapsible"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Tooltip
+
+Compose with [`Tooltip`](/docs/components/vue/tooltip) inside `BubbleReactions`.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-tooltip"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Popover
+
+Compose with [`Popover`](/docs/components/vue/popover) inside `BubbleReactions` for error details.
+
+<ComponentPreview
+  framework="vue"
+  name="bubble-popover"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Accessibility
+
+### Labeling Reactions
+
+Reaction chips render emoji, which assistive tech reads literally ("thumbs up" is fine, "+2" is not). Give the reaction row an accessible name that summarizes the full state:
+
+```vue showLineNumbers
+<template>
+  <BubbleReactions
+    role="img"
+    aria-label="Reactions: thumbs up, fire, and 2 more"
+  >
+    <span>👍</span>
+    <span>🔥</span>
+    <span>+2</span>
+  </BubbleReactions>
+</template>
+```
+
+### Interactive Bubbles
+
+When `BubbleContent` is rendered as a `button` or link via the `as` prop, it is focusable and announces its role.
+
+## API Reference
+
+### Bubble
+
+The root bubble wrapper.
+
+| Prop      | Type                                                                                       | Default     | Description                                      |
+| --------- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------ |
+| `variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"` | `"default"` | The bubble visual treatment.                     |
+| `align`   | `"start" \| "end"`                                                                         | `"start"`   | The inline alignment of the bubble.              |
+| `class`   | `string`                                                                                   | -           | Additional classes to apply to the root element. |
+
+### BubbleContent
+
+The bubble content wrapper.
+
+| Prop    | Type     | Default | Description                                            |
+| ------- | -------- | ------- | ------------------------------------------------------ |
+| `as`    | `string` | `"div"` | Render the content as a custom element, e.g. `button`. |
+| `class` | `string` | -       | Additional classes to apply to the content element.    |
+
+### BubbleReactions
+
+Displays overlapped reactions for a bubble.
+
+| Prop    | Type                | Default    | Description                                      |
+| ------- | ------------------- | ---------- | ------------------------------------------------ |
+| `side`  | `"top" \| "bottom"` | `"bottom"` | The side of the bubble to anchor the reactions.  |
+| `align` | `"start" \| "end"`  | `"end"`    | The inline alignment of the reactions.           |
+| `class` | `string`            | -          | Additional classes to apply to the reaction row. |
+
+### BubbleGroup
+
+Groups consecutive bubbles from the same sender.
+
+| Prop    | Type     | Default | Description                                    |
+| ------- | -------- | ------- | ---------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the group root. |

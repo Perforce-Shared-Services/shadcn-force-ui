@@ -1,0 +1,221 @@
+---
+title: Sidebar
+description: A composable, themeable and customizable sidebar component.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="sidebar-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/sidebar
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="sidebar" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarInset,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+} from "@/components/ui/sidebar"
+```
+
+```html
+<div uiSidebarProvider>
+  <nav uiSidebar>
+    <div uiSidebarHeader></div>
+    <div uiSidebarContent>
+      <div uiSidebarGroup>
+        <div uiSidebarGroupLabel>Application</div>
+        <div uiSidebarGroupContent>
+          <ul uiSidebarMenu>
+            <li uiSidebarMenuItem>
+              <button uiSidebarMenuButton>Calendar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div uiSidebarFooter></div>
+  </nav>
+  <main uiSidebarInset><!-- your app content --></main>
+</div>
+```
+
+Wrap the whole app-shell region in `[uiSidebarProvider]` (it owns the shared
+open/collapsed/mobile state), `[uiSidebar]` on the panel itself — a `<nav>`
+keeps the landmark semantics — and `[uiSidebarInset]` for the content area.
+
+The attribute selectors keep native element semantics (Angular's idiomatic
+equivalent of React's `asChild`): `SidebarMenuButton` and its sub-button are
+attribute-only, so they ride a native `<button>` or `<a>`.
+
+## Composition
+
+```
+<SidebarProvider>
+├── <Sidebar>
+│   ├── <SidebarHeader />
+│   ├── <SidebarContent>
+│   │   ├── <SidebarGroup>
+│   │   │   ├── <SidebarGroupLabel />
+│   │   │   ├── <SidebarGroupAction />
+│   │   │   └── <SidebarGroupContent>
+│   │   │       └── <SidebarMenu>
+│   │   │           └── <SidebarMenuItem>
+│   │   │               ├── <SidebarMenuButton />
+│   │   │               ├── <SidebarMenuAction />
+│   │   │               ├── <SidebarMenuBadge />
+│   │   │               └── <SidebarMenuSub>
+│   │   │                   └── <SidebarMenuSubItem>
+│   │   │                       └── <SidebarMenuSubButton />
+│   ├── <SidebarFooter />
+│   └── <SidebarRail />
+└── <SidebarInset />
+```
+
+## Basic
+
+A minimal sidebar with one group of menu rows.
+
+<ComponentPreview framework="angular" name="sidebar-menu" align="start" />
+
+## Header
+
+A header with a dropdown workspace switcher.
+
+<ComponentPreview framework="angular" name="sidebar-header" align="start" />
+
+## Footer
+
+A footer with a dropdown user menu.
+
+<ComponentPreview framework="angular" name="sidebar-footer" align="start" />
+
+## Group
+
+Groups label sections of sidebar content.
+
+<ComponentPreview framework="angular" name="sidebar-group" align="start" />
+
+## Group Action
+
+The corner action button of a group fires an action.
+
+<ComponentPreview framework="angular" name="sidebar-group-action" align="start" />
+
+## Group Collapsible
+
+A collapsible section heading toggles its group content.
+
+<ComponentPreview framework="angular" name="sidebar-group-collapsible" align="start" />
+
+## Menu Sub
+
+Indented sub-lists under a row.
+
+<ComponentPreview framework="angular" name="sidebar-menu-sub" align="start" />
+
+## Menu Collapsible
+
+Rows that expand in place to reveal their sub-menu.
+
+<ComponentPreview framework="angular" name="sidebar-menu-collapsible" align="start" />
+
+## Menu Action
+
+The row's corner icon button, shown inline or on hover.
+
+<ComponentPreview framework="angular" name="sidebar-menu-action" align="start" />
+
+## Menu Badge
+
+An unread-style count pinned to the row's edge.
+
+<ComponentPreview framework="angular" name="sidebar-menu-badge" align="start" />
+
+## Loading
+
+<Callout>
+  React streams this list from a server component. Angular has no RSC
+  equivalent, so the demo simulates the same async fetch with a timeout — the
+  skeleton fallback state is identical.
+</Callout>
+
+`SidebarMenuSkeleton` renders placeholder rows while data loads.
+
+<ComponentPreview framework="angular" name="sidebar-rsc" align="start" />
+
+## Controlled Sidebar
+
+Bind `[(open)]` on the provider to control the sidebar from outside.
+
+<ComponentPreview framework="angular" name="sidebar-controlled" align="start" />
+
+## Demo
+
+The full-featured example: team switcher, collapsible nav with tooltips,
+project actions, user menu, and the icon collapse mode.
+
+<ComponentPreview framework="angular" name="sidebar-demo" align="start" />
+
+## RTL
+
+See <Link href={["/docs/rtl"]}>RTL</Link> for details. Wrap the preview in
+`DirectionProvider direction="rtl"` — the trigger glyph mirrors via
+`cn-rtl-flip`.
+
+<ComponentPreview framework="angular" name="sidebar-rtl" align="start" />
+
+## API Reference
+
+This component is a Force UI original composed from native elements and other
+Force UI parts — see the base page's API reference for the part-by-part props:
+each Angular part is an attribute directive/component carrying the same inputs
+(`side`, `variant`, `collapsible`, `isActive`, `size`, `showOnHover`, …) as its
+React prop counterpart. `SidebarProvider.open` is two-way bindable via
+`[(open)]`, the Angular equivalent of React's `open` / `onOpenChange` pair.

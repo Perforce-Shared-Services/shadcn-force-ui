@@ -59,7 +59,28 @@ const REFERENCE_EXT = "tsx"
 // Empty on purpose today: every current gap is an unported example, not a
 // documented framework difference. See the "Documenting a deviation" section
 // of docs/component-docs-standard.md before adding one.
-const DOCUMENTED_EXCEPTIONS = new Map<string, string>()
+const DOCUMENTED_EXCEPTIONS = new Map<string, string>([
+  // sidebar-rsc composes the sidebar from React Server Components (async
+  // server data). Vue has no RSC equivalent; SidebarRtl covers the rtl case.
+  ["vue:sidebar", "sidebar-rsc is React Server Components specific"],
+  // message-scroller is a simplified cross-framework port (auto-follow, edge
+  // tracking, jump-to-latest). Programmatic commands and visibility tracking
+  // are React-only capabilities of @shadcn/react/message-scroller.
+  ["vue:message-scroller", "commands/visibility APIs are React-only (simplified port)"],
+  ["svelte:message-scroller", "visibility tracking absent from simplified port"],
+  ["ember:message-scroller", "AI-chat-stack examples need @ai-sdk/react; port covers core behaviors"],
+  // sidebar-rsc: same RSC reasoning as vue above.
+  ["svelte:sidebar", "sidebar-rsc is React Server Components specific"],
+  ["ember:sidebar", "sidebar-rsc is React Server Components specific"],
+  // toast does not exist as a component in the svelte/ember stacks (sonner is
+  // the supported toaster); the docs deprecation stub explains this.
+  ["svelte:toast", "no toast component in svelte stack (sonner-based; documented stub)"],
+  ["ember:toast", "no toast component in ember stack (sonner-based)"],
+  // Ember drawer lacks vaul gesture features; ember context-menu has no side
+  // positioning arg yet. Both carry ponytail ceiling comments in source.
+  ["ember:drawer", "vaul non-modal/snap-points/swipe-handle not ported to ember drawer"],
+  ["ember:context-menu", "ContextMenuContent has no @side positioning support"],
+])
 
 type SlugCounts = Map<string, number>
 

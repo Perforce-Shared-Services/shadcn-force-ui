@@ -1,0 +1,135 @@
+---
+title: Popover
+description: Displays rich, interactive content anchored to a trigger element.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/popover
+  api: https://radix-ng.com/primitives/popover
+---
+
+<ComponentPreview framework="angular" name="popover-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/popover
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="popover" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Popover,
+  PopoverContent,
+  PopoverDescription,
+  PopoverHeader,
+  PopoverPortal,
+  PopoverPositioner,
+  PopoverTitle,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+```
+
+```html showLineNumbers
+<div uiPopover>
+  <button uiButton variant="outline" uiPopoverTrigger type="button">
+    Open Popover
+  </button>
+  <ng-template uiPopoverPortal>
+    <div uiPopoverPositioner side="bottom" align="center" [sideOffset]="4">
+      <div uiPopoverContent>
+        <div uiPopoverHeader>
+          <div uiPopoverTitle>Title</div>
+          <p uiPopoverDescription>Description text here.</p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
+```
+
+Every part is an attribute selector on a native element (or an `ng-template`
+for the portal), so the host keeps its native semantics — Angular's idiomatic
+equivalent of React's `asChild`/`render`.
+
+React's `PopoverContent` folds Portal + positioning + styling into one
+component; radix-ng v1.x splits it into three nodes. Positioning inputs
+(`side`, `align`, `sideOffset`, `alignOffset`, `dir`) go on
+`[uiPopoverPositioner]`; visual classes go on `[uiPopoverContent]`.
+
+## Composition
+
+Use the following composition to build a `Popover`:
+
+```text
+Popover
+├── PopoverTrigger
+└── PopoverPortal (ng-template)
+    └── PopoverPositioner
+        └── PopoverContent
+            ├── PopoverHeader
+            │   ├── PopoverTitle
+            │   └── PopoverDescription
+            └── …content
+```
+
+## Basic
+
+A simple popover with a header, title, and description.
+
+<ComponentPreview framework="angular" name="popover-basic" />
+
+## Align
+
+Use the `align` input on `PopoverPositioner` to control the horizontal alignment.
+
+<ComponentPreview framework="angular" name="popover-alignments" />
+
+## With Form
+
+A popover with form fields inside.
+
+<ComponentPreview framework="angular" name="popover-form" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="popover-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng popover](https://radix-ng.com/primitives/popover) documentation.

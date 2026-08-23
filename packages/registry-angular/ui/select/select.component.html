@@ -1,0 +1,17 @@
+<span
+  uiSelectScrollUpButton
+  data-slot="select-scroll-up-button"
+  aria-hidden="true"
+  class="cn-select-scroll-up-button [&_svg]:fill-current"
+  [innerHTML]="scrollUpIcon"
+></span>
+<div uiSelectList class="flex w-full flex-col">
+  <ng-content />
+</div>
+<span
+  uiSelectScrollDownButton
+  data-slot="select-scroll-down-button"
+  aria-hidden="true"
+  class="cn-select-scroll-down-button [&_svg]:fill-current"
+  [innerHTML]="scrollDownIcon"
+></span>

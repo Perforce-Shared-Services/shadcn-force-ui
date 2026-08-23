@@ -1,0 +1,62 @@
+<div uiInputGroup>
+      <input
+        uiInputGroupInput
+        type="text"
+        role="combobox"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-autocomplete="list"
+        [attr.aria-label]="accessibleName()"
+        [attr.aria-expanded]="root.open() ? 'true' : 'false'"
+        [attr.aria-controls]="root.open() ? root.listId() : null"
+        [attr.aria-activedescendant]="root.activeDescendantId()"
+        [attr.aria-invalid]="ariaInvalid() || null"
+        [attr.placeholder]="placeholder()"
+        [attr.disabled]="root.disabled() || disabled() ? '' : null"
+        [attr.readonly]="root.readOnly() ? '' : null"
+        [value]="root.inputValue()"
+        (input)="onInput($event)"
+        (focus)="onOpenIntent()"
+        (click)="onOpenIntent()"
+      />
+      <div uiInputGroupAddon align="inline-end">
+        @if (showClear() && hasValue()) {
+          <button
+            type="button"
+            uiInputGroupButton
+            variant="ghost"
+            size="icon-xs"
+            data-slot="combobox-clear"
+            aria-label="Clear selection"
+            class="hover:bg-transparent disabled:bg-transparent"
+            [disabled]="root.disabled() || disabled()"
+            (click)="clear($event)"
+          >
+            <span class="[&>svg]:size-4 [&>svg]:fill-current" aria-hidden="true" [innerHTML]="closeIcon"></span>
+          </button>
+        }
+        @if (showTrigger()) {
+          <button
+            type="button"
+            uiInputGroupButton
+            variant="ghost"
+            size="icon-xs"
+            data-slot="combobox-trigger"
+            [attr.aria-label]="root.open() ? 'Hide suggestions' : 'Show suggestions'"
+            tabindex="-1"
+            class="hover:bg-transparent disabled:bg-transparent"
+            [disabled]="root.disabled() || disabled()"
+            (click)="toggle($event)"
+          >
+            <span
+              class="cn-combobox-trigger-icon pointer-events-none transition-transform duration-150 motion-reduce:transition-none [&>svg]:size-4 [&>svg]:fill-current"
+              [class.rotate-180]="root.open()"
+              aria-hidden="true"
+              [innerHTML]="chevronIcon"
+            ></span>
+          </button>
+        }
+      </div>
+    </div>

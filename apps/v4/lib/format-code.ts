@@ -1,8 +1,8 @@
 import { createHash } from "crypto"
 import { promises as fsPromises } from "fs"
 import path from "path"
-import { LRUCache } from "lru-cache"
 import { materialSymbolNames } from "@/examples/material-symbols-map"
+import { LRUCache } from "lru-cache"
 import {
   createStyleMap,
   transformIcons,

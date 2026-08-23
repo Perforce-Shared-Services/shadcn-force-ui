@@ -1,0 +1,236 @@
+---
+title: Attachment
+description: Displays a file or media card with media, content, actions, and an optional full-cover trigger.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="attachment-demo" previewClassName="p-2" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/attachment
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="attachment" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Attachment,
+  AttachmentAction,
+  AttachmentActions,
+  AttachmentContent,
+  AttachmentDescription,
+  AttachmentGroup,
+  AttachmentMedia,
+  AttachmentTitle,
+} from "@/components/ui/attachment"
+```
+
+```html showLineNumbers
+<div uiAttachment>
+  <div uiAttachmentMedia>
+    <svg aria-hidden="true"><!-- file-type glyph --></svg>
+  </div>
+  <div uiAttachmentContent>
+    <span uiAttachmentTitle>sales-dashboard.pdf</span>
+    <span uiAttachmentDescription>Uploading · 64%</span>
+  </div>
+  <div uiAttachmentActions>
+    <button uiAttachmentAction aria-label="Cancel upload"></button>
+  </div>
+</div>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+## Composition
+
+Use the following composition to build an `Attachment`:
+
+```text
+Attachment
+├── AttachmentMedia (icon | image)
+├── AttachmentContent
+│   ├── AttachmentTitle
+│   └── AttachmentDescription
+├── AttachmentActions
+│   └── AttachmentAction
+└── AttachmentTrigger (optional, full-cover overlay)
+
+AttachmentGroup
+└── Attachment × n
+```
+
+## States
+
+The `state` input drives the card: `idle` renders a dashed border, `uploading`
+and `processing` shimmer the title and set `aria-busy`, `error` tints the
+border/media/description destructive.
+
+<ComponentPreview framework="angular" name="attachment-states" previewClassName="p-2" />
+
+## Sizes
+
+Three sizes — `default`, `sm`, and `xs`.
+
+<ComponentPreview framework="angular" name="attachment-sizes" previewClassName="p-2" />
+
+The `orientation` input switches between a horizontal row (`items-center`, the
+default) and a vertical media-on-top card (`flex-col`) — see Image media below
+for `orientation="vertical"`.
+
+## Group
+
+`AttachmentGroup` lays multiple cards out as a horizontal snap scroller
+(`snap-x snap-mandatory`). It is itself a `tabindex="0"` keyboard scroll
+region with an accessible name — pass `ariaLabel` when it is a meaningful landmark.
+
+<ComponentPreview framework="angular" name="attachment-group" previewClassName="p-2" />
+
+## Image media
+
+`variant="image"` on `uiAttachmentMedia` turns the leading slot into a cover
+thumbnail (`object-cover`, aspect-square).
+
+<ComponentPreview framework="angular" name="attachment-image" previewClassName="p-2" />
+
+## Trigger
+
+`[uiAttachmentTrigger]` projects an invisible full-cover click target over the
+card. Because it is an attribute selector, it composes with anything — here it
+rides `uiDialogTrigger` so the whole card opens a dialog while the actions stay
+independently clickable above it (`z-20` vs the trigger's `z-10`).
+
+<ComponentPreview framework="angular" name="attachment-trigger" previewClassName="p-2" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<Callout>
+  The React base set ships no `attachment-rtl` example; the Angular demo uses
+  static Arabic labels with `dir="rtl"` per the port convention.
+</Callout>
+
+<ComponentPreview framework="angular" name="attachment-rtl" direction="rtl" previewClassName="p-2" />
+
+## API Reference
+
+Force UI original component — no upstream primitive to link out to.
+
+### Attachment
+
+The root file/media card. Applied via `[uiAttachment]` on a `<div>`.
+
+| Input         | Type                                                          | Default        |
+| ------------- | ------------------------------------------------------------- | -------------- |
+| `state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"`  | `"done"`       |
+| `size`        | `"default" \| "sm" \| "xs"`                                   | `"default"`    |
+| `orientation` | `"horizontal" \| "vertical"`                                  | `"horizontal"` |
+| `class`       | `string \| undefined`                                         | -              |
+
+### AttachmentMedia
+
+Leading icon/image slot. Applied via `[uiAttachmentMedia]` on a `<div>`.
+
+| Input     | Type                 | Default  |
+| --------- | -------------------- | -------- |
+| `variant` | `"icon" \| "image"`  | `"icon"` |
+| `class`   | `string \| undefined`| -        |
+
+### AttachmentContent
+
+Middle text column. Applied via `[uiAttachmentContent]` on a `<div>`.
+
+| Input   | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | -       |
+
+### AttachmentTitle
+
+File name line. Truncates and shimmers while uploading/processing. Applied via `[uiAttachmentTitle]` on a `<span>`.
+
+| Input   | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | -       |
+
+### AttachmentDescription
+
+Metadata line (size, progress, error). Applied via `[uiAttachmentDescription]` on a `<span>`.
+
+| Input   | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | -       |
+
+### AttachmentActions
+
+Trailing action slot, layered above the trigger (`z-20`). Applied via `[uiAttachmentActions]` on a `<div>`.
+
+| Input   | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | -       |
+
+### AttachmentAction
+
+Compact ghost icon-button composing `buttonVariants`. Applied via `button[uiAttachmentAction]` — always provide an `aria-label`.
+
+| Input     | Type                                                       | Default     |
+| --------- | ---------------------------------------------------------- | ----------- |
+| `variant` | Button variant                                             | `"ghost"`   |
+| `size`    | Button size                                                | `"icon-xs"` |
+| `class`   | `string \| undefined`                                      | -           |
+
+### AttachmentTrigger
+
+Invisible full-cover overlay making the whole card clickable. Applied via
+`[uiAttachmentTrigger]` on any element (an `<a>` for links, a `<button>` when
+composing `uiDialogTrigger`; `type` then defaults to `"button"`).
+
+| Input   | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `type`  | `string \| undefined` | -       |
+| `class` | `string \| undefined` | -       |
+
+### AttachmentGroup
+
+Horizontal snap scroller wrapping multiple attachments. Applied via `[uiAttachmentGroup]` on a `<div>`.
+
+| Input       | Type                  | Default         |
+| ----------- | --------------------- | --------------- |
+| `ariaLabel` | `string \| undefined` | `"Attachments"` |
+| `class`     | `string \| undefined` | -               |

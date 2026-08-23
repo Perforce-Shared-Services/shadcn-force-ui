@@ -1,0 +1,69 @@
+---
+title: Direction
+description: Provides text direction (LTR/RTL) to a subtree of components.
+base: ember
+component: true
+---
+
+The `DirectionProvider` component sets `dir` on its subtree and provides the direction to descendant components that support RTL, mirroring React's `DirectionProvider`.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/direction
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="direction" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import { DirectionProvider } from '@/ui/direction';
+```
+
+```hbs showLineNumbers
+<DirectionProvider @direction="rtl">
+  <DropdownMenu>
+    ...
+  </DropdownMenu>
+</DirectionProvider>
+```
+
+## Notes
+
+- `@direction` defaults to `"ltr"`.
+- The provider renders a `div` with the matching `dir` attribute so CSS logical properties resolve correctly.
+- Descendant components can consume the `direction-context` key via `ember-provide-consume-context` for programmatic access.
+
+## API Reference
+
+### DirectionProvider
+
+| Prop         | Type             | Default | Description                                         |
+| ------------ | ---------------- | ------- | --------------------------------------------------- |
+| `@direction` | `"ltr" \| "rtl"` | `"ltr"` | Text direction applied to the subtree.              |
+| `@class`     | `string`         | -       | Additional classes to apply to the wrapper element. |

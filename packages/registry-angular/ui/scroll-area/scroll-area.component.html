@@ -1,0 +1,9 @@
+<div
+  data-slot="scroll-area-viewport"
+  tabindex="0"
+  [class]="viewportClasses()"
+  [attr.role]="ariaLabel() ? 'region' : null"
+  [attr.aria-label]="ariaLabel() || 'Scrollable region'"
+>
+  <ng-content />
+</div>

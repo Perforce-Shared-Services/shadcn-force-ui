@@ -42,7 +42,7 @@ npx shadcn@latest add @force-ui-angular/kbd
 ## Usage
 
 ```ts
-import { KbdComponent, KbdGroupComponent } from "@/components/ui/kbd"
+import { Kbd, KbdGroup } from "@/components/ui/kbd"
 ```
 
 ```html
@@ -57,11 +57,29 @@ import { KbdComponent, KbdGroupComponent } from "@/components/ui/kbd"
 └── [uiKbd]
 ```
 
-## Examples
+## Group
 
-### Group
+Wrap multiple `Kbd` parts in a `KbdGroup` when they render as a unit.
 
 <ComponentPreview framework="angular" name="kbd-group" />
+
+## Button
+
+Use a `Kbd` inside a button to surface its shortcut inline.
+
+<ComponentPreview framework="angular" name="kbd-button" />
+
+## Tooltip
+
+Show the shortcut inside a tooltip triggered from a `ButtonGroup`.
+
+<ComponentPreview framework="angular" name="kbd-tooltip" />
+
+## Input Group
+
+Combine a `Kbd` pair with an input group addon to document a search shortcut.
+
+<ComponentPreview framework="angular" name="kbd-input-group" />
 
 ### Primary
 
@@ -69,16 +87,22 @@ Use `variant="primary"` when placing a `Kbd` on a solid or brand surface.
 
 <ComponentPreview framework="angular" name="kbd-primary" />
 
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="kbd-rtl" direction="rtl" />
+
 ## API Reference
 
-### KbdComponent
+### Kbd
 
 | Input     | Type                     | Default     |
 | --------- | ------------------------ | ----------- |
 | `variant` | `"default" \| "primary"` | `"default"` |
 | `class`   | `string`                 | –           |
 
-### KbdGroupComponent
+### KbdGroup
 
 | Input   | Type     | Default |
 | ------- | -------- | ------- |

@@ -179,6 +179,16 @@
         "aria": {
           "docs": "https://ui.shadcn.com/docs/components/aria/attachment",
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/attachment-example.tsx"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/attachment"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/attachment"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/attachment",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/attachment-demo.gts"
         }
       }
     }
@@ -317,6 +327,16 @@
         "aria": {
           "docs": "https://ui.shadcn.com/docs/components/aria/bubble",
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/bubble-example.tsx"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/bubble"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/bubble"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/bubble",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/bubble-demo.gts"
         }
       }
     }
@@ -818,6 +838,16 @@
         "radix": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/radix/direction",
           "api": "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/direction"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/direction"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/direction",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/direction-demo.gts"
         }
       }
     }
@@ -855,6 +885,10 @@
         },
         "svelte": {
           "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/drawer"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/drawer",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/drawer-demo.gts"
         }
       }
     }
@@ -1281,6 +1315,16 @@
         "aria": {
           "docs": "https://ui.shadcn.com/docs/components/aria/marker",
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/marker-example.tsx"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/marker"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/marker"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/marker",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/marker-demo.gts"
         }
       }
     }
@@ -1331,6 +1375,16 @@
         "aria": {
           "docs": "https://ui.shadcn.com/docs/components/aria/message",
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-example.tsx"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-demo.gts"
         }
       }
     }
@@ -1351,6 +1405,16 @@
         "aria": {
           "docs": "https://ui.shadcn.com/docs/components/aria/message-scroller",
           "examples": "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/message-scroller-example.tsx"
+        },
+        "vue": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message-scroller"
+        },
+        "svelte": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message-scroller"
+        },
+        "ember": {
+          "docs": "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message-scroller",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-scroller-demo.gts"
         }
       }
     }

@@ -1,0 +1,268 @@
+---
+title: Attachment
+description: A file card for uploads and downloads, with states, sizes, and a full-card trigger.
+base: vue
+component: true
+---
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-demo"
+  previewClassName="h-auto theme-blue"
+/>
+
+The `Attachment` component renders a file card with media, title, description, actions, and an optional overlay trigger. Use it in composer toolbars or inside [`Message`](/docs/components/vue/message) threads.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-vue/attachment
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="vue" name="attachment" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```vue showLineNumbers
+<script setup lang="ts">
+import {
+  Attachment,
+  AttachmentAction,
+  AttachmentActions,
+  AttachmentContent,
+  AttachmentDescription,
+  AttachmentMedia,
+  AttachmentTitle,
+} from "@/components/ui/attachment"
+</script>
+
+<template>
+  <Attachment class="w-full">
+    <AttachmentMedia>
+      <FileIcon />
+    </AttachmentMedia>
+    <AttachmentContent>
+      <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
+      <AttachmentDescription>PDF · 2.4 MB</AttachmentDescription>
+    </AttachmentContent>
+    <AttachmentActions>
+      <AttachmentAction aria-label="Remove sales-dashboard.pdf">
+        <XIcon />
+      </AttachmentAction>
+    </AttachmentActions>
+  </Attachment>
+</template>
+```
+
+## Composition
+
+Use the following composition to build an attachment:
+
+```text
+Attachment
+├── AttachmentMedia (icon | image)
+├── AttachmentContent
+│   ├── AttachmentTitle
+│   └── AttachmentDescription
+├── AttachmentActions
+│   └── AttachmentAction
+└── AttachmentTrigger (optional)
+```
+
+Wrap scrolling rows of attachments in `AttachmentGroup`.
+
+## Features
+
+- Horizontal and vertical orientations
+- Three sizes: `default`, `sm`, `xs`
+- Upload lifecycle states: `idle`, `uploading`, `processing`, `error`, `done`
+- Image and icon media variants
+- Full-card overlay trigger that keeps actions clickable
+- Customizable styling through the `class` prop on every part
+
+## Image
+
+Use the `image` variant of `AttachmentMedia` for image previews.
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-image"
+  previewClassName="h-auto theme-blue"
+/>
+
+## States
+
+Use `state` to reflect the upload lifecycle. The card styles error state automatically; pair `uploading` and `processing` with a [`Spinner`](/docs/components/vue/spinner).
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-states"
+  previewClassName="h-auto theme-blue"
+/>
+
+| State        | Description                                   |
+| ------------ | --------------------------------------------- |
+| `idle`       | Selected but not yet uploaded. Dashed border. |
+| `uploading`  | Transfer in progress.                         |
+| `processing` | Uploaded, server-side processing.             |
+| `error`      | Failed. Destructive border, text, and icon.   |
+| `done`       | Completed. The default state.                 |
+
+## Sizes
+
+Use `size` to control density.
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-sizes"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Group
+
+Wrap attachments in `AttachmentGroup` for horizontally scrollable rows.
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-group"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Trigger
+
+`AttachmentTrigger` overlays the whole card so it is clickable while `AttachmentAction` buttons stay independently clickable above it.
+
+<ComponentPreview
+  framework="vue"
+  name="attachment-trigger"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Accessibility
+
+### Label icon-only actions
+
+Every icon-only `AttachmentAction` needs `aria-label`:
+
+```vue showLineNumbers
+<AttachmentAction aria-label="Remove sales-dashboard.pdf">
+  <XIcon />
+</AttachmentAction>
+```
+
+### Label the trigger
+
+Give `AttachmentTrigger` an accessible name describing what it opens:
+
+```vue showLineNumbers
+<AttachmentTrigger aria-label="Preview research-summary.pdf" />
+```
+
+### Meaning beyond color
+
+State is conveyed by more than color: `idle` uses a dashed border, `uploading`/`processing` show a spinner, and the description text names the failure on `error`.
+
+## API Reference
+
+### Attachment
+
+The root file card.
+
+| Prop          | Type                                                         | Default        | Description                                      |
+| ------------- | ------------------------------------------------------------ | -------------- | ------------------------------------------------ |
+| `state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`       | The upload lifecycle state.                      |
+| `size`        | `"default" \| "sm" \| "xs"`                                  | `"default"`    | The attachment density.                          |
+| `orientation` | `"horizontal" \| "vertical"`                                 | `"horizontal"` | Layout of media relative to content.             |
+| `class`       | `string`                                                     | -              | Additional classes to apply to the root element. |
+
+### AttachmentMedia
+
+The media slot. Use `variant="image"` for image previews.
+
+| Prop      | Type                | Default  | Description                                    |
+| --------- | ------------------- | -------- | ---------------------------------------------- |
+| `variant` | `"icon" \| "image"` | `"icon"` | Whether the slot holds an icon or an image.    |
+| `class`   | `string`            | -        | Additional classes to apply to the media slot. |
+
+### AttachmentContent
+
+The text column holding the title and description.
+
+| Prop    | Type     | Default | Description                                        |
+| ------- | -------- | ------- | -------------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the content column. |
+
+### AttachmentTitle
+
+The file name. Truncates and shimmers during upload/processing.
+
+| Prop    | Type     | Default | Description                               |
+| ------- | -------- | ------- | ----------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the title. |
+
+### AttachmentDescription
+
+Secondary metadata, e.g. size, progress, or error text.
+
+| Prop    | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the description. |
+
+### AttachmentActions
+
+The action row pinned to the end of the card.
+
+| Prop    | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the actions row. |
+
+### AttachmentAction
+
+An icon button styled after [`Button`](/docs/components/vue/button). Defaults to `ghost` / `icon-xs`.
+
+| Prop      | Type                        | Default     | Description                                |
+| --------- | --------------------------- | ----------- | ------------------------------------------ |
+| `variant` | `ButtonVariants["variant"]` | `"ghost"`   | The button variant.                        |
+| `size`    | `ButtonVariants["size"]`    | `"icon-xs"` | The button size.                           |
+| `class`   | `string`                    | -           | Additional classes to apply to the button. |
+
+### AttachmentTrigger
+
+A transparent overlay covering the card. Use `as="a"` for link triggers.
+
+| Prop    | Type     | Default    | Description                                 |
+| ------- | -------- | ---------- | ------------------------------------------- |
+| `as`    | `string` | `"button"` | The element to render.                      |
+| `class` | `string` | -          | Additional classes to apply to the trigger. |
+
+### AttachmentGroup
+
+A horizontally scrollable row of attachments.
+
+| Prop    | Type     | Default | Description                               |
+| ------- | -------- | ------- | ----------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the group. |

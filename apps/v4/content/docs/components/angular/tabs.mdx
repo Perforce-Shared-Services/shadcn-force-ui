@@ -1,0 +1,99 @@
+---
+title: Tabs
+description: A set of layered sections of content displayed one at a time.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/tabs
+  api: https://radix-ng.com/primitives/tabs
+---
+
+<ComponentPreview framework="angular" name="tabs-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/tabs
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="tabs" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+```
+
+```html showLineNumbers
+<div uiTabs defaultValue="account">
+  <div uiTabsList>
+    <button uiTabsTrigger value="account">Account</button>
+    <button uiTabsTrigger value="password">Password</button>
+  </div>
+  <div uiTabsContent value="account">...</div>
+</div>
+```
+
+## Line
+
+Set `variant="line"` on the list for an underline tab style.
+
+<ComponentPreview framework="angular" name="tabs-line" />
+
+## Vertical
+
+Set `orientation="vertical"` for a stacked tab list.
+
+<ComponentPreview framework="angular" name="tabs-vertical" />
+
+## Disabled
+
+Individual triggers can be disabled.
+
+<ComponentPreview framework="angular" name="tabs-disabled" />
+
+## Icons
+
+Triggers can contain icons alongside their labels.
+
+<ComponentPreview framework="angular" name="tabs-icons" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="tabs-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/tabs) documentation for more information.

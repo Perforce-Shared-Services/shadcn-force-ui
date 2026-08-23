@@ -1,0 +1,189 @@
+---
+title: Breadcrumb
+description: Displays the path to the current resource using a hierarchy of links.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="breadcrumb-demo" previewClassName="p-2" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/breadcrumb
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="breadcrumb" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Breadcrumb,
+  BreadcrumbEllipsis,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+```
+
+```html showLineNumbers
+<nav uiBreadcrumb>
+  <ol uiBreadcrumbList>
+    <li uiBreadcrumbItem>
+      <a uiBreadcrumbLink href="/">Home</a>
+    </li>
+    <li uiBreadcrumbSeparator></li>
+    <li uiBreadcrumbItem>
+      <span uiBreadcrumbPage>Breadcrumb</span>
+    </li>
+  </ol>
+</nav>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+## Composition
+
+Use the following composition to build a `Breadcrumb`:
+
+```text
+Breadcrumb
+└── BreadcrumbList
+    ├── BreadcrumbItem
+    │   └── BreadcrumbLink
+    ├── BreadcrumbSeparator
+    ├── BreadcrumbItem
+    │   └── BreadcrumbLink
+    ├── BreadcrumbSeparator
+    └── BreadcrumbItem
+        └── BreadcrumbPage
+```
+
+## Basic
+
+A basic breadcrumb with a home link and a components link.
+
+<ComponentPreview framework="angular" name="breadcrumb-basic" previewClassName="p-2" />
+
+## Custom separator
+
+Project any content into `<li uiBreadcrumbSeparator>` to replace the default chevron.
+
+<ComponentPreview framework="angular" name="breadcrumb-separator" previewClassName="p-2" />
+
+## Dropdown
+
+You can compose `<li uiBreadcrumbItem>` with a dropdown menu to create a dropdown in the breadcrumb.
+
+<ComponentPreview framework="angular" name="breadcrumb-dropdown" previewClassName="p-2" />
+
+## Collapsed
+
+We provide a `<span uiBreadcrumbEllipsis>` component to show a collapsed state when the breadcrumb is too long.
+
+<ComponentPreview framework="angular" name="breadcrumb-ellipsis" previewClassName="p-2" />
+
+## Link component
+
+The attribute selector works on any element, so you can use your routing library's link directly — e.g. `<a uiBreadcrumbLink routerLink="/">`.
+
+<ComponentPreview framework="angular" name="breadcrumb-link" previewClassName="p-2" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="breadcrumb-rtl" direction="rtl" previewClassName="p-2" />
+
+## API Reference
+
+### Breadcrumb
+
+The root navigation element that wraps all breadcrumb components. Applied via `[uiBreadcrumb]` on a `<nav>`.
+
+| Input       | Type     | Default       |
+| ----------- | -------- | ------------- |
+| `class`     | `string` | -             |
+| `aria-label`| `string` | `"breadcrumb"`|
+
+### BreadcrumbList
+
+Displays the ordered list of breadcrumb items. Applied via `[uiBreadcrumbList]` on an `<ol>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BreadcrumbItem
+
+Wraps individual breadcrumb items. Applied via `[uiBreadcrumbItem]` on an `<li>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BreadcrumbLink
+
+Displays a clickable link in the breadcrumb. Applied on any anchor-like element (`<a uiBreadcrumbLink>`).
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BreadcrumbPage
+
+Displays the current page in the breadcrumb (non-clickable). Sets `aria-current="page"`. Applied via `[uiBreadcrumbPage]` on a `<span>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BreadcrumbSeparator
+
+Displays a separator between breadcrumb items. Project custom children to override the default chevron icon. Applied via `[uiBreadcrumbSeparator]` on an `<li>`.
+
+| Input     | Type      | Default |
+| --------- | --------- | ------- |
+| `class`   | `string`  | -       |
+
+### BreadcrumbEllipsis
+
+Displays an ellipsis indicator for collapsed breadcrumb items. Applied via `[uiBreadcrumbEllipsis]` on a `<span>`.
+
+| Input   | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |

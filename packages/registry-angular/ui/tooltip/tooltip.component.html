@@ -1,0 +1,17 @@
+<!-- Tooltip has no static template of its own: every part is a directive that
+     rides the consumer's elements. This file exists because the registry item
+     shape keeps one .component.html per component folder (see AGENT-PORTING-GUIDE.md).
+
+     Consumer-facing composition:
+
+       <div uiTooltip>
+         <button uiButton variant="outline" uiTooltipTrigger type="button">Hover</button>
+         <ng-template uiTooltipPortal>
+           <div uiTooltipPositioner side="top">
+             <div uiTooltipContent>
+               Add to library
+               <span uiTooltipArrow></span>
+             </div>
+           </div>
+         </ng-template>
+       </div> -->

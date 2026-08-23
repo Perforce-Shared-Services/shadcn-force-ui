@@ -1,0 +1,141 @@
+---
+title: Pagination
+description: Pagination with page navigation, next and previous links.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="pagination-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/pagination
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="pagination" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
+```
+
+Write the attribute selectors on native elements — `<nav uiPagination>` for the landmark, `<ul uiPaginationContent>` for the page list, and an `<a uiPaginationLink>` per page. `isActive` marks the current page and sets `aria-current="page"`.
+
+```html showLineNumbers
+<nav uiPagination>
+  <ul uiPaginationContent>
+    <li uiPaginationItem><a uiPaginationPrevious href="#"></a></li>
+    <li uiPaginationItem><a uiPaginationLink href="#">1</a></li>
+    <li uiPaginationItem><a uiPaginationLink href="#" isActive>2</a></li>
+    <li uiPaginationItem><span uiPaginationEllipsis></span></li>
+    <li uiPaginationItem><a uiPaginationNext href="#"></a></li>
+  </ul>
+</nav>
+```
+
+## Composition
+
+Use the following composition to build a `Pagination`:
+
+```text
+Pagination
+└── PaginationContent
+    ├── PaginationItem
+    │   └── PaginationPrevious
+    ├── PaginationItem
+    │   └── PaginationLink
+    ├── PaginationItem
+    │   └── PaginationEllipsis
+    └── PaginationItem
+        └── PaginationNext
+```
+
+## Simple
+
+A plain run of page links without previous/next controls.
+
+<ComponentPreview framework="angular" name="pagination-simple" />
+
+## Icons Only
+
+Compose with `Field` and `Select` for a rows-per-page control next to icon-only previous/next buttons.
+
+<ComponentPreview framework="angular" name="pagination-icons-only" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="pagination-rtl" direction="rtl" previewClassName="p-2" />
+
+## API Reference
+
+### PaginationComponent
+
+Attribute selector: `nav[uiPagination]`.
+
+| Prop | Type | Default |
+|---|---|---|
+| `aria-label` | `string` | `"pagination"` |
+| `class` | `string \| undefined` | `undefined` |
+
+### PaginationLinkComponent
+
+Attribute selector: `[uiPaginationLink]`. Composes `buttonVariants`.
+
+| Prop | Type | Default |
+|---|---|---|
+| `isActive` | `boolean` | `false` |
+| `size` | `ButtonSize` | `"icon"` |
+| `class` | `string \| undefined` | `undefined` |
+
+### PaginationPreviousComponent / PaginationNextComponent
+
+Attribute selectors: `a[uiPaginationPrevious]`, `a[uiPaginationNext]`.
+
+| Prop | Type | Default |
+|---|---|---|
+| `text` | `string` | `"Previous"` / `"Next"` |
+| `size` | `ButtonSize` | `"default"` |
+| `aria-label` | `string` | `"Go to previous page"` / `"Go to next page"` |
+| `class` | `string \| undefined` | `undefined` |

@@ -1,0 +1,182 @@
+---
+title: Button Group
+description: A container that groups related buttons or inputs with consistent styling.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="button-group-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/button-group
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="button-group" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  ButtonGroup,
+  ButtonGroupSeparator,
+  ButtonGroupText,
+} from "@/components/ui/button-group"
+```
+
+```html
+<div uiButtonGroup>
+  <button uiButton>Button 1</button>
+  <button uiButton>Button 2</button>
+</div>
+```
+
+Use the `[uiButtonGroup]` attribute selector on a native `<div>`. Give the group an `aria-label` naming the set of related actions.
+
+## Composition
+
+Use the following composition to build a `ButtonGroup`:
+
+```text
+ButtonGroup
+├── Button or Input
+├── ButtonGroupSeparator
+└── ButtonGroupText
+```
+
+## Orientation
+
+Set the `orientation` input to `vertical` to stack the controls.
+
+<ComponentPreview framework="angular" name="button-group-orientation" />
+
+## Size
+
+The group adapts to the size of its children — mix size variants freely.
+
+<ComponentPreview framework="angular" name="button-group-size" />
+
+## Nested
+
+Nest multiple button groups to build complex layouts.
+
+<ComponentPreview framework="angular" name="button-group-nested" previewClassName="w-full max-w-md" />
+
+## Separator
+
+Use `ButtonGroupSeparator` to visually divide the controls.
+
+<ComponentPreview framework="angular" name="button-group-separator" />
+
+## Split
+
+A split button pairs a primary action with an icon action separated by a divider.
+
+<ComponentPreview framework="angular" name="button-group-split" />
+
+## Input
+
+Compose an `Input` directly inside the group.
+
+<ComponentPreview framework="angular" name="button-group-input" previewClassName="w-full max-w-sm" />
+
+## Input Group
+
+An `InputGroup` can sit inside a nested button group.
+
+<ComponentPreview framework="angular" name="button-group-input-group" previewClassName="w-full max-w-md" />
+
+## Dropdown Menu
+
+<ComponentPreview framework="angular" name="button-group-dropdown" />
+
+## Select
+
+<ComponentPreview framework="angular" name="button-group-select" previewClassName="w-full max-w-sm" />
+
+## Popover
+
+<ComponentPreview framework="angular" name="button-group-popover" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="button-group-rtl" direction="rtl" />
+
+## API Reference
+
+### ButtonGroup
+
+Container that groups related buttons together with consistent styling. Attribute selector: `[uiButtonGroup]`.
+
+| Prop          | Type                         | Default        |
+| ------------- | ---------------------------- | -------------- |
+| `orientation` | `"horizontal" \| "vertical"` | `"horizontal"` |
+| `class`       | `string`                     | —              |
+
+```html
+<div uiButtonGroup orientation="vertical">
+  <button uiButton>Button 1</button>
+  <button uiButton>Button 2</button>
+</div>
+```
+
+### ButtonGroupSeparator
+
+Visually divides buttons within a group. Attribute selector: `[uiButtonGroupSeparator]`. Renders `role="separator"` unless `decorative` is set (the default), in which case the role is removed.
+
+| Prop          | Type                         | Default      |
+| ------------- | ---------------------------- | ------------ |
+| `orientation` | `"horizontal" \| "vertical"` | `"vertical"` |
+| `decorative`  | `boolean`                    | `true`       |
+
+```html
+<div uiButtonGroup>
+  <button uiButton>Button 1</button>
+  <div uiButtonGroupSeparator></div>
+  <button uiButton>Button 2</button>
+</div>
+```
+
+### ButtonGroupText
+
+Displays static text within a button group. Attribute selector: `[uiButtonGroupText]` on any host element. React's `asChild` prop has no Angular equivalent — write the desired host element directly:
+
+```html
+<div uiButtonGroup>
+  <label uiButtonGroupText for="volume">Volume</label>
+  <input id="volume" />
+</div>
+```

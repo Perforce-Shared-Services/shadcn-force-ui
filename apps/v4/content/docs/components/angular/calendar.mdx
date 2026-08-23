@@ -1,0 +1,169 @@
+---
+title: Calendar
+description: A date picker component that lets users select dates, ranges, or multiple dates.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="calendar-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/calendar
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="calendar" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Calendar } from "@/components/ui/calendar"
+```
+
+```html
+<div uiCalendar mode="single" class="rounded-lg border"></div>
+```
+
+The Angular calendar is a native `Date`-math build of the same public shape as
+the React `react-day-picker` wrapper — `mode`, `selected` (two-way), `month`
+(two-way), `numberOfMonths`, `disabled`, `captionLayout`, `showWeekNumber`,
+`weekStartsOn`, `fromDate`/`toDate` — with no `react-day-picker`/`date-fns`
+dependency. Selection state follows `mode`: a single `Date`, a `Date[]`, or a
+`{ from, to? }` range.
+
+## Composition
+
+```txt
+<div uiCalendar>
+├── nav buttons (previous / next month)
+├── caption (label, or month + year dropdowns)
+└── <table role="grid">
+    ├── weekday headers (sr-only caption + scope="col")
+    └── day cells (single Tab stop via roving tabindex)
+```
+
+## Basic
+
+A plain single-select calendar. Click a day to select it; click again to clear.
+
+<ComponentPreview framework="angular" name="calendar-basic" />
+
+## Dropdown Caption
+
+Use `captionLayout="dropdown"` to swap the text caption for month and year dropdowns, useful for picking dates far from today.
+
+<ComponentPreview framework="angular" name="calendar-caption" />
+
+## Multiple
+
+Use `mode="multiple"` to select any number of individual days.
+
+<ComponentPreview framework="angular" name="calendar-multiple" />
+
+## Range
+
+Use `mode="range"` with `numberOfMonths="2"` for a start/end date range across two months. The bound value is `{ from, to? }`.
+
+<ComponentPreview framework="angular" name="calendar-range" />
+
+## Booked Dates
+
+Pass a `(date) => boolean` matcher to `disabled` to make specific days unselectable.
+
+<Callout>
+The React example also strikes booked dates through using DayPicker's
+`modifiersClassNames`; the Angular build has no modifier API, so only the
+disabled state renders.
+</Callout>
+
+<ComponentPreview framework="angular" name="calendar-booked-dates" />
+
+## With Presets
+
+Compose the calendar inside a card with quick-preset buttons in the footer that set both the selection and the displayed month.
+
+<ComponentPreview framework="angular" name="calendar-presets" />
+
+## Week Numbers
+
+Enable `showWeekNumber` for a leading ISO week-number column.
+
+<ComponentPreview framework="angular" name="calendar-week-numbers" />
+
+## With Time Inputs
+
+Pair the calendar with time inputs composed from field and input-group parts in the card footer.
+
+<ComponentPreview framework="angular" name="calendar-time" />
+
+## Custom Day Content
+
+Range selection with a month/year dropdown caption.
+
+<ComponentPreview framework="angular" name="calendar-custom-days" />
+
+<Callout>
+React customizes day cells through DayPicker's `components.DayButton` render
+prop (the "$120 weekend price" example); the Angular calendar has no per-day
+content hook yet, so that part is omitted. Extend `CalendarComponent` if you
+need it.
+</Callout>
+
+## Hijri Calendar
+
+Single-date selection rendered with the Vazirmatn Arabic typeface.
+
+<ComponentPreview framework="angular" name="calendar-hijri" />
+
+<Callout>
+The React example uses `react-day-picker/persian` for an Islamic (Hijri)
+calendar; the Angular grid is built on the native Gregorian `Date`, so this
+demo reproduces the locale typography only, not the alternate calendar.
+</Callout>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+Set `dir="rtl"` on the `[uiCalendar]` host; the navigation chevrons flip automatically.
+
+<ComponentPreview framework="angular" name="calendar-rtl" direction="rtl" />
+
+## API Reference
+
+This component is a Force UI original build (no upstream primitive); see the
+`CalendarComponent` source for the full input list: `mode`, `selected`,
+`month`, `numberOfMonths`, `showOutsideDays`, `showWeekNumber`,
+`weekStartsOn`, `disabled`, `fromDate`, `toDate`, `captionLayout`,
+`buttonVariant`.

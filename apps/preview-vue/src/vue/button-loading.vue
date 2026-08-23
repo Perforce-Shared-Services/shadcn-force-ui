@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import { ref } from "vue"
 import { Button } from '@/ui/button'
-import { Spinner } from '@/ui/spinner'
+
+// [FORCE-UI] `loading` renders the spinner and disables interaction
+const loading = ref(true)
 </script>
 
 <template>
-  <Button size="sm" variant="outline" disabled>
-    <Spinner class="animate-spin" />
-    Submit
-  </Button>
+  <div class="flex gap-2">
+    <Button variant="outline" :loading="loading">Generating</Button>
+    <Button variant="secondary" :loading="loading">Downloading</Button>
+    <Button variant="outline" @click="loading = !loading">Toggle</Button>
+  </div>
 </template>

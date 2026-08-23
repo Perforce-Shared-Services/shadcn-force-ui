@@ -1,0 +1,24 @@
+@if (active() && item(); as tooltipItem) {
+  @if (resolvedLabel(); as chartLabel) {
+    <div class="font-medium text-foreground">{{ chartLabel }}</div>
+  }
+  <div class="grid gap-1.5">
+    <div [class]="rowClasses()">
+      @if (!hideIndicator()) {
+        <div
+          [class]="indicatorClasses()"
+          [style.--color-bg]="indicatorColor()"
+          [style.--color-border]="indicatorColor()"
+        ></div>
+      }
+      <div class="flex flex-1 items-center justify-between leading-none">
+        @if (!hideName()) {
+          <span class="text-muted-foreground">{{ resolvedName() }}</span>
+        }
+        @if (tooltipItem.value != null) {
+          <span class="font-mono font-medium text-foreground tabular-nums">{{ formattedValue() }}</span>
+        }
+      </div>
+    </div>
+  </div>
+}

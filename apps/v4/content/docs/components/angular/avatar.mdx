@@ -30,7 +30,7 @@ npx shadcn@latest add @force-ui-angular/avatar
 ## Usage
 
 ```ts
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 ```
 
 ```html
@@ -42,21 +42,89 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 `AvatarImage` tracks load/error events and updates a shared signal. `AvatarFallback` is shown while the image hasn't loaded.
 
-## Examples
+## Basic
 
-### Group
+A basic avatar component with an image and a fallback.
+
+<ComponentPreview framework="angular" name="avatar-basic" />
+
+## Badge
+
+Use the `AvatarBadge` component to add a badge to the avatar. The badge is positioned at the bottom right of the avatar.
+
+<ComponentPreview framework="angular" name="avatar-badge" />
+
+Use the `class` input to add custom styles to the badge such as custom colors, sizes, etc.
+
+```html showLineNumbers
+<span uiAvatar>
+  <img uiAvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+  <span uiAvatarFallback>CN</span>
+  <span uiAvatarBadge class="bg-green-600 dark:bg-green-800"></span>
+</span>
+```
+
+## Badge with Icon
+
+You can also use an icon inside `<span uiAvatarBadge>`.
+
+<ComponentPreview framework="angular" name="avatar-badge-icon" />
+
+## Avatar Group
+
+Use the `AvatarGroup` component to add a group of avatars.
 
 <ComponentPreview framework="angular" name="avatar-group" />
 
+## Avatar Group Count
+
+Use `<AvatarGroupCount>` to add a count to the group.
+
+<ComponentPreview framework="angular" name="avatar-group-count" />
+
+## Avatar Group with Icon
+
+You can also use an icon inside `<div uiAvatarGroupCount>`.
+
+<ComponentPreview framework="angular" name="avatar-group-count-icon" />
+
+## Sizes
+
+Use the `size` input to change the size of the avatar.
+
+<ComponentPreview framework="angular" name="avatar-size" />
+
+## Dropdown
+
+You can use the `Avatar` component as a trigger for a dropdown menu.
+
+<ComponentPreview framework="angular" name="avatar-dropdown" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="avatar-rtl"
+  direction="rtl"
+  previewClassName="h-72"
+/>
+
 ## API Reference
 
+Angular wraps an upstream-free implementation; see the React
+[API reference](/docs/components/base/avatar#api-reference) for prop parity.
+
 ### AvatarComponent
+
 | Input   | Type                        | Default     |
 | ------- | --------------------------- | ----------- |
 | `size`  | `"default" \| "sm" \| "lg"` | `"default"` |
 | `class` | `string`                    | –           |
 
 ### AvatarImageComponent · AvatarFallbackComponent · AvatarBadgeComponent
+
 | Input   | Type     | Default |
 | ------- | -------- | ------- |
 | `class` | `string` | –       |

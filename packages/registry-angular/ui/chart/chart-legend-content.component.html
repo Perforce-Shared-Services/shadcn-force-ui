@@ -1,0 +1,12 @@
+@for (key of effectiveKeys(); track key) {
+  @if (config()[key]; as entry) {
+    <div [class]="itemClasses()">
+      @if (entry.icon && !hideIcon()) {
+        <span aria-hidden="true" [innerHTML]="iconHtml(entry.icon)"></span>
+      } @else {
+        <div [class]="swatchClasses()" [style.background-color]="colorFor(key, entry)"></div>
+      }
+      {{ entry.label ?? key }}
+    </div>
+  }
+}

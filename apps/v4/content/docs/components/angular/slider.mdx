@@ -1,0 +1,97 @@
+---
+title: Slider
+description: An input where the user selects a value from within a given range.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="slider-demo" />
+
+## Installation
+
+<CodeTabs>
+<TabsList><TabsTrigger value="cli">Command</TabsTrigger><TabsTrigger value="manual">Manual</TabsTrigger></TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/slider
+```
+
+</TabsContent>
+<TabsContent value="manual">
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="slider" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+</TabsContent>
+</CodeTabs>
+
+## Usage
+
+```ts
+import { Slider } from "@/components/ui/slider"
+```
+
+```html
+<div uiSlider [defaultValue]="[33]" [max]="100" [step]="1"></div>
+```
+
+The host element carries the `uiSlider` attribute. The value is a `number[]` model — one entry per thumb; pass two values for a range slider and bind two-way with `[(value)]`.
+
+```ts
+@Component({
+  imports: [SliderComponent],
+  template: `<div uiSlider [(value)]="volume" aria-label="Volume"></div>`,
+})
+```
+
+## Range
+
+Use an array with two values for a range slider.
+
+<ComponentPreview framework="angular" name="slider-range" />
+
+## Multiple Thumbs
+
+Use an array with multiple values for multiple thumbs.
+
+<ComponentPreview framework="angular" name="slider-multiple" />
+
+## Vertical
+
+Set `orientation="vertical"` on a fixed-height slider for vertical orientation.
+
+<ComponentPreview framework="angular" name="slider-vertical" />
+
+## Controlled
+
+Bind `[value]` with a two-way binding to control the slider from your component state.
+
+<ComponentPreview framework="angular" name="slider-controlled" />
+
+## Disabled
+
+Add the `disabled` attribute to disable the slider.
+
+<ComponentPreview framework="angular" name="slider-disabled" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="slider-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng Slider](https://www.radix-ng.com/primitives/slider) documentation.

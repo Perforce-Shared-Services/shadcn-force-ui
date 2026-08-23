@@ -1,0 +1,159 @@
+---
+title: Command
+description: Fast, composable, unstyled command menu for Angular.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="command-demo" />
+
+## About
+
+The Angular `command` is built on the same behaviour as cmdk (the React
+registry's foundation), reimplemented without a primitive library — there is no
+radix-ng or CDK command primitive. Fuzzy filtering, keyboard navigation and the
+highlight state live in a `CommandRootService` that ships with the component.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/command
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="command" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from "@/components/ui/command"
+```
+
+```html
+<div uiCommand>
+  <div uiCommandInput placeholder="Type a command or search..."></div>
+  <div uiCommandList>
+    <div uiCommandEmpty>No results found.</div>
+    <div uiCommandGroup heading="Suggestions">
+      <div uiCommandItem>Calendar</div>
+    </div>
+    <div uiCommandSeparator></div>
+  </div>
+</div>
+```
+
+`[uiCommandInput]` must be applied to a container element (it renders its own
+inner search input), and `[uiCommandShortcut]` renders right-aligned key hints.
+
+## Composition
+
+```txt
+<div uiCommand>                       // owns keyboard nav + result announcer
+├── <div uiCommandInput>              // container; renders InputGroup + combobox input
+└── <div uiCommandList>               // role="listbox", scrollable
+    ├── <div uiCommandEmpty>          // shows when a search yields nothing
+    ├── <div uiCommandGroup>          // hideable cluster with heading
+    │   └── <div uiCommandItem>       // role="option"; (select) output
+    │       └── <span uiCommandShortcut />
+    └── <div uiCommandSeparator>      // hides while searching
+```
+
+## Basic
+
+Open the palette in a modal dialog via `<ui-command-dialog>` and provide its
+content as a projected `<ng-template>` (dialog portals stamp content outside
+the component view). Wrap the palette in `<div uiCommand>` inside the template —
+the root carries the state all parts share.
+
+<ComponentPreview framework="angular" name="command-basic" />
+
+## Shortcuts
+
+Show keyboard hints by placing a `<span uiCommandShortcut>` inside an item. Its
+presence suppresses the item's trailing check mark.
+
+<ComponentPreview framework="angular" name="command-shortcuts" />
+
+## Groups
+
+Label clusters of items with the `heading` input on `[uiCommandGroup]`; groups
+with no visible items after filtering hide automatically, matching cmdk.
+
+<ComponentPreview framework="angular" name="command-groups" />
+
+## Scrollable
+
+Long lists scroll inside `[uiCommandList]` (max height 18rem) while the input,
+groups and separators stay put.
+
+<ComponentPreview framework="angular" name="command-scrollable" />
+
+## Dialog
+
+Compose `[uiCommandDialog]` with a controlled open state to toggle the command
+palette from anywhere — here a ⌘J document keydown.
+
+<ComponentPreview framework="angular" name="command-dialog" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+Set `dir="rtl"` on the `[uiCommand]` root; the input's icon and shortcuts flip
+with the direction.
+
+<ComponentPreview framework="angular" name="command-rtl" direction="rtl" />
+
+## API Reference
+
+Force UI original — the parts wrap no upstream primitive. Each part is an
+Angular directive/component applied to a plain element:
+
+| Part | Selector | Notes |
+| --- | --- | --- |
+| `Command` | `[uiCommand]` | Root; provides `CommandRootService`, owns ArrowUp/Down, Home/End, Enter |
+| `CommandDialog` | `ui-command-dialog` | Modal wrapper; `[(uiOpen)]`, `title`, `description`, `showCloseButton` inputs |
+| `CommandInput` | `[uiCommandInput]` | Container; `placeholder`, `disabled`, `aria-label`, `[(value)]` |
+| `CommandList` | `[uiCommandList]` | `role="listbox"`; `aria-label` (default `"Suggestions"`) |
+| `CommandEmpty` | `[uiCommandEmpty]` | Shown when a non-empty search yields no items |
+| `CommandGroup` | `[uiCommandGroup]` | `heading` input; hides when empty after filtering |
+| `CommandItem` | `[uiCommandItem]` | `value`, `keywords`, `disabled`, `checked`; `(select)` output |
+| `CommandShortcut` | `[uiCommandShortcut]` | Decorative key hint (`aria-hidden`) |
+| `CommandSeparator` | `[uiCommandSeparator]` | Hairline; hidden while searching |

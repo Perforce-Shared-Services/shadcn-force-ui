@@ -1,0 +1,166 @@
+---
+title: Menubar
+description: A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/menubar
+  api: https://radix-ng.com/primitives/menu
+---
+
+<ComponentPreview framework="angular" name="menubar-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/menubar
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="menubar" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Menubar,
+  MenubarContent,
+  MenubarGroup,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
+```
+
+```html showLineNumbers
+<div uiMenubar>
+  <div uiMenubarMenu>
+    <button uiMenubarTrigger>File</button>
+    <div uiMenubarContent>
+      <div uiMenubarGroup>
+        <button uiMenubarItem>
+          New Tab <span uiMenubarShortcut>⌘T</span>
+        </button>
+        <button uiMenubarItem>New Window</button>
+      </div>
+      <div uiMenubarSeparator></div>
+      <div uiMenubarGroup>
+        <button uiMenubarItem>Share</button>
+        <button uiMenubarItem>Print</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+The attribute selectors ride native elements (`div[uiMenubar]`,
+`button[uiMenubarTrigger]`, `button[uiMenubarItem]`), keeping the host
+element's native semantics — Angular's idiomatic equivalent of React's
+`asChild`.
+
+## Composition
+
+Use the following composition to build a `Menubar`:
+
+```text
+Menubar
+├── MenubarMenu
+│   ├── MenubarTrigger
+│   └── MenubarContent
+│       ├── MenubarGroup
+│       │   ├── MenubarLabel
+│       │   ├── MenubarItem
+│       │   └── MenubarItem
+│       ├── MenubarSeparator
+│       ├── MenubarGroup
+│       │   ├── MenubarLabel
+│       │   ├── MenubarCheckboxItem
+│       │   └── MenubarCheckboxItem
+│       ├── MenubarSeparator
+│       ├── MenubarGroup
+│       │   ├── MenubarLabel
+│       │   └── MenubarRadioGroup
+│       │       ├── MenubarRadioItem
+│       │       └── MenubarRadioItem
+│       └── MenubarSub
+│           ├── MenubarSubTrigger
+│           └── MenubarSubContent
+│               └── MenubarGroup
+│                   ├── MenubarLabel
+│                   ├── MenubarItem
+│                   └── MenubarItem
+└── MenubarMenu
+    ├── MenubarTrigger
+    └── MenubarContent
+        └── MenubarGroup
+            ├── MenubarLabel
+            ├── MenubarItem
+            └── MenubarItem
+```
+
+## Checkbox
+
+Use `MenubarCheckboxItem` for toggleable options.
+
+<ComponentPreview framework="angular" name="menubar-checkbox" />
+
+## Radio
+
+Use `MenubarRadioGroup` and `MenubarRadioItem` for single-select options.
+
+<ComponentPreview framework="angular" name="menubar-radio" />
+
+## Submenu
+
+Use `MenubarSub`, `MenubarSubTrigger`, and `MenubarSubContent` for nested menus.
+
+<ComponentPreview framework="angular" name="menubar-submenu" />
+
+## With Icons
+
+<ComponentPreview framework="angular" name="menubar-icons" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="menubar-rtl"
+  direction="rtl"
+/>
+
+## API Reference
+
+See the [radix-ng menubar](https://radix-ng.com/primitives/menubar) and [menu](https://radix-ng.com/primitives/menu) documentation.

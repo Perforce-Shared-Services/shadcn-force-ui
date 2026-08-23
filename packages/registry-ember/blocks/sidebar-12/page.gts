@@ -1,0 +1,50 @@
+// [FORCE-UI] Ember port of registry:block sidebar-12 page
+// (React reference: apps/v4/registry/new-york-v4/blocks/sidebar-12/page.tsx)
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from '@/components/ui/breadcrumb';
+import { Separator } from '@/components/ui/separator';
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from '@/components/ui/sidebar';
+
+import type { TOC } from '@ember/component/template-only';
+
+interface PageSignature {
+  Blocks: { default: [] };
+}
+
+const Page: TOC<PageSignature> = <template>
+  <SidebarProvider>
+      <SidebarInset>
+        <header class="sticky top-0 flex h-16 shrink-0 items-center gap-2 border-b bg-background px-4">
+          <SidebarTrigger class="-ml-1" />
+          <Separator @orientation="vertical" @class="mr-2 data-[orientation=vertical]:h-4" />
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbPage>October 2024</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </header>
+        <div class="flex flex-1 flex-col gap-4 p-4">
+          <div class="grid auto-rows-min gap-4 md:grid-cols-3">
+            <div class="aspect-video rounded-xl bg-muted/50"></div>
+            <div class="aspect-video rounded-xl bg-muted/50"></div>
+            <div class="aspect-video rounded-xl bg-muted/50"></div>
+          </div>
+          <div class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min"></div>
+        </div>
+    </SidebarInset>
+  </SidebarProvider>
+</template>;
+
+export default Page;

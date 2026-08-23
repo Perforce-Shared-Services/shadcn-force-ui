@@ -4174,6 +4174,71 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/attachment/Attachment.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentAction.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentActions.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentDescription.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentMedia.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentTitle.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/AttachmentTrigger.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/attachment",
+        },
+      },
+    },
     avatar: {
       name: "avatar",
       title: "undefined",
@@ -4250,6 +4315,46 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/bubble/Bubble.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/bubble/BubbleContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/bubble/BubbleGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/bubble/BubbleReactions.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/bubble",
         },
       },
     },
@@ -4994,6 +5099,31 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/direction/DirectionProvider.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/direction/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/direction",
+        },
+      },
+    },
     drawer: {
       name: "drawer",
       title: "undefined",
@@ -5620,6 +5750,146 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/label",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/marker/Marker.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/marker/MarkerContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/marker/MarkerIcon.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/marker",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/message/Message.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/MessageAvatar.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/MessageContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/MessageFooter.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/MessageGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/MessageHeader.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScrollerProvider.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScroller.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScrollerViewport.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScrollerContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScrollerItem.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/MessageScrollerButton.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/vue-force-ui/ui/message-scroller/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message-scroller",
         },
       },
     },
@@ -7234,6 +7504,71 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "utils"],
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-action.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-actions.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-description.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-media.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-title.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment-trigger.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/attachment.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/attachment",
+        },
+      },
+    },
     avatar: {
       name: "avatar",
       title: "undefined",
@@ -7361,6 +7696,46 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/bubble/bubble-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/bubble/bubble-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/bubble/bubble-reactions.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/bubble/bubble.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/bubble",
         },
       },
     },
@@ -7981,6 +8356,36 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog",
+        },
+      },
+    },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/direction/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/direction/direction-provider.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/direction/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/direction",
         },
       },
     },
@@ -8666,6 +9071,146 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/marker/marker-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/marker/marker-icon.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/marker/marker.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/marker",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/message/message-avatar.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/message-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/message-footer.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/message-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/message-header.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/message.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "utils"],
+      files: [
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller-button.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller-item.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller-provider.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller-viewport.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/svelte-force-ui/ui/message-scroller/message-scroller.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message-scroller",
         },
       },
     },
@@ -10854,6 +11399,180 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tooltip",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts",
+        },
+      },
+    },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/ember-force-ui/ui/attachment/attachment.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/attachment",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/attachment-demo.gts",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/ember-force-ui/ui/bubble/bubble.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/bubble",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/bubble-demo.gts",
+        },
+      },
+    },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/direction.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/direction",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/direction-demo.gts",
+        },
+      },
+    },
+    drawer: {
+      name: "drawer",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/drawer.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/drawer",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/drawer-demo.gts",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/ember-force-ui/ui/marker/marker.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/marker",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/marker-demo.gts",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "styles/ember-force-ui/ui/message/message.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-demo.gts",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "styles/ember-force-ui/ui/message-scroller.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message-scroller",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-scroller-demo.gts",
         },
       },
     },

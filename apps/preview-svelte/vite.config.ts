@@ -1,9 +1,9 @@
-import path from "node:path"
 import { createRequire } from "node:module"
+import path from "node:path"
 import { svelte } from "@sveltejs/vite-plugin-svelte"
 import tailwindcss from "@tailwindcss/vite"
-import Icons from "unplugin-icons/vite"
 import { FileSystemIconLoader } from "unplugin-icons/loaders"
+import Icons from "unplugin-icons/vite"
 import { defineConfig } from "vite"
 
 // [FORCE-UI] Serve @material-symbols/svg-400 (rounded) as Svelte components via
@@ -48,22 +48,38 @@ export default defineConfig({
     // two subpaths of @/svelte-ui stay local too; everything else under @/svelte-ui comes from
     // the registry.
     alias: [
-      { find: "@/svelte-ui/form", replacement: path.resolve(__dirname, "src/svelte-ui/form") },
+      {
+        find: "@/svelte-ui/form",
+        replacement: path.resolve(__dirname, "src/svelte-ui/form"),
+      },
       {
         find: "@/svelte-ui/data-table",
         replacement: path.resolve(__dirname, "src/svelte-ui/data-table"),
       },
       {
         find: "@/svelte-ui",
-        replacement: path.resolve(__dirname, "../../packages/registry-svelte/ui"),
+        replacement: path.resolve(
+          __dirname,
+          "../../packages/registry-svelte/ui"
+        ),
       },
       {
         find: "$lib/registry/hooks",
         replacement: path.resolve(__dirname, "src/svelte-hooks"),
       },
       {
+        find: "$lib/registry/blocks",
+        replacement: path.resolve(
+          __dirname,
+          "../../packages/registry-svelte/blocks"
+        ),
+      },
+      {
         find: "$lib/registry/ui",
-        replacement: path.resolve(__dirname, "../../packages/registry-svelte/ui"),
+        replacement: path.resolve(
+          __dirname,
+          "../../packages/registry-svelte/ui"
+        ),
       },
       {
         find: "$lib/components",
@@ -75,25 +91,43 @@ export default defineConfig({
       // the registry package (no local copy).
       {
         find: /^\$lib\/utils(\.js)?$/,
-        replacement: path.resolve(__dirname, "../../packages/registry-svelte/lib/utils"),
+        replacement: path.resolve(
+          __dirname,
+          "../../packages/registry-svelte/lib/utils"
+        ),
       },
       {
         find: "@/svelte-lib",
-        replacement: path.resolve(__dirname, "../../packages/registry-svelte/lib"),
+        replacement: path.resolve(
+          __dirname,
+          "../../packages/registry-svelte/lib"
+        ),
       },
-      { find: "@/svelte-hooks", replacement: path.resolve(__dirname, "src/svelte-hooks") },
+      {
+        find: "@/svelte-hooks",
+        replacement: path.resolve(__dirname, "src/svelte-hooks"),
+      },
       { find: "@", replacement: path.resolve(__dirname, "src") },
       {
         find: "$app/environment",
         replacement: path.resolve(__dirname, "src/stubs/app-environment.ts"),
       },
-      { find: "$app/stores", replacement: path.resolve(__dirname, "src/stubs/app-stores.ts") },
+      {
+        find: "$app/stores",
+        replacement: path.resolve(__dirname, "src/stubs/app-stores.ts"),
+      },
       {
         find: "$app/navigation",
         replacement: path.resolve(__dirname, "src/stubs/app-navigation.ts"),
       },
-      { find: "$app/forms", replacement: path.resolve(__dirname, "src/stubs/app-forms.ts") },
-      { find: "$app/state", replacement: path.resolve(__dirname, "src/stubs/app-state.ts") },
+      {
+        find: "$app/forms",
+        replacement: path.resolve(__dirname, "src/stubs/app-forms.ts"),
+      },
+      {
+        find: "$app/state",
+        replacement: path.resolve(__dirname, "src/stubs/app-state.ts"),
+      },
     ],
   },
   optimizeDeps: {

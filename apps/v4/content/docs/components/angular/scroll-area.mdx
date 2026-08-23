@@ -1,0 +1,98 @@
+---
+title: Scroll Area
+description: Augments native scroll functionality for custom, cross-browser styling.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="scroll-area-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/scroll-area
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="scroll-area" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { ScrollAreaComponent } from "@/components/ui/scroll-area"
+```
+
+```html showLineNumbers
+<div uiScrollArea class="h-[200px] w-[350px] rounded-md border p-4">
+  Your scrollable content here.
+</div>
+```
+
+Apply `[uiScrollArea]` to a sized host element — the viewport fills it and scrolls within. Pass `orientation="horizontal"` (or `"both"`) for horizontal scrolling.
+
+<Callout>
+  The React component renders radix's JS overlay scrollbar (`ScrollBar`, `Thumb`,
+  `Corner`). There is no `@radix-ng/primitives` scroll-area equivalent, so the
+  Angular port scrolls natively and themes the browser scrollbar with the same
+  token colours — those sub-components are not exported.
+</Callout>
+
+## Horizontal
+
+Use `orientation="horizontal"` for horizontally scrolling content.
+
+<Callout>
+  Unlike the React example, no `<ScrollBar>` sub-component is rendered — the
+  native themed scrollbar appears on the overflow axis automatically.
+</Callout>
+
+<ComponentPreview framework="angular" name="scroll-area-horizontal-demo" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="scroll-area-rtl"
+  direction="rtl"
+/>
+
+## API Reference
+
+| Prop         | Type                                          | Default      |
+| ------------ | --------------------------------------------- | ------------ |
+| `orientation` | `"vertical" \| "horizontal" \| "both"`        | `"vertical"` |
+| `ariaLabel`  | `string \| undefined`                         | `undefined`  |
+| `class`      | `string \| undefined`                         | `undefined`  |
+
+The scrollable viewport is a keyboard-focusable region (`tabindex="0"`, WCAG 2.1.1). Set `ariaLabel` to turn it into a named `role="region"` landmark; without it the viewport keeps a generic accessible name and no landmark role.

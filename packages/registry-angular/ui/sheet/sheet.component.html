@@ -1,0 +1,14 @@
+<ng-content />
+@if (showCloseButton()) {
+  <button
+    uiButton
+    variant="ghost"
+    size="icon-sm"
+    uiSheetClose
+    type="button"
+    aria-label="Close"
+    class="cn-sheet-close"
+  >
+    <span class="inline-flex [&>svg]:fill-current" aria-hidden="true" [innerHTML]="closeIcon"></span>
+  </button>
+}

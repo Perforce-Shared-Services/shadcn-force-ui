@@ -1,0 +1,353 @@
+---
+title: Field
+description: Combine labels, controls, and help text to compose accessible form fields and grouped inputs.
+base: angular
+component: true
+---
+
+<ComponentPreview
+  framework="angular"
+  name="field-demo"
+  previewClassName="h-[800px] p-6 md:h-[850px]"
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/field
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="field" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Field,
+  FieldContent,
+  FieldDescription,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+  FieldTitle,
+} from "@/components/ui/field"
+```
+
+```html showLineNumbers
+<fieldset uiFieldSet>
+  <legend uiFieldLegend>Profile</legend>
+  <p uiFieldDescription>This appears on invoices and emails.</p>
+  <div uiFieldGroup>
+    <div uiField>
+      <label uiFieldLabel for="name">Full name</label>
+      <input uiInput id="name" autocomplete="off" placeholder="Evil Rabbit" />
+      <p uiFieldDescription>This appears on invoices and emails.</p>
+    </div>
+    <div uiField>
+      <label uiFieldLabel for="username">Username</label>
+      <input uiInput id="username" autocomplete="off" aria-invalid />
+      <div uiFieldError>Choose another username.</div>
+    </div>
+    <div uiField orientation="horizontal">
+      <button uiSwitch id="newsletter"></button>
+      <label uiFieldLabel for="newsletter">Subscribe to the newsletter</label>
+    </div>
+  </div>
+</fieldset>
+```
+
+Each part is an attribute selector on a native element, so the host keeps its
+semantics (`fieldset[uiFieldSet]`, `legend[uiFieldLegend]`,
+`label[uiFieldLabel]`, `p[uiFieldDescription]`, `div[uiField]`, …) — Angular's
+idiomatic equivalent of React's `asChild`.
+
+## Composition
+
+### Field
+
+A single control with label, helper text, and validation.
+
+```text
+Field
+├── FieldLabel
+├── Input / Textarea / Switch / Select
+├── FieldDescription
+└── FieldError
+```
+
+### FieldGroup
+
+Related fields in one group. Use `FieldSeparator` between sections when needed.
+
+```text
+FieldGroup
+├── Field
+│   ├── FieldLabel
+│   ├── Input / Textarea / Switch / Select
+│   ├── FieldDescription
+│   └── FieldError
+├── FieldSeparator
+└── Field
+    ├── FieldLabel
+    └── Input / Textarea / Switch / Select
+```
+
+### FieldSet
+
+Semantic grouping with a legend and description, usually containing a `FieldGroup`.
+
+```text
+FieldSet
+├── FieldLegend
+├── FieldDescription
+└── FieldGroup
+    ├── Field
+    │   ├── FieldLabel
+    │   ├── Input / Textarea / Switch / Select
+    │   ├── FieldDescription
+    │   └── FieldError
+    └── Field
+        ├── FieldLabel
+        └── Input / Textarea / Switch / Select
+```
+
+## Anatomy
+
+The `Field` family is designed for composing accessible forms. A typical field is structured as follows:
+
+```html showLineNumbers
+<div uiField>
+  <label uiFieldLabel for="input-id">Label</label>
+  <!-- Input, Select, Switch, etc. -->
+  <p uiFieldDescription>Optional helper text.</p>
+  <div uiFieldError>Validation message.</div>
+</div>
+```
+
+- `Field` is the core wrapper for a single field.
+- `FieldContent` is a flex column that groups label and description. Not required if you have no description.
+- Wrap related fields with `FieldGroup`, and use `FieldSet` with `FieldLegend` for semantic grouping.
+
+## Form
+
+See the [Form](/docs/forms) documentation for building forms with the `Field` component.
+
+## Input
+
+<ComponentPreview framework="angular" name="field-input" />
+
+## Textarea
+
+<ComponentPreview framework="angular" name="field-textarea" />
+
+## Select
+
+<ComponentPreview framework="angular" name="field-select" />
+
+## Slider
+
+<ComponentPreview framework="angular" name="field-slider" />
+
+## Fieldset
+
+<ComponentPreview framework="angular" name="field-fieldset" />
+
+## Checkbox
+
+<ComponentPreview
+  framework="angular"
+  name="field-checkbox"
+  previewClassName="h-[32rem]"
+/>
+
+## Radio
+
+<ComponentPreview framework="angular" name="field-radio" />
+
+## Switch
+
+<ComponentPreview framework="angular" name="field-switch" />
+
+## Choice Card
+
+Wrap `Field` components inside `FieldLabel` to create selectable field groups. This works with `RadioGroupItem`, `Checkbox` and `Switch` components.
+
+<ComponentPreview framework="angular" name="field-choice-card" />
+
+## Field Group
+
+Stack `Field` components with `FieldGroup`. Add `FieldSeparator` to divide them.
+
+<ComponentPreview
+  framework="angular"
+  name="field-group"
+  previewClassName="h-96"
+/>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="field-rtl"
+  direction="rtl"
+  previewClassName="h-auto p-6"
+/>
+
+## Responsive Layout
+
+- **Vertical fields:** Default orientation stacks label, control, and helper text—ideal for mobile-first layouts.
+- **Horizontal fields:** Set `orientation="horizontal"` on `Field` to align the label and control side-by-side. Pair with `FieldContent` to keep descriptions aligned.
+- **Responsive fields:** Set `orientation="responsive"` for automatic column layouts inside container-aware parents. Apply `@container/field-group` classes on `FieldGroup` to switch orientations at specific breakpoints.
+
+<ComponentPreview
+  framework="angular"
+  name="field-responsive"
+  previewClassName="h-[650px] p-6 md:h-[500px] md:p-10"
+/>
+
+## Validation and Errors
+
+- Set `[invalid]="true"` on `Field` to switch the entire block into an error state (reflected as `data-invalid="true"`).
+- Add `aria-invalid` on the input itself for assistive technologies.
+- Render `FieldError` immediately after the control or inside `FieldContent` to keep error messages aligned with the field.
+
+```html showLineNumbers
+<div uiField [invalid]="true">
+  <label uiFieldLabel for="email">Email</label>
+  <input uiInput id="email" type="email" aria-invalid />
+  <div uiFieldError>Enter a valid email address.</div>
+</div>
+```
+
+## Accessibility
+
+- `FieldSet` and `FieldLegend` keep related controls grouped for keyboard and assistive tech users.
+- `Field` outputs `role="group"` so nested controls inherit labeling from `FieldLabel` and `FieldLegend` when combined.
+- `FieldError` renders `role="alert"` and stays hidden while empty, so screen readers never announce a blank alert.
+- Apply `FieldSeparator` sparingly to ensure screen readers encounter clear section boundaries.
+
+## API Reference
+
+### FieldSet
+
+Container that renders a semantic `<fieldset uiFieldSet>` with spacing presets.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldLegend
+
+Legend element for a `FieldSet`. Switch to the `label` variant to align with label sizing.
+
+| Prop        | Type                            | Default    |
+| ----------- | ------------------------------- | ---------- |
+| `variant`   | `"legend" \| "label"`           | `"legend"` |
+| `className` | `string`                        |            |
+
+The `FieldLegend` has two variants: `legend` and `label`. The `label` variant applies label sizing and alignment. Handy if you have nested `FieldSet`.
+
+### FieldGroup
+
+Layout wrapper that stacks `Field` components and enables container queries for responsive orientations.
+
+| Prop        | Type     | Default       |
+| ----------- | -------- | ------------- |
+| `className` | `string` |               |
+| `data-slot` | `string` | `"field-group"` |
+
+Set `data-slot="checkbox-group"` for tighter checkbox/radio row spacing.
+
+### Field
+
+The core wrapper. Groups one control with its label, description and error; emits `data-orientation` and `data-invalid` for styling hooks.
+
+| Prop          | Type                                      | Default     |
+| ------------- | ----------------------------------------- | ----------- |
+| `orientation` | `"vertical" \| "horizontal" \| "responsive"` | `"vertical"` |
+| `invalid`     | `boolean`                                 | `false`     |
+| `className`   | `string`                                  |             |
+
+### FieldContent
+
+Flex column that groups label and description next to a control.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldLabel
+
+Native `<label>` with implicit control association via `for`/`id`.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldTitle
+
+Bold heading text for choice cards and rich labels.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldDescription
+
+Helper text rendered as a native `<p>`; links inside are underlined automatically.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldSeparator
+
+Divider between field groups; renders a centered label when content is projected.
+
+| Prop        | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+### FieldError
+
+Validation message with `role="alert"`. Accepts projected content or an `errors` array (deduplicated); hidden while empty.
+
+| Prop        | Type                                       | Default |
+| ----------- | ------------------------------------------ | ------- |
+| `errors`    | `{ message?: string }[] \| undefined`      |         |
+| `className` | `string`                                   |         |

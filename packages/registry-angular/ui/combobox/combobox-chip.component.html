@@ -1,0 +1,15 @@
+<ng-content />
+    @if (showRemove()) {
+      <button
+        uiButton
+        variant="ghost"
+        size="icon-xs"
+        type="button"
+        data-slot="combobox-chip-remove"
+        class="-ml-1 size-4 opacity-50 hover:opacity-100"
+        [attr.aria-label]="removeLabel()"
+        (click)="remove($event)"
+      >
+        <span class="[&>svg]:size-3.5 [&>svg]:fill-current" aria-hidden="true" [innerHTML]="closeIcon"></span>
+      </button>
+    }

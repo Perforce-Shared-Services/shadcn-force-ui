@@ -1,0 +1,56 @@
+<!-- [FORCE-UI] Ported from registry/new-york-v4/blocks/sidebar-06 -->
+<script lang="ts">
+  import MoreHorizontal from "~icons/ms/more_horiz"
+  import * as DropdownMenu from "$lib/registry/ui/dropdown-menu/index.js"
+  import { useSidebar } from "$lib/registry/ui/sidebar/context.svelte.js"
+  import * as Sidebar from "$lib/registry/ui/sidebar/index.js"
+
+  let {
+    items,
+  }: {
+    items: {
+      title: string
+      url: string
+      items?: { title: string; url: string }[]
+    }[]
+  } = $props()
+
+  const sidebar = useSidebar()
+</script>
+
+<Sidebar.Group>
+  <Sidebar.Menu>
+    {#each items as item (item.title)}
+      <DropdownMenu.Root>
+        <Sidebar.MenuItem>
+          <DropdownMenu.Trigger>
+            {#snippet child({ props })}
+              <Sidebar.MenuButton
+                class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+                {...props}
+              >
+                {item.title}
+                <MoreHorizontal class="ml-auto" />
+              </Sidebar.MenuButton>
+            {/snippet}
+          </DropdownMenu.Trigger>
+          {#if item.items?.length}
+            <DropdownMenu.Content
+              side={sidebar.isMobile ? "bottom" : "right"}
+              align={sidebar.isMobile ? "end" : "start"}
+              class="min-w-56 rounded-lg"
+            >
+              {#each item.items as subItem (subItem.title)}
+                <DropdownMenu.Item>
+                  {#snippet child({ props })}
+                    <a href={subItem.url} {...props}>{subItem.title}</a>
+                  {/snippet}
+                </DropdownMenu.Item>
+              {/each}
+            </DropdownMenu.Content>
+          {/if}
+        </Sidebar.MenuItem>
+      </DropdownMenu.Root>
+    {/each}
+  </Sidebar.Menu>
+</Sidebar.Group>

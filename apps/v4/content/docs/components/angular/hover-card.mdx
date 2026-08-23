@@ -1,0 +1,146 @@
+---
+title: Hover Card
+description: For sighted users to preview content available behind a link.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/preview-card
+  api: https://radix-ng.com/primitives/preview-card
+---
+
+<ComponentPreview framework="angular" name="hover-card-demo" previewClassName="h-80" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/hover-card
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="hover-card" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  HoverCardContent,
+  HoverCardPortal,
+  HoverCardPositioner,
+  HoverCardRoot,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+```
+
+```html showLineNumbers
+<div uiHoverCardRoot>
+  <button uiButton variant="link" uiHoverCardTrigger type="button">Hover Here</button>
+  <ng-template uiHoverCardPortal>
+    <div uiHoverCardPositioner>
+      <div uiHoverCardContent>
+        The React Framework – created and maintained by @vercel.
+      </div>
+    </div>
+  </ng-template>
+</div>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+<Callout>
+  radix-ng v1.x ships this primitive as **preview-card**
+  (`@radix-ng/primitives/preview-card`) — the p4one-era `@radix-ng/primitives/hover-card`
+  module no longer exists. The Force UI part names and behaviour are unchanged;
+  only the underlying import differs.
+</Callout>
+
+## Composition
+
+Use the following composition to build a `HoverCard`:
+
+```text
+HoverCardRoot (div)
+├── HoverCardTrigger
+└── HoverCardPortal (ng-template)
+    └── HoverCardPositioner (div)
+        └── HoverCardContent (div)
+```
+
+React folds Portal + positioning + Content into one `HoverCardContent` part;
+the Angular anatomy splits it so the positioner carries the `side`, `align`,
+and offset inputs.
+
+## Trigger Delays
+
+Use `delay` and `closeDelay` on the trigger to control when the card opens and
+closes.
+
+```html showLineNumbers
+<button uiHoverCardTrigger [delay]="100" [closeDelay]="200" type="button">
+  Hover
+</button>
+```
+
+## Positioning
+
+Use the `side` and `align` inputs on `HoverCardPositioner` to control
+placement.
+
+```html showLineNumbers
+<div uiHoverCardPositioner side="top" align="start">
+  <div uiHoverCardContent>Content</div>
+</div>
+```
+
+## Basic
+
+A hover card anchored to a user mention, showing an avatar, profile metadata and a join date.
+
+<ComponentPreview framework="angular" name="hover-card-demo" previewClassName="h-80" />
+
+## Sides
+
+One card per physical side — the same content positioned on each edge of its
+trigger.
+
+<ComponentPreview framework="angular" name="hover-card-sides" previewClassName="h-[22rem]" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="hover-card-rtl" direction="rtl" previewClassName="h-80" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/preview-card) documentation
+for more information.

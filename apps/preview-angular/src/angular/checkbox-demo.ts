@@ -1,24 +1,50 @@
 import { Checkbox } from "@/angular-ui/checkbox"
+import {
+  Field,
+  FieldContent,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldTitle,
+} from "@/angular-ui/field"
 import { Label } from "@/angular-ui/label"
 import { Component } from "@angular/core"
 
 @Component({
   selector: "preview-checkbox-demo",
   standalone: true,
-  imports: [Checkbox, Label],
-  template: ` <div class="flex flex-col gap-3">
-    <div class="flex items-center gap-2">
-      <button uiCheckbox id="tos" [checked]="false"></button>
-      <label uiLabel for="tos">Accept terms and conditions</label>
+  imports: [Checkbox, Label, Field, FieldContent, FieldDescription, FieldGroup, FieldLabel, FieldTitle],
+  template: ` <div uiFieldGroup class="max-w-sm">
+    <div uiField orientation="horizontal">
+      <button uiCheckbox id="terms-checkbox" name="terms-checkbox"></button>
+      <label uiLabel for="terms-checkbox">Accept terms and conditions</label>
     </div>
-    <div class="flex items-center gap-2">
-      <button uiCheckbox id="checked-demo" [checked]="true"></button>
-      <label uiLabel for="checked-demo">Already accepted</label>
+    <div uiField orientation="horizontal">
+      <button uiCheckbox id="terms-checkbox-2" name="terms-checkbox-2" [checked]="true"></button>
+      <div uiFieldContent>
+        <label uiFieldLabel for="terms-checkbox-2">
+          Accept terms and conditions
+        </label>
+        <p uiFieldDescription>
+          By clicking this checkbox, you agree to the terms.
+        </p>
+      </div>
     </div>
-    <div class="flex items-center gap-2 opacity-50">
-      <button uiCheckbox id="disabled-demo" [checked]="false" disabled></button>
-      <label uiLabel for="disabled-demo">Disabled</label>
+    <div uiField orientation="horizontal" data-disabled>
+      <button uiCheckbox id="toggle-checkbox" name="toggle-checkbox" disabled></button>
+      <label uiFieldLabel for="toggle-checkbox">Enable notifications</label>
     </div>
+    <label uiFieldLabel>
+      <div uiField orientation="horizontal">
+        <button uiCheckbox id="toggle-checkbox-2" name="toggle-checkbox-2"></button>
+        <div uiFieldContent>
+          <span uiFieldTitle>Enable notifications</span>
+          <p uiFieldDescription>
+            You can enable or disable notifications at any time.
+          </p>
+        </div>
+      </div>
+    </label>
   </div>`,
 })
 export class CheckboxDemoComponent {}

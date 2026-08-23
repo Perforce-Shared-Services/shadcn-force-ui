@@ -1,0 +1,43 @@
+<input
+  data-slot="questionnaire-choice-input"
+  class="absolute inset-0 z-10 size-full cursor-pointer opacity-0 disabled:cursor-not-allowed"
+  [type]="type()"
+  [name]="type() === 'radio' ? item?.name() : null"
+  [value]="value()"
+  [checked]="checked()"
+  [disabled]="disabled()"
+  [required]="type() === 'radio' && (item?.required() ?? false)"
+  [attr.aria-invalid]="invalid() ? 'true' : null"
+  (change)="select()"
+/>
+<span
+  aria-hidden="true"
+  data-slot="questionnaire-choice-indicator"
+  class="pointer-events-none relative mt-[3px] flex size-4 shrink-0 items-center justify-center border border-input transition-colors motion-reduce:transition-none group-data-[type=radio]/questionnaire-choice:rounded-full group-data-[type=checkbox]/questionnaire-choice:rounded-[2px] group-data-checked/questionnaire-choice:border-primary group-data-checked/questionnaire-choice:bg-primary"
+>
+  <span
+    data-slot="questionnaire-choice-indicator-dot"
+    class="hidden size-2 rounded-full bg-primary-foreground group-data-[type=checkbox]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+  ></span>
+  <span
+    data-slot="questionnaire-choice-indicator-check"
+    class="hidden text-primary-foreground [&>svg]:size-3 [&>svg]:fill-current group-data-[type=radio]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+    [innerHTML]="checkIcon"
+  ></span>
+</span>
+<span
+  data-slot="questionnaire-choice-label"
+  class="flex min-w-0 flex-1 flex-col gap-0.5 text-sm leading-snug"
+  [class.font-medium]="type() === 'checkbox'"
+>
+  <ng-content />
+</span>
+@if (shortcutLabel(); as label) {
+  <kbd
+    uiKbd
+    aria-hidden="true"
+    data-slot="questionnaire-choice-shortcut"
+    class="pointer-events-none ms-auto shrink-0"
+    >{{ label }}</kbd
+  >
+}

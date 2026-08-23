@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 // [&_svg]:fill-current added — Material Symbols SVGs are fill-based.
 // See DIVERGENCES.md §kbd-1.
 export const kbdVariants = cva(
-  "cn-kbd pointer-events-none inline-flex items-center justify-center select-none [&_svg]:fill-current [&_svg:not([class*='size-'])]:size-3",
+  "cn-kbd pointer-events-none inline-flex items-center justify-center select-none [&_svg]:fill-current",
   {
     variants: {
       variant: {

@@ -1,0 +1,171 @@
+---
+title: Select
+description: Displays a list of options for the user to pick from—triggered by a button.
+base: angular
+component: true
+featured: true
+links:
+  doc: https://radix-ng.com/primitives/select
+  api: https://radix-ng.com/primitives/select
+---
+
+<ComponentPreview framework="angular" name="select-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/select
+```
+
+</TabsContent>
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="select" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+```
+
+```html
+<div uiSelect defaultValue="apple">
+  <button uiSelectTrigger class="w-full max-w-48">
+    <span uiSelectValue placeholder="Select a fruit"></span>
+  </button>
+  <ng-template uiSelectPortal>
+    <div uiSelectPositioner>
+      <div uiSelectContent>
+        <div uiSelectGroup>
+          <div uiSelectLabel>Fruits</div>
+          <div uiSelectItem value="apple">Apple</div>
+          <div uiSelectItem value="banana">Banana</div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
+```
+
+Selection is uncontrolled by default (`defaultValue`). For the controlled form, bind `[uiValue]` and listen to `(uiValueChange)` on the `[uiSelect]` root.
+
+## Composition
+
+Use the following composition to build a `Select`:
+
+```text
+uiSelect
+├── uiSelectTrigger
+│   └── uiSelectValue
+└── ng-template uiSelectPortal
+    └── uiSelectPositioner
+        └── uiSelectContent
+            ├── uiSelectGroup
+            │   ├── uiSelectLabel
+            │   └── uiSelectItem
+            ├── uiSelectSeparator
+            └── uiSelectGroup
+                ├── uiSelectLabel
+                └── uiSelectItem
+```
+
+The React `SelectPortal` / `SelectPositioner` fold into two explicit Angular nodes: the portal `<ng-template>` and a thin positioner wrapper inside it. Placement is automatic with collision flipping.
+
+<Callout>
+  Unlike most Force UI Angular parts, `SelectTrigger`, `SelectValue`, `SelectContent` and `SelectItem` are components with templates (chevron, check indicator), so they render on their own host element rather than purely as attribute markers.
+</Callout>
+
+## Align Item With Trigger
+
+<Callout>
+  radix-ng v1.x positions the popup item-aligned whenever it opens on pointer input — React's `alignItemWithTrigger` toggle has no Angular equivalent. The example shows the default item-aligned behaviour.
+</Callout>
+
+<ComponentPreview framework="angular" name="select-align-item" />
+
+## Groups
+
+Use `SelectGroup`, `SelectLabel`, and `SelectSeparator` to organize items.
+
+<ComponentPreview framework="angular" name="select-groups" />
+
+## Scrollable
+
+A select with many items that scrolls.
+
+<ComponentPreview framework="angular" name="select-scrollable" />
+
+## Disabled
+
+Disable the whole select with `disabled` on the `[uiSelect]` root, or single items with `disabled` on `uiSelectItem`.
+
+<ComponentPreview framework="angular" name="select-disabled" />
+
+## Invalid
+
+Add the `data-invalid` attribute to the `Field` component and the `aria-invalid` attribute to the `SelectTrigger` component to show an error state.
+
+```html showLineNumbers /data-invalid/ /aria-invalid/
+<div uiField data-invalid>
+  <label uiFieldLabel>Fruit</label>
+  <div uiSelect>
+    <button uiSelectTrigger aria-invalid="true" class="w-full">
+      <span uiSelectValue placeholder="Select a fruit"></span>
+    </button>
+    <ng-template uiSelectPortal>
+      <div uiSelectPositioner>
+        <div uiSelectContent>
+          <div uiSelectItem value="apple">Apple</div>
+          <div uiSelectItem value="banana">Banana</div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
+```
+
+<ComponentPreview framework="angular" name="select-invalid" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="select-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng select](https://radix-ng.com/primitives/select) documentation for more information.

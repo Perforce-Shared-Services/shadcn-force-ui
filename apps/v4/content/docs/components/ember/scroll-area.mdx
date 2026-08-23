@@ -1,0 +1,78 @@
+---
+title: Scroll Area
+description: Wraps content in a styled scroll container with a custom scrollbar.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="scroll-area-demo" />
+
+The `ScrollArea` component wraps overflowing content in a container with a custom-styled scrollbar. Use `ScrollBar @orientation="horizontal"` for horizontal rails.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/scroll-area
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="scroll-area" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import { ScrollArea, ScrollBar } from '@/ui/scroll-area';
+```
+
+```hbs showLineNumbers
+<ScrollArea class="h-72 w-48 rounded-md border">
+  {{! content }}
+  <ScrollBar @orientation="horizontal" />
+</ScrollArea>
+```
+
+## Horizontal Scrolling
+
+<ComponentPreview framework="ember" name="scroll-area-horizontal-demo" />
+
+## API Reference
+
+### ScrollArea
+
+The scroll container root. Size it with utility classes (e.g. `class="h-72 w-48"`).
+
+| Prop     | Type     | Default | Description                                      |
+| -------- | -------- | ------- | ------------------------------------------------ |
+| `@class` | `string` | -       | Additional classes to apply to the root element. |
+
+### ScrollBar
+
+The custom scrollbar. A vertical scrollbar is included by default; add a horizontal one explicitly.
+
+| Prop           | Type                         | Default      | Description                  |
+| -------------- | ---------------------------- | ------------ | ---------------------------- |
+| `@orientation` | `"vertical" \| "horizontal"` | `"vertical"` | Axis of the scrollbar.       |
+| `@class`       | `string`                     | -            | Additional classes to apply. |

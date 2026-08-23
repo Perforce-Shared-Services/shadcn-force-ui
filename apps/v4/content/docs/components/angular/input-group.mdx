@@ -1,0 +1,346 @@
+---
+title: Input Group
+description: Add addons, buttons, and helper content to inputs.
+base: angular
+component: true
+---
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-demo"
+  previewClassName="h-[26rem]"
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/input-group
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="input-group" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupInput,
+  InputGroupText,
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
+```
+
+```html
+<div uiInputGroup>
+  <input uiInputGroupInput placeholder="Search..." />
+  <div uiInputGroupAddon>
+    <svg aria-hidden="true"><!-- search icon --></svg>
+  </div>
+</div>
+```
+
+Use attribute selectors on native elements: `div[uiInputGroup]`,
+`input[uiInputGroupInput]`, `textarea[uiInputGroupTextarea]`,
+`div[uiInputGroupAddon]`, `span[uiInputGroupText]`, and
+`button[uiInputGroupButton]`. This keeps the host element's native semantics —
+Angular's idiomatic equivalent of React's `asChild`.
+
+## Composition
+
+Use the following composition to build an `InputGroup`:
+
+```text
+InputGroup
+├── InputGroupInput or InputGroupTextarea
+├── InputGroupAddon
+├── InputGroupButton
+└── InputGroupText
+```
+
+## Align
+
+Use the `align` input on `InputGroupAddon` to position the addon relative to
+the input.
+
+<Callout>
+  For proper focus management, `InputGroupAddon` should always be placed after
+  `InputGroupInput` or `InputGroupTextarea` in the DOM. Use the `align` input
+  to visually position the addon.
+</Callout>
+
+### inline-start
+
+Use `align="inline-start"` to position the addon at the start of the input. This is the default.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-inline-start"
+  previewClassName="h-48"
+/>
+
+### inline-end
+
+Use `align="inline-end"` to position the addon at the end of the input.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-inline-end"
+  previewClassName="h-48"
+/>
+
+### block-start
+
+Use `align="block-start"` to position the addon above the input.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-block-start"
+  previewClassName="h-96"
+/>
+
+### block-end
+
+Use `align="block-end"` to position the addon below the input.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-block-end"
+  previewClassName="h-[26rem]"
+/>
+
+## Icon
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-icon"
+  previewClassName="h-80"
+/>
+
+## Text
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-text"
+  previewClassName="h-80"
+/>
+
+## Button
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-button"
+  previewClassName="h-72"
+/>
+
+<Callout>
+  The React example opens a popover from the info button. Popover support for
+  Angular is pending CDK overlay primitives, so the button renders without its
+  popup in this preview.
+</Callout>
+
+## Kbd
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-kbd"
+  previewClassName="h-40"
+/>
+
+## Dropdown
+
+An addon trigger that opens a menu of search scopes.
+
+<ComponentPreview framework="angular" name="input-group-dropdown" />
+
+## Spinner
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-spinner"
+  previewClassName="h-80"
+/>
+
+## Textarea
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-textarea"
+  previewClassName="h-96"
+/>
+
+## Custom Input
+
+Add the `data-slot="input-group-control"` attribute to your custom input for automatic focus state handling.
+
+Here's an example of a custom auto-resizing textarea using the CSS `field-sizing-content` property.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-custom"
+  previewClassName="h-56"
+/>
+
+### Variants
+
+Use the `variant` input to match standalone Input variants.
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-variants"
+  previewClassName="*:max-w-sm"
+/>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="input-group-rtl"
+  direction="rtl"
+  previewClassName="h-[30rem]"
+/>
+
+## API Reference
+
+### InputGroup
+
+The main component that wraps inputs and addons. Attribute selector:
+`[uiInputGroup]` on a `<div>`.
+
+| Input       | Type                                              | Default     |
+| ----------- | ------------------------------------------------- | ----------- |
+| `variant`   | `"outline" \| "filled" \| "underline" \| "ghost"` | `"outline"` |
+| `className` | `string`                                          |             |
+
+```html
+<div uiInputGroup>
+  <input uiInputGroupInput />
+  <div uiInputGroupAddon></div>
+</div>
+```
+
+### InputGroupAddon
+
+Displays icons, text, buttons, or other content alongside inputs. Attribute
+selector: `[uiInputGroupAddon]` on a `<div>`.
+
+<Callout title="Focus Navigation">
+  For proper focus navigation, the `InputGroupAddon` should be placed after the
+  input. Set the `align` input to position the addon. Clicking an addon focuses
+  the group's control unless the click landed on a button.
+</Callout>
+
+| Input       | Type                                                             | Default          |
+| ----------- | ---------------------------------------------------------------- | ---------------- |
+| `align`     | `"inline-start" \| "inline-end" \| "block-start" \| "block-end"` | `"inline-start"` |
+| `className` | `string`                                                         |                  |
+
+```html
+<div uiInputGroupAddon align="inline-end">
+  <svg aria-hidden="true"></svg>
+</div>
+```
+
+**For `<input uiInputGroupInput />`, use the `inline-start` or `inline-end` alignment. For `<textarea uiInputGroupTextarea />`, use the `block-start` or `block-end` alignment.**
+
+The addon can contain multiple `InputGroupButton`s and icons.
+
+```html
+<div uiInputGroupAddon>
+  <button uiInputGroupButton>Button</button>
+  <button uiInputGroupButton>Button</button>
+</div>
+```
+
+Unlike the React source, the Angular addon does not set `role="group"` — it is
+a presentational slot, and nested unnamed groups are screen-reader noise. The
+outer `[uiInputGroup]` keeps `role="group"`.
+
+### InputGroupButton
+
+Displays buttons within input groups. Attribute selector:
+`button[uiInputGroupButton]`. `type` is forced to `"button"`.
+
+| Input       | Type                                                                          | Default   |
+| ----------- | ----------------------------------------------------------------------------- | --------- |
+| `size`      | `"xs" \| "icon-xs" \| "sm" \| "icon-sm"`                                      | `"xs"`    |
+| `variant`   | `"default" \| "destructive" \| "outline" \| "secondary" \| "ghost" \| "link"` | `"ghost"` |
+| `className` | `string`                                                                      |           |
+
+```html
+<button uiInputGroupButton>Button</button>
+<button uiInputGroupButton size="icon-xs" aria-label="Copy">
+  <svg aria-hidden="true"></svg>
+</button>
+```
+
+An icon-only button MUST carry an `aria-label` — the glyph is not an accessible
+name (WCAG 4.1.2).
+
+### InputGroupInput
+
+Replacement for `<input uiInput />` when building input groups. Attribute
+selector: `input[uiInputGroupInput]`. It reuses the standalone input's outline
+style stripped of its own box (the group draws the chrome) and uses the unified
+`data-slot="input-group-control"` for focus state handling.
+
+| Input       | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+All other attributes are passed through to the underlying `<input>` element.
+
+```html
+<div uiInputGroup>
+  <input uiInputGroupInput placeholder="Enter text..." />
+  <div uiInputGroupAddon></div>
+</div>
+```
+
+### InputGroupTextarea
+
+Replacement for `<textarea uiTextarea />` when building input groups. Attribute
+selector: `textarea[uiInputGroupTextarea]`. Like `InputGroupInput`, it uses the
+unified `data-slot="input-group-control"` for focus state handling.
+
+| Input       | Type     | Default |
+| ----------- | -------- | ------- |
+| `className` | `string` |         |
+
+All other attributes are passed through to the underlying `<textarea>` element.
+
+```html
+<div uiInputGroup>
+  <textarea uiInputGroupTextarea placeholder="Enter message..."></textarea>
+  <div uiInputGroupAddon align="block-end">
+    <button uiInputGroupButton>Send</button>
+  </div>
+</div>
+```

@@ -1,0 +1,20 @@
+export {
+  NavigationMenuContentAnchorDirective,
+  NavigationMenuContentComponent,
+  NavigationMenuDirective,
+  NavigationMenuItemDirective,
+  NavigationMenuLinkDirective,
+  NavigationMenuListDirective,
+  NavigationMenuTriggerComponent,
+  NavigationMenuViewportComponent,
+  // Public names matching the React registry exports.
+  NavigationMenuContentAnchorDirective as NavigationMenuContentAnchor,
+  NavigationMenuContentComponent as NavigationMenuContent,
+  NavigationMenuDirective as NavigationMenu,
+  NavigationMenuItemDirective as NavigationMenuItem,
+  NavigationMenuLinkDirective as NavigationMenuLink,
+  NavigationMenuListDirective as NavigationMenuList,
+  NavigationMenuTriggerComponent as NavigationMenuTrigger,
+  NavigationMenuViewportComponent as NavigationMenuViewport,
+  navigationMenuTriggerStyle,
+} from "./navigation-menu.component"

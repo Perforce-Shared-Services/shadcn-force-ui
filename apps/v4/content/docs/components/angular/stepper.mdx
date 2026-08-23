@@ -1,0 +1,175 @@
+---
+title: Stepper
+description: Displays a sequence of steps for a multi-step process or wizard, with completed, active and pending states.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="stepper-demo" />
+
+The `Stepper` component shows progress through a numbered flow. Each `StepperItem` exposes its state (`completed`, `active`, `inactive`) to its descendants; a `StepperTrigger` button makes steps clickable. Completed indicators swap their number for a checkmark automatically.
+
+<Callout>
+  There is no React stepper in the Force UI registry yet — this component is a
+  Force UI original ported from the p4one application build. Its class strings
+  are inlined in the component rather than drawn from `style-force-ui.css`
+  tokens.
+</Callout>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/stepper
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="stepper" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Stepper,
+  StepperDescription,
+  StepperIndicator,
+  StepperItem,
+  StepperSeparator,
+  StepperTitle,
+  StepperTrigger,
+} from "@/components/ui/stepper"
+```
+
+```html showLineNumbers
+<div uiStepper [(value)]="step" linear aria-label="Setup steps">
+  <div uiStepperItem [step]="1">
+    <button uiStepperTrigger>
+      <span uiStepperIndicator>1</span>
+      <span class="flex flex-col gap-0.5">
+        <span uiStepperTitle>Details</span>
+        <span uiStepperDescription>Name the workspace</span>
+      </span>
+    </button>
+  </div>
+  <div uiStepperSeparator></div>
+  <div uiStepperItem [step]="2">
+    <!-- … -->
+  </div>
+</div>
+```
+
+Give `[uiStepper]` an `aria-label` (or `aria-labelledby`) so screen readers can announce what the group of steps represents.
+
+## Composition
+
+Use the following composition to build a `Stepper`:
+
+```text
+Stepper
+├── StepperItem
+│   ├── StepperTrigger
+│   │   ├── StepperIndicator
+│   │   └── StepperTitle (+ optional StepperDescription)
+│   └── (non-interactive: Indicator + Title without a Trigger)
+└── StepperSeparator (between items)
+```
+
+## Linear
+
+With `linear` set, a trigger click cannot skip ahead over an unvisited, non-disabled step. Moving back is always allowed, so previously entered data stays editable.
+
+<ComponentPreview framework="angular" name="stepper-demo" previewClassName="h-40" />
+
+## Vertical
+
+Use `orientation="vertical"` to stack the step rows top to bottom.
+
+<ComponentPreview framework="angular" name="stepper-vertical" previewClassName="h-72" />
+
+## With Descriptions
+
+Use `StepperDescription` to show a one-line hint under each title.
+
+<ComponentPreview framework="angular" name="stepper-with-descriptions" previewClassName="h-80" />
+
+## Non-Interactive
+
+Omit `StepperTrigger` entirely to render static, non-clickable steps — for contexts like a wizard sidebar where navigation is driven by external Back/Next buttons. `aria-current="step"` still marks the active item.
+
+<ComponentPreview framework="angular" name="stepper-non-interactive" previewClassName="h-72" />
+
+## Disabled Step
+
+A disabled item dims via `data-disabled` and, under `linear`, is freely skippable — useful for "not applicable" steps.
+
+<ComponentPreview framework="angular" name="stepper-disabled-step" previewClassName="h-40" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="stepper-rtl" direction="rtl" />
+
+## API Reference
+
+### Stepper
+
+The root container. Attribute selector: `[uiStepper]`. Renders with `role="group"` and a `data-orientation` attribute.
+
+| Input          | Type                            | Default       | Description                                                    |
+| -------------- | ------------------------------- | ------------- | -------------------------------------------------------------- |
+| `value`        | `number`                        | `1`           | Current step (1-indexed). Two-way bindable via `[(value)]`.     |
+| `orientation`  | `"horizontal" \| "vertical"`    | `"horizontal"` | Layout axis.                                                   |
+| `linear`       | `boolean`                       | `false`       | Block forward jumps over unvisited, non-disabled steps.         |
+
+### StepperItem
+
+One step's scope. Attribute selector: `[uiStepperItem]`. Sets `data-state` (`completed` / `active` / `inactive`) and `aria-current="step"` on the active item.
+
+| Input       | Type                  | Default    | Description                                                        |
+| ----------- | --------------------- | ---------- | ------------------------------------------------------------------ |
+| `step`      | `number` (required)   | —          | 1-indexed position matching the root's `value`.                    |
+| `disabled`  | `boolean`             | `false`    | Dims the item and lets `linear` navigation skip it.                |
+| `completed` | `boolean \| undefined`| `undefined`| Force completion out of numeric order; derived from `value` if unset. |
+
+### StepperTrigger
+
+The clickable button inside an item that navigates to its step. Attribute selector: `button[uiStepperTrigger]`.
+
+### StepperIndicator
+
+The numbered circle. Attribute selector: `[uiStepperIndicator]`. Projects the given content until the item is completed, then swaps to a checkmark with an `sr-only` "Completed:" announcement.
+
+### StepperTitle
+
+The step label. Attribute selector: `[uiStepperTitle]`. Bumps weight/colour on the active and completed steps via the item's `data-state`.
+
+### StepperDescription
+
+A brief sub-label under the title. Attribute selector: `[uiStepperDescription]`. No additional inputs.
+
+### StepperSeparator
+
+Connector line between two items, placed as a sibling of `StepperItem`. Attribute selector: `[uiStepperSeparator]`. Always neutral (`bg-border`), regardless of neighbouring completion states.

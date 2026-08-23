@@ -1,0 +1,142 @@
+---
+title: Message
+description: A message row with avatar, header, content, and footer slots for conversation threads.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="message-demo" />
+
+The `Message` component lays out a conversation turn: avatar on the outside, content (bubbles, attachments) on the inside, plus optional header and footer rows. Use `MessageGroup` for grouped turns.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/message
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="message" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import { Message, MessageAvatar, MessageContent } from '@/ui/message';
+```
+
+```hbs showLineNumbers
+<Message @align="end">
+  <MessageAvatar>
+    <Avatar>
+      <AvatarImage alt="@me" src="..." />
+    </Avatar>
+  </MessageAvatar>
+  <MessageContent>
+    <Bubble><BubbleContent>Hello!</BubbleContent></Bubble>
+  </MessageContent>
+</Message>
+```
+
+## Group
+
+`MessageGroup` stacks consecutive messages from a thread.
+
+<ComponentPreview framework="ember" name="message-group" />
+
+## Avatar
+
+`MessageAvatar` holds an [`Avatar`](/docs/components/ember/avatar). Without a child it renders an empty muted circle.
+
+<ComponentPreview framework="ember" name="message-avatar" />
+
+## Header and Footer
+
+`MessageHeader` names the sender; `MessageFooter` carries delivery state or actions. Footers align to the end automatically on end-aligned messages.
+
+<ComponentPreview framework="ember" name="message-header-footer" />
+
+## Actions
+
+Add action buttons to `MessageFooter`.
+
+<ComponentPreview framework="ember" name="message-actions" />
+
+## With Attachment
+
+Combine [`Attachment`](/docs/components/ember/attachment) with bubbles inside `MessageContent`.
+
+<ComponentPreview framework="ember" name="message-attachment" />
+
+## API Reference
+
+### Message
+
+The message row container.
+
+| Prop     | Type               | Default   | Description                                      |
+| -------- | ------------------ | --------- | ------------------------------------------------ |
+| `@align` | `"start" \| "end"` | `"start"` | Which side of the thread the message sits on.    |
+| `@class` | `string`           | -         | Additional classes to apply to the root element. |
+
+### MessageAvatar
+
+Holds the sender's avatar.
+
+| Prop     | Type     | Default | Description                                      |
+| -------- | -------- | ------- | ------------------------------------------------ |
+| `@class` | `string` | -       | Additional classes to apply to the avatar frame. |
+
+### MessageContent
+
+Column that holds bubbles, attachments, header, and footer.
+
+| Prop     | Type     | Default | Description                                      |
+| -------- | -------- | ------- | ------------------------------------------------ |
+| `@class` | `string` | -       | Additional classes to apply to the content slot. |
+
+### MessageHeader
+
+Optional row above the content, typically the sender's name.
+
+| Prop     | Type     | Default | Description                  |
+| -------- | -------- | ------- | ---------------------------- |
+| `@class` | `string` | -       | Additional classes to apply. |
+
+### MessageFooter
+
+Optional row below the content, typically delivery status or actions. Justifies to the end on end-aligned messages.
+
+| Prop     | Type     | Default | Description                  |
+| -------- | -------- | ------- | ---------------------------- |
+| `@class` | `string` | -       | Additional classes to apply. |
+
+### MessageGroup
+
+Groups consecutive messages in a thread.
+
+| Prop     | Type     | Default | Description                  |
+| -------- | -------- | ------- | ---------------------------- |
+| `@class` | `string` | -       | Additional classes to apply. |

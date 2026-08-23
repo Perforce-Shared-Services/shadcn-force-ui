@@ -1,0 +1,126 @@
+<div class="relative flex flex-col gap-4 md:flex-row">
+  @for (displayedMonth of displayedMonths(); track displayedMonth.getTime(); let mi = $index) {
+    <div class="flex w-full flex-col gap-4">
+      <div class="absolute inset-x-0 top-0 flex w-full items-center justify-between gap-1">
+        @if (mi === 0) {
+          <button
+            uiButton
+            type="button"
+            [variant]="buttonVariant()"
+            class="size-(--cell-size) select-none p-0 motion-reduce:transition-none disabled:bg-transparent disabled:opacity-50"
+            [disabled]="!canGoToPreviousMonth()"
+            (click)="goToPreviousMonth()"
+            aria-label="Previous month"
+          >
+            <span aria-hidden="true" class="rtl:rotate-180 [&_svg]:fill-current" [innerHTML]="previousIcon"></span>
+          </button>
+        } @else {
+          <span class="size-(--cell-size)"></span>
+        }
+        @if (mi === displayedMonths().length - 1) {
+          <button
+            uiButton
+            type="button"
+            [variant]="buttonVariant()"
+            class="size-(--cell-size) select-none p-0 motion-reduce:transition-none disabled:bg-transparent disabled:opacity-50"
+            [disabled]="!canGoToNextMonth()"
+            (click)="goToNextMonth()"
+            aria-label="Next month"
+          >
+            <span aria-hidden="true" class="rtl:rotate-180 [&_svg]:fill-current" [innerHTML]="nextIcon"></span>
+          </button>
+        } @else {
+          <span class="size-(--cell-size)"></span>
+        }
+      </div>
+
+      @if (captionLayout() === 'dropdown') {
+        <div class="flex h-(--cell-size) w-full items-center justify-center gap-1.5 text-sm font-medium">
+          <span class="cn-calendar-dropdown-root relative inline-flex items-center rounded-(--cell-radius)">
+            <select
+              name="calendar-month"
+              class="absolute inset-0 cursor-pointer appearance-none bg-transparent opacity-0"
+              [attr.aria-label]="'Month, ' + monthLabel(displayedMonth)"
+              (change)="onMonthOptionChange($event, displayedMonth)"
+            >
+              @for (monthOption of monthOptions(); track monthOption.value) {
+                <option [value]="monthOption.value" [selected]="monthOption.value === displayedMonth.getMonth()">{{ monthOption.label }}</option>
+              }
+            </select>
+            <span class="pointer-events-none flex items-center gap-1 rounded-(--cell-radius) text-sm [&_svg]:size-3.5 [&_svg]:fill-current [&_svg]:text-muted-foreground">
+              {{ monthOnlyLabel(displayedMonth) }}
+              <span aria-hidden="true" [innerHTML]="dropdownCaret"></span>
+            </span>
+          </span>
+          <span class="cn-calendar-dropdown-root relative inline-flex items-center rounded-(--cell-radius)">
+            <select
+              name="calendar-year"
+              class="absolute inset-0 cursor-pointer appearance-none bg-transparent opacity-0"
+              [attr.aria-label]="'Year, ' + monthLabel(displayedMonth)"
+              (change)="onYearOptionChange($event, displayedMonth)"
+            >
+              @for (yearOption of yearOptions(); track yearOption) {
+                <option [value]="yearOption" [selected]="yearOption === displayedMonth.getFullYear()">{{ yearOption }}</option>
+              }
+            </select>
+            <span class="pointer-events-none flex items-center gap-1 rounded-(--cell-radius) text-sm [&_svg]:size-3.5 [&_svg]:fill-current [&_svg]:text-muted-foreground">
+              {{ displayedMonth.getFullYear() }}
+              <span aria-hidden="true" [innerHTML]="dropdownCaret"></span>
+            </span>
+          </span>
+        </div>
+      } @else {
+        <div class="flex h-(--cell-size) w-full items-center justify-center px-(--cell-size)">
+          <span class="select-none text-sm font-medium">{{ monthLabel(displayedMonth) }}</span>
+        </div>
+      }
+
+      <table role="grid" class="border-collapse">
+        <caption class="sr-only">{{ monthLabel(displayedMonth) }}</caption>
+        <thead>
+          <tr role="row">
+            @if (showWeekNumber()) {
+              <th scope="col" role="columnheader" class="w-(--cell-size) select-none"></th>
+            }
+            @for (weekdayLabel of weekdayLabels(); track weekdayLabel) {
+              <th
+                scope="col"
+                role="columnheader"
+                class="w-(--cell-size) select-none rounded-(--cell-radius) py-1 text-xs font-normal text-muted-foreground"
+              >
+                {{ weekdayLabel }}
+              </th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (week of weeksFor(displayedMonth); track week[0].date.getTime()) {
+            <tr role="row">
+              @if (showWeekNumber()) {
+                <td role="gridcell" class="select-none py-0.5 text-center text-xs text-muted-foreground">
+                  {{ weekNumber(week[0].date) }}
+                </td>
+              }
+              @for (day of week; track dayKeyOf(day.date)) {
+                <td role="gridcell" class="group/day relative aspect-square h-full w-full select-none rounded-(--cell-radius) p-0 py-0.5 text-center">
+                  <button
+                    type="button"
+                    [class]="dayButtonClasses(day)"
+                    [attr.tabindex]="isFocusedDay(day.date) ? 0 : -1"
+                    [attr.aria-selected]="isSelected(day.date) ? 'true' : null"
+                    [attr.aria-hidden]="day.outside && !showOutsideDays() ? 'true' : null"
+                    [attr.data-day-key]="dayKeyOf(day.date)"
+                    [disabled]="isDisabled(day.date) || (day.outside && !showOutsideDays())"
+                    (click)="onDayClick(day)"
+                  >
+                    {{ day.date.getDate() }}
+                  </button>
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

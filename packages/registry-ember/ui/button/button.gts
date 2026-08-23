@@ -3,6 +3,8 @@ import Component from '@glimmer/component';
 
 import { cn } from '@/lib/utils';
 
+import SpinnerIcon from '~icons/ms/progress_activity';
+
 type Variant =
   | 'default'
   | 'destructive'
@@ -21,6 +23,8 @@ interface ButtonSignature {
     asChild?: boolean;
     type?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
+    /** [FORCE-UI] shows a spinner and blocks interaction, for async actions — mirrors the Figma `State=Loading` variant */
+    loading?: boolean;
   };
   Blocks: {
     default: [{ classes: string }?];
@@ -59,6 +63,10 @@ function buttonVariants(
 }
 
 class Button extends Component<ButtonSignature> {
+  get isDisabled(): boolean {
+    return Boolean(this.args.disabled || this.args.loading);
+  }
+
   get classes() {
     return buttonVariants(
       this.args.variant ?? 'default',
@@ -72,14 +80,22 @@ class Button extends Component<ButtonSignature> {
       {{yield (hash classes=this.classes)}}
     {{else}}
       <button
+        aria-busy={{if @loading "true"}}
         class={{this.classes}}
+        data-loading={{if @loading ""}}
         data-size={{if @size @size "default"}}
         data-slot="button"
         data-variant={{if @variant @variant "default"}}
-        disabled={{@disabled}}
+        disabled={{if this.isDisabled "true"}}
         type={{if @type @type "button"}}
         ...attributes
       >
+        {{#if @loading}}
+          {{! [FORCE-UI] loading spinner — mirrors React base/radix Button loading state }}
+          <span aria-hidden="true" class="inline-flex animate-spin" data-slot="button-spinner">
+            <SpinnerIcon />
+          </span>
+        {{/if}}
         {{yield}}
       </button>
     {{/if}}

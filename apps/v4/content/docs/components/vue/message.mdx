@@ -1,0 +1,212 @@
+---
+title: Message
+description: A conversation row that composes an avatar, bubbles, and metadata.
+base: vue
+component: true
+---
+
+<ComponentPreview
+  framework="vue"
+  name="message-demo"
+  previewClassName="h-auto theme-blue"
+/>
+
+The `Message` component lays out a single conversation row. It composes [`Avatar`](/docs/components/vue/avatar), [`Bubble`](/docs/components/vue/bubble), and [`Marker`](/docs/components/vue/marker) into a sender-aligned thread.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-vue/message
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="vue" name="message" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```vue showLineNumbers
+<script setup lang="ts">
+import { Bubble, BubbleContent } from "@/components/ui/bubble"
+import { Message, MessageAvatar, MessageContent } from "@/components/ui/message"
+</script>
+
+<template>
+  <Message align="end">
+    <MessageAvatar />
+    <MessageContent>
+      <Bubble>
+        <BubbleContent>Deploying to prod real quick.</BubbleContent>
+      </Bubble>
+    </MessageContent>
+  </Message>
+</template>
+```
+
+## Composition
+
+Use the following composition to build a message:
+
+```text
+Message
+├── MessageAvatar
+└── MessageContent
+    ├── Bubble
+    ├── MessageHeader
+    └── MessageFooter
+```
+
+Wrap consecutive messages in `MessageGroup`:
+
+```text
+MessageGroup
+├── Message
+└── Message
+```
+
+## Features
+
+- Start and end alignment with automatic layout mirroring
+- Avatar slot pinned to the bottom of the row
+- Header and footer slots for names, timestamps, and actions
+- Composes Bubble, Attachment, and Marker
+- Customizable styling through the `class` prop on every part
+
+## Avatar
+
+`MessageAvatar` renders a rounded slot at the end of the row. Drop an `Avatar` inside it, or leave it empty for an anonymous sender.
+
+<ComponentPreview
+  framework="vue"
+  name="message-avatar"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Group
+
+Wrap consecutive messages in `MessageGroup`.
+
+<ComponentPreview
+  framework="vue"
+  name="message-group"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Header and Footer
+
+`MessageHeader` shows the sender name above a bubble; `MessageFooter` shows timestamps or status below.
+
+<ComponentPreview
+  framework="vue"
+  name="message-header-footer"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Actions
+
+Put icon buttons in `MessageFooter` for copy, retry, or feedback actions.
+
+<ComponentPreview
+  framework="vue"
+  name="message-actions"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Attachment
+
+Compose with [`Attachment`](/docs/components/vue/attachment) inside `MessageContent`.
+
+<ComponentPreview
+  framework="vue"
+  name="message-attachment"
+  previewClassName="h-auto theme-blue"
+/>
+
+## Accessibility
+
+### Label icon-only actions
+
+Action buttons in `MessageFooter` must carry `aria-label` (and ideally `title`) so their purpose is announced:
+
+```vue showLineNumbers
+<Button variant="ghost" size="icon" aria-label="Copy" title="Copy">
+  <CopyIcon />
+</Button>
+```
+
+### Status updates
+
+For typing or streaming indicators, use `Marker` with `role="status"` inside the thread rather than a bare text node, so updates are announced as they appear.
+
+## API Reference
+
+### Message
+
+The root conversation row. Set `data-align` on children for alignment-aware styling.
+
+| Prop    | Type               | Default   | Description                                      |
+| ------- | ------------------ | --------- | ------------------------------------------------ |
+| `align` | `"start" \| "end"` | `"start"` | The side of the row the sender is aligned to.    |
+| `class` | `string`           | -         | Additional classes to apply to the root element. |
+
+### MessageGroup
+
+Groups consecutive messages in a thread.
+
+| Prop    | Type     | Default | Description                                    |
+| ------- | -------- | ------- | ---------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the group root. |
+
+### MessageAvatar
+
+A rounded avatar slot pinned to the bottom of the row.
+
+| Prop    | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the avatar slot. |
+
+### MessageContent
+
+The message body column. Bubbles, headers, footers, and attachments go here.
+
+| Prop    | Type     | Default | Description                                        |
+| ------- | -------- | ------- | -------------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the content column. |
+
+### MessageHeader
+
+Metadata shown above the bubble, e.g. the sender name.
+
+| Prop    | Type     | Default | Description                                |
+| ------- | -------- | ------- | ------------------------------------------ |
+| `class` | `string` | -       | Additional classes to apply to the header. |
+
+### MessageFooter
+
+Metadata shown below the bubble, e.g. timestamps, delivery state, or actions.
+
+| Prop    | Type     | Default | Description                                |
+| ------- | -------- | ------- | ------------------------------------------ |
+| `class` | `string` | -       | Additional classes to apply to the footer. |

@@ -25,7 +25,9 @@ import { cn } from "@/lib/utils"
   hostDirectives: [
     {
       directive: RdxCollapsibleRootDirective,
-      inputs: ["open", "disabled"],
+      // contentId: WCAG 4.1.2 — lets consumers set the panel id so the
+      // trigger's aria-controls resolves (p4one forwards this in every story).
+      inputs: ["open", "disabled", "contentId"],
       outputs: ["openChange", "onOpenChange"],
     },
   ],

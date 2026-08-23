@@ -1,0 +1,99 @@
+---
+title: Switch
+description: A control that allows the user to toggle between checked and not checked.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/switch
+  api: https://radix-ng.com/primitives/switch
+---
+
+<ComponentPreview framework="angular" name="switch-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/switch
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="switch" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Switch } from "@/components/ui/switch"
+```
+
+```html showLineNumbers
+<button uiSwitch [checked]="true"></button>
+```
+
+## Description
+
+Combine the switch with `FieldContent` and `FieldDescription` for labelled helper text.
+
+<ComponentPreview framework="angular" name="switch-description" />
+
+## Choice Card
+
+Wrap each row in a `FieldLabel` so the whole card toggles the switch.
+
+<ComponentPreview framework="angular" name="switch-choice-card" />
+
+## Disabled
+
+Disable the switch inside a field marked `data-disabled`.
+
+<ComponentPreview framework="angular" name="switch-disabled" />
+
+## Invalid
+
+Mark the switch invalid with `data-invalid` and `aria-invalid`.
+
+<ComponentPreview framework="angular" name="switch-invalid" />
+
+## Size
+
+Use the `size` input to render a smaller or default switch.
+
+<ComponentPreview framework="angular" name="switch-sizes" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="switch-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/switch) documentation for more information.

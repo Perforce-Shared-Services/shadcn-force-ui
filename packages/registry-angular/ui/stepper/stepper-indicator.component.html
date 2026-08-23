@@ -1,0 +1,6 @@
+@if (item?.state() === "completed") {
+  <span aria-hidden="true" [innerHTML]="completedIcon"></span>
+  <span class="sr-only">Completed:</span>
+} @else {
+  <ng-content />
+}

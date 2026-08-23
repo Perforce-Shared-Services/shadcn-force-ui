@@ -896,4 +896,143 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    "name": "attachment",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/attachment/index.ts",
+        "type": "registry:ui"
+      },
+{
+        "path": "ui/attachment/attachment.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/attachment",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/attachment-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "bubble",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/bubble/index.ts",
+        "type": "registry:ui"
+      },
+{
+        "path": "ui/bubble/bubble.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/bubble",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/bubble-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "direction",
+    "type": "registry:ui",
+    "dependencies": [
+      "ember-provide-consume-context"
+    ],
+    "files": [
+      {
+        "path": "ui/direction.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/direction",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/direction-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "drawer",
+    "type": "registry:ui",
+    "dependencies": [
+      "ember-modifier",
+      "ember-provide-consume-context"
+    ],
+    "files": [
+      {
+        "path": "ui/drawer.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/drawer",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/drawer-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "marker",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/marker/index.ts",
+        "type": "registry:ui"
+      },
+{
+        "path": "ui/marker/marker.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/marker",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/marker-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "message",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/message/index.ts",
+        "type": "registry:ui"
+      },
+{
+        "path": "ui/message/message.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-demo.gts",
+      },
+    },
+  },
+  {
+    "name": "message-scroller",
+    "type": "registry:ui",
+    "dependencies": [
+      "ember-modifier",
+      "ember-provide-consume-context"
+    ],
+    "files": [
+      {
+        "path": "ui/message-scroller.gts",
+        "type": "registry:ui"
+      }
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message-scroller",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-scroller-demo.gts",
+      },
+    },
+  },
 ]

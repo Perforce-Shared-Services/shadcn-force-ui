@@ -97,6 +97,9 @@
           "zod": "^3.25 || ^4"
         }
       }
+    },
+    "patchedDependencies": {
+      "@swimlane/ngx-charts@25.0.1": "patches/@swimlane__ngx-charts@25.0.1.patch"
     }
   }
 }

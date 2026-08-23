@@ -1,0 +1,191 @@
+---
+title: Dropdown Menu
+description: Displays a menu to the user — such as a set of actions or functions — triggered by a button.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/menu
+  api: https://radix-ng.com/primitives/menu
+---
+
+<ComponentPreview framework="angular" name="dropdown-menu-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/dropdown-menu
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="dropdown-menu" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuRoot,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+```
+
+```html
+<div uiDropdownMenuRoot>
+  <button uiButton variant="outline" uiDropdownMenuTrigger>Open</button>
+  <div uiDropdownMenuContent>
+    <button uiDropdownMenuItem>Profile</button>
+    <button uiDropdownMenuItem>Billing</button>
+  </div>
+</div>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+The React `DropdownMenu` root maps to `<div uiDropdownMenuRoot>` and
+`DropdownMenuPortal` has no Angular equivalent — the content's positioner
+renders in place. Items are native `<button>`s carrying `uiDropdownMenuItem`;
+activation is exposed through `(onSelect)`.
+
+## Composition
+
+Use the following composition to build a `Dropdown Menu`:
+
+```text
+DropdownMenuRoot
+├── DropdownMenuTrigger
+└── DropdownMenuContent
+    ├── DropdownMenuGroup
+    │   ├── DropdownMenuLabel
+    │   ├── DropdownMenuItem
+    │   │   └── DropdownMenuShortcut
+    │   ├── DropdownMenuCheckboxItem
+    │   └── DropdownMenuRadioGroup
+    │       └── DropdownMenuRadioItem
+    └── DropdownMenuSub
+        ├── DropdownMenuSubTrigger
+        └── DropdownMenuSubContent
+```
+
+## Basic
+
+A labelled group of actions with a disabled item at the end.
+
+<ComponentPreview framework="angular" name="dropdown-menu-basic" />
+
+## Submenu
+
+Nest `DropdownMenuSub` inside the content for multi-level menus; sub-triggers
+open their panel on hover or with the arrow keys.
+
+<ComponentPreview framework="angular" name="dropdown-menu-submenu" />
+
+## Shortcuts
+
+Add a `<span uiDropdownMenuShortcut>` inside an item to hint its keyboard
+shortcut. It is aria-hidden — the item's own text remains the accessible name.
+
+<ComponentPreview framework="angular" name="dropdown-menu-shortcuts" />
+
+## Icons
+
+Project any inline SVG as a leading icon; the item styles size and colour it.
+Destructive items tint their icon automatically via `variant="destructive"`.
+
+<ComponentPreview framework="angular" name="dropdown-menu-icons" />
+
+## Checkboxes
+
+Two-way bind each checkbox item with `[(checked)]`. The menu stays open across
+toggles so several options can be changed in one pass.
+
+<ComponentPreview framework="angular" name="dropdown-menu-checkboxes" />
+
+## Checkboxes Icons
+
+Checkbox items accept leading icons like plain items.
+
+<ComponentPreview framework="angular" name="dropdown-menu-checkboxes-icons" />
+
+## Radio Group
+
+`DropdownMenuRadioGroup` tracks one selected `value`; bind it two-way with
+`[(value)]`.
+
+<ComponentPreview framework="angular" name="dropdown-menu-radio-group" />
+
+## Radio Icons
+
+Radio items also accept leading icons, keeping the check indicator in the
+right-hand gutter.
+
+<ComponentPreview framework="angular" name="dropdown-menu-radio-icons" />
+
+## Destructive
+
+Set `variant="destructive"` on items that delete or sign out. Keep them below a
+separator and confirm before executing.
+
+<ComponentPreview framework="angular" name="dropdown-menu-destructive" />
+
+## Avatar
+
+Compose the trigger with `Avatar` inside a ghost icon button for account menus.
+
+<ComponentPreview framework="angular" name="dropdown-menu-avatar" />
+
+## Complex
+
+Groups, checkboxes, radio submenus and nested submenus composed into one menu.
+
+<ComponentPreview framework="angular" name="dropdown-menu-complex" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="dropdown-menu-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng menu](https://radix-ng.com/primitives/menu) documentation for more information.

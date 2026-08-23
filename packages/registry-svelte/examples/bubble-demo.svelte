@@ -1,0 +1,28 @@
+<script lang="ts">
+	import {
+		Bubble,
+		BubbleContent,
+		BubbleGroup,
+		BubbleReactions,
+	} from "$lib/registry/ui/bubble/index.js";
+</script>
+
+<div class="flex w-full max-w-sm flex-col gap-8 py-12">
+	<Bubble align="end">
+		<BubbleContent>Hey there! what's up?</BubbleContent>
+	</Bubble>
+	<BubbleGroup>
+		<Bubble variant="muted">
+			<BubbleContent>Hey! Want to see chat bubbles?</BubbleContent>
+		</Bubble>
+		<Bubble variant="muted">
+			<BubbleContent>
+				I can group messages, switch sides, and keep the whole thread easy
+				to scan.
+			</BubbleContent>
+			<BubbleReactions role="img" aria-label="Reaction: thumbs up">
+				<span>👍</span>
+			</BubbleReactions>
+		</Bubble>
+	</BubbleGroup>
+</div>

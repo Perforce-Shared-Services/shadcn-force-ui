@@ -1,0 +1,201 @@
+---
+title: Questionnaire
+description: A multi-step questionnaire with single-choice, multiple-choice and freeform questions, validation, progress and Previous/Skip/Next/Submit navigation.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="questionnaire-demo" />
+
+The `Questionnaire` component renders a step-by-step form. Each `QuestionnaireItem` is a native `<fieldset>` that self-registers with the root; the root tracks the active item, validates it on Next/Submit, and emits the collected answers once.
+
+<Callout>
+  There is no React questionnaire in the Force UI registry yet — this component
+  is a Force UI original ported from the p4one application build. Its class
+  strings are inlined in the components rather than drawn from
+  `style-force-ui.css` tokens.
+</Callout>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/questionnaire
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="questionnaire" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Questionnaire,
+  QuestionnaireActions,
+  QuestionnaireChoice,
+  QuestionnaireChoices,
+  QuestionnaireError,
+  QuestionnaireItem,
+  QuestionnaireNext,
+  QuestionnairePrevious,
+  QuestionnaireProgress,
+  QuestionnaireSkip,
+  QuestionnaireSubmit,
+  QuestionnaireTitle,
+} from "@/components/ui/questionnaire"
+```
+
+```html showLineNumbers
+<form uiQuestionnaire (submitted)="onSubmit($event)">
+  <span uiQuestionnaireProgress></span>
+  <fieldset uiQuestionnaireItem name="direction" required>
+    <legend uiQuestionnaireTitle>What should we build next?</legend>
+    <div uiQuestionnaireChoices>
+      <label uiQuestionnaireChoice value="delegation">Sub-agent delegation</label>
+      <label uiQuestionnaireChoice value="questions">Question prompts</label>
+    </div>
+    <div uiQuestionnaireError></div>
+  </fieldset>
+  <div uiQuestionnaireActions>
+    <button uiQuestionnairePrevious></button>
+    <button uiQuestionnaireSkip></button>
+    <button uiQuestionnaireNext></button>
+    <button uiQuestionnaireSubmit></button>
+  </div>
+</form>
+```
+
+Each `[uiQuestionnaireItem]` declares its own `name`, `required` and `multiple` inputs and registers itself with the root — there is no separate items array. Give the form an `aria-label` so screen readers can announce what it represents.
+
+## Composition
+
+Use the following composition to build a `Questionnaire`:
+
+```text
+Questionnaire (form[uiQuestionnaire])
+├── QuestionnaireProgress ("Question X of Y", or bars with steps)
+├── QuestionnaireItem (fieldset)
+│   ├── QuestionnaireTitle (legend, required hint for multiple items)
+│   ├── QuestionnaireDescription
+│   ├── QuestionnaireChoices
+│   │   ├── QuestionnaireChoice (+ optional QuestionnaireChoiceDescription)
+│   │   └── QuestionnaireInput (freeform "other" answer)
+│   └── QuestionnaireError (role="alert")
+└── QuestionnaireActions
+    ├── QuestionnairePrevious (hidden on first step)
+    ├── QuestionnaireSkip (hidden while active item is required)
+    ├── QuestionnaireNext (hidden on last step)
+    └── QuestionnaireSubmit (visible on last step only)
+```
+
+## Multiple
+
+Set `multiple` on an item to turn its choices from radios into checkboxes — the answer becomes a `string[]`.
+
+<ComponentPreview framework="angular" name="questionnaire-multiple-choice" previewClassName="h-[420px]" />
+
+## Required Validation
+
+A `required` item blocks Next/Submit until answered; the error surfaces through `QuestionnaireError` with `role="alert"` (WCAG 3.3.1). Click Next to see it.
+
+<ComponentPreview framework="angular" name="questionnaire-required-validation" previewClassName="h-[420px]" />
+
+## Single Question
+
+The simplest shape — one required item, no description, no progress.
+
+<ComponentPreview framework="angular" name="questionnaire-single-question" previewClassName="h-[360px]" />
+
+## Number Shortcuts
+
+With `shortcuts="numbers"` (or `"letters"`), digit/letter keys select a choice in the active item. Keystrokes typed into a freeform `QuestionnaireInput` are never hijacked.
+
+<ComponentPreview framework="angular" name="questionnaire-number-shortcuts" previewClassName="h-[360px]" />
+
+## Steps Progress
+
+Pass `steps` to `QuestionnaireProgress` to render the alternate bar visual instead of the "Question X of Y" counter.
+
+<ComponentPreview framework="angular" name="questionnaire-steps-progress" previewClassName="h-[420px]" />
+
+## Step States
+
+First and last steps side by side — Previous hides on step one, Submit replaces Next on the final step, and Skip stays visible only while the active item is not required.
+
+<ComponentPreview framework="angular" name="questionnaire-gallery" previewClassName="h-[720px]" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="questionnaire-rtl" direction="rtl" />
+
+## API Reference
+
+### Questionnaire
+
+The root container. Attribute selector: `form[uiQuestionnaire]`. Renders as a `novalidate` form that handles submit and keyboard shortcuts.
+
+| Input / Model | Type | Default | Description |
+| --- | --- | --- | --- |
+| `activeItem` | `string \| undefined` | first item | Active item's `name`. Two-way bindable via `[(activeItem)]`. |
+| `values` | `Record<string, QuestionnaireAnswer>` | `{}` | Answers keyed by item `name`. Two-way bindable via `[(values)]`. |
+| `shortcuts` | `"none" \| "letters" \| "numbers"` | `"none"` | Keyboard shortcut mode for selecting choices. |
+
+| Output | Payload | Description |
+| --- | --- | --- |
+| `(submitted)` | `Record<string, QuestionnaireAnswer>` | Emitted once, on a valid Submit from the last item. |
+
+### QuestionnaireItem
+
+One question's scope. Attribute selector: `fieldset[uiQuestionnaireItem]`. Inactive items stay mounted but `hidden` + `inert`; the active fieldset receives focus after each navigation (WCAG 2.4.3).
+
+| Input | Type | Default | Description |
+| --- | --- | --- | --- |
+| `name` | `string` (required) | — | Unique key for the answer and navigation order. |
+| `required` | `boolean` | `false` | Blocks Next/Submit until answered. |
+| `multiple` | `boolean` | `false` | Choices become checkboxes; the answer is `string[]`. |
+
+### QuestionnaireProgress
+
+Attribute selector: `[uiQuestionnaireProgress]`. Renders `role="progressbar"` with `aria-live="polite"`.
+
+| Input | Type | Default | Description |
+| --- | --- | --- | --- |
+| `steps` | `boolean` | `false` | Render the bar visual instead of the text counter. |
+| `ariaLabel` | `string` | `"Questionnaire progress"` | Accessible name for the progressbar. |
+
+### QuestionnaireChoice
+
+One selectable answer card. Attribute selector: `label[uiQuestionnaireChoice]`.
+
+| Input | Type | Default | Description |
+| --- | --- | --- | --- |
+| `value` | `string` (required) | — | Answer value recorded when selected. |
+| `disabled` | `boolean` | `false` | Disables the choice. |
+
+### QuestionnairePrevious / Skip / Next / Submit
+
+Navigation buttons. Attribute selectors: `button[uiQuestionnairePrevious]`, etc. All accept the standard Button `variant` and `size` inputs.

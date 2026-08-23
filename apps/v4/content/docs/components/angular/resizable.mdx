@@ -1,0 +1,136 @@
+---
+title: Resizable
+description: Accessible resizable panel groups and layouts with keyboard support.
+base: angular
+component: true
+---
+
+<ComponentPreview
+  framework="angular"
+  name="resizable-demo"
+  previewClassName="h-80"
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/resizable
+```
+
+</TabsContent>
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="resizable" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+```
+
+```html
+<div uiResizablePanelGroup direction="horizontal">
+  <div uiResizablePanel [defaultSize]="50">One</div>
+  <div uiResizableHandle></div>
+  <div uiResizablePanel [defaultSize]="50">Two</div>
+</div>
+```
+
+Host the parts on native elements — `[uiResizablePanelGroup]` on a container `div`, `[uiResizablePanel]` on each panel element, and `[uiResizableHandle]` on the divider element. The handle renders `role="separator"` with full keyboard support (arrow keys, Home/End, Escape to cancel a drag).
+
+## Composition
+
+Use the following composition to build a `ResizablePanelGroup`:
+
+```text
+ResizablePanelGroup
+├── ResizablePanel
+├── ResizableHandle
+└── ResizablePanel
+```
+
+## Vertical
+
+Use `direction="vertical"` for vertical resizing.
+
+<ComponentPreview framework="angular" name="resizable-vertical" />
+
+## Handle
+
+Use the `withHandle` attribute on `uiResizableHandle` to show a visible grip.
+
+<ComponentPreview framework="angular" name="resizable-handle" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="resizable-rtl"
+  direction="rtl"
+/>
+
+## API Reference
+
+The Angular resizable is hand-rolled — no Angular primitive exists for a
+splitter (behavioural reference:
+[react-resizable-panels](https://github.com/bvaughn/react-resizable-panels/tree/main/packages/react-resizable-panels)).
+Inputs added by Force UI:
+
+### ResizablePanelGroup
+
+Attribute selector: `[uiResizablePanelGroup]`.
+
+| Input       | Type                            | Default        |
+| ----------- | ------------------------------- | -------------- |
+| `direction` | `"horizontal" \| "vertical"`    | `"horizontal"` |
+
+### ResizablePanel
+
+Attribute selector: `[uiResizablePanel]`. Sizes are percentages of the group's main axis; the panel is uncontrolled after mount.
+
+| Input         | Type     | Default |
+| ------------- | -------- | ------- |
+| `defaultSize` | `number` | `50`    |
+| `minSize`     | `number` | `10`    |
+| `maxSize`     | `number` | `100`   |
+
+### ResizableHandle
+
+Attribute selector: `[uiResizableHandle]`. Renders `role="separator"` with drag and keyboard resize; Escape cancels an in-progress drag.
+
+| Input       | Type      | Default          |
+| ----------- | --------- | ---------------- |
+| `withHandle` | `boolean` | `false`         |
+| `ariaLabel`  | `string`  | `"Resize panels"` |

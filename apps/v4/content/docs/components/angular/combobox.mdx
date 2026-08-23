@@ -1,0 +1,286 @@
+---
+title: Combobox
+description: A filterable listbox field with full keyboard support.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="combobox-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/combobox
+```
+
+</TabsContent>
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @angular/cdk
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="combobox" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  Combobox,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxInput,
+  ComboboxItem,
+  ComboboxList,
+} from "@/components/ui/combobox"
+```
+
+```html
+<div uiCombobox [(value)]="framework">
+  <div uiComboboxInput placeholder="Select a framework" />
+  <ng-template uiComboboxContent>
+    <div uiComboboxEmpty>No items found.</div>
+    <div uiComboboxList>
+      @for (item of frameworks; track item) {
+        <div uiComboboxItem [value]="item">{{ item }}</div>
+      }
+    </div>
+  </ng-template>
+</div>
+```
+
+The popup is an anchored, non-modal CDK overlay: DOM focus stays in the input while the listbox is driven by `aria-activedescendant`, so closing with Escape leaves focus on the field. Items are iterated by the caller (`@for`) — the React render-prop `items` API becomes plain template loops.
+
+## Composition
+
+### Simple
+
+A single-line input and a flat list (see [Basic](#basic)).
+
+```text
+Combobox
+├── ComboboxInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        ├── ComboboxItem
+        └── ComboboxItem
+```
+
+### With chips
+
+Multi-select with `multiple`, chips, and a chips input (see [Multiple](#multiple)).
+
+```text
+Combobox
+├── ComboboxChips
+│   ├── ComboboxChip
+│   └── ComboboxChipsInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        └── ComboboxItem
+```
+
+### With groups and collection
+
+Nested items per group using `ComboboxCollection` inside each `ComboboxGroup`, with a separator between groups (see [Groups](#groups)).
+
+```text
+Combobox
+├── ComboboxInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        ├── ComboboxGroup
+        │   ├── ComboboxLabel
+        │   └── ComboboxCollection
+        │       └── ComboboxItem
+        └── ComboboxGroup
+            ├── ComboboxLabel
+            └── ComboboxCollection
+                └── ComboboxItem
+```
+
+## Custom Items
+
+Give object items an explicit `label` (used for display and filtering).
+
+```html
+<div uiComboboxItem [value]="country" [label]="country.label">…</div>
+```
+
+## Multiple Selection
+
+Use `[multiple]="true"` with chips for multi-select behavior. The chips container anchors the popup, so it tracks the box as it grows.
+
+```html
+<div uiCombobox [(value)]="value" [multiple]="true">
+  <div uiComboboxChips>
+    @for (v of value(); track v) {
+      <span uiComboboxChip [value]="v">{{ v }}</span>
+    }
+    <input uiComboboxChipsInput placeholder="Add framework" />
+  </div>
+  <ng-template uiComboboxContent>…</ng-template>
+</div>
+```
+
+## Basic
+
+A simple combobox with a list of frameworks.
+
+<ComponentPreview framework="angular" name="combobox-basic" />
+
+## Multiple
+
+A combobox with multiple selection using `multiple` and `ComboboxChips`.
+
+<ComponentPreview framework="angular" name="combobox-multiple" />
+
+## Clear Button
+
+Use the `showClear` prop to show a clear button.
+
+<ComponentPreview framework="angular" name="combobox-clear" />
+
+## Groups
+
+Use `uiComboboxGroup` and `uiComboboxSeparator` to group items.
+
+<ComponentPreview framework="angular" name="combobox-groups" />
+
+## Custom Items
+
+You can render a custom component inside `uiComboboxItem`.
+
+<ComponentPreview framework="angular" name="combobox-custom" />
+
+## Invalid
+
+Use the `aria-invalid` attribute to make the combobox invalid.
+
+<ComponentPreview framework="angular" name="combobox-invalid" />
+
+## Disabled
+
+Use the `disabled` attribute to disable the combobox.
+
+<ComponentPreview framework="angular" name="combobox-disabled" />
+
+## Auto Highlight
+
+Use the `autoHighlight` prop to automatically highlight the first item on filter.
+
+<ComponentPreview framework="angular" name="combobox-auto-highlight" />
+
+## Popup
+
+You can trigger the combobox from a button. Move the `uiComboboxInput` inside the `uiComboboxContent`.
+
+<ComponentPreview framework="angular" name="combobox-popup" />
+
+## Input Group
+
+You can add an addon to the combobox by projecting an `InputGroupAddon` inside the `uiComboboxInput`.
+
+<ComponentPreview framework="angular" name="combobox-input-group" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="combobox-rtl"
+/>
+
+## API Reference
+
+<Callout>
+There is no upstream Angular combobox primitive — like `command`, the selection/filter store is reimplemented in `ComboboxRootService`. The parts below wrap native elements directly.
+</Callout>
+
+### Combobox
+
+Root container. Provides the selection/filter store to all descendants.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `[(value)]` | `unknown \| unknown[]` | `null` |
+| `[(open)]` | `boolean` | `false` |
+| `selectionMode` | `"none" \| "single" \| "multiple"` | `"single"` |
+| `multiple` | `boolean` | `false` |
+| `disabled` | `boolean` | `false` |
+| `readOnly` | `boolean` | `false` |
+| `loopFocus` | `boolean` | `true` |
+| `openOnInputClick` | `boolean` | `true` |
+| `autoHighlight` | `boolean \| "always"` | `false` |
+| `limit` | `number` | `-1` |
+| `shouldFilter` | `boolean` | `true` |
+
+### ComboboxInput
+
+The search/trigger field, composed from `InputGroup`. Renders its own chevron trigger.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `placeholder` | `string` | `""` |
+| `showTrigger` | `boolean` | `true` |
+| `showClear` | `boolean` | `false` |
+| `disabled` | `boolean` | `false` |
+| `aria-invalid` | `boolean` | `false` |
+| `aria-label` | `string` | — |
+
+### ComboboxContent
+
+Anchored non-modal popup applied to an `<ng-template>`; positions against the input or the chips container.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `side` | `"top" \| "bottom"` | `"bottom"` |
+
+### ComboboxItem
+
+One selectable option row with a trailing check indicator.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `value` | `unknown` | `null` |
+| `label` | `string` | text content |
+| `disabled` | `boolean` | `false` |
+
+### ComboboxChips / ComboboxChip / ComboboxChipsInput
+
+Multi-select chip container (also the popup anchor), one removable chip per selected value, and the inline text input.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `showRemove` (chip) | `boolean` | `true` |
+| `placeholder` (chips input) | `string` | `""` |
+
+### ComboboxGroup / ComboboxLabel
+
+A labelled cluster of items that hides entirely when filtered empty; the label registers itself for `aria-labelledby`.

@@ -1,0 +1,14 @@
+@if (steps()) {
+  @for (filled of segments(); track $index) {
+    <span
+      data-slot="questionnaire-progress-step"
+      [class]="
+        filled
+          ? 'h-1.5 flex-1 rounded-full bg-primary transition-colors motion-reduce:transition-none'
+          : 'h-1.5 flex-1 rounded-full bg-muted transition-colors motion-reduce:transition-none'
+      "
+    ></span>
+  }
+} @else {
+  {{ label() }}
+}

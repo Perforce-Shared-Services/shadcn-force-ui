@@ -1,0 +1,128 @@
+---
+title: Sonner
+description: Toast notifications powered by ngx-sonner.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="sonner-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/sonner
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install ngx-sonner
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="sonner" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+Render the toaster once (e.g. in your app shell), then call `toast()` from anywhere.
+
+```ts
+import { Toaster, toast } from "@/components/ui/sonner"
+```
+
+```html
+<ui-sonner-toaster />
+```
+
+```ts
+import { toast } from "ngx-sonner"
+
+toast("Version saved")
+```
+
+The component is an element selector (`ui-sonner-toaster`) because it is a singleton shell with no host semantics of its own — unlike the attribute-selector parts elsewhere in this registry.
+
+## Success
+
+Renders a checkmark icon in front of the message.
+
+<ComponentPreview framework="angular" name="sonner-success" />
+
+## Error
+
+A 3-part error — what happened, why, and what to do next. The demo enables `richColors` so the toast is tinted with the Force error tokens.
+
+<ComponentPreview framework="angular" name="sonner-error" />
+
+## With Action
+
+A primary action button; clicking it closes the toast and runs the callback.
+
+<ComponentPreview framework="angular" name="sonner-action" />
+
+## With Cancel
+
+Both a cancel (secondary) and an action (primary) button. Toasts auto-dismiss, so keep the choice reversible — use a dialog for "are you sure" prompts instead.
+
+<ComponentPreview framework="angular" name="sonner-cancel" />
+
+## Promise
+
+Starts in a loading state and updates automatically once the promise settles.
+
+<ComponentPreview framework="angular" name="sonner-promise" />
+
+## Types
+
+Fires one toast of every type in sequence for visual review, with `expand` so the stack renders expanded.
+
+<ComponentPreview framework="angular" name="sonner-types" />
+
+## RTL
+
+See [RTL](/docs/rtl) for details. Mount the toaster inside a `dir="rtl"` container; toasts inherit the writing direction.
+
+<ComponentPreview framework="angular" name="sonner-rtl" />
+
+## API Reference
+
+Wraps [`ngx-sonner`](https://github.com/emilkowalski/sonner) (the Angular port of `sonner`). See the upstream documentation for the full `toast()` call API; the props below are what Force UI adds or overrides on `<ui-sonner-toaster />`.
+
+### Toaster
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `theme` | `"light" \| "dark" \| "system"` | `"light"` |
+| `position` | `"top-left" \| "top-center" \| "top-right" \| "bottom-left" \| "bottom-center" \| "bottom-right"` | `"bottom-right"` |
+| `richColors` | `boolean` | `false` |
+| `closeButton` | `boolean` | `true` |
+| `expand` | `boolean` | `false` |
+| `duration` | `number` | `4000` |
+| `visibleToasts` | `number` | `3` |
+| `offset` | `string \| number \| null` | `null` |
+| `invert` | `boolean` | `false` |
+| `style` | `Record<string, string>` | Force token map (merged) |
+| `toastOptions` | `ToastOptions` | Force class map (merged) |

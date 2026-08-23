@@ -77,6 +77,18 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "attachment-demo",
+    title: "Attachment Demo",
+    type: "registry:example",
+    registryDependencies: ["attachment"],
+    files: [
+      {
+        path: "examples/attachment-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "avatar-demo",
     title: "Avatar Demo",
     type: "registry:example",
@@ -239,6 +251,18 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/breadcrumb-separator.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "bubble-demo",
+    title: "Bubble Demo",
+    type: "registry:example",
+    registryDependencies: ["bubble"],
+    files: [
+      {
+        path: "examples/bubble-demo.svelte",
         type: "registry:example",
       },
     ],
@@ -462,6 +486,18 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/button-group-split-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "button-as-child",
+    title: "Button As Child",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/button-as-child.svelte",
         type: "registry:example",
       },
     ],
@@ -1319,6 +1355,18 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/empty-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "empty-icon",
+    title: "Empty Icon",
+    type: "registry:example",
+    registryDependencies: ["empty"],
+    files: [
+      {
+        path: "examples/empty-icon.svelte",
         type: "registry:example",
       },
     ],
@@ -2282,6 +2330,18 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "marker-demo",
+    title: "Marker Demo",
+    type: "registry:example",
+    registryDependencies: ["marker"],
+    files: [
+      {
+        path: "examples/marker-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "menubar-demo",
     title: "Menubar Demo",
     type: "registry:example",
@@ -2289,6 +2349,30 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/menubar-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "message-demo",
+    title: "Message Demo",
+    type: "registry:example",
+    registryDependencies: ["message", "bubble", "avatar"],
+    files: [
+      {
+        path: "examples/message-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "message-scroller-demo",
+    title: "Message Scroller Demo",
+    type: "registry:example",
+    registryDependencies: ["message-scroller", "button", "input"],
+    files: [
+      {
+        path: "examples/message-scroller-demo.svelte",
         type: "registry:example",
       },
     ],
@@ -2453,6 +2537,18 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/resizable-demo.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "resizable-demo-with-handle",
+    title: "Resizable Demo With Handle",
+    type: "registry:example",
+    registryDependencies: ["resizable"],
+    files: [
+      {
+        path: "examples/resizable-demo-with-handle.svelte",
         type: "registry:example",
       },
     ],
@@ -2690,6 +2786,18 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/sonner-types.svelte",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "spinner-basic",
+    title: "Spinner Basic",
+    type: "registry:example",
+    registryDependencies: ["spinner"],
+    files: [
+      {
+        path: "examples/spinner-basic.svelte",
         type: "registry:example",
       },
     ],

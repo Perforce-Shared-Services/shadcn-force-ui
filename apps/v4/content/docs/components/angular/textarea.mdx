@@ -37,6 +37,42 @@ import { Textarea } from "@/components/ui/textarea"
 <textarea uiTextarea placeholder="Write a message…"></textarea>
 ```
 
+## Field
+
+Use `Field`, `FieldLabel`, and `FieldDescription` to create a textarea with a label and description.
+
+<ComponentPreview framework="angular" name="textarea-field" previewClassName="*:max-w-xs" />
+
+## Disabled
+
+Add the native `disabled` attribute to disable the textarea. To style the disabled state, add the `data-disabled` attribute to the `Field`.
+
+<ComponentPreview framework="angular" name="textarea-disabled" previewClassName="*:max-w-xs" />
+
+## Invalid
+
+Add `aria-invalid` to mark the textarea as invalid. To style the invalid state, set `[attr.data-invalid]="true"` on the `Field`.
+
+<ComponentPreview framework="angular" name="textarea-invalid" previewClassName="*:max-w-xs" />
+
+## Button
+
+Pair with `Button` to create a textarea with a submit button.
+
+<ComponentPreview framework="angular" name="textarea-button" previewClassName="*:max-w-xs" />
+
+### Variants
+
+Use the `variant` attribute to change the visual style of the textarea.
+
+<ComponentPreview framework="angular" name="textarea-variants" previewClassName="*:max-w-xs" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="textarea-rtl" direction="rtl" />
+
 ## API Reference
 
 ### TextareaComponent

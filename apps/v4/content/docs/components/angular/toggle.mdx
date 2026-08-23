@@ -1,0 +1,93 @@
+---
+title: Toggle
+description: A two-state button that can be pressed or released.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/toggle
+  api: https://radix-ng.com/primitives/toggle
+---
+
+<ComponentPreview framework="angular" name="toggle-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/toggle
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="toggle" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Toggle } from "@/components/ui/toggle"
+```
+
+```html showLineNumbers
+<button uiToggle aria-label="Toggle italic">Italic</button>
+```
+
+## Outline
+
+Set `variant="outline"` for a bordered toggle.
+
+<ComponentPreview framework="angular" name="toggle-outline" />
+
+## With Text
+
+Toggles can combine an icon with a text label.
+
+<ComponentPreview framework="angular" name="toggle-text" />
+
+## Size
+
+Use the `size` input for small, default or large toggles.
+
+<ComponentPreview framework="angular" name="toggle-sizes" />
+
+## Disabled
+
+Disable the toggle so it cannot be pressed.
+
+<ComponentPreview framework="angular" name="toggle-disabled" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="toggle-rtl" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/toggle) documentation for more information.

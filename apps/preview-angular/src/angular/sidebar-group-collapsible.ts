@@ -1,0 +1,76 @@
+import { Component } from "@angular/core"
+
+import {
+  CollapsibleContent,
+  Collapsible,
+  CollapsibleTrigger,
+} from "@/angular-ui/collapsible"
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroupContent,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarMenuButton,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarProvider,
+} from "@/angular-ui/sidebar"
+
+// apps/v4/examples/base/sidebar-group-collapsible.tsx
+const svg = (d: string) =>
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" aria-hidden="true"><path d="${d}"/></svg>`
+
+const LIFE_BUOY = svg("M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM363-517 217-663q-26 40-41.5 86T160-480q0 54 15.5 100t41.5 86l146-143Z")
+const SEND = svg("M120-160v-240l320-80-320-80v-240l720 320-720 320Z")
+const CHEVRON_DOWN = svg("M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z")
+
+@Component({
+  selector: "preview-sidebar-group-collapsible",
+  standalone: true,
+  imports: [
+    Collapsible, CollapsibleTrigger, CollapsibleContent,
+    SidebarProvider, Sidebar, SidebarContent,
+    SidebarGroup, SidebarGroupLabel, SidebarGroupContent,
+    SidebarMenu, SidebarMenuItem, SidebarMenuButton,
+  ],
+  template: `
+    <div class="flex h-[300px] w-full overflow-hidden rounded-lg border border-border">
+      <div uiSidebarProvider class="w-full">
+        <nav uiSidebar>
+          <div uiSidebarContent>
+            <div uiCollapsible class="group/collapsible contents" [open]="true">
+              <div uiSidebarGroup>
+                <button
+                  uiCollapsibleTrigger
+                  uiSidebarGroupLabel
+                  class="text-sm hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+                >
+                  Help
+                  <span class="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180 [&>svg]:fill-current" [innerHTML]="CHEVRON_DOWN"></span>
+                </button>
+                <div uiCollapsibleContent class="overflow-hidden data-open:animate-collapsible-down data-closed:animate-collapsible-up motion-reduce:animate-none">
+                  <div uiSidebarGroupContent>
+                    <ul uiSidebarMenu>
+                      <li uiSidebarMenuItem>
+                        <button uiSidebarMenuButton><span [innerHTML]="LIFE_BUOY"></span> Support</button>
+                      </li>
+                      <li uiSidebarMenuItem>
+                        <button uiSidebarMenuButton><span [innerHTML]="SEND"></span> Feedback</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  `,
+})
+export default class SidebarGroupCollapsibleDemoComponent {
+  protected readonly LIFE_BUOY = LIFE_BUOY
+  protected readonly SEND = SEND
+  protected readonly CHEVRON_DOWN = CHEVRON_DOWN
+}

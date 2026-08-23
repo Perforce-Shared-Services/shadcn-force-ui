@@ -6,15 +6,9 @@ import { Component } from "@angular/core"
   selector: "preview-switch-demo",
   standalone: true,
   imports: [Switch, Label],
-  template: ` <div class="flex flex-col gap-3">
-    <div class="flex items-center gap-2">
-      <button uiSwitch id="airplane" [checked]="false"></button>
-      <label uiLabel for="airplane">Airplane mode</label>
-    </div>
-    <div class="flex items-center gap-2">
-      <button uiSwitch id="enabled" [checked]="true"></button>
-      <label uiLabel for="enabled">Notifications enabled</label>
-    </div>
+  template: ` <div class="flex items-center space-x-2">
+    <button uiSwitch id="airplane-mode"></button>
+    <label uiLabel for="airplane-mode">Airplane Mode</label>
   </div>`,
 })
 export class SwitchDemoComponent {}

@@ -1,0 +1,84 @@
+---
+title: Direction
+description: Utility for setting the reading direction (LTR/RTL) of a component subtree.
+base: angular
+component: true
+links:
+  doc: https://material.angular.io/cdk/bidi
+  api: https://material.angular.io/cdk/bidi/api
+---
+
+<ComponentPreview framework="angular" name="direction-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/direction
+```
+
+</TabsContent>
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @angular/cdk
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="direction" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import { DirectionProvider } from "@/components/ui/direction"
+```
+
+```html
+<div uiDirectionProvider direction="rtl">
+  ...
+</div>
+```
+
+Apply `[uiDirectionProvider]` as close to the content root as the RTL/LTR boundary actually is. Descendant components that inject `Directionality` (all direction-aware Force UI components) resolve the closest provider, so a nested provider overrides the outer one for its own subtree only.
+
+## LTR
+
+Left-to-right — the default for every locale except RTL scripts.
+
+<ComponentPreview framework="angular" name="direction-ltr" align="start" />
+
+## Gallery
+
+LTR and RTL side by side. Content order and icon order flip; the browser's native bidi algorithm handles text shaping and flexbox handles layout mirroring.
+
+<ComponentPreview framework="angular" name="direction-gallery" align="start" previewClassName="flex-wrap" />
+
+## RTL
+
+Right-to-left — content inside the provider is mirrored.
+
+<ComponentPreview framework="angular" name="direction-rtl" align="start" />
+
+## API Reference
+
+See the [Angular CDK bidi](https://material.angular.io/cdk/bidi/api) documentation — `[uiDirectionProvider]` wraps CDK's `Dir` directive, and `injectDirection()` returns the ambient `Directionality`.

@@ -1,0 +1,168 @@
+---
+title: Marker
+description: Displays an inline status, system note, bordered row, or labeled separator in a conversation.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="marker-demo" previewClassName="h-auto" />
+
+The `Marker` component displays inline conversation markers such as status updates, system notes, bordered rows, and labeled separators. Compose it with [`Message`](/docs/components/angular/message) in a conversation thread.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/marker
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="marker" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Marker, MarkerContent, MarkerIcon } from "@/components/ui/marker"
+```
+
+```html showLineNumbers
+<div uiMarker>
+  <span uiMarkerIcon><svg aria-hidden="true" /></span>
+  <span uiMarkerContent>Explored 4 files</span>
+</div>
+```
+
+Use the attribute selector `[uiMarker]` on a native `<div>`, `<a>`, or `<button>` element. This keeps the host element's native semantics — Angular's idiomatic equivalent of React's `render` composition.
+
+## Composition
+
+Use the following composition to build a marker:
+
+```text
+Marker
+├── MarkerIcon
+└── MarkerContent
+```
+
+## Features
+
+- Inline marker, bordered row, and labeled separator variants
+- Decorative icon slot that is hidden from assistive tech
+- Anchor/button hosts via the attribute selector for link and button markers
+- Pairs with the `shimmer` utility class for streaming status text
+- Customizable styling through the `class` input on every part
+
+## Variants
+
+Use `variant` to switch between an inline marker, bordered row, and labeled separator.
+
+<ComponentPreview framework="angular" name="marker-variants" previewClassName="h-auto" />
+
+| Variant     | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| `default`   | An inline marker for status, notes, and actions.     |
+| `border`    | A default marker with a bottom border under the row. |
+| `separator` | A centered label with divider lines on each side.    |
+
+## Status
+
+Set `role="status"` and include a [`Spinner`](/docs/components/angular/spinner) for streaming or in-progress markers so updates are announced.
+
+<ComponentPreview framework="angular" name="marker-status" previewClassName="h-auto" />
+
+## Shimmer
+
+Add the `shimmer` utility class to `uiMarkerContent` for an animated streaming-text effect. The utility ships with the preview styles — see the shimmer docs for installation.
+
+<ComponentPreview framework="angular" name="marker-shimmer" previewClassName="h-auto" />
+
+## Separator
+
+Use `variant="separator"` for a centered label with divider lines on each side — a date-divider style row.
+
+<ComponentPreview framework="angular" name="marker-separator" previewClassName="h-auto" />
+
+## Border
+
+Use `variant="border"` for a bottom rule under the row — a section-header style row.
+
+<ComponentPreview framework="angular" name="marker-border" previewClassName="h-auto" />
+
+## With Icon
+
+Pair `[uiMarkerIcon]` with `[uiMarkerContent]`. The icon slot is always decorative (`aria-hidden="true"`), so the marker's meaning must be carried by its text content.
+
+<ComponentPreview framework="angular" name="marker-icon" previewClassName="h-auto" />
+
+## Links and Buttons
+
+Host `uiMarker` directly on a native `<a>` or `<button>` to make the whole row clickable — the underline/hover styles are scoped to anchor hosts automatically.
+
+<ComponentPreview framework="angular" name="marker-link-button" previewClassName="h-auto" />
+
+## Accessibility
+
+### Status and Progress
+
+A marker bound to a value that updates on its own (e.g. an auto-refreshing relative timestamp) should be wrapped in `role="status"` so changes are announced. The static primitive has no live-region behavior of its own.
+
+### Decorative Icons
+
+`[uiMarkerIcon]` is always decorative (`aria-hidden`). Never host `uiMarker` on an `<a>`/`<button>` with only an icon and no content — the host would have no accessible name (WCAG 4.1.2). Pair the icon with content, or add an explicit `aria-label` on the host.
+
+## RTL
+
+For right-to-left layouts, see [RTL](/docs/rtl).
+
+<ComponentPreview framework="angular" name="marker-rtl" previewClassName="h-auto" />
+
+## API Reference
+
+Wraps no upstream primitive; all parts below are Force UI originals.
+
+### Marker
+
+Wrapper for the whole row. Host it on any element; its host keeps that element's semantics.
+
+| Prop      | Type                                     | Default     |
+| --------- | ---------------------------------------- | ----------- |
+| `variant` | `"default" \| "separator" \| "border"`   | `"default"` |
+| `class`   | `string \| undefined`                    | —           |
+
+### MarkerIcon
+
+Decorative icon container. Always rendered with `aria-hidden="true"`.
+
+| Prop    | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | —       |
+
+### MarkerContent
+
+Text content of the marker.
+
+| Prop    | Type                  | Default |
+| ------- | --------------------- | ------- |
+| `class` | `string \| undefined` | —       |

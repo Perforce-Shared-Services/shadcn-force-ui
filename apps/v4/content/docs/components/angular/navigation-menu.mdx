@@ -1,0 +1,156 @@
+---
+title: Navigation Menu
+description: A collection of links for navigating websites.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/navigation-menu
+  api: https://radix-ng.com/primitives/navigation-menu
+---
+
+<ComponentPreview framework="angular" name="navigation-menu-demo" previewClassName="h-96" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/navigation-menu
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="navigation-menu" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuContentAnchor,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+```
+
+```html showLineNumbers
+<div uiNavigationMenu>
+  <ul uiNavigationMenuList>
+    <li uiNavigationMenuItem value="item-one">
+      <button uiNavigationMenuTrigger>Trigger</button>
+      <ng-template uiNavigationMenuContent>
+        <div uiNavigationMenuContent>
+          <a uiNavigationMenuLink href="/">Link</a>
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+  <div uiNavigationMenuViewport></div>
+</div>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+The content panel is written as **two tags**: the behavioral anchor sits on a
+real `<ng-template>` (radix-ng registers the panel with the shared viewport via
+its TemplateRef), and the styled panel is the `<div>` inside it. The viewport
+is required — radix-ng v1.x has no inline-render fallback for
+`viewport={false}`, so content only appears when a `[uiNavigationMenuViewport]`
+is present.
+
+## Composition
+
+Use the following composition to build a `NavigationMenu`:
+
+```text
+NavigationMenu
+├── NavigationMenuList
+│   ├── NavigationMenuItem (value)
+│   │   ├── NavigationMenuTrigger
+│   │   └── NavigationMenuContentAnchor (ng-template)
+│   │       └── NavigationMenuContent
+│   │           └── NavigationMenuLink …links
+│   ├── NavigationMenuLink (top-level link, styled via navigationMenuTriggerStyle())
+│   └── …items
+└── NavigationMenuViewport (required, exactly once)
+```
+
+## Link Component
+
+<Callout>
+  React's example composes a router link via the `render` prop. In Angular the
+  host element is already the link — apply `navigationMenuTriggerStyle()` to a
+  plain `<a uiNavigationMenuLink>` to style it like a trigger.
+</Callout>
+
+```ts showLineNumbers
+import {
+  NavigationMenuItem,
+  NavigationMenuLink,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+```
+
+```html showLineNumbers
+<li uiNavigationMenuItem value="docs">
+  <a uiNavigationMenuLink href="/docs" [class]="triggerStyle">Documentation</a>
+</li>
+```
+
+```ts showLineNumbers
+protected readonly triggerStyle = navigationMenuTriggerStyle()
+```
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="navigation-menu-rtl" direction="rtl" previewClassName="h-96" />
+
+## API Reference
+
+See the [radix-ng navigation-menu](https://radix-ng.com/primitives/navigation-menu) documentation.
+
+Known Angular divergences from the React registry:
+
+- **No `NavigationMenuIndicator`.** radix-ng v1.x dropped the indicator
+  primitive entirely; the caret has no Angular implementation. The React base
+  examples never render one either, so example parity is unaffected. The
+  trigger's open-state fill (`data-open:bg-muted/50`) remains the visual cue.
+- **Entrance/exit motion is fade+zoom, not directional slide.** radix-ng puts
+  the animation-driving attributes on an internal viewport wrapper that the
+  port cannot style; slide-direction classes would be dead weight.
+- The `viewport` input exists on `[uiNavigationMenu]` for registry parity but
+  has no working code path behind it — always compose a
+  `[uiNavigationMenuViewport]`.

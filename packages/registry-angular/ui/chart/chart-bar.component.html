@@ -1,0 +1,154 @@
+<div uiChartContainer [config]="effectiveConfig()" [class]="plotClasses()">
+  @if (isMultiSeries()) {
+    @if (stacked()) {
+      @if (orientation() === 'horizontal') {
+        <ngx-charts-bar-horizontal-stacked
+          [results]="ngxGroupedResults()"
+          [xAxis]="showYAxis()"
+          [yAxis]="showXAxis()"
+          [showGridLines]="showGrid()"
+          [legend]="false"
+          [tooltipDisabled]="!tooltip()"
+          [customColors]="customColorsFn()"
+          [roundEdges]="true"
+          [trimYAxisTicks]="true"
+        >
+          <ng-template #tooltipTemplate let-model="model">
+            <div
+              uiChartTooltipContent
+              [config]="effectiveConfig()"
+              [active]="true"
+              [item]="toTooltipItem(model)"
+              [label]="tooltipCategoryLabel(model)"
+              indicator="dashed"
+            ></div>
+          </ng-template>
+        </ngx-charts-bar-horizontal-stacked>
+      } @else {
+        <ngx-charts-bar-vertical-stacked
+          [results]="ngxGroupedResults()"
+          [xAxis]="showXAxis()"
+          [yAxis]="showYAxis()"
+          [showGridLines]="showGrid()"
+          [legend]="false"
+          [tooltipDisabled]="!tooltip()"
+          [customColors]="customColorsFn()"
+          [roundEdges]="true"
+          [trimXAxisTicks]="true"
+        >
+          <ng-template #tooltipTemplate let-model="model">
+            <div
+              uiChartTooltipContent
+              [config]="effectiveConfig()"
+              [active]="true"
+              [item]="toTooltipItem(model)"
+              [label]="tooltipCategoryLabel(model)"
+              indicator="dashed"
+            ></div>
+          </ng-template>
+        </ngx-charts-bar-vertical-stacked>
+      }
+    } @else {
+      @if (orientation() === 'horizontal') {
+        <ngx-charts-bar-horizontal-2d
+          [results]="ngxGroupedResults()"
+          [xAxis]="showYAxis()"
+          [yAxis]="showXAxis()"
+          [showGridLines]="showGrid()"
+          [legend]="false"
+          [tooltipDisabled]="!tooltip()"
+          [customColors]="customColorsFn()"
+          [roundEdges]="true"
+          [trimYAxisTicks]="true"
+        >
+          <ng-template #tooltipTemplate let-model="model">
+            <div
+              uiChartTooltipContent
+              [config]="effectiveConfig()"
+              [active]="true"
+              [item]="toTooltipItem(model)"
+              [label]="tooltipCategoryLabel(model)"
+              indicator="dashed"
+            ></div>
+          </ng-template>
+        </ngx-charts-bar-horizontal-2d>
+      } @else {
+        <ngx-charts-bar-vertical-2d
+          [results]="ngxGroupedResults()"
+          [xAxis]="showXAxis()"
+          [yAxis]="showYAxis()"
+          [showGridLines]="showGrid()"
+          [legend]="false"
+          [tooltipDisabled]="!tooltip()"
+          [customColors]="customColorsFn()"
+          [roundEdges]="true"
+          [trimXAxisTicks]="true"
+        >
+          <ng-template #tooltipTemplate let-model="model">
+            <div
+              uiChartTooltipContent
+              [config]="effectiveConfig()"
+              [active]="true"
+              [item]="toTooltipItem(model)"
+              [label]="tooltipCategoryLabel(model)"
+              indicator="dashed"
+            ></div>
+          </ng-template>
+        </ngx-charts-bar-vertical-2d>
+      }
+    }
+  } @else {
+    @if (orientation() === 'horizontal') {
+      <ngx-charts-bar-horizontal
+        [results]="ngxSingleResults()"
+        [xAxis]="showYAxis()"
+        [yAxis]="showXAxis()"
+        [showGridLines]="showGrid()"
+        [legend]="false"
+        [tooltipDisabled]="!tooltip()"
+        [customColors]="customColorsFn()"
+        [roundEdges]="true"
+        [trimYAxisTicks]="true"
+      >
+        <ng-template #tooltipTemplate let-model="model">
+          <div
+            uiChartTooltipContent
+            [config]="effectiveConfig()"
+            [active]="true"
+            [item]="toTooltipItem(model)"
+            [label]="tooltipCategoryLabel(model)"
+            [hideName]="true"
+            indicator="dashed"
+          ></div>
+        </ng-template>
+      </ngx-charts-bar-horizontal>
+    } @else {
+      <ngx-charts-bar-vertical
+        [results]="ngxSingleResults()"
+        [xAxis]="showXAxis()"
+        [yAxis]="showYAxis()"
+        [showGridLines]="showGrid()"
+        [legend]="false"
+        [tooltipDisabled]="!tooltip()"
+        [customColors]="customColorsFn()"
+        [roundEdges]="true"
+        [trimXAxisTicks]="true"
+      >
+        <ng-template #tooltipTemplate let-model="model">
+          <div
+            uiChartTooltipContent
+            [config]="effectiveConfig()"
+            [active]="true"
+            [item]="toTooltipItem(model)"
+            [label]="tooltipCategoryLabel(model)"
+            [hideName]="true"
+            indicator="dashed"
+          ></div>
+        </ng-template>
+      </ngx-charts-bar-vertical>
+    }
+  }
+</div>
+@if (legend()) {
+  <div uiChartLegendContent [config]="effectiveConfig()" [keys]="legendKeys()"></div>
+}

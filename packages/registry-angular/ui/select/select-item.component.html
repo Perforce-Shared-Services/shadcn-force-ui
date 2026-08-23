@@ -1,0 +1,14 @@
+<span
+  data-slot="select-item-indicator"
+  aria-hidden="true"
+  class="cn-select-item-indicator"
+>
+  <span
+    uiSelectItemIndicator
+    class="flex items-center justify-center text-primary [&_svg]:fill-current [&_svg]:shrink-0"
+    [innerHTML]="indicatorIcon"
+  ></span>
+</span>
+<span uiSelectItemText data-slot="select-item-text" class="cn-select-item-text">
+  <ng-content />
+</span>

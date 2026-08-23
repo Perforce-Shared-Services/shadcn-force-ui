@@ -1,0 +1,171 @@
+---
+title: Attachment
+description: Displays file and image attachments with states, sizes, and actions.
+base: svelte
+component: true
+---
+
+<ComponentPreview framework="svelte" name="attachment-demo" />
+
+The `Attachment` component displays file cards for uploads, downloads, and processing states. It works well inside [`Message`](/docs/components/svelte/message) content or standalone in forms.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/attachment
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="svelte" name="attachment" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```svelte
+<script lang="ts">
+  import * as Attachment from "@/svelte-ui/attachment/index.js";
+</script>
+```
+
+```svelte
+<Attachment.Root>
+  <Attachment.Media><FileTextIcon /></Attachment.Media>
+  <Attachment.Content>
+    <Attachment.Title>sales-dashboard.pdf</Attachment.Title>
+    <Attachment.Description>PDF · 2.4 MB</Attachment.Description>
+  </Attachment.Content>
+  <Attachment.Actions>
+    <Attachment.Action aria-label="Download">
+      <DownloadIcon />
+    </Attachment.Action>
+  </Attachment.Actions>
+</Attachment.Root>
+```
+
+## Composition
+
+Use the following composition to build an attachment:
+
+```text
+Attachment
+├── Attachment.Media
+├── Attachment.Content
+│   ├── Attachment.Title
+│   └── Attachment.Description
+└── Attachment.Actions
+    └── Attachment.Action
+```
+
+## Examples
+
+### Group
+
+Use `Attachment.Group` for horizontally scrolling collections.
+
+<ComponentPreview framework="svelte" name="attachment-group" />
+
+### Image
+
+Use `variant="image"` on `Attachment.Media` to render image thumbnails.
+
+<ComponentPreview framework="svelte" name="attachment-image" />
+
+### Sizes
+
+Three sizes are available via the `size` prop.
+
+<ComponentPreview framework="svelte" name="attachment-sizes" />
+
+### States
+
+Five states are available via the `state` prop.
+
+<ComponentPreview framework="svelte" name="attachment-states" />
+
+### Trigger
+
+Overlay `Attachment.Trigger` to make the whole card clickable while actions stay independently clickable above it.
+
+<ComponentPreview framework="svelte" name="attachment-trigger" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+## API Reference
+
+### Attachment
+
+The root attachment card.
+
+| Prop          | Type                                                         | Default        |
+| ------------- | ------------------------------------------------------------ | -------------- |
+| `state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`       |
+| `size`        | `"default" \| "sm" \| "xs"`                                  | `"default"`    |
+| `orientation` | `"horizontal" \| "vertical"`                                 | `"horizontal"` |
+| `class`       | `string`                                                     | -              |
+
+### Attachment.Media
+
+The leading media slot (icon or image).
+
+| Prop      | Type                | Default  |
+| --------- | ------------------- | -------- |
+| `variant` | `"icon" \| "image"` | `"icon"` |
+| `class`   | `string`            | -        |
+
+### Attachment.Content / Title / Description
+
+Text column, title line (shimmers while uploading/processing), and meta line.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### Attachment.Actions / Action
+
+Action container and a pre-styled ghost icon button (`size="icon-xs"` by default).
+
+| Prop      | Type           | Default     |
+| --------- | -------------- | ----------- |
+| `variant` | Button variant | `"ghost"`   |
+| `size`    | Button size    | `"icon-xs"` |
+| `class`   | `string`       | -           |
+
+### Attachment.Group
+
+Horizontally scrollable snap group of attachments.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### Attachment.Trigger
+
+Absolute overlay covering the card for click-through behavior.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |

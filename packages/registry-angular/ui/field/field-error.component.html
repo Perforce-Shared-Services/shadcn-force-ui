@@ -1,0 +1,12 @@
+@if (showErrors()) {
+  @if (errorMessages().length === 1) {
+    {{ errorMessages()[0] }}
+  } @else {
+    <ul class="ml-4 flex list-disc flex-col gap-1">
+      @for (message of errorMessages(); track message) {
+        <li>{{ message }}</li>
+      }
+    </ul>
+  }
+}
+<span #content [hidden]="showErrors()"><ng-content /></span>

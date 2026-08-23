@@ -1,19 +1,16 @@
-import { Button } from "@/angular-ui/button"
-import { Kbd, KbdGroup } from "@/angular-ui/kbd"
+import { Kbd } from "@/angular-ui/kbd"
 import { Component } from "@angular/core"
 
+// apps/v4/examples/base/kbd-primary.tsx
 @Component({
   selector: "preview-kbd-primary",
   standalone: true,
-  imports: [Button, Kbd, KbdGroup],
+  imports: [Kbd],
   template: `<div class="flex items-center gap-4">
-    <kbd uiKbd variant="default">⌘K</kbd
-    ><button uiButton>
-      Open palette<span uiKbdGroup data-icon="inline-end"
-        ><kbd uiKbd variant="primary">⌘</kbd
-        ><kbd uiKbd variant="primary">K</kbd></span
-      >
-    </button>
+    <kbd uiKbd>⌘K</kbd>
+    <div class="rounded-md bg-primary px-3 py-1.5">
+      <kbd uiKbd variant="primary">⌘K</kbd>
+    </div>
   </div>`,
 })
 export class KbdPrimaryComponent {}

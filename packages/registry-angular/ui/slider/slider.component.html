@@ -1,0 +1,42 @@
+<div
+  rdxSliderRoot
+  data-slot="slider"
+  [class]="wrapperClasses()"
+  [min]="min()"
+  [max]="max()"
+  [step]="step()"
+  [orientation]="orientation()"
+  [disabled]="disabled()"
+  [defaultValue]="defaultValue()"
+  [dir]="dirInput()"
+  [(value)]="value"
+  (onValueCommitted)="onValueCommit.emit($event)"
+>
+  <div
+    rdxSliderControl
+    data-slot="slider-control"
+    [class]="controlClasses()"
+  >
+    <div
+      rdxSliderTrack
+      data-slot="slider-track"
+      class="cn-slider-track relative grow overflow-hidden"
+    >
+      <div
+        rdxSliderIndicator
+        data-slot="slider-range"
+        class="cn-slider-range"
+      ></div>
+    </div>
+    @for (index of thumbIndices(); track index) {
+      <div
+        rdxSliderThumb
+        data-slot="slider-thumb"
+        class="cn-slider-thumb block shrink-0 select-none disabled:pointer-events-none disabled:opacity-50"
+        [index]="index"
+        [attr.aria-label]="ariaLabel() || null"
+        [attr.aria-labelledby]="ariaLabelledby() || null"
+      ></div>
+    }
+  </div>
+</div>

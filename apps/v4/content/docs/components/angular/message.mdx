@@ -1,0 +1,228 @@
+---
+title: Message
+description: Displays a message in a conversation, with optional avatar, header, footer, and alignment.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="message-demo" />
+
+The `Message` component lays out a single message in a conversation. It handles the avatar, alignment, header, and footer around the message surface.
+
+For AI apps, you can render reasoning steps, tool calls and assistant messages using the `Message` component.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/message
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="message" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Message,
+  MessageAvatar,
+  MessageContent,
+} from "@/components/ui/message"
+```
+
+```html showLineNumbers
+<div uiMessage>
+  <div uiMessageAvatar>
+    <span uiAvatar>
+      <img uiAvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+      <span uiAvatarFallback>CN</span>
+    </span>
+  </div>
+  <div uiMessageContent>
+    <div uiBubble>
+      <div uiBubbleContent>How can I help you today?</div>
+    </div>
+  </div>
+</div>
+```
+
+Use the attribute selectors (`[uiMessage]`, `[uiMessageAvatar]`, …) on native elements. This keeps the host element's native semantics — Angular's idiomatic equivalent of React's `asChild`.
+
+**Note:** `Message` owns the row layout — avatar, alignment, header, and footer. Render the visible message surface inside it with [`Bubble`](/docs/components/angular/bubble). For the scroll container around a conversation, use [`MessageScroller`](/docs/components/angular/message-scroller).
+
+## Composition
+
+Use the following composition to build a message:
+
+```text
+Message
+├── MessageAvatar
+└── MessageContent
+    ├── MessageHeader
+    ├── Bubble
+    └── MessageFooter
+```
+
+Use `MessageGroup` to stack consecutive messages from the same sender:
+
+```text
+MessageGroup
+├── Message
+└── Message
+```
+
+## Avatar
+
+Use `MessageAvatar` to render an avatar next to the message. Set `align="end"` on the message to align the avatar to the end of the message.
+
+<ComponentPreview framework="angular" name="message-avatar" />
+
+| align   | Description                                         |
+| ------- | --------------------------------------------------- |
+| `start` | Align the message to the start of the conversation. |
+| `end`   | Align the message to the end of the conversation.   |
+
+## Group
+
+Use `MessageGroup` to stack consecutive messages from the same sender. Render an empty `MessageAvatar` on the earlier messages to keep them aligned with the avatar on the last one.
+
+<ComponentPreview framework="angular" name="message-group" />
+
+## Header and Footer
+
+Use `MessageHeader` for a sender name and `MessageFooter` for metadata such as a delivery or read status.
+
+<ComponentPreview framework="angular" name="message-header-footer" />
+
+## Actions
+
+Place message-level actions in `MessageFooter`, such as copy, retry, or feedback buttons.
+
+<ComponentPreview framework="angular" name="message-actions" />
+
+## Attachment
+
+Compose `MessageFooter` with file attachments rendered as bordered chips.
+
+<ComponentPreview framework="angular" name="message-attachment" />
+
+## Markdown
+
+<Callout>
+  The React example renders assistant text through a `Markdown` component; no
+  Angular markdown renderer ships with the preview app, so the same content is
+  rendered as equivalent static markup (ordered list, bold, inline code).
+</Callout>
+
+<ComponentPreview framework="angular" name="message-markdown" />
+
+## Accessibility
+
+`Message` is a presentational layout wrapper. Accessibility comes from the content you place inside it.
+
+### Label icon-only actions
+
+Action buttons in `MessageFooter` are usually icon-only, so give each one an `aria-label`.
+
+```html showLineNumbers
+<div uiMessageFooter>
+  <button uiButton variant="ghost" size="icon" aria-label="Copy">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+      <path d="…" />
+    </svg>
+  </button>
+</div>
+```
+
+### Status updates
+
+For in-progress messages, use a [`Marker`](/docs/components/angular/marker) with `role="status"` so assistive tech announces the update as it appears.
+
+```html showLineNumbers
+<div uiMessage>
+  <div uiMarker role="status">
+    <div uiMarkerContent>Checking the logs...</div>
+  </div>
+</div>
+```
+
+## API Reference
+
+### Message
+
+The message row wrapper.
+
+| Input       | Type               | Default   | Description                                       |
+| ----------- | ------------------ | --------- | ------------------------------------------------- |
+| `align`     | `"start" \| "end"` | `"start"` | The alignment of the message in the conversation. |
+| `class`     | `string`           | -         | Additional classes to apply to the row.           |
+
+### MessageGroup
+
+Groups consecutive messages from the same sender.
+
+| Input   | Type     | Default | Description                                    |
+| ------- | -------- | ------- | ---------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the group root. |
+
+### MessageAvatar
+
+The avatar slot, aligned to the bottom of the message. When the message has a `MessageFooter`, the avatar shifts up to stay aligned with the message surface instead of the footer.
+
+| Input   | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the avatar slot. |
+
+### MessageContent
+
+Wraps the header, message surface, and footer.
+
+| Input   | Type     | Default | Description                                      |
+| ------- | -------- | ------- | ------------------------------------------------ |
+| `class` | `string` | -       | Additional classes to apply to the content slot. |
+
+### MessageHeader
+
+Displays content above the message, such as a sender name. Stays aligned to the start regardless of `align`.
+
+| Input   | Type     | Default | Description                                |
+| ------- | -------- | ------- | ------------------------------------------ |
+| `class` | `string` | -       | Additional classes to apply to the header. |
+
+### MessageFooter
+
+Displays content below the message, such as status or actions. Aligns to the message side.
+
+| Input     | Type                  | Default | Description                                |
+| --------- | --------------------- | ------- | ------------------------------------------ |
+| `variant` | `"text" \| "action"` | `text`  | Adjusts avatar offset for the footer type. |
+| `class`   | `string`              | -       | Additional classes to apply to the footer. |

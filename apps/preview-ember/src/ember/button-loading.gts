@@ -1,9 +1,10 @@
 import { Button } from '@/ember-ui/button';
-import { Spinner } from '@/ember-ui/spinner';
 
 <template>
-  <Button @disabled={{true}} @size="sm" @variant="outline">
-    <Spinner />
-    Submit
-  </Button>
+  <div class="flex flex-col items-center gap-4">
+    {{! [FORCE-UI] native @loading prop — spinner + aria-busy + disabled come for free }}
+    <Button @loading={{true}} @size="sm">Loading...</Button>
+    <Button @loading={{true}} @size="sm" @variant="outline">Please wait</Button>
+    <Button @loading={{true}} @size="sm" @variant="secondary">Processing</Button>
+  </div>
 </template>

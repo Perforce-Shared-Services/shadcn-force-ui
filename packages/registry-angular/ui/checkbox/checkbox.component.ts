@@ -3,6 +3,7 @@ import {
   Component,
   computed,
   inject,
+  OnInit,
 } from "@angular/core"
 import { DomSanitizer, type SafeHtml } from "@angular/platform-browser"
 import {
@@ -11,6 +12,7 @@ import {
   RdxCheckboxIndicatorDirective,
   RdxCheckboxRootDirective,
 } from "@radix-ng/primitives/checkbox"
+import { RdxControlValueAccessor } from "@radix-ng/primitives/core"
 
 import { cn } from "@/lib/utils"
 
@@ -37,7 +39,7 @@ const INDETERMINATE_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -9
   hostDirectives: [
     {
       directive: RdxCheckboxRootDirective,
-      inputs: ["checked", "value", "disabled", "required", "name"],
+      inputs: ["checked", "value", "disabled", "required", "name", "readonly", "form"],
       outputs: ["checkedChange", "onCheckedChange"],
     },
     RdxCheckboxButtonDirective,
@@ -47,9 +49,25 @@ const INDETERMINATE_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -9
     "[class]": "classes()",
   },
 })
-export class CheckboxComponent {
+export class CheckboxComponent implements OnInit {
   private readonly ctx = injectCheckboxRootContext()
+  private readonly cva = inject(RdxControlValueAccessor)
   private readonly sanitizer = inject(DomSanitizer)
+
+  /**
+   * Guarantee `aria-checked` is always present (WCAG 4.1.2 — `role="checkbox"`
+   * requires it). radix-ng v1.x models `checked` with a `false` default so the
+   * attribute is normally rendered even without a `[checked]` binding; the
+   * seed below is defence-in-depth for any path where the CVA value is still
+   * nullish at first render (p4one needed this unconditionally on v0.50.0).
+   * A real `[checked]` binding leaves a non-null value before `ngOnInit`, so
+   * it's never clobbered.
+   */
+  ngOnInit(): void {
+    if (this.ctx.checked() == null) {
+      this.cva.writeValue(false)
+    }
+  }
 
   protected readonly indicatorIcon = computed<SafeHtml>(() => {
     const state = this.ctx.state()
@@ -59,7 +77,9 @@ export class CheckboxComponent {
 
   protected readonly classes = computed(() =>
     cn(
-      "cn-checkbox peer relative flex shrink-0 cursor-pointer items-center justify-center rounded-[4px] border transition-colors motion-reduce:transition-none outline-none focus-visible:ring-3 aria-invalid:ring-3 disabled:cursor-not-allowed disabled:opacity-50",
+      // Hit-area expander (WCAG 2.5.5): the pseudo-element extends the
+      // clickable region beyond the visual box; `relative` anchors it.
+      "cn-checkbox peer relative after:absolute after:-inset-x-3 after:-inset-y-2 after:content-[''] flex shrink-0 cursor-pointer items-center justify-center rounded-[4px] border transition-colors motion-reduce:transition-none outline-none focus-visible:ring-3 aria-invalid:ring-3 disabled:cursor-not-allowed disabled:opacity-50",
     )
   )
 }

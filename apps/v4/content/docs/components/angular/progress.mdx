@@ -39,18 +39,42 @@ import { Progress } from "@/components/ui/progress"
 
 Always supply `aria-label` or `aria-labelledby` — the component cannot derive an accessible name from context. Pass `[value]="null"` for an indeterminate (pulsing) state.
 
-## Examples
+## Indeterminate
 
-### Indeterminate
+Pass `[value]="null"` for an indeterminate (pulsing) state.
 
 <ComponentPreview framework="angular" name="progress-indeterminate" />
+
+## Label
+
+<Callout>
+  The Angular progress is a single-part bar — the React `ProgressLabel` /
+  `ProgressValue` parts don't exist, so the label and percentage render in a
+  header row around the bar. The rendered result matches the React example.
+</Callout>
+
+Render a label and the current value above the bar.
+
+<ComponentPreview framework="angular" name="progress-label" />
+
+## Controlled
+
+Bind `value` to a signal and drive it from a slider.
+
+<ComponentPreview framework="angular" name="progress-controlled" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="progress-rtl" />
 
 ## API Reference
 
 ### ProgressComponent
 
-| Input   | Type                      | Default |
-| ------- | ------------------------- | ------- |
-| `value` | `number \| null`          | –       |
-| `max`   | `number`                  | `100`   |
-| `class` | `string`                  | –       |
+| Input   | Type             | Default |
+| ------- | ---------------- | ------- |
+| `value` | `number \| null` | –       |
+| `max`   | `number`         | `100`   |
+| `class` | `string`         | –       |

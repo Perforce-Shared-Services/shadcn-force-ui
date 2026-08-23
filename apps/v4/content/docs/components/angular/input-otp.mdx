@@ -1,0 +1,160 @@
+---
+title: Input OTP
+description: Accessible one-time password component with copy-paste functionality.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="input-otp-demo" />
+
+## About
+
+Input OTP follows the API of the React [input-otp](https://github.com/guilherme_rodz/input-otp) component, implemented natively for Angular — no third-party OTP package required.
+
+<Callout>
+  The Angular implementation stretches one real `<input>` over the full slot
+  row instead of pixel-aligning the caret under each slot. The public API,
+  keyboard/paste/mobile IME behaviour, and accessibility contract are the
+  same.
+</Callout>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/input-otp
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="input-otp" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from "@/components/ui/input-otp"
+```
+
+```html showLineNumbers
+<div uiInputOtp [maxLength]="6">
+  <div uiInputOtpGroup>
+    <div uiInputOtpSlot [index]="0"></div>
+    <div uiInputOtpSlot [index]="1"></div>
+    <div uiInputOtpSlot [index]="2"></div>
+  </div>
+  <div uiInputOtpSeparator></div>
+  <div uiInputOtpGroup>
+    <div uiInputOtpSlot [index]="3"></div>
+    <div uiInputOtpSlot [index]="4"></div>
+    <div uiInputOtpSlot [index]="5"></div>
+  </div>
+</div>
+```
+
+## Composition
+
+- `InputOTP` — the root container. Renders one real, invisible `<input>` stretched over the slot row; hosts the groups, slots, and separators.
+  - `InputOTPGroup` — a visual cluster of slots sharing a rounded frame.
+    - `InputOTPSlot` — one character cell; purely decorative, reacts to shared state.
+  - `InputOTPSeparator` — decorative divider between groups.
+
+## Pattern
+
+Use the `pattern` prop with the exported regex sources to restrict accepted characters.
+
+<ComponentPreview framework="angular" name="input-otp-pattern" />
+
+## Separator
+
+Add an `InputOTPSeparator` between groups to visually divide the code.
+
+<ComponentPreview framework="angular" name="input-otp-separator" />
+
+## Disabled
+
+Set `disabled` on the root to disable the whole input at once.
+
+<ComponentPreview framework="angular" name="input-otp-disabled" />
+
+## Controlled
+
+Bind `[(value)]` to read and control the entered code.
+
+<ComponentPreview framework="angular" name="input-otp-controlled" />
+
+## Invalid
+
+Pass the plain `aria-invalid` attribute on individual slots to flag them as invalid.
+
+<ComponentPreview framework="angular" name="input-otp-invalid" />
+
+## Four Digits
+
+Shorter codes work by lowering `maxLength`.
+
+<ComponentPreview framework="angular" name="input-otp-four-digits" />
+
+## Alphanumeric
+
+Combine `REGEXP_ONLY_DIGITS_AND_CHARS` with separators for alphanumeric codes.
+
+<ComponentPreview framework="angular" name="input-otp-alphanumeric" />
+
+## Form
+
+Composed with Card and Field for a full verification form.
+
+<ComponentPreview
+  framework="angular"
+  name="input-otp-form"
+  previewClassName="h-[30rem]"
+/>
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview
+  framework="angular"
+  name="input-otp-rtl"
+  direction="rtl"
+/>
+
+## API Reference
+
+The root forwards `id`, `name`, `required`, `pattern`, `disabled`, `aria-label`, `aria-invalid`, and `aria-describedby` to the real `<input>` (not the container), matching the upstream package's prop routing — pair a `<label for>` with `id` the same way you would for Input.
+
+| Part                 | Selector                  | Key inputs                                                        |
+| -------------------- | ------------------------- | ----------------------------------------------------------------- |
+| `InputOTP`           | `[uiInputOtp]`            | `[(value)]`, `maxLength`, `pattern`, `disabled`, `required`, `id` |
+| `InputOTPGroup`      | `[uiInputOtpGroup]`       | `class`                                                           |
+| `InputOTPSlot`       | `[uiInputOtpSlot]`        | `[index]` (required), plain `aria-invalid` attribute              |
+| `InputOTPSeparator`  | `[uiInputOtpSeparator]`   | —                                                                 |
+
+Also exported: `REGEXP_ONLY_DIGITS`, `REGEXP_ONLY_CHARS`, `REGEXP_ONLY_DIGITS_AND_CHARS`.

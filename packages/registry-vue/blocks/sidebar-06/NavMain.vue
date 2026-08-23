@@ -1,0 +1,58 @@
+<script setup lang="ts">
+// [FORCE-UI] Vue port of registry/new-york-v4/blocks/sidebar-06
+import MoreHorizontal from '@material-symbols/svg-400/rounded/more_horiz.svg?component'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/ui/dropdown-menu'
+import {
+  SidebarGroup,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  useSidebar,
+} from '@/ui/sidebar'
+
+const props = defineProps<{
+  items: {
+    title: string
+    url: string
+    isActive?: boolean
+    items?: {
+      title: string
+      url: string
+    }[]
+  }[]
+}>()
+
+const { isMobile } = useSidebar()
+</script>
+
+<template>
+  <SidebarGroup>
+    <SidebarMenu>
+      <DropdownMenu v-for="item in props.items" :key="item.title">
+        <SidebarMenuItem>
+          <DropdownMenuTrigger as-child>
+            <SidebarMenuButton class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground">
+              {{ item.title }}
+              <MoreHorizontal class="ml-auto" />
+            </SidebarMenuButton>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            v-if="item.items?.length"
+            :side="isMobile ? 'bottom' : 'right'"
+            :align="isMobile ? 'end' : 'start'"
+            class="min-w-56 rounded-lg"
+          >
+            <DropdownMenuItem v-for="child in item.items" :key="child.title" as-child>
+              <a :href="child.url">{{ child.title }}</a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </SidebarMenuItem>
+      </DropdownMenu>
+    </SidebarMenu>
+  </SidebarGroup>
+</template>

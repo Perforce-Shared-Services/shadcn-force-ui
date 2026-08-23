@@ -1,0 +1,149 @@
+---
+title: Chart
+description: Bar charts built on ChartContainer, ChartTooltipContent and ChartLegendContent, rendered with ngx-charts.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="chart-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/chart
+```
+
+</TabsContent>
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @swimlane/ngx-charts class-variance-authority clsx tailwind-merge
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="chart" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { ChartBarComponent } from "@/components/ui/chart"
+```
+
+```html showLineNumbers
+<div uiChartBar [data]="data" />
+```
+
+The Angular port renders chart types through `ngx-charts` — recharts is a React renderer with no Angular equivalent. `ChartContainer`, `ChartTooltipContent` and `ChartLegendContent` keep the registry's API (config-driven `--color-{key}` variables, indicator variants), while `<div uiChartBar>` replaces the recharts `<BarChart>`/`<Bar>` composition.
+
+## Composition
+
+```
+<div uiChartBar>            ← chart type + flags (grid/axis/legend/tooltip)
+├── div[uiChartContainer]   ← sizing box + per-series CSS variables
+│   └── ngx-charts bar      ← SVG renderer (internal)
+├── div[uiChartLegendContent]
+└── div[uiChartTooltipContent]  ← rendered inside ngx-charts' tooltip template
+```
+
+## Basic
+
+The default grouped bar chart with grid lines and an X axis.
+
+<ComponentPreview framework="angular" name="chart-example-axis" previewClassName="p-2" />
+
+## No Chrome
+
+Bars only — disable the grid, axis, legend and tooltip to render bare bars.
+
+<ComponentPreview framework="angular" name="chart-example" previewClassName="p-2" />
+
+## Grid
+
+Grid lines without axes.
+
+<ComponentPreview framework="angular" name="chart-example-grid" previewClassName="p-2" />
+
+## Legend
+
+Show a legend built from the chart config below the plot.
+
+<ComponentPreview framework="angular" name="chart-example-legend" previewClassName="p-2" />
+
+## Tooltip
+
+Show the config-aware tooltip on hover.
+
+<ComponentPreview framework="angular" name="chart-example-tooltip" previewClassName="p-2" />
+
+## Custom Tooltip Content
+
+Static showcase of `ChartTooltipContent` variants — label/name placement and the `dot`, `line` and `dashed` indicators.
+
+<Callout>
+  The React example draws decorative hand-drawn arrows between the tooltip
+  quadrants; those illustrations are omitted in the Angular port.
+</Callout>
+
+<ComponentPreview framework="angular" name="chart-tooltip" previewClassName="p-2" />
+
+## Interactive
+
+An interactive bar chart with a desktop/mobile toggle in the card header. The demo recomputes single-series data for the active key — the Angular analogue of recharts' swapped `dataKey`.
+
+<ComponentPreview framework="angular" name="chart-demo" />
+
+## RTL
+
+Set `dir="rtl"` on a wrapper; the legend, tooltip and axis labels follow.
+
+<ComponentPreview framework="angular" name="chart-rtl" previewClassName="p-2" />
+
+## API Reference
+
+### ChartBarComponent
+
+Attribute selector: `div[uiChartBar]`.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `data` | `ChartBarDatum[]` | — |
+| `colorMapping` | `ChartConfig` | `undefined` |
+| `orientation` | `"vertical" \| "horizontal"` | `"vertical"` |
+| `stacked` | `boolean` | `false` |
+| `color` | `string` | `undefined` |
+| `seriesLabel` | `string` | `"Value"` |
+| `showGrid` | `boolean` | `true` |
+| `showXAxis` | `boolean` | `true` |
+| `showYAxis` | `boolean` | `false` |
+| `legend` | `boolean` | `true` |
+| `tooltip` | `boolean` | `true` |
+
+### ChartContainerComponent
+
+Attribute selector: `div[uiChartContainer]`.
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| `config` | `ChartConfig` | — |
+| `id` | `string` | auto-generated |

@@ -10,9 +10,16 @@ import { badgeVariants } from "."
 const props = defineProps<PrimitiveProps & {
   variant?: BadgeVariants["variant"]
   class?: HTMLAttributes["class"]
+  /**
+   * [FORCE-UI] Visually-hidden text prefix announced before the badge's
+   * content. Status is otherwise conveyed only through color, which a
+   * screen reader can't perceive — set this on count- or glyph-only
+   * badges (e.g. `srLabel="Synced versions:"` on a bare "42").
+   */
+  srLabel?: string
 }>()
 
-const delegatedProps = reactiveOmit(props, "class")
+const delegatedProps = reactiveOmit(props, "class", "srLabel")
 </script>
 
 <template>
@@ -22,6 +29,7 @@ const delegatedProps = reactiveOmit(props, "class")
     :class="cn(badgeVariants({ variant }), props.class)"
     v-bind="delegatedProps"
   >
+    <span v-if="srLabel" class="sr-only">{{ srLabel + ' ' }}</span>
     <slot />
   </Primitive>
 </template>

@@ -41,11 +41,29 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 Uses the native CSS `aspect-ratio` property — no padding-bottom hack needed for modern browsers (Angular 20+ baseline).
 
+## Square
+
+A square aspect ratio component using the `[ratio]="1 / 1"` input. This is useful for displaying images in a square format.
+
+<ComponentPreview framework="angular" name="aspect-ratio-square" />
+
+## Portrait
+
+A portrait aspect ratio component using the `[ratio]="9 / 16"` input. This is useful for displaying images in a portrait format.
+
+<ComponentPreview framework="angular" name="aspect-ratio-portrait" previewClassName="h-96" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="aspect-ratio-rtl" direction="rtl" previewClassName="h-96" />
+
 ## API Reference
 
 ### AspectRatioComponent
 
-| Input   | Type                 | Default   |
-| ------- | -------------------- | --------- |
-| `ratio` | `number \| string`   | `16/9`    |
-| `class` | `string`             | –         |
+| Input   | Type               | Default |
+| ------- | ------------------ | ------- |
+| `ratio` | `number \| string` | `16/9`  |
+| `class` | `string`           | –       |

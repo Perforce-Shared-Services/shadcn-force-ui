@@ -1,23 +1,19 @@
 <script setup lang="ts">
-import { ref, type Ref } from 'vue'
-import type { DateValue } from '@internationalized/date'
-import { DateFormatter, getLocalTimeZone, today } from '@internationalized/date'
-
+import { Button } from "@/ui/button"
+import { Calendar } from "@/ui/calendar"
+import { Popover, PopoverContent, PopoverTrigger } from "@/ui/popover"
+import type { DateValue } from "@internationalized/date"
+import { DateFormatter, getLocalTimeZone, today } from "@internationalized/date"
 import CalendarIcon from "@material-symbols/svg-400/rounded/calendar_month.svg?component"
-import { cn } from '@/lib/utils'
-import { Button } from '@/ui/button'
-import { Calendar } from '@/ui/calendar'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/ui/popover'
+import { ref, type Ref } from "vue"
+
+import { cn } from "@/lib/utils"
 
 const defaultPlaceholder = today(getLocalTimeZone())
 const date = ref() as Ref<DateValue>
 
-const df = new DateFormatter('en-US', {
-  dateStyle: 'long',
+const df = new DateFormatter("en-US", {
+  dateStyle: "long",
 })
 </script>
 
@@ -26,7 +22,12 @@ const df = new DateFormatter('en-US', {
     <PopoverTrigger as-child>
       <Button
         variant="outline"
-        :class="cn('w-[240px] justify-start text-left font-normal', !date && 'text-muted-foreground')"
+        :class="
+          cn(
+            'w-[240px] justify-start text-left font-normal',
+            !date && 'text-muted-foreground'
+          )
+        "
       >
         <CalendarIcon />
         {{ date ? df.format(date.toDate(getLocalTimeZone())) : "Pick a date" }}

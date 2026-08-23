@@ -1,0 +1,202 @@
+---
+title: Message Scroller
+description: Auto-scrolling chat transcript with turn anchoring, scroll buttons, and visibility tracking.
+base: angular
+component: true
+---
+
+<ComponentPreview framework="angular" name="message-scroller-demo" />
+
+`MessageScroller` pins the viewport to the newest message while the reader is already at the bottom, backs off when they scroll up, and anchors each turn near the leading edge instead of snapping to the document bottom.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/message-scroller
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="message-scroller" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  MessageScroller,
+  MessageScrollerButton,
+  MessageScrollerContent,
+  MessageScrollerProvider,
+  MessageScrollerViewport,
+} from "@/components/ui/message-scroller"
+```
+
+```html
+<div uiMessageScrollerProvider>
+  <div uiMessageScroller class="h-96">
+    <div uiMessageScrollerViewport ariaLabel="Conversation">
+      <div uiMessageScrollerContent>
+        <div uiMessageScrollerItem messageId="m-1" [scrollAnchor]="true">
+          …messages…
+        </div>
+      </div>
+    </div>
+    <button uiMessageScrollerButton></button>
+  </div>
+</div>
+```
+
+The host must be height-constrained — `size-full` only resolves against an ancestor with a real height. `MessageScrollerProvider` publishes the scroller state to descendants via dependency injection; inject it with `injectMessageScroller()` to read `isAtStart`, `isAtEnd`, `canScrollToEnd`, `currentAnchorId`, `visibleMessageIds`, or to call `scrollToEnd()`, `scrollToStart()`, and `scrollToMessage(id)`.
+
+## Composition
+
+```
+MessageScrollerProvider ([uiMessageScrollerProvider])   state + DI context
+└── MessageScroller ([uiMessageScroller])               layout root, must be height-constrained
+    ├── MessageScrollerViewport ([uiMessageScrollerViewport])     native scrolling element
+    │   └── MessageScrollerContent ([uiMessageScrollerContent])  role="log" live region
+    │       └── MessageScrollerItem* ([uiMessageScrollerItem])   one row per message
+    └── MessageScrollerButton ([uiMessageScrollerButton])        floating jump-to-edge button
+```
+
+## Scrollable
+
+<ComponentPreview framework="angular" name="message-scroller-scrollable" />
+
+## Anchoring
+
+Use the `scrollAnchor` input on `MessageScrollerItem` to make a row settle near the viewport's leading edge when it becomes the newest turn.
+
+<ComponentPreview framework="angular" name="message-scroller-anchoring" />
+
+## Opening Position
+
+Use the `defaultScrollPosition` input (`start`, `end`, or `last-anchor`) on the provider to choose where a saved transcript opens.
+
+<ComponentPreview framework="angular" name="message-scroller-opening-position" />
+
+## Previous Context
+
+Use the `scrollPreviousItemPeek` input (in pixels) to keep part of the previous exchange visible above the anchored turn.
+
+<ComponentPreview framework="angular" name="message-scroller-previous-context" />
+
+## State
+
+Read edge state in JavaScript by injecting `injectMessageScroller()` inside the provider.
+
+<ComponentPreview framework="angular" name="message-scroller-state" />
+
+## Visibility
+
+The provider tracks which items intersect the viewport; `currentAnchorId` reflects the anchor item nearest the leading edge.
+
+<ComponentPreview framework="angular" name="message-scroller-visibility" />
+
+## Commands
+
+Call `scrollToMessage(id)` from anywhere inside the provider to drive the transcript programmatically.
+
+<ComponentPreview framework="angular" name="message-scroller-commands" />
+
+## Group Chat
+
+Events (joins, leaves) and messages can share one transcript.
+
+<ComponentPreview framework="angular" name="message-scroller-group-chat" />
+
+## Load History
+
+Prepended messages keep your scroll position.
+
+<ComponentPreview framework="angular" name="message-scroller-load-history" />
+
+## Streaming
+
+Auto-scroll follows content growth while the reader is pinned to the bottom.
+
+<Callout>
+  The React example streams assistant tokens through <code>@ai-sdk/react</code>;
+  this preview simulates streaming by revealing the reply in chunks so the same
+  ResizeObserver-driven autoScroll path is exercised.
+</Callout>
+
+<ComponentPreview framework="angular" name="message-scroller-streaming" />
+
+## Animation
+
+<Callout>
+  The React example animates rows through a shared <code>MessageAnimated</code>
+  wrapper with named presets; here an equivalent CSS entrance animation is
+  applied directly to the newest user row.
+</Callout>
+
+<ComponentPreview framework="angular" name="message-scroller-animation" />
+
+## Accessibility
+
+- `MessageScrollerContent` sets `role="log"`, `aria-live="polite"`, and `aria-relevant="additions"` so new turns are announced without re-reading the transcript.
+- The viewport is keyboard-operable (`tabindex="0"`) and becomes a labelled `role="region"` when you pass `ariaLabel`.
+- `MessageScrollerButton` is removed from the tab order and the accessibility tree when its target edge is already visible.
+
+## RTL
+
+Pointer to `/docs/rtl`: the scroller honors direction via CSS logical properties (`inset-s`, `translate-x` with the `rtl:` variant) — no extra setup is required.
+
+## API Reference
+
+### MessageScrollerProvider
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| autoScroll | boolean / Input&lt;boolean&gt; | true |
+| defaultScrollPosition | "start" \| "end" \| "last-anchor" | "end" |
+| scrollPreviousItemPeek | number / Input&lt;number&gt; | 24 |
+
+### MessageScrollerItem
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| messageId | string / Input&lt;string \| undefined&gt; | undefined |
+| scrollAnchor | boolean / Input&lt;boolean&gt; | false |
+
+### MessageScrollerViewport
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| ariaLabel | string / Input&lt;string&gt; | undefined |
+| className | string / Input&lt;string&gt; | undefined |
+
+`ariaLabel` turns the viewport into a labelled `role="region"`; it defaults to `"Conversation"` when unset.
+
+### MessageScrollerButton
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| direction | "start" \| "end" | "end" |
+| variant | ButtonVariant | "secondary" |
+| size | ButtonSize | "icon-sm" |
+
+For the full hook surface (`useMessageScroller`, `useMessageScrollerScrollable`, `useMessageScrollerVisibility`), see the upstream React API reference.

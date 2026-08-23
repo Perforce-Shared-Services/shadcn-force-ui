@@ -28,8 +28,7 @@ export function ComponentSourceFiles({
 }) {
   const [activePath, setActivePath] = React.useState(defaultPath)
 
-  const activeFile =
-    files.find((file) => file.path === activePath) ?? files[0]
+  const activeFile = files.find((file) => file.path === activePath) ?? files[0]
 
   return (
     <figure

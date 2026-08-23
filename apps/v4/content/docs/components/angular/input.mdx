@@ -37,17 +37,101 @@ import { Input } from "@/components/ui/input"
 <input uiInput type="email" placeholder="m@example.com" />
 ```
 
-## Examples
+## Variants
 
-### Variants
+Use the `variant` attribute to change the visual style of the input.
 
 <ComponentPreview framework="angular" name="input-variants" />
+
+## Basic
+
+A plain text input with a placeholder.
+
+<ComponentPreview framework="angular" name="input-basic" previewClassName="*:max-w-xs" />
+
+## Field
+
+Use `Field`, `FieldLabel`, and `FieldDescription` to create an input with a label and description.
+
+<ComponentPreview framework="angular" name="input-field" previewClassName="*:max-w-xs" />
+
+## Field Group
+
+Use `FieldGroup` to stack multiple fields with consistent spacing.
+
+<ComponentPreview framework="angular" name="input-fieldgroup" previewClassName="*:max-w-xs" />
+
+## Disabled
+
+Add the native `disabled` attribute to disable the input. To style the disabled state, add the `data-disabled` attribute to the `Field`.
+
+<ComponentPreview framework="angular" name="input-disabled" previewClassName="*:max-w-xs" />
+
+## Invalid
+
+Add `aria-invalid` to mark the input as invalid. To style the invalid state, set `[attr.data-invalid]="true"` on the `Field`.
+
+<ComponentPreview framework="angular" name="input-invalid" previewClassName="*:max-w-xs" />
+
+## File
+
+Use `type="file"` for a styled file input.
+
+<ComponentPreview framework="angular" name="input-file" previewClassName="*:max-w-xs" />
+
+## Inline
+
+Set `orientation="horizontal"` to place the input and a button side by side.
+
+<ComponentPreview framework="angular" name="input-inline" previewClassName="*:max-w-sm" />
+
+## Grid
+
+Combine `FieldGroup` with a CSS grid to lay fields out in columns.
+
+<ComponentPreview framework="angular" name="input-grid" previewClassName="p-6" />
+
+## Required
+
+Add the native `required` attribute to mark the field as mandatory.
+
+<ComponentPreview framework="angular" name="input-required" previewClassName="*:max-w-xs" />
+
+## Badge
+
+Pair with `Badge` to surface metadata next to the label.
+
+<ComponentPreview framework="angular" name="input-badge" previewClassName="*:max-w-xs" />
+
+## Input Group
+
+Composes the input inside an `InputGroup` with prefix and suffix addons.
+
+<ComponentPreview framework="angular" name="input-input-group" previewClassName="*:max-w-sm" />
+
+## Button Group
+
+Wrap the input and a button in a `ButtonGroup` to join them visually.
+
+<ComponentPreview framework="angular" name="input-button-group" previewClassName="*:max-w-sm" />
+
+## Form
+
+A complete form composed from `FieldGroup`, `Field`, `Select`, and `Button`.
+
+<ComponentPreview framework="angular" name="input-form" previewClassName="*:max-w-sm" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="input-rtl" direction="rtl" />
 
 ## API Reference
 
 ### InputComponent
 
-| Input     | Type                                                  | Default     |
-| --------- | ----------------------------------------------------- | ----------- |
-| `variant` | `"outline" \| "filled" \| "underline" \| "ghost"`     | `"outline"` |
-| `class`   | `string`                                              | –           |
+| Input     | Type                                              | Default     |
+| --------- | ------------------------------------------------- | ----------- |
+| `variant` | `"outline" \| "filled" \| "underline" \| "ghost"` | `"outline"` |
+| `class`   | `string`                                          | –           |

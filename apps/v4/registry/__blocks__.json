@@ -1,7 +1,7 @@
 [
   {
     "name": "dashboard-01",
-    "description": "A dashboard with sidebar, charts and data table.",
+    "description": "A dashboard with sidebar and cards.",
     "categories": ["dashboard"]
   },
   {
@@ -11,22 +11,22 @@
   },
   {
     "name": "login-02",
-    "description": "A two column login page with a cover image.",
+    "description": "A simple login form.",
     "categories": ["authentication", "login"]
   },
   {
     "name": "login-03",
-    "description": "A login page with a muted background color.",
+    "description": "A simple login form.",
     "categories": ["authentication", "login"]
   },
   {
     "name": "login-04",
-    "description": "A login page with form and image.",
+    "description": "A simple login form.",
     "categories": ["authentication", "login"]
   },
   {
     "name": "login-05",
-    "description": "A simple email-only login page.",
+    "description": "A simple login form.",
     "categories": ["authentication", "login"]
   },
   {
@@ -40,83 +40,83 @@
   },
   {
     "name": "sidebar-01",
-    "description": "A simple sidebar with navigation grouped by section.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-02",
-    "description": "A sidebar with collapsible sections.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-03",
-    "description": "A sidebar with submenus.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-04",
-    "description": "A floating sidebar with submenus.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-05",
-    "description": "A sidebar with collapsible submenus.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-06",
-    "description": "A sidebar with submenus as dropdowns.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-07",
-    "description": "A sidebar that collapses to icons.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-08",
-    "description": "An inset sidebar with secondary navigation.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-09",
-    "description": "Collapsible nested sidebars.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-10",
-    "description": "A sidebar in a popover.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-11",
-    "description": "A sidebar with a collapsible file tree.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-12",
-    "description": "A sidebar with a calendar.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-13",
-    "description": "A sidebar in a dialog.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A settings dialog.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-14",
-    "description": "A sidebar on the right.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-15",
-    "description": "A left and right sidebar.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "sidebar-16",
-    "description": "A sidebar with a sticky site header.",
-    "categories": ["sidebar", "dashboard"]
+    "description": "A sidebar block.",
+    "categories": ["sidebar"]
   },
   {
     "name": "signup-01",
@@ -125,22 +125,22 @@
   },
   {
     "name": "signup-02",
-    "description": "A two column signup page with a cover image.",
+    "description": "A simple signup form.",
     "categories": ["authentication", "signup"]
   },
   {
     "name": "signup-03",
-    "description": "A signup page with a muted background color.",
+    "description": "A simple signup form.",
     "categories": ["authentication", "signup"]
   },
   {
     "name": "signup-04",
-    "description": "A signup page with form and image.",
+    "description": "A simple signup form.",
     "categories": ["authentication", "signup"]
   },
   {
     "name": "signup-05",
-    "description": "A simple signup form with social providers.",
+    "description": "A simple signup form.",
     "categories": ["authentication", "signup"]
   }
 ]

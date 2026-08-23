@@ -1,0 +1,49 @@
+<ngx-sonner-toaster
+  [class]="hostClass()"
+  [style]="mergedStyle()"
+  [toastOptions]="mergedToastOptions()"
+  [theme]="theme()"
+  [position]="position()"
+  [richColors]="richColors()"
+  [closeButton]="closeButton()"
+  [expand]="expand()"
+  [duration]="duration()"
+  [visibleToasts]="visibleToasts()"
+  [offset]="offset()"
+  [invert]="invert()"
+>
+  <span
+    success-icon
+    aria-hidden="true"
+    class="mt-0.5 [&>svg]:size-4 [&>svg]:fill-current"
+    [class.text-success]="richColors()"
+    [innerHTML]="icons.success"
+  ></span>
+  <span
+    info-icon
+    aria-hidden="true"
+    class="mt-0.5 [&>svg]:size-4 [&>svg]:fill-current"
+    [class.text-info]="richColors()"
+    [innerHTML]="icons.info"
+  ></span>
+  <span
+    warning-icon
+    aria-hidden="true"
+    class="mt-0.5 [&>svg]:size-4 [&>svg]:fill-current"
+    [class.text-warning]="richColors()"
+    [innerHTML]="icons.warning"
+  ></span>
+  <span
+    error-icon
+    aria-hidden="true"
+    class="mt-0.5 [&>svg]:size-4 [&>svg]:fill-current"
+    [class.text-error]="richColors()"
+    [innerHTML]="icons.error"
+  ></span>
+  <span
+    loading-icon
+    aria-hidden="true"
+    class="mt-0.5 animate-spin [&>svg]:size-4 [&>svg]:fill-current"
+    [innerHTML]="icons.loading"
+  ></span>
+</ngx-sonner-toaster>

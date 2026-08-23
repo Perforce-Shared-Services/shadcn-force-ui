@@ -45,9 +45,9 @@ export function ComponentsList({
   // section on /docs/components rendered the entire component list, identical
   // to "All Components" right below it.
   const allComponents =
-    variant === "new" ?
-      canonicalComponents.filter((c) => isNewComponent(String(c.url)))
-    : canonicalComponents
+    variant === "new"
+      ? canonicalComponents.filter((c) => isNewComponent(String(c.url)))
+      : canonicalComponents
 
   // Get the available list for the current base.
   const availableComponents = getPagesFromFolder(componentsFolder, currentBase)

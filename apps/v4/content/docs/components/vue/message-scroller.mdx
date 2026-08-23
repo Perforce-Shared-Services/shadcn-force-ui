@@ -1,0 +1,148 @@
+---
+title: Message Scroller
+description: A headless scroll container for chat transcripts with auto-follow and jump-to-latest.
+base: vue
+component: true
+---
+
+<ComponentPreview framework="vue" name="message-scroller-demo" />
+
+The `MessageScroller` component owns scroll position for chat transcripts. It pins to the newest message while the reader is at the bottom, backs off when they scroll up, and exposes a jump button when unseen content is below.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-vue/message-scroller
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="vue" name="message-scroller" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```vue
+<script setup lang="ts">
+import {
+  MessageScroller,
+  MessageScrollerButton,
+  MessageScrollerContent,
+  MessageScrollerItem,
+  MessageScrollerProvider,
+  MessageScrollerViewport,
+} from "@/ui/message-scroller"
+</script>
+```
+
+```vue
+<MessageScrollerProvider auto-scroll>
+  <MessageScroller class="h-96">
+    <MessageScrollerViewport>
+      <MessageScrollerContent class="gap-2 p-4">
+        <MessageScrollerItem
+          v-for="message in messages"
+          :key="message.id"
+          :scroll-anchor="message.role === 'user'"
+        >
+          <!-- bubble content -->
+        </MessageScrollerItem>
+      </MessageScrollerContent>
+    </MessageScrollerViewport>
+    <MessageScrollerButton />
+  </MessageScroller>
+</MessageScrollerProvider>
+```
+
+## Examples
+
+### Scrollable
+
+A minimal transcript showing edge tracking and the jump button.
+
+<ComponentPreview framework="vue" name="message-scroller-scrollable" />
+
+## Accessibility
+
+`MessageScrollerContent` accepts `role="log"` so screen readers announce appended messages. The scroll button renders a real button with an `sr-only` label and becomes inert while you are at the tracked edge.
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+## API Reference
+
+### MessageScrollerProvider
+
+Headless root. Owns the follow state and edge tracking.
+
+| Prop                  | Type      | Default | Description                                    |
+| --------------------- | --------- | ------- | ---------------------------------------------- |
+| `autoScroll`          | `boolean` | `true`  | Follow new content while pinned to the bottom. |
+| `scrollEdgeThreshold` | `number`  | `80`    | Distance in px that counts as "at" an edge.    |
+
+### MessageScroller
+
+The styled frame laying out viewport and controls.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageScrollerViewport
+
+The scrollable frame.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageScrollerContent
+
+The message list column.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageScrollerItem
+
+One transcript entry. Content-visibility is applied automatically for long lists.
+
+| Prop           | Type      | Default | Description                          |
+| -------------- | --------- | ------- | ------------------------------------ |
+| `messageId`    | `string`  | -       | Reflected as `data-message-id`.      |
+| `scrollAnchor` | `boolean` | `false` | Marks items used for turn anchoring. |
+| `class`        | `string`  | -       |                                      |
+
+### MessageScrollerButton
+
+Jump-to-start/end control rendered over the viewport.
+
+| Prop        | Type               | Default       |
+| ----------- | ------------------ | ------------- |
+| `direction` | `"start" \| "end"` | `"end"`       |
+| `variant`   | Button variant     | `"secondary"` |
+| `size`      | Button size        | `"icon-sm"`   |
+| `class`     | `string`           | -             |

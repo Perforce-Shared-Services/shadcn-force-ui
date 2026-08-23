@@ -15,16 +15,14 @@ import { Component } from "@angular/core"
       <span class="text-sm font-medium"
         >&#64;shadcn starred 3 repositories</span
       >
-      <button uiCollapsibleTrigger>
-        <button uiButton variant="ghost" size="icon-sm" aria-label="Toggle">
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 -960 960 960"
-          >
-            <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
-          </svg>
-        </button>
+      <button uiButton uiCollapsibleTrigger variant="ghost" size="icon-sm" aria-label="Toggle">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+        >
+          <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
+        </svg>
       </button>
     </div>
     <div class="rounded-md border border-border px-4 py-3 text-sm">

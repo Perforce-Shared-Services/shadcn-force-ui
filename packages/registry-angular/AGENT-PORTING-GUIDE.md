@@ -295,9 +295,9 @@ apps/v4/registry/styles/style-force-ui.css         — CSS token definitions
 
 ## Environment
 
-- Angular: 20.x (standalone default, signals API)
+- Angular: 22.x (standalone default, signals API) — upgraded from 20.x because @radix-ng/primitives v1.x peers require Angular >=21
 - `@radix-ng/primitives`: **v1.1.2** (NOT v0.50.0 used by p4one)
-- `@angular/cdk`: 20.x (for overlay-based components in Group B)
+- `@angular/cdk`: 22.x (for overlay-based components in Group B)
 - Vite: 6.x with `@analogjs/vite-plugin-angular` 2.6.4
 - All Angular components use `ChangeDetectionStrategy.OnPush` + `standalone: true`
 - Signal inputs: `input<T>(default)`, computed: `computed(() => ...)`

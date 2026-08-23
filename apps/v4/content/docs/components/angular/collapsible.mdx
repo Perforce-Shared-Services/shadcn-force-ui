@@ -1,0 +1,126 @@
+---
+title: Collapsible
+description: An interactive component which expands/collapses a panel.
+featured: true
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/collapsible
+  api: https://radix-ng.com/primitives/collapsible
+---
+
+<ComponentPreview framework="angular" name="collapsible-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/collapsible
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="collapsible" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+```
+
+```html showLineNumbers
+<div uiCollapsible>
+  <button uiCollapsibleTrigger>Toggle</button>
+  <div uiCollapsibleContent>Content</div>
+</div>
+```
+
+## Composition
+
+Use the following composition to build a `Collapsible`:
+
+```text
+Collapsible
+├── CollapsibleTrigger
+└── CollapsibleContent
+```
+
+## Controlled State
+
+Use `[(open)]` two-way binding to control the state.
+
+```ts showLineNumbers
+import { Component, signal } from "@angular/core"
+
+@Component({
+  template: `
+    <div uiCollapsible [(open)]="open">
+      <button uiCollapsibleTrigger>Toggle</button>
+      <div uiCollapsibleContent>Content</div>
+    </div>
+  `,
+})
+export class Example {
+  readonly open = signal(false)
+}
+```
+
+## Basic
+
+A simple disclosure card that expands to reveal more content.
+
+<ComponentPreview framework="angular" name="collapsible-basic" />
+
+## Settings Panel
+
+Reveal additional form fields inline with a trigger button.
+
+<ComponentPreview framework="angular" name="collapsible-settings" />
+
+## File Tree
+
+Nest collapsibles to build an expandable file tree.
+
+<ComponentPreview framework="angular" name="collapsible-file-tree" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="collapsible-rtl" />
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/collapsible) documentation for more information.

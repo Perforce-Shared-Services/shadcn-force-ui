@@ -1,0 +1,183 @@
+---
+title: Context Menu
+description: Displays a menu of actions triggered by a right click.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/context-menu
+  api: https://radix-ng.com/primitives/context-menu
+---
+
+<ComponentPreview framework="angular" name="context-menu-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/context-menu
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="context-menu" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts
+import {
+  ContextMenuCheckboxItem,
+  ContextMenuContent,
+  ContextMenuGroup,
+  ContextMenuItem,
+  ContextMenuLabel,
+  ContextMenuRadioGroup,
+  ContextMenuRadioItem,
+  ContextMenuRoot,
+  ContextMenuSeparator,
+  ContextMenuShortcut,
+  ContextMenuSub,
+  ContextMenuSubContent,
+  ContextMenuSubTrigger,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
+```
+
+```html
+<div uiContextMenuRoot>
+  <div uiContextMenuTrigger class="...">Right click here</div>
+  <div uiContextMenuContent>
+    <button uiContextMenuItem>Back</button>
+    <button uiContextMenuItem disabled>Forward</button>
+    <button uiContextMenuItem>Reload</button>
+  </div>
+</div>
+```
+
+Every part is an attribute selector on a native element, so the host keeps its
+native semantics — Angular's idiomatic equivalent of React's `asChild`/`render`.
+
+The React `ContextMenu` root maps to `<div uiContextMenuRoot>` and
+`ContextMenuPortal` has no Angular equivalent — the content's positioner
+renders in place. The trigger opens the menu at the pointer coordinates on a
+right click, a touch long-press, or the keyboard Menu key. Because a context
+menu always opens at the cursor, the React `side`/`align` content props have no
+Angular equivalent.
+
+## Composition
+
+Use the following composition to build a `Context Menu`:
+
+```text
+ContextMenuRoot
+├── ContextMenuTrigger
+└── ContextMenuContent
+    ├── ContextMenuGroup
+    │   ├── ContextMenuLabel
+    │   ├── ContextMenuItem
+    │   │   └── ContextMenuShortcut
+    │   ├── ContextMenuCheckboxItem
+    │   └── ContextMenuRadioGroup
+    │       └── ContextMenuRadioItem
+    └── ContextMenuSub
+        ├── ContextMenuSubTrigger
+        └── ContextMenuSubContent
+```
+
+## Basic
+
+A minimal context menu with three items, one of them disabled.
+
+<ComponentPreview framework="angular" name="context-menu-basic" />
+
+## Submenu
+
+Nest a `ContextMenuSub` inside the content to group related actions under a
+hovered or arrow-right-expanded trigger.
+
+<ComponentPreview framework="angular" name="context-menu-submenu" />
+
+## Shortcuts
+
+Add a `ContextMenuShortcut` span inside an item to hint at its keyboard
+combination.
+
+<ComponentPreview framework="angular" name="context-menu-shortcuts" />
+
+## Groups
+
+Organize related items with `ContextMenuGroup`, headed by a
+`ContextMenuLabel`.
+
+<ComponentPreview framework="angular" name="context-menu-groups" />
+
+## Icons
+
+Render an inline SVG inside an item to lead it with an icon.
+
+<ComponentPreview framework="angular" name="context-menu-icons" />
+
+## Checkboxes
+
+Use `ContextMenuCheckboxItem` for toggleable options; checked items show a
+trailing check indicator and keep the menu open across toggles.
+
+<ComponentPreview framework="angular" name="context-menu-checkboxes" />
+
+## Radio
+
+Wrap `ContextMenuRadioItem`s in a `ContextMenuRadioGroup` to expose a
+single-choice selection driven by the group's `value`.
+
+<ComponentPreview framework="angular" name="context-menu-radio" />
+
+## Destructive
+
+Use `variant="destructive"` to style the menu item as destructive.
+
+<ComponentPreview framework="angular" name="context-menu-destructive" />
+
+## Sides
+
+Four triggers side by side. A context menu always opens at the cursor, so the
+React example's per-panel `side` values have no runtime effect in Angular —
+placement is identical across all four panels.
+
+<ComponentPreview framework="angular" name="context-menu-sides" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="context-menu-rtl" direction="rtl" />
+
+## API Reference
+
+See the [radix-ng context-menu](https://radix-ng.com/primitives/context-menu)
+documentation for more information.

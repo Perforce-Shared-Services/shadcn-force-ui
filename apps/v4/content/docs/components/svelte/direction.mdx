@@ -1,0 +1,85 @@
+---
+title: Direction
+description: A provider component that sets the text direction for your application.
+base: svelte
+component: true
+---
+
+The `DirectionProvider` component is used to set the text direction (`ltr` or `rtl`) for your application. This is essential for supporting right-to-left languages like Arabic, Hebrew, and Persian.
+
+Here's a preview of the component in RTL mode. Use the language selector to switch the language. To see more examples, look for the RTL section on components pages.
+
+<ComponentPreview framework="svelte" name="card-rtl" direction="rtl" hideCode />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/direction
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="svelte" name="direction" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```svelte showLineNumbers
+<script lang="ts">
+  import { DirectionProvider } from "@/svelte-ui/direction/index.js";
+</script>
+```
+
+```svelte showLineNumbers
+<div dir="rtl">
+  <DirectionProvider direction="rtl">
+    <!-- Your app content -->
+  </DirectionProvider>
+</div>
+```
+
+## useDirection
+
+The `useDirection` hook returns the current direction from context, defaulting to `"ltr"`.
+
+```svelte showLineNumbers
+<script lang="ts">
+  import { useDirection } from "@/svelte-ui/direction/index.js";
+
+  const direction = $derived(useDirection());
+</script>
+
+<p>Current direction: {direction}</p>
+```
+
+## API Reference
+
+### DirectionProvider
+
+Wraps children in a `display: contents` container carrying the `dir` attribute so both `useDirection()` and the `rtl:`/`ltr:` Tailwind variants respond.
+
+| Prop        | Type             | Default | Description                         |
+| ----------- | ---------------- | ------- | ----------------------------------- |
+| `direction` | `"ltr" \| "rtl"` | `"ltr"` | The text direction for the subtree. |
+| `class`     | `string`         | -       | Additional classes on the wrapper.  |

@@ -2,6 +2,7 @@ import { registryItemSchema, type Registry } from "shadcn/schema"
 import { z } from "zod"
 
 import { FORCE_UI_STYLE_BASE } from "../registry-shared/style"
+import { blocks, sidebarBlocks } from "./blocks/_registry" // [FORCE-UI] block ports
 import { examples } from "./examples/_registry"
 import { lib } from "./lib/_registry"
 import { ui } from "./ui/_registry"
@@ -26,5 +27,7 @@ export const registry = {
     ...ui,
     ...examples,
     ...lib,
+    ...blocks, // [FORCE-UI]
+    ...sidebarBlocks, // [FORCE-UI]
   ]),
 } satisfies Registry

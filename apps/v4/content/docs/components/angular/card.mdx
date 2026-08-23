@@ -5,7 +5,11 @@ base: angular
 component: true
 ---
 
-<ComponentPreview framework="angular" name="card-demo" previewClassName="h-[30rem]" />
+<ComponentPreview
+  framework="angular"
+  name="card-demo"
+  previewClassName="h-[30rem]"
+/>
 
 ## Installation
 
@@ -43,9 +47,13 @@ npx shadcn@latest add @force-ui-angular/card
 
 ```ts
 import {
-  CardComponent, CardHeaderComponent, CardTitleComponent,
-  CardDescriptionComponent, CardActionComponent,
-  CardContentComponent, CardFooterComponent,
+  CardActionComponent,
+  CardComponent,
+  CardContentComponent,
+  CardDescriptionComponent,
+  CardFooterComponent,
+  CardHeaderComponent,
+  CardTitleComponent,
 } from "@/components/ui/card"
 ```
 
@@ -75,11 +83,33 @@ Use a real heading element for `uiCardTitle` so the page heading hierarchy is co
 └── [uiCardFooter]
 ```
 
-## Examples
+## Size
 
-### Small size
+Use the `size="sm"` input to set the size of the card to small. The small size variant uses smaller spacing.
 
-<ComponentPreview framework="angular" name="card-small" previewClassName="h-64" />
+<ComponentPreview framework="angular" name="card-small" previewClassName="h-96" />
+
+## Spacing
+
+In addition to the `size` input, you can use the `--card-spacing` CSS variable to control the spacing between sections and the inset of card parts.
+
+<ComponentPreview framework="angular" name="card-spacing" previewClassName="h-[34rem]" />
+
+Use negative margins with `-mx-(--card-spacing)` to make content go edge to edge while keeping it aligned with the card inset. When the edge-to-edge content sits above a footer, use `-mb-(--card-spacing)` on `[uiCardContent]` to remove the section gap.
+
+<ComponentPreview framework="angular" name="card-edge-to-edge" previewClassName="h-[24rem]" />
+
+## Image
+
+Add an image before the card header to create a card with an image.
+
+<ComponentPreview framework="angular" name="card-image" previewClassName="h-[32rem]" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview framework="angular" name="card-rtl" direction="rtl" previewClassName="h-[30rem]" />
 
 ## API Reference
 
