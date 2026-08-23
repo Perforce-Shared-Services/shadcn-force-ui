@@ -13,7 +13,7 @@
 </script>
 
 {#snippet Fallback()}
-	<ChevronLeftIcon class="size-4" />
+	<ChevronLeftIcon class="size-4 rtl:rotate-180" />
 	<span>Previous</span>
 {/snippet}
 

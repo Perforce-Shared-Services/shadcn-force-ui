@@ -1,0 +1,29 @@
+<!-- [FORCE-UI] Ported from registry/new-york-v4/blocks/sidebar-03 -->
+<script lang="ts">
+  import { Separator } from "$lib/registry/ui/separator/index.js"
+  import * as Sidebar from "$lib/registry/ui/sidebar/index.js"
+
+  import AppSidebar from "./components/app-sidebar.svelte"
+</script>
+
+<Sidebar.Provider>
+  <AppSidebar />
+  <Sidebar.Inset>
+    <header class="flex h-16 shrink-0 items-center gap-2 border-b">
+      <div class="flex items-center gap-2 px-3">
+        <Sidebar.Trigger />
+        <Separator orientation="vertical" class="mr-2 h-4" />
+      </div>
+    </header>
+    <div class="flex flex-1 flex-col gap-4 p-4">
+      <div class="grid auto-rows-min gap-4 md:grid-cols-3">
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+      </div>
+      <div
+        class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min"
+      ></div>
+    </div>
+  </Sidebar.Inset>
+</Sidebar.Provider>

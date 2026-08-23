@@ -1,0 +1,178 @@
+---
+title: Bubble
+description: Displays conversational content in a message bubble. Supports variants, alignment, grouping, reactions, and collapsible content.
+base: svelte
+component: true
+---
+
+<ComponentPreview framework="svelte" name="bubble-demo" />
+
+The `Bubble` component displays framed conversational content. Use it for chat text, short structured output, quoted replies, suggestions, and reactions.
+
+For full-featured chat interfaces, use the [`Message`](/docs/components/svelte/message) component. `Bubble` is intentionally scoped to the bubble surface. Place avatars, names, timestamps, metadata, and message-level actions in [`Message`](/docs/components/svelte/message).
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/bubble
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="svelte" name="bubble" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```svelte
+<script lang="ts">
+  import { Bubble, BubbleContent } from "@/svelte-ui/bubble/index.js";
+</script>
+```
+
+```svelte
+<Bubble align="end">
+  <BubbleContent>Hey there! what's up?</BubbleContent>
+</Bubble>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview framework="svelte" name="bubble-variants" />
+
+### Alignment
+
+Use the `align` prop to switch between start and end alignment.
+
+<ComponentPreview framework="svelte" name="bubble-alignment" />
+
+### Group
+
+Use `BubbleGroup` to visually group consecutive bubbles from one sender.
+
+<ComponentPreview framework="svelte" name="bubble-group-demo" />
+
+### Reactions
+
+Use the `BubbleReactions` component to render emoji reactions anchored to a bubble.
+
+<ComponentPreview framework="svelte" name="bubble-reactions" />
+
+### Link Button
+
+Compose clickable option bubbles by rendering a button inside `BubbleContent`.
+
+<ComponentPreview framework="svelte" name="bubble-link-button" />
+
+### Collapsible
+
+Combine `Collapsible` and `Bubble` for expandable long-form replies.
+
+<ComponentPreview framework="svelte" name="bubble-collapsible" />
+
+### Popover
+
+Attach an error-details popover through `BubbleReactions`.
+
+<ComponentPreview framework="svelte" name="bubble-popover" />
+
+### Tooltip
+
+Use a tooltip in `BubbleReactions` for read receipts.
+
+<ComponentPreview framework="svelte" name="bubble-tooltip" />
+
+## Accessibility
+
+### Labeling Reactions
+
+Reactions render as a row of emoji. A screen reader reads each glyph with no context. Group the row as a single image with a descriptive `aria-label` so it announces once.
+
+```svelte showLineNumbers
+<BubbleReactions role="img" aria-label="Reactions: thumbs up, fire, and 8 more">
+  <span>👍</span>
+  <span>🔥</span>
+  <span>+8</span>
+</BubbleReactions>
+```
+
+When reactions are interactive, render buttons instead and give icon-only buttons an `aria-label`.
+
+### Interactive Bubbles
+
+When a bubble is clickable, render it as a real `<button>` or `<a>` so it is focusable and exposes the correct role.
+
+```svelte showLineNumbers
+<Bubble variant="muted" align="end">
+  <BubbleContent>
+    <button type="button" onclick={onReply}>
+      I forgot my password
+    </button>
+  </BubbleContent>
+</Bubble>
+```
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+## API Reference
+
+### Bubble
+
+The root bubble wrapper.
+
+| Prop      | Type                                                                                       | Default     | Description                         |
+| --------- | ------------------------------------------------------------------------------------------ | ----------- | ----------------------------------- |
+| `variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"` | `"default"` | The bubble visual treatment.        |
+| `align`   | `"start" \| "end"`                                                                         | `"start"`   | The inline alignment of the bubble. |
+| `class`   | `string`                                                                                   | -           | Additional classes on the element.  |
+
+### BubbleGroup
+
+Groups consecutive bubbles from one sender.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BubbleContent
+
+The bubble content wrapper.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### BubbleReactions
+
+Anchors reaction chips or quick actions to a bubble.
+
+| Prop    | Type                | Default    |
+| ------- | ------------------- | ---------- |
+| `side`  | `"top" \| "bottom"` | `"bottom"` |
+| `align` | `"start" \| "end"`  | `"end"`    |
+| `class` | `string`            | -          |

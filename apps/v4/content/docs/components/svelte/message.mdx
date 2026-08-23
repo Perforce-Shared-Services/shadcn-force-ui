@@ -1,0 +1,155 @@
+---
+title: Message
+description: Composes avatars, bubbles, headers, and footers into full chat messages.
+base: svelte
+component: true
+---
+
+<ComponentPreview framework="svelte" name="message-demo" />
+
+The `Message` component composes a full chat turn: avatar, content bubbles, header, and footer. It works together with the [`Bubble`](/docs/components/svelte/bubble) and [`Attachment`](/docs/components/svelte/attachment) components.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/message
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="svelte" name="message" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```svelte
+<script lang="ts">
+  import {
+    Message,
+    MessageAvatar,
+    MessageContent,
+  } from "@/svelte-ui/message/index.js";
+  import { Bubble, BubbleContent } from "@/svelte-ui/bubble/index.js";
+</script>
+```
+
+```svelte
+<Message align="end">
+  <MessageAvatar>
+    <Avatar.Root>...</Avatar.Root>
+  </MessageAvatar>
+  <MessageContent>
+    <Bubble>
+      <BubbleContent>Deploying to prod real quick.</BubbleContent>
+    </Bubble>
+  </MessageContent>
+</Message>
+```
+
+## Examples
+
+### Avatar
+
+Use `MessageAvatar` with the `Avatar` component.
+
+<ComponentPreview framework="svelte" name="message-avatar" />
+
+### Group
+
+Use `MessageGroup` to group consecutive messages from one sender.
+
+<ComponentPreview framework="svelte" name="message-group" />
+
+### Header and Footer
+
+Add sender names with `MessageHeader` and delivery status with `MessageFooter`.
+
+<ComponentPreview framework="svelte" name="message-header-footer" />
+
+### Actions
+
+Place quick actions such as copy, retry, or feedback in `MessageFooter`.
+
+<ComponentPreview framework="svelte" name="message-actions" />
+
+### Attachment
+
+Combine `Message` with the `Attachment` component for file sharing.
+
+<ComponentPreview framework="svelte" name="message-attachment" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+## API Reference
+
+### Message
+
+The root message row. Use `align` to switch sides.
+
+| Prop    | Type               | Default   |
+| ------- | ------------------ | --------- |
+| `align` | `"start" \| "end"` | `"start"` |
+| `class` | `string`           | -         |
+
+### MessageGroup
+
+Groups consecutive messages. Applies tighter spacing between members.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageAvatar
+
+A circular media slot anchored to the bubble edge.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageContent
+
+The message body column holding bubbles, attachments, header, and footer.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageHeader
+
+Optional sender/meta line above the content.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MessageFooter
+
+Optional status/actions line below the content. Right-aligned on end-aligned messages.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |

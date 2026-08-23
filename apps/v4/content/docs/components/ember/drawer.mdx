@@ -1,0 +1,133 @@
+---
+title: Drawer
+description: A panel that slides in from the edge of the screen.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="drawer-demo" />
+
+The `Drawer` component slides a panel in from the top, bottom, left, or right edge. It is built on the same overlay primitives as [`Sheet`](/docs/components/ember/sheet) and styled with the drawer tokens.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/drawer
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="drawer" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@/ui/drawer';
+```
+
+```hbs showLineNumbers
+<Drawer>
+  <DrawerTrigger @asChild={{true}}>
+    <Button @variant="outline">Open</Button>
+  </DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle>Move Goal</DrawerTitle>
+      <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter>
+      <DrawerClose @asChild={{true}}>
+        <Button>Close</Button>
+      </DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
+```
+
+## Sides
+
+Use `@side` on `DrawerContent` to choose the edge: `top`, `bottom` (default), `left`, or `right`. A decorative grab handle renders on bottom drawers.
+
+<ComponentPreview framework="ember" name="drawer-sides" />
+
+## Responsive Dialog
+
+Pair with [`Dialog`](/docs/components/ember/dialog) to show a dialog on desktop and a drawer on mobile.
+
+<ComponentPreview framework="ember" name="drawer-dialog" />
+
+## Notes
+
+- Control open state with `@open` / `@onOpenChange`, or leave uncontrolled.
+- The overlay click closes the drawer; body scroll locks while open.
+- Drag-to-dismiss gestures are not part of this port — close via trigger, overlay, or `DrawerClose`.
+
+## API Reference
+
+### Drawer
+
+Root component managing open state.
+
+| Prop            | Type                      | Default | Description                         |
+| --------------- | ------------------------- | ------- | ----------------------------------- |
+| `@open`         | `boolean`                 | -       | Controlled open state.              |
+| `@defaultOpen`  | `boolean`                 | -       | Initial state when uncontrolled.    |
+| `@onOpenChange` | `(open: boolean) => void` | -       | Called when the open state changes. |
+
+### DrawerTrigger
+
+Opens the drawer. Supports `@asChild`.
+
+### DrawerClose
+
+Closes the drawer. Supports `@asChild`.
+
+### DrawerOverlay
+
+Fixed full-screen backdrop. Fades in/out with the drawer state.
+
+### DrawerContent
+
+Portaled panel sliding in from an edge.
+
+| Prop     | Type                                     | Default    | Description                  |
+| -------- | ---------------------------------------- | ---------- | ---------------------------- |
+| `@side`  | `"top" \| "bottom" \| "left" \| "right"` | `"bottom"` | Edge the drawer slides from. |
+| `@class` | `string`                                 | -          | Additional classes to apply. |
+
+Renders role="dialog", includes the decorative grab handle (bottom side only), and locks body scroll while open.
+
+### DrawerHeader / DrawerFooter / DrawerTitle / DrawerDescription
+
+Structural slots mirroring the Sheet parts; header centers its text on top/bottom drawers.

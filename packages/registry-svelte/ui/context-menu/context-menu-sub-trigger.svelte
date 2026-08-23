@@ -32,6 +32,6 @@
 		hugeicons="ArrowRight01Icon"
 		phosphor="CaretRightIcon"
 		remixicon="RiArrowRightSLine"
-		class="ml-auto"
+		class="ml-auto rtl:rotate-180"
 	/>
 </ContextMenuPrimitive.SubTrigger>

@@ -41,6 +41,7 @@
 		hugeicons="ArrowRight01Icon"
 		phosphor="CaretRightIcon"
 		remixicon="RiArrowRightSLine"
+		class="rtl:rotate-180"
 	/>
 	<span class="sr-only">Next slide</span>
 </Button>

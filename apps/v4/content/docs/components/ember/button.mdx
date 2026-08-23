@@ -124,6 +124,12 @@ Render a `<Spinner />` component inside the button to show a loading state. Reme
 
 <ComponentPreview framework="ember" name="button-spinner" />
 
+### Loading
+
+Use the `@loading` argument to show a spinner, set `aria-busy`, and block interaction while an async action runs.
+
+<ComponentPreview framework="ember" name="button-loading" />
+
 ### Button Group
 
 To create a button group, use the `ButtonGroup` component. See the [Button Group](/docs/components/ember/button-group) documentation for more details.
@@ -148,5 +154,6 @@ The `Button` component is a wrapper around the `button` element that adds a vari
 | `@size`     | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
 | `@asChild`  | `boolean`                                                                            | `false`     |
 | `@disabled` | `boolean`                                                                            | `false`     |
+| `@loading`  | `boolean`                                                                            | `false`     |
 | `@type`     | `"button" \| "submit" \| "reset"`                                                    | `"button"`  |
 | `@class`    | `string`                                                                             | `undefined` |

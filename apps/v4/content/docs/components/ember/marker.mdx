@@ -1,0 +1,133 @@
+---
+title: Marker
+description: Displays an inline status, system note, bordered row, or labeled separator in a conversation.
+base: ember
+component: true
+---
+
+<ComponentPreview framework="ember" name="marker-demo" />
+
+The `Marker` component displays inline conversation markers such as status updates, system notes, bordered rows, and labeled separators. Compose it with [`Message`](/docs/components/ember/message) in a conversation thread.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-ember/marker
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="ember" name="marker" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```gts showLineNumbers
+import { Marker, MarkerContent, MarkerIcon } from '@/ui/marker';
+```
+
+```hbs showLineNumbers
+<Marker>
+  <MarkerIcon>
+    <Check />
+  </MarkerIcon>
+  <MarkerContent>Explored 4 files</MarkerContent>
+</Marker>
+```
+
+## Variants
+
+Use `@variant` to switch between an inline marker, bordered row, and labeled separator.
+
+<ComponentPreview framework="ember" name="marker-variants" />
+
+| Variant     | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| `default`   | An inline marker for status, notes, and actions.     |
+| `border`    | A default marker with a bottom border under the row. |
+| `separator` | A centered label with divider lines on each side.    |
+
+## Status
+
+Set `role="status"` and include a [`Spinner`](/docs/components/ember/spinner) for streaming or in-progress markers so updates are announced.
+
+<ComponentPreview framework="ember" name="marker-status" />
+
+## Shimmer
+
+Add the `shimmer` utility class to the marker content for an animated streaming-text effect.
+
+<ComponentPreview framework="ember" name="marker-shimmer" />
+
+## Separator
+
+Use the `separator` variant for labeled dividers, such as dates or section breaks, in a conversation.
+
+<ComponentPreview framework="ember" name="marker-separator" />
+
+## Border
+
+Use the `border` variant for status rows that should keep the default marker alignment while separating the next row.
+
+<ComponentPreview framework="ember" name="marker-border" />
+
+## With Icon
+
+Use `MarkerIcon` to render an icon alongside the content. Use `flex-col` on the root to stack the icon above the content.
+
+<ComponentPreview framework="ember" name="marker-icon" />
+
+## Links and Buttons
+
+Turn a marker into a link or button with the `@asChild` prop on `Marker`. The yielded hash exposes `class`, `slot`, and `variant` to apply to the child element.
+
+<ComponentPreview framework="ember" name="marker-link-button" />
+
+## API Reference
+
+### Marker
+
+The root marker element. The file also exports `markerVariants` for composing the marker styles into custom components.
+
+| Prop       | Type                                   | Default     | Description                                         |
+| ---------- | -------------------------------------- | ----------- | --------------------------------------------------- |
+| `@variant` | `"default" \| "border" \| "separator"` | `"default"` | The marker layout.                                  |
+| `@asChild` | `boolean`                              | `false`     | Merge props onto the child element, such as a link. |
+| `@class`   | `string`                               | -           | Additional classes to apply to the root element.    |
+
+### MarkerIcon
+
+A decorative icon slot. Hidden from assistive tech with `aria-hidden`.
+
+| Prop     | Type     | Default | Description                                   |
+| -------- | -------- | ------- | --------------------------------------------- |
+| `@class` | `string` | -       | Additional classes to apply to the icon slot. |
+
+### MarkerContent
+
+The marker text content.
+
+| Prop     | Type     | Default | Description                                      |
+| -------- | -------- | ------- | ------------------------------------------------ |
+| `@class` | `string` | -       | Additional classes to apply to the content slot. |

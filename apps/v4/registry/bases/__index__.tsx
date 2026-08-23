@@ -11089,6 +11089,71 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/vue/ui/attachment/Attachment.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentAction.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentActions.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentDescription.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentMedia.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentTitle.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/AttachmentTrigger.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/attachment",
+        },
+      },
+    },
     avatar: {
       name: "avatar",
       title: "undefined",
@@ -11165,6 +11230,46 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/vue/ui/bubble/Bubble.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/bubble/BubbleContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/bubble/BubbleGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/bubble/BubbleReactions.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/bubble",
         },
       },
     },
@@ -11909,6 +12014,31 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/vue/ui/direction/DirectionProvider.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/direction/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/direction",
+        },
+      },
+    },
     drawer: {
       name: "drawer",
       title: "undefined",
@@ -12535,6 +12665,146 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/label",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/vue/ui/marker/Marker.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/marker/MarkerContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/marker/MarkerIcon.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/marker",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/vue/ui/message/Message.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/MessageAvatar.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/MessageContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/MessageFooter.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/MessageGroup.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/MessageHeader.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScrollerProvider.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScroller.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScrollerViewport.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScrollerContent.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScrollerItem.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/MessageScrollerButton.vue",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/ui/message-scroller/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message-scroller",
         },
       },
     },
@@ -14000,6 +14270,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/alert/AlertRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14029,6 +14304,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/aspect-ratio/AspectRatioRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -14086,6 +14366,279 @@ export const Index: Record<string, Record<string, any>> = {
         },
         {
           path: "registry/bases/vue/examples/badge/BadgeSolid.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-example": {
+      name: "attachment-example",
+      title: "Attachment",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment", "button", "dialog", "spinner"],
+      files: [
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentGroupDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentImage.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentSizes.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentStates.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/attachment/AttachmentTrigger.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-example": {
+      name: "bubble-example",
+      title: "Bubble",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [
+        "bubble",
+        "button",
+        "collapsible",
+        "popover",
+        "tooltip",
+      ],
+      files: [
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleAlignment.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleCollapsible.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleGroupDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleLinkButton.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubblePopover.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleReactions.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleTooltip.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleVariants.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleMarkdown.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-example": {
+      name: "marker-example",
+      title: "Marker",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker", "spinner"],
+      files: [
+        {
+          path: "registry/bases/vue/examples/marker/MarkerBorder.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerIcon.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerLinkButton.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerSeparator.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerShimmer.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerStatus.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/marker/MarkerVariants.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-example": {
+      name: "message-example",
+      title: "Message",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [
+        "attachment",
+        "avatar",
+        "bubble",
+        "button",
+        "marker",
+        "message",
+      ],
+      files: [
+        {
+          path: "registry/bases/vue/examples/message/MessageActions.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageAttachment.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageAvatar.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageGroup.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageHeaderFooter.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message/MessageMarkdown.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-demo": {
+      name: "message-scroller-demo",
+      title: "Message Scroller Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["message-scroller", "button", "input"],
+      files: [
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerScrollable.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerAnchoring.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerAnimation.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerGroupChat.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerLoadHistory.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerOpeningPosition.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerPreviousContext.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerState.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerStreaming.vue",
           type: "registry:example",
           target: "",
         },
@@ -14504,6 +15057,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/command/CommandDialogDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14517,6 +15075,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/context-menu/ContextMenuDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/context-menu/ContextMenuSides.vue",
           type: "registry:example",
           target: "",
         },
@@ -14542,6 +15105,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/data-table/DataTableRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14555,6 +15123,41 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/date-picker/DatePickerDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerBasic.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerDob.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerInput.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerNaturalLanguage.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerRange.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerTime.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -14612,6 +15215,26 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerNested.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerNonModal.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerSnapPoints.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerSwipeHandle.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14625,6 +15248,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/dropdown-menu/DropdownMenuRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -14915,6 +15543,11 @@ export const Index: Record<string, Record<string, any>> = {
         },
         {
           path: "registry/bases/vue/examples/input-group/InputGroupVariants.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/input-group/InputGroupRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15367,6 +16000,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/sheet/SheetRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15380,6 +16018,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/sidebar/SidebarDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/sidebar/SidebarRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15412,6 +16055,27 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/slider/SliderDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "toast-example": {
+      name: "toast-example",
+      title: "Toast",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/vue/examples/toast/ToastTypes.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/toast/ToastPromise.vue",
           type: "registry:example",
           target: "",
         },
@@ -15564,6 +16228,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/switch/SwitchDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/switch/SwitchRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15892,6 +16561,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/typography/TypographyRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15979,6 +16653,846 @@ export const Index: Record<string, Record<string, any>> = {
         {
           path: "registry/bases/vue/lib/utils.ts",
           type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "login-01": {
+      name: "login-01",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/login-01/LoginPage.vue",
+          type: "registry:page",
+          target: "login-01/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/login-01/LoginForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "login-02": {
+      name: "login-02",
+      title: "undefined",
+      description: "A login form with a split screen layout.",
+      type: "registry:block",
+      registryDependencies: ["button", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/login-02/LoginPage.vue",
+          type: "registry:page",
+          target: "login-02/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/login-02/LoginForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "login-03": {
+      name: "login-03",
+      title: "undefined",
+      description: "A login form with social auth options.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/login-03/LoginPage.vue",
+          type: "registry:page",
+          target: "login-03/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/login-03/LoginForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "login-04": {
+      name: "login-04",
+      title: "undefined",
+      description: "A login form with an image panel.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/login-04/LoginPage.vue",
+          type: "registry:page",
+          target: "login-04/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/login-04/LoginForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "login-05": {
+      name: "login-05",
+      title: "undefined",
+      description: "A centered login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/login-05/LoginPage.vue",
+          type: "registry:page",
+          target: "login-05/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/login-05/LoginForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "signup-01": {
+      name: "signup-01",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/signup-01/SignupPage.vue",
+          type: "registry:page",
+          target: "signup-01/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/signup-01/SignupForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "signup-02": {
+      name: "signup-02",
+      title: "undefined",
+      description: "A signup form with a split screen layout.",
+      type: "registry:block",
+      registryDependencies: ["button", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/signup-02/SignupPage.vue",
+          type: "registry:page",
+          target: "signup-02/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/signup-02/SignupForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "signup-03": {
+      name: "signup-03",
+      title: "undefined",
+      description: "A signup form with a two column password row.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/signup-03/SignupPage.vue",
+          type: "registry:page",
+          target: "signup-03/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/signup-03/SignupForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "signup-04": {
+      name: "signup-04",
+      title: "undefined",
+      description: "A signup form with an image panel.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/signup-04/SignupPage.vue",
+          type: "registry:page",
+          target: "signup-04/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/signup-04/SignupForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "signup-05": {
+      name: "signup-05",
+      title: "undefined",
+      description: "A centered signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "field", "input", "label"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/signup-05/SignupPage.vue",
+          type: "registry:page",
+          target: "signup-05/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/signup-05/SignupForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-01": {
+      name: "sidebar-01",
+      title: "undefined",
+      description: "A simple sidebar with navigation groups.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-01/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-01/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-01/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-01/SearchForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-01/VersionSwitcher.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-02": {
+      name: "sidebar-02",
+      title: "undefined",
+      description: "A sidebar with collapsible sections.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-02/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-02/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-02/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-02/SearchForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-02/VersionSwitcher.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-03": {
+      name: "sidebar-03",
+      title: "undefined",
+      description:
+        "A sidebar with sub-components nested in a collapsible group.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-03/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-03/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-03/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-04": {
+      name: "sidebar-04",
+      title: "undefined",
+      description: "A floating sidebar with sub-components.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-04/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-04/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-04/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-05": {
+      name: "sidebar-05",
+      title: "undefined",
+      description: "A sidebar with collapsible submenus.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-05/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-05/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-05/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-05/SearchForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-06": {
+      name: "sidebar-06",
+      title: "undefined",
+      description: "A sidebar with a footer and opt-in form.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-06/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-06/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-06/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-06/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-06/SidebarOptInForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-07": {
+      name: "sidebar-07",
+      title: "undefined",
+      description:
+        "A sidebar with a header, content, footer, and rail (collapsible to icons).",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-07/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/NavProjects.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-07/TeamSwitcher.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-08": {
+      name: "sidebar-08",
+      title: "undefined",
+      description: "An inset sidebar with secondary navigation menus.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-08/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/NavProjects.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/NavSecondary.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-08/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-09": {
+      name: "sidebar-09",
+      title: "undefined",
+      description: "A sidebar with a dual layout (icon rail + panel).",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-09/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-09/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-09/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-09/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-10": {
+      name: "sidebar-10",
+      title: "undefined",
+      description:
+        "A sidebar in a pop-over dialog with favorites, workspaces and actions.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-10/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/NavActions.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/NavFavorites.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/NavSecondary.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/NavWorkspaces.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-10/TeamSwitcher.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-11": {
+      name: "sidebar-11",
+      title: "undefined",
+      description: "A sidebar with a collapsible file tree.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-11/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-11/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-11/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-11/TreeItem.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-12": {
+      name: "sidebar-12",
+      title: "undefined",
+      description: "A sidebar with a calendar.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-12/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-12/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-12/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-12/Calendars.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-12/DatePicker.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-12/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-13": {
+      name: "sidebar-13",
+      title: "undefined",
+      description: "A settings dialog built on top of the sidebar.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-13/SettingsPage.vue",
+          type: "registry:page",
+          target: "sidebar-13/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-13/SettingsDialog.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-14": {
+      name: "sidebar-14",
+      title: "undefined",
+      description: "A right-side sidebar with sub-nested navigation.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-14/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-14/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-14/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-15": {
+      name: "sidebar-15",
+      title: "undefined",
+      description: "Left/right sidebars with calendar support.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-15/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/Calendars.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/DatePicker.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/NavFavorites.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/NavSecondary.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/NavWorkspaces.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/SidebarLeft.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/SidebarRight.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-15/TeamSwitcher.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-16": {
+      name: "sidebar-16",
+      title: "undefined",
+      description: "A sidebar with a sticky site header and search form.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "breadcrumb", "separator", "skeleton"],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/SidebarPage.vue",
+          type: "registry:page",
+          target: "sidebar-16/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/NavProjects.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/NavSecondary.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/SearchForm.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/sidebar-16/SiteHeader.vue",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "dashboard-01": {
+      name: "dashboard-01",
+      title: "undefined",
+      description: "A dashboard with sidebar, charts and data table.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "chart",
+        "card",
+        "select",
+        "tabs",
+        "table",
+        "toggle-group",
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "drawer",
+        "input",
+        "avatar",
+        "sheet",
+        "sonner",
+      ],
+      files: [
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/DashboardPage.vue",
+          type: "registry:page",
+          target: "dashboard-01/page.vue",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/data.json",
+          type: "registry:file",
+          target: "dashboard-01/data.json",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/AppSidebar.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/ChartAreaInteractive.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/DataTable.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/NavDocuments.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/NavMain.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/NavSecondary.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/NavUser.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/SectionCards.vue",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/blocks/dashboard-01/SiteHeader.vue",
+          type: "registry:component",
           target: "",
         },
       ],
@@ -16172,6 +17686,71 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "utils"],
+      files: [
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-action.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-actions.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-description.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-media.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-title.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment-trigger.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/attachment.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/attachment",
+        },
+      },
+    },
     avatar: {
       name: "avatar",
       title: "undefined",
@@ -16299,6 +17878,46 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/breadcrumb",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "registry/bases/svelte/ui/bubble/bubble-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/bubble/bubble-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/bubble/bubble-reactions.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/bubble/bubble.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/bubble",
         },
       },
     },
@@ -16919,6 +18538,36 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/dialog",
+        },
+      },
+    },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/svelte/ui/direction/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/direction/direction-provider.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/direction/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/direction",
         },
       },
     },
@@ -17604,6 +19253,146 @@ export const Index: Record<string, Record<string, any>> = {
       meta: {
         links: {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/menubar",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "registry/bases/svelte/ui/marker/marker-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/marker/marker-icon.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/marker/marker.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/marker",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["utils"],
+      files: [
+        {
+          path: "registry/bases/svelte/ui/message/message-avatar.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/message-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/message-footer.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/message-group.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/message-header.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/message.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "utils"],
+      files: [
+        {
+          path: "registry/bases/svelte/ui/message-scroller/context.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller-button.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller-content.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller-item.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller-provider.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller-viewport.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/ui/message-scroller/message-scroller.svelte",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/svelte/message-scroller",
         },
       },
     },
@@ -18821,6 +20610,22 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: undefined,
     },
+    "attachment-demo": {
+      name: "attachment-demo",
+      title: "Attachment Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/attachment-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
     "avatar-demo": {
       name: "avatar-demo",
       title: "Avatar Demo",
@@ -19022,6 +20827,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/breadcrumb-separator.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-demo": {
+      name: "bubble-demo",
+      title: "Bubble Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/bubble-demo.svelte",
           type: "registry:example",
           target: "",
         },
@@ -19273,6 +21094,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/button-group-split-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-as-child": {
+      name: "button-as-child",
+      title: "Button As Child",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/button-as-child.svelte",
           type: "registry:example",
           target: "",
         },
@@ -20189,6 +22026,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/empty-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "empty-icon": {
+      name: "empty-icon",
+      title: "Empty Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["empty"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/empty-icon.svelte",
           type: "registry:example",
           target: "",
         },
@@ -21264,6 +23117,22 @@ export const Index: Record<string, Record<string, any>> = {
       categories: undefined,
       meta: undefined,
     },
+    "marker-demo": {
+      name: "marker-demo",
+      title: "Marker Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/marker-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
     "menubar-demo": {
       name: "menubar-demo",
       title: "Menubar Demo",
@@ -21273,6 +23142,38 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/menubar-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-demo": {
+      name: "message-demo",
+      title: "Message Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["message", "bubble", "avatar"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/message-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-demo": {
+      name: "message-scroller-demo",
+      title: "Message Scroller Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["message-scroller", "button", "input"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/message-scroller-demo.svelte",
           type: "registry:example",
           target: "",
         },
@@ -21465,6 +23366,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/resizable-demo.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "resizable-demo-with-handle": {
+      name: "resizable-demo-with-handle",
+      title: "Resizable Demo With Handle",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["resizable"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/resizable-demo-with-handle.svelte",
           type: "registry:example",
           target: "",
         },
@@ -21753,6 +23670,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/svelte/examples/sonner-types.svelte",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "spinner-basic": {
+      name: "spinner-basic",
+      title: "Spinner Basic",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["spinner"],
+      files: [
+        {
+          path: "registry/bases/svelte/examples/spinner-basic.svelte",
           type: "registry:example",
           target: "",
         },
@@ -22574,6 +24507,880 @@ export const Index: Record<string, Record<string, any>> = {
         },
       ],
       categories: undefined,
+      meta: undefined,
+    },
+    "dashboard-01": {
+      name: "dashboard-01",
+      title: "undefined",
+      description: "A dashboard with sidebar, charts and data table.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "chart",
+        "card",
+        "select",
+        "table",
+        "badge",
+        "button",
+        "dropdown-menu",
+        "input",
+        "avatar",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/page.svelte",
+          type: "registry:page",
+          target: "src/routes/dashboard/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/data.json",
+          type: "registry:file",
+          target: "src/lib/blocks/dashboard-01/data.json",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/chart-area-interactive.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/data-table.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/nav-documents.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/nav-secondary.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/section-cards.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/dashboard-01/components/site-header.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["dashboard"],
+      meta: undefined,
+    },
+    "login-01": {
+      name: "login-01",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/login-01/page.svelte",
+          type: "registry:page",
+          target: "src/routes/login-01/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/login-01/components/login-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-02": {
+      name: "login-02",
+      title: "undefined",
+      description: "A login form with a social button.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/login-02/page.svelte",
+          type: "registry:page",
+          target: "src/routes/login-02/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/login-02/components/login-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-03": {
+      name: "login-03",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/login-03/page.svelte",
+          type: "registry:page",
+          target: "src/routes/login-03/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/login-03/components/login-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-04": {
+      name: "login-04",
+      title: "undefined",
+      description: "A two column login page with a cover image.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/login-04/page.svelte",
+          type: "registry:page",
+          target: "src/routes/login-04/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/login-04/components/login-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-05": {
+      name: "login-05",
+      title: "undefined",
+      description: "A centered login page.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/login-05/page.svelte",
+          type: "registry:page",
+          target: "src/routes/login-05/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/login-05/components/login-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "signup-01": {
+      name: "signup-01",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/signup-01/page.svelte",
+          type: "registry:page",
+          target: "src/routes/signup-01/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/signup-01/components/signup-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-02": {
+      name: "signup-02",
+      title: "undefined",
+      description: "A two column signup page with a cover image.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/signup-02/page.svelte",
+          type: "registry:page",
+          target: "src/routes/signup-02/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/signup-02/components/signup-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-03": {
+      name: "signup-03",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/signup-03/page.svelte",
+          type: "registry:page",
+          target: "src/routes/signup-03/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/signup-03/components/signup-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-04": {
+      name: "signup-04",
+      title: "undefined",
+      description: "A two column signup page with a cover image.",
+      type: "registry:block",
+      registryDependencies: ["button", "card", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/signup-04/page.svelte",
+          type: "registry:page",
+          target: "src/routes/signup-04/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/signup-04/components/signup-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-05": {
+      name: "signup-05",
+      title: "undefined",
+      description: "A centered signup page.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/signup-05/page.svelte",
+          type: "registry:page",
+          target: "src/routes/signup-05/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/signup-05/components/signup-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "sidebar-01": {
+      name: "sidebar-01",
+      title: "undefined",
+      description: "A simple sidebar with navigation grouped by section.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-01/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-01/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-01/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-01/components/search-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-01/components/version-switcher.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-02": {
+      name: "sidebar-02",
+      title: "undefined",
+      description: "A sidebar with collapsible sections.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-02/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-02/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-02/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-02/components/search-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-02/components/version-switcher.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-03": {
+      name: "sidebar-03",
+      title: "undefined",
+      description: "A sidebar with sub-components.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-03/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-03/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-03/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-04": {
+      name: "sidebar-04",
+      title: "undefined",
+      description: "A floating sidebar with sub-components.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-04/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-04/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-04/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-05": {
+      name: "sidebar-05",
+      title: "undefined",
+      description: "A sidebar with collapsible sub-sections.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-05/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-05/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-05/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-05/components/search-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-06": {
+      name: "sidebar-06",
+      title: "undefined",
+      description: "A sidebar with dropdown navigation menus.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-06/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-06/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-06/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-06/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-06/components/sidebar-opt-in-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-07": {
+      name: "sidebar-07",
+      title: "undefined",
+      description: "A sidebar with team switcher, projects, and user menu.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-07/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/components/nav-projects.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-07/components/team-switcher.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-08": {
+      name: "sidebar-08",
+      title: "undefined",
+      description: "An inset sidebar with secondary navigation.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-08/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/components/nav-projects.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/components/nav-secondary.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-08/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-09": {
+      name: "sidebar-09",
+      title: "undefined",
+      description: "A sidebar with an icon bar and mail list.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-09/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-09/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-09/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-09/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-10": {
+      name: "sidebar-10",
+      title: "undefined",
+      description: "A sidebar with favorites, workspaces, and actions.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-10/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/nav-actions.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/nav-favorites.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/nav-secondary.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/nav-workspaces.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-10/components/team-switcher.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-11": {
+      name: "sidebar-11",
+      title: "undefined",
+      description: "A sidebar showing file changes and a file tree.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-11/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-11/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-11/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-11/components/tree.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-12": {
+      name: "sidebar-12",
+      title: "undefined",
+      description: "A sidebar with calendar, date picker, and user menu.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+        "calendar",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-12/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-12/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-12/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-12/components/calendars.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-12/components/date-picker.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-12/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-13": {
+      name: "sidebar-13",
+      title: "undefined",
+      description: "A settings dialog built with a sidebar inside.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "dialog"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-13/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-13/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-13/components/settings-dialog.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-14": {
+      name: "sidebar-14",
+      title: "undefined",
+      description: "A table of contents sidebar.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-14/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-14/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-14/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-15": {
+      name: "sidebar-15",
+      title: "undefined",
+      description: "Left and right sidebars with sticky headers.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-15/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/calendars.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/date-picker.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/nav-favorites.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/nav-secondary.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/nav-workspaces.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/sidebar-left.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/sidebar-right.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-15/components/team-switcher.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-16": {
+      name: "sidebar-16",
+      title: "undefined",
+      description: "A sidebar with a sticky header and search.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "avatar",
+        "dropdown-menu",
+      ],
+      files: [
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/page.svelte",
+          type: "registry:page",
+          target: "src/routes/sidebar-16/+page.svelte",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/app-sidebar.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/nav-main.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/nav-projects.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/nav-secondary.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/nav-user.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/search-form.svelte",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/svelte/blocks/sidebar-16/components/site-header.svelte",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
       meta: undefined,
     },
   },
@@ -23643,6 +26450,180 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/tooltip",
           examples:
             "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts",
+        },
+      },
+    },
+    attachment: {
+      name: "attachment",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/attachment/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/ui/attachment/attachment.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/attachment",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/attachment-demo.gts",
+        },
+      },
+    },
+    bubble: {
+      name: "bubble",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/bubble/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/ui/bubble/bubble.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/bubble",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/bubble-demo.gts",
+        },
+      },
+    },
+    direction: {
+      name: "direction",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/direction.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/direction",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/direction-demo.gts",
+        },
+      },
+    },
+    drawer: {
+      name: "drawer",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/drawer.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/drawer",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/drawer-demo.gts",
+        },
+      },
+    },
+    marker: {
+      name: "marker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/marker/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/ui/marker/marker.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/marker",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/marker-demo.gts",
+        },
+      },
+    },
+    message: {
+      name: "message",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/message/index.ts",
+          type: "registry:ui",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/ui/message/message.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-demo.gts",
+        },
+      },
+    },
+    "message-scroller": {
+      name: "message-scroller",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/ember/ui/message-scroller.gts",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://forceui.public.prd.shared.perforce.com/docs/components/ember/message-scroller",
+          examples:
+            "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/message-scroller-demo.gts",
         },
       },
     },
@@ -26876,6 +29857,2110 @@ export const Index: Record<string, Record<string, any>> = {
         },
       ],
       categories: undefined,
+      meta: undefined,
+    },
+    "attachment-demo": {
+      name: "attachment-demo",
+      title: "Attachment Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment", "button", "spinner"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-group": {
+      name: "attachment-group",
+      title: "Attachment Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-image": {
+      name: "attachment-image",
+      title: "Attachment Image",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-image.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-sizes": {
+      name: "attachment-sizes",
+      title: "Attachment Sizes",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-sizes.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-states": {
+      name: "attachment-states",
+      title: "Attachment States",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment", "spinner"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-states.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "attachment-trigger": {
+      name: "attachment-trigger",
+      title: "Attachment Trigger",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment", "dialog"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/attachment-trigger.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-destructive": {
+      name: "badge-destructive",
+      title: "Badge Destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/badge-destructive.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-outline": {
+      name: "badge-outline",
+      title: "Badge Outline",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/badge-outline.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-secondary": {
+      name: "badge-secondary",
+      title: "Badge Secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/badge-secondary.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "badge-warning": {
+      name: "badge-warning",
+      title: "Badge Warning",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/badge-warning.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-alignment": {
+      name: "bubble-alignment",
+      title: "Bubble Alignment",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-alignment.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-collapsible": {
+      name: "bubble-collapsible",
+      title: "Bubble Collapsible",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "collapsible"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-collapsible.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-demo": {
+      name: "bubble-demo",
+      title: "Bubble Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-group-demo": {
+      name: "bubble-group-demo",
+      title: "Bubble Group Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-group-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-link-button": {
+      name: "bubble-link-button",
+      title: "Bubble Link Button",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-link-button.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-popover": {
+      name: "bubble-popover",
+      title: "Bubble Popover",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "button", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-popover.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-reactions": {
+      name: "bubble-reactions",
+      title: "Bubble Reactions",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-reactions.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-tooltip": {
+      name: "bubble-tooltip",
+      title: "Bubble Tooltip",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "tooltip"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-tooltip.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-variants": {
+      name: "bubble-variants",
+      title: "Bubble Variants",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-variants.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "button-loading": {
+      name: "button-loading",
+      title: "Button Loading",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/button-loading.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-demo": {
+      name: "drawer-demo",
+      title: "Drawer Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [
+        "badge",
+        "button",
+        "drawer",
+        "field",
+        "radio-group",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-dialog": {
+      name: "drawer-dialog",
+      title: "Drawer Dialog",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "dialog", "drawer"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-dialog.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-sides": {
+      name: "drawer-sides",
+      title: "Drawer Sides",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "drawer"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-sides.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-border": {
+      name: "marker-border",
+      title: "Marker Border",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-border.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-demo": {
+      name: "marker-demo",
+      title: "Marker Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker", "spinner"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-icon": {
+      name: "marker-icon",
+      title: "Marker Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-icon.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-link-button": {
+      name: "marker-link-button",
+      title: "Marker Link Button",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-link-button.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-separator": {
+      name: "marker-separator",
+      title: "Marker Separator",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-separator.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-shimmer": {
+      name: "marker-shimmer",
+      title: "Marker Shimmer",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-shimmer.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-status": {
+      name: "marker-status",
+      title: "Marker Status",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker", "spinner"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-status.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "marker-variants": {
+      name: "marker-variants",
+      title: "Marker Variants",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marker"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/marker-variants.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-actions": {
+      name: "message-actions",
+      title: "Message Actions",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "button", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-actions.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-attachment": {
+      name: "message-attachment",
+      title: "Message Attachment",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["attachment", "bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-attachment.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-avatar": {
+      name: "message-avatar",
+      title: "Message Avatar",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar", "bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-avatar.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-demo": {
+      name: "message-demo",
+      title: "Message Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar", "bubble", "marker", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-group": {
+      name: "message-group",
+      title: "Message Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar", "bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-header-footer": {
+      name: "message-header-footer",
+      title: "Message Header Footer",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-header-footer.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-demo": {
+      name: "message-scroller-demo",
+      title: "Message Scroller Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "button", "message-scroller"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "scroll-area-demo": {
+      name: "scroll-area-demo",
+      title: "Scroll Area Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["scroll-area", "separator"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/scroll-area-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "scroll-area-horizontal-demo": {
+      name: "scroll-area-horizontal-demo",
+      title: "Scroll Area Horizontal Demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["scroll-area"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/scroll-area-horizontal-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-action": {
+      name: "alert-action",
+      title: "Alert Action",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-action.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-rtl": {
+      name: "alert-rtl",
+      title: "Alert RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-destructive": {
+      name: "alert-dialog-destructive",
+      title: "Alert Dialog Destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-destructive.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-media": {
+      name: "alert-dialog-media",
+      title: "Alert Dialog Media",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-media.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-small-media": {
+      name: "alert-dialog-small-media",
+      title: "Alert Dialog Small with Media",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-small-media.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "aspect-ratio-rtl": {
+      name: "aspect-ratio-rtl",
+      title: "Aspect Ratio RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["aspect-ratio"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/aspect-ratio-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-badge": {
+      name: "avatar-badge",
+      title: "Avatar Badge",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-badge.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-badge-icon": {
+      name: "avatar-badge-icon",
+      title: "Avatar Badge Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-badge-icon.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group": {
+      name: "avatar-group",
+      title: "Avatar Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group-count": {
+      name: "avatar-group-count",
+      title: "Avatar Group Count",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group-count.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group-count-icon": {
+      name: "avatar-group-count-icon",
+      title: "Avatar Group Count Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group-count-icon.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-size": {
+      name: "avatar-size",
+      title: "Avatar Size",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-size.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-rtl": {
+      name: "avatar-rtl",
+      title: "Avatar RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-markdown": {
+      name: "bubble-markdown",
+      title: "Bubble Markdown",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-markdown.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-basic": {
+      name: "combobox-basic",
+      title: "Combobox Basic",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-basic.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-custom": {
+      name: "combobox-custom",
+      title: "Combobox Custom",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "item", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-custom.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-disabled": {
+      name: "combobox-disabled",
+      title: "Combobox Disabled",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-disabled.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-groups": {
+      name: "combobox-groups",
+      title: "Combobox Groups",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-groups.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-input-group": {
+      name: "combobox-input-group",
+      title: "Combobox Input Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-input-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-invalid": {
+      name: "combobox-invalid",
+      title: "Combobox Invalid",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-invalid.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-popup": {
+      name: "combobox-popup",
+      title: "Combobox Popup",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-popup.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-rtl": {
+      name: "combobox-rtl",
+      title: "Combobox RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-nested": {
+      name: "drawer-nested",
+      title: "Drawer Nested",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "drawer"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-nested.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-rtl": {
+      name: "drawer-rtl",
+      title: "Drawer RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "drawer", "field", "input"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "empty-card": {
+      name: "empty-card",
+      title: "Empty in Card",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "empty"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/empty-card.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-basic": {
+      name: "input-group-basic",
+      title: "Input Group Basic",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-basic.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-in-card": {
+      name: "input-group-in-card",
+      title: "Input Group in Card",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "card", "field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-in-card.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-rtl": {
+      name: "input-group-rtl",
+      title: "Input Group RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-textarea-examples": {
+      name: "input-group-textarea-examples",
+      title: "Input Group Textarea Examples",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group", "textarea"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-textarea-examples.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-addons": {
+      name: "input-group-with-addons",
+      title: "Input Group with Addons",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-addons.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-buttons": {
+      name: "input-group-with-buttons",
+      title: "Input Group with Buttons",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-buttons.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-kbd": {
+      name: "input-group-with-kbd",
+      title: "Input Group with Kbd",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group", "kbd"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-kbd.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-tooltip": {
+      name: "input-group-with-tooltip",
+      title: "Input Group with Tooltip",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "field", "input-group", "tooltip"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-tooltip.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-markdown": {
+      name: "message-markdown",
+      title: "Message Markdown",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-markdown.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-group-chat": {
+      name: "message-scroller-group-chat",
+      title: "Message Scroller Group Chat",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [
+        "avatar",
+        "bubble",
+        "button",
+        "card",
+        "message",
+        "message-scroller",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-group-chat.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-scrollable": {
+      name: "message-scroller-scrollable",
+      title: "Message Scroller Scrollable",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "card", "message", "message-scroller"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-scrollable.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-state": {
+      name: "message-scroller-state",
+      title: "Message Scroller State",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "card", "message", "message-scroller"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-state.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "scroll-area-rtl": {
+      name: "scroll-area-rtl",
+      title: "Scroll Area RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["scroll-area", "separator"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/scroll-area-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sheet-rtl": {
+      name: "sheet-rtl",
+      title: "Sheet RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "field", "input", "sheet"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/sheet-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-rtl": {
+      name: "sidebar-rtl",
+      title: "Sidebar RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["sidebar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/sidebar-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "switch-rtl": {
+      name: "switch-rtl",
+      title: "Switch RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["switch"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/switch-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "typography-rtl": {
+      name: "typography-rtl",
+      title: "Typography RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [],
+      files: [
+        {
+          path: "registry/bases/ember/examples/typography-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "dashboard-01": {
+      name: "dashboard-01",
+      title: "undefined",
+      description: "A dashboard with sidebar and cards.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "card",
+        "badge",
+        "button",
+        "checkbox",
+        "table",
+        "dropdown-menu",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/page.gts",
+          type: "registry:page",
+          target: "app/dashboard/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/data.json",
+          type: "registry:file",
+          target: "app/dashboard/data.json",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/chart-area-interactive.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/data-table.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/nav-main.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/section-cards.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/dashboard-01/components/site-header.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["dashboard"],
+      meta: undefined,
+    },
+    "login-01": {
+      name: "login-01",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/login-01/page.gts",
+          type: "registry:page",
+          target: "app/login/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/login-01/components/login-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-02": {
+      name: "login-02",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/login-02/page.gts",
+          type: "registry:page",
+          target: "app/login/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/login-02/components/login-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-03": {
+      name: "login-03",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/login-03/page.gts",
+          type: "registry:page",
+          target: "app/login/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/login-03/components/login-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-04": {
+      name: "login-04",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/login-04/page.gts",
+          type: "registry:page",
+          target: "app/login/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/login-04/components/login-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "login-05": {
+      name: "login-05",
+      title: "undefined",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/login-05/page.gts",
+          type: "registry:page",
+          target: "app/login/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/login-05/components/login-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "login"],
+      meta: undefined,
+    },
+    "signup-01": {
+      name: "signup-01",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/signup-01/page.gts",
+          type: "registry:page",
+          target: "app/signup/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/signup-01/components/signup-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-02": {
+      name: "signup-02",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/signup-02/page.gts",
+          type: "registry:page",
+          target: "app/signup/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/signup-02/components/signup-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-03": {
+      name: "signup-03",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/signup-03/page.gts",
+          type: "registry:page",
+          target: "app/signup/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/signup-03/components/signup-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-04": {
+      name: "signup-04",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/signup-04/page.gts",
+          type: "registry:page",
+          target: "app/signup/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/signup-04/components/signup-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "signup-05": {
+      name: "signup-05",
+      title: "undefined",
+      description: "A simple signup form.",
+      type: "registry:block",
+      registryDependencies: ["button", "input", "card", "field"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/signup-05/page.gts",
+          type: "registry:page",
+          target: "app/signup/page.gts",
+        },
+        {
+          path: "registry/bases/ember/blocks/signup-05/components/signup-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["authentication", "signup"],
+      meta: undefined,
+    },
+    "sidebar-01": {
+      name: "sidebar-01",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-01/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-01/components/search-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-01/components/version-switcher.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-02": {
+      name: "sidebar-02",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-02/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-02/components/search-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-02/components/version-switcher.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-03": {
+      name: "sidebar-03",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-03/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-04": {
+      name: "sidebar-04",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-04/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-05": {
+      name: "sidebar-05",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-05/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-05/components/search-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-06": {
+      name: "sidebar-06",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-06/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-06/components/nav-main-dropdown.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-06/components/sidebar-opt-in-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-07": {
+      name: "sidebar-07",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-07/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-07/components/nav-main.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-07/components/nav-projects.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-07/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-07/components/team-switcher.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-08": {
+      name: "sidebar-08",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-08/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-08/components/nav-main-platform.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-08/components/nav-projects.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-08/components/nav-secondary.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-08/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-09": {
+      name: "sidebar-09",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-09/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-09/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-10": {
+      name: "sidebar-10",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/nav-actions.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/nav-favorites.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/nav-main-plain.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/nav-secondary.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/nav-workspaces.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-10/components/team-switcher.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-11": {
+      name: "sidebar-11",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-11/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-11/components/tree-item.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-12": {
+      name: "sidebar-12",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-12/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-12/components/calendars.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-12/components/date-picker.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-12/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-13": {
+      name: "sidebar-13",
+      title: "undefined",
+      description: "A settings dialog.",
+      type: "registry:block",
+      registryDependencies: ["dialog", "sidebar", "breadcrumb", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-13/components/settings-dialog.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-14": {
+      name: "sidebar-14",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: ["sidebar", "separator", "breadcrumb"],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-14/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-15": {
+      name: "sidebar-15",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/calendars.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/date-picker.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/nav-favorites.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/nav-main-plain.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/nav-secondary.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/nav-workspaces.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/sidebar-left.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/sidebar-right.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-15/components/team-switcher.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
+      meta: undefined,
+    },
+    "sidebar-16": {
+      name: "sidebar-16",
+      title: "undefined",
+      description: "A sidebar block.",
+      type: "registry:block",
+      registryDependencies: [
+        "sidebar",
+        "separator",
+        "breadcrumb",
+        "dropdown-menu",
+        "collapsible",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/app-sidebar.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/nav-main-platform.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/nav-projects.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/nav-secondary.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/nav-user.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/search-form.gts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/bases/ember/blocks/sidebar-16/components/site-header.gts",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["sidebar"],
       meta: undefined,
     },
     utils: {

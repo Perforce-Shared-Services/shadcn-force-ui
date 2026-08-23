@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Minus from "@material-symbols/svg-400/rounded/remove.svg?component"
-import Plus from "@material-symbols/svg-400/rounded/add.svg?component"
-import { Button } from '@/ui/button'
+import { Button } from "@/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -12,7 +9,10 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '@/ui/drawer'
+} from "@/ui/drawer"
+import Plus from "@material-symbols/svg-400/rounded/add.svg?component"
+import Minus from "@material-symbols/svg-400/rounded/remove.svg?component"
+import { ref } from "vue"
 
 const goal = ref(350)
 </script>
@@ -20,9 +20,7 @@ const goal = ref(350)
 <template>
   <Drawer>
     <DrawerTrigger as-child>
-      <Button variant="outline">
-        فتح الدرج
-      </Button>
+      <Button variant="outline"> فتح الدرج </Button>
     </DrawerTrigger>
     <DrawerContent dir="rtl">
       <div class="mx-auto w-full max-w-sm">
@@ -46,7 +44,7 @@ const goal = ref(350)
               <div class="text-7xl font-bold tracking-tighter">
                 {{ goal }}
               </div>
-              <div class="text-muted-foreground text-[0.70rem] uppercase">
+              <div class="text-[0.70rem] text-muted-foreground uppercase">
                 سعرات حرارية/يوم
               </div>
             </div>
@@ -65,9 +63,7 @@ const goal = ref(350)
         <DrawerFooter>
           <Button>إرسال</Button>
           <DrawerClose as-child>
-            <Button variant="outline">
-              إلغاء
-            </Button>
+            <Button variant="outline"> إلغاء </Button>
           </DrawerClose>
         </DrawerFooter>
       </div>

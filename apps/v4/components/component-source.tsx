@@ -63,7 +63,10 @@ export async function ComponentSource({
     (await getRegistryItem(name!, resolvedStyleName))
 
   const rawFiles = (item?.files ?? []).filter(
-    (file: { path: string; content?: unknown }): file is {
+    (file: {
+      path: string
+      content?: unknown
+    }): file is {
       path: string
       content: string
     } => typeof file.content === "string"
@@ -91,9 +94,8 @@ export async function ComponentSource({
   // switcher, so formatting and highlighting every file there is pure waste -
   // and it is rendered on every statically generated component page. Narrow to
   // the file that would be shown.
-  const filesToProcess =
-    maxLines ?
-      [pickDefaultRawFile(rawFiles, item?.name)]
+  const filesToProcess = maxLines
+    ? [pickDefaultRawFile(rawFiles, item?.name)]
     : rawFiles
 
   // [FORCE-UI] Multi-file items (framework ports especially) need every

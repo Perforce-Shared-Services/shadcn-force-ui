@@ -1,0 +1,48 @@
+import { Bubble, BubbleContent, BubbleReactions } from '@/ui/bubble';
+
+<template>
+  <div class="flex w-full max-w-sm flex-col gap-12 py-12">
+    <Bubble>
+      <BubbleContent>This is the default primary bubble.</BubbleContent>
+    </Bubble>
+    <Bubble @align="end" @variant="secondary">
+      <BubbleContent>This is the secondary variant.</BubbleContent>
+    </Bubble>
+    <Bubble @variant="muted">
+      <BubbleContent>
+        This one is muted. It uses a lower emphasis color for the chat bubble.
+      </BubbleContent>
+      <BubbleReactions role="img" aria-label="Reaction: thumbs up">
+        <span>👍</span>
+      </BubbleReactions>
+    </Bubble>
+    <Bubble @align="end" @variant="tinted">
+      <BubbleContent>
+        This one is tinted. The tint is a softer color derived from the primary
+        color.
+      </BubbleContent>
+    </Bubble>
+    <Bubble @variant="outline">
+      <BubbleContent>We can also use an outlined variant.</BubbleContent>
+    </Bubble>
+    <Bubble @align="end" @variant="destructive">
+      <BubbleContent>Or a destructive variant with a reaction.</BubbleContent>
+      <BubbleReactions role="img" aria-label="Reaction: fire">
+        <span>🔥</span>
+      </BubbleReactions>
+    </Bubble>
+    <Bubble @variant="ghost">
+      <BubbleContent>
+        Ghost bubbles work for assistant text and other content that should not
+        be framed.
+
+        This is perfect for assistant messages that should not have a frame and
+        can take the full width of the container. You can also render `code` in
+        it.
+
+        Ghost bubbles are full width and can take the full width of the
+        container.
+      </BubbleContent>
+    </Bubble>
+  </div>
+</template>

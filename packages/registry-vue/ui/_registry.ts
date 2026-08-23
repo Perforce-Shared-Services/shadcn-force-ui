@@ -156,6 +156,60 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "attachment",
+    type: "registry:ui",
+    registryDependencies: [
+      "button",
+    ],
+    files: [
+      {
+        path: "ui/attachment/Attachment.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentAction.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentActions.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentDescription.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentGroup.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentMedia.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentTitle.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/AttachmentTrigger.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/attachment/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/attachment",
+      },
+    },
+  },
+  {
     name: "avatar",
     type: "registry:ui",
     dependencies: [
@@ -220,6 +274,37 @@ export const ui: Registry["items"] = [
       links: {
         docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/badge",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
+      },
+    },
+  },
+  {
+    name: "bubble",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/bubble/Bubble.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/bubble/BubbleContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/bubble/BubbleGroup.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/bubble/BubbleReactions.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/bubble/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/bubble",
       },
     },
   },
@@ -864,6 +949,28 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "direction",
+    type: "registry:ui",
+    dependencies: [
+      "reka-ui",
+    ],
+    files: [
+      {
+        path: "ui/direction/DirectionProvider.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/direction/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/direction",
+      },
+    },
+  },
+  {
     name: "drawer",
     type: "registry:ui",
     dependencies: [
@@ -1396,6 +1503,118 @@ export const ui: Registry["items"] = [
       links: {
         docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/label",
         examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
+      },
+    },
+  },
+  {
+    name: "marker",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/marker/Marker.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/marker/MarkerContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/marker/MarkerIcon.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/marker/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/marker",
+      },
+    },
+  },
+  {
+    name: "message",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/message/Message.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/MessageAvatar.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/MessageContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/MessageFooter.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/MessageGroup.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/MessageHeader.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message",
+      },
+    },
+  },
+  {
+    name: "message-scroller",
+    type: "registry:ui",
+    registryDependencies: [
+      "button",
+    ],
+    files: [
+      {
+        path: "ui/message-scroller/MessageScrollerProvider.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScroller.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerViewport.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerItem.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerButton.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/context.ts",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message-scroller",
       },
     },
   },

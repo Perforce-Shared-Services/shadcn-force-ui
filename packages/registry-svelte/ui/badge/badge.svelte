@@ -37,10 +37,18 @@
 		href,
 		class: className,
 		variant = "default",
+		srLabel,
 		children,
 		...restProps
 	}: WithElementRef<HTMLAnchorAttributes> & {
 		variant?: BadgeVariant;
+		/**
+		 * [FORCE-UI] Visually-hidden text prefix announced before the badge's
+		 * content. Status is otherwise conveyed only through color, which a
+		 * screen reader can't perceive — set this on count- or glyph-only
+		 * badges (e.g. `srLabel="Synced versions:"` on a bare "42").
+		 */
+		srLabel?: string;
 	} = $props();
 </script>
 
@@ -52,5 +60,6 @@
 	class={cn(badgeVariants({ variant }), className)}
 	{...restProps}
 >
+	{#if !href && srLabel}<span class="sr-only">{srLabel}&nbsp;</span>{/if}
 	{@render children?.()}
 </svelte:element>

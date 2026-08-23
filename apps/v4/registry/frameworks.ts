@@ -91,9 +91,7 @@ export function isFrameworkName(v: string): v is FrameworkName {
   return (FRAMEWORKS as readonly Framework[]).some((f) => f.name === v)
 }
 
-export function isPreviewFramework(
-  v: string
-): v is PreviewFramework["name"] {
+export function isPreviewFramework(v: string): v is PreviewFramework["name"] {
   return PREVIEW_FRAMEWORKS.some((f) => f.name === v)
 }
 

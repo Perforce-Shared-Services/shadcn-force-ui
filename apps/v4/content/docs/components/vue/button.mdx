@@ -131,6 +131,12 @@ Render a `<Spinner />` component inside the button to show a loading state. Reme
 
 <ComponentPreview framework="vue" name="button-spinner" />
 
+### Loading
+
+Or use the `loading` prop to show a built-in spinner, set `aria-busy`, and disable the button while an async action runs.
+
+<ComponentPreview framework="vue" name="button-loading" />
+
 ### As Child
 
 You can use the `as` prop on `<Button />` to make another component look like a button. Here's an example of a link that looks like a button.
@@ -148,3 +154,4 @@ The `Button` component is a wrapper around the `button` element that adds a vari
 | `variant` | `"default" \| "outline" \| "ghost" \| "destructive" \| "secondary" \| "link"`        | `"default"` |
 | `size`    | `"default" \| "xs" \| "sm" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
 | `as`      | `string`                                                                             | `"button"`  |
+| `loading` | `boolean`                                                                            | `false`     |

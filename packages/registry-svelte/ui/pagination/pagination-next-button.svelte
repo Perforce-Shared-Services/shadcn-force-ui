@@ -14,7 +14,7 @@
 
 {#snippet Fallback()}
 	<span>Next</span>
-	<ChevronRightIcon class="size-4" />
+	<ChevronRightIcon class="size-4 rtl:rotate-180" />
 {/snippet}
 
 <PaginationPrimitive.NextButton

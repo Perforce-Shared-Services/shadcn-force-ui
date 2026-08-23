@@ -1,7 +1,14 @@
 import type { VariantProps } from "class-variance-authority"
 import { cva } from "class-variance-authority"
 
-export { Avatar, AvatarImage, AvatarFallback } from "./avatar"
+export {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+  AvatarBadge,
+  AvatarGroup,
+  AvatarGroupCount,
+} from "./avatar" // [FORCE-UI] badge/group exports for example parity
 
 export const avatarVariants = cva(
   "cn-avatar after:border-border group/avatar relative flex shrink-0 select-none after:absolute after:inset-0 after:border after:mix-blend-darken dark:after:mix-blend-lighten",

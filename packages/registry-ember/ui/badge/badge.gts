@@ -11,6 +11,11 @@ interface BadgeSignature {
     variant?: Variant;
     class?: string;
     asChild?: boolean;
+    /** [FORCE-UI] Visually-hidden text prefix announced before the badge's
+     * content. Status is otherwise conveyed only through color, which a
+     * screen reader can't perceive — set this on count- or glyph-only
+     * badges (e.g. `@srLabel="Synced versions:"` on a bare "42"). */
+    srLabel?: string;
   };
   Blocks: {
     default: [{ classes: string }?];
@@ -53,6 +58,10 @@ class Badge extends Component<BadgeSignature> {
       {{yield (hash classes=this.classes)}}
     {{else}}
       <span class={{this.classes}} data-slot="badge" data-variant={{@variant}} ...attributes>
+        {{#if @srLabel}}
+          {{! [FORCE-UI] screen-reader label prefix — mirrors React Badge srLabel }}
+          <span class="sr-only">{{@srLabel}}&nbsp;</span>
+        {{/if}}
         {{yield}}
       </span>
     {{/if}}

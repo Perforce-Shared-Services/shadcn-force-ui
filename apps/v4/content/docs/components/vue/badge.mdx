@@ -105,3 +105,6 @@ The `Badge` component displays a badge or a component that looks like a badge.
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `variant` | `"default" \| "secondary" \| "destructive" \| "outline" \| "ghost" \| "link" \| "warning" \| "success" \| "info" \| "success-solid" \| "warning-solid" \| "info-solid" \| "error-solid"` | `"default"` |
 | `class`   | `string`                                                                                                                                                                                 | -           |
+| `srLabel` | `string`                                                                                                                                                                                 | -           |
+
+`srLabel` renders a visually-hidden text prefix announced before the badge's content. Status is otherwise conveyed only through color, which a screen reader can't perceive — set this on count- or glyph-only badges (e.g. `srLabel="Synced versions:"` on a bare "42").

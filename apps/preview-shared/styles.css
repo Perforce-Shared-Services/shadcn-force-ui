@@ -415,6 +415,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  /* [FORCE-UI] cn-* theming hook */
+  .cn-font-heading {
+    @apply font-heading;
+  }
 }
 
 body {

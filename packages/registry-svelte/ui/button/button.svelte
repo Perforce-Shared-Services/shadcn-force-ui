@@ -38,10 +38,14 @@
 		WithElementRef<HTMLAnchorAttributes> & {
 			variant?: ButtonVariant;
 			size?: ButtonSize;
+			/** [FORCE-UI] shows a spinner and blocks interaction, for async actions — mirrors the Figma `State=Loading` variant */
+			loading?: boolean;
 		};
 </script>
 
 <script lang="ts">
+	import IconPlaceholder from "$lib/components/icon-placeholder/icon-placeholder.svelte";
+
 	let {
 		class: className,
 		variant = "default",
@@ -50,6 +54,7 @@
 		href = undefined,
 		type = "button",
 		disabled,
+		loading = false,
 		children,
 		...restProps
 	}: ButtonProps = $props();
@@ -59,24 +64,52 @@
 	<a
 		bind:this={ref}
 		data-slot="button"
+		data-loading={loading ? "" : undefined}
+		aria-busy={loading || undefined}
 		class={cn(buttonVariants({ variant, size }), className)}
-		href={disabled ? undefined : href}
-		aria-disabled={disabled}
-		role={disabled ? "link" : undefined}
-		tabindex={disabled ? -1 : undefined}
+		href={disabled || loading ? undefined : href}
+		aria-disabled={disabled || loading}
+		role={disabled || loading ? "link" : undefined}
+		tabindex={disabled || loading ? -1 : undefined}
 		{...restProps}
 	>
+		{#if loading}
+			<span data-slot="button-spinner" aria-hidden="true" class="inline-flex animate-spin">
+				<IconPlaceholder
+					lucide="Loader2Icon"
+					materialSymbols="progress_activity"
+					tabler="IconLoader"
+					hugeicons="Loading03Icon"
+					phosphor="SpinnerIcon"
+					remixicon="RiLoaderLine"
+				/>
+			</span>
+		{/if}
 		{@render children?.()}
 	</a>
 {:else}
 	<button
 		bind:this={ref}
 		data-slot="button"
+		data-loading={loading ? "" : undefined}
+		aria-busy={loading || undefined}
 		class={cn(buttonVariants({ variant, size }), className)}
 		{type}
-		{disabled}
+		disabled={disabled || loading}
 		{...restProps}
 	>
+		{#if loading}
+			<span data-slot="button-spinner" aria-hidden="true" class="inline-flex animate-spin">
+				<IconPlaceholder
+					lucide="Loader2Icon"
+					materialSymbols="progress_activity"
+					tabler="IconLoader"
+					hugeicons="Loading03Icon"
+					phosphor="SpinnerIcon"
+					remixicon="RiLoaderLine"
+				/>
+			</span>
+		{/if}
 		{@render children?.()}
 	</button>
 {/if}

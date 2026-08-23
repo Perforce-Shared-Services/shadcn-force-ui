@@ -1,0 +1,128 @@
+---
+title: Marker
+description: Displays a compact status line for system and agent activity in a conversation or log.
+base: svelte
+component: true
+---
+
+<ComponentPreview framework="svelte" name="marker-demo" />
+
+The `Marker` component displays short inline status lines such as branch switches, file exploration counts, compaction notices, and typing indicators.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/marker
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="svelte" name="marker" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```svelte
+<script lang="ts">
+  import { Marker, MarkerContent, MarkerIcon } from "@/svelte-ui/marker/index.js";
+</script>
+```
+
+```svelte
+<Marker>
+  <MarkerIcon><GitBranchIcon /></MarkerIcon>
+  <MarkerContent>Switched to a new branch</MarkerContent>
+</Marker>
+```
+
+## Examples
+
+### Icon
+
+<ComponentPreview framework="svelte" name="marker-icon" />
+
+### Separator
+
+Use the `separator` variant for date dividers and activity summaries.
+
+<ComponentPreview framework="svelte" name="marker-separator" />
+
+### Border
+
+Use the `border` variant for row-bounded entries.
+
+<ComponentPreview framework="svelte" name="marker-border" />
+
+### Shimmer
+
+Add the `shimmer` class to `MarkerContent` for loading states.
+
+<ComponentPreview framework="svelte" name="marker-shimmer" />
+
+### Status
+
+Pair a `Spinner` with `role="status"` for live activity.
+
+<ComponentPreview framework="svelte" name="marker-status" />
+
+### Links and Buttons
+
+Compose an anchor or button around the marker to make it interactive.
+
+<ComponentPreview framework="svelte" name="marker-link-button" />
+
+### Variants
+
+<ComponentPreview framework="svelte" name="marker-variants" />
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+## API Reference
+
+### Marker
+
+The root marker row.
+
+| Prop      | Type                                   | Default     |
+| --------- | -------------------------------------- | ----------- |
+| `variant` | `"default" \| "separator" \| "border"` | `"default"` |
+| `class`   | `string`                               | -           |
+
+### MarkerIcon
+
+A leading icon slot. Hidden from assistive tech.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |
+
+### MarkerContent
+
+The marker text. Use the `shimmer` class for loading states.
+
+| Prop    | Type     | Default |
+| ------- | -------- | ------- |
+| `class` | `string` | -       |

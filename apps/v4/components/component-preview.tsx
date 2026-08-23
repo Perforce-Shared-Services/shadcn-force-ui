@@ -2,10 +2,13 @@ import * as React from "react"
 import Image from "next/image"
 
 import { getRegistryComponent } from "@/lib/registry"
-import { getPreviewFramework, type PreviewFramework } from "@/registry/frameworks"
 import { ComponentPreviewTabs } from "@/components/component-preview-tabs"
 import { ComponentSource } from "@/components/component-source"
 import { FrameworkPreviewIframe } from "@/components/framework-preview-iframe"
+import {
+  getPreviewFramework,
+  type PreviewFramework,
+} from "@/registry/frameworks"
 
 // [FORCE-UI-START] per-framework dev preview server support
 // NEXT_PUBLIC_PREVIEW_SERVER_URL is a legacy override escape hatch: if set, it is
@@ -14,8 +17,7 @@ import { FrameworkPreviewIframe } from "@/components/framework-preview-iframe"
 // which derives the correct per-framework port (and the vite "base" of
 // "/preview/{framework}/") from the frameworks table instead.
 const PREVIEW_SERVER_URL_OVERRIDE = process.env.NEXT_PUBLIC_PREVIEW_SERVER_URL
-const PREVIEW_DEV_SERVERS =
-  process.env.NEXT_PUBLIC_PREVIEW_DEV_SERVERS === "1"
+const PREVIEW_DEV_SERVERS = process.env.NEXT_PUBLIC_PREVIEW_DEV_SERVERS === "1"
 
 function getIframeSrc(framework: PreviewFramework["name"], name: string) {
   if (PREVIEW_SERVER_URL_OVERRIDE) {
